@@ -1,0 +1,33 @@
+You can install [Phaser Editor Core](../intro/distributions#phaser-editor-core) globally in your system using [NPM](https://www.npmjs.com):
+
+```bash
+> npm install -g phasereditor2d-launcher
+```
+
+And you can run it in a terminal:
+
+```bash
+$ phasereditor2d-launcher -project path/to/project
+```
+
+The [phasereditor2d-launcher](https://www.npmjs.com/package/phasereditor2d-launcher) script downloads the latest [Phaser Editor Core](../intro/distributions#phaser-editor-core) version from the Phaser Editor website and runs it. Next time, the script will use the downloaded editor.
+
+However, probably you would like to install `phasereditor2d-launcher` as a dependency of your project. Then do:
+
+```bash
+> npm install phasereditor2d-launcher --save-dev
+```
+
+And run it:
+
+```bash
+$ npx phasereditor2d-launcher -project .
+```
+
+If your project was created using one of the project templates provided by the [Phaser Editor Desktop](../intro/distributions#phaser-editor-desktop) distribution or downloaded from the [Phaser Editor Start page](https://phasereditor2d.com/start), then the editor is installed together with the other dependencies. Also, the `package.json` file contains the `editor` script for running the editor:
+
+```bash
+> npm run editor
+```
+
+[Learn more about the phasereditor2d-launcher module](https://www.npmjs.com/package/phasereditor2d-launcher).
