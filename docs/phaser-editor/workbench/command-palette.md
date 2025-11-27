@@ -3,7 +3,7 @@ slug: command-palette
 title: Command palette
 ---
 
-The [Command palette]() is a dialog that shows the commands available in the **current context**. You can open it by pressing `Ctrl+K` or clicking on the **Command Palette** option of the [Main menu](../workbench/main-menu).
+The Command Palette is a dialog that shows the commands available in the **current context**. You can open it by pressing `Ctrl+K` or clicking on the **Command Palette** option of the [Main menu](../workbench/main-menu).
 
 Not all commands are shown, those that do not apply to the **current context** (active view, active editor or active dialog) are omitted.
 

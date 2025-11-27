@@ -30,7 +30,7 @@ To create a Nine Slice object in the scene, you should follow these steps:
 
   ![Resize the object](https://cdn.phaser.io/editor-docs/scene-editor-nineslice-create-4-20230208.webp)
 
-- In the [Nine Slice properties]() section, change the size of the slices. Also you can activate the [Nine Slice tool](../manipulation-tools#slice-tool), and change the sizes in the scene:
+- In the **Nine Slice** properties section, change the size of the slices. Also you can activate the [Nine Slice tool](../manipulation-tools#slice-tool), and change the sizes in the scene:
 
   ![Edit the slice size.](https://cdn.phaser.io/editor-docs/scene-editor-nineslice-create-5-20230208.webp)
 

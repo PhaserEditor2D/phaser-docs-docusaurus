@@ -15,7 +15,7 @@ Or you can create a new list when adding an object to the list:
 
 ![Create new list in the Lists section.](https://cdn.phaser.io/editor-docs/scene-editor-object-list-new-list-from-section-20230516.webp)![Enter the name of the new list.](https://cdn.phaser.io/editor-docs/scene-editor-object-list-add-new-2-20230516.webp)
 
-To add an object to an [Object List](), select the object and look for the **Lists** section. Click on the drop-down of the **Lists** property, it shows the lists availables in the scene with the option of add the selected object to a list or remove it from a list:
+To add an object to an Object List, select the object and look for the **Lists** section. Click on the drop-down of the **Lists** property, it shows the lists availables in the scene with the option of add the selected object to a list or remove it from a list:
 
 ![Add object to the list.](https://cdn.phaser.io/editor-docs/scene-editor-object-list-add-object-20230516.webp)
 
@@ -36,7 +36,7 @@ You can locate the a list item in the scene. Select the list item, and in the **
 
 ## Object List properties
 
-The [Object List]() type is not part of the [Phaser API](https://newdocs.phaser.io/docs/latest/), it is something introduced by the Scene Editor. In the **Variable** section of the Inspector view, it shows the [Variable properties](./game-objects/common-object-properties#variable-properties):
+The Object List type is not part of the [Phaser API](https://newdocs.phaser.io/docs/latest/), it is something introduced by the Scene Editor. In the **Variable** section of the Inspector view, it shows the [Variable properties](./game-objects/common-object-properties#variable-properties):
 
 ![Object List properties.](https://cdn.phaser.io/editor-docs/scene-editor-object-list-section-20230516.webp)
 

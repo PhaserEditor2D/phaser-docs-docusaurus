@@ -28,17 +28,17 @@ The command can be executed by pressing the `Shift+P` keys or selecting the **Mo
 
 The **Break Parent** command removes a  Container or Layer, but keeps its children. The children are added to the parent of the parent, and their preserve the same absolute position.
 
-You can execute the command by pressing the `Shift+B` keys or selecting the **Break Parent** option of the [Parent context menu]().
+You can execute the command by pressing the `Shift+B` keys or selecting the **Break Parent** option of the Parent context menu.
 
 
 ## Selecting the parent of an object
 
-The **Select Parent** command selects the parent of an object. To execute the command press the `P` key or click on the **Select Parent** option of the [Parent context menu]().
+The **Select Parent** command selects the parent of an object. To execute the command press the `P` key or click on the **Select Parent** option of the Parent context menu.
 
 
 ## Selecting the children of an object
 
-The **Select Children** command selects the children of a container or a layer. To execute this command, press the `N` key or click on the **Select Children** option in the [Parent context menu]().
+The **Select Children** command selects the children of a container or a layer. To execute this command, press the `N` key or click on the **Select Children** option in the Parent context menu.
 
 
 ## Changing the rendering order of children

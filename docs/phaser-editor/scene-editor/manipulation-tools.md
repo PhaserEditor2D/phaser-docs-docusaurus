@@ -43,7 +43,7 @@ This tool changes the angle of the object. You can activate it in the context me
 
 With this tool, you can edit the origin of an object. You can activate it in the context menu, the [Main toolbar](../workbench/main-toolbar), or with the `O` key.
 
-In Phaser v3, the rotation pivot of [containers](./game-objects/container-object) is fixed at `x=0, y=0`. You cannot change it. However, the [origin tool]() simulates a change of the pivot by moving around the children of the container but keeping the same global position.
+In Phaser v3, the rotation pivot of [containers](./game-objects/container-object) is fixed at `x=0, y=0`. You cannot change it. However, the origin tool simulates a change of the pivot by moving around the children of the container but keeping the same global position.
 
 ![Origin tool.](https://cdn.phaser.io/editor-docs/scene-editor-tools-origin-05242020.webp)
 
