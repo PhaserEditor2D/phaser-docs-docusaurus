@@ -12,7 +12,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'What is Phaser?',
   tagline: 'Phaser documentation site',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.webp',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -70,10 +70,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Phaser Documentation',
         logo: {
           alt: 'Phaser logo',
-          src: 'img/logo.svg',
+          src: 'img/phaser.png',
         },
         items: [
           { to: '/phaser/todo', label: 'Phaser', position: 'left' },
