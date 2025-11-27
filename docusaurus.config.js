@@ -76,16 +76,21 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          { to: '/phaser/todo', label: 'Phaser', position: 'left' },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'PhaserEditorSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Phaser Editor',
           },
-          // { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/phaser-editor/intro/welcome', label: 'Phaser Editor', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: 'https://phaser.io/examples/v3.85.0', label: 'Examples', position: 'left'
+          },
+          {
+            to: 'https://phaser.io/news/2025/01/the-wildfires', label: 'Game of the Week', position: 'left'
+          },
+          {
+            href: 'https://github.com/phaserjs/phaser',
             label: 'GitHub',
             position: 'right',
           },
@@ -98,8 +103,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Docs',
+                to: '/',
               },
             ],
           },
