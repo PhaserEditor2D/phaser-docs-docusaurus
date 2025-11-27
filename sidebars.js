@@ -21,253 +21,280 @@ const sidebars = {
   // But you can create a sidebar manually
   PhaserEditorSidebar: [
     {
-      type: "category",
-      label: "Introduction",
-      items: [
-        { type: "doc", id: "phaser-editor/intro/welcome" },
-        { type: "doc", id: "phaser-editor/intro/distributions" },
-        { type: "doc", id: "phaser-editor/intro/collaboration" },
-        { type: "doc", id: "phaser-editor/intro/changelog" },
-      ],
+      "Introduction": [
+        "phaser-editor/intro/welcome",
+        "phaser-editor/intro/distributions",
+        "phaser-editor/intro/collaboration",
+        "phaser-editor/intro/changelog"
+      ]
     },
     {
-      type: "category",
-      label: "First Steps",
-      items: [
-        { type: "doc", id: "phaser-editor/first-steps/download-and-install" },
-        { type: "doc", id: "phaser-editor/first-steps/create-first-project" },
-        { type: "doc", id: "phaser-editor/first-steps/add-image-to-scene" },
-      ],
+      "First Steps": [
+        "phaser-editor/first-steps/download-and-install",
+        "phaser-editor/first-steps/create-first-project",
+        "phaser-editor/first-steps/add-image-to-scene"
+      ]
     },
     {
-      type: "category",
-      label: "The Workbench",
-      items: [
-        { type: "doc", id: "phaser-editor/workbench/intro" },
-        { type: "doc", id: "phaser-editor/workbench/views" },
-        { type: "doc", id: "phaser-editor/workbench/editors" },
-        { type: "doc", id: "phaser-editor/workbench/files-view" },
-        { type: "doc", id: "phaser-editor/workbench/inspector-view" },
-        { type: "doc", id: "phaser-editor/workbench/outline-view" },
-        { type: "doc", id: "phaser-editor/workbench/blocks-view" },
-        { type: "doc", id: "phaser-editor/workbench/main-toolbar" },
-        { type: "doc", id: "phaser-editor/workbench/main-menu" },
-        { type: "doc", id: "phaser-editor/workbench/layouts" },
-        { type: "doc", id: "phaser-editor/workbench/playing-project" },
-        { type: "doc", id: "phaser-editor/workbench/projects" },
-        { type: "doc", id: "phaser-editor/workbench/new-file-dialog" },
-        { type: "doc", id: "phaser-editor/workbench/upload-dialog" },
-        { type: "doc", id: "phaser-editor/workbench/color-themes" },
-        { type: "doc", id: "phaser-editor/workbench/command-palette" },
-        { type: "doc", id: "phaser-editor/workbench/settings" },
-      ],
+      "The Workbench": [
+        "phaser-editor/workbench/intro",
+        "phaser-editor/workbench/views",
+        "phaser-editor/workbench/editors",
+        "phaser-editor/workbench/files-view",
+        "phaser-editor/workbench/inspector-view",
+        "phaser-editor/workbench/outline-view",
+        "phaser-editor/workbench/blocks-view",
+        "phaser-editor/workbench/main-toolbar",
+        "phaser-editor/workbench/main-menu",
+        "phaser-editor/workbench/layouts",
+        "phaser-editor/workbench/playing-project",
+        "phaser-editor/workbench/projects",
+        "phaser-editor/workbench/new-file-dialog",
+        "phaser-editor/workbench/upload-dialog",
+        "phaser-editor/workbench/color-themes",
+        "phaser-editor/workbench/command-palette",
+        "phaser-editor/workbench/settings"
+      ]
     },
     {
-      type: "category",
-      label: "Asset Pack",
-      items: [
-        { type: "doc", id: "phaser-editor/asset-pack-editor/intro" },
-        { type: "doc", id: "phaser-editor/asset-pack-editor/create-asset-pack-file" },
-        { type: "doc", id: "phaser-editor/asset-pack-editor/asset-pack-file" },
-        { type: "doc", id: "phaser-editor/asset-pack-editor/editor-content-layout" },
-        { type: "doc", id: "phaser-editor/asset-pack-editor/add-file" },
-        { type: "doc", id: "phaser-editor/asset-pack-editor/organizing-the-assets" },
-        { type: "doc", id: "phaser-editor/asset-pack-editor/outline-view" },
-        { type: "doc", id: "phaser-editor/asset-pack-editor/inspector-view" },
-      ],
+      "Asset Pack": [
+        "phaser-editor/asset-pack-editor/intro",
+        "phaser-editor/asset-pack-editor/create-asset-pack-file",
+        "phaser-editor/asset-pack-editor/asset-pack-file",
+        "phaser-editor/asset-pack-editor/editor-content-layout",
+        "phaser-editor/asset-pack-editor/add-file",
+        "phaser-editor/asset-pack-editor/organizing-the-assets",
+        "phaser-editor/asset-pack-editor/outline-view",
+        "phaser-editor/asset-pack-editor/inspector-view"
+      ]
     },
+
+    //
+    // Scene Editor — needs mixed shorthand + explicit categories
+    //
+
     {
       type: "category",
       label: "Scene Editor",
       items: [
-        { type: "doc", id: "phaser-editor/scene-editor/intro" },
-        { type: "doc", id: "phaser-editor/scene-editor/create-new-scene-file" },
-        { type: "doc", id: "phaser-editor/scene-editor/add-object" },
-        { type: "doc", id: "phaser-editor/scene-editor/inspector-view" },
+        "phaser-editor/scene-editor/intro",
+        "phaser-editor/scene-editor/create-new-scene-file",
+        "phaser-editor/scene-editor/add-object",
+        "phaser-editor/scene-editor/inspector-view",
+
+        //
+        // Game Objects (requires full syntax because it uses link:)
+        //
         {
           type: "category",
           label: "Game Objects",
           link: { type: "doc", id: "phaser-editor/scene-editor/game-objects" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/common-object-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/image-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/sprite-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/tile-sprite-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/nine-slice-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/text-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/bitmap-text-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/tilemap-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/tilemap-layer-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/editable-tilemap-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/editable-tilemap-layer-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/shape-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/shape-rectangle-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/shape-ellipse-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/shape-triangle-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/shape-polygon-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/particle-emitter-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/particle-emitter-object-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/container-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/layer-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/video-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/spine-game-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/game-objects/replace-object-type" },
-          ],
+            "phaser-editor/scene-editor/game-objects/common-object-properties",
+            "phaser-editor/scene-editor/game-objects/image-object",
+            "phaser-editor/scene-editor/game-objects/sprite-object",
+            "phaser-editor/scene-editor/game-objects/tile-sprite-object",
+            "phaser-editor/scene-editor/game-objects/nine-slice-object",
+            "phaser-editor/scene-editor/game-objects/text-object",
+            "phaser-editor/scene-editor/game-objects/bitmap-text-object",
+            "phaser-editor/scene-editor/game-objects/tilemap-object",
+            "phaser-editor/scene-editor/game-objects/tilemap-layer-object",
+            "phaser-editor/scene-editor/game-objects/editable-tilemap-object",
+            "phaser-editor/scene-editor/game-objects/editable-tilemap-layer-object",
+            "phaser-editor/scene-editor/game-objects/shape-object",
+            "phaser-editor/scene-editor/game-objects/shape-rectangle-object",
+            "phaser-editor/scene-editor/game-objects/shape-ellipse-object",
+            "phaser-editor/scene-editor/game-objects/shape-triangle-object",
+            "phaser-editor/scene-editor/game-objects/shape-polygon-object",
+            "phaser-editor/scene-editor/game-objects/particle-emitter-object",
+            "phaser-editor/scene-editor/game-objects/particle-emitter-object-properties",
+            "phaser-editor/scene-editor/game-objects/container-object",
+            "phaser-editor/scene-editor/game-objects/layer-object",
+            "phaser-editor/scene-editor/game-objects/video-object",
+            "phaser-editor/scene-editor/game-objects/spine-game-object",
+            "phaser-editor/scene-editor/game-objects/replace-object-type"
+          ]
         },
-        { type: "doc", id: "phaser-editor/scene-editor/scene-properties" },
+
+        "phaser-editor/scene-editor/scene-properties",
+
+        //
+        // Arcade Physics — also has link
+        //
         {
           type: "category",
           label: "Arcade Physics",
           link: { type: "doc", id: "phaser-editor/scene-editor/arcade-physics" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/arcade-physics/arcade-physics-add-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/arcade-physics/arcade-physics-add-body" },
-            { type: "doc", id: "phaser-editor/scene-editor/arcade-physics/arcade-physics-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/arcade-physics/arcade-physics-collider" },
-          ],
+            "phaser-editor/scene-editor/arcade-physics/arcade-physics-add-object",
+            "phaser-editor/scene-editor/arcade-physics/arcade-physics-add-body",
+            "phaser-editor/scene-editor/arcade-physics/arcade-physics-properties",
+            "phaser-editor/scene-editor/arcade-physics/arcade-physics-collider"
+          ]
         },
+
+        //
+        // Box2D Physics — has link
+        //
         {
           type: "category",
           label: "Box2D Physics",
           link: { type: "doc", id: "phaser-editor/scene-editor/box2d-physics" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/box2d-physics/box2d-physics-prepare-scene" },
-            { type: "doc", id: "phaser-editor/scene-editor/box2d-physics/box2d-physics-add-body" },
-            { type: "doc", id: "phaser-editor/scene-editor/box2d-physics/box2d-physics-shapes" },
-          ],
+            "phaser-editor/scene-editor/box2d-physics/box2d-physics-prepare-scene",
+            "phaser-editor/scene-editor/box2d-physics/box2d-physics-add-body",
+            "phaser-editor/scene-editor/box2d-physics/box2d-physics-shapes"
+          ]
         },
-        { type: "doc", id: "phaser-editor/scene-editor/sprite-animations" },
+
+        "phaser-editor/scene-editor/sprite-animations",
+
+        //
+        // Spine Animations — has link
+        //
         {
           type: "category",
           label: "Spine Animations",
           link: { type: "doc", id: "phaser-editor/scene-editor/spine-animations" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/spine-animations/spine-animations-install" },
-            { type: "doc", id: "phaser-editor/scene-editor/spine-animations/spine-animations-loading" },
-            { type: "doc", id: "phaser-editor/scene-editor/spine-animations/spine-animations-assets-preview" },
-            { type: "doc", id: "phaser-editor/scene-editor/spine-animations/spine-animations-game-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/spine-animations/spine-animations-game-object-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/spine-animations/spine-animations-game-object-user-properties" },
-          ],
+            "phaser-editor/scene-editor/spine-animations/spine-animations-install",
+            "phaser-editor/scene-editor/spine-animations/spine-animations-loading",
+            "phaser-editor/scene-editor/spine-animations/spine-animations-assets-preview",
+            "phaser-editor/scene-editor/spine-animations/spine-animations-game-object",
+            "phaser-editor/scene-editor/spine-animations/spine-animations-game-object-properties",
+            "phaser-editor/scene-editor/spine-animations/spine-animations-game-object-user-properties"
+          ]
         },
-        { type: "doc", id: "phaser-editor/scene-editor/filters" },
-        { type: "doc", id: "phaser-editor/scene-editor/working-with-spritesheets" },
-        { type: "doc", id: "phaser-editor/scene-editor/working-with-parent-objects" },
-        { type: "doc", id: "phaser-editor/scene-editor/object-list" },
-        { type: "doc", id: "phaser-editor/scene-editor/input" },
+
+        "phaser-editor/scene-editor/filters",
+        "phaser-editor/scene-editor/working-with-spritesheets",
+        "phaser-editor/scene-editor/working-with-parent-objects",
+        "phaser-editor/scene-editor/object-list",
+        "phaser-editor/scene-editor/input",
+
+        //
+        // Prefabs — requires link
+        //
         {
           type: "category",
           label: "Prefabs",
           link: { type: "doc", id: "phaser-editor/scene-editor/prefabs" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-new-file" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-user-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-create-instance" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-display-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-code" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-set-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-variant" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-nested" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-instance-children" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-tags" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-unbox" },
-            { type: "doc", id: "phaser-editor/scene-editor/prefabs/prefab-black-box" },
-          ],
+            "phaser-editor/scene-editor/prefabs/prefab-new-file",
+            "phaser-editor/scene-editor/prefabs/prefab-object",
+            "phaser-editor/scene-editor/prefabs/prefab-user-properties",
+            "phaser-editor/scene-editor/prefabs/prefab-create-instance",
+            "phaser-editor/scene-editor/prefabs/prefab-display-properties",
+            "phaser-editor/scene-editor/prefabs/prefab-code",
+            "phaser-editor/scene-editor/prefabs/prefab-set-properties",
+            "phaser-editor/scene-editor/prefabs/prefab-variant",
+            "phaser-editor/scene-editor/prefabs/prefab-nested",
+            "phaser-editor/scene-editor/prefabs/prefab-instance-children",
+            "phaser-editor/scene-editor/prefabs/prefab-tags",
+            "phaser-editor/scene-editor/prefabs/prefab-unbox",
+            "phaser-editor/scene-editor/prefabs/prefab-black-box"
+          ]
         },
+
+        //
+        // Script Node — requires link
+        //
         {
           type: "category",
           label: "Script Node",
           link: { type: "doc", id: "phaser-editor/scene-editor/script-node" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-vs-user-component" },
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-libraries" },
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-create" },
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-class" },
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-basic-scripts-project" },
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-prefab" },
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-properties" },
-            { type: "doc", id: "phaser-editor/scene-editor/script-node/script-node-constraints" },
-          ],
+            "phaser-editor/scene-editor/script-node/script-node-vs-user-component",
+            "phaser-editor/scene-editor/script-node/script-node-libraries",
+            "phaser-editor/scene-editor/script-node/script-node-create",
+            "phaser-editor/scene-editor/script-node/script-node-class",
+            "phaser-editor/scene-editor/script-node/script-node-basic-scripts-project",
+            "phaser-editor/scene-editor/script-node/script-node-prefab",
+            "phaser-editor/scene-editor/script-node/script-node-properties",
+            "phaser-editor/scene-editor/script-node/script-node-constraints"
+          ]
         },
+
+        //
+        // User Components — requires link
+        //
         {
           type: "category",
           label: "User Components",
           link: { type: "doc", id: "phaser-editor/scene-editor/user-components" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-create-file" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-editor" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-compiler" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-start-update-methods" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-super-class" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-awake-event" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-instancing" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-in-prefab-object" },
-            { type: "doc", id: "phaser-editor/scene-editor/user-components/user-components-constraints" },
-          ],
+            "phaser-editor/scene-editor/user-components/user-components-create-file",
+            "phaser-editor/scene-editor/user-components/user-components-editor",
+            "phaser-editor/scene-editor/user-components/user-components-compiler",
+            "phaser-editor/scene-editor/user-components/user-components-start-update-methods",
+            "phaser-editor/scene-editor/user-components/user-components-super-class",
+            "phaser-editor/scene-editor/user-components/user-components-awake-event",
+            "phaser-editor/scene-editor/user-components/user-components-instancing",
+            "phaser-editor/scene-editor/user-components/user-components-in-prefab-object",
+            "phaser-editor/scene-editor/user-components/user-components-constraints"
+          ]
         },
-        { type: "doc", id: "phaser-editor/scene-editor/manipulation-tools" },
+
+        "phaser-editor/scene-editor/manipulation-tools",
+
+        //
+        // Layout Tools — requires link
+        //
         {
           type: "category",
           label: "Layout Tools",
           link: { type: "doc", id: "phaser-editor/scene-editor/layout-tools" },
           items: [
-            { type: "doc", id: "phaser-editor/scene-editor/layout-tools/layout-tools-align" },
-            { type: "doc", id: "phaser-editor/scene-editor/layout-tools/layout-tools-align-to-border" },
-            { type: "doc", id: "phaser-editor/scene-editor/layout-tools/layout-tools-origin" },
-            { type: "doc", id: "phaser-editor/scene-editor/layout-tools/layout-tools-grid" },
-            { type: "doc", id: "phaser-editor/scene-editor/layout-tools/layout-tools-sorting" },
-          ],
+            "phaser-editor/scene-editor/layout-tools/layout-tools-align",
+            "phaser-editor/scene-editor/layout-tools/layout-tools-align-to-border",
+            "phaser-editor/scene-editor/layout-tools/layout-tools-origin",
+            "phaser-editor/scene-editor/layout-tools/layout-tools-grid",
+            "phaser-editor/scene-editor/layout-tools/layout-tools-sorting"
+          ]
         },
-        { type: "doc", id: "phaser-editor/scene-editor/scene-compiler" },
-        { type: "doc", id: "phaser-editor/scene-editor/misc" },
-        { type: "doc", id: "phaser-editor/scene-editor/troubleshooting" },
-      ],
+
+        "phaser-editor/scene-editor/scene-compiler",
+        "phaser-editor/scene-editor/misc",
+        "phaser-editor/scene-editor/troubleshooting"
+      ]
+    },
+
+    {
+      "Animations Editor": [
+        "phaser-editor/animations-editor/intro",
+        "phaser-editor/animations-editor/new-file-wizard",
+        "phaser-editor/animations-editor/add-animation",
+        "phaser-editor/animations-editor/auto-build-animations",
+        "phaser-editor/animations-editor/edit-animations-properties",
+        "phaser-editor/animations-editor/adding-deleting-frames",
+        "phaser-editor/animations-editor/compiler"
+      ]
     },
     {
-      type: "category",
-      label: "Animations Editor",
-      items: [
-        { type: "doc", id: "phaser-editor/animations-editor/intro" },
-        { type: "doc", id: "phaser-editor/animations-editor/new-file-wizard" },
-        { type: "doc", id: "phaser-editor/animations-editor/add-animation" },
-        { type: "doc", id: "phaser-editor/animations-editor/auto-build-animations" },
-        { type: "doc", id: "phaser-editor/animations-editor/edit-animations-properties" },
-        { type: "doc", id: "phaser-editor/animations-editor/adding-deleting-frames" },
-        { type: "doc", id: "phaser-editor/animations-editor/compiler" },
-      ],
+      "Code Editor": ["phaser-editor/code-editor/intro"]
     },
     {
-      type: "category",
-      label: "Code Editor",
-      items: [{ type: "doc", id: "phaser-editor/code-editor/intro" }],
+      "AI": ["phaser-editor/ai/mcp-server"]
     },
     {
-      type: "category",
-      label: "AI",
-      items: [{ type: "doc", id: "phaser-editor/ai/mcp-server" }],
-    },
-    {
-      type: "category",
-      label: "Miscellaneous",
-      items: [
-        { type: "doc", id: "phaser-editor/misc/project-config" },
-        { type: "doc", id: "phaser-editor/misc/server-options" },
-        { type: "doc", id: "phaser-editor/misc/resources-caching" },
-        { type: "doc", id: "phaser-editor/misc/resources-filtering" },
-        { type: "doc", id: "phaser-editor/misc/proxy" },
-        { type: "doc", id: "phaser-editor/misc/local-preferences" },
-        { type: "doc", id: "phaser-editor/misc/content-viewers" },
-        { type: "doc", id: "phaser-editor/misc/log-view" },
-        { type: "doc", id: "phaser-editor/misc/update" },
-        { type: "doc", id: "phaser-editor/misc/plugins" },
-        { type: "doc", id: "phaser-editor/misc/troubleshooting" },
-      ],
+      "Miscellaneous": [
+        "phaser-editor/misc/project-config",
+        "phaser-editor/misc/server-options",
+        "phaser-editor/misc/resources-caching",
+        "phaser-editor/misc/resources-filtering",
+        "phaser-editor/misc/proxy",
+        "phaser-editor/misc/local-preferences",
+        "phaser-editor/misc/content-viewers",
+        "phaser-editor/misc/log-view",
+        "phaser-editor/misc/update",
+        "phaser-editor/misc/plugins",
+        "phaser-editor/misc/troubleshooting"
+      ]
     },
     {
       type: "link",
       label: "Phaser Discord",
-      href: "https://discord.gg/phaser",
+      href: "https://discord.gg/phaser"
     }
   ],
 };
