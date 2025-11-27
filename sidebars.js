@@ -115,12 +115,11 @@ const sidebars = {
 				"phaser/concepts/utils",
 			],
 		},
-
-		{
-			type: "link",
-			label: "API Documentation",
-			href: "/api-documentation",
-		},
+		// {
+		// 	type: "link",
+		// 	label: "API Documentation",
+		// 	href: "/api-documentation",
+		// },
 		{
 			type: "link",
 			label: "Phaser Discord",
