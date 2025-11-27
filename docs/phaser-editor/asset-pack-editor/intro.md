@@ -1,6 +1,5 @@
 ---
 title: Introduction
-slug: overview
 ---
 
 In a Phaser game, you load the files using the methods of the [Phaser.Loader.LoaderPlugin](https://docs.phaser.io/api-documentation/class/loader-loaderplugin) class. This is how you can [load a sprite-sheet](https://docs.phaser.io/api-documentation/class/loader-loaderplugin#spritesheet) file:
@@ -35,7 +34,7 @@ You can load an [Asset Pack file](../asset-pack-editor/asset-pack-file) using th
 this.load.pack("level1", "assets/pack.json");
 ```
 
-The Asset Pack Editor allows you to edit an [Asset Pack file](../asset-pack-editor/asset-pack-file), making it very easy to load the assets in your game. Instead of spending precious time writing the JSON file by hand, with the [Asset Pack Editor](../asset-pack-editor) you can load your assets with a visual tool and smart operations.
+The Asset Pack Editor allows you to edit an [Asset Pack file](../asset-pack-editor/asset-pack-file), making it very easy to load the assets in your game. Instead of spending precious time writing the JSON file by hand, with the [Asset Pack Editor](../asset-pack-editor/intro) you can load your assets with a visual tool and smart operations.
 
 ![Asset Pack Editor](https://cdn.phaser.io/editor-docs/asset-pack-editor-overview-20241005.webp)
 

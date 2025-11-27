@@ -11,4 +11,4 @@ To create the new file, open the [New File dialog](../workbench/new-file-dialog)
 
 Select the folder where you want to create the file and write the file’s name. You don’t need to add the `.json` extension to the file, the dialog does this automatically.
 
-When the file is created, the IDE opens it in the [Asset Pack Editor](../asset-pack-editor).
+When the file is created, the IDE opens it in the [Asset Pack Editor](../asset-pack-editor/intro).

@@ -3,7 +3,7 @@ slug: inspector-view
 title: Inspector view integration
 ---
 
-The Inspector view connects with the active [Asset Pack Editor](../asset-pack-editor) and shows property editors to change the file configurations.
+The Inspector view connects with the active [Asset Pack Editor](../asset-pack-editor/intro) and shows property editors to change the file configurations.
 
 In addition to property editors, in some cases, the Inspector view shows a preview of the selected configuration.
 

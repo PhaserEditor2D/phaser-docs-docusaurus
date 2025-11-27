@@ -256,7 +256,7 @@ title: Change Log
 ## v3.66.0 - Jan 11, 2024
 
 * Allows to set a display name to game objects.
-* The display name formatting expression #{x} expands to "x".
+* The display name formatting expression `#{x}` expands to "x".
 * The display name formatting shows prepends the `TargetActionComp.target` value, if present.
 * Fixes name collision when copying a game objects tree.
 * Fixes duplicating children objects on a tree copy/paste.
@@ -272,7 +272,7 @@ title: Change Log
 * Adds onWorldBounds property to the Arcade Physics Body.
 * The Add Script Node dialog groups scripts by folder and node modules.
 * The Blocks view groups the scripts by folder and node modules.
-* Allows custom display format of prefab instances, using ${} and #{} expressions.
+* Allows custom display format of prefab instances, using `${}` and `#{}` expressions.
 * Shows tooltip with prefab property info.
 * Allows setting a Scene Display Name for scenes.
 * Allows setting the Display Name of user components.

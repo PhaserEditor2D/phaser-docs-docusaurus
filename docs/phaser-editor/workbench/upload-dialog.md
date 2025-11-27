@@ -19,7 +19,7 @@ Also, you can select a folder in the [Files view](./files-view), right-click, an
 
 When the files are uploaded to the project, they are selected in the [Files view](./files-view) and the [Inspector view](./inspector-view) shows the **Asset Pack Entry** section. The **Asset Pack Entry** section allows you to add new files to an Asset Pack file, which makes it ready for using the assets in the Scene Editor.
 
-In Phaser Editor, you must declare the assets in an Asset Pack manifest so the engine can load them. The Asset Pack manifest is a JSON file that contains the list of assets. Learn more about the [Asset Pack manifest](../asset-pack-editor) and about how you can [import the files](../asset-pack-editor/add-file#importing-from-the-files-view).
+In Phaser Editor, you must declare the assets in an Asset Pack manifest so the engine can load them. The Asset Pack manifest is a JSON file that contains the list of assets. Learn more about the [Asset Pack manifest](../asset-pack-editor/intro) and about how you can [import the files](../asset-pack-editor/add-file#importing-from-the-files-view).
 
 ![Add files to the asset pack](https://cdn.phaser.io/editor-docs/upload-asset-pack-section-20240903.webp)
 

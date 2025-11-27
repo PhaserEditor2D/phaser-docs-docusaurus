@@ -3,7 +3,7 @@ slug: spine-animations-assets-preview
 title: Spine assets preview
 ---
 
-There are different contexts in Phaser Editor where there are [Spine](https://esotericsoftware.com) assets and you can preview them: in the [Asset Pack Editor](../../asset-pack-editor) and the Blocks view of the Scene Editor.
+There are different contexts in Phaser Editor where there are [Spine](https://esotericsoftware.com) assets and you can preview them: in the [Asset Pack Editor](../../asset-pack-editor/intro) and the Blocks view of the Scene Editor.
 
 For displaying and inspecting Spine objects, the [Spine Phaser runtime](https://esotericsoftware.com/spine-phaser) requires the skeleton data file and the atlas files. If you follow the default [Spine](https://esotericsoftware.com) assets [naming rules](spine-animations-loading#spine-assets-default-naming-rules), then Phaser Editor can build the skeleton instances and preview them.
 
@@ -11,13 +11,13 @@ In the next sections we explain it in details.
 
 ## Preview Spine atlas assets
 
-The [Asset Pack Editor](../../asset-pack-editor) shows the [Spine](https://esotericsoftware.com) atlas assets you add to an [Asset Pack file](../../asset-pack-editor/asset-pack-file). If you select it in the editor, the Inspector view shows you all the atlas frames:
+The [Asset Pack Editor](../../asset-pack-editor/intro) shows the [Spine](https://esotericsoftware.com) atlas assets you add to an [Asset Pack file](../../asset-pack-editor/asset-pack-file). If you select it in the editor, the Inspector view shows you all the atlas frames:
 
 ![Atlas preview](https://cdn.phaser.io/editor-docs/spine-animations-atlas-preview-20230924.webp)
 
 ## Preview Spine skeleton and animation data
 
-You can select a [Spine](https://esotericsoftware.com) skeleton data in the [Asset Pack Editor](../../asset-pack-editor) or the Blocks view of the Scene Editor. In both cases, the Inspector view shows two sections of properties: the **Spine Skeleton** and the **Spine Preview**.
+You can select a [Spine](https://esotericsoftware.com) skeleton data in the [Asset Pack Editor](../../asset-pack-editor/intro) or the Blocks view of the Scene Editor. In both cases, the Inspector view shows two sections of properties: the **Spine Skeleton** and the **Spine Preview**.
 
 The **Spine Skeleton** shows the **Skeleton Key** and **Preview Atlas Key**. By default it guesses the atlas key from the skeleton key, but you can change it if you need to.
 

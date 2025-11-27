@@ -72,7 +72,7 @@ this.load.animation("my-anims", "assets/animations.json");
 Phaser Editor provides the Animations Editor, to create the animations JSON file. So, the workflow is very simple:
 
 * Create the animations JSON file with the Animations Editor.
-* Import the animations JSON file into an **Asset Pack** file with the [Asset Pack Editor](../asset-pack-editor).
+* Import the animations JSON file into an **Asset Pack** file with the [Asset Pack Editor](../asset-pack-editor/intro).
 * Play the animations in your code, with the [play()](https://docs.phaser.io/api-documentation/class/gameobjects-sprite#play) method or by using the [animation properties](../scene-editor/game-objects/common-object-properties#animation-properties) of the sprites or [user components and prefabs](../scene-editor/prefabs/prefab-user-properties#animation-key-property-type).
 
 In the next section we cover all aspects of the Animations Editor.

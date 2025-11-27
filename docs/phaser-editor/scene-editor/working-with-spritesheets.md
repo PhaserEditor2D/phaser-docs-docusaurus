@@ -5,7 +5,7 @@ title: Working with sprite-sheets
 
 There are multiple ways of packing "sprite images" into a single image. One of the most popular is the sprite-sheet.
 
-In Phaser Editor you can define a sprite-sheet asset in the [Asset Pack Editor](../asset-pack-editor/):
+In Phaser Editor you can define a sprite-sheet asset in the [Asset Pack Editor](../asset-pack-editor/intro):
 
 ![Define sprite-sheet](https://cdn.phaser.io/editor-docs/scene-editor-spritesheet-define-20240530.webp)
 

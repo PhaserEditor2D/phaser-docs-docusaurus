@@ -9,7 +9,7 @@ In Phaser Editor there are two workflows for making animations in your game:
 
 ## Workflow 1
 
-Using the [Animations Editor](../animations-editor). It gets the image frames from an [Asset Pack file](../asset-pack-editor/asset-pack-file) and groups the frames into animations. You can set different properties to the animation, like the frame rate, repetitions, delay, etc… and finally, you load the animation file into the [Asset Pack file](../asset-pack-editor/asset-pack-file).
+Using the [Animations Editor](../animations-editor/intro). It gets the image frames from an [Asset Pack file](../asset-pack-editor/asset-pack-file) and groups the frames into animations. You can set different properties to the animation, like the frame rate, repetitions, delay, etc… and finally, you load the animation file into the [Asset Pack file](../asset-pack-editor/asset-pack-file).
 
 ## Workflow 2
 
@@ -17,7 +17,7 @@ Exporting the animations from the Asesprite software. It outputs Asperite animat
 
 ## Finally
 
-Once the animation assets (produced by the [Animations Editor](../animations-editor) or Asesprite) are defined in the [Asset Pack file](../asset-pack-editor/asset-pack-file), you can use them in different tools of the Scene Editor:
+Once the animation assets (produced by the [Animations Editor](../animations-editor/intro) or Asesprite) are defined in the [Asset Pack file](../asset-pack-editor/asset-pack-file), you can use them in different tools of the Scene Editor:
 
 - The animation blocks in the Blocks view. You can create a Sprite game object by [dropping an animation block into the scene](./game-objects/sprite-object).
   ![Create sprite from animation block](https://cdn.phaser.io/editor-docs/scene-editor-sprite-create-from-animation-block-20240917.webp)
@@ -36,7 +36,7 @@ Phaser Editor provides a dialog for previewing the sprite animations:
 
 You can open this dialog in different contexts:
 
-* In the [Asset Pack Editor](../asset-pack-editor), when you select a Sprite animation in the Outline view:
+* In the [Asset Pack Editor](../asset-pack-editor/intro), when you select a Sprite animation in the Outline view:
   
   ![Preview in the Asset Pack editor.](https://cdn.phaser.io/editor-docs/aseprite-preview-asset-pack-20231102.webp)
 
@@ -103,7 +103,7 @@ To export a compatible JSON file in Aseprite, please do the following:
 - On the Layout tab: 2a. Set the “Sheet type” to “Packed” 2b. Set the “Constraints” to “None” 2c. Check the “Merge Duplicates” checkbox
 - On the Sprite tab: 3a. Set “Layers” to “Visible layers” 3b. Set “Frames” to “All frames”, unless you only wish to export a sub-set of tags
 - On the Borders tab: 4a. Check the “Trim Sprite” and “Trim Cells” options 4b. Ensure “Border Padding”, “Spacing” and “Inner Padding” are all 0 (1 is usually enough)
-- On the Output tab: 5a. Check “Output File”, give your image a name and make sure you choose “png files” as the file type 5b. Check “JSON Data” and give your json file a name 5c. The JSON Data type can be either a Hash or Array, Phaser doesn’t mind. 5d. Make sure “Tags” is checked in the Meta options 5e. In the “Item Filename” input box, make sure it says just “{frame}” and nothing more.
+- On the Output tab: 5a. Check “Output File”, give your image a name and make sure you choose “png files” as the file type 5b. Check “JSON Data” and give your json file a name 5c. The JSON Data type can be either a Hash or Array, Phaser doesn’t mind. 5d. Make sure “Tags” is checked in the Meta options 5e. In the “Item Filename” input box, make sure it says just `{frame}` and nothing more.
 - Click export.
 
 This was tested with Aseprite 1.2.25.

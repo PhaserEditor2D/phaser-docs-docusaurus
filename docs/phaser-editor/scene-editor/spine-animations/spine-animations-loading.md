@@ -29,7 +29,7 @@ preload() {
 }
 ```
 
-However, Phaser Editor provides the [Asset Pack Editor](../../asset-pack-editor), which is a visual tool for loading the assets into the Phaser games.
+However, Phaser Editor provides the [Asset Pack Editor](../../asset-pack-editor/intro), which is a visual tool for loading the assets into the Phaser games.
 
 The workflow for importing the [Spine](https://esotericsoftware.com) assets into the Asset Pack file is:
 
@@ -49,7 +49,7 @@ The workflow for importing the [Spine](https://esotericsoftware.com) assets into
 
   ![Select the atlas file.](https://cdn.phaser.io/editor-docs/spine-animations-select-atlas-file-20230923.webp)![Add the atlas file to the asset pack.](https://cdn.phaser.io/editor-docs/spine-animations-add-atlas-to-pack-20230923.webp)
   
-* Open the `asset-pack.json` file in the [Asset Pack Editor](../../asset-pack-editor) and check the Spine assets are there:
+* Open the `asset-pack.json` file in the [Asset Pack Editor](../../asset-pack-editor/intro) and check the Spine assets are there:
 
   ![The spine assets in the Asset Pack editor.](https://cdn.phaser.io/editor-docs/spine-animations-asset-pack-20230923.webp)
 

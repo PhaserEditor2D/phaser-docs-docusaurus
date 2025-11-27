@@ -19,7 +19,7 @@ Let’s add an image to the `Level.scene` file created by the **Basic JavaScript
 
    ![Add image](https://cdn.phaser.io/editor-docs/first-steps-add-image-1.webp)
 
-   The `assets/asset-pack.json` file is a Phaser configuration file that contains all the files you can load into a game. The Scene Editor uses this file to access images and other resources. You can add image files to the [Asset Pack file](../asset-pack-editor/asset-pack-file) using the previous method, or by opening the `assets-pack.json` file in the [Asset Pack Editor](../asset-pack-editor).
+   The `assets/asset-pack.json` file is a Phaser configuration file that contains all the files you can load into a game. The Scene Editor uses this file to access images and other resources. You can add image files to the [Asset Pack file](../asset-pack-editor/asset-pack-file) using the previous method, or by opening the `assets-pack.json` file in the [Asset Pack Editor](../asset-pack-editor/intro).
 
 4. Now, in the Blocks view, you will see the new image. Drag the image and drop it into the middle of the scene. Press the `End` key to move the image to the bottom of the scene, or right-click on the image and select the **Edit** → **Move Bottom** option:
 

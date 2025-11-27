@@ -9,7 +9,7 @@ In this chapter, we cover the properties that are common to different game objec
 
 ## Variable properties
 
-The [variable properties]() are introduced by the Scene Editor to be used by the Outline view and the [scene compiler](../scene-compiler).
+The variable properties are introduced by the Scene Editor to be used by the Outline view and the [scene compiler](../scene-compiler).
 
 ### Name property
 
@@ -134,7 +134,7 @@ Also, you can change the origin of an object with the [origin manipulator tool](
 
 ## Size properties
 
-The [size properties]() of the object can be modified in the Inspector view or by using the [manipulation tools](../manipulation-tools).
+The size properties of the object can be modified in the Inspector view or by using the [manipulation tools](../manipulation-tools).
 
 ![Size properties.](https://cdn.phaser.io/editor-docs/scene-editor-size-props-20230208.webp)
 
@@ -247,7 +247,7 @@ The animation preview dialog:
 
 ![Animation key preview.](https://cdn.phaser.io/editor-docs/prefab-user-props-animation-key-preview-dialog-20231027.webp)
 
-This dialog searches for animations defined in a [Phaser animations file](../../animations-editor/) or in the [Aseprite](../sprite-animations#aseprite-animation-support) assets included in an [Asset Pack file](../../asset-pack-editor/asset-pack-file).
+This dialog searches for animations defined in a [Phaser animations file](../../animations-editor/intro) or in the [Aseprite](../sprite-animations#aseprite-animation-support) assets included in an [Asset Pack file](../../asset-pack-editor/asset-pack-file).
 
 This is the code the [scene compiler](../scene-compiler) generates for playing the animation:
 
@@ -261,7 +261,7 @@ Or, if you select the **PLAY_REVERSE** action:
 dragon.playReverse("dragon - dragon/Moving Forward");
 ```
 
-When you define the animations in the [Animations Editor](../../animations-editor) or in Asesprite, you configure parameters like repetitions, duration, direction, etc… However, in the scene, you can pass a custom configuration to the [play()](https://docs.phaser.io/api-documentation/class/gameobjects-sprite#play) method. To do this in the Scene Editor you have to check the **Custom Config** parameter.
+When you define the animations in the [Animations Editor](../../animations-editor/intro) or in Asesprite, you configure parameters like repetitions, duration, direction, etc… However, in the scene, you can pass a custom configuration to the [play()](https://docs.phaser.io/api-documentation/class/gameobjects-sprite#play) method. To do this in the Scene Editor you have to check the **Custom Config** parameter.
 
 If the **Custom Config** parameter is selected, then it shows the **Animation Configuration** section. It shows all the parameters you can set to an animation:
 
@@ -281,6 +281,6 @@ dragon.play({
 
 There are a couple of object types in Phaser dedicated to displaying a text. The Scene Editor, for now, supports the BitmapText and Text types.
 
-The [text property]() can be edited in the **Text Content** section of the Inspector view.
+The text property can be edited in the **Text Content** section of the Inspector view.
 
 ![Text property.](https://cdn.phaser.io/editor-docs/scene-editor-text-prop-04162020.webp)

@@ -9,7 +9,7 @@ The common in other videogame creation tools is to provide an asset browser that
 
 The Blocks view displays only the assets, or “blocks”, that can be used in a particular editor.
 
-For example, in the [Asset Pack Editor](../asset-pack-editor), the user adds files to the [Asset Pack file](../asset-pack-editor/asset-pack-file). These files are shown as blocks in the Blocks view, but when a user adds a file to the editor, that file is hidden from the Blocks view  because it is already present there.
+For example, in the [Asset Pack Editor](../asset-pack-editor/intro), the user adds files to the [Asset Pack file](../asset-pack-editor/asset-pack-file). These files are shown as blocks in the Blocks view, but when a user adds a file to the editor, that file is hidden from the Blocks view  because it is already present there.
 
 The Inspector view shows the properties of the elements selected in the Blocks view, or operations you can apply to them.
 

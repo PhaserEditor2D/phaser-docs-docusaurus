@@ -24,7 +24,7 @@ assets/
      ... # helper assets
 ```
 
-The [Asset Pack Editor](../asset-pack-editor) searches for files inside the folder containing the [Asset Pack file](../asset-pack-editor/asset-pack-file), and you can make it more effective if the structure of the project is well organized.
+The [Asset Pack Editor](../asset-pack-editor/intro) searches for files inside the folder containing the [Asset Pack file](../asset-pack-editor/asset-pack-file), and you can make it more effective if the structure of the project is well organized.
 
 [Learn how to add entries to an Asset Pack file](add-file)
 

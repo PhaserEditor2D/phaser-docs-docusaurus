@@ -60,7 +60,7 @@ this.add.text(x, y, "Hello World", {
 });
 ```
 
-With Phaser Editor the workflow is same, you can load the font in the [Asset Pack editor](../../asset-pack-editor/) and use it in the **Font Family** property.
+With Phaser Editor the workflow is same, you can load the font in the [Asset Pack editor](../../asset-pack-editor/intro) and use it in the **Font Family** property.
 
 You can follow this steps:
 

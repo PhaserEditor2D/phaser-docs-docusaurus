@@ -25,11 +25,11 @@ Let’s dive in and start creating incredible games together!
 
 ### Asset Pack Editor
 
-The [Asset Pack Editor](../asset-pack-editor) allows you to import the asset files into an [Asset Pack file](../asset-pack-editor/asset-pack-file). This pack file is used by other components of the IDE, like the Scene Editor and is a built-in Phaser format. This means, that you can load it in any Phaser game, no matter if it was created by Phaser Editor or another tool.
+The [Asset Pack Editor](../asset-pack-editor/intro) allows you to import the asset files into an [Asset Pack file](../asset-pack-editor/asset-pack-file). This pack file is used by other components of the IDE, like the Scene Editor and is a built-in Phaser format. This means, that you can load it in any Phaser game, no matter if it was created by Phaser Editor or another tool.
 
-Often, Phaser game developers have to write by hand the code to load the asset files. With the [Asset Pack Editor](../asset-pack-editor) this process is fully visual and assisted.
+Often, Phaser game developers have to write by hand the code to load the asset files. With the [Asset Pack Editor](../asset-pack-editor/intro) this process is fully visual and assisted.
 
-[Learn more about the Asset Pack Editor](../asset-pack-editor)
+[Learn more about the Asset Pack Editor](../asset-pack-editor/intro)
 
 ![Asset Pack Editor](https://cdn.phaser.io/editor-docs/asset-pack-editor-overview-20241005.webp)
 
@@ -47,25 +47,25 @@ This a quick index of the main features:
 - [Sprite animations](../scene-editor/sprite-animations) 
 - [Tilemaps](../scene-editor/game-objects/editable-tilemap-object)
 - [Arcade physics](../scene-editor/arcade-physics/)
-- [Shader effects](../scene-editor/shader-effects)
+- [Filters](../scene-editor/filters)
 - [Spine animations](../scene-editor/spine-animations)
 - [Particle emitters](../scene-editor/game-objects/particle-emitter-object)
 - [Prefabs](../scene-editor/prefabs)
 - [User components](../scene-editor/user-components)
 - [Script nodes](../scene-editor/script-node)
-- [Layout tools](../scene-editor//layout-tools)
+- [Layout tools](../scene-editor/layout-tools)
 
 The Scene Editor is a visual tool and uses a custom scene format, but it does not hide the Phaser code. You can see the code of the scene and edit it directly in the editor or an external JavaScript editor like [Visual Studio Code](https://code.visualstudio.com).
 
-[Learn more about the Scene Editor](../scene-editor)
+[Learn more about the Scene Editor](../scene-editor/intro)
 
 ![Scene Editor overview](https://cdn.phaser.io/editor-docs/welcome-scene-editor-overview-20241005.webp)
 
 ### Animations Editor
 
-The [Animations Editor](../animations-editor) helps to create sprite-based animations. It creates a JSON file that can be loaded into the game using the [Phaser Loader API](https://docs.phaser.io/api-documentation/class/loader-loaderplugin#__animation) or using the [Asset Pack Editor](../asset-pack-editor).
+The [Animations Editor](../animations-editor/intro) helps to create sprite-based animations. It creates a JSON file that can be loaded into the game using the [Phaser Loader API](https://docs.phaser.io/api-documentation/class/loader-loaderplugin#__animation) or using the [Asset Pack Editor](../asset-pack-editor/intro).
 
-A handy tool provided by the [Animations Editor](../animations-editor) is the [automatic creation of the animations](../animations-editor/auto-build-animations).
+A handy tool provided by the [Animations Editor](../animations-editor/intro) is the [automatic creation of the animations](../animations-editor/auto-build-animations).
 
 ![Animations Editor](https://cdn.phaser.io/editor-docs/welcome-animations-editor-overview.webp)
 
@@ -79,7 +79,7 @@ However, many users may want to try the editor just as it is and quickly create 
 
 You can edit the code of your game and get nice features like auto-completion across multiple files, an outline of the code, documentation of the language elements, and others.
 
-[Learn more about the Code Editor](../code-editor)
+[Learn more about the Code Editor](../code-editor/intro)
 
 ![JavaScript code editor](https://cdn.phaser.io/editor-docs/welcome-code-editor-20241005.webp)
 

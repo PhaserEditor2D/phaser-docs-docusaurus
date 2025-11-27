@@ -8,7 +8,7 @@ Before you can use a file in your game, you must create a configuration entry fo
 You can import a file using the Asset Pack Editor’s [Main toolbar](#importing-using-the-main-toolbar) or [Blocks view](#importing-from-the-blocks-view),
 or using the [Files view](#importing-from-the-files-view). We’ll discuss each of these in the following sections.
 
-You can un-import a file, removing its [Asset Pack file](../asset-pack-editor/asset-pack-file) entry, by pressing the `Delete` key in the [Asset Pack Editor](../asset-pack-editor) or the [Outline view](./outline-view), or from their context menus.
+You can un-import a file, removing its [Asset Pack file](../asset-pack-editor/asset-pack-file) entry, by pressing the `Delete` key in the [Asset Pack Editor](../asset-pack-editor/intro) or the [Outline view](./outline-view), or from their context menus.
 
 ## Importing using the Main toolbar
 
@@ -36,7 +36,7 @@ These are the steps:
 
 The Blocks view is a general-purpose view that connects with the active editor and provides the “blocks” needed to build the objects of the editor.
 
-When the [Asset Pack Editor](../asset-pack-editor) is active, the Blocks view shows the files that are candidates to be imported. A file is a candidate to be imported if:
+When the [Asset Pack Editor](../asset-pack-editor/intro) is active, the Blocks view shows the files that are candidates to be imported. A file is a candidate to be imported if:
 
 - The file belongs to the folder, or sub-folder, of the [Asset Pack file](../asset-pack-editor/asset-pack-file) that is the input of the editor (unless you disable this restriction, as discussed at the end of this section).
 - The file is not present in any other [Asset Pack file](../asset-pack-editor/asset-pack-file) in the project.
@@ -65,13 +65,13 @@ As we mentioned before, the Blocks view only shows the files in the same folder 
 
 ## Importing from the Files view
 
-Importing from the Files view is very similar to importing from the Blocks view, but you don’t need to open the [Asset Pack Editor](../asset-pack-editor).
+Importing from the Files view is very similar to importing from the Blocks view, but you don’t need to open the [Asset Pack Editor](../asset-pack-editor/intro).
 
-Whether or not the [Asset Pack Editor](../asset-pack-editor) is active, you can select a one or more file in the Files view and, in the **Asset Pack Entry** section of the Inspector view, select the option to import the file into an existent [Asset Pack file](../asset-pack-editor/asset-pack-file) or a new one.
+Whether or not the [Asset Pack Editor](../asset-pack-editor/intro) is active, you can select a one or more file in the Files view and, in the **Asset Pack Entry** section of the Inspector view, select the option to import the file into an existent [Asset Pack file](../asset-pack-editor/asset-pack-file) or a new one.
 
 ![Import files from the Files view.](https://cdn.phaser.io/editor-docs/asset-pack-editor-import-from-files-view-1-01012022.webp)
 
-If any file you selected in the Files view already has a configuration entry in an [Asset Pack file](../asset-pack-editor/asset-pack-file), then the Inspector view shows a button to open that [Asset Pack file](../asset-pack-editor/asset-pack-file) in the [Asset Pack Editor](../asset-pack-editor).
+If any file you selected in the Files view already has a configuration entry in an [Asset Pack file](../asset-pack-editor/asset-pack-file), then the Inspector view shows a button to open that [Asset Pack file](../asset-pack-editor/asset-pack-file) in the [Asset Pack Editor](../asset-pack-editor/intro).
 
 ![Open Asset Pack file with configuration for the selected files.](https://cdn.phaser.io/editor-docs/asset-pack-editor-import-from-files-view-2-01012022.webp)
 

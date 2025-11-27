@@ -246,7 +246,7 @@ For example, if you had an animation called explode you could listen for the com
 
 `sprite.on('animationcomplete-explode', listener)`
 
-The Event property dialog collects all the animations available in the [animation files](../../animations-editor) of your project and generates the `animationcomplete-key` events:
+The Event property dialog collects all the animations available in the [animation files](../../animations-editor/intro) of your project and generates the `animationcomplete-key` events:
 
 ![Dynamic animation events.](https://cdn.phaser.io/editor-docs/prefab-user-props-dynamic-animation-events-20230626.webp)
 
