@@ -3,6 +3,8 @@ sidebar_position: 1
 slug: /
 ---
 
-TODO
+Work in progress.
 
-write your Intro page here
+Try with the [Phaser Editor section](./phaser-editor/intro/welcome)
+
+
