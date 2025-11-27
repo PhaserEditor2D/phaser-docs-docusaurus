@@ -1,0 +1,17 @@
+{
+  "PhaserApiSidebar": [
+    {
+      "Phaser API Documentation": [
+        { "type": "doc", "id": "index" },
+        { "type": "doc", "id": "namespace/index" },
+        { "type": "doc", "id": "gameobjects/index" },
+        { "type": "doc", "id": "physics/index" },
+        { "type": "doc", "id": "event/index" },
+        { "type": "doc", "id": "class/index" },
+        { "type": "doc", "id": "function/index" },
+        { "type": "doc", "id": "constant/index" },
+        { "type": "doc", "id": "typedef/index" }
+      ]
+    }
+  ]
+}

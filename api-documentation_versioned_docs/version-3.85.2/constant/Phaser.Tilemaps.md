@@ -1,0 +1,121 @@
+---
+visibility: public
+slug: constant/tilemaps
+title: Tilemaps
+description: Phaser.Tilemaps
+seoTitle: Tilemaps
+seoDescription: Phaser v3.85.2 Documentation for Phaser.Tilemaps
+ogImage: 
+---
+
+## ORTHOGONAL
+
+### ORTHOGONAL: number
+
+
+**Description:**
+
+Orthogonal Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L27](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L27)  
+Since: 3.50.0
+
+
+## ISOMETRIC
+
+### ISOMETRIC: number
+
+
+**Description:**
+
+Isometric Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L37](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L37)  
+Since: 3.50.0
+
+
+## STAGGERED
+
+### STAGGERED: number
+
+
+**Description:**
+
+Staggered Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L47](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L47)  
+Since: 3.50.0
+
+
+## HEXAGONAL
+
+### HEXAGONAL: number
+
+
+**Description:**
+
+Hexagonal Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L57](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L57)  
+Since: 3.50.0
+
+
+## ORTHOGONAL
+
+### ORTHOGONAL: number
+
+
+**Description:**
+
+Orthogonal Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L27](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L27)  
+Since: 3.50.0
+
+
+## ISOMETRIC
+
+### ISOMETRIC: number
+
+
+**Description:**
+
+Isometric Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L37](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L37)  
+Since: 3.50.0
+
+
+## STAGGERED
+
+### STAGGERED: number
+
+
+**Description:**
+
+Staggered Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L47](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L47)  
+Since: 3.50.0
+
+
+## HEXAGONAL
+
+### HEXAGONAL: number
+
+
+**Description:**
+
+Hexagonal Tilemap orientation constant.
+
+
+> Source: [src/tilemaps/const/ORIENTATION_CONST.js#L57](https://github.com/phaserjs/phaser/blob/v3.85.2/src/tilemaps/const/ORIENTATION_CONST.js#L57)  
+Since: 3.50.0
+

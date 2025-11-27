@@ -1,0 +1,23 @@
+---
+visibility: public
+slug: namespace/input-gamepad-configs
+title: Phaser.Input.Gamepad.Configs
+
+seoTitle: Phaser.Input.Gamepad.Configs
+seoDescription: Phaser v3.85.2 Documentation for 
+ogImage: 
+---
+
+
+
+
+Scope: 
+static
+> Source: [src/input/gamepad/configs/index.js#L7](https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/configs/index.js#L7)  
+
+
+# Static functions
+
+- [DUALSHOCK_4](../namespace/input-gamepad-configs-dualshock_4)
+- [SNES_USB](../namespace/input-gamepad-configs-snes_usb)
+- [XBOX_360](../namespace/input-gamepad-configs-xbox_360)

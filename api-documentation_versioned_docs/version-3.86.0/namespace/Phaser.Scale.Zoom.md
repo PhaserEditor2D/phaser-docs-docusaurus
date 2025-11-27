@@ -1,0 +1,86 @@
+---
+visibility: public
+slug: namespace/scale-zoom
+title: Phaser.Scale.Zoom
+
+seoTitle: Phaser.Scale.Zoom
+seoDescription: Phaser v3.86.0 Documentation for 
+ogImage: 
+---
+
+
+
+
+Scope: 
+static
+> Source: [src/scale/const/ZOOM_CONST.js#L7](https://github.com/phaserjs/phaser/blob/v3.86.0/src/scale/const/ZOOM_CONST.js#L7)  
+Since: 3.16.0
+
+# Static functions
+
+## MAX_ZOOM
+
+### MAX_ZOOM: number
+
+
+**Description:**
+
+Calculate the zoom value based on the maximum multiplied game size that will
+
+fit into the parent, or browser window if no parent is set.
+
+
+> Source: [src/scale/const/ZOOM_CONST.js#L57](https://github.com/phaserjs/phaser/blob/v3.86.0/src/scale/const/ZOOM_CONST.js#L57)  
+Since: 3.16.0
+
+
+---
+
+## NO_ZOOM
+
+### NO_ZOOM: number
+
+
+**Description:**
+
+The game canvas will not be zoomed by Phaser.
+
+
+> Source: [src/scale/const/ZOOM_CONST.js#L27](https://github.com/phaserjs/phaser/blob/v3.86.0/src/scale/const/ZOOM_CONST.js#L27)  
+Since: 3.16.0
+
+
+---
+
+## ZOOM_2X
+
+### ZOOM_2X: number
+
+
+**Description:**
+
+The game canvas will be 2x zoomed by Phaser.
+
+
+> Source: [src/scale/const/ZOOM_CONST.js#L37](https://github.com/phaserjs/phaser/blob/v3.86.0/src/scale/const/ZOOM_CONST.js#L37)  
+Since: 3.16.0
+
+
+---
+
+## ZOOM_4X
+
+### ZOOM_4X: number
+
+
+**Description:**
+
+The game canvas will be 4x zoomed by Phaser.
+
+
+> Source: [src/scale/const/ZOOM_CONST.js#L47](https://github.com/phaserjs/phaser/blob/v3.86.0/src/scale/const/ZOOM_CONST.js#L47)  
+Since: 3.16.0
+
+
+---
+

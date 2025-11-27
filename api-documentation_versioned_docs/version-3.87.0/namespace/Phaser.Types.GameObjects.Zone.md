@@ -1,0 +1,31 @@
+---
+visibility: public
+slug: namespace/types-gameobjects-zone
+title: Phaser.Types.GameObjects.Zone
+
+seoTitle: Phaser.Types.GameObjects.Zone
+seoDescription: Phaser v3.87.0 Documentation for 
+ogImage: 
+---
+
+
+
+
+Scope: 
+static
+> Source: [src/gameobjects/zone/typedefs/index.js#L7](https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/zone/typedefs/index.js#L7)  
+
+
+# Static functions
+
+## ZoneConfig
+
+### ZoneConfig
+
+
+> Source: [src/gameobjects/zone/typedefs/ZoneConfig.js#L1](https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/zone/typedefs/ZoneConfig.js#L1)  
+Since: 3.50.0
+
+
+---
+
