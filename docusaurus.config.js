@@ -10,8 +10,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'What is Phaser?',
-  tagline: 'Phaser documentation site',
+  title: 'Phaser Help',
+  tagline: 'Phaser and Phaser Editor documentation',
   favicon: 'img/favicon.webp',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -75,7 +75,12 @@ const config = {
           src: 'img/phaser.png',
         },
         items: [
-          { to: '/phaser/todo', label: 'Phaser', position: 'left' },
+          {
+            type: 'docSidebar',
+            sidebarId: 'PhaserSidebar',
+            position: 'left',
+            label: 'Phaser',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'PhaserEditorSidebar',
