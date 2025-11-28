@@ -70,6 +70,18 @@ const config = {
 				theme: {
 					customCss: './src/css/custom.css',
 				},
+				sitemap: {
+					lastmod: 'date',
+					changefreq: 'weekly',
+					priority: 0.5,
+					ignorePatterns: ['/tags/**'],
+					filename: 'sitemap.xml',
+					createSitemapItems: async (params) => {
+						const { defaultCreateSitemapItems, ...rest } = params;
+						const items = await defaultCreateSitemapItems(rest);
+						return items.filter((item) => !item.url.includes('/page/'));
+					},
+				},
 			}),
 		],
 	],
@@ -108,7 +120,7 @@ const config = {
 				// Public API key: it is safe to commit it
 				apiKey: '12ca89fdb134067504fffdcb16619702',
 
-				indexName: 'phaser_docs_netlify_app_hkczndk7wj_pages',
+				indexName: 'phaser-docs.netlify.app_HKCZNDK7WJ',
 
 				// Optional: see doc section below
 				contextualSearch: true,
