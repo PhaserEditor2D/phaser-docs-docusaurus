@@ -101,6 +101,32 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
+			algolia: {
+				// The application ID provided by Algolia
+				appId: 'HKCZNDK7WJ',
+
+				// Public API key: it is safe to commit it
+				apiKey: '12ca89fdb134067504fffdcb16619702',
+
+				indexName: 'phaser_docs_netlify_app_hkczndk7wj_pages',
+
+				// Optional: see doc section below
+				contextualSearch: true,
+
+				// Optional: Algolia search parameters
+				searchParameters: {},
+
+				// Optional: path for search page that enabled by default (`false` to disable it)
+				searchPagePath: 'search',
+
+				// Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+				insights: false,
+
+				// Optional: whether you want to use the new Ask AI feature (undefined by default)
+				// askAi: 'YOUR_ALGOLIA_ASK_AI_ASSISTANT_ID',
+
+				//... other Algolia params
+			},
 			// Replace with your project's social card
 			image: 'img/docusaurus-social-card.jpg',
 			colorMode: {
