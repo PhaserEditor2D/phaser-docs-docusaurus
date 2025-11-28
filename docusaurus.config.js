@@ -120,7 +120,7 @@ const config = {
 				// Public API key: it is safe to commit it
 				apiKey: '12ca89fdb134067504fffdcb16619702',
 
-				indexName: 'phaser-docs.netlify.app_HKCZNDK7WJ',
+				indexName: 'phaser_docs_netlify_app_hkczndk7wj_pages',
 
 				// Optional: see doc section below
 				contextualSearch: true,
