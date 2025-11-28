@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-gamepad-configs-snes_usb
+slug: input-gamepad-configs-snes_usb
 title: Phaser.Input.Gamepad.Configs.SNES_USB
 
 seoTitle: Phaser.Input.Gamepad.Configs.SNES_USB

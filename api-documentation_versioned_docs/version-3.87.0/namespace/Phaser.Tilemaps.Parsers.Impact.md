@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/tilemaps-parsers-impact
+slug: tilemaps-parsers-impact
 title: Phaser.Tilemaps.Parsers.Impact
 
 seoTitle: Phaser.Tilemaps.Parsers.Impact

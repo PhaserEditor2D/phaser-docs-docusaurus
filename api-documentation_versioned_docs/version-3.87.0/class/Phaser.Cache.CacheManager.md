@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cache-cachemanager
+slug: cache-cachemanager
 title: CacheManager
 description: Phaser.Cache.CacheManager
 seoTitle: Phaser.Cache.CacheManager

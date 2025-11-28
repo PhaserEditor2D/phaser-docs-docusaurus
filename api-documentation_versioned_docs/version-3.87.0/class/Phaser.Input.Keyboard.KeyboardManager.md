@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-keyboard-keyboardmanager
+slug: input-keyboard-keyboardmanager
 title: KeyboardManager
 description: Phaser.Input.Keyboard.KeyboardManager
 seoTitle: Phaser.Input.Keyboard.KeyboardManager

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-emitterop
+slug: gameobjects-particles-emitterop
 title: EmitterOp
 description: Phaser.GameObjects.Particles.EmitterOp
 seoTitle: Phaser.GameObjects.Particles.EmitterOp

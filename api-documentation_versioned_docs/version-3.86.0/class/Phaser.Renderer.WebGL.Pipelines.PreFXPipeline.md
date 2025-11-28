@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-prefxpipeline
+slug: renderer-webgl-pipelines-prefxpipeline
 title: PreFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.PreFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.PreFXPipeline

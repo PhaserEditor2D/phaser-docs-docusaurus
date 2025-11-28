@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-scenepluginfile
+slug: loader-filetypes-scenepluginfile
 title: ScenePluginFile
 description: Phaser.Loader.FileTypes.ScenePluginFile
 seoTitle: Phaser.Loader.FileTypes.ScenePluginFile

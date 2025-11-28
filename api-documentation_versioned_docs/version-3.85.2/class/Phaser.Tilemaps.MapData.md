@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/tilemaps-mapdata
+slug: tilemaps-mapdata
 title: MapData
 description: Phaser.Tilemaps.MapData
 seoTitle: Phaser.Tilemaps.MapData

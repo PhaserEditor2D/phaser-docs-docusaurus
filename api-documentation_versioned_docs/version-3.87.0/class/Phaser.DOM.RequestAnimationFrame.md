@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/dom-requestanimationframe
+slug: dom-requestanimationframe
 title: RequestAnimationFrame
 description: Phaser.DOM.RequestAnimationFrame
 seoTitle: Phaser.DOM.RequestAnimationFrame

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-controller
+slug: fx-controller
 title: Controller
 description: Phaser.FX.Controller
 seoTitle: Phaser.FX.Controller

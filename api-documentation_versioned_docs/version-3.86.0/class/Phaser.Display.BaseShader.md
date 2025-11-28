@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/display-baseshader
+slug: display-baseshader
 title: BaseShader
 description: Phaser.Display.BaseShader
 seoTitle: Phaser.Display.BaseShader

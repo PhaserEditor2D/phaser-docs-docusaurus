@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-math
+slug: types-math
 title: Types.Math
 description: Phaser.Types.Math
 seoTitle: Types.Math

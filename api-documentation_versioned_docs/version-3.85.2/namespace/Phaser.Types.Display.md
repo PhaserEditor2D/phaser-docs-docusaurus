@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-display
+slug: types-display
 title: Phaser.Types.Display
 
 seoTitle: Phaser.Types.Display

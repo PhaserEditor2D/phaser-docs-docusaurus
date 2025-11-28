@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/textures-filtermode
+slug: textures-filtermode
 title: Phaser.Textures.FilterMode
 
 seoTitle: Phaser.Textures.FilterMode

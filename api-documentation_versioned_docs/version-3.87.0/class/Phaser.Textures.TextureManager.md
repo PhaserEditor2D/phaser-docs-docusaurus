@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/textures-texturemanager
+slug: textures-texturemanager
 title: TextureManager
 description: Phaser.Textures.TextureManager
 seoTitle: Phaser.Textures.TextureManager

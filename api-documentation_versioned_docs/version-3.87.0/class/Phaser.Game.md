@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/game
+slug: game
 title: Game
 description: Phaser.Game
 seoTitle: Phaser.Game

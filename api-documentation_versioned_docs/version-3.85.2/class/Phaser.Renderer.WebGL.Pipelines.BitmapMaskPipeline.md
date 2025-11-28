@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-bitmapmaskpipeline
+slug: renderer-webgl-pipelines-bitmapmaskpipeline
 title: BitmapMaskPipeline
 description: Phaser.Renderer.WebGL.Pipelines.BitmapMaskPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.BitmapMaskPipeline

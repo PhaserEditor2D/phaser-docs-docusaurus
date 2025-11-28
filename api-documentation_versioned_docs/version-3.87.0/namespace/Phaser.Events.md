@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/events
+slug: events
 title: Phaser.Events
 
 seoTitle: Phaser.Events

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-wrappers-webglprogramwrapper
+slug: renderer-webgl-wrappers-webglprogramwrapper
 title: WebGLProgramWrapper
 description: Phaser.Renderer.WebGL.Wrappers.WebGLProgramWrapper
 seoTitle: Phaser.Renderer.WebGL.Wrappers.WebGLProgramWrapper

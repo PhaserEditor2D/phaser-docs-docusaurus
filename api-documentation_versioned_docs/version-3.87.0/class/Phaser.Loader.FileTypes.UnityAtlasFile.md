@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-unityatlasfile
+slug: loader-filetypes-unityatlasfile
 title: UnityAtlasFile
 description: Phaser.Loader.FileTypes.UnityAtlasFile
 seoTitle: Phaser.Loader.FileTypes.UnityAtlasFile

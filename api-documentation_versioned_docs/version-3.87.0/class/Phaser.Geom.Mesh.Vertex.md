@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-mesh-vertex
+slug: geom-mesh-vertex
 title: Vertex
 description: Phaser.Geom.Mesh.Vertex
 seoTitle: Phaser.Geom.Mesh.Vertex

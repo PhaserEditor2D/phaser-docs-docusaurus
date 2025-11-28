@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/data-events
+slug: data-events
 title: Data.Events
 description: Phaser.Data.Events
 seoTitle: Data.Events

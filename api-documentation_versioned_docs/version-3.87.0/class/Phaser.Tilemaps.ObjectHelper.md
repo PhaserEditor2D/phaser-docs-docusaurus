@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/tilemaps-objecthelper
+slug: tilemaps-objecthelper
 title: ObjectHelper
 description: Phaser.Tilemaps.ObjectHelper
 seoTitle: Phaser.Tilemaps.ObjectHelper

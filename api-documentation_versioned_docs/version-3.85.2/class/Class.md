@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/class
+slug: class
 title: Class
 description: Class
 seoTitle: Class

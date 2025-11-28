@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/input-keyboard-events
+slug: input-keyboard-events
 title: Input.Keyboard.Events
 description: Phaser.Input.Keyboard.Events
 seoTitle: Input.Keyboard.Events

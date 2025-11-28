@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-zones-randomzone
+slug: gameobjects-particles-zones-randomzone
 title: RandomZone
 description: Phaser.GameObjects.Particles.Zones.RandomZone
 seoTitle: Phaser.GameObjects.Particles.Zones.RandomZone

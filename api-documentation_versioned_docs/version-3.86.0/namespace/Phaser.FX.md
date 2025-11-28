@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/fx
+slug: fx
 title: Phaser.FX
 
 seoTitle: Phaser.FX

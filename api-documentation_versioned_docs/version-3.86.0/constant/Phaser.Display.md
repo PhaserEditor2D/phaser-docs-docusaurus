@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/display
+slug: display
 title: Display
 description: Phaser.Display
 seoTitle: Display

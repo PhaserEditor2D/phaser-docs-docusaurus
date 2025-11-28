@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/gameobjects-events
+slug: gameobjects-events
 title: GameObjects.Events
 description: Phaser.GameObjects.Events
 seoTitle: GameObjects.Events

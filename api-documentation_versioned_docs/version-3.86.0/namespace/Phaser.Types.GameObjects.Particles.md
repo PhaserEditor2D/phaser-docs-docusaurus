@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-particles
+slug: types-gameobjects-particles
 title: Phaser.Types.GameObjects.Particles
 
 seoTitle: Phaser.Types.GameObjects.Particles

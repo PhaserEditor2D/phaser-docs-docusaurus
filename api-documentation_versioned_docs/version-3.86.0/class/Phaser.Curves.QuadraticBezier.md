@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/curves-quadraticbezier
+slug: curves-quadraticbezier
 title: QuadraticBezier
 description: Phaser.Curves.QuadraticBezier
 seoTitle: Phaser.Curves.QuadraticBezier

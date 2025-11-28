@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/utils-array-matrix
+slug: utils-array-matrix
 title: Phaser.Utils.Array.Matrix
 
 seoTitle: Phaser.Utils.Array.Matrix

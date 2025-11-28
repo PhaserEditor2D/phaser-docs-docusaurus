@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/display-rgb
+slug: display-rgb
 title: RGB
 description: Phaser.Display.RGB
 seoTitle: Phaser.Display.RGB

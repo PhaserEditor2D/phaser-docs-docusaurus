@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scenes-settings
+slug: scenes-settings
 title: Phaser.Scenes.Settings
 
 seoTitle: Phaser.Scenes.Settings

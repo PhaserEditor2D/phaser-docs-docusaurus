@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/phaser
+slug: phaser
 title: Phaser
 
 seoTitle: Phaser

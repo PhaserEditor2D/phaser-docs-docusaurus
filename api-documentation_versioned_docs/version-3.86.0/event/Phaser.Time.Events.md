@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/time-events
+slug: time-events
 title: Time.Events
 description: Phaser.Time.Events
 seoTitle: Time.Events

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-touch
+slug: input-touch
 title: Phaser.Input.Touch
 
 seoTitle: Phaser.Input.Touch

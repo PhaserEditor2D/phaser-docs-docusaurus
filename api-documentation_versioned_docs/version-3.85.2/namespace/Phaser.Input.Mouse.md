@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-mouse
+slug: input-mouse
 title: Phaser.Input.Mouse
 
 seoTitle: Phaser.Input.Mouse

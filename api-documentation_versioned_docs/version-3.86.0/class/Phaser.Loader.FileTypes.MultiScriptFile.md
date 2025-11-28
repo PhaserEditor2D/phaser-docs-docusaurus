@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-multiscriptfile
+slug: loader-filetypes-multiscriptfile
 title: MultiScriptFile
 description: Phaser.Loader.FileTypes.MultiScriptFile
 seoTitle: Phaser.Loader.FileTypes.MultiScriptFile

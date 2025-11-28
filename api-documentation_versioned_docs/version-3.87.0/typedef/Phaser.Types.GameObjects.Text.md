@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-text
+slug: types-gameobjects-text
 title: Types.GameObjects.Text
 description: Phaser.Types.GameObjects.Text
 seoTitle: Types.GameObjects.Text

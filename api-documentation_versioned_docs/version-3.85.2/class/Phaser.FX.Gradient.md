@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-gradient
+slug: fx-gradient
 title: Gradient
 description: Phaser.FX.Gradient
 seoTitle: Phaser.FX.Gradient

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-circlefxpipeline
+slug: renderer-webgl-pipelines-fx-circlefxpipeline
 title: CircleFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.CircleFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.CircleFXPipeline

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/input
+slug: input
 title: Input
 description: Phaser.Input
 seoTitle: Input

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-shader
+slug: types-gameobjects-shader
 title: Types.GameObjects.Shader
 description: Phaser.Types.GameObjects.Shader
 seoTitle: Types.GameObjects.Shader

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-effects-fade
+slug: cameras-scene2d-effects-fade
 title: Fade
 description: Phaser.Cameras.Scene2D.Effects.Fade
 seoTitle: Phaser.Cameras.Scene2D.Effects.Fade

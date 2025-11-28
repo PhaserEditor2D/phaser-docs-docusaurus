@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/facebookinstantgamesleaderboard
+slug: facebookinstantgamesleaderboard
 title: FacebookInstantGamesLeaderboard
 description: Phaser.FacebookInstantGamesLeaderboard
 seoTitle: Phaser.FacebookInstantGamesLeaderboard

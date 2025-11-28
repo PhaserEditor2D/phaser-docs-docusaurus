@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/blendmodes
+slug: blendmodes
 title: BlendModes
 description: Phaser.BlendModes
 seoTitle: BlendModes

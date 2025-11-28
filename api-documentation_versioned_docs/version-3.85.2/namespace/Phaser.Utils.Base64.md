@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/utils-base64
+slug: utils-base64
 title: Phaser.Utils.Base64
 
 seoTitle: Phaser.Utils.Base64

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/plugins
+slug: plugins
 title: Phaser.Plugins
 
 seoTitle: Phaser.Plugins

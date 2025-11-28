@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display-canvas-smoothing
+slug: display-canvas-smoothing
 title: Phaser.Display.Canvas.Smoothing
 
 seoTitle: Phaser.Display.Canvas.Smoothing

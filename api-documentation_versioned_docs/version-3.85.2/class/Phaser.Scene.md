@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/scene
+slug: scene
 title: Scene
 description: Phaser.Scene
 seoTitle: Phaser.Scene

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-sprite
+slug: gameobjects-sprite
 title: Sprite
 description: Phaser.GameObjects.Sprite
 seoTitle: Phaser.GameObjects.Sprite

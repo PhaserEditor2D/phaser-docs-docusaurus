@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-tilemaps
+slug: types-tilemaps
 title: Types.Tilemaps
 description: Phaser.Types.Tilemaps
 seoTitle: Types.Tilemaps

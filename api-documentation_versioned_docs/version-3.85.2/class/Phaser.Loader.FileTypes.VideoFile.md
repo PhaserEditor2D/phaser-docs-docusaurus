@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-videofile
+slug: loader-filetypes-videofile
 title: VideoFile
 description: Phaser.Loader.FileTypes.VideoFile
 seoTitle: Phaser.Loader.FileTypes.VideoFile

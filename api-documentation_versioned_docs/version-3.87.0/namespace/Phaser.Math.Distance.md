@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-distance
+slug: math-distance
 title: Phaser.Math.Distance
 
 seoTitle: Phaser.Math.Distance

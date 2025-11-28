@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-effects-flash
+slug: cameras-scene2d-effects-flash
 title: Flash
 description: Phaser.Cameras.Scene2D.Effects.Flash
 seoTitle: Phaser.Cameras.Scene2D.Effects.Flash

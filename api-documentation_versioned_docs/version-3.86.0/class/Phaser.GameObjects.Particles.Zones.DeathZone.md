@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-zones-deathzone
+slug: gameobjects-particles-zones-deathzone
 title: DeathZone
 description: Phaser.GameObjects.Particles.Zones.DeathZone
 seoTitle: Phaser.GameObjects.Particles.Zones.DeathZone

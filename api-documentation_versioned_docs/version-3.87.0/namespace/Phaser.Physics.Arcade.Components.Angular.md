@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-angular
+slug: physics-arcade-components-angular
 title: Phaser.Physics.Arcade.Components.Angular
 
 seoTitle: Phaser.Physics.Arcade.Components.Angular

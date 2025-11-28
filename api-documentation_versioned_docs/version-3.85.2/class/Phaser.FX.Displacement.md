@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-displacement
+slug: fx-displacement
 title: Displacement
 description: Phaser.FX.Displacement
 seoTitle: Phaser.FX.Displacement

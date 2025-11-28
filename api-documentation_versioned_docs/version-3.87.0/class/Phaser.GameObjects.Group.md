@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-group
+slug: gameobjects-group
 title: Group
 description: Phaser.GameObjects.Group
 seoTitle: Phaser.GameObjects.Group

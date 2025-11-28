@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-core
+slug: types-core
 title: Phaser.Types.Core
 
 seoTitle: Phaser.Types.Core

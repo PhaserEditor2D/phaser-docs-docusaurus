@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/plugins-plugincache
+slug: plugins-plugincache
 title: Phaser.Plugins.PluginCache
 
 seoTitle: Phaser.Plugins.PluginCache

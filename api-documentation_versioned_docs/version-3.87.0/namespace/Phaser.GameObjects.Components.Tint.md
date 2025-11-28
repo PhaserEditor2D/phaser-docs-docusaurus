@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-tint
+slug: gameobjects-components-tint
 title: Phaser.GameObjects.Components.Tint
 
 seoTitle: Phaser.GameObjects.Components.Tint

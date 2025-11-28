@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-barrelfxpipeline
+slug: renderer-webgl-pipelines-fx-barrelfxpipeline
 title: BarrelFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.BarrelFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.BarrelFXPipeline

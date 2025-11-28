@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-spritesheetfile
+slug: loader-filetypes-spritesheetfile
 title: SpriteSheetFile
 description: Phaser.Loader.FileTypes.SpriteSheetFile
 seoTitle: Phaser.Loader.FileTypes.SpriteSheetFile

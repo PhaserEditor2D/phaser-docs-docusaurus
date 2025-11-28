@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-controls-fixedkeycontrol
+slug: cameras-controls-fixedkeycontrol
 title: FixedKeyControl
 description: Phaser.Cameras.Controls.FixedKeyControl
 seoTitle: Phaser.Cameras.Controls.FixedKeyControl

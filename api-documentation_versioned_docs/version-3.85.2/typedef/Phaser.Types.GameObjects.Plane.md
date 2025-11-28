@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-plane
+slug: types-gameobjects-plane
 title: Types.GameObjects.Plane
 description: Phaser.Types.GameObjects.Plane
 seoTitle: Types.GameObjects.Plane

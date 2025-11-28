@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-inputplugin
+slug: input-inputplugin
 title: InputPlugin
 description: Phaser.Input.InputPlugin
 seoTitle: Phaser.Input.InputPlugin

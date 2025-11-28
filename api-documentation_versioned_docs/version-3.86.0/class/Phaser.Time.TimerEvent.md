@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/time-timerevent
+slug: time-timerevent
 title: TimerEvent
 description: Phaser.Time.TimerEvent
 seoTitle: Phaser.Time.TimerEvent

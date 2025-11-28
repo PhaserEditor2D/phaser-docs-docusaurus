@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-cameramanager
+slug: cameras-scene2d-cameramanager
 title: CameraManager
 description: Phaser.Cameras.Scene2D.CameraManager
 seoTitle: Phaser.Cameras.Scene2D.CameraManager

@@ -1,6 +1,5 @@
 ---
 visibility: public
-slug: event
 title: Events
 description: All Phaser Events
 seoTitle: Events

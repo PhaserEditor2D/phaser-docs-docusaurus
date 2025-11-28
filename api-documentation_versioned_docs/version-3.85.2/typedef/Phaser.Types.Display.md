@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-display
+slug: types-display
 title: Types.Display
 description: Phaser.Types.Display
 seoTitle: Types.Display

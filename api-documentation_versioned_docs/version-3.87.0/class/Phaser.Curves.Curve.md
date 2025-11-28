@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/curves-curve
+slug: curves-curve
 title: Curve
 description: Phaser.Curves.Curve
 seoTitle: Phaser.Curves.Curve

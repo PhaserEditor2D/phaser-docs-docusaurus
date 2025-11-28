@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-extern
+slug: gameobjects-extern
 title: Extern
 description: Phaser.GameObjects.Extern
 seoTitle: Phaser.GameObjects.Extern

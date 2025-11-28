@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/cache
+slug: cache
 title: Phaser.Cache
 
 seoTitle: Phaser.Cache

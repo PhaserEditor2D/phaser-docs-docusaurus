@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/tweens-tweenframedata
+slug: tweens-tweenframedata
 title: TweenFrameData
 description: Phaser.Tweens.TweenFrameData
 seoTitle: Phaser.Tweens.TweenFrameData

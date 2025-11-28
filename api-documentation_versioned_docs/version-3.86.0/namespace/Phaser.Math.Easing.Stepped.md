@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-stepped
+slug: math-easing-stepped
 title: Phaser.Math.Easing.Stepped
 
 seoTitle: Phaser.Math.Easing.Stepped

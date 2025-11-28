@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-factory
+slug: physics-arcade-factory
 title: Factory
 description: Phaser.Physics.Arcade.Factory
 seoTitle: Phaser.Physics.Arcade.Factory

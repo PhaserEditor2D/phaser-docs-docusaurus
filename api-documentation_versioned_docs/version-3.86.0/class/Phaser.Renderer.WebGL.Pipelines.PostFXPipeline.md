@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-postfxpipeline
+slug: renderer-webgl-pipelines-postfxpipeline
 title: PostFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.PostFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.PostFXPipeline

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/core-config
+slug: core-config
 title: Config
 description: Phaser.Core.Config
 seoTitle: Phaser.Core.Config

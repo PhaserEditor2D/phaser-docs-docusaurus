@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-quartic
+slug: math-easing-quartic
 title: Phaser.Math.Easing.Quartic
 
 seoTitle: Phaser.Math.Easing.Quartic

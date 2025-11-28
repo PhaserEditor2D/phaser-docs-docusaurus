@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/animations-events
+slug: animations-events
 title: Phaser.Animations.Events
 
 seoTitle: Phaser.Animations.Events

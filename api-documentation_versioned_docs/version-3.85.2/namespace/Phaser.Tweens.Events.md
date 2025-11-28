@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/tweens-events
+slug: tweens-events
 title: Phaser.Tweens.Events
 
 seoTitle: Phaser.Tweens.Events

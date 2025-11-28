@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/structs-list
+slug: structs-list
 title: List
 description: Phaser.Structs.List
 seoTitle: Phaser.Structs.List

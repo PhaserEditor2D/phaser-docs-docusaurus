@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-setbody
+slug: physics-matter-components-setbody
 title: Phaser.Physics.Matter.Components.SetBody
 
 seoTitle: Phaser.Physics.Matter.Components.SetBody

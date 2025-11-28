@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/phaser
+slug: phaser
 title: Phaser
 description: Phaser
 seoTitle: Phaser

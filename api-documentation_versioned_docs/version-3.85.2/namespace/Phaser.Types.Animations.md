@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-animations
+slug: types-animations
 title: Phaser.Types.Animations
 
 seoTitle: Phaser.Types.Animations

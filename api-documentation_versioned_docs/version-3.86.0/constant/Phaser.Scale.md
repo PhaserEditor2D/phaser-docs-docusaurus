@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/scale
+slug: scale
 title: Scale
 description: Phaser.Scale
 seoTitle: Scale

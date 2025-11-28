@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/create
+slug: create
 title: Phaser.Create
 
 seoTitle: Phaser.Create

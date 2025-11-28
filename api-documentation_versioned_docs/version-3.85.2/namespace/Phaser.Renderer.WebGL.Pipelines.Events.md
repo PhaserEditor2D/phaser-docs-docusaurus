@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/renderer-webgl-pipelines-events
+slug: renderer-webgl-pipelines-events
 title: Phaser.Renderer.WebGL.Pipelines.Events
 
 seoTitle: Phaser.Renderer.WebGL.Pipelines.Events

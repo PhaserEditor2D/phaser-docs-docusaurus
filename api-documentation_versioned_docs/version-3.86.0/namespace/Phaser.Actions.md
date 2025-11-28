@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/actions
+slug: actions
 title: Phaser.Actions
 
 seoTitle: Phaser.Actions

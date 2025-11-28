@@ -1,6 +1,5 @@
 ---
 visibility: public
-slug: constant
 title: Constants
 description: All Phaser Constants
 seoTitle: Constants

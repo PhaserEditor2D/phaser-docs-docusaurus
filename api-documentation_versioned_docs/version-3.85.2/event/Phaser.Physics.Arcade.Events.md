@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/physics-arcade-events
+slug: physics-arcade-events
 title: Physics.Arcade.Events
 description: Phaser.Physics.Arcade.Events
 seoTitle: Physics.Arcade.Events

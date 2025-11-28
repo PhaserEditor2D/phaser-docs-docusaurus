@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-input-keyboard
+slug: types-input-keyboard
 title: Phaser.Types.Input.Keyboard
 
 seoTitle: Phaser.Types.Input.Keyboard

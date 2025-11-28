@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/physics-matter-events
+slug: physics-matter-events
 title: Physics.Matter.Events
 description: Phaser.Physics.Matter.Events
 seoTitle: Physics.Matter.Events

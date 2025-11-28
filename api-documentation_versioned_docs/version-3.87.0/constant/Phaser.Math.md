@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/math
+slug: math
 title: Math
 description: Phaser.Math
 seoTitle: Math

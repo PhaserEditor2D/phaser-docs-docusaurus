@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-singlepipeline
+slug: renderer-webgl-pipelines-singlepipeline
 title: SinglePipeline
 description: Phaser.Renderer.WebGL.Pipelines.SinglePipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.SinglePipeline

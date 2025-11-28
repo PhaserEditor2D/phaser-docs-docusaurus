@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-zones-edgezone
+slug: gameobjects-particles-zones-edgezone
 title: EdgeZone
 description: Phaser.GameObjects.Particles.Zones.EdgeZone
 seoTitle: Phaser.GameObjects.Particles.Zones.EdgeZone

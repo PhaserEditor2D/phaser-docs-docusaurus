@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-gameobjectfactory
+slug: gameobjects-gameobjectfactory
 title: GameObjectFactory
 description: Phaser.GameObjects.GameObjectFactory
 seoTitle: Phaser.GameObjects.GameObjectFactory

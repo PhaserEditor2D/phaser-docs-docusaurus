@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade
+slug: physics-arcade
 title: Phaser.Physics.Arcade
 
 seoTitle: Phaser.Physics.Arcade

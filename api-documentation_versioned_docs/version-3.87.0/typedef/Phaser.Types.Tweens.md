@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-tweens
+slug: types-tweens
 title: Types.Tweens
 description: Phaser.Types.Tweens
 seoTitle: Types.Tweens

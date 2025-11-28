@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-container
+slug: gameobjects-container
 title: Container
 description: Phaser.GameObjects.Container
 seoTitle: Phaser.GameObjects.Container

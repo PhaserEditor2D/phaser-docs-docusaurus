@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-wrappers-webglattriblocationwrapper
+slug: renderer-webgl-wrappers-webglattriblocationwrapper
 title: WebGLAttribLocationWrapper
 description: Phaser.Renderer.WebGL.Wrappers.WebGLAttribLocationWrapper
 seoTitle: Phaser.Renderer.WebGL.Wrappers.WebGLAttribLocationWrapper

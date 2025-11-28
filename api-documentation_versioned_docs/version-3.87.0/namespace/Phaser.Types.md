@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types
+slug: types
 title: Phaser.Types
 
 seoTitle: Phaser.Types

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-mass
+slug: physics-matter-components-mass
 title: Phaser.Physics.Matter.Components.Mass
 
 seoTitle: Phaser.Physics.Matter.Components.Mass

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-multifile
+slug: loader-multifile
 title: MultiFile
 description: Phaser.Loader.MultiFile
 seoTitle: Phaser.Loader.MultiFile

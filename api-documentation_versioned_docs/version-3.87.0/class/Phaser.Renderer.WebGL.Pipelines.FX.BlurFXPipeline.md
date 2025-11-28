@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-blurfxpipeline
+slug: renderer-webgl-pipelines-fx-blurfxpipeline
 title: BlurFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.BlurFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.BlurFXPipeline

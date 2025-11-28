@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-rectangle
+slug: geom-rectangle
 title: Rectangle
 description: Phaser.Geom.Rectangle
 seoTitle: Phaser.Geom.Rectangle

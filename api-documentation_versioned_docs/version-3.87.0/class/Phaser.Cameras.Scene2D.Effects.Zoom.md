@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-effects-zoom
+slug: cameras-scene2d-effects-zoom
 title: Zoom
 description: Phaser.Cameras.Scene2D.Effects.Zoom
 seoTitle: Phaser.Cameras.Scene2D.Effects.Zoom

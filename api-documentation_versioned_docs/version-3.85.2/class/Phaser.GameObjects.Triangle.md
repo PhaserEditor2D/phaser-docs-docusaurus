@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-triangle
+slug: gameobjects-triangle
 title: Triangle
 description: Phaser.GameObjects.Triangle
 seoTitle: Phaser.GameObjects.Triangle

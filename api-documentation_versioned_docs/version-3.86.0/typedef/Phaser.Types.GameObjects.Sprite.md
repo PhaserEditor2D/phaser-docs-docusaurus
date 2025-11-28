@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-sprite
+slug: types-gameobjects-sprite
 title: Types.GameObjects.Sprite
 description: Phaser.Types.GameObjects.Sprite
 seoTitle: Types.GameObjects.Sprite

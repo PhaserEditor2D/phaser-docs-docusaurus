@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-texture
+slug: gameobjects-components-texture
 title: Phaser.GameObjects.Components.Texture
 
 seoTitle: Phaser.GameObjects.Components.Texture

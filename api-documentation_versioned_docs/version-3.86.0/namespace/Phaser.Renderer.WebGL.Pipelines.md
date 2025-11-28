@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/renderer-webgl-pipelines
+slug: renderer-webgl-pipelines
 title: Phaser.Renderer.WebGL.Pipelines
 
 seoTitle: Phaser.Renderer.WebGL.Pipelines

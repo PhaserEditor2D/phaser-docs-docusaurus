@@ -1,6 +1,5 @@
 ---
 visibility: public
-slug: gameobjects
 title: Game Objects
 description: All Phaser Game Objects
 seoTitle: Game Objects

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-collision
+slug: physics-matter-components-collision
 title: Phaser.Physics.Matter.Components.Collision
 
 seoTitle: Phaser.Physics.Matter.Components.Collision

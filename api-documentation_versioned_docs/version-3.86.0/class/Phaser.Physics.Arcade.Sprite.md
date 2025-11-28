@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-sprite
+slug: physics-arcade-sprite
 title: Sprite
 description: Phaser.Physics.Arcade.Sprite
 seoTitle: Phaser.Physics.Arcade.Sprite

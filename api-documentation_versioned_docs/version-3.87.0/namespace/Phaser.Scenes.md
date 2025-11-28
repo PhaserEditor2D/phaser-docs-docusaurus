@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scenes
+slug: scenes
 title: Phaser.Scenes
 
 seoTitle: Phaser.Scenes

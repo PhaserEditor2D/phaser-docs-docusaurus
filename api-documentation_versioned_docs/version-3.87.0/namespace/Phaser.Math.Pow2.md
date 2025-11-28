@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-pow2
+slug: math-pow2
 title: Phaser.Math.Pow2
 
 seoTitle: Phaser.Math.Pow2

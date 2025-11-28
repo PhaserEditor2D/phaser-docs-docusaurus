@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-bloom
+slug: fx-bloom
 title: Bloom
 description: Phaser.FX.Bloom
 seoTitle: Phaser.FX.Bloom

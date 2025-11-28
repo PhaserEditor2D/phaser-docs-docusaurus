@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-renderer-snapshot
+slug: types-renderer-snapshot
 title: Types.Renderer.Snapshot
 description: Phaser.Types.Renderer.Snapshot
 seoTitle: Types.Renderer.Snapshot

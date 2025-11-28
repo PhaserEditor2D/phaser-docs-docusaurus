@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display-masks
+slug: display-masks
 title: Phaser.Display.Masks
 
 seoTitle: Phaser.Display.Masks

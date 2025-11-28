@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-basesoundmanager
+slug: sound-basesoundmanager
 title: BaseSoundManager
 description: Phaser.Sound.BaseSoundManager
 seoTitle: Phaser.Sound.BaseSoundManager

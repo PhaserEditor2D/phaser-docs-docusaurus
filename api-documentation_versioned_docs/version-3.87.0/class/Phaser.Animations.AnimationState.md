@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/animations-animationstate
+slug: animations-animationstate
 title: AnimationState
 description: Phaser.Animations.AnimationState
 seoTitle: Phaser.Animations.AnimationState

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-bitmaptext
+slug: gameobjects-bitmaptext
 title: BitmapText
 description: Phaser.GameObjects.BitmapText
 seoTitle: Phaser.GameObjects.BitmapText

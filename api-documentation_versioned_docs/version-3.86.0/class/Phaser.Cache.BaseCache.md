@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cache-basecache
+slug: cache-basecache
 title: BaseCache
 description: Phaser.Cache.BaseCache
 seoTitle: Phaser.Cache.BaseCache

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-animationjsonfile
+slug: loader-filetypes-animationjsonfile
 title: AnimationJSONFile
 description: Phaser.Loader.FileTypes.AnimationJSONFile
 seoTitle: Phaser.Loader.FileTypes.AnimationJSONFile

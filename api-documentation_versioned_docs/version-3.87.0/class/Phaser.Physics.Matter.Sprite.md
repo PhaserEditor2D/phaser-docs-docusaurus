@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-sprite
+slug: physics-matter-sprite
 title: Sprite
 description: Phaser.Physics.Matter.Sprite
 seoTitle: Phaser.Physics.Matter.Sprite

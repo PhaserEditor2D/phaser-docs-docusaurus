@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-textstyle
+slug: gameobjects-textstyle
 title: TextStyle
 description: Phaser.GameObjects.TextStyle
 seoTitle: Phaser.GameObjects.TextStyle

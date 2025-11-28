@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/create-palettes
+slug: create-palettes
 title: Phaser.Create.Palettes
 
 seoTitle: Phaser.Create.Palettes

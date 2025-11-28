@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-fontfile
+slug: loader-filetypes-fontfile
 title: FontFile
 description: Phaser.Loader.FileTypes.FontFile
 seoTitle: Phaser.Loader.FileTypes.FontFile

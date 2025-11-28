@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/display-masks-bitmapmask
+slug: display-masks-bitmapmask
 title: BitmapMask
 description: Phaser.Display.Masks.BitmapMask
 seoTitle: Phaser.Display.Masks.BitmapMask

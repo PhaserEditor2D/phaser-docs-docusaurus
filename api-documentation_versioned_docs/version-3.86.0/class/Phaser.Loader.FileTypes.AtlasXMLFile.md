@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-atlasxmlfile
+slug: loader-filetypes-atlasxmlfile
 title: AtlasXMLFile
 description: Phaser.Loader.FileTypes.AtlasXMLFile
 seoTitle: Phaser.Loader.FileTypes.AtlasXMLFile

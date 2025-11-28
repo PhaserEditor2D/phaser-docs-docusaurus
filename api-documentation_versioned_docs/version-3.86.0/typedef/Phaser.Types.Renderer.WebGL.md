@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-renderer-webgl
+slug: types-renderer-webgl
 title: Types.Renderer.WebGL
 description: Phaser.Types.Renderer.WebGL
 seoTitle: Types.Renderer.WebGL

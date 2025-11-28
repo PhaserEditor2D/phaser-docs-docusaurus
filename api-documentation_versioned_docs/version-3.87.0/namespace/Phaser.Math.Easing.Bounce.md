@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-bounce
+slug: math-easing-bounce
 title: Phaser.Math.Easing.Bounce
 
 seoTitle: Phaser.Math.Easing.Bounce

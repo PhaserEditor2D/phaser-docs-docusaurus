@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-shadowfxpipeline
+slug: renderer-webgl-pipelines-fx-shadowfxpipeline
 title: ShadowFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.ShadowFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.ShadowFXPipeline

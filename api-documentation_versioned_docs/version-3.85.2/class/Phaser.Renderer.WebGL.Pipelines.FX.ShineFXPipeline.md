@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-shinefxpipeline
+slug: renderer-webgl-pipelines-fx-shinefxpipeline
 title: ShineFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.ShineFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.ShineFXPipeline

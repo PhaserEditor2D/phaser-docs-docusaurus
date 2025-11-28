@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-tilemapjsonfile
+slug: loader-filetypes-tilemapjsonfile
 title: TilemapJSONFile
 description: Phaser.Loader.FileTypes.TilemapJSONFile
 seoTitle: Phaser.Loader.FileTypes.TilemapJSONFile

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-matterphysics
+slug: physics-matter-matterphysics
 title: MatterPhysics
 description: Phaser.Physics.Matter.MatterPhysics
 seoTitle: Phaser.Physics.Matter.MatterPhysics

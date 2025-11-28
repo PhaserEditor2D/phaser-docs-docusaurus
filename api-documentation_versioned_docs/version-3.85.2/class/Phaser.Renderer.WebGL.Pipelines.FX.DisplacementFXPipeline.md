@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-displacementfxpipeline
+slug: renderer-webgl-pipelines-fx-displacementfxpipeline
 title: DisplacementFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.DisplacementFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.DisplacementFXPipeline

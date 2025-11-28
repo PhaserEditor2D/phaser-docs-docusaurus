@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-point
+slug: geom-point
 title: Point
 description: Phaser.Geom.Point
 seoTitle: Phaser.Geom.Point

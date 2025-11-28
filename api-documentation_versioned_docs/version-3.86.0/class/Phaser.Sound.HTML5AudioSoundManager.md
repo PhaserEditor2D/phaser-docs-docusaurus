@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-html5audiosoundmanager
+slug: sound-html5audiosoundmanager
 title: HTML5AudioSoundManager
 description: Phaser.Sound.HTML5AudioSoundManager
 seoTitle: Phaser.Sound.HTML5AudioSoundManager

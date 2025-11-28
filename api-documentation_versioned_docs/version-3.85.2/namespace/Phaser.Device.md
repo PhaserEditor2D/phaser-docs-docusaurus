@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/device
+slug: device
 title: Phaser.Device
 
 seoTitle: Phaser.Device

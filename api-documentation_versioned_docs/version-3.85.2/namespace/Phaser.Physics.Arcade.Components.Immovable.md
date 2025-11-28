@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-immovable
+slug: physics-arcade-components-immovable
 title: Phaser.Physics.Arcade.Components.Immovable
 
 seoTitle: Phaser.Physics.Arcade.Components.Immovable

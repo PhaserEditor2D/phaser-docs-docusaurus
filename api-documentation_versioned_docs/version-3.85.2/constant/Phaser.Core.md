@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/core
+slug: core
 title: Core
 description: Phaser.Core
 seoTitle: Core

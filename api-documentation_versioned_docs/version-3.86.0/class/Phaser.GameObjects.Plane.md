@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-plane
+slug: gameobjects-plane
 title: Plane
 description: Phaser.GameObjects.Plane
 seoTitle: Phaser.GameObjects.Plane

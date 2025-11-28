@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scenes-events
+slug: scenes-events
 title: Phaser.Scenes.Events
 
 seoTitle: Phaser.Scenes.Events

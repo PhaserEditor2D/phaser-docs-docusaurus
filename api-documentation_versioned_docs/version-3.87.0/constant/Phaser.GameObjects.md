@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/gameobjects
+slug: gameobjects
 title: GameObjects
 description: Phaser.GameObjects
 seoTitle: GameObjects

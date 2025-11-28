@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-blitter
+slug: gameobjects-blitter
 title: Blitter
 description: Phaser.GameObjects.Blitter
 seoTitle: Phaser.GameObjects.Blitter

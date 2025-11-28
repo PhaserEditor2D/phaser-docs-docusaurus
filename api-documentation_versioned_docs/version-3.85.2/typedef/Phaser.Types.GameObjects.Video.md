@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-video
+slug: types-gameobjects-video
 title: Types.GameObjects.Video
 description: Phaser.Types.GameObjects.Video
 seoTitle: Types.GameObjects.Video

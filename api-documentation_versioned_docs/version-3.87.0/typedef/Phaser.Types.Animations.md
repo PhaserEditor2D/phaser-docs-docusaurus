@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-animations
+slug: types-animations
 title: Types.Animations
 description: Phaser.Types.Animations
 seoTitle: Types.Animations

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-sound
+slug: types-sound
 title: Phaser.Types.Sound
 
 seoTitle: Phaser.Types.Sound

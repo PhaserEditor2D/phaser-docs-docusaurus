@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-pointlightpipeline
+slug: renderer-webgl-pipelines-pointlightpipeline
 title: PointLightPipeline
 description: Phaser.Renderer.WebGL.Pipelines.PointLightPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.PointLightPipeline

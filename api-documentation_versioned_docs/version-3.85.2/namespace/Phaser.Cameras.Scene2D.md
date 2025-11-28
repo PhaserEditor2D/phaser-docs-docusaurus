@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/cameras-scene2d
+slug: cameras-scene2d
 title: Phaser.Cameras.Scene2D
 
 seoTitle: Phaser.Cameras.Scene2D

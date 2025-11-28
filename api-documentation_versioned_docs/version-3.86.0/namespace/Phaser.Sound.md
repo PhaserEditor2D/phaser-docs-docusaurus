@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/sound
+slug: sound
 title: Phaser.Sound
 
 seoTitle: Phaser.Sound

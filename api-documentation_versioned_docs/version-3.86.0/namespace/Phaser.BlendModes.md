@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/blendmodes
+slug: blendmodes
 title: Phaser.BlendModes
 
 seoTitle: Phaser.BlendModes

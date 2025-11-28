@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/sound-events
+slug: sound-events
 title: Phaser.Sound.Events
 
 seoTitle: Phaser.Sound.Events

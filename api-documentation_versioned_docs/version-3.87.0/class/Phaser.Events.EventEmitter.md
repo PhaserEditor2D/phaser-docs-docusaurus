@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/events-eventemitter
+slug: events-eventemitter
 title: EventEmitter
 description: Phaser.Events.EventEmitter
 seoTitle: Phaser.Events.EventEmitter

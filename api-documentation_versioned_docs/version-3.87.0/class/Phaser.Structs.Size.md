@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/structs-size
+slug: structs-size
 title: Size
 description: Phaser.Structs.Size
 seoTitle: Phaser.Structs.Size

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-input-keyboard
+slug: types-input-keyboard
 title: Types.Input.Keyboard
 description: Phaser.Types.Input.Keyboard
 seoTitle: Types.Input.Keyboard

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-audiofile
+slug: loader-filetypes-audiofile
 title: AudioFile
 description: Phaser.Loader.FileTypes.AudioFile
 seoTitle: Phaser.Loader.FileTypes.AudioFile

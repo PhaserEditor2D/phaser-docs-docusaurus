@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-acceleration
+slug: physics-arcade-components-acceleration
 title: Phaser.Physics.Arcade.Components.Acceleration
 
 seoTitle: Phaser.Physics.Arcade.Components.Acceleration

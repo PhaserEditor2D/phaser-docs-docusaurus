@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/tilemaps-objectlayer
+slug: tilemaps-objectlayer
 title: ObjectLayer
 description: Phaser.Tilemaps.ObjectLayer
 seoTitle: Phaser.Tilemaps.ObjectLayer

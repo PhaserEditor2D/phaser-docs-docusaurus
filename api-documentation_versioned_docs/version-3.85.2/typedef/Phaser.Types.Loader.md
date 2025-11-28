@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-loader
+slug: types-loader
 title: Types.Loader
 description: Phaser.Types.Loader
 seoTitle: Types.Loader

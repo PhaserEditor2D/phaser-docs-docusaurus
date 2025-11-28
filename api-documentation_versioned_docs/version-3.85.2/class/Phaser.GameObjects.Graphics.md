@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-graphics
+slug: gameobjects-graphics
 title: Graphics
 description: Phaser.GameObjects.Graphics
 seoTitle: Phaser.GameObjects.Graphics

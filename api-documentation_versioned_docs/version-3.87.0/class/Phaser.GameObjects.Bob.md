@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-bob
+slug: gameobjects-bob
 title: Bob
 description: Phaser.GameObjects.Bob
 seoTitle: Phaser.GameObjects.Bob

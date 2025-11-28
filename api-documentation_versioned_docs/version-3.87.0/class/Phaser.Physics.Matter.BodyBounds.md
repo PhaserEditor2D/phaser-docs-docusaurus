@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-bodybounds
+slug: physics-matter-bodybounds
 title: BodyBounds
 description: Phaser.Physics.Matter.BodyBounds
 seoTitle: Phaser.Physics.Matter.BodyBounds

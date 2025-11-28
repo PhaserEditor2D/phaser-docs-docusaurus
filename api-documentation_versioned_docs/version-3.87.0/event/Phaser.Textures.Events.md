@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/textures-events
+slug: textures-events
 title: Textures.Events
 description: Phaser.Textures.Events
 seoTitle: Textures.Events

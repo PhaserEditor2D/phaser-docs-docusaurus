@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-enable
+slug: physics-arcade-components-enable
 title: Phaser.Physics.Arcade.Components.Enable
 
 seoTitle: Phaser.Physics.Arcade.Components.Enable

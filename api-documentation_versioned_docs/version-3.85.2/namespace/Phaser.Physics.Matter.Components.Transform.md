@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-transform
+slug: physics-matter-components-transform
 title: Phaser.Physics.Matter.Components.Transform
 
 seoTitle: Phaser.Physics.Matter.Components.Transform

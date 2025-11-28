@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-gamepad-axis
+slug: input-gamepad-axis
 title: Axis
 description: Phaser.Input.Gamepad.Axis
 seoTitle: Phaser.Input.Gamepad.Axis

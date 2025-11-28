@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-factory
+slug: physics-matter-factory
 title: Factory
 description: Phaser.Physics.Matter.Factory
 seoTitle: Phaser.Physics.Matter.Factory

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-origin
+slug: gameobjects-components-origin
 title: Phaser.GameObjects.Components.Origin
 
 seoTitle: Phaser.GameObjects.Components.Origin

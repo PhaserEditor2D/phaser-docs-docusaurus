@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-ellipse
+slug: geom-ellipse
 title: Ellipse
 description: Phaser.Geom.Ellipse
 seoTitle: Phaser.Geom.Ellipse

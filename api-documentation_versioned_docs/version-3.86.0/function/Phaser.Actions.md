@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/actions
+slug: actions
 title: Phaser.Actions
 
 seoTitle: Phaser.Actions

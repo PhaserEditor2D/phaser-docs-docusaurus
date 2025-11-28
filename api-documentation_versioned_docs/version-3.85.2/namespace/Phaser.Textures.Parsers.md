@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/textures-parsers
+slug: textures-parsers
 title: Phaser.Textures.Parsers
 
 seoTitle: Phaser.Textures.Parsers

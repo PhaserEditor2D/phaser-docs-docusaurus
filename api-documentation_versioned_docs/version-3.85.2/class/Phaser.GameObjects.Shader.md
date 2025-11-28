@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-shader
+slug: gameobjects-shader
 title: Shader
 description: Phaser.GameObjects.Shader
 seoTitle: Phaser.GameObjects.Shader

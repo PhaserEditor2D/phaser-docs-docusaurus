@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-transform
+slug: gameobjects-components-transform
 title: Phaser.GameObjects.Components.Transform
 
 seoTitle: Phaser.GameObjects.Components.Transform

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-camera
+slug: cameras-scene2d-camera
 title: Camera
 description: Phaser.Cameras.Scene2D.Camera
 seoTitle: Phaser.Cameras.Scene2D.Camera

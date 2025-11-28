@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/display-colormatrix
+slug: display-colormatrix
 title: ColorMatrix
 description: Phaser.Display.ColorMatrix
 seoTitle: Phaser.Display.ColorMatrix

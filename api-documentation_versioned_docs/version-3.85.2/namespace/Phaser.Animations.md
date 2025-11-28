@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/animations
+slug: animations
 title: Phaser.Animations
 
 seoTitle: Phaser.Animations

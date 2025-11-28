@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-size
+slug: physics-arcade-components-size
 title: Phaser.Physics.Arcade.Components.Size
 
 seoTitle: Phaser.Physics.Arcade.Components.Size

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/gameobjects
+slug: gameobjects
 title: Phaser.GameObjects
 
 seoTitle: Phaser.GameObjects

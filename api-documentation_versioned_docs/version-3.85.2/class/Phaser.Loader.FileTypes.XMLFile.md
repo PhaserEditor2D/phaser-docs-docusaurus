@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-xmlfile
+slug: loader-filetypes-xmlfile
 title: XMLFile
 description: Phaser.Loader.FileTypes.XMLFile
 seoTitle: Phaser.Loader.FileTypes.XMLFile

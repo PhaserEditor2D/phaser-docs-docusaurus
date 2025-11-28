@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-video
+slug: gameobjects-video
 title: Video
 description: Phaser.GameObjects.Video
 seoTitle: Phaser.GameObjects.Video

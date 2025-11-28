@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/dom
+slug: dom
 title: Phaser.DOM
 
 seoTitle: Phaser.DOM

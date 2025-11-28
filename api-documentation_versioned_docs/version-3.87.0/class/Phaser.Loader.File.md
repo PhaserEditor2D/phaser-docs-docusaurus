@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-file
+slug: loader-file
 title: File
 description: Phaser.Loader.File
 seoTitle: Phaser.Loader.File

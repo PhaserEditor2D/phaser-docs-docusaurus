@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/scenes-systems
+slug: scenes-systems
 title: Systems
 description: Phaser.Scenes.Systems
 seoTitle: Phaser.Scenes.Systems

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-expo
+slug: math-easing-expo
 title: Phaser.Math.Easing.Expo
 
 seoTitle: Phaser.Math.Easing.Expo

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-blendmode
+slug: gameobjects-components-blendmode
 title: Phaser.GameObjects.Components.BlendMode
 
 seoTitle: Phaser.GameObjects.Components.BlendMode

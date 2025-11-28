@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/tilemaps
+slug: tilemaps
 title: Phaser.Tilemaps
 
 seoTitle: Phaser.Tilemaps

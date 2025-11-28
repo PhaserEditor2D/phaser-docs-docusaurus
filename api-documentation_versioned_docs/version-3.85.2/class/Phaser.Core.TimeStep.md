@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/core-timestep
+slug: core-timestep
 title: TimeStep
 description: Phaser.Core.TimeStep
 seoTitle: Phaser.Core.TimeStep

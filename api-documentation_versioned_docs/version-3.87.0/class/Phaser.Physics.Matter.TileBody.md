@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-tilebody
+slug: physics-matter-tilebody
 title: TileBody
 description: Phaser.Physics.Matter.TileBody
 seoTitle: Phaser.Physics.Matter.TileBody

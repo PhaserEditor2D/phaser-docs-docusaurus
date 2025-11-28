@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-mesh
+slug: gameobjects-mesh
 title: Mesh
 description: Phaser.GameObjects.Mesh
 seoTitle: Phaser.GameObjects.Mesh

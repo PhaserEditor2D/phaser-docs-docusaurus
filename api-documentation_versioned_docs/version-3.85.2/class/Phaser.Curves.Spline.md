@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/curves-spline
+slug: curves-spline
 title: Spline
 description: Phaser.Curves.Spline
 seoTitle: Phaser.Curves.Spline

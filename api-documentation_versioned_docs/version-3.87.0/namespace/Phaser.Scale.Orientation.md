@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scale-orientation
+slug: scale-orientation
 title: Phaser.Scale.Orientation
 
 seoTitle: Phaser.Scale.Orientation

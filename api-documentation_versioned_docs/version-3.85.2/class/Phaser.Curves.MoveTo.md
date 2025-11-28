@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/curves-moveto
+slug: curves-moveto
 title: MoveTo
 description: Phaser.Curves.MoveTo
 seoTitle: Phaser.Curves.MoveTo

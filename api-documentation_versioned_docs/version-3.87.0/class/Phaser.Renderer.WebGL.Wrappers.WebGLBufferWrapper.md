@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-wrappers-webglbufferwrapper
+slug: renderer-webgl-wrappers-webglbufferwrapper
 title: WebGLBufferWrapper
 description: Phaser.Renderer.WebGL.Wrappers.WebGLBufferWrapper
 seoTitle: Phaser.Renderer.WebGL.Wrappers.WebGLBufferWrapper

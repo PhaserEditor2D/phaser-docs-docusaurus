@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-lightsplugin
+slug: gameobjects-lightsplugin
 title: LightsPlugin
 description: Phaser.GameObjects.LightsPlugin
 seoTitle: Phaser.GameObjects.LightsPlugin

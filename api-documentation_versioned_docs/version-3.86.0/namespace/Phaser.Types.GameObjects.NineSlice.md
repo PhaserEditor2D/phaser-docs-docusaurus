@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-nineslice
+slug: types-gameobjects-nineslice
 title: Phaser.Types.GameObjects.NineSlice
 
 seoTitle: Phaser.Types.GameObjects.NineSlice

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/scenes-sceneplugin
+slug: scenes-sceneplugin
 title: ScenePlugin
 description: Phaser.Scenes.ScenePlugin
 seoTitle: Phaser.Scenes.ScenePlugin

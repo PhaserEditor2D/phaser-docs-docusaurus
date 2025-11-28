@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/scale-events
+slug: scale-events
 title: Scale.Events
 description: Phaser.Scale.Events
 seoTitle: Scale.Events

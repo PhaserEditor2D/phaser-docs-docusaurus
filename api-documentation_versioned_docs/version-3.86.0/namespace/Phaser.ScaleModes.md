@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scalemodes
+slug: scalemodes
 title: Phaser.ScaleModes
 
 seoTitle: Phaser.ScaleModes

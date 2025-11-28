@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-gamepad-configs-dualshock_4
+slug: input-gamepad-configs-dualshock_4
 title: Phaser.Input.Gamepad.Configs.DUALSHOCK_4
 
 seoTitle: Phaser.Input.Gamepad.Configs.DUALSHOCK_4

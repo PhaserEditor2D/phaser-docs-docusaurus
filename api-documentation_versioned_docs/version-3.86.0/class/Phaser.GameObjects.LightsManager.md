@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-lightsmanager
+slug: gameobjects-lightsmanager
 title: LightsManager
 description: Phaser.GameObjects.LightsManager
 seoTitle: Phaser.GameObjects.LightsManager

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/plugins-defaultplugins
+slug: plugins-defaultplugins
 title: Phaser.Plugins.DefaultPlugins
 
 seoTitle: Phaser.Plugins.DefaultPlugins

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-sound
+slug: types-sound
 title: Types.Sound
 description: Phaser.Types.Sound
 seoTitle: Types.Sound

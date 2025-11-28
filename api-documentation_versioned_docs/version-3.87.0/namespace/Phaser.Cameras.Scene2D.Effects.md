@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/cameras-scene2d-effects
+slug: cameras-scene2d-effects
 title: Phaser.Cameras.Scene2D.Effects
 
 seoTitle: Phaser.Cameras.Scene2D.Effects

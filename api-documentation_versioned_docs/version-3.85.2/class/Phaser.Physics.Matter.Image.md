@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-image
+slug: physics-matter-image
 title: Image
 description: Phaser.Physics.Matter.Image
 seoTitle: Phaser.Physics.Matter.Image

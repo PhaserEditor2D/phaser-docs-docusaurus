@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-jsonfile
+slug: loader-filetypes-jsonfile
 title: JSONFile
 description: Phaser.Loader.FileTypes.JSONFile
 seoTitle: Phaser.Loader.FileTypes.JSONFile

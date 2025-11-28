@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/structs
+slug: structs
 title: Phaser.Structs
 
 seoTitle: Phaser.Structs

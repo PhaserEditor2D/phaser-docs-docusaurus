@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-colormatrix
+slug: fx-colormatrix
 title: ColorMatrix
 description: Phaser.FX.ColorMatrix
 seoTitle: Phaser.FX.ColorMatrix

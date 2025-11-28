@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-tilemapimpactfile
+slug: loader-filetypes-tilemapimpactfile
 title: TilemapImpactFile
 description: Phaser.Loader.FileTypes.TilemapImpactFile
 seoTitle: Phaser.Loader.FileTypes.TilemapImpactFile

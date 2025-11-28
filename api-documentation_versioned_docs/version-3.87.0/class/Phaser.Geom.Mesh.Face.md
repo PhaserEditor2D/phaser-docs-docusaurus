@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-mesh-face
+slug: geom-mesh-face
 title: Face
 description: Phaser.Geom.Mesh.Face
 seoTitle: Phaser.Geom.Mesh.Face

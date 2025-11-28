@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-curve
+slug: gameobjects-curve
 title: Curve
 description: Phaser.GameObjects.Curve
 seoTitle: Phaser.GameObjects.Curve

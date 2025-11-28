@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-friction
+slug: physics-matter-components-friction
 title: Phaser.Physics.Matter.Components.Friction
 
 seoTitle: Phaser.Physics.Matter.Components.Friction

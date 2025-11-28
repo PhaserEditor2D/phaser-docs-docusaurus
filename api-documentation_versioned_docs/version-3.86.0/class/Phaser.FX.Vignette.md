@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-vignette
+slug: fx-vignette
 title: Vignette
 description: Phaser.FX.Vignette
 seoTitle: Phaser.FX.Vignette

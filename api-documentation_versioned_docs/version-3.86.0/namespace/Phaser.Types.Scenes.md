@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-scenes
+slug: types-scenes
 title: Phaser.Types.Scenes
 
 seoTitle: Phaser.Types.Scenes

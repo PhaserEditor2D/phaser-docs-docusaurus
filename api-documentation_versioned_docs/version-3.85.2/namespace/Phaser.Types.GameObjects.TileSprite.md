@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-tilesprite
+slug: types-gameobjects-tilesprite
 title: Phaser.Types.GameObjects.TileSprite
 
 seoTitle: Phaser.Types.GameObjects.TileSprite

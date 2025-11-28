@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/scenes-scenemanager
+slug: scenes-scenemanager
 title: SceneManager
 description: Phaser.Scenes.SceneManager
 seoTitle: Phaser.Scenes.SceneManager

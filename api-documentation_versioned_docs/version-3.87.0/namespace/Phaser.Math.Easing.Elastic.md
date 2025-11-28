@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-elastic
+slug: math-easing-elastic
 title: Phaser.Math.Easing.Elastic
 
 seoTitle: Phaser.Math.Easing.Elastic

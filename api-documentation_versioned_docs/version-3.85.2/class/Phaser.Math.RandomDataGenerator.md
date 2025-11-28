@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/math-randomdatagenerator
+slug: math-randomdatagenerator
 title: RandomDataGenerator
 description: Phaser.Math.RandomDataGenerator
 seoTitle: Phaser.Math.RandomDataGenerator

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-particles
+slug: types-gameobjects-particles
 title: Types.GameObjects.Particles
 description: Phaser.Types.GameObjects.Particles
 seoTitle: Types.GameObjects.Particles

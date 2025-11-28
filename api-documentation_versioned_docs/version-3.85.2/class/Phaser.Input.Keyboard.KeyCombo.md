@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-keyboard-keycombo
+slug: input-keyboard-keycombo
 title: KeyCombo
 description: Phaser.Input.Keyboard.KeyCombo
 seoTitle: Phaser.Input.Keyboard.KeyCombo

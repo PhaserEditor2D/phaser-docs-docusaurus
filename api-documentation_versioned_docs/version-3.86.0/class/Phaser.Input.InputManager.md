@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-inputmanager
+slug: input-inputmanager
 title: InputManager
 description: Phaser.Input.InputManager
 seoTitle: Phaser.Input.InputManager

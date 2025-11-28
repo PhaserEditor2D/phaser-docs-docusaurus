@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-rectangle
+slug: gameobjects-rectangle
 title: Rectangle
 description: Phaser.GameObjects.Rectangle
 seoTitle: Phaser.GameObjects.Rectangle

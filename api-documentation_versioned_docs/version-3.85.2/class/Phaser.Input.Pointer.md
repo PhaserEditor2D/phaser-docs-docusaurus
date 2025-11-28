@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-pointer
+slug: input-pointer
 title: Pointer
 description: Phaser.Input.Pointer
 seoTitle: Phaser.Input.Pointer

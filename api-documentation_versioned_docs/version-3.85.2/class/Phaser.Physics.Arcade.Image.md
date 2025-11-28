@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-image
+slug: physics-arcade-image
 title: Image
 description: Phaser.Physics.Arcade.Image
 seoTitle: Phaser.Physics.Arcade.Image

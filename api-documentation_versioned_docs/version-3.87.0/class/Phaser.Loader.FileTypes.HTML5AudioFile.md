@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-html5audiofile
+slug: loader-filetypes-html5audiofile
 title: HTML5AudioFile
 description: Phaser.Loader.FileTypes.HTML5AudioFile
 seoTitle: Phaser.Loader.FileTypes.HTML5AudioFile

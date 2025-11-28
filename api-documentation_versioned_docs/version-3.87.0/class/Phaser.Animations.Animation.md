@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/animations-animation
+slug: animations-animation
 title: Animation
 description: Phaser.Animations.Animation
 seoTitle: Phaser.Animations.Animation

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-visible
+slug: gameobjects-components-visible
 title: Phaser.GameObjects.Components.Visible
 
 seoTitle: Phaser.GameObjects.Components.Visible

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-math
+slug: types-math
 title: Phaser.Types.Math
 
 seoTitle: Phaser.Types.Math

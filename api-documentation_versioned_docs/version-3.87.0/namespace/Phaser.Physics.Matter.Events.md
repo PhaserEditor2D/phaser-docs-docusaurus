@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-events
+slug: physics-matter-events
 title: Phaser.Physics.Matter.Events
 
 seoTitle: Phaser.Physics.Matter.Events

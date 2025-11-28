@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/cameras-scene2d-events
+slug: cameras-scene2d-events
 title: Phaser.Cameras.Scene2D.Events
 
 seoTitle: Phaser.Cameras.Scene2D.Events

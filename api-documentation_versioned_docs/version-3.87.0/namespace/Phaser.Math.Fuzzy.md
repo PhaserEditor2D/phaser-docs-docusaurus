@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-fuzzy
+slug: math-fuzzy
 title: Phaser.Math.Fuzzy
 
 seoTitle: Phaser.Math.Fuzzy

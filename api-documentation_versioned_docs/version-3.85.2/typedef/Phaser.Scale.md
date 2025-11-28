@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/scale
+slug: scale
 title: Scale
 description: Phaser.Scale
 seoTitle: Scale

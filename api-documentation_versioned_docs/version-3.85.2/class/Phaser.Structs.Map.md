@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/structs-map
+slug: structs-map
 title: Map
 description: Phaser.Structs.Map
 seoTitle: Phaser.Structs.Map

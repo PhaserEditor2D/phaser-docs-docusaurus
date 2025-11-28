@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/data
+slug: data
 title: Phaser.Data
 
 seoTitle: Phaser.Data

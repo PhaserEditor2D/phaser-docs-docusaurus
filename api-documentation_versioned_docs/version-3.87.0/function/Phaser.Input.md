@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/input
+slug: input
 title: Phaser.Input
 
 seoTitle: Phaser.Input

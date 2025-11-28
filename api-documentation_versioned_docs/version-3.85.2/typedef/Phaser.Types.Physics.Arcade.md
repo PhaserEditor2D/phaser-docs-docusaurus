@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-physics-arcade
+slug: types-physics-arcade
 title: Types.Physics.Arcade
 description: Phaser.Types.Physics.Arcade
 seoTitle: Types.Physics.Arcade

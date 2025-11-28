@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-image
+slug: gameobjects-image
 title: Image
 description: Phaser.GameObjects.Image
 seoTitle: Phaser.GameObjects.Image

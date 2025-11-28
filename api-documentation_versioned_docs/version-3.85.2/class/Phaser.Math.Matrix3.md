@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/math-matrix3
+slug: math-matrix3
 title: Matrix3
 description: Phaser.Math.Matrix3
 seoTitle: Phaser.Math.Matrix3

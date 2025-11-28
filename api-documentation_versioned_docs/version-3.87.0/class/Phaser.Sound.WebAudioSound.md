@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-webaudiosound
+slug: sound-webaudiosound
 title: WebAudioSound
 description: Phaser.Sound.WebAudioSound
 seoTitle: Phaser.Sound.WebAudioSound

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-htmltexturefile
+slug: loader-filetypes-htmltexturefile
 title: HTMLTextureFile
 description: Phaser.Loader.FileTypes.HTMLTextureFile
 seoTitle: Phaser.Loader.FileTypes.HTMLTextureFile

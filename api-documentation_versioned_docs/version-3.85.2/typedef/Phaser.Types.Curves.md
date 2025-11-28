@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-curves
+slug: types-curves
 title: Types.Curves
 description: Phaser.Types.Curves
 seoTitle: Types.Curves

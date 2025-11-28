@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-rendertarget
+slug: renderer-webgl-rendertarget
 title: RenderTarget
 description: Phaser.Renderer.WebGL.RenderTarget
 seoTitle: Phaser.Renderer.WebGL.RenderTarget

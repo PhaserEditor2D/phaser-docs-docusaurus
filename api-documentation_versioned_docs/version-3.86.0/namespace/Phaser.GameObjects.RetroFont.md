@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-retrofont
+slug: gameobjects-retrofont
 title: Phaser.GameObjects.RetroFont
 
 seoTitle: Phaser.GameObjects.RetroFont

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-wipefxpipeline
+slug: renderer-webgl-pipelines-fx-wipefxpipeline
 title: WipeFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.WipeFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.WipeFXPipeline

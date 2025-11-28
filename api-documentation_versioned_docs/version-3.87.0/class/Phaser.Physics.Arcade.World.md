@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-world
+slug: physics-arcade-world
 title: World
 description: Phaser.Physics.Arcade.World
 seoTitle: Phaser.Physics.Arcade.World

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-textures
+slug: types-textures
 title: Types.Textures
 description: Phaser.Types.Textures
 seoTitle: Types.Textures

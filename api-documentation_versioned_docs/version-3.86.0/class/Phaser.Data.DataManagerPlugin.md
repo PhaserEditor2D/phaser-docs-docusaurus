@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/data-datamanagerplugin
+slug: data-datamanagerplugin
 title: DataManagerPlugin
 description: Phaser.Data.DataManagerPlugin
 seoTitle: Phaser.Data.DataManagerPlugin

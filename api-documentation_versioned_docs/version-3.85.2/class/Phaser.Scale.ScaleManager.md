@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/scale-scalemanager
+slug: scale-scalemanager
 title: ScaleManager
 description: Phaser.Scale.ScaleManager
 seoTitle: Phaser.Scale.ScaleManager

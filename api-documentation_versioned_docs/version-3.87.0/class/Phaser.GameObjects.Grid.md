@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-grid
+slug: gameobjects-grid
 title: Grid
 description: Phaser.GameObjects.Grid
 seoTitle: Phaser.GameObjects.Grid

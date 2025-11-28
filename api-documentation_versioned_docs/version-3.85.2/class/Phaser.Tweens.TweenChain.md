@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/tweens-tweenchain
+slug: tweens-tweenchain
 title: TweenChain
 description: Phaser.Tweens.TweenChain
 seoTitle: Phaser.Tweens.TweenChain

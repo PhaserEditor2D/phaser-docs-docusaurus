@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-effects-rotateto
+slug: cameras-scene2d-effects-rotateto
 title: RotateTo
 description: Phaser.Cameras.Scene2D.Effects.RotateTo
 seoTitle: Phaser.Cameras.Scene2D.Effects.RotateTo

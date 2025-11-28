@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-sprite
+slug: types-gameobjects-sprite
 title: Phaser.Types.GameObjects.Sprite
 
 seoTitle: Phaser.Types.GameObjects.Sprite

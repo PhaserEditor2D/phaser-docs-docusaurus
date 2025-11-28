@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-gravitywell
+slug: gameobjects-particles-gravitywell
 title: GravityWell
 description: Phaser.GameObjects.Particles.GravityWell
 seoTitle: Phaser.GameObjects.Particles.GravityWell

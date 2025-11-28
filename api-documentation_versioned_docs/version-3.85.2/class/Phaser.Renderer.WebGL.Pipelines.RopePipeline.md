@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-ropepipeline
+slug: renderer-webgl-pipelines-ropepipeline
 title: RopePipeline
 description: Phaser.Renderer.WebGL.Pipelines.RopePipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.RopePipeline

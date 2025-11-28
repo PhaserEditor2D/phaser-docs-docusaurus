@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scale
+slug: scale
 title: Phaser.Scale
 
 seoTitle: Phaser.Scale

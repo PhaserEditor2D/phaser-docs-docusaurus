@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/phaser
+slug: phaser
 title: Phaser
 description: Phaser
 seoTitle: Phaser

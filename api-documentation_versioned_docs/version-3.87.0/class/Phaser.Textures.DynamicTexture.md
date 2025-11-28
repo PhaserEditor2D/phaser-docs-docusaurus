@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/textures-dynamictexture
+slug: textures-dynamictexture
 title: DynamicTexture
 description: Phaser.Textures.DynamicTexture
 seoTitle: Phaser.Textures.DynamicTexture

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-shine
+slug: fx-shine
 title: Shine
 description: Phaser.FX.Shine
 seoTitle: Phaser.FX.Shine

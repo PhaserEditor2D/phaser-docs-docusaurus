@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-debug
+slug: physics-arcade-components-debug
 title: Phaser.Physics.Arcade.Components.Debug
 
 seoTitle: Phaser.Physics.Arcade.Components.Debug

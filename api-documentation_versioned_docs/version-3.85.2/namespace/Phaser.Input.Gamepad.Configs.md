@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-gamepad-configs
+slug: input-gamepad-configs
 title: Phaser.Input.Gamepad.Configs
 
 seoTitle: Phaser.Input.Gamepad.Configs

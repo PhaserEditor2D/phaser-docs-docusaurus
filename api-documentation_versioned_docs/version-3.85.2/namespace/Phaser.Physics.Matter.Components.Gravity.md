@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-gravity
+slug: physics-matter-components-gravity
 title: Phaser.Physics.Matter.Components.Gravity
 
 seoTitle: Phaser.Physics.Matter.Components.Gravity

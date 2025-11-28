@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/renderer
+slug: renderer
 title: Renderer
 description: Phaser.Renderer
 seoTitle: Renderer

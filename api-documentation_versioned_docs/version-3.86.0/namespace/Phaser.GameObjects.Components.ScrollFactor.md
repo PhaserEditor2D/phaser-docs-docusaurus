@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-scrollfactor
+slug: gameobjects-components-scrollfactor
 title: Phaser.GameObjects.Components.ScrollFactor
 
 seoTitle: Phaser.GameObjects.Components.ScrollFactor

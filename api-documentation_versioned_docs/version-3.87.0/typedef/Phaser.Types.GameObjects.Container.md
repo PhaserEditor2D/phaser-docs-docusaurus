@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-container
+slug: types-gameobjects-container
 title: Types.GameObjects.Container
 description: Phaser.Types.GameObjects.Container
 seoTitle: Types.GameObjects.Container

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/fx
+slug: fx
 title: FX
 description: Phaser.FX
 seoTitle: FX

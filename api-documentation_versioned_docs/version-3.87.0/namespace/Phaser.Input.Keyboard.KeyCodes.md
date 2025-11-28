@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-keyboard-keycodes
+slug: input-keyboard-keycodes
 title: Phaser.Input.Keyboard.KeyCodes
 
 seoTitle: Phaser.Input.Keyboard.KeyCodes

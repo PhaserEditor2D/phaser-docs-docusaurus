@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-text
+slug: types-gameobjects-text
 title: Phaser.Types.GameObjects.Text
 
 seoTitle: Phaser.Types.GameObjects.Text

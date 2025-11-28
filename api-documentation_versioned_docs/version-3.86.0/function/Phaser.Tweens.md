@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/tweens
+slug: tweens
 title: Phaser.Tweens
 
 seoTitle: Phaser.Tweens

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-geom
+slug: types-geom
 title: Phaser.Types.Geom
 
 seoTitle: Phaser.Types.Geom

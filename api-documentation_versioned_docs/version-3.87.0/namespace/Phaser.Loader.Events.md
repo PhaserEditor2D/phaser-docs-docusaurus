@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/loader-events
+slug: loader-events
 title: Phaser.Loader.Events
 
 seoTitle: Phaser.Loader.Events

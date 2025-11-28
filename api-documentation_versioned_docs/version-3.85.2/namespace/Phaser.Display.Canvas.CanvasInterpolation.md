@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display-canvas-canvasinterpolation
+slug: display-canvas-canvasinterpolation
 title: Phaser.Display.Canvas.CanvasInterpolation
 
 seoTitle: Phaser.Display.Canvas.CanvasInterpolation

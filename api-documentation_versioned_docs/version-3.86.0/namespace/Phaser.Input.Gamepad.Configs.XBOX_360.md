@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-gamepad-configs-xbox_360
+slug: input-gamepad-configs-xbox_360
 title: Phaser.Input.Gamepad.Configs.XBOX_360
 
 seoTitle: Phaser.Input.Gamepad.Configs.XBOX_360

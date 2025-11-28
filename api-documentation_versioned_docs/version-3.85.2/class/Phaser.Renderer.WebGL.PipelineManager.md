@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelinemanager
+slug: renderer-webgl-pipelinemanager
 title: PipelineManager
 description: Phaser.Renderer.WebGL.PipelineManager
 seoTitle: Phaser.Renderer.WebGL.PipelineManager

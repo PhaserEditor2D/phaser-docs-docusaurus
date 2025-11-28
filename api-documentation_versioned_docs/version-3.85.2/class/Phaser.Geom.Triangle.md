@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-triangle
+slug: geom-triangle
 title: Triangle
 description: Phaser.Geom.Triangle
 seoTitle: Phaser.Geom.Triangle

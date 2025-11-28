@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-zone
+slug: types-gameobjects-zone
 title: Phaser.Types.GameObjects.Zone
 
 seoTitle: Phaser.Types.GameObjects.Zone

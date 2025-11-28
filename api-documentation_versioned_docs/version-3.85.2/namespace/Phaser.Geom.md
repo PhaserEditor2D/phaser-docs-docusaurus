@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/geom
+slug: geom
 title: Phaser.Geom
 
 seoTitle: Phaser.Geom

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-loader-filetypes
+slug: types-loader-filetypes
 title: Types.Loader.FileTypes
 description: Phaser.Types.Loader.FileTypes
 seoTitle: Types.Loader.FileTypes

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-interpolation
+slug: math-interpolation
 title: Phaser.Math.Interpolation
 
 seoTitle: Phaser.Math.Interpolation

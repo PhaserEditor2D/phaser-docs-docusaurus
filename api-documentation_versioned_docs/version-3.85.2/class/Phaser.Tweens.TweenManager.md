@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/tweens-tweenmanager
+slug: tweens-tweenmanager
 title: TweenManager
 description: Phaser.Tweens.TweenManager
 seoTitle: Phaser.Tweens.TweenManager

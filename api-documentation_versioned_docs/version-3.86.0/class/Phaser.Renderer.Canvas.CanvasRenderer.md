@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-canvas-canvasrenderer
+slug: renderer-canvas-canvasrenderer
 title: CanvasRenderer
 description: Phaser.Renderer.Canvas.CanvasRenderer
 seoTitle: Phaser.Renderer.Canvas.CanvasRenderer

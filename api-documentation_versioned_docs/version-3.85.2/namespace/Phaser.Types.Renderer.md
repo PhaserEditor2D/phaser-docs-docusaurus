@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-renderer
+slug: types-renderer
 title: Phaser.Types.Renderer
 
 seoTitle: Phaser.Types.Renderer

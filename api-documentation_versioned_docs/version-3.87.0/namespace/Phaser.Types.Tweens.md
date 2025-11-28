@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-tweens
+slug: types-tweens
 title: Phaser.Types.Tweens
 
 seoTitle: Phaser.Types.Tweens

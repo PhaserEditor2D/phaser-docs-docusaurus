@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/tilemaps-imagecollection
+slug: tilemaps-imagecollection
 title: ImageCollection
 description: Phaser.Tilemaps.ImageCollection
 seoTitle: Phaser.Tilemaps.ImageCollection

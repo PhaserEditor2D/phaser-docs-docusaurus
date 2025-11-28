@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display-color-interpolate
+slug: display-color-interpolate
 title: Phaser.Display.Color.Interpolate
 
 seoTitle: Phaser.Display.Color.Interpolate

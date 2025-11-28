@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-plugins
+slug: types-plugins
 title: Types.Plugins
 description: Phaser.Types.Plugins
 seoTitle: Types.Plugins

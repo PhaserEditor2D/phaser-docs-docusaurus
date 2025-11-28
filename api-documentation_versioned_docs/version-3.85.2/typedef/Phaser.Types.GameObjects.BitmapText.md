@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-bitmaptext
+slug: types-gameobjects-bitmaptext
 title: Types.GameObjects.BitmapText
 description: Phaser.Types.GameObjects.BitmapText
 seoTitle: Types.GameObjects.BitmapText

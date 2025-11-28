@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-atlasjsonfile
+slug: loader-filetypes-atlasjsonfile
 title: AtlasJSONFile
 description: Phaser.Loader.FileTypes.AtlasJSONFile
 seoTitle: Phaser.Loader.FileTypes.AtlasJSONFile

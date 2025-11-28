@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/textures
+slug: textures
 title: Phaser.Textures
 
 seoTitle: Phaser.Textures

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-bloomfxpipeline
+slug: renderer-webgl-pipelines-fx-bloomfxpipeline
 title: BloomFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.BloomFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.BloomFXPipeline

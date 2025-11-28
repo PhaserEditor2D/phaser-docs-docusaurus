@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/curves
+slug: curves
 title: Phaser.Curves
 
 seoTitle: Phaser.Curves

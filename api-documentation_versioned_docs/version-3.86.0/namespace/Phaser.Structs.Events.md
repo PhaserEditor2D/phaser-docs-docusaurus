@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/structs-events
+slug: structs-events
 title: Phaser.Structs.Events
 
 seoTitle: Phaser.Structs.Events

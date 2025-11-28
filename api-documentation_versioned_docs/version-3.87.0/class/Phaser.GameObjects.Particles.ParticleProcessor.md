@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-particleprocessor
+slug: gameobjects-particles-particleprocessor
 title: ParticleProcessor
 description: Phaser.GameObjects.Particles.ParticleProcessor
 seoTitle: Phaser.GameObjects.Particles.ParticleProcessor

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/renderer
+slug: renderer
 title: Phaser.Renderer
 
 seoTitle: Phaser.Renderer

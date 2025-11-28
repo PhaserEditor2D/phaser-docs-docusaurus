@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/curves-path
+slug: curves-path
 title: Path
 description: Phaser.Curves.Path
 seoTitle: Phaser.Curves.Path

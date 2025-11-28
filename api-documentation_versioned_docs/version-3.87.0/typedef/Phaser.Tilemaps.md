@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/tilemaps
+slug: tilemaps
 title: Tilemaps
 description: Phaser.Tilemaps
 seoTitle: Tilemaps

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-graphics
+slug: types-gameobjects-graphics
 title: Phaser.Types.GameObjects.Graphics
 
 seoTitle: Phaser.Types.GameObjects.Graphics

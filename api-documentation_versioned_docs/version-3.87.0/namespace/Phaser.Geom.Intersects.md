@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/geom-intersects
+slug: geom-intersects
 title: Phaser.Geom.Intersects
 
 seoTitle: Phaser.Geom.Intersects

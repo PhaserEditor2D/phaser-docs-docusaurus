@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-polygon
+slug: geom-polygon
 title: Polygon
 description: Phaser.Geom.Polygon
 seoTitle: Phaser.Geom.Polygon

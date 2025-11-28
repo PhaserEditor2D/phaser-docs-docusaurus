@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-events
+slug: gameobjects-events
 title: Phaser.GameObjects.Events
 
 seoTitle: Phaser.GameObjects.Events

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-colormatrixfxpipeline
+slug: renderer-webgl-pipelines-fx-colormatrixfxpipeline
 title: ColorMatrixFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.ColorMatrixFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.ColorMatrixFXPipeline

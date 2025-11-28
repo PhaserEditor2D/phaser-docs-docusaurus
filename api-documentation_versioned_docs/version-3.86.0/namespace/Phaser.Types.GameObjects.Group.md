@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-group
+slug: types-gameobjects-group
 title: Phaser.Types.GameObjects.Group
 
 seoTitle: Phaser.Types.GameObjects.Group

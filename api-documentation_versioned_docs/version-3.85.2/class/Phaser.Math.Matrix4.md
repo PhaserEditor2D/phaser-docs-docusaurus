@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/math-matrix4
+slug: math-matrix4
 title: Matrix4
 description: Phaser.Math.Matrix4
 seoTitle: Phaser.Math.Matrix4

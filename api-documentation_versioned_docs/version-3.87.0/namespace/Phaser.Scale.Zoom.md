@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scale-zoom
+slug: scale-zoom
 title: Phaser.Scale.Zoom
 
 seoTitle: Phaser.Scale.Zoom

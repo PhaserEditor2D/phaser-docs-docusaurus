@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/math-quaternion
+slug: math-quaternion
 title: Quaternion
 description: Phaser.Math.Quaternion
 seoTitle: Phaser.Math.Quaternion

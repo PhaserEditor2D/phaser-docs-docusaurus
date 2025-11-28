@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/math-euler
+slug: math-euler
 title: Euler
 description: Phaser.Math.Euler
 seoTitle: Phaser.Math.Euler

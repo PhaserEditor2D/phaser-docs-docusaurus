@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-textfile
+slug: loader-filetypes-textfile
 title: TextFile
 description: Phaser.Loader.FileTypes.TextFile
 seoTitle: Phaser.Loader.FileTypes.TextFile

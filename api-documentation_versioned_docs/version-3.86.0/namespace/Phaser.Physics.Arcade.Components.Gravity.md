@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-gravity
+slug: physics-arcade-components-gravity
 title: Phaser.Physics.Arcade.Components.Gravity
 
 seoTitle: Phaser.Physics.Arcade.Components.Gravity

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/tweens-builders
+slug: tweens-builders
 title: Phaser.Tweens.Builders
 
 seoTitle: Phaser.Tweens.Builders

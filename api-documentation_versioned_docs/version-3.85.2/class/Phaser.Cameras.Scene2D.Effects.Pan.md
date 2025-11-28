@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-effects-pan
+slug: cameras-scene2d-effects-pan
 title: Pan
 description: Phaser.Cameras.Scene2D.Effects.Pan
 seoTitle: Phaser.Cameras.Scene2D.Effects.Pan

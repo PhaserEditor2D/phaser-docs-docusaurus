@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-input
+slug: types-input
 title: Types.Input
 description: Phaser.Types.Input
 seoTitle: Types.Input

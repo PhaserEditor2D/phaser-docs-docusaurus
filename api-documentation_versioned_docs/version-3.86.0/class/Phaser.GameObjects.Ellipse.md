@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-ellipse
+slug: gameobjects-ellipse
 title: Ellipse
 description: Phaser.GameObjects.Ellipse
 seoTitle: Phaser.GameObjects.Ellipse

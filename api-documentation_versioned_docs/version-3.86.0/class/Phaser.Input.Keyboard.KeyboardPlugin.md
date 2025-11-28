@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-keyboard-keyboardplugin
+slug: input-keyboard-keyboardplugin
 title: KeyboardPlugin
 description: Phaser.Input.Keyboard.KeyboardPlugin
 seoTitle: Phaser.Input.Keyboard.KeyboardPlugin

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/animations-animationframe
+slug: animations-animationframe
 title: AnimationFrame
 description: Phaser.Animations.AnimationFrame
 seoTitle: Phaser.Animations.AnimationFrame

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display-bounds
+slug: display-bounds
 title: Phaser.Display.Bounds
 
 seoTitle: Phaser.Display.Bounds

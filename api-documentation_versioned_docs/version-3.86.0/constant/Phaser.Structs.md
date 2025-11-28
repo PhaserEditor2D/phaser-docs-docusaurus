@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/structs
+slug: structs
 title: Structs
 description: Phaser.Structs
 seoTitle: Structs

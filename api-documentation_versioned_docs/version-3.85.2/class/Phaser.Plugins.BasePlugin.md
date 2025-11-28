@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/plugins-baseplugin
+slug: plugins-baseplugin
 title: BasePlugin
 description: Phaser.Plugins.BasePlugin
 seoTitle: Phaser.Plugins.BasePlugin

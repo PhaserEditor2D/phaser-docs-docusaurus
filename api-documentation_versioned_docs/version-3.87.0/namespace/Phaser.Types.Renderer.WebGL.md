@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-renderer-webgl
+slug: types-renderer-webgl
 title: Phaser.Types.Renderer.WebGL
 
 seoTitle: Phaser.Types.Renderer.WebGL

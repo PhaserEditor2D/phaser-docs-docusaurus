@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-html5audiosound
+slug: sound-html5audiosound
 title: HTML5AudioSound
 description: Phaser.Sound.HTML5AudioSound
 seoTitle: Phaser.Sound.HTML5AudioSound

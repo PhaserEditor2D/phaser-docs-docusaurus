@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-displaylist
+slug: gameobjects-displaylist
 title: DisplayList
 description: Phaser.GameObjects.DisplayList
 seoTitle: Phaser.GameObjects.DisplayList

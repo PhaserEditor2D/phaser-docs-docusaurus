@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/structs-rtree
+slug: structs-rtree
 title: RTree
 description: Phaser.Structs.RTree
 seoTitle: Phaser.Structs.RTree

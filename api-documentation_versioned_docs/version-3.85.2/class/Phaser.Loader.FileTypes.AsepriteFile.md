@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-asepritefile
+slug: loader-filetypes-asepritefile
 title: AsepriteFile
 description: Phaser.Loader.FileTypes.AsepriteFile
 seoTitle: Phaser.Loader.FileTypes.AsepriteFile

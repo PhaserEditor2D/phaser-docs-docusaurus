@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/input-events
+slug: input-events
 title: Input.Events
 description: Phaser.Input.Events
 seoTitle: Input.Events

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-video
+slug: types-gameobjects-video
 title: Phaser.Types.GameObjects.Video
 
 seoTitle: Phaser.Types.GameObjects.Video

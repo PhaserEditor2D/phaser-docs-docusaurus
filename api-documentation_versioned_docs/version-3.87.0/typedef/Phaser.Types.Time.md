@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-time
+slug: types-time
 title: Types.Time
 description: Phaser.Types.Time
 seoTitle: Types.Time

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-renderer-snapshot
+slug: types-renderer-snapshot
 title: Phaser.Types.Renderer.Snapshot
 
 seoTitle: Phaser.Types.Renderer.Snapshot

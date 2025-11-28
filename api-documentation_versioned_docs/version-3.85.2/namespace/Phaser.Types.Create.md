@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-create
+slug: types-create
 title: Phaser.Types.Create
 
 seoTitle: Phaser.Types.Create

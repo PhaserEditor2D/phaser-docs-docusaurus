@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/utils-objects
+slug: utils-objects
 title: Phaser.Utils.Objects
 
 seoTitle: Phaser.Utils.Objects

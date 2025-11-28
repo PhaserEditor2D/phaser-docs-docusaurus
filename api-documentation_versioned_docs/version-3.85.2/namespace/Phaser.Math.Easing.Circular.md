@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-circular
+slug: math-easing-circular
 title: Phaser.Math.Easing.Circular
 
 seoTitle: Phaser.Math.Easing.Circular

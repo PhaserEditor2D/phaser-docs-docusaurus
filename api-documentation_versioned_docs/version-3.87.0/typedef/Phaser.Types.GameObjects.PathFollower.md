@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-pathfollower
+slug: types-gameobjects-pathfollower
 title: Types.GameObjects.PathFollower
 description: Phaser.Types.GameObjects.PathFollower
 seoTitle: Types.GameObjects.PathFollower

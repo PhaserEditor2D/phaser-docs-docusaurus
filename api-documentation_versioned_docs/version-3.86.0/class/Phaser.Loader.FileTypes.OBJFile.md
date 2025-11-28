@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-objfile
+slug: loader-filetypes-objfile
 title: OBJFile
 description: Phaser.Loader.FileTypes.OBJFile
 seoTitle: Phaser.Loader.FileTypes.OBJFile

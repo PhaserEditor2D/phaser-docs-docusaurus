@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-friction
+slug: physics-arcade-components-friction
 title: Phaser.Physics.Arcade.Components.Friction
 
 seoTitle: Phaser.Physics.Arcade.Components.Friction

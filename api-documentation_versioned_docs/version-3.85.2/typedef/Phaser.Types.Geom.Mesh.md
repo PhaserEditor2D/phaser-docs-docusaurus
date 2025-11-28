@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-geom-mesh
+slug: types-geom-mesh
 title: Types.Geom.Mesh
 description: Phaser.Types.Geom.Mesh
 seoTitle: Types.Geom.Mesh

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/display-masks-geometrymask
+slug: display-masks-geometrymask
 title: GeometryMask
 description: Phaser.Display.Masks.GeometryMask
 seoTitle: Phaser.Display.Masks.GeometryMask

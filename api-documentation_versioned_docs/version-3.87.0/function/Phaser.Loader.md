@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/loader
+slug: loader
 title: Phaser.Loader
 
 seoTitle: Phaser.Loader

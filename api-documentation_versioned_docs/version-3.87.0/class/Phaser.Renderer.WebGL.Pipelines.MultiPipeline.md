@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-multipipeline
+slug: renderer-webgl-pipelines-multipipeline
 title: MultiPipeline
 description: Phaser.Renderer.WebGL.Pipelines.MultiPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.MultiPipeline

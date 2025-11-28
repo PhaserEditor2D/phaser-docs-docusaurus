@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-cameras-scene2d
+slug: types-cameras-scene2d
 title: Types.Cameras.Scene2D
 description: Phaser.Types.Cameras.Scene2D
 seoTitle: Types.Cameras.Scene2D

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-glslfile
+slug: loader-filetypes-glslfile
 title: GLSLFile
 description: Phaser.Loader.FileTypes.GLSLFile
 seoTitle: Phaser.Loader.FileTypes.GLSLFile

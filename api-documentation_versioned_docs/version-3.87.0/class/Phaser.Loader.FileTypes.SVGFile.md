@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-svgfile
+slug: loader-filetypes-svgfile
 title: SVGFile
 description: Phaser.Loader.FileTypes.SVGFile
 seoTitle: Phaser.Loader.FileTypes.SVGFile

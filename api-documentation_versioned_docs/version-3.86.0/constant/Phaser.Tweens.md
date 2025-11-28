@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: constant/tweens
+slug: tweens
 title: Tweens
 description: Phaser.Tweens
 seoTitle: Tweens

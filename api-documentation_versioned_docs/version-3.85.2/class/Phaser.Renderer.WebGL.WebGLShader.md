@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-webglshader
+slug: renderer-webgl-webglshader
 title: WebGLShader
 description: Phaser.Renderer.WebGL.WebGLShader
 seoTitle: Phaser.Renderer.WebGL.WebGLShader

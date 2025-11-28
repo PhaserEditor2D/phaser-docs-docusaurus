@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-bokeh
+slug: fx-bokeh
 title: Bokeh
 description: Phaser.FX.Bokeh
 seoTitle: Phaser.FX.Bokeh

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display-align-to
+slug: display-align-to
 title: Phaser.Display.Align.To
 
 seoTitle: Phaser.Display.Align.To

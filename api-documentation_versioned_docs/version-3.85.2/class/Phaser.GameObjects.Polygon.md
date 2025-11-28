@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-polygon
+slug: gameobjects-polygon
 title: Polygon
 description: Phaser.GameObjects.Polygon
 seoTitle: Phaser.GameObjects.Polygon

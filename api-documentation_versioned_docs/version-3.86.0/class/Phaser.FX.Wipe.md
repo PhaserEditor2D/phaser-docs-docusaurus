@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-wipe
+slug: fx-wipe
 title: Wipe
 description: Phaser.FX.Wipe
 seoTitle: Phaser.FX.Wipe

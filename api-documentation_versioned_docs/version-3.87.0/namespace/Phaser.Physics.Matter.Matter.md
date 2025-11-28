@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-matter
+slug: physics-matter-matter
 title: Phaser.Physics.Matter.Matter
 
 seoTitle: Phaser.Physics.Matter.Matter

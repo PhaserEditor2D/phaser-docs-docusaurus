@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-mouse-mousemanager
+slug: input-mouse-mousemanager
 title: MouseManager
 description: Phaser.Input.Mouse.MouseManager
 seoTitle: Phaser.Input.Mouse.MouseManager

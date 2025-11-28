@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-webaudiosoundmanager
+slug: sound-webaudiosoundmanager
 title: WebAudioSoundManager
 description: Phaser.Sound.WebAudioSoundManager
 seoTitle: Phaser.Sound.WebAudioSoundManager

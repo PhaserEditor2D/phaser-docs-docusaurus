@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/renderer-webgl-shaders
+slug: renderer-webgl-shaders
 title: Phaser.Renderer.WebGL.Shaders
 
 seoTitle: Phaser.Renderer.WebGL.Shaders

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-pointlight
+slug: gameobjects-pointlight
 title: PointLight
 description: Phaser.GameObjects.PointLight
 seoTitle: Phaser.GameObjects.PointLight

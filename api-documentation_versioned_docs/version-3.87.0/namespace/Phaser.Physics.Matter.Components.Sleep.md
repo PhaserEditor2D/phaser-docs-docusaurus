@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-sleep
+slug: physics-matter-components-sleep
 title: Phaser.Physics.Matter.Components.Sleep
 
 seoTitle: Phaser.Physics.Matter.Components.Sleep

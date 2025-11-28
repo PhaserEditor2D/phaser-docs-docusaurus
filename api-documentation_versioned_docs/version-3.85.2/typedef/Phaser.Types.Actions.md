@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-actions
+slug: types-actions
 title: Types.Actions
 description: Phaser.Types.Actions
 seoTitle: Types.Actions

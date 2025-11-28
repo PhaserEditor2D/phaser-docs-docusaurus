@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/renderer-canvas
+slug: renderer-canvas
 title: Phaser.Renderer.Canvas
 
 seoTitle: Phaser.Renderer.Canvas

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-line
+slug: geom-line
 title: Line
 description: Phaser.Geom.Line
 seoTitle: Phaser.Geom.Line

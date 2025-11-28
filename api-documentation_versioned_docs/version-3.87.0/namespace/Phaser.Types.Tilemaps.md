@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-tilemaps
+slug: types-tilemaps
 title: Phaser.Types.Tilemaps
 
 seoTitle: Phaser.Types.Tilemaps

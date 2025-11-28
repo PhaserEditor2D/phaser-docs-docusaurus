@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/tweens-states
+slug: tweens-states
 title: Phaser.Tweens.States
 
 seoTitle: Phaser.Tweens.States

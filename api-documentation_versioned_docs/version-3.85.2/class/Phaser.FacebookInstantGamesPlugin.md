@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/facebookinstantgamesplugin
+slug: facebookinstantgamesplugin
 title: FacebookInstantGamesPlugin
 description: Phaser.FacebookInstantGamesPlugin
 seoTitle: Phaser.FacebookInstantGamesPlugin

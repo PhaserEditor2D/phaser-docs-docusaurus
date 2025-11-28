@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-touch-touchmanager
+slug: input-touch-touchmanager
 title: TouchManager
 description: Phaser.Input.Touch.TouchManager
 seoTitle: Phaser.Input.Touch.TouchManager

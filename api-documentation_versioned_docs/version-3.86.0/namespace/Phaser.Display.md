@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display
+slug: display
 title: Phaser.Display
 
 seoTitle: Phaser.Display

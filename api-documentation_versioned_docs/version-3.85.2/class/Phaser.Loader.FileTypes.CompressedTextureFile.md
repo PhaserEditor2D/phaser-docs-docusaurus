@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-compressedtexturefile
+slug: loader-filetypes-compressedtexturefile
 title: CompressedTextureFile
 description: Phaser.Loader.FileTypes.CompressedTextureFile
 seoTitle: Phaser.Loader.FileTypes.CompressedTextureFile

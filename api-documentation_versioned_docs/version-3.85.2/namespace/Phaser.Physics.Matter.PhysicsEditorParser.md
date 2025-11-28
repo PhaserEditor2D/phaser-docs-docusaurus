@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-physicseditorparser
+slug: physics-matter-physicseditorparser
 title: Phaser.Physics.Matter.PhysicsEditorParser
 
 seoTitle: Phaser.Physics.Matter.PhysicsEditorParser

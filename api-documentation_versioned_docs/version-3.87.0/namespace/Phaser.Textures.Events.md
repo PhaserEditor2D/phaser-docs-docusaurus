@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/textures-events
+slug: textures-events
 title: Phaser.Textures.Events
 
 seoTitle: Phaser.Textures.Events

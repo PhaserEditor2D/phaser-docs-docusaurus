@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/math
+slug: math
 title: Phaser.Math
 
 seoTitle: Phaser.Math

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-dynamicbitmaptext
+slug: gameobjects-dynamicbitmaptext
 title: DynamicBitmapText
 description: Phaser.GameObjects.DynamicBitmapText
 seoTitle: Phaser.GameObjects.DynamicBitmapText

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-gradientfxpipeline
+slug: renderer-webgl-pipelines-fx-gradientfxpipeline
 title: GradientFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.GradientFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.GradientFXPipeline

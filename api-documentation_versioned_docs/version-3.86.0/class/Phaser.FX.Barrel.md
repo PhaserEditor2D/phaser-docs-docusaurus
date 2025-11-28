@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-barrel
+slug: fx-barrel
 title: Barrel
 description: Phaser.FX.Barrel
 seoTitle: Phaser.FX.Barrel

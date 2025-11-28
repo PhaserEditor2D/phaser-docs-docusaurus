@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-pixelate
+slug: fx-pixelate
 title: Pixelate
 description: Phaser.FX.Pixelate
 seoTitle: Phaser.FX.Pixelate

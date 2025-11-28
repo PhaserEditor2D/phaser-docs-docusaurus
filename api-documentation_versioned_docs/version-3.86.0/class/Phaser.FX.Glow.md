@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-glow
+slug: fx-glow
 title: Glow
 description: Phaser.FX.Glow
 seoTitle: Phaser.FX.Glow

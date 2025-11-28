@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/time-timeline
+slug: time-timeline
 title: Timeline
 description: Phaser.Time.Timeline
 seoTitle: Phaser.Time.Timeline

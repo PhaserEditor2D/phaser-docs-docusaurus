@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-getbounds
+slug: gameobjects-components-getbounds
 title: Phaser.GameObjects.Components.GetBounds
 
 seoTitle: Phaser.GameObjects.Components.GetBounds

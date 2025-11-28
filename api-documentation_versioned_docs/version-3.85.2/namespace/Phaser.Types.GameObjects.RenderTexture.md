@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-rendertexture
+slug: types-gameobjects-rendertexture
 title: Phaser.Types.GameObjects.RenderTexture
 
 seoTitle: Phaser.Types.GameObjects.RenderTexture

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-tilemap
+slug: physics-arcade-tilemap
 title: Phaser.Physics.Arcade.Tilemap
 
 seoTitle: Phaser.Physics.Arcade.Tilemap

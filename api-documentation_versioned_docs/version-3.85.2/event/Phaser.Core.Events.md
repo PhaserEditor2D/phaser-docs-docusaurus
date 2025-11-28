@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/core-events
+slug: core-events
 title: Core.Events
 description: Phaser.Core.Events
 seoTitle: Core.Events

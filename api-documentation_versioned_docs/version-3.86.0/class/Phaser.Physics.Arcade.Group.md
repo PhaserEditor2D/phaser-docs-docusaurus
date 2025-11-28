@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-group
+slug: physics-arcade-group
 title: Group
 description: Phaser.Physics.Arcade.Group
 seoTitle: Phaser.Physics.Arcade.Group

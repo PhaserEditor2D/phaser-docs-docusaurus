@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-nineslice
+slug: types-gameobjects-nineslice
 title: Types.GameObjects.NineSlice
 description: Phaser.Types.GameObjects.NineSlice
 seoTitle: Types.GameObjects.NineSlice

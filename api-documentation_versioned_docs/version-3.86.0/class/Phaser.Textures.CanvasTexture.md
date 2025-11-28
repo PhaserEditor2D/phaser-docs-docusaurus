@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/textures-canvastexture
+slug: textures-canvastexture
 title: CanvasTexture
 description: Phaser.Textures.CanvasTexture
 seoTitle: Phaser.Textures.CanvasTexture

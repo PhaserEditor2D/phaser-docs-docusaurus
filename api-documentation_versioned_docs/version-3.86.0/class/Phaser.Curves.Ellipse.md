@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/curves-ellipse
+slug: curves-ellipse
 title: Ellipse
 description: Phaser.Curves.Ellipse
 seoTitle: Phaser.Curves.Ellipse

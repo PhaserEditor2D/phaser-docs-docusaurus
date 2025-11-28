@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/device
+slug: device
 title: Device
 description: Phaser.Device
 seoTitle: Device

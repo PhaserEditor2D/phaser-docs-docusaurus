@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-components-transformmatrix
+slug: gameobjects-components-transformmatrix
 title: TransformMatrix
 description: Phaser.GameObjects.Components.TransformMatrix
 seoTitle: Phaser.GameObjects.Components.TransformMatrix

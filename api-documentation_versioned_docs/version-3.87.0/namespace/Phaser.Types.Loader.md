@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-loader
+slug: types-loader
 title: Phaser.Types.Loader
 
 seoTitle: Phaser.Types.Loader

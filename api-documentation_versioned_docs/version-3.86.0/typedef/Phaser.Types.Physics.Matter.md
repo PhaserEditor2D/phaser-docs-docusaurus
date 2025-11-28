@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-physics-matter
+slug: types-physics-matter
 title: Types.Physics.Matter
 description: Phaser.Types.Physics.Matter
 seoTitle: Types.Physics.Matter

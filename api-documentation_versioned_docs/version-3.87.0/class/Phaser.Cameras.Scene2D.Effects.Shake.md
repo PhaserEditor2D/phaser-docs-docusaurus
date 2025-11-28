@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-scene2d-effects-shake
+slug: cameras-scene2d-effects-shake
 title: Shake
 description: Phaser.Cameras.Scene2D.Effects.Shake
 seoTitle: Phaser.Cameras.Scene2D.Effects.Shake

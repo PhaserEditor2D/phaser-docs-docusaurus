@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-components-velocity
+slug: physics-matter-components-velocity
 title: Phaser.Physics.Matter.Components.Velocity
 
 seoTitle: Phaser.Physics.Matter.Components.Velocity

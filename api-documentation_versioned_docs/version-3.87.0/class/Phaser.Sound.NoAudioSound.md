@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-noaudiosound
+slug: sound-noaudiosound
 title: NoAudioSound
 description: Phaser.Sound.NoAudioSound
 seoTitle: Phaser.Sound.NoAudioSound

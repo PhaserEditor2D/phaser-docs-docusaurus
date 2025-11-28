@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-vignettefxpipeline
+slug: renderer-webgl-pipelines-fx-vignettefxpipeline
 title: VignetteFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.VignetteFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.VignetteFXPipeline

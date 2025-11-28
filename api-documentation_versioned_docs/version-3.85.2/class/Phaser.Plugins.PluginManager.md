@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/plugins-pluginmanager
+slug: plugins-pluginmanager
 title: PluginManager
 description: Phaser.Plugins.PluginManager
 seoTitle: Phaser.Plugins.PluginManager

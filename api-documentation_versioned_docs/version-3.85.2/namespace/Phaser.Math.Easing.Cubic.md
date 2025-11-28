@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-cubic
+slug: math-easing-cubic
 title: Phaser.Math.Easing.Cubic
 
 seoTitle: Phaser.Math.Easing.Cubic

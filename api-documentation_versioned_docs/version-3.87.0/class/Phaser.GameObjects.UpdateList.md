@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-updatelist
+slug: gameobjects-updatelist
 title: UpdateList
 description: Phaser.GameObjects.UpdateList
 seoTitle: Phaser.GameObjects.UpdateList

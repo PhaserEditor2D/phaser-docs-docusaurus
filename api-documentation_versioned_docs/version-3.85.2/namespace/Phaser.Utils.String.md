@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/utils-string
+slug: utils-string
 title: Phaser.Utils.String
 
 seoTitle: Phaser.Utils.String

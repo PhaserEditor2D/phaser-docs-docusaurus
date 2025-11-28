@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-mask
+slug: gameobjects-components-mask
 title: Phaser.GameObjects.Components.Mask
 
 seoTitle: Phaser.GameObjects.Components.Mask

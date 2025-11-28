@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-gamepad-events
+slug: input-gamepad-events
 title: Phaser.Input.Gamepad.Events
 
 seoTitle: Phaser.Input.Gamepad.Events

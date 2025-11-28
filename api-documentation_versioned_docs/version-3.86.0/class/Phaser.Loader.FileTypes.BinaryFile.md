@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-binaryfile
+slug: loader-filetypes-binaryfile
 title: BinaryFile
 description: Phaser.Loader.FileTypes.BinaryFile
 seoTitle: Phaser.Loader.FileTypes.BinaryFile

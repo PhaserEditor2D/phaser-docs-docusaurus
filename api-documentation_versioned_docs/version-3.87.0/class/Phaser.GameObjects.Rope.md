@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-rope
+slug: gameobjects-rope
 title: Rope
 description: Phaser.GameObjects.Rope
 seoTitle: Phaser.GameObjects.Rope

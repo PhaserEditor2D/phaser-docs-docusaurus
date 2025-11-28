@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-gameobjectcreator
+slug: gameobjects-gameobjectcreator
 title: GameObjectCreator
 description: Phaser.GameObjects.GameObjectCreator
 seoTitle: Phaser.GameObjects.GameObjectCreator

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/curves-line
+slug: curves-line
 title: Line
 description: Phaser.Curves.Line
 seoTitle: Phaser.Curves.Line

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-alphasingle
+slug: gameobjects-components-alphasingle
 title: Phaser.GameObjects.Components.AlphaSingle
 
 seoTitle: Phaser.GameObjects.Components.AlphaSingle

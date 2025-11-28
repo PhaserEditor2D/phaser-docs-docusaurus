@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/time
+slug: time
 title: Phaser.Time
 
 seoTitle: Phaser.Time

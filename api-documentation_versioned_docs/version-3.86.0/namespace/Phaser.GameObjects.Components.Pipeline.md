@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-pipeline
+slug: gameobjects-components-pipeline
 title: Phaser.GameObjects.Components.Pipeline
 
 seoTitle: Phaser.GameObjects.Components.Pipeline

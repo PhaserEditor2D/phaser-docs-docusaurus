@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: function/sound
+slug: sound
 title: Phaser.Sound
 
 seoTitle: Phaser.Sound

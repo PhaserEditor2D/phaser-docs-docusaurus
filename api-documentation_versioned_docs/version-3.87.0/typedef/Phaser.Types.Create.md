@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-create
+slug: types-create
 title: Types.Create
 description: Phaser.Types.Create
 seoTitle: Types.Create

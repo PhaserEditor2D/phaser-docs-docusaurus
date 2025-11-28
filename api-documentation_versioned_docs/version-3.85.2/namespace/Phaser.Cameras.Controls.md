@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/cameras-controls
+slug: cameras-controls
 title: Phaser.Cameras.Controls
 
 seoTitle: Phaser.Cameras.Controls

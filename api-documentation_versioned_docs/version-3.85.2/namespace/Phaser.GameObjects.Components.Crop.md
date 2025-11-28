@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-crop
+slug: gameobjects-components-crop
 title: Phaser.GameObjects.Components.Crop
 
 seoTitle: Phaser.GameObjects.Components.Crop

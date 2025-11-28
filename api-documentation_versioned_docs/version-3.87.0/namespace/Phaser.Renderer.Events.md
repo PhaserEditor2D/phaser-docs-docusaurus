@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/renderer-events
+slug: renderer-events
 title: Phaser.Renderer.Events
 
 seoTitle: Phaser.Renderer.Events

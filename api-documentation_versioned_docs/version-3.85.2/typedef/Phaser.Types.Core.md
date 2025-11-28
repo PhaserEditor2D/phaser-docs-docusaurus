@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-core
+slug: types-core
 title: Types.Core
 description: Phaser.Types.Core
 seoTitle: Types.Core

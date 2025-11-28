@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-tilesprite
+slug: types-gameobjects-tilesprite
 title: Types.GameObjects.TileSprite
 description: Phaser.Types.GameObjects.TileSprite
 seoTitle: Types.GameObjects.TileSprite

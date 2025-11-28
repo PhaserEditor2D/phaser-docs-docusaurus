@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/display-color
+slug: display-color
 title: Color
 description: Phaser.Display.Color
 seoTitle: Phaser.Display.Color

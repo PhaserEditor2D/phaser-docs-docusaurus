@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-tilemapcsvfile
+slug: loader-filetypes-tilemapcsvfile
 title: TilemapCSVFile
 description: Phaser.Loader.FileTypes.TilemapCSVFile
 seoTitle: Phaser.Loader.FileTypes.TilemapCSVFile

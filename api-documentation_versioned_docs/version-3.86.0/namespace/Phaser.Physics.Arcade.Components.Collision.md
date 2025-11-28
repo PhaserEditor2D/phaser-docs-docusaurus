@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-collision
+slug: physics-arcade-components-collision
 title: Phaser.Physics.Arcade.Components.Collision
 
 seoTitle: Phaser.Physics.Arcade.Components.Collision

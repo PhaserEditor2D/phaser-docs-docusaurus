@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/tilemaps-orientation
+slug: tilemaps-orientation
 title: Phaser.Tilemaps.Orientation
 
 seoTitle: Phaser.Tilemaps.Orientation

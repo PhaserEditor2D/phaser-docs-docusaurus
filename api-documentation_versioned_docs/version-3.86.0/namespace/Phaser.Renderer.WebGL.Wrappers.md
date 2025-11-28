@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/renderer-webgl-wrappers
+slug: renderer-webgl-wrappers
 title: Phaser.Renderer.WebGL.Wrappers
 
 seoTitle: Phaser.Renderer.WebGL.Wrappers

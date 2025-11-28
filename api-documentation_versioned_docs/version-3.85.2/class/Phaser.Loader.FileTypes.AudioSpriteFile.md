@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-audiospritefile
+slug: loader-filetypes-audiospritefile
 title: AudioSpriteFile
 description: Phaser.Loader.FileTypes.AudioSpriteFile
 seoTitle: Phaser.Loader.FileTypes.AudioSpriteFile

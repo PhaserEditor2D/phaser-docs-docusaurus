@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-multiatlasfile
+slug: loader-filetypes-multiatlasfile
 title: MultiAtlasFile
 description: Phaser.Loader.FileTypes.MultiAtlasFile
 seoTitle: Phaser.Loader.FileTypes.MultiAtlasFile

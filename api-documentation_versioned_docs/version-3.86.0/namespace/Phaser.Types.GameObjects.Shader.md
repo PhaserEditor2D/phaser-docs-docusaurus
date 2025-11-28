@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-gameobjects-shader
+slug: types-gameobjects-shader
 title: Phaser.Types.GameObjects.Shader
 
 seoTitle: Phaser.Types.GameObjects.Shader

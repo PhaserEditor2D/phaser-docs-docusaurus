@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-keyboard-key
+slug: input-keyboard-key
 title: Key
 description: Phaser.Input.Keyboard.Key
 seoTitle: Phaser.Input.Keyboard.Key

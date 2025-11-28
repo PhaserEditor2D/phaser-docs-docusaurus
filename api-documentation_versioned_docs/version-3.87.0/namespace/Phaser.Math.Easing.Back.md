@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-easing-back
+slug: math-easing-back
 title: Phaser.Math.Easing.Back
 
 seoTitle: Phaser.Math.Easing.Back

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/data-datamanager
+slug: data-datamanager
 title: DataManager
 description: Phaser.Data.DataManager
 seoTitle: Phaser.Data.DataManager

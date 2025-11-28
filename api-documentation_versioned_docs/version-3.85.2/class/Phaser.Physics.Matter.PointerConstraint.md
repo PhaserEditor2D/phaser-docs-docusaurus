@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-pointerconstraint
+slug: physics-matter-pointerconstraint
 title: PointerConstraint
 description: Phaser.Physics.Matter.PointerConstraint
 seoTitle: Phaser.Physics.Matter.PointerConstraint

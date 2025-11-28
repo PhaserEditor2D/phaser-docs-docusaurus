@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fx-bokehfxpipeline
+slug: renderer-webgl-pipelines-fx-bokehfxpipeline
 title: BokehFXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FX.BokehFXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FX.BokehFXPipeline

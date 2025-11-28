@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-matter-world
+slug: physics-matter-world
 title: World
 description: Phaser.Physics.Matter.World
 seoTitle: Phaser.Physics.Matter.World

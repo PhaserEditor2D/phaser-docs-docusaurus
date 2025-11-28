@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-pluginfile
+slug: loader-filetypes-pluginfile
 title: PluginFile
 description: Phaser.Loader.FileTypes.PluginFile
 seoTitle: Phaser.Loader.FileTypes.PluginFile

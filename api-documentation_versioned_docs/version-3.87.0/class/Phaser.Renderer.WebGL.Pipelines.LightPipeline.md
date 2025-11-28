@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-lightpipeline
+slug: renderer-webgl-pipelines-lightpipeline
 title: LightPipeline
 description: Phaser.Renderer.WebGL.Pipelines.LightPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.LightPipeline

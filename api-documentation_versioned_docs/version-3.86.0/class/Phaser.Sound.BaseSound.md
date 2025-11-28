@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-basesound
+slug: sound-basesound
 title: BaseSound
 description: Phaser.Sound.BaseSound
 seoTitle: Phaser.Sound.BaseSound

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics
+slug: physics
 title: Phaser.Physics
 
 seoTitle: Phaser.Physics

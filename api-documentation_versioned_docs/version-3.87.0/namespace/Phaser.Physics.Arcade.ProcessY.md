@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-processy
+slug: physics-arcade-processy
 title: Phaser.Physics.Arcade.ProcessY
 
 seoTitle: Phaser.Physics.Arcade.ProcessY

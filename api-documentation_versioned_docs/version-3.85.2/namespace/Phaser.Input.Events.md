@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-events
+slug: input-events
 title: Phaser.Input.Events
 
 seoTitle: Phaser.Input.Events

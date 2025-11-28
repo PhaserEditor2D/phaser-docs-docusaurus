@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-pushable
+slug: physics-arcade-components-pushable
 title: Phaser.Physics.Arcade.Components.Pushable
 
 seoTitle: Phaser.Physics.Arcade.Components.Pushable

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-imagefile
+slug: loader-filetypes-imagefile
 title: ImageFile
 description: Phaser.Loader.FileTypes.ImageFile
 seoTitle: Phaser.Loader.FileTypes.ImageFile

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-rendertexture
+slug: types-gameobjects-rendertexture
 title: Types.GameObjects.RenderTexture
 description: Phaser.Types.GameObjects.RenderTexture
 seoTitle: Types.GameObjects.RenderTexture

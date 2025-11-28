@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/sound-noaudiosoundmanager
+slug: sound-noaudiosoundmanager
 title: NoAudioSoundManager
 description: Phaser.Sound.NoAudioSoundManager
 seoTitle: Phaser.Sound.NoAudioSoundManager

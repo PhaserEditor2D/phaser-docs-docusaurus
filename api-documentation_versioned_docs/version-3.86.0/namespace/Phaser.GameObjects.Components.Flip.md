@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-flip
+slug: gameobjects-components-flip
 title: Phaser.GameObjects.Components.Flip
 
 seoTitle: Phaser.GameObjects.Components.Flip

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-packfile
+slug: loader-filetypes-packfile
 title: PackFile
 description: Phaser.Loader.FileTypes.PackFile
 seoTitle: Phaser.Loader.FileTypes.PackFile

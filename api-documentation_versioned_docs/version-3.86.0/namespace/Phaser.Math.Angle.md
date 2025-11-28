@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-angle
+slug: math-angle
 title: Phaser.Math.Angle
 
 seoTitle: Phaser.Math.Angle

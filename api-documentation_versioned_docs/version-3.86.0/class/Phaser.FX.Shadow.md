@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-shadow
+slug: fx-shadow
 title: Shadow
 description: Phaser.FX.Shadow
 seoTitle: Phaser.FX.Shadow

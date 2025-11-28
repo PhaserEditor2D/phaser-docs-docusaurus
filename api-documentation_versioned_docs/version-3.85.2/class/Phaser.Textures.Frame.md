@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/textures-frame
+slug: textures-frame
 title: Frame
 description: Phaser.Textures.Frame
 seoTitle: Phaser.Textures.Frame

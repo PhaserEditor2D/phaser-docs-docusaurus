@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-texturecrop
+slug: gameobjects-components-texturecrop
 title: Phaser.GameObjects.Components.TextureCrop
 
 seoTitle: Phaser.GameObjects.Components.TextureCrop

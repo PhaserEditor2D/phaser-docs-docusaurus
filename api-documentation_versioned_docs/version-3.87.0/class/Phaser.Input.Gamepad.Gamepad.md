@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-gamepad-gamepad
+slug: input-gamepad-gamepad
 title: Gamepad
 description: Phaser.Input.Gamepad.Gamepad
 seoTitle: Phaser.Input.Gamepad.Gamepad

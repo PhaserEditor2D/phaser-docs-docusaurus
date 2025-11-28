@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/utils-array
+slug: utils-array
 title: Phaser.Utils.Array
 
 seoTitle: Phaser.Utils.Array

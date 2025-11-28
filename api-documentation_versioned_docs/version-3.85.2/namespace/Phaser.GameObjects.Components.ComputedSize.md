@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-computedsize
+slug: gameobjects-components-computedsize
 title: Phaser.GameObjects.Components.ComputedSize
 
 seoTitle: Phaser.GameObjects.Components.ComputedSize

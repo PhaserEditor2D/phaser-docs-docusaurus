@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/cameras-controls-smoothedkeycontrol
+slug: cameras-controls-smoothedkeycontrol
 title: SmoothedKeyControl
 description: Phaser.Cameras.Controls.SmoothedKeyControl
 seoTitle: Phaser.Cameras.Controls.SmoothedKeyControl

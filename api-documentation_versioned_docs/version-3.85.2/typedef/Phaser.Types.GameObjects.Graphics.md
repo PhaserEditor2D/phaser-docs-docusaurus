@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-graphics
+slug: types-gameobjects-graphics
 title: Types.GameObjects.Graphics
 description: Phaser.Types.GameObjects.Graphics
 seoTitle: Types.GameObjects.Graphics

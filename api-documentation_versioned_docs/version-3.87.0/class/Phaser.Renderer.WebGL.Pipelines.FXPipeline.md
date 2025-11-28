@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-fxpipeline
+slug: renderer-webgl-pipelines-fxpipeline
 title: FXPipeline
 description: Phaser.Renderer.WebGL.Pipelines.FXPipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.FXPipeline

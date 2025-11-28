@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/renderer-webgl-pipelines-mobilepipeline
+slug: renderer-webgl-pipelines-mobilepipeline
 title: MobilePipeline
 description: Phaser.Renderer.WebGL.Pipelines.MobilePipeline
 seoTitle: Phaser.Renderer.WebGL.Pipelines.MobilePipeline

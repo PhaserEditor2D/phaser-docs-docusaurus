@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-blur
+slug: fx-blur
 title: Blur
 description: Phaser.FX.Blur
 seoTitle: Phaser.FX.Blur

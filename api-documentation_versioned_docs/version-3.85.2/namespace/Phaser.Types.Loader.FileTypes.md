@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-loader-filetypes
+slug: types-loader-filetypes
 title: Phaser.Types.Loader.FileTypes
 
 seoTitle: Phaser.Types.Loader.FileTypes

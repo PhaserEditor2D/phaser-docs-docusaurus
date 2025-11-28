@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-cameras-controls
+slug: types-cameras-controls
 title: Types.Cameras.Controls
 description: Phaser.Types.Cameras.Controls
 seoTitle: Types.Cameras.Controls

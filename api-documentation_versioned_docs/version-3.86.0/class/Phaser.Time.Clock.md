@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/time-clock
+slug: time-clock
 title: Clock
 description: Phaser.Time.Clock
 seoTitle: Phaser.Time.Clock

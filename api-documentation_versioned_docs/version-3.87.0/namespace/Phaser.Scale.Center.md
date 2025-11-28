@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/scale-center
+slug: scale-center
 title: Phaser.Scale.Center
 
 seoTitle: Phaser.Scale.Center

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-components-fx
+slug: gameobjects-components-fx
 title: FX
 description: Phaser.GameObjects.Components.FX
 seoTitle: Phaser.GameObjects.Components.FX

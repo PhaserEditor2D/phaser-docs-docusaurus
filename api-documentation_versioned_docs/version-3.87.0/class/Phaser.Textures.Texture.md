@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/textures-texture
+slug: textures-texture
 title: Texture
 description: Phaser.Textures.Texture
 seoTitle: Phaser.Textures.Texture

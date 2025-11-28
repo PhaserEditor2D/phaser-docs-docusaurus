@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/input-gamepad-button
+slug: input-gamepad-button
 title: Button
 description: Phaser.Input.Gamepad.Button
 seoTitle: Phaser.Input.Gamepad.Button

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/tilemaps-formats
+slug: tilemaps-formats
 title: Phaser.Tilemaps.Formats
 
 seoTitle: Phaser.Tilemaps.Formats

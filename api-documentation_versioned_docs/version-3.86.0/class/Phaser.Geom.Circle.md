@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/geom-circle
+slug: geom-circle
 title: Circle
 description: Phaser.Geom.Circle
 seoTitle: Phaser.Geom.Circle

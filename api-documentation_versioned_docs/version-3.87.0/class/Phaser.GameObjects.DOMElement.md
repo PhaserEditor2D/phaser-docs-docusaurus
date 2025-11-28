@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-domelement
+slug: gameobjects-domelement
 title: DOMElement
 description: Phaser.GameObjects.DOMElement
 seoTitle: Phaser.GameObjects.DOMElement

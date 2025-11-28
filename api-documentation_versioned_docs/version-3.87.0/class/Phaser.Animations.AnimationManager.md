@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/animations-animationmanager
+slug: animations-animationmanager
 title: AnimationManager
 description: Phaser.Animations.AnimationManager
 seoTitle: Phaser.Animations.AnimationManager

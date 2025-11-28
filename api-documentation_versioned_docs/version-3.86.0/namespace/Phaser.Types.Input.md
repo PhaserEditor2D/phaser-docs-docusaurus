@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-input
+slug: types-input
 title: Phaser.Types.Input
 
 seoTitle: Phaser.Types.Input

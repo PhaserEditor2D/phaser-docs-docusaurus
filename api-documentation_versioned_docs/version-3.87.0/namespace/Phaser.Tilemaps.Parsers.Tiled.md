@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/tilemaps-parsers-tiled
+slug: tilemaps-parsers-tiled
 title: Phaser.Tilemaps.Parsers.Tiled
 
 seoTitle: Phaser.Tilemaps.Parsers.Tiled

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-mesh
+slug: types-gameobjects-mesh
 title: Types.GameObjects.Mesh
 description: Phaser.Types.GameObjects.Mesh
 seoTitle: Types.GameObjects.Mesh

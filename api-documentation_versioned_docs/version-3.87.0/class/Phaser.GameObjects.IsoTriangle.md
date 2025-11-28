@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-isotriangle
+slug: gameobjects-isotriangle
 title: IsoTriangle
 description: Phaser.GameObjects.IsoTriangle
 seoTitle: Phaser.GameObjects.IsoTriangle

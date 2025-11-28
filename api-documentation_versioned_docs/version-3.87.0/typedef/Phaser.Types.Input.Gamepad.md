@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-input-gamepad
+slug: types-input-gamepad
 title: Types.Input.Gamepad
 description: Phaser.Types.Input.Gamepad
 seoTitle: Types.Input.Gamepad

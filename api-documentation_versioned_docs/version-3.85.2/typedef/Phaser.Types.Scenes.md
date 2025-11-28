@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-scenes
+slug: types-scenes
 title: Types.Scenes
 description: Phaser.Types.Scenes
 seoTitle: Types.Scenes

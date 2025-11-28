@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-htmlfile
+slug: loader-filetypes-htmlfile
 title: HTMLFile
 description: Phaser.Loader.FileTypes.HTMLFile
 seoTitle: Phaser.Loader.FileTypes.HTMLFile

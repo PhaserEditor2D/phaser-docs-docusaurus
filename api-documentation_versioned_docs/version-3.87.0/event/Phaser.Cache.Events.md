@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/cache-events
+slug: cache-events
 title: Cache.Events
 description: Phaser.Cache.Events
 seoTitle: Cache.Events

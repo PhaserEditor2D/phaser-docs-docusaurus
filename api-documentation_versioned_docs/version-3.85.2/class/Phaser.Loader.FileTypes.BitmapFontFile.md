@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-bitmapfontfile
+slug: loader-filetypes-bitmapfontfile
 title: BitmapFontFile
 description: Phaser.Loader.FileTypes.BitmapFontFile
 seoTitle: Phaser.Loader.FileTypes.BitmapFontFile

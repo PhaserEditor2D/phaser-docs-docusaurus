@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/structs-processqueue
+slug: structs-processqueue
 title: ProcessQueue
 description: Phaser.Structs.ProcessQueue
 seoTitle: Phaser.Structs.ProcessQueue

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-processx
+slug: physics-arcade-processx
 title: Phaser.Physics.Arcade.ProcessX
 
 seoTitle: Phaser.Physics.Arcade.ProcessX

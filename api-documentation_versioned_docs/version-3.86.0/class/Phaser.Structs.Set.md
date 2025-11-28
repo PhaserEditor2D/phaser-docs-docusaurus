@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/structs-set
+slug: structs-set
 title: Set
 description: Phaser.Structs.Set
 seoTitle: Phaser.Structs.Set

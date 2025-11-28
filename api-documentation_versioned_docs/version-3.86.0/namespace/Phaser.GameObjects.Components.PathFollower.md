@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-pathfollower
+slug: gameobjects-components-pathfollower
 title: Phaser.GameObjects.Components.PathFollower
 
 seoTitle: Phaser.GameObjects.Components.PathFollower

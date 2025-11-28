@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-staticbody
+slug: physics-arcade-staticbody
 title: StaticBody
 description: Phaser.Physics.Arcade.StaticBody
 seoTitle: Phaser.Physics.Arcade.StaticBody

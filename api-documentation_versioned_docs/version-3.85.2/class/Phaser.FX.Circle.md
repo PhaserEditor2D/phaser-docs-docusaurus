@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/fx-circle
+slug: fx-circle
 title: Circle
 description: Phaser.FX.Circle
 seoTitle: Phaser.FX.Circle

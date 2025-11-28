@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-arc
+slug: gameobjects-arc
 title: Arc
 description: Phaser.GameObjects.Arc
 seoTitle: Phaser.GameObjects.Arc

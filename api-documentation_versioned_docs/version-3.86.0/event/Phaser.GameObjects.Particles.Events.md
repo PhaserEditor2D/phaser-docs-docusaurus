@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/gameobjects-particles-events
+slug: gameobjects-particles-events
 title: GameObjects.Particles.Events
 description: Phaser.GameObjects.Particles.Events
 seoTitle: GameObjects.Particles.Events

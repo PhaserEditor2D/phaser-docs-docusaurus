@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-cssfile
+slug: loader-filetypes-cssfile
 title: CSSFile
 description: Phaser.Loader.FileTypes.CSSFile
 seoTitle: Phaser.Loader.FileTypes.CSSFile

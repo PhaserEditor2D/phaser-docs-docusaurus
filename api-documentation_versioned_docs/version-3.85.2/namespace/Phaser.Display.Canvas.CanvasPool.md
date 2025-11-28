@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/display-canvas-canvaspool
+slug: display-canvas-canvaspool
 title: Phaser.Display.Canvas.CanvasPool
 
 seoTitle: Phaser.Display.Canvas.CanvasPool

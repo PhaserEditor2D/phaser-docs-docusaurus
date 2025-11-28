@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: event/tweens-events
+slug: tweens-events
 title: Tweens.Events
 description: Phaser.Tweens.Events
 seoTitle: Tweens.Events

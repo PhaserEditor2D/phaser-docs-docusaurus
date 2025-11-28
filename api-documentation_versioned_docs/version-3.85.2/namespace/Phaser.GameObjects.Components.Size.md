@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-size
+slug: gameobjects-components-size
 title: Phaser.GameObjects.Components.Size
 
 seoTitle: Phaser.GameObjects.Components.Size

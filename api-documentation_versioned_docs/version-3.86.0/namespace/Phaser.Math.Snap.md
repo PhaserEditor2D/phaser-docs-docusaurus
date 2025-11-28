@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/math-snap
+slug: math-snap
 title: Phaser.Math.Snap
 
 seoTitle: Phaser.Math.Snap

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/math-vector4
+slug: math-vector4
 title: Vector4
 description: Phaser.Math.Vector4
 seoTitle: Phaser.Math.Vector4

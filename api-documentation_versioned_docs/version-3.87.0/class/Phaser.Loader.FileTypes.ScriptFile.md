@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-filetypes-scriptfile
+slug: loader-filetypes-scriptfile
 title: ScriptFile
 description: Phaser.Loader.FileTypes.ScriptFile
 seoTitle: Phaser.Loader.FileTypes.ScriptFile

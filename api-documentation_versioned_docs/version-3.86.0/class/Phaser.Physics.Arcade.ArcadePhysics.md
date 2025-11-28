@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-arcadephysics
+slug: physics-arcade-arcadephysics
 title: ArcadePhysics
 description: Phaser.Physics.Arcade.ArcadePhysics
 seoTitle: Phaser.Physics.Arcade.ArcadePhysics

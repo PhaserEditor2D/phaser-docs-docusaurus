@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-shape
+slug: gameobjects-shape
 title: Shape
 description: Phaser.GameObjects.Shape
 seoTitle: Phaser.GameObjects.Shape

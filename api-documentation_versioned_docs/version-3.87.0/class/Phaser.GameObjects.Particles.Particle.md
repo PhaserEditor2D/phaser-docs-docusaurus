@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-particle
+slug: gameobjects-particles-particle
 title: Particle
 description: Phaser.GameObjects.Particles.Particle
 seoTitle: Phaser.GameObjects.Particles.Particle

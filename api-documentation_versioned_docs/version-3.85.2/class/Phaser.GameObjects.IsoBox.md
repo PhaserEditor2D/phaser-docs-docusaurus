@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-isobox
+slug: gameobjects-isobox
 title: IsoBox
 description: Phaser.GameObjects.IsoBox
 seoTitle: Phaser.GameObjects.IsoBox

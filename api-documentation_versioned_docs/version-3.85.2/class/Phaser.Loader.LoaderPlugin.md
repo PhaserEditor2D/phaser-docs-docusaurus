@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/loader-loaderplugin
+slug: loader-loaderplugin
 title: LoaderPlugin
 description: Phaser.Loader.LoaderPlugin
 seoTitle: Phaser.Loader.LoaderPlugin

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/types-cameras
+slug: types-cameras
 title: Phaser.Types.Cameras
 
 seoTitle: Phaser.Types.Cameras

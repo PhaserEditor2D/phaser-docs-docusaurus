@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-arcade-components-drag
+slug: physics-arcade-components-drag
 title: Phaser.Physics.Arcade.Components.Drag
 
 seoTitle: Phaser.Physics.Arcade.Components.Drag

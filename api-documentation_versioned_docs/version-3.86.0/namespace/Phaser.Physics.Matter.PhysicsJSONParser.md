@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/physics-matter-physicsjsonparser
+slug: physics-matter-physicsjsonparser
 title: Phaser.Physics.Matter.PhysicsJSONParser
 
 seoTitle: Phaser.Physics.Matter.PhysicsJSONParser

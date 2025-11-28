@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-light
+slug: gameobjects-light
 title: Light
 description: Phaser.GameObjects.Light
 seoTitle: Phaser.GameObjects.Light

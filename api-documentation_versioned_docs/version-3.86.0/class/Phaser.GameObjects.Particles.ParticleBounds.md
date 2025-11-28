@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/gameobjects-particles-particlebounds
+slug: gameobjects-particles-particlebounds
 title: ParticleBounds
 description: Phaser.GameObjects.Particles.ParticleBounds
 seoTitle: Phaser.GameObjects.Particles.ParticleBounds

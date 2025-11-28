@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: class/physics-arcade-collider
+slug: physics-arcade-collider
 title: Collider
 description: Phaser.Physics.Arcade.Collider
 seoTitle: Phaser.Physics.Arcade.Collider

@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: typedef/types-gameobjects-rope
+slug: types-gameobjects-rope
 title: Types.GameObjects.Rope
 description: Phaser.Types.GameObjects.Rope
 seoTitle: Types.GameObjects.Rope

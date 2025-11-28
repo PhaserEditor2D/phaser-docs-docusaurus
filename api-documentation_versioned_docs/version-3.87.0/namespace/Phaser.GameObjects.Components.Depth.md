@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/gameobjects-components-depth
+slug: gameobjects-components-depth
 title: Phaser.GameObjects.Components.Depth
 
 seoTitle: Phaser.GameObjects.Components.Depth

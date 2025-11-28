@@ -1,6 +1,6 @@
 ---
 visibility: public
-slug: namespace/input-inputplugincache
+slug: input-inputplugincache
 title: Phaser.Input.InputPluginCache
 
 seoTitle: Phaser.Input.InputPluginCache
