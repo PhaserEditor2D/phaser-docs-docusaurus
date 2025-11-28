@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-event/Phaser.Sound.Events" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Sound.Events | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/event/sound-events"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="Sound.Events | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Sound.Events"><meta data-rh="true" property="og:description" content="Phaser.Sound.Events"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/event/sound-events"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/event/sound-events" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/event/sound-events" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Events","item":"https://docs.phaser.io/api-documentation/3.85.2/event/"},{"@type":"ListItem","position":2,"name":"Sound.Events","item":"https://docs.phaser.io/api-documentation/3.85.2/event/sound-events"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/event/sound-events">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/event/sound-events">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/event/sound-events">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/event/sound-events">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Collapse sidebar category &#x27;Events&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/animations-events"><span title="Animations.Events" class="linkLabel_WmDU">Animations.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/cache-events"><span title="Cache.Events" class="linkLabel_WmDU">Cache.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/cameras-scene2d-events"><span title="Cameras.Scene2D.Events" class="linkLabel_WmDU">Cameras.Scene2D.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/core-events"><span title="Core.Events" class="linkLabel_WmDU">Core.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/data-events"><span title="Data.Events" class="linkLabel_WmDU">Data.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/gameobjects-events"><span title="GameObjects.Events" class="linkLabel_WmDU">GameObjects.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/gameobjects-particles-events"><span title="GameObjects.Particles.Events" class="linkLabel_WmDU">GameObjects.Particles.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/input-events"><span title="Input.Events" class="linkLabel_WmDU">Input.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/input-gamepad-events"><span title="Input.Gamepad.Events" class="linkLabel_WmDU">Input.Gamepad.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/input-keyboard-events"><span title="Input.Keyboard.Events" class="linkLabel_WmDU">Input.Keyboard.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/loader-events"><span title="Loader.Events" class="linkLabel_WmDU">Loader.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/physics-arcade-events"><span title="Physics.Arcade.Events" class="linkLabel_WmDU">Physics.Arcade.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/renderer-events"><span title="Renderer.Events" class="linkLabel_WmDU">Renderer.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/renderer-webgl-pipelines-events"><span title="Renderer.WebGL.Pipelines.Events" class="linkLabel_WmDU">Renderer.WebGL.Pipelines.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/scale-events"><span title="Scale.Events" class="linkLabel_WmDU">Scale.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/scenes-events"><span title="Scenes.Events" class="linkLabel_WmDU">Scenes.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/event/sound-events"><span title="Sound.Events" class="linkLabel_WmDU">Sound.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/structs-events"><span title="Structs.Events" class="linkLabel_WmDU">Structs.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/textures-events"><span title="Textures.Events" class="linkLabel_WmDU">Textures.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/time-events"><span title="Time.Events" class="linkLabel_WmDU">Time.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/tweens-events"><span title="Tweens.Events" class="linkLabel_WmDU">Tweens.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="linkLabel_WmDU">Events</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/event/sound-events">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/event/"><span>Events</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Sound.Events</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Sound.Events</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="complete">COMPLETE<a href="#complete" class="hash-link" aria-label="Direct link to COMPLETE" title="Direct link to COMPLETE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Complete Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they complete playback.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;complete&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;complete&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/COMPLETE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/COMPLETE_EVENT.js#L7</a><br>
+Since: 3.16.1</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="decoded_all">DECODED_ALL<a href="#decoded_all" class="hash-link" aria-label="Direct link to DECODED_ALL" title="Direct link to DECODED_ALL" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Audio Data Decoded All Event.</p>
+<p>This event is dispatched by the Web Audio Sound Manager as a result of calling the <code>decodeAudio</code> method,
+once all files passed to the method have been decoded (or errored).</p>
+<p>Use <code>Phaser.Sound.Events#DECODED</code> to listen for single sounds being decoded, and <code>DECODED_ALL</code> to
+listen for them all completing.</p>
+<p>Listen to it from the Sound Manager in a Scene using <code>this.sound.on(&#x27;decodedall&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">once</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;decodedall&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> handler</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">decodeAudio</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"> audioFiles </span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/DECODED_ALL_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/DECODED_ALL_EVENT.js#L7</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="decoded">DECODED<a href="#decoded" class="hash-link" aria-label="Direct link to DECODED" title="Direct link to DECODED" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Audio Data Decoded Event.</p>
+<p>This event is dispatched by the Web Audio Sound Manager as a result of calling the <code>decodeAudio</code> method.</p>
+<p>Listen to it from the Sound Manager in a Scene using <code>this.sound.on(&#x27;decoded&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;decoded&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> handler</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">decodeAudio</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">key</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> audioData</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>The key of the audio file that was decoded and added to the audio cache.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/DECODED_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/DECODED_EVENT.js#L7</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">DESTROY<a href="#destroy" class="hash-link" aria-label="Direct link to DESTROY" title="Direct link to DESTROY" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Destroy Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are destroyed, either
+directly or via a Sound Manager.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;destroy&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;destroy&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">destroy</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/DESTROY_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/DESTROY_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="detune">DETUNE<a href="#detune" class="hash-link" aria-label="Direct link to DETUNE" title="Direct link to DETUNE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Detune Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their detune value changes.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;detune&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;detune&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setDetune</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">200</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr><tr><td>detune</td><td>number</td><td>No</td><td>The new detune value of the Sound.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/DETUNE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/DETUNE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="global_detune">GLOBAL_DETUNE<a href="#global_detune" class="hash-link" aria-label="Direct link to GLOBAL_DETUNE" title="Direct link to GLOBAL_DETUNE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Manager Global Detune Event.</p>
+<p>This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+or the HTML5 Audio Manager. It is dispatched when the <code>detune</code> property of the Sound Manager is changed, which globally
+adjusts the detuning of all active sounds.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;rate&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager">Phaser.Sound.BaseSoundManager</a></td><td>No</td><td>A reference to the sound manager that emitted the event.</td></tr><tr><td>detune</td><td>number</td><td>No</td><td>The updated detune value.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/GLOBAL_DETUNE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/GLOBAL_DETUNE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="global_mute">GLOBAL_MUTE<a href="#global_mute" class="hash-link" aria-label="Direct link to GLOBAL_MUTE" title="Direct link to GLOBAL_MUTE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Manager Global Mute Event.</p>
+<p>This event is dispatched by the Sound Manager when its <code>mute</code> property is changed, either directly
+or via the <code>setMute</code> method. This changes the mute state of all active sounds.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;mute&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosoundmanager">Phaser.Sound.HTML5AudioSoundManager</a></td><td>No</td><td>A reference to the Sound Manager that emitted the event.</td></tr><tr><td>mute</td><td>boolean</td><td>No</td><td>The mute value. <code>true</code> if the Sound Manager is now muted, otherwise <code>false</code>.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/GLOBAL_MUTE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/GLOBAL_MUTE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="global_rate">GLOBAL_RATE<a href="#global_rate" class="hash-link" aria-label="Direct link to GLOBAL_RATE" title="Direct link to GLOBAL_RATE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Manager Global Rate Event.</p>
+<p>This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+or the HTML5 Audio Manager. It is dispatched when the <code>rate</code> property of the Sound Manager is changed, which globally
+adjusts the playback rate of all active sounds.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;rate&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager">Phaser.Sound.BaseSoundManager</a></td><td>No</td><td>A reference to the sound manager that emitted the event.</td></tr><tr><td>rate</td><td>number</td><td>No</td><td>The updated rate value.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/GLOBAL_RATE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/GLOBAL_RATE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="global_volume">GLOBAL_VOLUME<a href="#global_volume" class="hash-link" aria-label="Direct link to GLOBAL_VOLUME" title="Direct link to GLOBAL_VOLUME" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Manager Global Volume Event.</p>
+<p>This event is dispatched by the Sound Manager when its <code>volume</code> property is changed, either directly
+or via the <code>setVolume</code> method. This changes the volume of all active sounds.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;volume&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosoundmanager">Phaser.Sound.HTML5AudioSoundManager</a></td><td>No</td><td>A reference to the sound manager that emitted the event.</td></tr><tr><td>volume</td><td>number</td><td>No</td><td>The new global volume of the Sound Manager.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/GLOBAL_VOLUME_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/GLOBAL_VOLUME_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="looped">LOOPED<a href="#looped" class="hash-link" aria-label="Direct link to LOOPED" title="Direct link to LOOPED" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Looped Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they loop during playback.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;looped&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;looped&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setLoop</span><span class="token punctuation" style="color:#393A34">(</span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<p>This is not to be confused with the [LOOP]{@linkcode Phaser.Sound.Events#event:LOOP} event, which only emits when the loop state of a Sound is changed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/LOOPED_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/LOOPED_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="loop">LOOP<a href="#loop" class="hash-link" aria-label="Direct link to LOOP" title="Direct link to LOOP" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Loop Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their loop state is changed.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;loop&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;loop&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setLoop</span><span class="token punctuation" style="color:#393A34">(</span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<p>This is not to be confused with the [LOOPED]{@linkcode Phaser.Sound.Events#event:LOOPED} event, which emits each time a Sound loops during playback.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr><tr><td>loop</td><td>boolean</td><td>No</td><td>The new loop value. <code>true</code> if the Sound will loop, otherwise <code>false</code>.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/LOOP_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/LOOP_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mute">MUTE<a href="#mute" class="hash-link" aria-label="Direct link to MUTE" title="Direct link to MUTE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Mute Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their mute state changes.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;mute&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;mute&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setMute</span><span class="token punctuation" style="color:#393A34">(</span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr><tr><td>mute</td><td>boolean</td><td>No</td><td>The mute value. <code>true</code> if the Sound is now muted, otherwise <code>false</code>.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/MUTE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/MUTE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pan">PAN<a href="#pan" class="hash-link" aria-label="Direct link to PAN" title="Direct link to PAN" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Pan Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their pan changes.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;pan&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> sound </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;pan&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setPan</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">0.5</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr><tr><td>pan</td><td>number</td><td>No</td><td>The new pan of the Sound.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/PAN_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/PAN_EVENT.js#L7</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pause_all">PAUSE_ALL<a href="#pause_all" class="hash-link" aria-label="Direct link to PAUSE_ALL" title="Direct link to PAUSE_ALL" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pause All Sounds Event.</p>
+<p>This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+or the HTML5 Audio Manager. It is dispatched when the <code>pauseAll</code> method is invoked and after all current Sounds
+have been paused.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;pauseall&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager">Phaser.Sound.BaseSoundManager</a></td><td>No</td><td>A reference to the sound manager that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/PAUSE_ALL_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/PAUSE_ALL_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pause">PAUSE<a href="#pause" class="hash-link" aria-label="Direct link to PAUSE" title="Direct link to PAUSE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Pause Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are paused.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;pause&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;pause&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">pause</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/PAUSE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/PAUSE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="play">PLAY<a href="#play" class="hash-link" aria-label="Direct link to PLAY" title="Direct link to PLAY" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Play Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are played.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;play&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;play&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/PLAY_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/PLAY_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rate">RATE<a href="#rate" class="hash-link" aria-label="Direct link to RATE" title="Direct link to RATE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Rate Change Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their rate changes.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;rate&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;rate&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setRate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">0.5</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr><tr><td>rate</td><td>number</td><td>No</td><td>The new rate of the Sound.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/RATE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/RATE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resume_all">RESUME_ALL<a href="#resume_all" class="hash-link" aria-label="Direct link to RESUME_ALL" title="Direct link to RESUME_ALL" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Resume All Sounds Event.</p>
+<p>This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+or the HTML5 Audio Manager. It is dispatched when the <code>resumeAll</code> method is invoked and after all current Sounds
+have been resumed.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;resumeall&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager">Phaser.Sound.BaseSoundManager</a></td><td>No</td><td>A reference to the sound manager that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/RESUME_ALL_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/RESUME_ALL_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resume">RESUME<a href="#resume" class="hash-link" aria-label="Direct link to RESUME" title="Direct link to RESUME" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Resume Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are resumed from a paused state.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;resume&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;resume&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">pause</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">resume</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/RESUME_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/RESUME_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="seek">SEEK<a href="#seek" class="hash-link" aria-label="Direct link to SEEK" title="Direct link to SEEK" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Seek Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are seeked to a new position.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;seek&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;seek&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setSeek</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">5000</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr><tr><td>detune</td><td>number</td><td>No</td><td>The new detune value of the Sound.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/SEEK_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/SEEK_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stop_all">STOP_ALL<a href="#stop_all" class="hash-link" aria-label="Direct link to STOP_ALL" title="Direct link to STOP_ALL" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Stop All Sounds Event.</p>
+<p>This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+or the HTML5 Audio Manager. It is dispatched when the <code>stopAll</code> method is invoked and after all current Sounds
+have been stopped.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;stopall&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager">Phaser.Sound.BaseSoundManager</a></td><td>No</td><td>A reference to the sound manager that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/STOP_ALL_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/STOP_ALL_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stop">STOP<a href="#stop" class="hash-link" aria-label="Direct link to STOP" title="Direct link to STOP" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Stop Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are stopped.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;stop&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;stop&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">stop</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/STOP_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/STOP_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="unlocked">UNLOCKED<a href="#unlocked" class="hash-link" aria-label="Direct link to UNLOCKED" title="Direct link to UNLOCKED" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Manager Unlocked Event.</p>
+<p>This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+or the HTML5 Audio Manager. It is dispatched during the update loop when the Sound Manager becomes unlocked. For
+Web Audio this is on the first user gesture on the page.</p>
+<p>Listen to it from a Scene using: <code>this.sound.on(&#x27;unlocked&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>soundManager</td><td><a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager">Phaser.Sound.BaseSoundManager</a></td><td>No</td><td>A reference to the sound manager that emitted the event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/UNLOCKED_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/UNLOCKED_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="volume">VOLUME<a href="#volume" class="hash-link" aria-label="Direct link to VOLUME" title="Direct link to VOLUME" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Sound Volume Event.</p>
+<p>This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their volume changes.</p>
+<p>Listen to it from a Sound instance using <code>Sound.on(&#x27;volume&#x27;, listener)</code>, i.e.:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> music </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">sound</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;key&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">on</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;volume&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> listener</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">play</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">music</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setVolume</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">0.5</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> | <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a></td><td>No</td><td>A reference to the Sound that emitted the event.</td></tr><tr><td>volume</td><td>number</td><td>No</td><td>The new volume of the Sound.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.85.2/namespace/sound-events">Phaser.Sound.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/events/VOLUME_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/sound/events/VOLUME_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/event/scenes-events"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Scenes.Events</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/event/structs-events"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Structs.Events</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#complete" class="table-of-contents__link toc-highlight">COMPLETE</a></li><li><a href="#decoded_all" class="table-of-contents__link toc-highlight">DECODED_ALL</a></li><li><a href="#decoded" class="table-of-contents__link toc-highlight">DECODED</a></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">DESTROY</a></li><li><a href="#detune" class="table-of-contents__link toc-highlight">DETUNE</a></li><li><a href="#global_detune" class="table-of-contents__link toc-highlight">GLOBAL_DETUNE</a></li><li><a href="#global_mute" class="table-of-contents__link toc-highlight">GLOBAL_MUTE</a></li><li><a href="#global_rate" class="table-of-contents__link toc-highlight">GLOBAL_RATE</a></li><li><a href="#global_volume" class="table-of-contents__link toc-highlight">GLOBAL_VOLUME</a></li><li><a href="#looped" class="table-of-contents__link toc-highlight">LOOPED</a></li><li><a href="#loop" class="table-of-contents__link toc-highlight">LOOP</a></li><li><a href="#mute" class="table-of-contents__link toc-highlight">MUTE</a></li><li><a href="#pan" class="table-of-contents__link toc-highlight">PAN</a></li><li><a href="#pause_all" class="table-of-contents__link toc-highlight">PAUSE_ALL</a></li><li><a href="#pause" class="table-of-contents__link toc-highlight">PAUSE</a></li><li><a href="#play" class="table-of-contents__link toc-highlight">PLAY</a></li><li><a href="#rate" class="table-of-contents__link toc-highlight">RATE</a></li><li><a href="#resume_all" class="table-of-contents__link toc-highlight">RESUME_ALL</a></li><li><a href="#resume" class="table-of-contents__link toc-highlight">RESUME</a></li><li><a href="#seek" class="table-of-contents__link toc-highlight">SEEK</a></li><li><a href="#stop_all" class="table-of-contents__link toc-highlight">STOP_ALL</a></li><li><a href="#stop" class="table-of-contents__link toc-highlight">STOP</a></li><li><a href="#unlocked" class="table-of-contents__link toc-highlight">UNLOCKED</a></li><li><a href="#volume" class="table-of-contents__link toc-highlight">VOLUME</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,3182 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-function/Phaser.Display" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Phaser.Display | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/function/display"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="Phaser.Display | Phaser Help"><meta data-rh="true" name="description" content="BottomCenter"><meta data-rh="true" property="og:description" content="BottomCenter"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/function/display"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/function/display" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/function/display" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Functions","item":"https://docs.phaser.io/api-documentation/3.85.2/function/"},{"@type":"ListItem","position":2,"name":"Phaser.Display","item":"https://docs.phaser.io/api-documentation/3.85.2/function/display"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/function/display">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/function/display">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/function/display">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/function/display">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Collapse sidebar category &#x27;Functions&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/actions"><span title="Phaser.Actions" class="linkLabel_WmDU">Phaser.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/core"><span title="Phaser.Core" class="linkLabel_WmDU">Phaser.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/create"><span title="Phaser.Create" class="linkLabel_WmDU">Phaser.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/curves"><span title="Phaser.Curves" class="linkLabel_WmDU">Phaser.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/dom"><span title="Phaser.DOM" class="linkLabel_WmDU">Phaser.DOM</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/function/display"><span title="Phaser.Display" class="linkLabel_WmDU">Phaser.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/gameobjects"><span title="Phaser.GameObjects" class="linkLabel_WmDU">Phaser.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/geom"><span title="Phaser.Geom" class="linkLabel_WmDU">Phaser.Geom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/input"><span title="Phaser.Input" class="linkLabel_WmDU">Phaser.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/loader"><span title="Phaser.Loader" class="linkLabel_WmDU">Phaser.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/math"><span title="Phaser.Math" class="linkLabel_WmDU">Phaser.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/physics"><span title="Phaser.Physics" class="linkLabel_WmDU">Phaser.Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/plugins"><span title="Phaser.Plugins" class="linkLabel_WmDU">Phaser.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/renderer"><span title="Phaser.Renderer" class="linkLabel_WmDU">Phaser.Renderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/scenes"><span title="Phaser.Scenes" class="linkLabel_WmDU">Phaser.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/sound"><span title="Phaser.Sound" class="linkLabel_WmDU">Phaser.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/textures"><span title="Phaser.Textures" class="linkLabel_WmDU">Phaser.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/tilemaps"><span title="Phaser.Tilemaps" class="linkLabel_WmDU">Phaser.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/tweens"><span title="Phaser.Tweens" class="linkLabel_WmDU">Phaser.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/utils"><span title="Phaser.Utils" class="linkLabel_WmDU">Phaser.Utils</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/function/display">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/function/"><span>Functions</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Phaser.Display</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Phaser.Display.Align.In</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottomcenter">BottomCenter<a href="#bottomcenter" class="hash-link" aria-label="Direct link to BottomCenter" title="Direct link to BottomCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bottomcentergameobject-alignin-offsetx-offsety">&lt;static&gt; BottomCenter(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-bottomcentergameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; BottomCenter(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; BottomCenter(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the bottom center of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/BottomCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/BottomCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottomleft">BottomLeft<a href="#bottomleft" class="hash-link" aria-label="Direct link to BottomLeft" title="Direct link to BottomLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bottomleftgameobject-alignin-offsetx-offsety">&lt;static&gt; BottomLeft(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-bottomleftgameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; BottomLeft(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; BottomLeft(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the bottom left of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/BottomLeft.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/BottomLeft.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottomright">BottomRight<a href="#bottomright" class="hash-link" aria-label="Direct link to BottomRight" title="Direct link to BottomRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bottomrightgameobject-alignin-offsetx-offsety">&lt;static&gt; BottomRight(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-bottomrightgameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; BottomRight(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; BottomRight(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the bottom right of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/BottomRight.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/BottomRight.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="center">Center<a href="#center" class="hash-link" aria-label="Direct link to Center" title="Direct link to Center" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-centergameobject-alignin-offsetx-offsety">&lt;static&gt; Center(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-centergameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; Center(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; Center(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the center of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/Center.js#L11" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/Center.js#L11</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="leftcenter">LeftCenter<a href="#leftcenter" class="hash-link" aria-label="Direct link to LeftCenter" title="Direct link to LeftCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-leftcentergameobject-alignin-offsetx-offsety">&lt;static&gt; LeftCenter(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-leftcentergameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; LeftCenter(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; LeftCenter(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the left center of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/LeftCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/LeftCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quickset">QuickSet<a href="#quickset" class="hash-link" aria-label="Direct link to QuickSet" title="Direct link to QuickSet" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-quicksetchild-alignin-position-offsetx-offsety">&lt;static&gt; QuickSet(child, alignIn, position, [offsetX], [offsetY])<a href="#static-quicksetchild-alignin-position-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; QuickSet(child, alignIn, position, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; QuickSet(child, alignIn, position, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned relative to the other.
+The alignment used is based on the <code>position</code> argument, which is an <code>ALIGN_CONST</code> value, such as <code>LEFT_CENTER</code> or <code>TOP_RIGHT</code>.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>child</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>position</td><td>number</td><td>No</td><td></td><td>The position to align the Game Object with. This is an align constant, such as <code>ALIGN_CONST.LEFT_CENTER</code>.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/QuickSet.js#L25" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/QuickSet.js#L25</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rightcenter">RightCenter<a href="#rightcenter" class="hash-link" aria-label="Direct link to RightCenter" title="Direct link to RightCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rightcentergameobject-alignin-offsetx-offsety">&lt;static&gt; RightCenter(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-rightcentergameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; RightCenter(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; RightCenter(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the right center of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/RightCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/RightCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topcenter">TopCenter<a href="#topcenter" class="hash-link" aria-label="Direct link to TopCenter" title="Direct link to TopCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-topcentergameobject-alignin-offsetx-offsety">&lt;static&gt; TopCenter(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-topcentergameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; TopCenter(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; TopCenter(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the top center of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/TopCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/TopCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topleft">TopLeft<a href="#topleft" class="hash-link" aria-label="Direct link to TopLeft" title="Direct link to TopLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-topleftgameobject-alignin-offsetx-offsety">&lt;static&gt; TopLeft(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-topleftgameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; TopLeft(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; TopLeft(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the top left of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/TopLeft.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/TopLeft.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topright">TopRight<a href="#topright" class="hash-link" aria-label="Direct link to TopRight" title="Direct link to TopRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-toprightgameobject-alignin-offsetx-offsety">&lt;static&gt; TopRight(gameObject, alignIn, [offsetX], [offsetY])<a href="#static-toprightgameobject-alignin-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; TopRight(gameObject, alignIn, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; TopRight(gameObject, alignIn, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned in the top right of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignIn</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/in/TopRight.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/in/TopRight.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Align.To</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottomcenter-1">BottomCenter<a href="#bottomcenter-1" class="hash-link" aria-label="Direct link to BottomCenter" title="Direct link to BottomCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bottomcentergameobject-alignto-offsetx-offsety">&lt;static&gt; BottomCenter(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-bottomcentergameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; BottomCenter(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; BottomCenter(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the bottom center position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/BottomCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/BottomCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottomleft-1">BottomLeft<a href="#bottomleft-1" class="hash-link" aria-label="Direct link to BottomLeft" title="Direct link to BottomLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bottomleftgameobject-alignto-offsetx-offsety">&lt;static&gt; BottomLeft(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-bottomleftgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; BottomLeft(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; BottomLeft(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the bottom left position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/BottomLeft.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/BottomLeft.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottomright-1">BottomRight<a href="#bottomright-1" class="hash-link" aria-label="Direct link to BottomRight" title="Direct link to BottomRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bottomrightgameobject-alignto-offsetx-offsety">&lt;static&gt; BottomRight(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-bottomrightgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; BottomRight(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; BottomRight(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the bottom right position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/BottomRight.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/BottomRight.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="leftbottom">LeftBottom<a href="#leftbottom" class="hash-link" aria-label="Direct link to LeftBottom" title="Direct link to LeftBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-leftbottomgameobject-alignto-offsetx-offsety">&lt;static&gt; LeftBottom(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-leftbottomgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; LeftBottom(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; LeftBottom(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the left bottom position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/LeftBottom.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/LeftBottom.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="leftcenter-1">LeftCenter<a href="#leftcenter-1" class="hash-link" aria-label="Direct link to LeftCenter" title="Direct link to LeftCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-leftcentergameobject-alignto-offsetx-offsety">&lt;static&gt; LeftCenter(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-leftcentergameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; LeftCenter(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; LeftCenter(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the left center position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/LeftCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/LeftCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="lefttop">LeftTop<a href="#lefttop" class="hash-link" aria-label="Direct link to LeftTop" title="Direct link to LeftTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-lefttopgameobject-alignto-offsetx-offsety">&lt;static&gt; LeftTop(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-lefttopgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; LeftTop(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; LeftTop(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the left top position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/LeftTop.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/LeftTop.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quickset-1">QuickSet<a href="#quickset-1" class="hash-link" aria-label="Direct link to QuickSet" title="Direct link to QuickSet" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-quicksetchild-alignto-position-offsetx-offsety">&lt;static&gt; QuickSet(child, alignTo, position, [offsetX], [offsetY])<a href="#static-quicksetchild-alignto-position-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; QuickSet(child, alignTo, position, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; QuickSet(child, alignTo, position, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a Game Object and aligns it next to another, at the given position.
+The alignment used is based on the <code>position</code> argument, which is a <code>Phaser.Display.Align</code> property such as <code>LEFT_CENTER</code> or <code>TOP_RIGHT</code>.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>child</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>position</td><td>number</td><td>No</td><td></td><td>The position to align the Game Object with. This is an align constant, such as <code>Phaser.Display.Align.LEFT_CENTER</code>.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/QuickSet.js#L24" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/QuickSet.js#L24</a><br>
+Since: 3.22.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rightbottom">RightBottom<a href="#rightbottom" class="hash-link" aria-label="Direct link to RightBottom" title="Direct link to RightBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rightbottomgameobject-alignto-offsetx-offsety">&lt;static&gt; RightBottom(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-rightbottomgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; RightBottom(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; RightBottom(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the right bottom position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/RightBottom.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/RightBottom.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rightcenter-1">RightCenter<a href="#rightcenter-1" class="hash-link" aria-label="Direct link to RightCenter" title="Direct link to RightCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rightcentergameobject-alignto-offsetx-offsety">&lt;static&gt; RightCenter(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-rightcentergameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; RightCenter(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; RightCenter(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the right center position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/RightCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/RightCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="righttop">RightTop<a href="#righttop" class="hash-link" aria-label="Direct link to RightTop" title="Direct link to RightTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-righttopgameobject-alignto-offsetx-offsety">&lt;static&gt; RightTop(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-righttopgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; RightTop(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; RightTop(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the right top position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/RightTop.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/RightTop.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topcenter-1">TopCenter<a href="#topcenter-1" class="hash-link" aria-label="Direct link to TopCenter" title="Direct link to TopCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-topcentergameobject-alignto-offsetx-offsety">&lt;static&gt; TopCenter(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-topcentergameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; TopCenter(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; TopCenter(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the top center position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/TopCenter.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/TopCenter.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topleft-1">TopLeft<a href="#topleft-1" class="hash-link" aria-label="Direct link to TopLeft" title="Direct link to TopLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-topleftgameobject-alignto-offsetx-offsety">&lt;static&gt; TopLeft(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-topleftgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; TopLeft(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; TopLeft(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the top left position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/TopLeft.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/TopLeft.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topright-1">TopRight<a href="#topright-1" class="hash-link" aria-label="Direct link to TopRight" title="Direct link to TopRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-toprightgameobject-alignto-offsetx-offsety">&lt;static&gt; TopRight(gameObject, alignTo, [offsetX], [offsetY])<a href="#static-toprightgameobject-alignto-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; TopRight(gameObject, alignTo, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; TopRight(gameObject, alignTo, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes given Game Object and aligns it so that it is positioned next to the top right position of the other.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will be positioned.</td></tr><tr><td>alignTo</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object to base the alignment position on.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was aligned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/align/to/TopRight.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/align/to/TopRight.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Bounds</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="centeron">CenterOn<a href="#centeron" class="hash-link" aria-label="Direct link to CenterOn" title="Direct link to CenterOn" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-centerongameobject-x-y">&lt;static&gt; CenterOn(gameObject, x, y)<a href="#static-centerongameobject-x-y" class="hash-link" aria-label="Direct link to &lt;static&gt; CenterOn(gameObject, x, y)" title="Direct link to &lt;static&gt; CenterOn(gameObject, x, y)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Game Object so that it is centered on the given coordinates.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object that will be re-positioned.</td></tr><tr><td>x</td><td>number</td><td>No</td><td>The horizontal coordinate to position the Game Object on.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The vertical coordinate to position the Game Object on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was positioned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/CenterOn.js#L10" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/CenterOn.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getbottom">GetBottom<a href="#getbottom" class="hash-link" aria-label="Direct link to GetBottom" title="Direct link to GetBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getbottomgameobject">&lt;static&gt; GetBottom(gameObject)<a href="#static-getbottomgameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetBottom(gameObject)" title="Direct link to &lt;static&gt; GetBottom(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the bottom coordinate from the bounds of the Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The bottom coordinate of the bounds of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetBottom.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetBottom.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getbounds">GetBounds<a href="#getbounds" class="hash-link" aria-label="Direct link to GetBounds" title="Direct link to GetBounds" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getboundsgameobject-output">&lt;static&gt; GetBounds(gameObject, [output])<a href="#static-getboundsgameobject-output" class="hash-link" aria-label="Direct link to &lt;static&gt; GetBounds(gameObject, [output])" title="Direct link to &lt;static&gt; GetBounds(gameObject, [output])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the unrotated bounds of the Game Object as a rectangle.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr><tr><td>output</td><td><a class="" href="/api-documentation/3.85.2/class/geom-rectangle">Phaser.Geom.Rectangle</a> | object</td><td>Yes</td><td>An object to store the values in. If not provided a new Rectangle will be created.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/geom-rectangle">Phaser.Geom.Rectangle</a>, object - - The bounds of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetBounds.js#L13" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetBounds.js#L13</a><br>
+Since: 3.24.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getcenterx">GetCenterX<a href="#getcenterx" class="hash-link" aria-label="Direct link to GetCenterX" title="Direct link to GetCenterX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getcenterxgameobject">&lt;static&gt; GetCenterX(gameObject)<a href="#static-getcenterxgameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetCenterX(gameObject)" title="Direct link to &lt;static&gt; GetCenterX(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the center x coordinate from the bounds of the Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The center x coordinate of the bounds of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetCenterX.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetCenterX.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getcentery">GetCenterY<a href="#getcentery" class="hash-link" aria-label="Direct link to GetCenterY" title="Direct link to GetCenterY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getcenterygameobject">&lt;static&gt; GetCenterY(gameObject)<a href="#static-getcenterygameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetCenterY(gameObject)" title="Direct link to &lt;static&gt; GetCenterY(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the center y coordinate from the bounds of the Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The center y coordinate of the bounds of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetCenterY.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetCenterY.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getleft">GetLeft<a href="#getleft" class="hash-link" aria-label="Direct link to GetLeft" title="Direct link to GetLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getleftgameobject">&lt;static&gt; GetLeft(gameObject)<a href="#static-getleftgameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetLeft(gameObject)" title="Direct link to &lt;static&gt; GetLeft(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the left coordinate from the bounds of the Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The left coordinate of the bounds of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetLeft.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetLeft.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getoffsetx">GetOffsetX<a href="#getoffsetx" class="hash-link" aria-label="Direct link to GetOffsetX" title="Direct link to GetOffsetX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getoffsetxgameobject">&lt;static&gt; GetOffsetX(gameObject)<a href="#static-getoffsetxgameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetOffsetX(gameObject)" title="Direct link to &lt;static&gt; GetOffsetX(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the amount the Game Object is visually offset from its x coordinate.
+This is the same as <code>width * origin.x</code>.
+This value will only be &gt; 0 if <code>origin.x</code> is not equal to zero.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The horizontal offset of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetOffsetX.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetOffsetX.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getoffsety">GetOffsetY<a href="#getoffsety" class="hash-link" aria-label="Direct link to GetOffsetY" title="Direct link to GetOffsetY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getoffsetygameobject">&lt;static&gt; GetOffsetY(gameObject)<a href="#static-getoffsetygameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetOffsetY(gameObject)" title="Direct link to &lt;static&gt; GetOffsetY(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the amount the Game Object is visually offset from its y coordinate.
+This is the same as <code>width * origin.y</code>.
+This value will only be &gt; 0 if <code>origin.y</code> is not equal to zero.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The vertical offset of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetOffsetY.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetOffsetY.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getright">GetRight<a href="#getright" class="hash-link" aria-label="Direct link to GetRight" title="Direct link to GetRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getrightgameobject">&lt;static&gt; GetRight(gameObject)<a href="#static-getrightgameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetRight(gameObject)" title="Direct link to &lt;static&gt; GetRight(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the right coordinate from the bounds of the Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The right coordinate of the bounds of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetRight.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetRight.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gettop">GetTop<a href="#gettop" class="hash-link" aria-label="Direct link to GetTop" title="Direct link to GetTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gettopgameobject">&lt;static&gt; GetTop(gameObject)<a href="#static-gettopgameobject" class="hash-link" aria-label="Direct link to &lt;static&gt; GetTop(gameObject)" title="Direct link to &lt;static&gt; GetTop(gameObject)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the top coordinate from the bounds of the Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object to get the bounds value from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The top coordinate of the bounds of the Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/GetTop.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/GetTop.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setbottom">SetBottom<a href="#setbottom" class="hash-link" aria-label="Direct link to SetBottom" title="Direct link to SetBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setbottomgameobject-value">&lt;static&gt; SetBottom(gameObject, value)<a href="#static-setbottomgameobject-value" class="hash-link" aria-label="Direct link to &lt;static&gt; SetBottom(gameObject, value)" title="Direct link to &lt;static&gt; SetBottom(gameObject, value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Game Object so that the bottom of its bounds aligns with the given coordinate.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object that will be re-positioned.</td></tr><tr><td>value</td><td>number</td><td>No</td><td>The coordinate to position the Game Object bounds on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was positioned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/SetBottom.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/SetBottom.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setcenterx">SetCenterX<a href="#setcenterx" class="hash-link" aria-label="Direct link to SetCenterX" title="Direct link to SetCenterX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setcenterxgameobject-x">&lt;static&gt; SetCenterX(gameObject, x)<a href="#static-setcenterxgameobject-x" class="hash-link" aria-label="Direct link to &lt;static&gt; SetCenterX(gameObject, x)" title="Direct link to &lt;static&gt; SetCenterX(gameObject, x)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Game Object so that the center top of its bounds aligns with the given coordinate.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object that will be re-positioned.</td></tr><tr><td>x</td><td>number</td><td>No</td><td>The coordinate to position the Game Object bounds on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was positioned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/SetCenterX.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/SetCenterX.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setcentery">SetCenterY<a href="#setcentery" class="hash-link" aria-label="Direct link to SetCenterY" title="Direct link to SetCenterY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setcenterygameobject-y">&lt;static&gt; SetCenterY(gameObject, y)<a href="#static-setcenterygameobject-y" class="hash-link" aria-label="Direct link to &lt;static&gt; SetCenterY(gameObject, y)" title="Direct link to &lt;static&gt; SetCenterY(gameObject, y)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Game Object so that the center top of its bounds aligns with the given coordinate.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object that will be re-positioned.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The coordinate to position the Game Object bounds on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was positioned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/SetCenterY.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/SetCenterY.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setleft">SetLeft<a href="#setleft" class="hash-link" aria-label="Direct link to SetLeft" title="Direct link to SetLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setleftgameobject-value">&lt;static&gt; SetLeft(gameObject, value)<a href="#static-setleftgameobject-value" class="hash-link" aria-label="Direct link to &lt;static&gt; SetLeft(gameObject, value)" title="Direct link to &lt;static&gt; SetLeft(gameObject, value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Game Object so that the left of its bounds aligns with the given coordinate.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object that will be re-positioned.</td></tr><tr><td>value</td><td>number</td><td>No</td><td>The coordinate to position the Game Object bounds on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was positioned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/SetLeft.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/SetLeft.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setright">SetRight<a href="#setright" class="hash-link" aria-label="Direct link to SetRight" title="Direct link to SetRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setrightgameobject-value">&lt;static&gt; SetRight(gameObject, value)<a href="#static-setrightgameobject-value" class="hash-link" aria-label="Direct link to &lt;static&gt; SetRight(gameObject, value)" title="Direct link to &lt;static&gt; SetRight(gameObject, value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Game Object so that the left of its bounds aligns with the given coordinate.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object that will be re-positioned.</td></tr><tr><td>value</td><td>number</td><td>No</td><td>The coordinate to position the Game Object bounds on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was positioned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/SetRight.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/SetRight.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="settop">SetTop<a href="#settop" class="hash-link" aria-label="Direct link to SetTop" title="Direct link to SetTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-settopgameobject-value">&lt;static&gt; SetTop(gameObject, value)<a href="#static-settopgameobject-value" class="hash-link" aria-label="Direct link to &lt;static&gt; SetTop(gameObject, value)" title="Direct link to &lt;static&gt; SetTop(gameObject, value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Game Object so that the top of its bounds aligns with the given coordinate.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object that will be re-positioned.</td></tr><tr><td>value</td><td>number</td><td>No</td><td>The coordinate to position the Game Object bounds on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was positioned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/bounds/SetTop.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/bounds/SetTop.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Canvas.CanvasInterpolation</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setcrisp">setCrisp<a href="#setcrisp" class="hash-link" aria-label="Direct link to setCrisp" title="Direct link to setCrisp" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setcrispcanvas">&lt;static&gt; setCrisp(canvas)<a href="#static-setcrispcanvas" class="hash-link" aria-label="Direct link to &lt;static&gt; setCrisp(canvas)" title="Direct link to &lt;static&gt; setCrisp(canvas)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the CSS image-rendering property on the given canvas to be &#x27;crisp&#x27; (aka &#x27;optimize contrast&#x27; on webkit).</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>canvas</td><td>HTMLCanvasElement</td><td>No</td><td>The canvas object to have the style set on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The canvas.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasInterpolation.js#L13" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasInterpolation.js#L13</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setbicubic">setBicubic<a href="#setbicubic" class="hash-link" aria-label="Direct link to setBicubic" title="Direct link to setBicubic" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setbicubiccanvas">&lt;static&gt; setBicubic(canvas)<a href="#static-setbicubiccanvas" class="hash-link" aria-label="Direct link to &lt;static&gt; setBicubic(canvas)" title="Direct link to &lt;static&gt; setBicubic(canvas)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the CSS image-rendering property on the given canvas to be &#x27;bicubic&#x27; (aka &#x27;auto&#x27;).</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>canvas</td><td>HTMLCanvasElement</td><td>No</td><td>The canvas object to have the style set on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The canvas.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasInterpolation.js#L37" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasInterpolation.js#L37</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Canvas.CanvasPool</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="create">create<a href="#create" class="hash-link" aria-label="Direct link to create" title="Direct link to create" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-createparent-width-height-canvastype-selfparent">&lt;static&gt; create(parent, [width], [height], [canvasType], [selfParent])<a href="#static-createparent-width-height-canvastype-selfparent" class="hash-link" aria-label="Direct link to &lt;static&gt; create(parent, [width], [height], [canvasType], [selfParent])" title="Direct link to &lt;static&gt; create(parent, [width], [height], [canvasType], [selfParent])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates a new Canvas DOM element, or pulls one from the pool if free.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>parent</td><td>*</td><td>No</td><td></td><td>The parent of the Canvas object.</td></tr><tr><td>width</td><td>number</td><td>Yes</td><td>1</td><td>The width of the Canvas.</td></tr><tr><td>height</td><td>number</td><td>Yes</td><td>1</td><td>The height of the Canvas.</td></tr><tr><td>canvasType</td><td>number</td><td>Yes</td><td>&quot;Phaser.CANVAS&quot;</td><td>The type of the Canvas. Either <code>Phaser.CANVAS</code> or <code>Phaser.WEBGL</code>.</td></tr><tr><td>selfParent</td><td>boolean</td><td>Yes</td><td>false</td><td>Use the generated Canvas element as the parent?</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The canvas element that was created or pulled from the pool</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L29" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L29</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="create2d">create2D<a href="#create2d" class="hash-link" aria-label="Direct link to create2D" title="Direct link to create2D" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-create2dparent-width-height">&lt;static&gt; create2D(parent, [width], [height])<a href="#static-create2dparent-width-height" class="hash-link" aria-label="Direct link to &lt;static&gt; create2D(parent, [width], [height])" title="Direct link to &lt;static&gt; create2D(parent, [width], [height])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates a new Canvas DOM element, or pulls one from the pool if free.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>parent</td><td>*</td><td>No</td><td></td><td>The parent of the Canvas object.</td></tr><tr><td>width</td><td>number</td><td>Yes</td><td>1</td><td>The width of the Canvas.</td></tr><tr><td>height</td><td>number</td><td>Yes</td><td>1</td><td>The height of the Canvas.</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The created canvas.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L91" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L91</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="createwebgl">createWebGL<a href="#createwebgl" class="hash-link" aria-label="Direct link to createWebGL" title="Direct link to createWebGL" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-createwebglparent-width-height">&lt;static&gt; createWebGL(parent, [width], [height])<a href="#static-createwebglparent-width-height" class="hash-link" aria-label="Direct link to &lt;static&gt; createWebGL(parent, [width], [height])" title="Direct link to &lt;static&gt; createWebGL(parent, [width], [height])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates a new Canvas DOM element, or pulls one from the pool if free.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>parent</td><td>*</td><td>No</td><td></td><td>The parent of the Canvas object.</td></tr><tr><td>width</td><td>number</td><td>Yes</td><td>1</td><td>The width of the Canvas.</td></tr><tr><td>height</td><td>number</td><td>Yes</td><td>1</td><td>The height of the Canvas.</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The created WebGL canvas.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L108" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L108</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="first">first<a href="#first" class="hash-link" aria-label="Direct link to first" title="Direct link to first" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-firstcanvastype">&lt;static&gt; first([canvasType])<a href="#static-firstcanvastype" class="hash-link" aria-label="Direct link to &lt;static&gt; first([canvasType])" title="Direct link to &lt;static&gt; first([canvasType])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the first free canvas index from the pool.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>canvasType</td><td>number</td><td>Yes</td><td>&quot;Phaser.CANVAS&quot;</td><td>The type of the Canvas. Either <code>Phaser.CANVAS</code> or <code>Phaser.WEBGL</code>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The first free canvas, or <code>null</code> if a WebGL canvas was requested or if the pool doesn&#x27;t have free canvases.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L125" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L125</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove">remove<a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removeparent">&lt;static&gt; remove(parent)<a href="#static-removeparent" class="hash-link" aria-label="Direct link to &lt;static&gt; remove(parent)" title="Direct link to &lt;static&gt; remove(parent)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Looks up a canvas based on its parent, and if found puts it back in the pool, freeing it up for re-use.
+The canvas has its width and height set to 1, and its parent attribute nulled.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>parent</td><td>*</td><td>No</td><td>The canvas or the parent of the canvas to free.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L157" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L157</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="total">total<a href="#total" class="hash-link" aria-label="Direct link to total" title="Direct link to total" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-total">&lt;static&gt; total()<a href="#static-total" class="hash-link" aria-label="Direct link to &lt;static&gt; total()" title="Direct link to &lt;static&gt; total()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the total number of used canvas elements in the pool.</p>
+<p><strong>Returns:</strong> number - The number of used canvases.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L182" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L182</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="free">free<a href="#free" class="hash-link" aria-label="Direct link to free" title="Direct link to free" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-free">&lt;static&gt; free()<a href="#static-free" class="hash-link" aria-label="Direct link to &lt;static&gt; free()" title="Direct link to &lt;static&gt; free()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the total number of free canvas elements in the pool.</p>
+<p><strong>Returns:</strong> number - The number of free canvases.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L205" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L205</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="disablesmoothing">disableSmoothing<a href="#disablesmoothing" class="hash-link" aria-label="Direct link to disableSmoothing" title="Direct link to disableSmoothing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-disablesmoothing">&lt;static&gt; disableSmoothing()<a href="#static-disablesmoothing" class="hash-link" aria-label="Direct link to &lt;static&gt; disableSmoothing()" title="Direct link to &lt;static&gt; disableSmoothing()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Disable context smoothing on any new Canvas element created.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L218" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L218</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="enablesmoothing">enableSmoothing<a href="#enablesmoothing" class="hash-link" aria-label="Direct link to enableSmoothing" title="Direct link to enableSmoothing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-enablesmoothing">&lt;static&gt; enableSmoothing()<a href="#static-enablesmoothing" class="hash-link" aria-label="Direct link to &lt;static&gt; enableSmoothing()" title="Direct link to &lt;static&gt; enableSmoothing()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Enable context smoothing on any new Canvas element created.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/CanvasPool.js#L229" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/CanvasPool.js#L229</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Canvas.Smoothing</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getprefix">getPrefix<a href="#getprefix" class="hash-link" aria-label="Direct link to getPrefix" title="Direct link to getPrefix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getprefixcontext">&lt;static&gt; getPrefix(context)<a href="#static-getprefixcontext" class="hash-link" aria-label="Direct link to &lt;static&gt; getPrefix(context)" title="Direct link to &lt;static&gt; getPrefix(context)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the Smoothing Enabled vendor prefix being used on the given context, or null if not set.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>context</td><td>CanvasRenderingContext2D | WebGLRenderingContext</td><td>No</td><td>The canvas context to check.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The name of the property on the context which controls image smoothing (either <code>imageSmoothingEnabled</code> or a vendor-prefixed version thereof), or <code>null</code> if not supported.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/Smoothing.js#L16" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/Smoothing.js#L16</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="enable">enable<a href="#enable" class="hash-link" aria-label="Direct link to enable" title="Direct link to enable" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-enablecontext">&lt;static&gt; enable(context)<a href="#static-enablecontext" class="hash-link" aria-label="Direct link to &lt;static&gt; enable(context)" title="Direct link to &lt;static&gt; enable(context)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the Image Smoothing property on the given context. Set to false to disable image smoothing.
+By default browsers have image smoothing enabled, which isn&#x27;t always what you visually want, especially
+when using pixel art in a game. Note that this sets the property on the context itself, so that any image
+drawn to the context will be affected. This sets the property across all current browsers but support is
+patchy on earlier browsers, especially on mobile.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>context</td><td>CanvasRenderingContext2D | WebGLRenderingContext</td><td>No</td><td>The context on which to enable smoothing.</td></tr></tbody></table>
+<p><strong>Returns:</strong> CanvasRenderingContext2D, WebGLRenderingContext - The provided context.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/Smoothing.js#L43" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/Smoothing.js#L43</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="disable">disable<a href="#disable" class="hash-link" aria-label="Direct link to disable" title="Direct link to disable" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-disablecontext">&lt;static&gt; disable(context)<a href="#static-disablecontext" class="hash-link" aria-label="Direct link to &lt;static&gt; disable(context)" title="Direct link to &lt;static&gt; disable(context)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the Image Smoothing property on the given context. Set to false to disable image smoothing.
+By default browsers have image smoothing enabled, which isn&#x27;t always what you visually want, especially
+when using pixel art in a game. Note that this sets the property on the context itself, so that any image
+drawn to the context will be affected. This sets the property across all current browsers but support is
+patchy on earlier browsers, especially on mobile.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>context</td><td>CanvasRenderingContext2D | WebGLRenderingContext</td><td>No</td><td>The context on which to disable smoothing.</td></tr></tbody></table>
+<p><strong>Returns:</strong> CanvasRenderingContext2D, WebGLRenderingContext - The provided context.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/Smoothing.js#L72" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/Smoothing.js#L72</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="isenabled">isEnabled<a href="#isenabled" class="hash-link" aria-label="Direct link to isEnabled" title="Direct link to isEnabled" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-isenabledcontext">&lt;static&gt; isEnabled(context)<a href="#static-isenabledcontext" class="hash-link" aria-label="Direct link to &lt;static&gt; isEnabled(context)" title="Direct link to &lt;static&gt; isEnabled(context)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns <code>true</code> if the given context has image smoothing enabled, otherwise returns <code>false</code>.
+Returns null if no smoothing prefix is available.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>context</td><td>CanvasRenderingContext2D | WebGLRenderingContext</td><td>No</td><td>The context to check.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if smoothing is enabled on the context, otherwise <code>false</code>. <code>null</code> if not supported.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/Smoothing.js#L101" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/Smoothing.js#L101</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Canvas</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="touchaction">TouchAction<a href="#touchaction" class="hash-link" aria-label="Direct link to TouchAction" title="Direct link to TouchAction" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-touchactioncanvas-value">&lt;static&gt; TouchAction(canvas, [value])<a href="#static-touchactioncanvas-value" class="hash-link" aria-label="Direct link to &lt;static&gt; TouchAction(canvas, [value])" title="Direct link to &lt;static&gt; TouchAction(canvas, [value])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the touch-action property on the canvas style. Can be used to disable default browser touch actions.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>canvas</td><td>HTMLCanvasElement</td><td>No</td><td></td><td>The canvas element to have the style applied to.</td></tr><tr><td>value</td><td>string</td><td>Yes</td><td>&quot;&#x27;none&#x27;&quot;</td><td>The touch action value to set on the canvas. Set to <code>none</code> to disable touch actions.</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The canvas element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/TouchAction.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/TouchAction.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="userselect">UserSelect<a href="#userselect" class="hash-link" aria-label="Direct link to UserSelect" title="Direct link to UserSelect" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-userselectcanvas-value">&lt;static&gt; UserSelect(canvas, [value])<a href="#static-userselectcanvas-value" class="hash-link" aria-label="Direct link to &lt;static&gt; UserSelect(canvas, [value])" title="Direct link to &lt;static&gt; UserSelect(canvas, [value])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the user-select property on the canvas style. Can be used to disable default browser selection actions.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>canvas</td><td>HTMLCanvasElement</td><td>No</td><td></td><td>The canvas element to have the style applied to.</td></tr><tr><td>value</td><td>string</td><td>Yes</td><td>&quot;&#x27;none&#x27;&quot;</td><td>The touch callout value to set on the canvas. Set to <code>none</code> to disable touch callouts.</td></tr></tbody></table>
+<p><strong>Returns:</strong> HTMLCanvasElement - The canvas element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/canvas/UserSelect.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/canvas/UserSelect.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Color</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="colorspectrum">ColorSpectrum<a href="#colorspectrum" class="hash-link" aria-label="Direct link to ColorSpectrum" title="Direct link to ColorSpectrum" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-colorspectrumlimit">&lt;static&gt; ColorSpectrum([limit])<a href="#static-colorspectrumlimit" class="hash-link" aria-label="Direct link to &lt;static&gt; ColorSpectrum([limit])" title="Direct link to &lt;static&gt; ColorSpectrum([limit])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return an array of Colors in a Color Spectrum.</p>
+<p>The spectrum colors flow in the order: red, yellow, green, blue.</p>
+<p>By default this function will return an array with 1024 elements in.</p>
+<p>However, you can reduce this to a smaller quantity if needed, by specitying the <code>limit</code> parameter.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>limit</td><td>number</td><td>Yes</td><td>1024</td><td>How many colors should be returned? The maximum is 1024 but you can set a smaller quantity if required.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;<a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a>&gt; - An array containing <code>limit</code> parameter number of elements, where each contains a Color Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/ColorSpectrum.js#L9" target="_blank" rel="noopener noreferrer" class="">src/display/color/ColorSpectrum.js#L9</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="colortorgba">ColorToRGBA<a href="#colortorgba" class="hash-link" aria-label="Direct link to ColorToRGBA" title="Direct link to ColorToRGBA" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-colortorgbacolor">&lt;static&gt; ColorToRGBA(color)<a href="#static-colortorgbacolor" class="hash-link" aria-label="Direct link to &lt;static&gt; ColorToRGBA(color)" title="Direct link to &lt;static&gt; ColorToRGBA(color)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts the given color value into an Object containing r,g,b and a properties.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>color</td><td>number</td><td>No</td><td>A color value, optionally including the alpha value.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a> - An object containing the parsed color values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/ColorToRGBA.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/color/ColorToRGBA.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="componenttohex">ComponentToHex<a href="#componenttohex" class="hash-link" aria-label="Direct link to ComponentToHex" title="Direct link to ComponentToHex" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-componenttohexcolor">&lt;static&gt; ComponentToHex(color)<a href="#static-componenttohexcolor" class="hash-link" aria-label="Direct link to &lt;static&gt; ComponentToHex(color)" title="Direct link to &lt;static&gt; ComponentToHex(color)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns a string containing a hex representation of the given color component.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>color</td><td>number</td><td>No</td><td>The color channel to get the hex value for, must be a value between 0 and 255.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - A string of length 2 characters, i.e. 255 = ff, 100 = 64.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/ComponentToHex.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/color/ComponentToHex.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getcolor">GetColor<a href="#getcolor" class="hash-link" aria-label="Direct link to GetColor" title="Direct link to GetColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getcolorred-green-blue">&lt;static&gt; GetColor(red, green, blue)<a href="#static-getcolorred-green-blue" class="hash-link" aria-label="Direct link to &lt;static&gt; GetColor(red, green, blue)" title="Direct link to &lt;static&gt; GetColor(red, green, blue)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Given 3 separate color values this will return an integer representation of it.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>red</td><td>number</td><td>No</td><td>The red color value. A number between 0 and 255.</td></tr><tr><td>green</td><td>number</td><td>No</td><td>The green color value. A number between 0 and 255.</td></tr><tr><td>blue</td><td>number</td><td>No</td><td>The blue color value. A number between 0 and 255.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The combined color value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/GetColor.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/color/GetColor.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getcolor32">GetColor32<a href="#getcolor32" class="hash-link" aria-label="Direct link to GetColor32" title="Direct link to GetColor32" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getcolor32red-green-blue-alpha">&lt;static&gt; GetColor32(red, green, blue, alpha)<a href="#static-getcolor32red-green-blue-alpha" class="hash-link" aria-label="Direct link to &lt;static&gt; GetColor32(red, green, blue, alpha)" title="Direct link to &lt;static&gt; GetColor32(red, green, blue, alpha)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Given an alpha and 3 color values this will return an integer representation of it.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>red</td><td>number</td><td>No</td><td>The red color value. A number between 0 and 255.</td></tr><tr><td>green</td><td>number</td><td>No</td><td>The green color value. A number between 0 and 255.</td></tr><tr><td>blue</td><td>number</td><td>No</td><td>The blue color value. A number between 0 and 255.</td></tr><tr><td>alpha</td><td>number</td><td>No</td><td>The alpha color value. A number between 0 and 255.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The combined color value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/GetColor32.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/color/GetColor32.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hexstringtocolor">HexStringToColor<a href="#hexstringtocolor" class="hash-link" aria-label="Direct link to HexStringToColor" title="Direct link to HexStringToColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-hexstringtocolorhex">&lt;static&gt; HexStringToColor(hex)<a href="#static-hexstringtocolorhex" class="hash-link" aria-label="Direct link to &lt;static&gt; HexStringToColor(hex)" title="Direct link to &lt;static&gt; HexStringToColor(hex)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts a hex string into a Phaser Color object.</p>
+<p>The hex string can supplied as <code>&#x27;#0033ff&#x27;</code> or the short-hand format of <code>&#x27;#03f&#x27;</code>; it can begin with an optional &quot;#&quot; or &quot;0x&quot;, or be unprefixed.</p>
+<p>An alpha channel is <em>not</em> supported.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>hex</td><td>string</td><td>No</td><td>The hex color value to convert, such as <code>#0033ff</code> or the short-hand format: <code>#03f</code>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - A Color object populated by the values of the given string.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/HexStringToColor.js#L9" target="_blank" rel="noopener noreferrer" class="">src/display/color/HexStringToColor.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hsltocolor">HSLToColor<a href="#hsltocolor" class="hash-link" aria-label="Direct link to HSLToColor" title="Direct link to HSLToColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-hsltocolorh-s-l">&lt;static&gt; HSLToColor(h, s, l)<a href="#static-hsltocolorh-s-l" class="hash-link" aria-label="Direct link to &lt;static&gt; HSLToColor(h, s, l)" title="Direct link to &lt;static&gt; HSLToColor(h, s, l)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts HSL (hue, saturation and lightness) values to a Phaser Color object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>h</td><td>number</td><td>No</td><td>The hue value in the range 0 to 1.</td></tr><tr><td>s</td><td>number</td><td>No</td><td>The saturation value in the range 0 to 1.</td></tr><tr><td>l</td><td>number</td><td>No</td><td>The lightness value in the range 0 to 1.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - A Color object created from the results of the h, s and l values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/HSLToColor.js#L10" target="_blank" rel="noopener noreferrer" class="">src/display/color/HSLToColor.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hsvcolorwheel">HSVColorWheel<a href="#hsvcolorwheel" class="hash-link" aria-label="Direct link to HSVColorWheel" title="Direct link to HSVColorWheel" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-hsvcolorwheels-v">&lt;static&gt; HSVColorWheel([s], [v])<a href="#static-hsvcolorwheels-v" class="hash-link" aria-label="Direct link to &lt;static&gt; HSVColorWheel([s], [v])" title="Direct link to &lt;static&gt; HSVColorWheel([s], [v])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Generates an HSV color wheel which is an array of 360 Color objects, for each step of the wheel.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>s</td><td>number</td><td>Yes</td><td>1</td><td>The saturation, in the range 0 - 1.</td></tr><tr><td>v</td><td>number</td><td>Yes</td><td>1</td><td>The value, in the range 0 - 1.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;<a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a>&gt; - An array containing 360 ColorObject elements, where each element contains a Color object corresponding to the color at that point in the HSV color wheel.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/HSVColorWheel.js#L9" target="_blank" rel="noopener noreferrer" class="">src/display/color/HSVColorWheel.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hsvtorgb">HSVToRGB<a href="#hsvtorgb" class="hash-link" aria-label="Direct link to HSVToRGB" title="Direct link to HSVToRGB" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-hsvtorgbh-s-v-out">&lt;static&gt; HSVToRGB(h, s, v, [out])<a href="#static-hsvtorgbh-s-v-out" class="hash-link" aria-label="Direct link to &lt;static&gt; HSVToRGB(h, s, v, [out])" title="Direct link to &lt;static&gt; HSVToRGB(h, s, v, [out])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts a HSV (hue, saturation and value) color set to RGB.</p>
+<p>Conversion formula from <a href="https://en.wikipedia.org/wiki/HSL_and_HSV" target="_blank" rel="noopener noreferrer" class="">https://en.wikipedia.org/wiki/HSL_and_HSV</a></p>
+<p>Assumes HSV values are contained in the set [0, 1].</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>h</td><td>number</td><td>No</td><td>The hue, in the range 0 - 1. This is the base color.</td></tr><tr><td>s</td><td>number</td><td>No</td><td>The saturation, in the range 0 - 1. This controls how much of the hue will be in the final color, where 1 is fully saturated and 0 will give you white.</td></tr><tr><td>v</td><td>number</td><td>No</td><td>The value, in the range 0 - 1. This controls how dark the color is. Where 1 is as bright as possible and 0 is black.</td></tr><tr><td>out</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a> | <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a></td><td>Yes</td><td>A Color object to store the results in. If not given a new ColorObject will be created.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a>, <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - An object with the red, green and blue values set in the r, g and b properties.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/HSVToRGB.js#L30" target="_blank" rel="noopener noreferrer" class="">src/display/color/HSVToRGB.js#L30</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="huetocomponent">HueToComponent<a href="#huetocomponent" class="hash-link" aria-label="Direct link to HueToComponent" title="Direct link to HueToComponent" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-huetocomponentp-q-t">&lt;static&gt; HueToComponent(p, q, t)<a href="#static-huetocomponentp-q-t" class="hash-link" aria-label="Direct link to &lt;static&gt; HueToComponent(p, q, t)" title="Direct link to &lt;static&gt; HueToComponent(p, q, t)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts a hue to an RGB color.
+Based on code by Michael Jackson (<a href="https://github.com/mjijackson" target="_blank" rel="noopener noreferrer" class="">https://github.com/mjijackson</a>)</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>p</td><td>number</td><td>No</td><td>No description provided</td></tr><tr><td>q</td><td>number</td><td>No</td><td>No description provided</td></tr><tr><td>t</td><td>number</td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The combined color value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/HueToComponent.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/color/HueToComponent.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integertocolor">IntegerToColor<a href="#integertocolor" class="hash-link" aria-label="Direct link to IntegerToColor" title="Direct link to IntegerToColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-integertocolorinput">&lt;static&gt; IntegerToColor(input)<a href="#static-integertocolorinput" class="hash-link" aria-label="Direct link to &lt;static&gt; IntegerToColor(input)" title="Direct link to &lt;static&gt; IntegerToColor(input)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts the given color value into an instance of a Color object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>input</td><td>number</td><td>No</td><td>The color value to convert into a Color object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - A Color object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/IntegerToColor.js#L10" target="_blank" rel="noopener noreferrer" class="">src/display/color/IntegerToColor.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integertorgb">IntegerToRGB<a href="#integertorgb" class="hash-link" aria-label="Direct link to IntegerToRGB" title="Direct link to IntegerToRGB" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-integertorgbinput">&lt;static&gt; IntegerToRGB(input)<a href="#static-integertorgbinput" class="hash-link" aria-label="Direct link to &lt;static&gt; IntegerToRGB(input)" title="Direct link to &lt;static&gt; IntegerToRGB(input)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return the component parts of a color as an Object with the properties alpha, red, green, blue.</p>
+<p>Alpha will only be set if it exists in the given color (0xAARRGGBB)</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>input</td><td>number</td><td>No</td><td>The color value to convert into a Color object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a> - An object with the red, green and blue values set in the r, g and b properties.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/IntegerToRGB.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/color/IntegerToRGB.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="objecttocolor">ObjectToColor<a href="#objecttocolor" class="hash-link" aria-label="Direct link to ObjectToColor" title="Direct link to ObjectToColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-objecttocolorinput">&lt;static&gt; ObjectToColor(input)<a href="#static-objecttocolorinput" class="hash-link" aria-label="Direct link to &lt;static&gt; ObjectToColor(input)" title="Direct link to &lt;static&gt; ObjectToColor(input)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts an object containing <code>r</code>, <code>g</code>, <code>b</code> and <code>a</code> properties into a Color class instance.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>input</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-display#InputColorObject">Phaser.Types.Display.InputColorObject</a></td><td>No</td><td>An object containing <code>r</code>, <code>g</code>, <code>b</code> and <code>a</code> properties in the range 0 to 255.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - A Color object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/ObjectToColor.js#L9" target="_blank" rel="noopener noreferrer" class="">src/display/color/ObjectToColor.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomrgb">RandomRGB<a href="#randomrgb" class="hash-link" aria-label="Direct link to RandomRGB" title="Direct link to RandomRGB" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomrgbmin-max">&lt;static&gt; RandomRGB([min], [max])<a href="#static-randomrgbmin-max" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomRGB([min], [max])" title="Direct link to &lt;static&gt; RandomRGB([min], [max])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates a new Color object where the r, g, and b values have been set to random values
+based on the given min max values.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>min</td><td>number</td><td>Yes</td><td>0</td><td>The minimum value to set the random range from (between 0 and 255)</td></tr><tr><td>max</td><td>number</td><td>Yes</td><td>255</td><td>The maximum value to set the random range from (between 0 and 255)</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - A Color object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/RandomRGB.js#L10" target="_blank" rel="noopener noreferrer" class="">src/display/color/RandomRGB.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgbstringtocolor">RGBStringToColor<a href="#rgbstringtocolor" class="hash-link" aria-label="Direct link to RGBStringToColor" title="Direct link to RGBStringToColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rgbstringtocolorrgb">&lt;static&gt; RGBStringToColor(rgb)<a href="#static-rgbstringtocolorrgb" class="hash-link" aria-label="Direct link to &lt;static&gt; RGBStringToColor(rgb)" title="Direct link to &lt;static&gt; RGBStringToColor(rgb)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts a CSS &#x27;web&#x27; string into a Phaser Color object.</p>
+<p>The web string can be in the format <code>&#x27;rgb(r,g,b)&#x27;</code> or <code>&#x27;rgba(r,g,b,a)&#x27;</code> where r/g/b are in the range [0..255] and a is in the range [0..1].</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>rgb</td><td>string</td><td>No</td><td>The CSS format color string, using the <code>rgb</code> or <code>rgba</code> format.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - A Color object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/RGBStringToColor.js#L9" target="_blank" rel="noopener noreferrer" class="">src/display/color/RGBStringToColor.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgbtohsv">RGBToHSV<a href="#rgbtohsv" class="hash-link" aria-label="Direct link to RGBToHSV" title="Direct link to RGBToHSV" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rgbtohsvr-g-b-out">&lt;static&gt; RGBToHSV(r, g, b, [out])<a href="#static-rgbtohsvr-g-b-out" class="hash-link" aria-label="Direct link to &lt;static&gt; RGBToHSV(r, g, b, [out])" title="Direct link to &lt;static&gt; RGBToHSV(r, g, b, [out])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts an RGB color value to HSV (hue, saturation and value).
+Conversion formula from <a href="http://en.wikipedia.org/wiki/HSL_color_space." target="_blank" rel="noopener noreferrer" class="">http://en.wikipedia.org/wiki/HSL_color_space.</a>
+Assumes RGB values are contained in the set [0, 255] and returns h, s and v in the set [0, 1].
+Based on code by Michael Jackson (<a href="https://github.com/mjijackson" target="_blank" rel="noopener noreferrer" class="">https://github.com/mjijackson</a>)</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>r</td><td>number</td><td>No</td><td>The red color value. A number between 0 and 255.</td></tr><tr><td>g</td><td>number</td><td>No</td><td>The green color value. A number between 0 and 255.</td></tr><tr><td>b</td><td>number</td><td>No</td><td>The blue color value. A number between 0 and 255.</td></tr><tr><td>out</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-display#HSVColorObject">Phaser.Types.Display.HSVColorObject</a> | <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a></td><td>Yes</td><td>An object to store the color values in. If not given an HSV Color Object will be created.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-display#HSVColorObject">Phaser.Types.Display.HSVColorObject</a>, <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - An object with the properties <code>h</code>, <code>s</code> and <code>v</code> set.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/RGBToHSV.js#L7" target="_blank" rel="noopener noreferrer" class="">src/display/color/RGBToHSV.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgbtostring">RGBToString<a href="#rgbtostring" class="hash-link" aria-label="Direct link to RGBToString" title="Direct link to RGBToString" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rgbtostringr-g-b-a-prefix">&lt;static&gt; RGBToString(r, g, b, [a], [prefix])<a href="#static-rgbtostringr-g-b-a-prefix" class="hash-link" aria-label="Direct link to &lt;static&gt; RGBToString(r, g, b, [a], [prefix])" title="Direct link to &lt;static&gt; RGBToString(r, g, b, [a], [prefix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts the color values into an HTML compatible color string, prefixed with either <code>#</code> or <code>0x</code>.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>r</td><td>number</td><td>No</td><td></td><td>The red color value. A number between 0 and 255.</td></tr><tr><td>g</td><td>number</td><td>No</td><td></td><td>The green color value. A number between 0 and 255.</td></tr><tr><td>b</td><td>number</td><td>No</td><td></td><td>The blue color value. A number between 0 and 255.</td></tr><tr><td>a</td><td>number</td><td>Yes</td><td>255</td><td>The alpha value. A number between 0 and 255.</td></tr><tr><td>prefix</td><td>string</td><td>Yes</td><td>&quot;#&quot;</td><td>The prefix of the string. Either <code>#</code> or <code>0x</code>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - A string-based representation of the color values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/RGBToString.js#L9" target="_blank" rel="noopener noreferrer" class="">src/display/color/RGBToString.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="valuetocolor">ValueToColor<a href="#valuetocolor" class="hash-link" aria-label="Direct link to ValueToColor" title="Direct link to ValueToColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-valuetocolorinput">&lt;static&gt; ValueToColor(input)<a href="#static-valuetocolorinput" class="hash-link" aria-label="Direct link to &lt;static&gt; ValueToColor(input)" title="Direct link to &lt;static&gt; ValueToColor(input)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts the given source color value into an instance of a Color class.
+The value can be either a string, prefixed with <code>rgb</code> or a hex string, a number or an Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>input</td><td>string | number</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-display#InputColorObject">Phaser.Types.Display.InputColorObject</a></td><td>No</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a> - A Color object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/ValueToColor.js#L12" target="_blank" rel="noopener noreferrer" class="">src/display/color/ValueToColor.js#L12</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Display.Color.Interpolate</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgbwithrgb">RGBWithRGB<a href="#rgbwithrgb" class="hash-link" aria-label="Direct link to RGBWithRGB" title="Direct link to RGBWithRGB" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rgbwithrgbr1-g1-b1-r2-g2-b2-length-index">&lt;static&gt; RGBWithRGB(r1, g1, b1, r2, g2, b2, [length], [index])<a href="#static-rgbwithrgbr1-g1-b1-r2-g2-b2-length-index" class="hash-link" aria-label="Direct link to &lt;static&gt; RGBWithRGB(r1, g1, b1, r2, g2, b2, [length], [index])" title="Direct link to &lt;static&gt; RGBWithRGB(r1, g1, b1, r2, g2, b2, [length], [index])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Interpolates between the two given color ranges over the length supplied.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>r1</td><td>number</td><td>No</td><td></td><td>Red value.</td></tr><tr><td>g1</td><td>number</td><td>No</td><td></td><td>Blue value.</td></tr><tr><td>b1</td><td>number</td><td>No</td><td></td><td>Green value.</td></tr><tr><td>r2</td><td>number</td><td>No</td><td></td><td>Red value.</td></tr><tr><td>g2</td><td>number</td><td>No</td><td></td><td>Blue value.</td></tr><tr><td>b2</td><td>number</td><td>No</td><td></td><td>Green value.</td></tr><tr><td>length</td><td>number</td><td>Yes</td><td>100</td><td>Distance to interpolate over.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>Index to start from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a> - An object containing the interpolated color values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/Interpolate.js#L15" target="_blank" rel="noopener noreferrer" class="">src/display/color/Interpolate.js#L15</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="colorwithcolor">ColorWithColor<a href="#colorwithcolor" class="hash-link" aria-label="Direct link to ColorWithColor" title="Direct link to ColorWithColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-colorwithcolorcolor1-color2-length-index">&lt;static&gt; ColorWithColor(color1, color2, [length], [index])<a href="#static-colorwithcolorcolor1-color2-length-index" class="hash-link" aria-label="Direct link to &lt;static&gt; ColorWithColor(color1, color2, [length], [index])" title="Direct link to &lt;static&gt; ColorWithColor(color1, color2, [length], [index])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Interpolates between the two given color objects over the length supplied.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>color1</td><td><a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a></td><td>No</td><td></td><td>The first Color object.</td></tr><tr><td>color2</td><td><a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a></td><td>No</td><td></td><td>The second Color object.</td></tr><tr><td>length</td><td>number</td><td>Yes</td><td>100</td><td>Distance to interpolate over.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>Index to start from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a> - An object containing the interpolated color values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/Interpolate.js#L48" target="_blank" rel="noopener noreferrer" class="">src/display/color/Interpolate.js#L48</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="colorwithrgb">ColorWithRGB<a href="#colorwithrgb" class="hash-link" aria-label="Direct link to ColorWithRGB" title="Direct link to ColorWithRGB" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-colorwithrgbcolor1-r-g-b-length-index">&lt;static&gt; ColorWithRGB(color1, r, g, b, [length], [index])<a href="#static-colorwithrgbcolor1-r-g-b-length-index" class="hash-link" aria-label="Direct link to &lt;static&gt; ColorWithRGB(color1, r, g, b, [length], [index])" title="Direct link to &lt;static&gt; ColorWithRGB(color1, r, g, b, [length], [index])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Interpolates between the Color object and color values over the length supplied.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>color1</td><td><a class="" href="/api-documentation/3.85.2/namespace/display-color">Phaser.Display.Color</a></td><td>No</td><td></td><td>The first Color object.</td></tr><tr><td>r</td><td>number</td><td>No</td><td></td><td>Red value.</td></tr><tr><td>g</td><td>number</td><td>No</td><td></td><td>Blue value.</td></tr><tr><td>b</td><td>number</td><td>No</td><td></td><td>Green value.</td></tr><tr><td>length</td><td>number</td><td>Yes</td><td>100</td><td>Distance to interpolate over.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>Index to start from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-display#ColorObject">Phaser.Types.Display.ColorObject</a> - An object containing the interpolated color values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/display/color/Interpolate.js#L71" target="_blank" rel="noopener noreferrer" class="">src/display/color/Interpolate.js#L71</a><br>
+Since: 3.0.0</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/function/dom"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Phaser.DOM</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/function/gameobjects"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Phaser.GameObjects</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#bottomcenter" class="table-of-contents__link toc-highlight">BottomCenter</a><ul><li><a href="#static-bottomcentergameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; BottomCenter(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#bottomleft" class="table-of-contents__link toc-highlight">BottomLeft</a><ul><li><a href="#static-bottomleftgameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; BottomLeft(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#bottomright" class="table-of-contents__link toc-highlight">BottomRight</a><ul><li><a href="#static-bottomrightgameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; BottomRight(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#center" class="table-of-contents__link toc-highlight">Center</a><ul><li><a href="#static-centergameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; Center(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#leftcenter" class="table-of-contents__link toc-highlight">LeftCenter</a><ul><li><a href="#static-leftcentergameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; LeftCenter(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#quickset" class="table-of-contents__link toc-highlight">QuickSet</a><ul><li><a href="#static-quicksetchild-alignin-position-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; QuickSet(child, alignIn, position, [offsetX], [offsetY])</a></li></ul></li><li><a href="#rightcenter" class="table-of-contents__link toc-highlight">RightCenter</a><ul><li><a href="#static-rightcentergameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; RightCenter(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#topcenter" class="table-of-contents__link toc-highlight">TopCenter</a><ul><li><a href="#static-topcentergameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; TopCenter(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#topleft" class="table-of-contents__link toc-highlight">TopLeft</a><ul><li><a href="#static-topleftgameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; TopLeft(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#topright" class="table-of-contents__link toc-highlight">TopRight</a><ul><li><a href="#static-toprightgameobject-alignin-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; TopRight(gameObject, alignIn, [offsetX], [offsetY])</a></li></ul></li><li><a href="#bottomcenter-1" class="table-of-contents__link toc-highlight">BottomCenter</a><ul><li><a href="#static-bottomcentergameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; BottomCenter(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#bottomleft-1" class="table-of-contents__link toc-highlight">BottomLeft</a><ul><li><a href="#static-bottomleftgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; BottomLeft(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#bottomright-1" class="table-of-contents__link toc-highlight">BottomRight</a><ul><li><a href="#static-bottomrightgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; BottomRight(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#leftbottom" class="table-of-contents__link toc-highlight">LeftBottom</a><ul><li><a href="#static-leftbottomgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; LeftBottom(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#leftcenter-1" class="table-of-contents__link toc-highlight">LeftCenter</a><ul><li><a href="#static-leftcentergameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; LeftCenter(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#lefttop" class="table-of-contents__link toc-highlight">LeftTop</a><ul><li><a href="#static-lefttopgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; LeftTop(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#quickset-1" class="table-of-contents__link toc-highlight">QuickSet</a><ul><li><a href="#static-quicksetchild-alignto-position-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; QuickSet(child, alignTo, position, [offsetX], [offsetY])</a></li></ul></li><li><a href="#rightbottom" class="table-of-contents__link toc-highlight">RightBottom</a><ul><li><a href="#static-rightbottomgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; RightBottom(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#rightcenter-1" class="table-of-contents__link toc-highlight">RightCenter</a><ul><li><a href="#static-rightcentergameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; RightCenter(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#righttop" class="table-of-contents__link toc-highlight">RightTop</a><ul><li><a href="#static-righttopgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; RightTop(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#topcenter-1" class="table-of-contents__link toc-highlight">TopCenter</a><ul><li><a href="#static-topcentergameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; TopCenter(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#topleft-1" class="table-of-contents__link toc-highlight">TopLeft</a><ul><li><a href="#static-topleftgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; TopLeft(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#topright-1" class="table-of-contents__link toc-highlight">TopRight</a><ul><li><a href="#static-toprightgameobject-alignto-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; TopRight(gameObject, alignTo, [offsetX], [offsetY])</a></li></ul></li><li><a href="#centeron" class="table-of-contents__link toc-highlight">CenterOn</a><ul><li><a href="#static-centerongameobject-x-y" class="table-of-contents__link toc-highlight">&lt;static&gt; CenterOn(gameObject, x, y)</a></li></ul></li><li><a href="#getbottom" class="table-of-contents__link toc-highlight">GetBottom</a><ul><li><a href="#static-getbottomgameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetBottom(gameObject)</a></li></ul></li><li><a href="#getbounds" class="table-of-contents__link toc-highlight">GetBounds</a><ul><li><a href="#static-getboundsgameobject-output" class="table-of-contents__link toc-highlight">&lt;static&gt; GetBounds(gameObject, [output])</a></li></ul></li><li><a href="#getcenterx" class="table-of-contents__link toc-highlight">GetCenterX</a><ul><li><a href="#static-getcenterxgameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetCenterX(gameObject)</a></li></ul></li><li><a href="#getcentery" class="table-of-contents__link toc-highlight">GetCenterY</a><ul><li><a href="#static-getcenterygameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetCenterY(gameObject)</a></li></ul></li><li><a href="#getleft" class="table-of-contents__link toc-highlight">GetLeft</a><ul><li><a href="#static-getleftgameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetLeft(gameObject)</a></li></ul></li><li><a href="#getoffsetx" class="table-of-contents__link toc-highlight">GetOffsetX</a><ul><li><a href="#static-getoffsetxgameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetOffsetX(gameObject)</a></li></ul></li><li><a href="#getoffsety" class="table-of-contents__link toc-highlight">GetOffsetY</a><ul><li><a href="#static-getoffsetygameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetOffsetY(gameObject)</a></li></ul></li><li><a href="#getright" class="table-of-contents__link toc-highlight">GetRight</a><ul><li><a href="#static-getrightgameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetRight(gameObject)</a></li></ul></li><li><a href="#gettop" class="table-of-contents__link toc-highlight">GetTop</a><ul><li><a href="#static-gettopgameobject" class="table-of-contents__link toc-highlight">&lt;static&gt; GetTop(gameObject)</a></li></ul></li><li><a href="#setbottom" class="table-of-contents__link toc-highlight">SetBottom</a><ul><li><a href="#static-setbottomgameobject-value" class="table-of-contents__link toc-highlight">&lt;static&gt; SetBottom(gameObject, value)</a></li></ul></li><li><a href="#setcenterx" class="table-of-contents__link toc-highlight">SetCenterX</a><ul><li><a href="#static-setcenterxgameobject-x" class="table-of-contents__link toc-highlight">&lt;static&gt; SetCenterX(gameObject, x)</a></li></ul></li><li><a href="#setcentery" class="table-of-contents__link toc-highlight">SetCenterY</a><ul><li><a href="#static-setcenterygameobject-y" class="table-of-contents__link toc-highlight">&lt;static&gt; SetCenterY(gameObject, y)</a></li></ul></li><li><a href="#setleft" class="table-of-contents__link toc-highlight">SetLeft</a><ul><li><a href="#static-setleftgameobject-value" class="table-of-contents__link toc-highlight">&lt;static&gt; SetLeft(gameObject, value)</a></li></ul></li><li><a href="#setright" class="table-of-contents__link toc-highlight">SetRight</a><ul><li><a href="#static-setrightgameobject-value" class="table-of-contents__link toc-highlight">&lt;static&gt; SetRight(gameObject, value)</a></li></ul></li><li><a href="#settop" class="table-of-contents__link toc-highlight">SetTop</a><ul><li><a href="#static-settopgameobject-value" class="table-of-contents__link toc-highlight">&lt;static&gt; SetTop(gameObject, value)</a></li></ul></li><li><a href="#setcrisp" class="table-of-contents__link toc-highlight">setCrisp</a><ul><li><a href="#static-setcrispcanvas" class="table-of-contents__link toc-highlight">&lt;static&gt; setCrisp(canvas)</a></li></ul></li><li><a href="#setbicubic" class="table-of-contents__link toc-highlight">setBicubic</a><ul><li><a href="#static-setbicubiccanvas" class="table-of-contents__link toc-highlight">&lt;static&gt; setBicubic(canvas)</a></li></ul></li><li><a href="#create" class="table-of-contents__link toc-highlight">create</a><ul><li><a href="#static-createparent-width-height-canvastype-selfparent" class="table-of-contents__link toc-highlight">&lt;static&gt; create(parent, [width], [height], [canvasType], [selfParent])</a></li></ul></li><li><a href="#create2d" class="table-of-contents__link toc-highlight">create2D</a><ul><li><a href="#static-create2dparent-width-height" class="table-of-contents__link toc-highlight">&lt;static&gt; create2D(parent, [width], [height])</a></li></ul></li><li><a href="#createwebgl" class="table-of-contents__link toc-highlight">createWebGL</a><ul><li><a href="#static-createwebglparent-width-height" class="table-of-contents__link toc-highlight">&lt;static&gt; createWebGL(parent, [width], [height])</a></li></ul></li><li><a href="#first" class="table-of-contents__link toc-highlight">first</a><ul><li><a href="#static-firstcanvastype" class="table-of-contents__link toc-highlight">&lt;static&gt; first([canvasType])</a></li></ul></li><li><a href="#remove" class="table-of-contents__link toc-highlight">remove</a><ul><li><a href="#static-removeparent" class="table-of-contents__link toc-highlight">&lt;static&gt; remove(parent)</a></li></ul></li><li><a href="#total" class="table-of-contents__link toc-highlight">total</a><ul><li><a href="#static-total" class="table-of-contents__link toc-highlight">&lt;static&gt; total()</a></li></ul></li><li><a href="#free" class="table-of-contents__link toc-highlight">free</a><ul><li><a href="#static-free" class="table-of-contents__link toc-highlight">&lt;static&gt; free()</a></li></ul></li><li><a href="#disablesmoothing" class="table-of-contents__link toc-highlight">disableSmoothing</a><ul><li><a href="#static-disablesmoothing" class="table-of-contents__link toc-highlight">&lt;static&gt; disableSmoothing()</a></li></ul></li><li><a href="#enablesmoothing" class="table-of-contents__link toc-highlight">enableSmoothing</a><ul><li><a href="#static-enablesmoothing" class="table-of-contents__link toc-highlight">&lt;static&gt; enableSmoothing()</a></li></ul></li><li><a href="#getprefix" class="table-of-contents__link toc-highlight">getPrefix</a><ul><li><a href="#static-getprefixcontext" class="table-of-contents__link toc-highlight">&lt;static&gt; getPrefix(context)</a></li></ul></li><li><a href="#enable" class="table-of-contents__link toc-highlight">enable</a><ul><li><a href="#static-enablecontext" class="table-of-contents__link toc-highlight">&lt;static&gt; enable(context)</a></li></ul></li><li><a href="#disable" class="table-of-contents__link toc-highlight">disable</a><ul><li><a href="#static-disablecontext" class="table-of-contents__link toc-highlight">&lt;static&gt; disable(context)</a></li></ul></li><li><a href="#isenabled" class="table-of-contents__link toc-highlight">isEnabled</a><ul><li><a href="#static-isenabledcontext" class="table-of-contents__link toc-highlight">&lt;static&gt; isEnabled(context)</a></li></ul></li><li><a href="#touchaction" class="table-of-contents__link toc-highlight">TouchAction</a><ul><li><a href="#static-touchactioncanvas-value" class="table-of-contents__link toc-highlight">&lt;static&gt; TouchAction(canvas, [value])</a></li></ul></li><li><a href="#userselect" class="table-of-contents__link toc-highlight">UserSelect</a><ul><li><a href="#static-userselectcanvas-value" class="table-of-contents__link toc-highlight">&lt;static&gt; UserSelect(canvas, [value])</a></li></ul></li><li><a href="#colorspectrum" class="table-of-contents__link toc-highlight">ColorSpectrum</a><ul><li><a href="#static-colorspectrumlimit" class="table-of-contents__link toc-highlight">&lt;static&gt; ColorSpectrum([limit])</a></li></ul></li><li><a href="#colortorgba" class="table-of-contents__link toc-highlight">ColorToRGBA</a><ul><li><a href="#static-colortorgbacolor" class="table-of-contents__link toc-highlight">&lt;static&gt; ColorToRGBA(color)</a></li></ul></li><li><a href="#componenttohex" class="table-of-contents__link toc-highlight">ComponentToHex</a><ul><li><a href="#static-componenttohexcolor" class="table-of-contents__link toc-highlight">&lt;static&gt; ComponentToHex(color)</a></li></ul></li><li><a href="#getcolor" class="table-of-contents__link toc-highlight">GetColor</a><ul><li><a href="#static-getcolorred-green-blue" class="table-of-contents__link toc-highlight">&lt;static&gt; GetColor(red, green, blue)</a></li></ul></li><li><a href="#getcolor32" class="table-of-contents__link toc-highlight">GetColor32</a><ul><li><a href="#static-getcolor32red-green-blue-alpha" class="table-of-contents__link toc-highlight">&lt;static&gt; GetColor32(red, green, blue, alpha)</a></li></ul></li><li><a href="#hexstringtocolor" class="table-of-contents__link toc-highlight">HexStringToColor</a><ul><li><a href="#static-hexstringtocolorhex" class="table-of-contents__link toc-highlight">&lt;static&gt; HexStringToColor(hex)</a></li></ul></li><li><a href="#hsltocolor" class="table-of-contents__link toc-highlight">HSLToColor</a><ul><li><a href="#static-hsltocolorh-s-l" class="table-of-contents__link toc-highlight">&lt;static&gt; HSLToColor(h, s, l)</a></li></ul></li><li><a href="#hsvcolorwheel" class="table-of-contents__link toc-highlight">HSVColorWheel</a><ul><li><a href="#static-hsvcolorwheels-v" class="table-of-contents__link toc-highlight">&lt;static&gt; HSVColorWheel([s], [v])</a></li></ul></li><li><a href="#hsvtorgb" class="table-of-contents__link toc-highlight">HSVToRGB</a><ul><li><a href="#static-hsvtorgbh-s-v-out" class="table-of-contents__link toc-highlight">&lt;static&gt; HSVToRGB(h, s, v, [out])</a></li></ul></li><li><a href="#huetocomponent" class="table-of-contents__link toc-highlight">HueToComponent</a><ul><li><a href="#static-huetocomponentp-q-t" class="table-of-contents__link toc-highlight">&lt;static&gt; HueToComponent(p, q, t)</a></li></ul></li><li><a href="#integertocolor" class="table-of-contents__link toc-highlight">IntegerToColor</a><ul><li><a href="#static-integertocolorinput" class="table-of-contents__link toc-highlight">&lt;static&gt; IntegerToColor(input)</a></li></ul></li><li><a href="#integertorgb" class="table-of-contents__link toc-highlight">IntegerToRGB</a><ul><li><a href="#static-integertorgbinput" class="table-of-contents__link toc-highlight">&lt;static&gt; IntegerToRGB(input)</a></li></ul></li><li><a href="#objecttocolor" class="table-of-contents__link toc-highlight">ObjectToColor</a><ul><li><a href="#static-objecttocolorinput" class="table-of-contents__link toc-highlight">&lt;static&gt; ObjectToColor(input)</a></li></ul></li><li><a href="#randomrgb" class="table-of-contents__link toc-highlight">RandomRGB</a><ul><li><a href="#static-randomrgbmin-max" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomRGB([min], [max])</a></li></ul></li><li><a href="#rgbstringtocolor" class="table-of-contents__link toc-highlight">RGBStringToColor</a><ul><li><a href="#static-rgbstringtocolorrgb" class="table-of-contents__link toc-highlight">&lt;static&gt; RGBStringToColor(rgb)</a></li></ul></li><li><a href="#rgbtohsv" class="table-of-contents__link toc-highlight">RGBToHSV</a><ul><li><a href="#static-rgbtohsvr-g-b-out" class="table-of-contents__link toc-highlight">&lt;static&gt; RGBToHSV(r, g, b, [out])</a></li></ul></li><li><a href="#rgbtostring" class="table-of-contents__link toc-highlight">RGBToString</a><ul><li><a href="#static-rgbtostringr-g-b-a-prefix" class="table-of-contents__link toc-highlight">&lt;static&gt; RGBToString(r, g, b, [a], [prefix])</a></li></ul></li><li><a href="#valuetocolor" class="table-of-contents__link toc-highlight">ValueToColor</a><ul><li><a href="#static-valuetocolorinput" class="table-of-contents__link toc-highlight">&lt;static&gt; ValueToColor(input)</a></li></ul></li><li><a href="#rgbwithrgb" class="table-of-contents__link toc-highlight">RGBWithRGB</a><ul><li><a href="#static-rgbwithrgbr1-g1-b1-r2-g2-b2-length-index" class="table-of-contents__link toc-highlight">&lt;static&gt; RGBWithRGB(r1, g1, b1, r2, g2, b2, [length], [index])</a></li></ul></li><li><a href="#colorwithcolor" class="table-of-contents__link toc-highlight">ColorWithColor</a><ul><li><a href="#static-colorwithcolorcolor1-color2-length-index" class="table-of-contents__link toc-highlight">&lt;static&gt; ColorWithColor(color1, color2, [length], [index])</a></li></ul></li><li><a href="#colorwithrgb" class="table-of-contents__link toc-highlight">ColorWithRGB</a><ul><li><a href="#static-colorwithrgbcolor1-r-g-b-length-index" class="table-of-contents__link toc-highlight">&lt;static&gt; ColorWithRGB(color1, r, g, b, [length], [index])</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-typedef/Phaser.Types.Scenes" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Types.Scenes | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/typedef/types-scenes"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="Types.Scenes | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Types.Scenes"><meta data-rh="true" property="og:description" content="Phaser.Types.Scenes"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/typedef/types-scenes"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/types-scenes" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/types-scenes" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Typedefs","item":"https://docs.phaser.io/api-documentation/typedef/"},{"@type":"ListItem","position":2,"name":"Types.Scenes","item":"https://docs.phaser.io/api-documentation/typedef/types-scenes"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/typedef/types-scenes">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/typedef/types-scenes">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/typedef/types-scenes">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/typedef/types-scenes">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Collapse sidebar category &#x27;Typedefs&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/device"><span title="Device" class="linkLabel_WmDU">Device</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/scale"><span title="Scale" class="linkLabel_WmDU">Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tilemaps"><span title="Tilemaps" class="linkLabel_WmDU">Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tweens"><span title="Tweens" class="linkLabel_WmDU">Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-actions"><span title="Types.Actions" class="linkLabel_WmDU">Types.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-animations"><span title="Types.Animations" class="linkLabel_WmDU">Types.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-controls"><span title="Types.Cameras.Controls" class="linkLabel_WmDU">Types.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-scene2d"><span title="Types.Cameras.Scene2D" class="linkLabel_WmDU">Types.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-core"><span title="Types.Core" class="linkLabel_WmDU">Types.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-create"><span title="Types.Create" class="linkLabel_WmDU">Types.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-curves"><span title="Types.Curves" class="linkLabel_WmDU">Types.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-display"><span title="Types.Display" class="linkLabel_WmDU">Types.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-bitmaptext"><span title="Types.GameObjects.BitmapText" class="linkLabel_WmDU">Types.GameObjects.BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-container"><span title="Types.GameObjects.Container" class="linkLabel_WmDU">Types.GameObjects.Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-graphics"><span title="Types.GameObjects.Graphics" class="linkLabel_WmDU">Types.GameObjects.Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-group"><span title="Types.GameObjects.Group" class="linkLabel_WmDU">Types.GameObjects.Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-mesh"><span title="Types.GameObjects.Mesh" class="linkLabel_WmDU">Types.GameObjects.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-nineslice"><span title="Types.GameObjects.NineSlice" class="linkLabel_WmDU">Types.GameObjects.NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-particles"><span title="Types.GameObjects.Particles" class="linkLabel_WmDU">Types.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-pathfollower"><span title="Types.GameObjects.PathFollower" class="linkLabel_WmDU">Types.GameObjects.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-plane"><span title="Types.GameObjects.Plane" class="linkLabel_WmDU">Types.GameObjects.Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rendertexture"><span title="Types.GameObjects.RenderTexture" class="linkLabel_WmDU">Types.GameObjects.RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rope"><span title="Types.GameObjects.Rope" class="linkLabel_WmDU">Types.GameObjects.Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-shader"><span title="Types.GameObjects.Shader" class="linkLabel_WmDU">Types.GameObjects.Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-sprite"><span title="Types.GameObjects.Sprite" class="linkLabel_WmDU">Types.GameObjects.Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-text"><span title="Types.GameObjects.Text" class="linkLabel_WmDU">Types.GameObjects.Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-tilesprite"><span title="Types.GameObjects.TileSprite" class="linkLabel_WmDU">Types.GameObjects.TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-video"><span title="Types.GameObjects.Video" class="linkLabel_WmDU">Types.GameObjects.Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-zone"><span title="Types.GameObjects.Zone" class="linkLabel_WmDU">Types.GameObjects.Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects"><span title="Types.GameObjects" class="linkLabel_WmDU">Types.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-geom-mesh"><span title="Types.Geom.Mesh" class="linkLabel_WmDU">Types.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-gamepad"><span title="Types.Input.Gamepad" class="linkLabel_WmDU">Types.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-keyboard"><span title="Types.Input.Keyboard" class="linkLabel_WmDU">Types.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input"><span title="Types.Input" class="linkLabel_WmDU">Types.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-loader-filetypes"><span title="Types.Loader.FileTypes" class="linkLabel_WmDU">Types.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-loader"><span title="Types.Loader" class="linkLabel_WmDU">Types.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-math"><span title="Types.Math" class="linkLabel_WmDU">Types.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-arcade"><span title="Types.Physics.Arcade" class="linkLabel_WmDU">Types.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-matter"><span title="Types.Physics.Matter" class="linkLabel_WmDU">Types.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-plugins"><span title="Types.Plugins" class="linkLabel_WmDU">Types.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-snapshot"><span title="Types.Renderer.Snapshot" class="linkLabel_WmDU">Types.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-webgl"><span title="Types.Renderer.WebGL" class="linkLabel_WmDU">Types.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/typedef/types-scenes"><span title="Types.Scenes" class="linkLabel_WmDU">Types.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-sound"><span title="Types.Sound" class="linkLabel_WmDU">Types.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-textures"><span title="Types.Textures" class="linkLabel_WmDU">Types.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tilemaps"><span title="Types.Tilemaps" class="linkLabel_WmDU">Types.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-time"><span title="Types.Time" class="linkLabel_WmDU">Types.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tweens"><span title="Types.Tweens" class="linkLabel_WmDU">Types.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/phaser"><span title="Phaser" class="linkLabel_WmDU">Phaser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="linkLabel_WmDU">Typedefs</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/typedef/"><span>Typedefs</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Types.Scenes</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Types.Scenes</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="createscenefromobjectconfig">CreateSceneFromObjectConfig<a href="#createscenefromobjectconfig" class="hash-link" aria-label="Direct link to CreateSceneFromObjectConfig" title="Direct link to CreateSceneFromObjectConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-createscenefromobjectconfig">&lt;static&gt; CreateSceneFromObjectConfig<a href="#static-createscenefromobjectconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; CreateSceneFromObjectConfig" title="Direct link to &lt;static&gt; CreateSceneFromObjectConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>init</td><td><a class="" href="/api-documentation/typedef/types-scenes#SceneInitCallback">Phaser.Types.Scenes.SceneInitCallback</a></td><td>Yes</td><td>The scene&#x27;s init callback.</td></tr><tr><td>preload</td><td><a class="" href="/api-documentation/typedef/types-scenes#ScenePreloadCallback">Phaser.Types.Scenes.ScenePreloadCallback</a></td><td>Yes</td><td>The scene&#x27;s preload callback.</td></tr><tr><td>create</td><td><a class="" href="/api-documentation/typedef/types-scenes#SceneCreateCallback">Phaser.Types.Scenes.SceneCreateCallback</a></td><td>Yes</td><td>The scene&#x27;s create callback.</td></tr><tr><td>update</td><td><a class="" href="/api-documentation/typedef/types-scenes#SceneUpdateCallback">Phaser.Types.Scenes.SceneUpdateCallback</a></td><td>Yes</td><td>The scene&#x27;s update callback. See {@link Phaser.Scene#update}.</td></tr><tr><td>extend</td><td>any</td><td>Yes</td><td>Any additional properties, which will be copied to the Scene after it&#x27;s created (except <code>data</code> or <code>sys</code>).</td></tr><tr><td>extend.data</td><td>any</td><td>Yes</td><td>Any values, which will be merged into the Scene&#x27;s Data Manager store.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/CreateSceneFromObjectConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/CreateSceneFromObjectConfig.js#L1</a><br>
+Since: 3.17.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenecreatecallback">SceneCreateCallback<a href="#scenecreatecallback" class="hash-link" aria-label="Direct link to SceneCreateCallback" title="Direct link to SceneCreateCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scenecreatecallback">&lt;static&gt; SceneCreateCallback<a href="#static-scenecreatecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; SceneCreateCallback" title="Direct link to &lt;static&gt; SceneCreateCallback" translate="no">​</a></h3>
+<p>Can be defined on your own Scenes. Use it to create your game objects.</p>
+<p>This method is called by the Scene Manager when the scene starts, after <code>init()</code> and <code>preload()</code>.</p>
+<p>If the LoaderPlugin started after <code>preload()</code>, then this method is called only after loading is complete.</p>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SceneCreateCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SceneCreateCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sceneinitcallback">SceneInitCallback<a href="#sceneinitcallback" class="hash-link" aria-label="Direct link to SceneInitCallback" title="Direct link to SceneInitCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-sceneinitcallback">&lt;static&gt; SceneInitCallback<a href="#static-sceneinitcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; SceneInitCallback" title="Direct link to &lt;static&gt; SceneInitCallback" translate="no">​</a></h3>
+<p>Can be defined on your own Scenes.</p>
+<p>This method is called by the Scene Manager when the scene starts, before <code>preload()</code> and <code>create()</code>.</p>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SceneInitCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SceneInitCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenepreloadcallback">ScenePreloadCallback<a href="#scenepreloadcallback" class="hash-link" aria-label="Direct link to ScenePreloadCallback" title="Direct link to ScenePreloadCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scenepreloadcallback">&lt;static&gt; ScenePreloadCallback<a href="#static-scenepreloadcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; ScenePreloadCallback" title="Direct link to &lt;static&gt; ScenePreloadCallback" translate="no">​</a></h3>
+<p>Can be defined on your own Scenes. Use it to load assets.</p>
+<p>This method is called by the Scene Manager, after <code>init()</code> and before <code>create()</code>, only if the Scene has a LoaderPlugin.</p>
+<p>After this method completes, if the LoaderPlugin&#x27;s queue isn&#x27;t empty, the LoaderPlugin will start automatically.</p>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/ScenePreloadCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/ScenePreloadCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenetransitionconfig">SceneTransitionConfig<a href="#scenetransitionconfig" class="hash-link" aria-label="Direct link to SceneTransitionConfig" title="Direct link to SceneTransitionConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scenetransitionconfig">&lt;static&gt; SceneTransitionConfig<a href="#static-scenetransitionconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; SceneTransitionConfig" title="Direct link to &lt;static&gt; SceneTransitionConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>target</td><td>string</td><td>No</td><td></td><td>The Scene key to transition to.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>1000</td><td>The duration, in ms, for the transition to last.</td></tr><tr><td>sleep</td><td>boolean</td><td>Yes</td><td>false</td><td>Will the Scene responsible for the transition be sent to sleep on completion (<code>true</code>), or stopped? (<code>false</code>)</td></tr><tr><td>remove</td><td>boolean</td><td>Yes</td><td>false</td><td>Will the Scene responsible for the transition be removed from the Scene Manager after the transition completes?</td></tr><tr><td>allowInput</td><td>boolean</td><td>Yes</td><td>false</td><td>Will the Scenes Input system be able to process events while it is transitioning in or out?</td></tr><tr><td>moveAbove</td><td>boolean</td><td>Yes</td><td></td><td>Move the target Scene to be above this one before the transition starts.</td></tr><tr><td>moveBelow</td><td>boolean</td><td>Yes</td><td></td><td>Move the target Scene to be below this one before the transition starts.</td></tr><tr><td>onUpdate</td><td>function</td><td>Yes</td><td></td><td>This callback is invoked every frame for the duration of the transition.</td></tr><tr><td>onUpdateScope</td><td>any</td><td>Yes</td><td></td><td>The context in which the callback is invoked.</td></tr><tr><td>onStart</td><td><a class="" href="/api-documentation/typedef/types-scenes#SceneTransitionOnStartCallback">Phaser.Types.Scenes.SceneTransitionOnStartCallback</a></td><td>Yes</td><td></td><td>This callback is invoked when transition starting.</td></tr><tr><td>onStartScope</td><td>any</td><td>Yes</td><td></td><td>The context in which the callback is invoked.</td></tr><tr><td>data</td><td>any</td><td>Yes</td><td></td><td>An object containing any data you wish to be passed to the target scene&#x27;s init / create methods (if sleep is false) or to the target scene&#x27;s wake event callback (if sleep is true).</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SceneTransitionConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SceneTransitionConfig.js#L1</a><br>
+Since: 3.5.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenetransitiononstartcallback">SceneTransitionOnStartCallback<a href="#scenetransitiononstartcallback" class="hash-link" aria-label="Direct link to SceneTransitionOnStartCallback" title="Direct link to SceneTransitionOnStartCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scenetransitiononstartcallback">&lt;static&gt; SceneTransitionOnStartCallback<a href="#static-scenetransitiononstartcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; SceneTransitionOnStartCallback" title="Direct link to &lt;static&gt; SceneTransitionOnStartCallback" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>duration</td><td>number</td><td>Yes</td><td>1000</td><td>The duration, in ms, for the transition to last.</td></tr></tbody></table>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SceneTransitionStartCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SceneTransitionStartCallback.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenetype">SceneType<a href="#scenetype" class="hash-link" aria-label="Direct link to SceneType" title="Direct link to SceneType" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scenetype">&lt;static&gt; SceneType<a href="#static-scenetype" class="hash-link" aria-label="Direct link to &lt;static&gt; SceneType" title="Direct link to &lt;static&gt; SceneType" translate="no">​</a></h3>
+<p><strong>Type</strong>: <a class="" href="/api-documentation/class/scene">Phaser.Scene</a> | <a class="" href="/api-documentation/typedef/types-scenes#SettingsConfig">Phaser.Types.Scenes.SettingsConfig</a> | <a class="" href="/api-documentation/typedef/types-scenes#CreateSceneFromObjectConfig">Phaser.Types.Scenes.CreateSceneFromObjectConfig</a> | function</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SceneType.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SceneType.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sceneupdatecallback">SceneUpdateCallback<a href="#sceneupdatecallback" class="hash-link" aria-label="Direct link to SceneUpdateCallback" title="Direct link to SceneUpdateCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-sceneupdatecallback">&lt;static&gt; SceneUpdateCallback<a href="#static-sceneupdatecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; SceneUpdateCallback" title="Direct link to &lt;static&gt; SceneUpdateCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SceneUpdateCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SceneUpdateCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="settingsconfig">SettingsConfig<a href="#settingsconfig" class="hash-link" aria-label="Direct link to SettingsConfig" title="Direct link to SettingsConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-settingsconfig">&lt;static&gt; SettingsConfig<a href="#static-settingsconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; SettingsConfig" title="Direct link to &lt;static&gt; SettingsConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>Yes</td><td></td><td>The unique key of this Scene. Must be unique within the entire Game instance.</td></tr><tr><td>active</td><td>boolean</td><td>Yes</td><td>false</td><td>Does the Scene start as active or not? An active Scene updates each step.</td></tr><tr><td>visible</td><td>boolean</td><td>Yes</td><td>true</td><td>Does the Scene start as visible or not? A visible Scene renders each step.</td></tr><tr><td>pack</td><td>false | <a class="" href="/api-documentation/typedef/types-loader-filetypes#PackFileSection">Phaser.Types.Loader.FileTypes.PackFileSection</a></td><td>Yes</td><td>false</td><td>Files to be loaded before the Scene begins.</td></tr><tr><td>cameras</td><td><a class="" href="/api-documentation/typedef/types-cameras-scene2d#CameraConfig">Phaser.Types.Cameras.Scene2D.CameraConfig</a> | Array.&lt;<a class="" href="/api-documentation/typedef/types-cameras-scene2d#CameraConfig">Phaser.Types.Cameras.Scene2D.CameraConfig</a>&gt;</td><td>Yes</td><td>null</td><td>An optional Camera configuration object.</td></tr><tr><td>map</td><td>Object.&lt;string, string&gt;</td><td>Yes</td><td></td><td>Overwrites the default injection map for a scene.</td></tr><tr><td>mapAdd</td><td>Object.&lt;string, string&gt;</td><td>Yes</td><td></td><td>Extends the injection map for a scene.</td></tr><tr><td>physics</td><td><a class="" href="/api-documentation/typedef/types-core#PhysicsConfig">Phaser.Types.Core.PhysicsConfig</a></td><td>Yes</td><td>&quot;{}&quot;</td><td>The physics configuration object for the Scene.</td></tr><tr><td>loader</td><td><a class="" href="/api-documentation/typedef/types-core#LoaderConfig">Phaser.Types.Core.LoaderConfig</a></td><td>Yes</td><td>&quot;{}&quot;</td><td>The loader configuration object for the Scene.</td></tr><tr><td>plugins</td><td>false | *</td><td>Yes</td><td>false</td><td>The plugin configuration object for the Scene.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SettingsConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SettingsConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="settingsobject">SettingsObject<a href="#settingsobject" class="hash-link" aria-label="Direct link to SettingsObject" title="Direct link to SettingsObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-settingsobject">&lt;static&gt; SettingsObject<a href="#static-settingsobject" class="hash-link" aria-label="Direct link to &lt;static&gt; SettingsObject" title="Direct link to &lt;static&gt; SettingsObject" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>status</td><td>number</td><td>No</td><td>The current status of the Scene. Maps to the Scene constants.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The unique key of this Scene. Unique within the entire Game instance.</td></tr><tr><td>active</td><td>boolean</td><td>No</td><td>The active state of this Scene. An active Scene updates each step.</td></tr><tr><td>visible</td><td>boolean</td><td>No</td><td>The visible state of this Scene. A visible Scene renders each step.</td></tr><tr><td>isBooted</td><td>boolean</td><td>No</td><td>Has the Scene finished booting?</td></tr><tr><td>isTransition</td><td>boolean</td><td>No</td><td>Is the Scene in a state of transition?</td></tr><tr><td>transitionFrom</td><td><a class="" href="/api-documentation/class/scene">Phaser.Scene</a></td><td>No</td><td>The Scene this Scene is transitioning from, if set.</td></tr><tr><td>transitionDuration</td><td>number</td><td>No</td><td>The duration of the transition, if set.</td></tr><tr><td>transitionAllowInput</td><td>boolean</td><td>No</td><td>Is this Scene allowed to receive input during transitions?</td></tr><tr><td>data</td><td>object</td><td>No</td><td>a data bundle passed to this Scene from the Scene Manager.</td></tr><tr><td>pack</td><td>false | <a class="" href="/api-documentation/typedef/types-loader-filetypes#PackFileSection">Phaser.Types.Loader.FileTypes.PackFileSection</a></td><td>No</td><td>Files to be loaded before the Scene begins.</td></tr><tr><td>cameras</td><td><a class="" href="/api-documentation/typedef/types-cameras-scene2d#CameraConfig">Phaser.Types.Cameras.Scene2D.CameraConfig</a> | Array.&lt;<a class="" href="/api-documentation/typedef/types-cameras-scene2d#CameraConfig">Phaser.Types.Cameras.Scene2D.CameraConfig</a>&gt;</td><td>No</td><td>The Camera configuration object.</td></tr><tr><td>map</td><td>Object.&lt;string, string&gt;</td><td>No</td><td>The Scene&#x27;s Injection Map.</td></tr><tr><td>physics</td><td><a class="" href="/api-documentation/typedef/types-core#PhysicsConfig">Phaser.Types.Core.PhysicsConfig</a></td><td>No</td><td>The physics configuration object for the Scene.</td></tr><tr><td>loader</td><td><a class="" href="/api-documentation/typedef/types-core#LoaderConfig">Phaser.Types.Core.LoaderConfig</a></td><td>No</td><td>The loader configuration object for the Scene.</td></tr><tr><td>plugins</td><td>false | *</td><td>No</td><td>The plugin configuration object for the Scene.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Scenes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/scene/typedefs/SettingsObject.js#L1" target="_blank" rel="noopener noreferrer" class="">src/scene/typedefs/SettingsObject.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/typedef/types-renderer-webgl"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Types.Renderer.WebGL</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/typedef/types-sound"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Types.Sound</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#createscenefromobjectconfig" class="table-of-contents__link toc-highlight">CreateSceneFromObjectConfig</a><ul><li><a href="#static-createscenefromobjectconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; CreateSceneFromObjectConfig</a></li></ul></li><li><a href="#scenecreatecallback" class="table-of-contents__link toc-highlight">SceneCreateCallback</a><ul><li><a href="#static-scenecreatecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; SceneCreateCallback</a></li></ul></li><li><a href="#sceneinitcallback" class="table-of-contents__link toc-highlight">SceneInitCallback</a><ul><li><a href="#static-sceneinitcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; SceneInitCallback</a></li></ul></li><li><a href="#scenepreloadcallback" class="table-of-contents__link toc-highlight">ScenePreloadCallback</a><ul><li><a href="#static-scenepreloadcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; ScenePreloadCallback</a></li></ul></li><li><a href="#scenetransitionconfig" class="table-of-contents__link toc-highlight">SceneTransitionConfig</a><ul><li><a href="#static-scenetransitionconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; SceneTransitionConfig</a></li></ul></li><li><a href="#scenetransitiononstartcallback" class="table-of-contents__link toc-highlight">SceneTransitionOnStartCallback</a><ul><li><a href="#static-scenetransitiononstartcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; SceneTransitionOnStartCallback</a></li></ul></li><li><a href="#scenetype" class="table-of-contents__link toc-highlight">SceneType</a><ul><li><a href="#static-scenetype" class="table-of-contents__link toc-highlight">&lt;static&gt; SceneType</a></li></ul></li><li><a href="#sceneupdatecallback" class="table-of-contents__link toc-highlight">SceneUpdateCallback</a><ul><li><a href="#static-sceneupdatecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; SceneUpdateCallback</a></li></ul></li><li><a href="#settingsconfig" class="table-of-contents__link toc-highlight">SettingsConfig</a><ul><li><a href="#static-settingsconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; SettingsConfig</a></li></ul></li><li><a href="#settingsobject" class="table-of-contents__link toc-highlight">SettingsObject</a><ul><li><a href="#static-settingsobject" class="table-of-contents__link toc-highlight">&lt;static&gt; SettingsObject</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

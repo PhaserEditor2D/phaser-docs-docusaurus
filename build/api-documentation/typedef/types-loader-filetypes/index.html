@@ -1,0 +1,2183 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-typedef/Phaser.Types.Loader.FileTypes" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Types.Loader.FileTypes | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/typedef/types-loader-filetypes"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="Types.Loader.FileTypes | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Types.Loader.FileTypes"><meta data-rh="true" property="og:description" content="Phaser.Types.Loader.FileTypes"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/typedef/types-loader-filetypes"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/types-loader-filetypes" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/types-loader-filetypes" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Typedefs","item":"https://docs.phaser.io/api-documentation/typedef/"},{"@type":"ListItem","position":2,"name":"Types.Loader.FileTypes","item":"https://docs.phaser.io/api-documentation/typedef/types-loader-filetypes"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/typedef/types-loader-filetypes">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/typedef/types-loader-filetypes">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/typedef/types-loader-filetypes">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/typedef/types-loader-filetypes">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Collapse sidebar category &#x27;Typedefs&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/device"><span title="Device" class="linkLabel_WmDU">Device</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/scale"><span title="Scale" class="linkLabel_WmDU">Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tilemaps"><span title="Tilemaps" class="linkLabel_WmDU">Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tweens"><span title="Tweens" class="linkLabel_WmDU">Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-actions"><span title="Types.Actions" class="linkLabel_WmDU">Types.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-animations"><span title="Types.Animations" class="linkLabel_WmDU">Types.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-controls"><span title="Types.Cameras.Controls" class="linkLabel_WmDU">Types.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-scene2d"><span title="Types.Cameras.Scene2D" class="linkLabel_WmDU">Types.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-core"><span title="Types.Core" class="linkLabel_WmDU">Types.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-create"><span title="Types.Create" class="linkLabel_WmDU">Types.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-curves"><span title="Types.Curves" class="linkLabel_WmDU">Types.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-display"><span title="Types.Display" class="linkLabel_WmDU">Types.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-bitmaptext"><span title="Types.GameObjects.BitmapText" class="linkLabel_WmDU">Types.GameObjects.BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-container"><span title="Types.GameObjects.Container" class="linkLabel_WmDU">Types.GameObjects.Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-graphics"><span title="Types.GameObjects.Graphics" class="linkLabel_WmDU">Types.GameObjects.Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-group"><span title="Types.GameObjects.Group" class="linkLabel_WmDU">Types.GameObjects.Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-mesh"><span title="Types.GameObjects.Mesh" class="linkLabel_WmDU">Types.GameObjects.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-nineslice"><span title="Types.GameObjects.NineSlice" class="linkLabel_WmDU">Types.GameObjects.NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-particles"><span title="Types.GameObjects.Particles" class="linkLabel_WmDU">Types.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-pathfollower"><span title="Types.GameObjects.PathFollower" class="linkLabel_WmDU">Types.GameObjects.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-plane"><span title="Types.GameObjects.Plane" class="linkLabel_WmDU">Types.GameObjects.Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rendertexture"><span title="Types.GameObjects.RenderTexture" class="linkLabel_WmDU">Types.GameObjects.RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rope"><span title="Types.GameObjects.Rope" class="linkLabel_WmDU">Types.GameObjects.Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-shader"><span title="Types.GameObjects.Shader" class="linkLabel_WmDU">Types.GameObjects.Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-sprite"><span title="Types.GameObjects.Sprite" class="linkLabel_WmDU">Types.GameObjects.Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-text"><span title="Types.GameObjects.Text" class="linkLabel_WmDU">Types.GameObjects.Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-tilesprite"><span title="Types.GameObjects.TileSprite" class="linkLabel_WmDU">Types.GameObjects.TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-video"><span title="Types.GameObjects.Video" class="linkLabel_WmDU">Types.GameObjects.Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-zone"><span title="Types.GameObjects.Zone" class="linkLabel_WmDU">Types.GameObjects.Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects"><span title="Types.GameObjects" class="linkLabel_WmDU">Types.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-geom-mesh"><span title="Types.Geom.Mesh" class="linkLabel_WmDU">Types.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-gamepad"><span title="Types.Input.Gamepad" class="linkLabel_WmDU">Types.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-keyboard"><span title="Types.Input.Keyboard" class="linkLabel_WmDU">Types.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input"><span title="Types.Input" class="linkLabel_WmDU">Types.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/typedef/types-loader-filetypes"><span title="Types.Loader.FileTypes" class="linkLabel_WmDU">Types.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-loader"><span title="Types.Loader" class="linkLabel_WmDU">Types.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-math"><span title="Types.Math" class="linkLabel_WmDU">Types.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-arcade"><span title="Types.Physics.Arcade" class="linkLabel_WmDU">Types.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-matter"><span title="Types.Physics.Matter" class="linkLabel_WmDU">Types.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-plugins"><span title="Types.Plugins" class="linkLabel_WmDU">Types.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-snapshot"><span title="Types.Renderer.Snapshot" class="linkLabel_WmDU">Types.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-webgl"><span title="Types.Renderer.WebGL" class="linkLabel_WmDU">Types.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-scenes"><span title="Types.Scenes" class="linkLabel_WmDU">Types.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-sound"><span title="Types.Sound" class="linkLabel_WmDU">Types.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-textures"><span title="Types.Textures" class="linkLabel_WmDU">Types.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tilemaps"><span title="Types.Tilemaps" class="linkLabel_WmDU">Types.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-time"><span title="Types.Time" class="linkLabel_WmDU">Types.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tweens"><span title="Types.Tweens" class="linkLabel_WmDU">Types.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/phaser"><span title="Phaser" class="linkLabel_WmDU">Phaser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="linkLabel_WmDU">Typedefs</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/typedef/"><span>Typedefs</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Types.Loader.FileTypes</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Types.Loader.FileTypes</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="asepritefileconfig">AsepriteFileConfig<a href="#asepritefileconfig" class="hash-link" aria-label="Direct link to AsepriteFileConfig" title="Direct link to AsepriteFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-asepritefileconfig">&lt;static&gt; AsepriteFileConfig<a href="#static-asepritefileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; AsepriteFileConfig" title="Direct link to &lt;static&gt; AsepriteFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>textureURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the texture image file from.</td></tr><tr><td>textureExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;png&#x27;&quot;</td><td>The default file extension to use for the image texture if no url is provided.</td></tr><tr><td>textureXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the texture image file.</td></tr><tr><td>atlasURL</td><td>object | string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the atlas json file from. Or, a well formed JSON object to use instead.</td></tr><tr><td>atlasExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;json&#x27;&quot;</td><td>The default file extension to use for the atlas json if no url is provided.</td></tr><tr><td>atlasXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the atlas json file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/AsepriteFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/AsepriteFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="atlasjsonfileconfig">AtlasJSONFileConfig<a href="#atlasjsonfileconfig" class="hash-link" aria-label="Direct link to AtlasJSONFileConfig" title="Direct link to AtlasJSONFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-atlasjsonfileconfig">&lt;static&gt; AtlasJSONFileConfig<a href="#static-atlasjsonfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; AtlasJSONFileConfig" title="Direct link to &lt;static&gt; AtlasJSONFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>textureURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the texture image file from.</td></tr><tr><td>textureExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;png&#x27;&quot;</td><td>The default file extension to use for the image texture if no url is provided.</td></tr><tr><td>textureXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the texture image file.</td></tr><tr><td>normalMap</td><td>string</td><td>Yes</td><td></td><td>The filename of an associated normal map. It uses the same path and url to load as the texture image.</td></tr><tr><td>atlasURL</td><td>object | string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the atlas json file from. Or, a well formed JSON object to use instead.</td></tr><tr><td>atlasExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;json&#x27;&quot;</td><td>The default file extension to use for the atlas json if no url is provided.</td></tr><tr><td>atlasXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the atlas json file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/AtlasJSONFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/AtlasJSONFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="atlasxmlfileconfig">AtlasXMLFileConfig<a href="#atlasxmlfileconfig" class="hash-link" aria-label="Direct link to AtlasXMLFileConfig" title="Direct link to AtlasXMLFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-atlasxmlfileconfig">&lt;static&gt; AtlasXMLFileConfig<a href="#static-atlasxmlfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; AtlasXMLFileConfig" title="Direct link to &lt;static&gt; AtlasXMLFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>textureURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the texture image file from.</td></tr><tr><td>textureExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;png&#x27;&quot;</td><td>The default file extension to use for the image texture if no url is provided.</td></tr><tr><td>textureXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the texture image file.</td></tr><tr><td>normalMap</td><td>string</td><td>Yes</td><td></td><td>The filename of an associated normal map. It uses the same path and url to load as the texture image.</td></tr><tr><td>atlasURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the atlas xml file from.</td></tr><tr><td>atlasExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;xml&#x27;&quot;</td><td>The default file extension to use for the atlas xml if no url is provided.</td></tr><tr><td>atlasXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the atlas xml file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/AtlasXMLFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/AtlasXMLFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audiofileconfig">AudioFileConfig<a href="#audiofileconfig" class="hash-link" aria-label="Direct link to AudioFileConfig" title="Direct link to AudioFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-audiofileconfig">&lt;static&gt; AudioFileConfig<a href="#static-audiofileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; AudioFileConfig" title="Direct link to &lt;static&gt; AudioFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>The key of the file. Must be unique within the Loader and Audio Cache.</td></tr><tr><td>url</td><td>string | Array.&lt;string&gt;</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#AudioFileURLConfig">Phaser.Types.Loader.FileTypes.AudioFileURLConfig</a></td><td>Array.&lt;<a class="" href="/api-documentation/typedef/types-loader-filetypes#AudioFileURLConfig">Phaser.Types.Loader.FileTypes.AudioFileURLConfig</a>&gt;</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td>Extra XHR Settings specifically for this file.</td></tr><tr><td>context</td><td>AudioContext</td><td>Yes</td><td>The optional AudioContext this file will use to process itself.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/AudioFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/AudioFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audiofileurlconfig">AudioFileURLConfig<a href="#audiofileurlconfig" class="hash-link" aria-label="Direct link to AudioFileURLConfig" title="Direct link to AudioFileURLConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-audiofileurlconfig">&lt;static&gt; AudioFileURLConfig<a href="#static-audiofileurlconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; AudioFileURLConfig" title="Direct link to &lt;static&gt; AudioFileURLConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>type</td><td>string</td><td>No</td><td>The audio file format. See property names in {@link Phaser.Device.Audio}.</td></tr><tr><td>url</td><td>string</td><td>No</td><td>The absolute or relative URL of the audio file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/AudioFileURLConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/AudioFileURLConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audiospritefileconfig">AudioSpriteFileConfig<a href="#audiospritefileconfig" class="hash-link" aria-label="Direct link to AudioSpriteFileConfig" title="Direct link to AudioSpriteFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-audiospritefileconfig">&lt;static&gt; AudioSpriteFileConfig<a href="#static-audiospritefileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; AudioSpriteFileConfig" title="Direct link to &lt;static&gt; AudioSpriteFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>The key of the file. Must be unique within both the Loader and the Audio Cache.</td></tr><tr><td>jsonURL</td><td>string</td><td>No</td><td>The absolute or relative URL to load the json file from. Or a well formed JSON object to use instead.</td></tr><tr><td>jsonXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td>Extra XHR Settings specifically for the json file.</td></tr><tr><td>audioURL</td><td>Object</td><td>Yes</td><td>The absolute or relative URL to load the audio file from.</td></tr><tr><td>audioConfig</td><td>any</td><td>Yes</td><td>The audio configuration options.</td></tr><tr><td>audioXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td>Extra XHR Settings specifically for the audio file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/AudioSpriteFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/AudioSpriteFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="binaryfileconfig">BinaryFileConfig<a href="#binaryfileconfig" class="hash-link" aria-label="Direct link to BinaryFileConfig" title="Direct link to BinaryFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-binaryfileconfig">&lt;static&gt; BinaryFileConfig<a href="#static-binaryfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; BinaryFileConfig" title="Direct link to &lt;static&gt; BinaryFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Binary Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;bin&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr><tr><td>dataType</td><td>any</td><td>Yes</td><td></td><td>Optional type to cast the binary file to once loaded. For example, <code>Uint8Array</code>.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/BinaryFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/BinaryFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bitmapfontfileconfig">BitmapFontFileConfig<a href="#bitmapfontfileconfig" class="hash-link" aria-label="Direct link to BitmapFontFileConfig" title="Direct link to BitmapFontFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bitmapfontfileconfig">&lt;static&gt; BitmapFontFileConfig<a href="#static-bitmapfontfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; BitmapFontFileConfig" title="Direct link to &lt;static&gt; BitmapFontFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>textureURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the texture image file from.</td></tr><tr><td>textureExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;png&#x27;&quot;</td><td>The default file extension to use for the image texture if no url is provided.</td></tr><tr><td>textureXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the texture image file.</td></tr><tr><td>normalMap</td><td>string</td><td>Yes</td><td></td><td>The filename of an associated normal map. It uses the same path and url to load as the texture image.</td></tr><tr><td>fontDataURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the font data xml file from.</td></tr><tr><td>fontDataExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;xml&#x27;&quot;</td><td>The default file extension to use for the font data xml if no url is provided.</td></tr><tr><td>fontDataXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the font data xml file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/BitmapFontFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/BitmapFontFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="compressedtexturefileentry">CompressedTextureFileEntry<a href="#compressedtexturefileentry" class="hash-link" aria-label="Direct link to CompressedTextureFileEntry" title="Direct link to CompressedTextureFileEntry" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-compressedtexturefileentry">&lt;static&gt; CompressedTextureFileEntry<a href="#static-compressedtexturefileentry" class="hash-link" aria-label="Direct link to &lt;static&gt; CompressedTextureFileEntry" title="Direct link to &lt;static&gt; CompressedTextureFileEntry" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>format</td><td>string</td><td>Yes</td><td>The texture compression base format that the browser must support in order to load this file. Can be any of: &#x27;ETC&#x27;, &#x27;ETC1&#x27;, &#x27;ATC&#x27;, &#x27;ASTC&#x27;, &#x27;BPTC&#x27;, &#x27;RGTC&#x27;, &#x27;PVRTC&#x27;, &#x27;S3TC&#x27;, &#x27;S3TCSRGB&#x27; or the fallback format of &#x27;IMG&#x27;.</td></tr><tr><td>type</td><td>string</td><td>Yes</td><td>The container format, either PVR or KTX. If not given it will try to extract it from the textureURL extension.</td></tr><tr><td>textureURL</td><td>string</td><td>Yes</td><td>The URL of the compressed texture file to load.</td></tr><tr><td>atlasURL</td><td>string</td><td>Yes</td><td>Optional URL of a texture atlas JSON data file. If not given, the texture will be loaded as a single image.</td></tr><tr><td>multiAtlasURL</td><td>string</td><td>Yes</td><td>Optional URL of a multi-texture atlas JSON data file as created by Texture Packer Pro.</td></tr><tr><td>multiPath</td><td>string</td><td>Yes</td><td>Optional path to use when loading the textures defined in the multi atlas data.</td></tr><tr><td>multiBaseURL</td><td>string</td><td>Yes</td><td>Optional Base URL to use when loading the textures defined in the multi atlas data.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/CompressedTextureFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/CompressedTextureFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="compressedtexturefileconfig">CompressedTextureFileConfig<a href="#compressedtexturefileconfig" class="hash-link" aria-label="Direct link to CompressedTextureFileConfig" title="Direct link to CompressedTextureFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-compressedtexturefileconfig">&lt;static&gt; CompressedTextureFileConfig<a href="#static-compressedtexturefileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; CompressedTextureFileConfig" title="Direct link to &lt;static&gt; CompressedTextureFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>ETC</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an ETC format texture.</td></tr><tr><td>ETC1</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an ETC1 format texture.</td></tr><tr><td>ATC</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an ATC format texture.</td></tr><tr><td>ASTC</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an ASTC format texture.</td></tr><tr><td>BPTC</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an BPTC format texture.</td></tr><tr><td>RGTC</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an RGTC format texture.</td></tr><tr><td>PVRTC</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an PVRTC format texture.</td></tr><tr><td>S3TC</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an S3TC format texture.</td></tr><tr><td>S3TCSRGB</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for an S3TCSRGB format texture.</td></tr><tr><td>IMG</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#CompressedTextureFileEntry">Phaser.Types.Loader.FileTypes.CompressedTextureFileEntry</a> | string</td><td>Yes</td><td>The string, or file entry object, for the fallback image file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/CompressedTextureFileConfig.js#L13" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/CompressedTextureFileConfig.js#L13</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cssfileconfig">CSSFileConfig<a href="#cssfileconfig" class="hash-link" aria-label="Direct link to CSSFileConfig" title="Direct link to CSSFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-cssfileconfig">&lt;static&gt; CSSFileConfig<a href="#static-cssfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; CSSFileConfig" title="Direct link to &lt;static&gt; CSSFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within the Loader.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;css&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/CSSFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/CSSFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fontfileconfig">FontFileConfig<a href="#fontfileconfig" class="hash-link" aria-label="Direct link to FontFileConfig" title="Direct link to FontFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-fontfileconfig">&lt;static&gt; FontFileConfig<a href="#static-fontfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; FontFileConfig" title="Direct link to &lt;static&gt; FontFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within the Loader.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;js&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>type</td><td>string</td><td>Yes</td><td>&quot;&#x27;script&#x27;&quot;</td><td>The script type. Should be either &#x27;script&#x27; for classic JavaScript, or &#x27;module&#x27; if the file contains an exported module.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/FontFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/FontFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="glslfileconfig">GLSLFileConfig<a href="#glslfileconfig" class="hash-link" aria-label="Direct link to GLSLFileConfig" title="Direct link to GLSLFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-glslfileconfig">&lt;static&gt; GLSLFileConfig<a href="#static-glslfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; GLSLFileConfig" title="Direct link to &lt;static&gt; GLSLFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Text Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>shaderType</td><td>string</td><td>Yes</td><td>&quot;&#x27;fragment&#x27;&quot;</td><td>The type of shader. Either <code>fragment</code> for a fragment shader, or <code>vertex</code> for a vertex shader. This is ignored if you load a shader bundle.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;glsl&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/GLSLFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/GLSLFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="htmlfileconfig">HTMLFileConfig<a href="#htmlfileconfig" class="hash-link" aria-label="Direct link to HTMLFileConfig" title="Direct link to HTMLFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-htmlfileconfig">&lt;static&gt; HTMLFileConfig<a href="#static-htmlfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; HTMLFileConfig" title="Direct link to &lt;static&gt; HTMLFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Text Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;html&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/HTMLFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/HTMLFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="htmltexturefileconfig">HTMLTextureFileConfig<a href="#htmltexturefileconfig" class="hash-link" aria-label="Direct link to HTMLTextureFileConfig" title="Direct link to HTMLTextureFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-htmltexturefileconfig">&lt;static&gt; HTMLTextureFileConfig<a href="#static-htmltexturefileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; HTMLTextureFileConfig" title="Direct link to &lt;static&gt; HTMLTextureFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;html&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr><tr><td>width</td><td>number</td><td>Yes</td><td>512</td><td>The width of the texture the HTML will be rendered to.</td></tr><tr><td>height</td><td>number</td><td>Yes</td><td>512</td><td>The height of the texture the HTML will be rendered to.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/HTMLTextureFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/HTMLTextureFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="imagefileconfig">ImageFileConfig<a href="#imagefileconfig" class="hash-link" aria-label="Direct link to ImageFileConfig" title="Direct link to ImageFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-imagefileconfig">&lt;static&gt; ImageFileConfig<a href="#static-imagefileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ImageFileConfig" title="Direct link to &lt;static&gt; ImageFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;png&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>normalMap</td><td>string</td><td>Yes</td><td></td><td>The filename of an associated normal map. It uses the same path and url to load as the image.</td></tr><tr><td>frameConfig</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#ImageFrameConfig">Phaser.Types.Loader.FileTypes.ImageFrameConfig</a></td><td>Yes</td><td></td><td>The frame configuration object. Only provided for, and used by, Sprite Sheets.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/ImageFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/ImageFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="imageframeconfig">ImageFrameConfig<a href="#imageframeconfig" class="hash-link" aria-label="Direct link to ImageFrameConfig" title="Direct link to ImageFrameConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-imageframeconfig">&lt;static&gt; ImageFrameConfig<a href="#static-imageframeconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ImageFrameConfig" title="Direct link to &lt;static&gt; ImageFrameConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>frameWidth</td><td>number</td><td>No</td><td></td><td>The width of the frame in pixels.</td></tr><tr><td>frameHeight</td><td>number</td><td>Yes</td><td></td><td>The height of the frame in pixels. Uses the <code>frameWidth</code> value if not provided.</td></tr><tr><td>startFrame</td><td>number</td><td>Yes</td><td>0</td><td>The first frame to start parsing from.</td></tr><tr><td>endFrame</td><td>number</td><td>Yes</td><td></td><td>The frame to stop parsing at. If not provided it will calculate the value based on the image and frame dimensions.</td></tr><tr><td>margin</td><td>number</td><td>Yes</td><td>0</td><td>The margin in the image. This is the space around the edge of the frames.</td></tr><tr><td>spacing</td><td>number</td><td>Yes</td><td>0</td><td>The spacing between each frame in the image.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/ImageFrameConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/ImageFrameConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="jsonfileconfig">JSONFileConfig<a href="#jsonfileconfig" class="hash-link" aria-label="Direct link to JSONFileConfig" title="Direct link to JSONFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-jsonfileconfig">&lt;static&gt; JSONFileConfig<a href="#static-jsonfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; JSONFileConfig" title="Direct link to &lt;static&gt; JSONFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the JSON Cache.</td></tr><tr><td>url</td><td>string | any</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from. Or can be a ready formed JSON object, in which case it will be directly added to the Cache.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;json&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>dataKey</td><td>string</td><td>Yes</td><td></td><td>If specified instead of the whole JSON file being parsed and added to the Cache, only the section corresponding to this property key will be added. If the property you want to extract is nested, use periods to divide it.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/JSONFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/JSONFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="multiatlasfileconfig">MultiAtlasFileConfig<a href="#multiatlasfileconfig" class="hash-link" aria-label="Direct link to MultiAtlasFileConfig" title="Direct link to MultiAtlasFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-multiatlasfileconfig">&lt;static&gt; MultiAtlasFileConfig<a href="#static-multiatlasfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; MultiAtlasFileConfig" title="Direct link to &lt;static&gt; MultiAtlasFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>atlasURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the multi atlas json file from. Or, a well formed JSON object.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>An alias for &#x27;atlasURL&#x27;. If given, it overrides anything set in &#x27;atlasURL&#x27;.</td></tr><tr><td>atlasExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;json&#x27;&quot;</td><td>The default file extension to use for the atlas json if no url is provided.</td></tr><tr><td>atlasXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the atlas json file.</td></tr><tr><td>path</td><td>string</td><td>Yes</td><td></td><td>Optional path to use when loading the textures defined in the atlas data.</td></tr><tr><td>baseURL</td><td>string</td><td>Yes</td><td></td><td>Optional Base URL to use when loading the textures defined in the atlas data.</td></tr><tr><td>textureXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the texture files.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/MultiAtlasFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/MultiAtlasFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="multiscriptfileconfig">MultiScriptFileConfig<a href="#multiscriptfileconfig" class="hash-link" aria-label="Direct link to MultiScriptFileConfig" title="Direct link to MultiScriptFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-multiscriptfileconfig">&lt;static&gt; MultiScriptFileConfig<a href="#static-multiscriptfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; MultiScriptFileConfig" title="Direct link to &lt;static&gt; MultiScriptFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within the Loader.</td></tr><tr><td>url</td><td>Array.&lt;string&gt;</td><td>Yes</td><td></td><td>An array of absolute or relative URLs to load the script files from. They are processed in the order given in the array.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;js&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for these files.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/MultiScriptFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/MultiScriptFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="objfileconfig">OBJFileConfig<a href="#objfileconfig" class="hash-link" aria-label="Direct link to OBJFileConfig" title="Direct link to OBJFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-objfileconfig">&lt;static&gt; OBJFileConfig<a href="#static-objfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; OBJFileConfig" title="Direct link to &lt;static&gt; OBJFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the OBJ Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load this file from. If undefined or <code>null</code> it will be set to <code>&lt;key&gt;.obj</code>, i.e. if <code>key</code> was &quot;alien&quot; then the URL will be &quot;alien.obj&quot;.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;obj&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>flipUV</td><td>boolean</td><td>Yes</td><td></td><td>Flip the UV coordinates stored in the model data?</td></tr><tr><td>matURL</td><td>string</td><td>Yes</td><td></td><td>An optional absolute or relative URL to the object material file from. If undefined or <code>null</code>, no material file will be loaded.</td></tr><tr><td>matExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;mat&#x27;&quot;</td><td>The default material file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/OBJFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/OBJFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="packfileconfig">PackFileConfig<a href="#packfileconfig" class="hash-link" aria-label="Direct link to PackFileConfig" title="Direct link to PackFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-packfileconfig">&lt;static&gt; PackFileConfig<a href="#static-packfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; PackFileConfig" title="Direct link to &lt;static&gt; PackFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the JSON Cache.</td></tr><tr><td>url</td><td>string | any</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from. Or can be a ready formed JSON object, in which case it will be directly processed.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;json&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>dataKey</td><td>string</td><td>Yes</td><td></td><td>If specified instead of the whole JSON file being parsed, only the section corresponding to this property key will be added. If the property you want to extract is nested, use periods to divide it.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/PackFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/PackFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="packfilesection">PackFileSection<a href="#packfilesection" class="hash-link" aria-label="Direct link to PackFileSection" title="Direct link to PackFileSection" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-packfilesection">&lt;static&gt; PackFileSection<a href="#static-packfilesection" class="hash-link" aria-label="Direct link to &lt;static&gt; PackFileSection" title="Direct link to &lt;static&gt; PackFileSection" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>files</td><td>Array.&lt;<a class="" href="/api-documentation/typedef/types-loader#FileConfig">Phaser.Types.Loader.FileConfig</a>&gt;</td><td>No</td><td>The files to load. See {@link Phaser.Types.Loader.FileTypes}.</td></tr><tr><td>baseURL</td><td>string</td><td>Yes</td><td>A URL used to resolve paths in <code>files</code>. Example: &#x27;<a href="http://labs.phaser.io/assets/" target="_blank" rel="noopener noreferrer" class="">http://labs.phaser.io/assets/</a>&#x27;.</td></tr><tr><td>defaultType</td><td>string</td><td>Yes</td><td>The default {@link Phaser.Types.Loader.FileConfig} <code>type</code>.</td></tr><tr><td>path</td><td>string</td><td>Yes</td><td>A URL path used to resolve relative paths in <code>files</code>. Example: &#x27;images/sprites/&#x27;.</td></tr><tr><td>prefix</td><td>string</td><td>Yes</td><td>An optional prefix that is automatically prepended to each file key.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/PackFileSection.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/PackFileSection.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pluginfileconfig">PluginFileConfig<a href="#pluginfileconfig" class="hash-link" aria-label="Direct link to PluginFileConfig" title="Direct link to PluginFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-pluginfileconfig">&lt;static&gt; PluginFileConfig<a href="#static-pluginfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; PluginFileConfig" title="Direct link to &lt;static&gt; PluginFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within the Loader.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;js&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>start</td><td>boolean</td><td>Yes</td><td>false</td><td>Automatically start the plugin after loading?</td></tr><tr><td>mapping</td><td>string</td><td>Yes</td><td></td><td>If this plugin is to be injected into the Scene, this is the property key used.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/PluginFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/PluginFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenefileconfig">SceneFileConfig<a href="#scenefileconfig" class="hash-link" aria-label="Direct link to SceneFileConfig" title="Direct link to SceneFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scenefileconfig">&lt;static&gt; SceneFileConfig<a href="#static-scenefileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; SceneFileConfig" title="Direct link to &lt;static&gt; SceneFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Text Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;js&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/SceneFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/SceneFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenepluginfileconfig">ScenePluginFileConfig<a href="#scenepluginfileconfig" class="hash-link" aria-label="Direct link to ScenePluginFileConfig" title="Direct link to ScenePluginFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scenepluginfileconfig">&lt;static&gt; ScenePluginFileConfig<a href="#static-scenepluginfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ScenePluginFileConfig" title="Direct link to &lt;static&gt; ScenePluginFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within the Loader.</td></tr><tr><td>url</td><td>string | function</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from. Or, a Scene Plugin.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;js&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>systemKey</td><td>string</td><td>Yes</td><td></td><td>If this plugin is to be added to Scene.Systems, this is the property key for it.</td></tr><tr><td>sceneKey</td><td>string</td><td>Yes</td><td></td><td>If this plugin is to be added to the Scene, this is the property key for it.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/ScenePluginFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/ScenePluginFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scriptfileconfig">ScriptFileConfig<a href="#scriptfileconfig" class="hash-link" aria-label="Direct link to ScriptFileConfig" title="Direct link to ScriptFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scriptfileconfig">&lt;static&gt; ScriptFileConfig<a href="#static-scriptfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ScriptFileConfig" title="Direct link to &lt;static&gt; ScriptFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within the Loader.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;js&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>type</td><td>string</td><td>Yes</td><td>&quot;&#x27;script&#x27;&quot;</td><td>The script type. Should be either &#x27;script&#x27; for classic JavaScript, or &#x27;module&#x27; if the file contains an exported module.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/ScriptFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/ScriptFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spritesheetfileconfig">SpriteSheetFileConfig<a href="#spritesheetfileconfig" class="hash-link" aria-label="Direct link to SpriteSheetFileConfig" title="Direct link to SpriteSheetFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-spritesheetfileconfig">&lt;static&gt; SpriteSheetFileConfig<a href="#static-spritesheetfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; SpriteSheetFileConfig" title="Direct link to &lt;static&gt; SpriteSheetFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;png&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>normalMap</td><td>string</td><td>Yes</td><td></td><td>The filename of an associated normal map. It uses the same path and url to load as the image.</td></tr><tr><td>frameConfig</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#ImageFrameConfig">Phaser.Types.Loader.FileTypes.ImageFrameConfig</a></td><td>Yes</td><td></td><td>The frame configuration object.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/SpriteSheetFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/SpriteSheetFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="svgfileconfig">SVGFileConfig<a href="#svgfileconfig" class="hash-link" aria-label="Direct link to SVGFileConfig" title="Direct link to SVGFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-svgfileconfig">&lt;static&gt; SVGFileConfig<a href="#static-svgfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; SVGFileConfig" title="Direct link to &lt;static&gt; SVGFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;svg&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr><tr><td>svgConfig</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#SVGSizeConfig">Phaser.Types.Loader.FileTypes.SVGSizeConfig</a></td><td>Yes</td><td></td><td>The svg size configuration object.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/SVGFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/SVGFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="svgsizeconfig">SVGSizeConfig<a href="#svgsizeconfig" class="hash-link" aria-label="Direct link to SVGSizeConfig" title="Direct link to SVGSizeConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-svgsizeconfig">&lt;static&gt; SVGSizeConfig<a href="#static-svgsizeconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; SVGSizeConfig" title="Direct link to &lt;static&gt; SVGSizeConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>width</td><td>number</td><td>Yes</td><td>An optional width. The SVG will be resized to this size before being rendered to a texture.</td></tr><tr><td>height</td><td>number</td><td>Yes</td><td>An optional height. The SVG will be resized to this size before being rendered to a texture.</td></tr><tr><td>scale</td><td>number</td><td>Yes</td><td>An optional scale. If given it overrides the width / height properties. The SVG is scaled by the scale factor before being rendered to a texture.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/SVGSizeConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/SVGSizeConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="textfileconfig">TextFileConfig<a href="#textfileconfig" class="hash-link" aria-label="Direct link to TextFileConfig" title="Direct link to TextFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-textfileconfig">&lt;static&gt; TextFileConfig<a href="#static-textfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TextFileConfig" title="Direct link to &lt;static&gt; TextFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Text Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;txt&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/TextFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/TextFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilemapcsvfileconfig">TilemapCSVFileConfig<a href="#tilemapcsvfileconfig" class="hash-link" aria-label="Direct link to TilemapCSVFileConfig" title="Direct link to TilemapCSVFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tilemapcsvfileconfig">&lt;static&gt; TilemapCSVFileConfig<a href="#static-tilemapcsvfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TilemapCSVFileConfig" title="Direct link to &lt;static&gt; TilemapCSVFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Tilemap Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;csv&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/TilemapCSVFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/TilemapCSVFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilemapimpactfileconfig">TilemapImpactFileConfig<a href="#tilemapimpactfileconfig" class="hash-link" aria-label="Direct link to TilemapImpactFileConfig" title="Direct link to TilemapImpactFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tilemapimpactfileconfig">&lt;static&gt; TilemapImpactFileConfig<a href="#static-tilemapimpactfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TilemapImpactFileConfig" title="Direct link to &lt;static&gt; TilemapImpactFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Tilemap Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;json&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/TilemapImpactFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/TilemapImpactFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilemapjsonfileconfig">TilemapJSONFileConfig<a href="#tilemapjsonfileconfig" class="hash-link" aria-label="Direct link to TilemapJSONFileConfig" title="Direct link to TilemapJSONFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tilemapjsonfileconfig">&lt;static&gt; TilemapJSONFileConfig<a href="#static-tilemapjsonfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TilemapJSONFileConfig" title="Direct link to &lt;static&gt; TilemapJSONFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Tilemap Cache.</td></tr><tr><td>url</td><td>object | string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from. Or, a well formed JSON object.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;json&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/TilemapJSONFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/TilemapJSONFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="unityatlasfileconfig">UnityAtlasFileConfig<a href="#unityatlasfileconfig" class="hash-link" aria-label="Direct link to UnityAtlasFileConfig" title="Direct link to UnityAtlasFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-unityatlasfileconfig">&lt;static&gt; UnityAtlasFileConfig<a href="#static-unityatlasfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; UnityAtlasFileConfig" title="Direct link to &lt;static&gt; UnityAtlasFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Texture Manager.</td></tr><tr><td>textureURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the texture image file from.</td></tr><tr><td>textureExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;png&#x27;&quot;</td><td>The default file extension to use for the image texture if no url is provided.</td></tr><tr><td>textureXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the texture image file.</td></tr><tr><td>normalMap</td><td>string</td><td>Yes</td><td></td><td>The filename of an associated normal map. It uses the same path and url to load as the texture image.</td></tr><tr><td>atlasURL</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the atlas data file from.</td></tr><tr><td>atlasExtension</td><td>string</td><td>Yes</td><td>&quot;&#x27;txt&#x27;&quot;</td><td>The default file extension to use for the atlas data if no url is provided.</td></tr><tr><td>atlasXhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for the atlas data file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/UnityAtlasFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/UnityAtlasFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="videofileconfig">VideoFileConfig<a href="#videofileconfig" class="hash-link" aria-label="Direct link to VideoFileConfig" title="Direct link to VideoFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-videofileconfig">&lt;static&gt; VideoFileConfig<a href="#static-videofileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; VideoFileConfig" title="Direct link to &lt;static&gt; VideoFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string | <a class="" href="/api-documentation/typedef/types-loader-filetypes#VideoFileConfig">Phaser.Types.Loader.FileTypes.VideoFileConfig</a></td><td>No</td><td>The key to use for this file, or a file configuration object.</td></tr><tr><td>url</td><td>string | Array.&lt;string&gt;</td><td><a class="" href="/api-documentation/typedef/types-loader-filetypes#VideoFileURLConfig">Phaser.Types.Loader.FileTypes.VideoFileURLConfig</a></td><td>Array.&lt;<a class="" href="/api-documentation/typedef/types-loader-filetypes#VideoFileURLConfig">Phaser.Types.Loader.FileTypes.VideoFileURLConfig</a>&gt;</td></tr><tr><td>noAudio</td><td>boolean</td><td>Yes</td><td>Does the video have an audio track? If not you can enable auto-playing on it.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/VideoFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/VideoFileConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="videofileurlconfig">VideoFileURLConfig<a href="#videofileurlconfig" class="hash-link" aria-label="Direct link to VideoFileURLConfig" title="Direct link to VideoFileURLConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-videofileurlconfig">&lt;static&gt; VideoFileURLConfig<a href="#static-videofileurlconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; VideoFileURLConfig" title="Direct link to &lt;static&gt; VideoFileURLConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>type</td><td>string</td><td>No</td><td>The video file format. See property names in {@link Phaser.Device.Video}.</td></tr><tr><td>url</td><td>string</td><td>No</td><td>The absolute or relative URL of the video file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/VideoFileURLConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/VideoFileURLConfig.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="xmlfileconfig">XMLFileConfig<a href="#xmlfileconfig" class="hash-link" aria-label="Direct link to XMLFileConfig" title="Direct link to XMLFileConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-xmlfileconfig">&lt;static&gt; XMLFileConfig<a href="#static-xmlfileconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; XMLFileConfig" title="Direct link to &lt;static&gt; XMLFileConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td></td><td>The key of the file. Must be unique within both the Loader and the Text Cache.</td></tr><tr><td>url</td><td>string</td><td>Yes</td><td></td><td>The absolute or relative URL to load the file from.</td></tr><tr><td>extension</td><td>string</td><td>Yes</td><td>&quot;&#x27;xml&#x27;&quot;</td><td>The default file extension to use if no url is provided.</td></tr><tr><td>xhrSettings</td><td><a class="" href="/api-documentation/typedef/types-loader#XHRSettingsObject">Phaser.Types.Loader.XHRSettingsObject</a></td><td>Yes</td><td></td><td>Extra XHR Settings specifically for this file.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Loader.FileTypes</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/loader/filetypes/typedefs/XMLFileConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/loader/filetypes/typedefs/XMLFileConfig.js#L1</a></p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/typedef/types-input"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Types.Input</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/typedef/types-loader"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Types.Loader</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#asepritefileconfig" class="table-of-contents__link toc-highlight">AsepriteFileConfig</a><ul><li><a href="#static-asepritefileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; AsepriteFileConfig</a></li></ul></li><li><a href="#atlasjsonfileconfig" class="table-of-contents__link toc-highlight">AtlasJSONFileConfig</a><ul><li><a href="#static-atlasjsonfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; AtlasJSONFileConfig</a></li></ul></li><li><a href="#atlasxmlfileconfig" class="table-of-contents__link toc-highlight">AtlasXMLFileConfig</a><ul><li><a href="#static-atlasxmlfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; AtlasXMLFileConfig</a></li></ul></li><li><a href="#audiofileconfig" class="table-of-contents__link toc-highlight">AudioFileConfig</a><ul><li><a href="#static-audiofileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; AudioFileConfig</a></li></ul></li><li><a href="#audiofileurlconfig" class="table-of-contents__link toc-highlight">AudioFileURLConfig</a><ul><li><a href="#static-audiofileurlconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; AudioFileURLConfig</a></li></ul></li><li><a href="#audiospritefileconfig" class="table-of-contents__link toc-highlight">AudioSpriteFileConfig</a><ul><li><a href="#static-audiospritefileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; AudioSpriteFileConfig</a></li></ul></li><li><a href="#binaryfileconfig" class="table-of-contents__link toc-highlight">BinaryFileConfig</a><ul><li><a href="#static-binaryfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; BinaryFileConfig</a></li></ul></li><li><a href="#bitmapfontfileconfig" class="table-of-contents__link toc-highlight">BitmapFontFileConfig</a><ul><li><a href="#static-bitmapfontfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; BitmapFontFileConfig</a></li></ul></li><li><a href="#compressedtexturefileentry" class="table-of-contents__link toc-highlight">CompressedTextureFileEntry</a><ul><li><a href="#static-compressedtexturefileentry" class="table-of-contents__link toc-highlight">&lt;static&gt; CompressedTextureFileEntry</a></li></ul></li><li><a href="#compressedtexturefileconfig" class="table-of-contents__link toc-highlight">CompressedTextureFileConfig</a><ul><li><a href="#static-compressedtexturefileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; CompressedTextureFileConfig</a></li></ul></li><li><a href="#cssfileconfig" class="table-of-contents__link toc-highlight">CSSFileConfig</a><ul><li><a href="#static-cssfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; CSSFileConfig</a></li></ul></li><li><a href="#fontfileconfig" class="table-of-contents__link toc-highlight">FontFileConfig</a><ul><li><a href="#static-fontfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; FontFileConfig</a></li></ul></li><li><a href="#glslfileconfig" class="table-of-contents__link toc-highlight">GLSLFileConfig</a><ul><li><a href="#static-glslfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; GLSLFileConfig</a></li></ul></li><li><a href="#htmlfileconfig" class="table-of-contents__link toc-highlight">HTMLFileConfig</a><ul><li><a href="#static-htmlfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; HTMLFileConfig</a></li></ul></li><li><a href="#htmltexturefileconfig" class="table-of-contents__link toc-highlight">HTMLTextureFileConfig</a><ul><li><a href="#static-htmltexturefileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; HTMLTextureFileConfig</a></li></ul></li><li><a href="#imagefileconfig" class="table-of-contents__link toc-highlight">ImageFileConfig</a><ul><li><a href="#static-imagefileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ImageFileConfig</a></li></ul></li><li><a href="#imageframeconfig" class="table-of-contents__link toc-highlight">ImageFrameConfig</a><ul><li><a href="#static-imageframeconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ImageFrameConfig</a></li></ul></li><li><a href="#jsonfileconfig" class="table-of-contents__link toc-highlight">JSONFileConfig</a><ul><li><a href="#static-jsonfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; JSONFileConfig</a></li></ul></li><li><a href="#multiatlasfileconfig" class="table-of-contents__link toc-highlight">MultiAtlasFileConfig</a><ul><li><a href="#static-multiatlasfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; MultiAtlasFileConfig</a></li></ul></li><li><a href="#multiscriptfileconfig" class="table-of-contents__link toc-highlight">MultiScriptFileConfig</a><ul><li><a href="#static-multiscriptfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; MultiScriptFileConfig</a></li></ul></li><li><a href="#objfileconfig" class="table-of-contents__link toc-highlight">OBJFileConfig</a><ul><li><a href="#static-objfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; OBJFileConfig</a></li></ul></li><li><a href="#packfileconfig" class="table-of-contents__link toc-highlight">PackFileConfig</a><ul><li><a href="#static-packfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; PackFileConfig</a></li></ul></li><li><a href="#packfilesection" class="table-of-contents__link toc-highlight">PackFileSection</a><ul><li><a href="#static-packfilesection" class="table-of-contents__link toc-highlight">&lt;static&gt; PackFileSection</a></li></ul></li><li><a href="#pluginfileconfig" class="table-of-contents__link toc-highlight">PluginFileConfig</a><ul><li><a href="#static-pluginfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; PluginFileConfig</a></li></ul></li><li><a href="#scenefileconfig" class="table-of-contents__link toc-highlight">SceneFileConfig</a><ul><li><a href="#static-scenefileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; SceneFileConfig</a></li></ul></li><li><a href="#scenepluginfileconfig" class="table-of-contents__link toc-highlight">ScenePluginFileConfig</a><ul><li><a href="#static-scenepluginfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ScenePluginFileConfig</a></li></ul></li><li><a href="#scriptfileconfig" class="table-of-contents__link toc-highlight">ScriptFileConfig</a><ul><li><a href="#static-scriptfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ScriptFileConfig</a></li></ul></li><li><a href="#spritesheetfileconfig" class="table-of-contents__link toc-highlight">SpriteSheetFileConfig</a><ul><li><a href="#static-spritesheetfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; SpriteSheetFileConfig</a></li></ul></li><li><a href="#svgfileconfig" class="table-of-contents__link toc-highlight">SVGFileConfig</a><ul><li><a href="#static-svgfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; SVGFileConfig</a></li></ul></li><li><a href="#svgsizeconfig" class="table-of-contents__link toc-highlight">SVGSizeConfig</a><ul><li><a href="#static-svgsizeconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; SVGSizeConfig</a></li></ul></li><li><a href="#textfileconfig" class="table-of-contents__link toc-highlight">TextFileConfig</a><ul><li><a href="#static-textfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TextFileConfig</a></li></ul></li><li><a href="#tilemapcsvfileconfig" class="table-of-contents__link toc-highlight">TilemapCSVFileConfig</a><ul><li><a href="#static-tilemapcsvfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TilemapCSVFileConfig</a></li></ul></li><li><a href="#tilemapimpactfileconfig" class="table-of-contents__link toc-highlight">TilemapImpactFileConfig</a><ul><li><a href="#static-tilemapimpactfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TilemapImpactFileConfig</a></li></ul></li><li><a href="#tilemapjsonfileconfig" class="table-of-contents__link toc-highlight">TilemapJSONFileConfig</a><ul><li><a href="#static-tilemapjsonfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TilemapJSONFileConfig</a></li></ul></li><li><a href="#unityatlasfileconfig" class="table-of-contents__link toc-highlight">UnityAtlasFileConfig</a><ul><li><a href="#static-unityatlasfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; UnityAtlasFileConfig</a></li></ul></li><li><a href="#videofileconfig" class="table-of-contents__link toc-highlight">VideoFileConfig</a><ul><li><a href="#static-videofileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; VideoFileConfig</a></li></ul></li><li><a href="#videofileurlconfig" class="table-of-contents__link toc-highlight">VideoFileURLConfig</a><ul><li><a href="#static-videofileurlconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; VideoFileURLConfig</a></li></ul></li><li><a href="#xmlfileconfig" class="table-of-contents__link toc-highlight">XMLFileConfig</a><ul><li><a href="#static-xmlfileconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; XMLFileConfig</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

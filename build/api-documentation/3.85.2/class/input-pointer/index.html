@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-class/Phaser.Input.Pointer" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Pointer | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/class/input-pointer"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="Pointer | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Input.Pointer"><meta data-rh="true" property="og:description" content="Phaser.Input.Pointer"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/class/input-pointer"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/class/input-pointer" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/class/input-pointer" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Class","item":"https://docs.phaser.io/api-documentation/3.85.2/class/"},{"@type":"ListItem","position":2,"name":"Pointer","item":"https://docs.phaser.io/api-documentation/3.85.2/class/input-pointer"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/class/input-pointer">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/class/input-pointer">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/class/input-pointer">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/class/input-pointer">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Collapse sidebar category &#x27;Class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/class"><span title="Class" class="linkLabel_WmDU">Class</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animation"><span title="Animation" class="linkLabel_WmDU">Animation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationframe"><span title="AnimationFrame" class="linkLabel_WmDU">AnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationmanager"><span title="AnimationManager" class="linkLabel_WmDU">AnimationManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationstate"><span title="AnimationState" class="linkLabel_WmDU">AnimationState</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cache-basecache"><span title="BaseCache" class="linkLabel_WmDU">BaseCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cache-cachemanager"><span title="CacheManager" class="linkLabel_WmDU">CacheManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-controls-fixedkeycontrol"><span title="FixedKeyControl" class="linkLabel_WmDU">FixedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-controls-smoothedkeycontrol"><span title="SmoothedKeyControl" class="linkLabel_WmDU">SmoothedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-basecamera"><span title="BaseCamera" class="linkLabel_WmDU">BaseCamera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-camera"><span title="Camera" class="linkLabel_WmDU">Camera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-cameramanager"><span title="CameraManager" class="linkLabel_WmDU">CameraManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-fade"><span title="Fade" class="linkLabel_WmDU">Fade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-flash"><span title="Flash" class="linkLabel_WmDU">Flash</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-pan"><span title="Pan" class="linkLabel_WmDU">Pan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-rotateto"><span title="RotateTo" class="linkLabel_WmDU">RotateTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-shake"><span title="Shake" class="linkLabel_WmDU">Shake</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-zoom"><span title="Zoom" class="linkLabel_WmDU">Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/core-config"><span title="Config" class="linkLabel_WmDU">Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/core-timestep"><span title="TimeStep" class="linkLabel_WmDU">TimeStep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-cubicbezier"><span title="CubicBezier" class="linkLabel_WmDU">CubicBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-moveto"><span title="MoveTo" class="linkLabel_WmDU">MoveTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-path"><span title="Path" class="linkLabel_WmDU">Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-quadraticbezier"><span title="QuadraticBezier" class="linkLabel_WmDU">QuadraticBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-spline"><span title="Spline" class="linkLabel_WmDU">Spline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/dom-requestanimationframe"><span title="RequestAnimationFrame" class="linkLabel_WmDU">RequestAnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/data-datamanager"><span title="DataManager" class="linkLabel_WmDU">DataManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/data-datamanagerplugin"><span title="DataManagerPlugin" class="linkLabel_WmDU">DataManagerPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-baseshader"><span title="BaseShader" class="linkLabel_WmDU">BaseShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-color"><span title="Color" class="linkLabel_WmDU">Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-masks-bitmapmask"><span title="BitmapMask" class="linkLabel_WmDU">BitmapMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-masks-geometrymask"><span title="GeometryMask" class="linkLabel_WmDU">GeometryMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-rgb"><span title="RGB" class="linkLabel_WmDU">RGB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/events-eventemitter"><span title="EventEmitter" class="linkLabel_WmDU">EventEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-barrel"><span title="Barrel" class="linkLabel_WmDU">Barrel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-bloom"><span title="Bloom" class="linkLabel_WmDU">Bloom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-blur"><span title="Blur" class="linkLabel_WmDU">Blur</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-bokeh"><span title="Bokeh" class="linkLabel_WmDU">Bokeh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-controller"><span title="Controller" class="linkLabel_WmDU">Controller</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-displacement"><span title="Displacement" class="linkLabel_WmDU">Displacement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-glow"><span title="Glow" class="linkLabel_WmDU">Glow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-gradient"><span title="Gradient" class="linkLabel_WmDU">Gradient</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-pixelate"><span title="Pixelate" class="linkLabel_WmDU">Pixelate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-shadow"><span title="Shadow" class="linkLabel_WmDU">Shadow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-shine"><span title="Shine" class="linkLabel_WmDU">Shine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-vignette"><span title="Vignette" class="linkLabel_WmDU">Vignette</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-wipe"><span title="Wipe" class="linkLabel_WmDU">Wipe</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/facebookinstantgamesleaderboard"><span title="FacebookInstantGamesLeaderboard" class="linkLabel_WmDU">FacebookInstantGamesLeaderboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/facebookinstantgamesplugin"><span title="FacebookInstantGamesPlugin" class="linkLabel_WmDU">FacebookInstantGamesPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/game"><span title="Game" class="linkLabel_WmDU">Game</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-arc"><span title="Arc" class="linkLabel_WmDU">Arc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-bitmaptext"><span title="BitmapText" class="linkLabel_WmDU">BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-blitter"><span title="Blitter" class="linkLabel_WmDU">Blitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-bob"><span title="Bob" class="linkLabel_WmDU">Bob</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-components-fx"><span title="FX" class="linkLabel_WmDU">FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-components-transformmatrix"><span title="TransformMatrix" class="linkLabel_WmDU">TransformMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-container"><span title="Container" class="linkLabel_WmDU">Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-domelement"><span title="DOMElement" class="linkLabel_WmDU">DOMElement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-displaylist"><span title="DisplayList" class="linkLabel_WmDU">DisplayList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-dynamicbitmaptext"><span title="DynamicBitmapText" class="linkLabel_WmDU">DynamicBitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-extern"><span title="Extern" class="linkLabel_WmDU">Extern</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobject"><span title="GameObject" class="linkLabel_WmDU">GameObject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobjectcreator"><span title="GameObjectCreator" class="linkLabel_WmDU">GameObjectCreator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobjectfactory"><span title="GameObjectFactory" class="linkLabel_WmDU">GameObjectFactory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-graphics"><span title="Graphics" class="linkLabel_WmDU">Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-grid"><span title="Grid" class="linkLabel_WmDU">Grid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-isobox"><span title="IsoBox" class="linkLabel_WmDU">IsoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-isotriangle"><span title="IsoTriangle" class="linkLabel_WmDU">IsoTriangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-layer"><span title="Layer" class="linkLabel_WmDU">Layer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-light"><span title="Light" class="linkLabel_WmDU">Light</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-lightsmanager"><span title="LightsManager" class="linkLabel_WmDU">LightsManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-lightsplugin"><span title="LightsPlugin" class="linkLabel_WmDU">LightsPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-mesh"><span title="Mesh" class="linkLabel_WmDU">Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-nineslice"><span title="NineSlice" class="linkLabel_WmDU">NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-emittercolorop"><span title="EmitterColorOp" class="linkLabel_WmDU">EmitterColorOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-emitterop"><span title="EmitterOp" class="linkLabel_WmDU">EmitterOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-gravitywell"><span title="GravityWell" class="linkLabel_WmDU">GravityWell</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particle"><span title="Particle" class="linkLabel_WmDU">Particle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particlebounds"><span title="ParticleBounds" class="linkLabel_WmDU">ParticleBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particleemitter"><span title="ParticleEmitter" class="linkLabel_WmDU">ParticleEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particleprocessor"><span title="ParticleProcessor" class="linkLabel_WmDU">ParticleProcessor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-deathzone"><span title="DeathZone" class="linkLabel_WmDU">DeathZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-edgezone"><span title="EdgeZone" class="linkLabel_WmDU">EdgeZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-randomzone"><span title="RandomZone" class="linkLabel_WmDU">RandomZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-pathfollower"><span title="PathFollower" class="linkLabel_WmDU">PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-plane"><span title="Plane" class="linkLabel_WmDU">Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-pointlight"><span title="PointLight" class="linkLabel_WmDU">PointLight</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rendertexture"><span title="RenderTexture" class="linkLabel_WmDU">RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rope"><span title="Rope" class="linkLabel_WmDU">Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-shader"><span title="Shader" class="linkLabel_WmDU">Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-shape"><span title="Shape" class="linkLabel_WmDU">Shape</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-star"><span title="Star" class="linkLabel_WmDU">Star</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-text"><span title="Text" class="linkLabel_WmDU">Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-textstyle"><span title="TextStyle" class="linkLabel_WmDU">TextStyle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-tilesprite"><span title="TileSprite" class="linkLabel_WmDU">TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-updatelist"><span title="UpdateList" class="linkLabel_WmDU">UpdateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-video"><span title="Video" class="linkLabel_WmDU">Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-zone"><span title="Zone" class="linkLabel_WmDU">Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-mesh-face"><span title="Face" class="linkLabel_WmDU">Face</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-mesh-vertex"><span title="Vertex" class="linkLabel_WmDU">Vertex</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-point"><span title="Point" class="linkLabel_WmDU">Point</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-axis"><span title="Axis" class="linkLabel_WmDU">Axis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-button"><span title="Button" class="linkLabel_WmDU">Button</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-gamepad"><span title="Gamepad" class="linkLabel_WmDU">Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-gamepadplugin"><span title="GamepadPlugin" class="linkLabel_WmDU">GamepadPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-inputmanager"><span title="InputManager" class="linkLabel_WmDU">InputManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-inputplugin"><span title="InputPlugin" class="linkLabel_WmDU">InputPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-key"><span title="Key" class="linkLabel_WmDU">Key</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keycombo"><span title="KeyCombo" class="linkLabel_WmDU">KeyCombo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keyboardmanager"><span title="KeyboardManager" class="linkLabel_WmDU">KeyboardManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keyboardplugin"><span title="KeyboardPlugin" class="linkLabel_WmDU">KeyboardPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-mouse-mousemanager"><span title="MouseManager" class="linkLabel_WmDU">MouseManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/class/input-pointer"><span title="Pointer" class="linkLabel_WmDU">Pointer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-touch-touchmanager"><span title="TouchManager" class="linkLabel_WmDU">TouchManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-file"><span title="File" class="linkLabel_WmDU">File</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-animationjsonfile"><span title="AnimationJSONFile" class="linkLabel_WmDU">AnimationJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-asepritefile"><span title="AsepriteFile" class="linkLabel_WmDU">AsepriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-atlasjsonfile"><span title="AtlasJSONFile" class="linkLabel_WmDU">AtlasJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-atlasxmlfile"><span title="AtlasXMLFile" class="linkLabel_WmDU">AtlasXMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-audiofile"><span title="AudioFile" class="linkLabel_WmDU">AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-audiospritefile"><span title="AudioSpriteFile" class="linkLabel_WmDU">AudioSpriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-binaryfile"><span title="BinaryFile" class="linkLabel_WmDU">BinaryFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-bitmapfontfile"><span title="BitmapFontFile" class="linkLabel_WmDU">BitmapFontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-cssfile"><span title="CSSFile" class="linkLabel_WmDU">CSSFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-compressedtexturefile"><span title="CompressedTextureFile" class="linkLabel_WmDU">CompressedTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-glslfile"><span title="GLSLFile" class="linkLabel_WmDU">GLSLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-html5audiofile"><span title="HTML5AudioFile" class="linkLabel_WmDU">HTML5AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-htmlfile"><span title="HTMLFile" class="linkLabel_WmDU">HTMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-htmltexturefile"><span title="HTMLTextureFile" class="linkLabel_WmDU">HTMLTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-imagefile"><span title="ImageFile" class="linkLabel_WmDU">ImageFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-jsonfile"><span title="JSONFile" class="linkLabel_WmDU">JSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-multiatlasfile"><span title="MultiAtlasFile" class="linkLabel_WmDU">MultiAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-multiscriptfile"><span title="MultiScriptFile" class="linkLabel_WmDU">MultiScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-objfile"><span title="OBJFile" class="linkLabel_WmDU">OBJFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-packfile"><span title="PackFile" class="linkLabel_WmDU">PackFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-pluginfile"><span title="PluginFile" class="linkLabel_WmDU">PluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-svgfile"><span title="SVGFile" class="linkLabel_WmDU">SVGFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scenefile"><span title="SceneFile" class="linkLabel_WmDU">SceneFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scenepluginfile"><span title="ScenePluginFile" class="linkLabel_WmDU">ScenePluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scriptfile"><span title="ScriptFile" class="linkLabel_WmDU">ScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-spritesheetfile"><span title="SpriteSheetFile" class="linkLabel_WmDU">SpriteSheetFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-textfile"><span title="TextFile" class="linkLabel_WmDU">TextFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapcsvfile"><span title="TilemapCSVFile" class="linkLabel_WmDU">TilemapCSVFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapimpactfile"><span title="TilemapImpactFile" class="linkLabel_WmDU">TilemapImpactFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapjsonfile"><span title="TilemapJSONFile" class="linkLabel_WmDU">TilemapJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-unityatlasfile"><span title="UnityAtlasFile" class="linkLabel_WmDU">UnityAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-videofile"><span title="VideoFile" class="linkLabel_WmDU">VideoFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-xmlfile"><span title="XMLFile" class="linkLabel_WmDU">XMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-loaderplugin"><span title="LoaderPlugin" class="linkLabel_WmDU">LoaderPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-multifile"><span title="MultiFile" class="linkLabel_WmDU">MultiFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-euler"><span title="Euler" class="linkLabel_WmDU">Euler</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-matrix3"><span title="Matrix3" class="linkLabel_WmDU">Matrix3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-matrix4"><span title="Matrix4" class="linkLabel_WmDU">Matrix4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-quaternion"><span title="Quaternion" class="linkLabel_WmDU">Quaternion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-randomdatagenerator"><span title="RandomDataGenerator" class="linkLabel_WmDU">RandomDataGenerator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector2"><span title="Vector2" class="linkLabel_WmDU">Vector2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector3"><span title="Vector3" class="linkLabel_WmDU">Vector3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector4"><span title="Vector4" class="linkLabel_WmDU">Vector4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-arcadephysics"><span title="ArcadePhysics" class="linkLabel_WmDU">ArcadePhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-body"><span title="Body" class="linkLabel_WmDU">Body</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-collider"><span title="Collider" class="linkLabel_WmDU">Collider</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-staticbody"><span title="StaticBody" class="linkLabel_WmDU">StaticBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-staticgroup"><span title="StaticGroup" class="linkLabel_WmDU">StaticGroup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-bodybounds"><span title="BodyBounds" class="linkLabel_WmDU">BodyBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-matterphysics"><span title="MatterPhysics" class="linkLabel_WmDU">MatterPhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-pointerconstraint"><span title="PointerConstraint" class="linkLabel_WmDU">PointerConstraint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-tilebody"><span title="TileBody" class="linkLabel_WmDU">TileBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-baseplugin"><span title="BasePlugin" class="linkLabel_WmDU">BasePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-pluginmanager"><span title="PluginManager" class="linkLabel_WmDU">PluginManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-canvas-canvasrenderer"><span title="CanvasRenderer" class="linkLabel_WmDU">CanvasRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelinemanager"><span title="PipelineManager" class="linkLabel_WmDU">PipelineManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-bitmapmaskpipeline"><span title="BitmapMaskPipeline" class="linkLabel_WmDU">BitmapMaskPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-barrelfxpipeline"><span title="BarrelFXPipeline" class="linkLabel_WmDU">BarrelFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-bloomfxpipeline"><span title="BloomFXPipeline" class="linkLabel_WmDU">BloomFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-blurfxpipeline"><span title="BlurFXPipeline" class="linkLabel_WmDU">BlurFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-bokehfxpipeline"><span title="BokehFXPipeline" class="linkLabel_WmDU">BokehFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-circlefxpipeline"><span title="CircleFXPipeline" class="linkLabel_WmDU">CircleFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-colormatrixfxpipeline"><span title="ColorMatrixFXPipeline" class="linkLabel_WmDU">ColorMatrixFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-displacementfxpipeline"><span title="DisplacementFXPipeline" class="linkLabel_WmDU">DisplacementFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-glowfxpipeline"><span title="GlowFXPipeline" class="linkLabel_WmDU">GlowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-gradientfxpipeline"><span title="GradientFXPipeline" class="linkLabel_WmDU">GradientFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-pixelatefxpipeline"><span title="PixelateFXPipeline" class="linkLabel_WmDU">PixelateFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-shadowfxpipeline"><span title="ShadowFXPipeline" class="linkLabel_WmDU">ShadowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-shinefxpipeline"><span title="ShineFXPipeline" class="linkLabel_WmDU">ShineFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-vignettefxpipeline"><span title="VignetteFXPipeline" class="linkLabel_WmDU">VignetteFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-wipefxpipeline"><span title="WipeFXPipeline" class="linkLabel_WmDU">WipeFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fxpipeline"><span title="FXPipeline" class="linkLabel_WmDU">FXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-lightpipeline"><span title="LightPipeline" class="linkLabel_WmDU">LightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-mobilepipeline"><span title="MobilePipeline" class="linkLabel_WmDU">MobilePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-multipipeline"><span title="MultiPipeline" class="linkLabel_WmDU">MultiPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-pointlightpipeline"><span title="PointLightPipeline" class="linkLabel_WmDU">PointLightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-postfxpipeline"><span title="PostFXPipeline" class="linkLabel_WmDU">PostFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-prefxpipeline"><span title="PreFXPipeline" class="linkLabel_WmDU">PreFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-ropepipeline"><span title="RopePipeline" class="linkLabel_WmDU">RopePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-singlepipeline"><span title="SinglePipeline" class="linkLabel_WmDU">SinglePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-utilitypipeline"><span title="UtilityPipeline" class="linkLabel_WmDU">UtilityPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-rendertarget"><span title="RenderTarget" class="linkLabel_WmDU">RenderTarget</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglpipeline"><span title="WebGLPipeline" class="linkLabel_WmDU">WebGLPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglrenderer"><span title="WebGLRenderer" class="linkLabel_WmDU">WebGLRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglshader"><span title="WebGLShader" class="linkLabel_WmDU">WebGLShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglattriblocationwrapper"><span title="WebGLAttribLocationWrapper" class="linkLabel_WmDU">WebGLAttribLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglbufferwrapper"><span title="WebGLBufferWrapper" class="linkLabel_WmDU">WebGLBufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglframebufferwrapper"><span title="WebGLFramebufferWrapper" class="linkLabel_WmDU">WebGLFramebufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglprogramwrapper"><span title="WebGLProgramWrapper" class="linkLabel_WmDU">WebGLProgramWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webgltexturewrapper"><span title="WebGLTextureWrapper" class="linkLabel_WmDU">WebGLTextureWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webgluniformlocationwrapper"><span title="WebGLUniformLocationWrapper" class="linkLabel_WmDU">WebGLUniformLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scale-scalemanager"><span title="ScaleManager" class="linkLabel_WmDU">ScaleManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scene"><span title="Scene" class="linkLabel_WmDU">Scene</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-scenemanager"><span title="SceneManager" class="linkLabel_WmDU">SceneManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-systems"><span title="Systems" class="linkLabel_WmDU">Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-basesound"><span title="BaseSound" class="linkLabel_WmDU">BaseSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-basesoundmanager"><span title="BaseSoundManager" class="linkLabel_WmDU">BaseSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-html5audiosound"><span title="HTML5AudioSound" class="linkLabel_WmDU">HTML5AudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-html5audiosoundmanager"><span title="HTML5AudioSoundManager" class="linkLabel_WmDU">HTML5AudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-noaudiosound"><span title="NoAudioSound" class="linkLabel_WmDU">NoAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-noaudiosoundmanager"><span title="NoAudioSoundManager" class="linkLabel_WmDU">NoAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-webaudiosound"><span title="WebAudioSound" class="linkLabel_WmDU">WebAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager"><span title="WebAudioSoundManager" class="linkLabel_WmDU">WebAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-list"><span title="List" class="linkLabel_WmDU">List</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-map"><span title="Map" class="linkLabel_WmDU">Map</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-processqueue"><span title="ProcessQueue" class="linkLabel_WmDU">ProcessQueue</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-rtree"><span title="RTree" class="linkLabel_WmDU">RTree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-set"><span title="Set" class="linkLabel_WmDU">Set</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-size"><span title="Size" class="linkLabel_WmDU">Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-canvastexture"><span title="CanvasTexture" class="linkLabel_WmDU">CanvasTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-dynamictexture"><span title="DynamicTexture" class="linkLabel_WmDU">DynamicTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-frame"><span title="Frame" class="linkLabel_WmDU">Frame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texture"><span title="Texture" class="linkLabel_WmDU">Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texturemanager"><span title="TextureManager" class="linkLabel_WmDU">TextureManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texturesource"><span title="TextureSource" class="linkLabel_WmDU">TextureSource</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-imagecollection"><span title="ImageCollection" class="linkLabel_WmDU">ImageCollection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-layerdata"><span title="LayerData" class="linkLabel_WmDU">LayerData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-mapdata"><span title="MapData" class="linkLabel_WmDU">MapData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-objecthelper"><span title="ObjectHelper" class="linkLabel_WmDU">ObjectHelper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-objectlayer"><span title="ObjectLayer" class="linkLabel_WmDU">ObjectLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tile"><span title="Tile" class="linkLabel_WmDU">Tile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tilemap"><span title="Tilemap" class="linkLabel_WmDU">Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tilemaplayer"><span title="TilemapLayer" class="linkLabel_WmDU">TilemapLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tileset"><span title="Tileset" class="linkLabel_WmDU">Tileset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-clock"><span title="Clock" class="linkLabel_WmDU">Clock</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-timeline"><span title="Timeline" class="linkLabel_WmDU">Timeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-timerevent"><span title="TimerEvent" class="linkLabel_WmDU">TimerEvent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-basetween"><span title="BaseTween" class="linkLabel_WmDU">BaseTween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-basetweendata"><span title="BaseTweenData" class="linkLabel_WmDU">BaseTweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tween"><span title="Tween" class="linkLabel_WmDU">Tween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenchain"><span title="TweenChain" class="linkLabel_WmDU">TweenChain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweendata"><span title="TweenData" class="linkLabel_WmDU">TweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenframedata"><span title="TweenFrameData" class="linkLabel_WmDU">TweenFrameData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenmanager"><span title="TweenManager" class="linkLabel_WmDU">TweenManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="linkLabel_WmDU">Class</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/class/input-pointer">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/class/"><span>Class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Pointer</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Pointer</h1></header><p>A Pointer object encapsulates both mouse and touch input within Phaser.</p>
+<p>By default, Phaser will create 2 pointers for your game to use. If you require more, i.e. for a multi-touch
+game, then use the <code>InputPlugin.addPointer</code> method to do so, rather than instantiating this class directly,
+otherwise it won&#x27;t be managed by the input system.</p>
+<p>You can reference the current active pointer via <code>InputPlugin.activePointer</code>. You can also use the properties
+<code>InputPlugin.pointer1</code> through to <code>pointer10</code>, for each pointer you have enabled in your game.</p>
+<p>The properties of this object are set by the Input Plugin during processing. This object is then sent in all
+input related events that the Input Plugin emits, so you can reference properties from it directly in your
+callbacks.</p>
+<p><strong>Constructor</strong></p>
+<p><code>new Pointer(manager, id)</code></p>
+<p><strong>Parameters</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>manager</td><td><a class="" href="/api-documentation/3.85.2/class/input-inputmanager">Phaser.Input.InputManager</a></td><td>No</td><td>A reference to the Input Manager.</td></tr><tr><td>id</td><td>number</td><td>No</td><td>The internal ID of this Pointer.</td></tr></tbody></table>
+<hr>
+<p><strong>Scope</strong>: static</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L15" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L15</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Public Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="active">active<a href="#active" class="hash-link" aria-label="Direct link to active" title="Direct link to active" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="active-boolean">active: boolean<a href="#active-boolean" class="hash-link" aria-label="Direct link to active: boolean" title="Direct link to active: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An active Pointer is one that is currently pressed down on the display.
+A Mouse is always considered as active.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L438" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L438</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="angle">angle<a href="#angle" class="hash-link" aria-label="Direct link to angle" title="Direct link to angle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="angle-number">angle: number<a href="#angle-number" class="hash-link" aria-label="Direct link to angle: number" title="Direct link to angle: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The current angle the Pointer is moving, in radians, based on its previous and current position.</p>
+<p>The angle is based on the old position facing to the current position.</p>
+<p>This property is updated whenever the Pointer moves, regardless of any button states. In other words,
+it changes based on movement alone - a button doesn&#x27;t have to be pressed first.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L192" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L192</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="button">button<a href="#button" class="hash-link" aria-label="Direct link to button" title="Direct link to button" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="button-number">button: number<a href="#button-number" class="hash-link" aria-label="Direct link to button: number" title="Direct link to button: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A read-only property that indicates which button was pressed, or released, on the pointer
+during the most recent event. It is only set during <code>up</code> and <code>down</code> events.</p>
+<p>On Touch devices the value is always 0.</p>
+<p>Users may change the configuration of buttons on their pointing device so that if an event&#x27;s button property
+is zero, it may not have been caused by the button that is physically left–most on the pointing device;
+however, it should behave as if the left button was clicked in the standard button layout.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L107" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L107</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="buttons">buttons<a href="#buttons" class="hash-link" aria-label="Direct link to buttons" title="Direct link to buttons" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="buttons-number">buttons: number<a href="#buttons-number" class="hash-link" aria-label="Direct link to buttons: number" title="Direct link to buttons: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>0: No button or un-initialized
+1: Left button
+2: Right button
+4: Wheel button or middle button
+8: 4th button (typically the &quot;Browser Back&quot; button)
+16: 5th button (typically the &quot;Browser Forward&quot; button)</p>
+<p>For a mouse configured for left-handed use, the button actions are reversed.
+In this case, the values are read from right to left.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L125" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L125</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="camera">camera<a href="#camera" class="hash-link" aria-label="Direct link to camera" title="Direct link to camera" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="camera-phasercamerasscene2dcamera">camera: <a class="" href="/api-documentation/3.85.2/class/cameras-scene2d-camera">Phaser.Cameras.Scene2D.Camera</a><a href="#camera-phasercamerasscene2dcamera" class="hash-link" aria-label="Direct link to camera-phasercamerasscene2dcamera" title="Direct link to camera-phasercamerasscene2dcamera" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The camera the Pointer interacted with during its last update.</p>
+<p>A Pointer can only ever interact with one camera at once, which will be the top-most camera
+in the list should multiple cameras be positioned on-top of each other.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L94" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L94</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltax">deltaX<a href="#deltax" class="hash-link" aria-label="Direct link to deltaX" title="Direct link to deltaX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltax-number">deltaX: number<a href="#deltax-number" class="hash-link" aria-label="Direct link to deltaX: number" title="Direct link to deltaX: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The horizontal scroll amount that occurred due to the user moving a mouse wheel or similar input device.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L464" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L464</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltay">deltaY<a href="#deltay" class="hash-link" aria-label="Direct link to deltaY" title="Direct link to deltaY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltay-number">deltaY: number<a href="#deltay-number" class="hash-link" aria-label="Direct link to deltaY: number" title="Direct link to deltaY: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The vertical scroll amount that occurred due to the user moving a mouse wheel or similar input device.
+This value will typically be less than 0 if the user scrolls up and greater than zero if scrolling down.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L474" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L474</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltaz">deltaZ<a href="#deltaz" class="hash-link" aria-label="Direct link to deltaZ" title="Direct link to deltaZ" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltaz-number">deltaZ: number<a href="#deltaz-number" class="hash-link" aria-label="Direct link to deltaZ: number" title="Direct link to deltaZ: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The z-axis scroll amount that occurred due to the user moving a mouse wheel or similar input device.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L485" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L485</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="distance">distance<a href="#distance" class="hash-link" aria-label="Direct link to distance" title="Direct link to distance" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="distance-number">distance: number<a href="#distance-number" class="hash-link" aria-label="Direct link to distance: number" title="Direct link to distance: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The distance the Pointer has moved, based on its previous and current position.</p>
+<p>This value is smoothed out each frame, according to the <code>motionFactor</code> property.</p>
+<p>This property is updated whenever the Pointer moves, regardless of any button states. In other words,
+it changes based on movement alone - a button doesn&#x27;t have to be pressed first.</p>
+<p>If you need the total distance travelled since the primary buttons was pressed down,
+then use the <code>Pointer.getDistance</code> method.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L207" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L207</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="downelement">downElement<a href="#downelement" class="hash-link" aria-label="Direct link to downElement" title="Direct link to downElement" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="downelement-any">downElement: any<a href="#downelement-any" class="hash-link" aria-label="Direct link to downElement: any" title="Direct link to downElement: any" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The DOM element the Pointer was pressed down on, taken from the DOM event.
+In a default set-up this will be the Canvas that Phaser is rendering to, or the Window element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L72" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L72</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="downtime">downTime<a href="#downtime" class="hash-link" aria-label="Direct link to downTime" title="Direct link to downTime" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="downtime-number">downTime: number<a href="#downtime-number" class="hash-link" aria-label="Direct link to downTime: number" title="Direct link to downTime: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Event timestamp when the first button, or Touch input, was pressed. Used for dragging objects.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L317" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L317</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="downx">downX<a href="#downx" class="hash-link" aria-label="Direct link to downX" title="Direct link to downX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="downx-number">downX: number<a href="#downx-number" class="hash-link" aria-label="Direct link to downX: number" title="Direct link to downX: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>X coordinate of the Pointer when Button 1 (left button), or Touch, was pressed, used for dragging objects.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L297" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L297</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="downy">downY<a href="#downy" class="hash-link" aria-label="Direct link to downY" title="Direct link to downY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="downy-number">downY: number<a href="#downy-number" class="hash-link" aria-label="Direct link to downY: number" title="Direct link to downY: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Y coordinate of the Pointer when Button 1 (left button), or Touch, was pressed, used for dragging objects.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L307" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L307</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="event">event<a href="#event" class="hash-link" aria-label="Direct link to event" title="Direct link to event" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="event-touchevent-mouseevent-wheelevent">event: TouchEvent, MouseEvent, WheelEvent<a href="#event-touchevent-mouseevent-wheelevent" class="hash-link" aria-label="Direct link to event: TouchEvent, MouseEvent, WheelEvent" title="Direct link to event: TouchEvent, MouseEvent, WheelEvent" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The most recent native DOM Event this Pointer has processed.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L63" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L63</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="id">id<a href="#id" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-number">id: number<a href="#id-number" class="hash-link" aria-label="Direct link to id: number" title="Direct link to id: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The internal ID of this Pointer.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L53" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L53</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="identifier">identifier<a href="#identifier" class="hash-link" aria-label="Direct link to identifier" title="Direct link to identifier" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="identifier-number">identifier: number<a href="#identifier-number" class="hash-link" aria-label="Direct link to identifier: number" title="Direct link to identifier: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The identifier property of the Pointer as set by the DOM event when this Pointer is started.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L419" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L419</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="isdown">isDown<a href="#isdown" class="hash-link" aria-label="Direct link to isDown" title="Direct link to isDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="isdown-boolean">isDown: boolean<a href="#isdown-boolean" class="hash-link" aria-label="Direct link to isDown: boolean" title="Direct link to isDown: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is <em>any</em> button on this pointer considered as being down?</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L367" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L367</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="locked">locked<a href="#locked" class="hash-link" aria-label="Direct link to locked" title="Direct link to locked" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="locked-boolean">locked: boolean<a href="#locked-boolean" class="hash-link" aria-label="Direct link to locked: boolean" title="Direct link to locked: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is this pointer Pointer Locked?</p>
+<p>Only a mouse pointer can be locked and it only becomes locked when requested via
+the browsers Pointer Lock API.</p>
+<p>You can request this by calling the <code>this.input.mouse.requestPointerLock()</code> method from
+a <code>pointerdown</code> or <code>pointerup</code> event handler.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L448" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L448</a><br>
+Since: 3.19.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="manager">manager<a href="#manager" class="hash-link" aria-label="Direct link to manager" title="Direct link to manager" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manager-phaserinputinputmanager">manager: <a class="" href="/api-documentation/3.85.2/class/input-inputmanager">Phaser.Input.InputManager</a><a href="#manager-phaserinputinputmanager" class="hash-link" aria-label="Direct link to manager-phaserinputinputmanager" title="Direct link to manager-phaserinputinputmanager" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Input Manager.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L44" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L44</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="motionfactor">motionFactor<a href="#motionfactor" class="hash-link" aria-label="Direct link to motionFactor" title="Direct link to motionFactor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="motionfactor-number">motionFactor: number<a href="#motionfactor-number" class="hash-link" aria-label="Direct link to motionFactor: number" title="Direct link to motionFactor: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The factor applied to the motion smoothing each frame.</p>
+<p>This value is passed to the Smooth Step Interpolation that is used to calculate the velocity,
+angle and distance of the Pointer. It&#x27;s applied every frame, until the midPoint reaches the current
+position of the Pointer. 0.2 provides a good average but can be increased if you need a
+quicker update and are working in a high performance environment. Never set this value to
+zero.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L245" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L245</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="movementx">movementX<a href="#movementx" class="hash-link" aria-label="Direct link to movementX" title="Direct link to movementX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="movementx-number">movementX: number<a href="#movementx-number" class="hash-link" aria-label="Direct link to movementX: number" title="Direct link to movementX: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If the mouse is locked, the horizontal relative movement of the Pointer in pixels since last frame.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L399" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L399</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="movementy">movementY<a href="#movementy" class="hash-link" aria-label="Direct link to movementY" title="Direct link to movementY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="movementy-number">movementY: number<a href="#movementy-number" class="hash-link" aria-label="Direct link to movementY: number" title="Direct link to movementY: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If the mouse is locked, the vertical relative movement of the Pointer in pixels since last frame.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L409" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L409</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="movetime">moveTime<a href="#movetime" class="hash-link" aria-label="Direct link to moveTime" title="Direct link to moveTime" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="movetime-number">moveTime: number<a href="#movetime-number" class="hash-link" aria-label="Direct link to moveTime: number" title="Direct link to moveTime: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Time when this Pointer was most recently moved (regardless of the state of its buttons, if any)</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L287" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L287</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointerid">pointerId<a href="#pointerid" class="hash-link" aria-label="Direct link to pointerId" title="Direct link to pointerId" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointerid-number">pointerId: number<a href="#pointerid-number" class="hash-link" aria-label="Direct link to pointerId: number" title="Direct link to pointerId: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The pointerId property of the Pointer as set by the DOM event when this Pointer is started.
+The browser can and will recycle this value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L428" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L428</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="position">position<a href="#position" class="hash-link" aria-label="Direct link to position" title="Direct link to position" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="position-phasermathvector2">position: <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a><a href="#position-phasermathvector2" class="hash-link" aria-label="Direct link to position-phasermathvector2" title="Direct link to position-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The position of the Pointer in screen space.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L143" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L143</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prevposition">prevPosition<a href="#prevposition" class="hash-link" aria-label="Direct link to prevPosition" title="Direct link to prevPosition" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="prevposition-phasermathvector2">prevPosition: <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a><a href="#prevposition-phasermathvector2" class="hash-link" aria-label="Direct link to prevposition-phasermathvector2" title="Direct link to prevposition-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The previous position of the Pointer in screen space.</p>
+<p>The old x and y values are stored in here during the InputManager.transformPointer call.</p>
+<p>Use the properties <code>velocity</code>, <code>angle</code> and <code>distance</code> to create your own gesture recognition.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L153" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L153</a><br>
+Since: 3.11.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="primarydown">primaryDown<a href="#primarydown" class="hash-link" aria-label="Direct link to primaryDown" title="Direct link to primaryDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="primarydown-boolean">primaryDown: boolean<a href="#primarydown-boolean" class="hash-link" aria-label="Direct link to primaryDown: boolean" title="Direct link to primaryDown: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the primary button down? (usually button 0, the left mouse button)</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L357" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L357</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="smoothfactor">smoothFactor<a href="#smoothfactor" class="hash-link" aria-label="Direct link to smoothFactor" title="Direct link to smoothFactor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smoothfactor-number">smoothFactor: number<a href="#smoothfactor-number" class="hash-link" aria-label="Direct link to smoothFactor: number" title="Direct link to smoothFactor: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The smoothing factor to apply to the Pointer position.</p>
+<p>Due to their nature, pointer positions are inherently noisy. While this is fine for lots of games, if you need cleaner positions
+then you can set this value to apply an automatic smoothing to the positions as they are recorded.</p>
+<p>The default value of zero means &#x27;no smoothing&#x27;.
+Set to a small value, such as 0.2, to apply an average level of smoothing between positions. You can do this by changing this
+value directly, or by setting the <code>input.smoothFactor</code> property in the Game Config.</p>
+<p>Positions are only smoothed when the pointer moves. If the primary button on this Pointer enters an Up or Down state, then the position
+is always precise, and not smoothed.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L225" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L225</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="time">time<a href="#time" class="hash-link" aria-label="Direct link to time" title="Direct link to time" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="time-number">time: number<a href="#time-number" class="hash-link" aria-label="Direct link to time: number" title="Direct link to time: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Time when this Pointer was most recently updated by a DOM Event.
+This comes directly from the <code>event.timeStamp</code> property.
+If no event has yet taken place, it will return zero.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1304" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1304</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="upelement">upElement<a href="#upelement" class="hash-link" aria-label="Direct link to upElement" title="Direct link to upElement" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="upelement-any">upElement: any<a href="#upelement-any" class="hash-link" aria-label="Direct link to upElement: any" title="Direct link to upElement: any" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The DOM element the Pointer was released on, taken from the DOM event.
+In a default set-up this will be the Canvas that Phaser is rendering to, or the Window element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L83" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L83</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="uptime">upTime<a href="#uptime" class="hash-link" aria-label="Direct link to upTime" title="Direct link to upTime" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uptime-number">upTime: number<a href="#uptime-number" class="hash-link" aria-label="Direct link to upTime: number" title="Direct link to upTime: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Event timestamp when the final button, or Touch input, was released. Used for dragging objects.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L347" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L347</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="upx">upX<a href="#upx" class="hash-link" aria-label="Direct link to upX" title="Direct link to upX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="upx-number">upX: number<a href="#upx-number" class="hash-link" aria-label="Direct link to upX: number" title="Direct link to upX: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>X coordinate of the Pointer when Button 1 (left button), or Touch, was released, used for dragging objects.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L327" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L327</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="upy">upY<a href="#upy" class="hash-link" aria-label="Direct link to upY" title="Direct link to upY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="upy-number">upY: number<a href="#upy-number" class="hash-link" aria-label="Direct link to upY: number" title="Direct link to upY: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Y coordinate of the Pointer when Button 1 (left button), or Touch, was released, used for dragging objects.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L337" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L337</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="velocity">velocity<a href="#velocity" class="hash-link" aria-label="Direct link to velocity" title="Direct link to velocity" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="velocity-phasermathvector2">velocity: <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a><a href="#velocity-phasermathvector2" class="hash-link" aria-label="Direct link to velocity-phasermathvector2" title="Direct link to velocity-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The current velocity of the Pointer, based on its current and previous positions.</p>
+<p>This value is smoothed out each frame, according to the <code>motionFactor</code> property.</p>
+<p>This property is updated whenever the Pointer moves, regardless of any button states. In other words,
+it changes based on movement alone - a button doesn&#x27;t have to be pressed first.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L177" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L177</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wascanceled">wasCanceled<a href="#wascanceled" class="hash-link" aria-label="Direct link to wasCanceled" title="Direct link to wasCanceled" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wascanceled-boolean">wasCanceled: boolean<a href="#wascanceled-boolean" class="hash-link" aria-label="Direct link to wasCanceled: boolean" title="Direct link to wasCanceled: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Did this Pointer get canceled by a touchcancel event?</p>
+<p>Note: &quot;canceled&quot; is the American-English spelling of &quot;cancelled&quot;. Please don&#x27;t submit PRs correcting it!</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L387" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L387</a><br>
+Since: 3.15.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wastouch">wasTouch<a href="#wastouch" class="hash-link" aria-label="Direct link to wasTouch" title="Direct link to wasTouch" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wastouch-boolean">wasTouch: boolean<a href="#wastouch-boolean" class="hash-link" aria-label="Direct link to wasTouch: boolean" title="Direct link to wasTouch: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Did the previous input event come from a Touch input (true) or Mouse? (false)</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L377" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L377</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="worldx">worldX<a href="#worldx" class="hash-link" aria-label="Direct link to worldX" title="Direct link to worldX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="worldx-number">worldX: number<a href="#worldx-number" class="hash-link" aria-label="Direct link to worldX: number" title="Direct link to worldX: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The x position of this Pointer, translated into the coordinate space of the most recent Camera it interacted with.</p>
+<p>If you wish to use this value <em>outside</em> of an input event handler then you should update it first by calling
+the <code>Pointer.updateWorldPoint</code> method.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L261" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L261</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="worldy">worldY<a href="#worldy" class="hash-link" aria-label="Direct link to worldY" title="Direct link to worldY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="worldy-number">worldY: number<a href="#worldy-number" class="hash-link" aria-label="Direct link to worldY: number" title="Direct link to worldY: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The y position of this Pointer, translated into the coordinate space of the most recent Camera it interacted with.</p>
+<p>If you wish to use this value <em>outside</em> of an input event handler then you should update it first by calling
+the <code>Pointer.updateWorldPoint</code> method.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L274" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L274</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="x">x<a href="#x" class="hash-link" aria-label="Direct link to x" title="Direct link to x" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="x-number">x: number<a href="#x-number" class="hash-link" aria-label="Direct link to x: number" title="Direct link to x: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The x position of this Pointer.
+The value is in screen space.
+See <code>worldX</code> to get a camera converted position.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1258" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1258</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="y">y<a href="#y" class="hash-link" aria-label="Direct link to y" title="Direct link to y" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="y-number">y: number<a href="#y-number" class="hash-link" aria-label="Direct link to y: number" title="Direct link to y: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The y position of this Pointer.
+The value is in screen space.
+See <code>worldY</code> to get a camera converted position.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1281" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1281</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h1>Private Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="midpoint">midPoint<a href="#midpoint" class="hash-link" aria-label="Direct link to midPoint" title="Direct link to midPoint" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="midpoint-phasermathvector2">midPoint: <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a><a href="#midpoint-phasermathvector2" class="hash-link" aria-label="Direct link to midpoint-phasermathvector2" title="Direct link to midpoint-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An internal vector used for calculations of the pointer speed and angle.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L167" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L167</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h1>Public Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="backbuttondown">backButtonDown<a href="#backbuttondown" class="hash-link" aria-label="Direct link to backButtonDown" title="Direct link to backButtonDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-backbuttondown">&lt;instance&gt; backButtonDown()<a href="#instance-backbuttondown" class="hash-link" aria-label="Direct link to &lt;instance&gt; backButtonDown()" title="Direct link to &lt;instance&gt; backButtonDown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the back button is being held down on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the back button is being held down.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L930" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L930</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="backbuttonreleased">backButtonReleased<a href="#backbuttonreleased" class="hash-link" aria-label="Direct link to backButtonReleased" title="Direct link to backButtonReleased" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-backbuttonreleased">&lt;instance&gt; backButtonReleased()<a href="#instance-backbuttonreleased" class="hash-link" aria-label="Direct link to &lt;instance&gt; backButtonReleased()" title="Direct link to &lt;instance&gt; backButtonReleased()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the release of the back button was the most recent activity on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the release of the back button was the most recent activity on this Pointer.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L995" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L995</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">destroy<a href="#destroy" class="hash-link" aria-label="Direct link to destroy" title="Direct link to destroy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-destroy">&lt;instance&gt; destroy()<a href="#instance-destroy" class="hash-link" aria-label="Direct link to &lt;instance&gt; destroy()" title="Direct link to &lt;instance&gt; destroy()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Destroys this Pointer instance and resets its external references.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1245" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1245</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="forwardbuttondown">forwardButtonDown<a href="#forwardbuttondown" class="hash-link" aria-label="Direct link to forwardButtonDown" title="Direct link to forwardButtonDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-forwardbuttondown">&lt;instance&gt; forwardButtonDown()<a href="#instance-forwardbuttondown" class="hash-link" aria-label="Direct link to &lt;instance&gt; forwardButtonDown()" title="Direct link to &lt;instance&gt; forwardButtonDown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the forward button is being held down on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the forward button is being held down.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L943" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L943</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="forwardbuttonreleased">forwardButtonReleased<a href="#forwardbuttonreleased" class="hash-link" aria-label="Direct link to forwardButtonReleased" title="Direct link to forwardButtonReleased" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-forwardbuttonreleased">&lt;instance&gt; forwardButtonReleased()<a href="#instance-forwardbuttonreleased" class="hash-link" aria-label="Direct link to &lt;instance&gt; forwardButtonReleased()" title="Direct link to &lt;instance&gt; forwardButtonReleased()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the release of the forward button was the most recent activity on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the release of the forward button was the most recent activity on this Pointer.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1008" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1008</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getangle">getAngle<a href="#getangle" class="hash-link" aria-label="Direct link to getAngle" title="Direct link to getAngle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getangle">&lt;instance&gt; getAngle()<a href="#instance-getangle" class="hash-link" aria-label="Direct link to &lt;instance&gt; getAngle()" title="Direct link to &lt;instance&gt; getAngle()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If the Pointer has a button pressed down at the time this method is called, it will return the
+angle between the Pointer&#x27;s <code>downX</code> and <code>downY</code> values and the current position.</p>
+<p>If no button is held down, it will return the last recorded angle, based on where
+the Pointer was when the button was released.</p>
+<p>The angle is based on the old position facing to the current position.</p>
+<p>If you wish to get the current angle, based on the velocity of the Pointer, then
+see the <code>Pointer.angle</code> property.</p>
+<p><strong>Returns:</strong> number - The angle between the Pointer&#x27;s coordinates in radians.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1120" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1120</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getdistance">getDistance<a href="#getdistance" class="hash-link" aria-label="Direct link to getDistance" title="Direct link to getDistance" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getdistance">&lt;instance&gt; getDistance()<a href="#instance-getdistance" class="hash-link" aria-label="Direct link to &lt;instance&gt; getDistance()" title="Direct link to &lt;instance&gt; getDistance()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If the Pointer has a button pressed down at the time this method is called, it will return the
+distance between the Pointer&#x27;s <code>downX</code> and <code>downY</code> values and the current position.</p>
+<p>If no button is held down, it will return the last recorded distance, based on where
+the Pointer was when the button was released.</p>
+<p>If you wish to get the distance being travelled currently, based on the velocity of the Pointer,
+then see the <code>Pointer.distance</code> property.</p>
+<p><strong>Returns:</strong> number - The distance the Pointer moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1021" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1021</a><br>
+Since: 3.13.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getdistancex">getDistanceX<a href="#getdistancex" class="hash-link" aria-label="Direct link to getDistanceX" title="Direct link to getDistanceX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getdistancex">&lt;instance&gt; getDistanceX()<a href="#instance-getdistancex" class="hash-link" aria-label="Direct link to &lt;instance&gt; getDistanceX()" title="Direct link to &lt;instance&gt; getDistanceX()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If the Pointer has a button pressed down at the time this method is called, it will return the
+horizontal distance between the Pointer&#x27;s <code>downX</code> and <code>downY</code> values and the current position.</p>
+<p>If no button is held down, it will return the last recorded horizontal distance, based on where
+the Pointer was when the button was released.</p>
+<p><strong>Returns:</strong> number - The horizontal distance the Pointer moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1048" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1048</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getdistancey">getDistanceY<a href="#getdistancey" class="hash-link" aria-label="Direct link to getDistanceY" title="Direct link to getDistanceY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getdistancey">&lt;instance&gt; getDistanceY()<a href="#instance-getdistancey" class="hash-link" aria-label="Direct link to &lt;instance&gt; getDistanceY()" title="Direct link to &lt;instance&gt; getDistanceY()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If the Pointer has a button pressed down at the time this method is called, it will return the
+vertical distance between the Pointer&#x27;s <code>downX</code> and <code>downY</code> values and the current position.</p>
+<p>If no button is held down, it will return the last recorded vertical distance, based on where
+the Pointer was when the button was released.</p>
+<p><strong>Returns:</strong> number - The vertical distance the Pointer moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1072" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1072</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getduration">getDuration<a href="#getduration" class="hash-link" aria-label="Direct link to getDuration" title="Direct link to getDuration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getduration">&lt;instance&gt; getDuration()<a href="#instance-getduration" class="hash-link" aria-label="Direct link to &lt;instance&gt; getDuration()" title="Direct link to &lt;instance&gt; getDuration()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If the Pointer has a button pressed down at the time this method is called, it will return the
+duration since the button was pressed down.</p>
+<p>If no button is held down, it will return the last recorded duration, based on the time
+the last button on the Pointer was released.</p>
+<p><strong>Returns:</strong> number - The duration the Pointer was held down for in milliseconds.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1096" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1096</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getinterpolatedposition">getInterpolatedPosition<a href="#getinterpolatedposition" class="hash-link" aria-label="Direct link to getInterpolatedPosition" title="Direct link to getInterpolatedPosition" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getinterpolatedpositionsteps-out">&lt;instance&gt; getInterpolatedPosition([steps], [out])<a href="#instance-getinterpolatedpositionsteps-out" class="hash-link" aria-label="Direct link to &lt;instance&gt; getInterpolatedPosition([steps], [out])" title="Direct link to &lt;instance&gt; getInterpolatedPosition([steps], [out])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes the previous and current Pointer positions and then generates an array of interpolated values between
+the two. The array will be populated up to the size of the <code>steps</code> argument.</p>
+<div class="language-javaScript language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> points </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> pointer</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">getInterpolatedPosition</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">4</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// points[0] = { x: 0, y: 0 }</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// points[1] = { x: 2, y: 1 }</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// points[2] = { x: 3, y: 2 }</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// points[3] = { x: 6, y: 3 }</span><br></span></code></pre></div></div>
+<p>Use this if you need to get smoothed values between the previous and current pointer positions. DOM pointer
+events can often fire faster than the main browser loop, and this will help you avoid janky movement
+especially if you have an object following a Pointer.</p>
+<p>Note that if you provide an output array it will only be populated up to the number of steps provided.
+It will not clear any previous data that may have existed beyond the range of the steps count.</p>
+<p>Internally it uses the Smooth Step interpolation calculation.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>steps</td><td>number</td><td>Yes</td><td>10</td><td>The number of interpolation steps to use.</td></tr><tr><td>out</td><td>array</td><td>Yes</td><td></td><td>An array to store the results in. If not provided a new one will be created.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - An array of interpolated values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1149" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1149</a><br>
+Since: 3.11.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="leftbuttondown">leftButtonDown<a href="#leftbuttondown" class="hash-link" aria-label="Direct link to leftButtonDown" title="Direct link to leftButtonDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-leftbuttondown">&lt;instance&gt; leftButtonDown()<a href="#instance-leftbuttondown" class="hash-link" aria-label="Direct link to &lt;instance&gt; leftButtonDown()" title="Direct link to &lt;instance&gt; leftButtonDown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the left button is being held down on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the left button is being held down.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L891" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L891</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="leftbuttonreleased">leftButtonReleased<a href="#leftbuttonreleased" class="hash-link" aria-label="Direct link to leftButtonReleased" title="Direct link to leftButtonReleased" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-leftbuttonreleased">&lt;instance&gt; leftButtonReleased()<a href="#instance-leftbuttonreleased" class="hash-link" aria-label="Direct link to &lt;instance&gt; leftButtonReleased()" title="Direct link to &lt;instance&gt; leftButtonReleased()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the release of the left button was the most recent activity on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the release of the left button was the most recent activity on this Pointer.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L956" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L956</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="middlebuttondown">middleButtonDown<a href="#middlebuttondown" class="hash-link" aria-label="Direct link to middleButtonDown" title="Direct link to middleButtonDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-middlebuttondown">&lt;instance&gt; middleButtonDown()<a href="#instance-middlebuttondown" class="hash-link" aria-label="Direct link to &lt;instance&gt; middleButtonDown()" title="Direct link to &lt;instance&gt; middleButtonDown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the middle button is being held down on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the middle button is being held down.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L917" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L917</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="middlebuttonreleased">middleButtonReleased<a href="#middlebuttonreleased" class="hash-link" aria-label="Direct link to middleButtonReleased" title="Direct link to middleButtonReleased" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-middlebuttonreleased">&lt;instance&gt; middleButtonReleased()<a href="#instance-middlebuttonreleased" class="hash-link" aria-label="Direct link to &lt;instance&gt; middleButtonReleased()" title="Direct link to &lt;instance&gt; middleButtonReleased()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the release of the middle button was the most recent activity on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the release of the middle button was the most recent activity on this Pointer.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L982" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L982</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="nobuttondown">noButtonDown<a href="#nobuttondown" class="hash-link" aria-label="Direct link to noButtonDown" title="Direct link to noButtonDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-nobuttondown">&lt;instance&gt; noButtonDown()<a href="#instance-nobuttondown" class="hash-link" aria-label="Direct link to &lt;instance&gt; noButtonDown()" title="Direct link to &lt;instance&gt; noButtonDown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if any buttons are being held down on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if no buttons are being held down.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L878" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L878</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="positiontocamera">positionToCamera<a href="#positiontocamera" class="hash-link" aria-label="Direct link to positionToCamera" title="Direct link to positionToCamera" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-positiontocameracamera-output">&lt;instance&gt; positionToCamera(camera, [output])<a href="#instance-positiontocameracamera-output" class="hash-link" aria-label="Direct link to &lt;instance&gt; positionToCamera(camera, [output])" title="Direct link to &lt;instance&gt; positionToCamera(camera, [output])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a Camera and returns a Vector2 containing the translated position of this Pointer
+within that Camera. This can be used to convert this Pointers position into camera space.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>camera</td><td><a class="" href="/api-documentation/3.85.2/class/cameras-scene2d-camera">Phaser.Cameras.Scene2D.Camera</a></td><td>No</td><td>The Camera to use for the translation.</td></tr><tr><td>output</td><td><a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a> | object</td><td>Yes</td><td>A Vector2-like object in which to store the translated position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a>, object - A Vector2 containing the translated coordinates of this Pointer, based on the given camera.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L521" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L521</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reset">reset<a href="#reset" class="hash-link" aria-label="Direct link to reset" title="Direct link to reset" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-reset">&lt;instance&gt; reset()<a href="#instance-reset" class="hash-link" aria-label="Direct link to &lt;instance&gt; reset()" title="Direct link to &lt;instance&gt; reset()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Fully reset this Pointer back to its unitialized state.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L1200" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L1200</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rightbuttondown">rightButtonDown<a href="#rightbuttondown" class="hash-link" aria-label="Direct link to rightButtonDown" title="Direct link to rightButtonDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-rightbuttondown">&lt;instance&gt; rightButtonDown()<a href="#instance-rightbuttondown" class="hash-link" aria-label="Direct link to &lt;instance&gt; rightButtonDown()" title="Direct link to &lt;instance&gt; rightButtonDown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the right button is being held down on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the right button is being held down.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L904" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L904</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rightbuttonreleased">rightButtonReleased<a href="#rightbuttonreleased" class="hash-link" aria-label="Direct link to rightButtonReleased" title="Direct link to rightButtonReleased" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-rightbuttonreleased">&lt;instance&gt; rightButtonReleased()<a href="#instance-rightbuttonreleased" class="hash-link" aria-label="Direct link to &lt;instance&gt; rightButtonReleased()" title="Direct link to &lt;instance&gt; rightButtonReleased()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the release of the right button was the most recent activity on this Pointer.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the release of the right button was the most recent activity on this Pointer.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L969" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L969</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="updateworldpoint">updateWorldPoint<a href="#updateworldpoint" class="hash-link" aria-label="Direct link to updateWorldPoint" title="Direct link to updateWorldPoint" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-updateworldpointcamera">&lt;instance&gt; updateWorldPoint(camera)<a href="#instance-updateworldpointcamera" class="hash-link" aria-label="Direct link to &lt;instance&gt; updateWorldPoint(camera)" title="Direct link to &lt;instance&gt; updateWorldPoint(camera)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a Camera and updates this Pointer&#x27;s <code>worldX</code> and <code>worldY</code> values so they are
+the result of a translation through the given Camera.</p>
+<p>Note that the values will be automatically replaced the moment the Pointer is
+updated by an input event, such as a mouse move, so should be used immediately.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>camera</td><td><a class="" href="/api-documentation/3.85.2/class/cameras-scene2d-camera">Phaser.Cameras.Scene2D.Camera</a></td><td>No</td><td>The Camera which is being tested against.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/input-pointer">Phaser.Input.Pointer</a> - This Pointer object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L496" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L496</a><br>
+Since: 3.19.0</p>
+</blockquote>
+<hr>
+<h1>Private Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="down">down<a href="#down" class="hash-link" aria-label="Direct link to down" title="Direct link to down" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-downevent">&lt;instance&gt; down(event)<a href="#instance-downevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; down(event)" title="Direct link to &lt;instance&gt; down(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Mouse Down Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>MouseEvent</td><td>No</td><td>The Mouse Event to process.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L630" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L630</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="move">move<a href="#move" class="hash-link" aria-label="Direct link to move" title="Direct link to move" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-moveevent">&lt;instance&gt; move(event)<a href="#instance-moveevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; move(event)" title="Direct link to &lt;instance&gt; move(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Mouse Move Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>MouseEvent</td><td>No</td><td>The Mouse Event to process.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L680" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L680</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="touchcancel">touchcancel<a href="#touchcancel" class="hash-link" aria-label="Direct link to touchcancel" title="Direct link to touchcancel" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-touchcanceltouch-event">&lt;instance&gt; touchcancel(touch, event)<a href="#instance-touchcanceltouch-event" class="hash-link" aria-label="Direct link to &lt;instance&gt; touchcancel(touch, event)" title="Direct link to &lt;instance&gt; touchcancel(touch, event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Touch Cancel Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>touch</td><td>Touch</td><td>No</td><td>The Changed Touch from the Touch Event.</td></tr><tr><td>event</td><td>TouchEvent</td><td>No</td><td>The full Touch Event.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L844" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L844</a><br>
+Since: 3.15.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="touchend">touchend<a href="#touchend" class="hash-link" aria-label="Direct link to touchend" title="Direct link to touchend" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-touchendtouch-event">&lt;instance&gt; touchend(touch, event)<a href="#instance-touchendtouch-event" class="hash-link" aria-label="Direct link to &lt;instance&gt; touchend(touch, event)" title="Direct link to &lt;instance&gt; touchend(touch, event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Touch End Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>touch</td><td>Touch</td><td>No</td><td>The Changed Touch from the Touch Event.</td></tr><tr><td>event</td><td>TouchEvent</td><td>No</td><td>The full Touch Event.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L808" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L808</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="touchmove">touchmove<a href="#touchmove" class="hash-link" aria-label="Direct link to touchmove" title="Direct link to touchmove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-touchmovetouch-event">&lt;instance&gt; touchmove(touch, event)<a href="#instance-touchmovetouch-event" class="hash-link" aria-label="Direct link to &lt;instance&gt; touchmove(touch, event)" title="Direct link to &lt;instance&gt; touchmove(touch, event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Touch Move Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>touch</td><td>Touch</td><td>No</td><td>The Changed Touch from the Touch Event.</td></tr><tr><td>event</td><td>TouchEvent</td><td>No</td><td>The full Touch Event.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L784" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L784</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="touchstart">touchstart<a href="#touchstart" class="hash-link" aria-label="Direct link to touchstart" title="Direct link to touchstart" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-touchstarttouch-event">&lt;instance&gt; touchstart(touch, event)<a href="#instance-touchstarttouch-event" class="hash-link" aria-label="Direct link to &lt;instance&gt; touchstart(touch, event)" title="Direct link to &lt;instance&gt; touchstart(touch, event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Touch Start Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>touch</td><td>Touch</td><td>No</td><td>The Changed Touch from the Touch Event.</td></tr><tr><td>event</td><td>TouchEvent</td><td>No</td><td>The full Touch Event.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L741" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L741</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="up">up<a href="#up" class="hash-link" aria-label="Direct link to up" title="Direct link to up" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-upevent">&lt;instance&gt; up(event)<a href="#instance-upevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; up(event)" title="Direct link to &lt;instance&gt; up(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Mouse Up Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>MouseEvent</td><td>No</td><td>The Mouse Event to process.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L586" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L586</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="updatemotion">updateMotion<a href="#updatemotion" class="hash-link" aria-label="Direct link to updateMotion" title="Direct link to updateMotion" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-updatemotion">&lt;instance&gt; updateMotion()<a href="#instance-updatemotion" class="hash-link" aria-label="Direct link to &lt;instance&gt; updateMotion()" title="Direct link to &lt;instance&gt; updateMotion()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculates the motion of this Pointer, including its velocity and angle of movement.
+This method is called automatically each frame by the Input Manager.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L538" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L538</a><br>
+Since: 3.16.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wheel">wheel<a href="#wheel" class="hash-link" aria-label="Direct link to wheel" title="Direct link to wheel" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-wheelevent">&lt;instance&gt; wheel(event)<a href="#instance-wheelevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; wheel(event)" title="Direct link to &lt;instance&gt; wheel(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal method to handle a Mouse Wheel Event.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>WheelEvent</td><td>No</td><td>The Wheel Event to process.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/Pointer.js#L713" target="_blank" rel="noopener noreferrer" class="">src/input/Pointer.js#L713</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/class/input-mouse-mousemanager"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MouseManager</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/class/input-touch-touchmanager"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">TouchManager</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#active" class="table-of-contents__link toc-highlight">active</a><ul><li><a href="#active-boolean" class="table-of-contents__link toc-highlight">active: boolean</a></li></ul></li><li><a href="#angle" class="table-of-contents__link toc-highlight">angle</a><ul><li><a href="#angle-number" class="table-of-contents__link toc-highlight">angle: number</a></li></ul></li><li><a href="#button" class="table-of-contents__link toc-highlight">button</a><ul><li><a href="#button-number" class="table-of-contents__link toc-highlight">button: number</a></li></ul></li><li><a href="#buttons" class="table-of-contents__link toc-highlight">buttons</a><ul><li><a href="#buttons-number" class="table-of-contents__link toc-highlight">buttons: number</a></li></ul></li><li><a href="#camera" class="table-of-contents__link toc-highlight">camera</a><ul><li><a href="#camera-phasercamerasscene2dcamera" class="table-of-contents__link toc-highlight">camera: Phaser.Cameras.Scene2D.Camera</a></li></ul></li><li><a href="#deltax" class="table-of-contents__link toc-highlight">deltaX</a><ul><li><a href="#deltax-number" class="table-of-contents__link toc-highlight">deltaX: number</a></li></ul></li><li><a href="#deltay" class="table-of-contents__link toc-highlight">deltaY</a><ul><li><a href="#deltay-number" class="table-of-contents__link toc-highlight">deltaY: number</a></li></ul></li><li><a href="#deltaz" class="table-of-contents__link toc-highlight">deltaZ</a><ul><li><a href="#deltaz-number" class="table-of-contents__link toc-highlight">deltaZ: number</a></li></ul></li><li><a href="#distance" class="table-of-contents__link toc-highlight">distance</a><ul><li><a href="#distance-number" class="table-of-contents__link toc-highlight">distance: number</a></li></ul></li><li><a href="#downelement" class="table-of-contents__link toc-highlight">downElement</a><ul><li><a href="#downelement-any" class="table-of-contents__link toc-highlight">downElement: any</a></li></ul></li><li><a href="#downtime" class="table-of-contents__link toc-highlight">downTime</a><ul><li><a href="#downtime-number" class="table-of-contents__link toc-highlight">downTime: number</a></li></ul></li><li><a href="#downx" class="table-of-contents__link toc-highlight">downX</a><ul><li><a href="#downx-number" class="table-of-contents__link toc-highlight">downX: number</a></li></ul></li><li><a href="#downy" class="table-of-contents__link toc-highlight">downY</a><ul><li><a href="#downy-number" class="table-of-contents__link toc-highlight">downY: number</a></li></ul></li><li><a href="#event" class="table-of-contents__link toc-highlight">event</a><ul><li><a href="#event-touchevent-mouseevent-wheelevent" class="table-of-contents__link toc-highlight">event: TouchEvent, MouseEvent, WheelEvent</a></li></ul></li><li><a href="#id" class="table-of-contents__link toc-highlight">id</a><ul><li><a href="#id-number" class="table-of-contents__link toc-highlight">id: number</a></li></ul></li><li><a href="#identifier" class="table-of-contents__link toc-highlight">identifier</a><ul><li><a href="#identifier-number" class="table-of-contents__link toc-highlight">identifier: number</a></li></ul></li><li><a href="#isdown" class="table-of-contents__link toc-highlight">isDown</a><ul><li><a href="#isdown-boolean" class="table-of-contents__link toc-highlight">isDown: boolean</a></li></ul></li><li><a href="#locked" class="table-of-contents__link toc-highlight">locked</a><ul><li><a href="#locked-boolean" class="table-of-contents__link toc-highlight">locked: boolean</a></li></ul></li><li><a href="#manager" class="table-of-contents__link toc-highlight">manager</a><ul><li><a href="#manager-phaserinputinputmanager" class="table-of-contents__link toc-highlight">manager: Phaser.Input.InputManager</a></li></ul></li><li><a href="#motionfactor" class="table-of-contents__link toc-highlight">motionFactor</a><ul><li><a href="#motionfactor-number" class="table-of-contents__link toc-highlight">motionFactor: number</a></li></ul></li><li><a href="#movementx" class="table-of-contents__link toc-highlight">movementX</a><ul><li><a href="#movementx-number" class="table-of-contents__link toc-highlight">movementX: number</a></li></ul></li><li><a href="#movementy" class="table-of-contents__link toc-highlight">movementY</a><ul><li><a href="#movementy-number" class="table-of-contents__link toc-highlight">movementY: number</a></li></ul></li><li><a href="#movetime" class="table-of-contents__link toc-highlight">moveTime</a><ul><li><a href="#movetime-number" class="table-of-contents__link toc-highlight">moveTime: number</a></li></ul></li><li><a href="#pointerid" class="table-of-contents__link toc-highlight">pointerId</a><ul><li><a href="#pointerid-number" class="table-of-contents__link toc-highlight">pointerId: number</a></li></ul></li><li><a href="#position" class="table-of-contents__link toc-highlight">position</a><ul><li><a href="#position-phasermathvector2" class="table-of-contents__link toc-highlight">position: Phaser.Math.Vector2</a></li></ul></li><li><a href="#prevposition" class="table-of-contents__link toc-highlight">prevPosition</a><ul><li><a href="#prevposition-phasermathvector2" class="table-of-contents__link toc-highlight">prevPosition: Phaser.Math.Vector2</a></li></ul></li><li><a href="#primarydown" class="table-of-contents__link toc-highlight">primaryDown</a><ul><li><a href="#primarydown-boolean" class="table-of-contents__link toc-highlight">primaryDown: boolean</a></li></ul></li><li><a href="#smoothfactor" class="table-of-contents__link toc-highlight">smoothFactor</a><ul><li><a href="#smoothfactor-number" class="table-of-contents__link toc-highlight">smoothFactor: number</a></li></ul></li><li><a href="#time" class="table-of-contents__link toc-highlight">time</a><ul><li><a href="#time-number" class="table-of-contents__link toc-highlight">time: number</a></li></ul></li><li><a href="#upelement" class="table-of-contents__link toc-highlight">upElement</a><ul><li><a href="#upelement-any" class="table-of-contents__link toc-highlight">upElement: any</a></li></ul></li><li><a href="#uptime" class="table-of-contents__link toc-highlight">upTime</a><ul><li><a href="#uptime-number" class="table-of-contents__link toc-highlight">upTime: number</a></li></ul></li><li><a href="#upx" class="table-of-contents__link toc-highlight">upX</a><ul><li><a href="#upx-number" class="table-of-contents__link toc-highlight">upX: number</a></li></ul></li><li><a href="#upy" class="table-of-contents__link toc-highlight">upY</a><ul><li><a href="#upy-number" class="table-of-contents__link toc-highlight">upY: number</a></li></ul></li><li><a href="#velocity" class="table-of-contents__link toc-highlight">velocity</a><ul><li><a href="#velocity-phasermathvector2" class="table-of-contents__link toc-highlight">velocity: Phaser.Math.Vector2</a></li></ul></li><li><a href="#wascanceled" class="table-of-contents__link toc-highlight">wasCanceled</a><ul><li><a href="#wascanceled-boolean" class="table-of-contents__link toc-highlight">wasCanceled: boolean</a></li></ul></li><li><a href="#wastouch" class="table-of-contents__link toc-highlight">wasTouch</a><ul><li><a href="#wastouch-boolean" class="table-of-contents__link toc-highlight">wasTouch: boolean</a></li></ul></li><li><a href="#worldx" class="table-of-contents__link toc-highlight">worldX</a><ul><li><a href="#worldx-number" class="table-of-contents__link toc-highlight">worldX: number</a></li></ul></li><li><a href="#worldy" class="table-of-contents__link toc-highlight">worldY</a><ul><li><a href="#worldy-number" class="table-of-contents__link toc-highlight">worldY: number</a></li></ul></li><li><a href="#x" class="table-of-contents__link toc-highlight">x</a><ul><li><a href="#x-number" class="table-of-contents__link toc-highlight">x: number</a></li></ul></li><li><a href="#y" class="table-of-contents__link toc-highlight">y</a><ul><li><a href="#y-number" class="table-of-contents__link toc-highlight">y: number</a></li></ul></li><li><a href="#midpoint" class="table-of-contents__link toc-highlight">midPoint</a><ul><li><a href="#midpoint-phasermathvector2" class="table-of-contents__link toc-highlight">midPoint: Phaser.Math.Vector2</a></li></ul></li><li><a href="#backbuttondown" class="table-of-contents__link toc-highlight">backButtonDown</a><ul><li><a href="#instance-backbuttondown" class="table-of-contents__link toc-highlight">&lt;instance&gt; backButtonDown()</a></li></ul></li><li><a href="#backbuttonreleased" class="table-of-contents__link toc-highlight">backButtonReleased</a><ul><li><a href="#instance-backbuttonreleased" class="table-of-contents__link toc-highlight">&lt;instance&gt; backButtonReleased()</a></li></ul></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">destroy</a><ul><li><a href="#instance-destroy" class="table-of-contents__link toc-highlight">&lt;instance&gt; destroy()</a></li></ul></li><li><a href="#forwardbuttondown" class="table-of-contents__link toc-highlight">forwardButtonDown</a><ul><li><a href="#instance-forwardbuttondown" class="table-of-contents__link toc-highlight">&lt;instance&gt; forwardButtonDown()</a></li></ul></li><li><a href="#forwardbuttonreleased" class="table-of-contents__link toc-highlight">forwardButtonReleased</a><ul><li><a href="#instance-forwardbuttonreleased" class="table-of-contents__link toc-highlight">&lt;instance&gt; forwardButtonReleased()</a></li></ul></li><li><a href="#getangle" class="table-of-contents__link toc-highlight">getAngle</a><ul><li><a href="#instance-getangle" class="table-of-contents__link toc-highlight">&lt;instance&gt; getAngle()</a></li></ul></li><li><a href="#getdistance" class="table-of-contents__link toc-highlight">getDistance</a><ul><li><a href="#instance-getdistance" class="table-of-contents__link toc-highlight">&lt;instance&gt; getDistance()</a></li></ul></li><li><a href="#getdistancex" class="table-of-contents__link toc-highlight">getDistanceX</a><ul><li><a href="#instance-getdistancex" class="table-of-contents__link toc-highlight">&lt;instance&gt; getDistanceX()</a></li></ul></li><li><a href="#getdistancey" class="table-of-contents__link toc-highlight">getDistanceY</a><ul><li><a href="#instance-getdistancey" class="table-of-contents__link toc-highlight">&lt;instance&gt; getDistanceY()</a></li></ul></li><li><a href="#getduration" class="table-of-contents__link toc-highlight">getDuration</a><ul><li><a href="#instance-getduration" class="table-of-contents__link toc-highlight">&lt;instance&gt; getDuration()</a></li></ul></li><li><a href="#getinterpolatedposition" class="table-of-contents__link toc-highlight">getInterpolatedPosition</a><ul><li><a href="#instance-getinterpolatedpositionsteps-out" class="table-of-contents__link toc-highlight">&lt;instance&gt; getInterpolatedPosition([steps], [out])</a></li></ul></li><li><a href="#leftbuttondown" class="table-of-contents__link toc-highlight">leftButtonDown</a><ul><li><a href="#instance-leftbuttondown" class="table-of-contents__link toc-highlight">&lt;instance&gt; leftButtonDown()</a></li></ul></li><li><a href="#leftbuttonreleased" class="table-of-contents__link toc-highlight">leftButtonReleased</a><ul><li><a href="#instance-leftbuttonreleased" class="table-of-contents__link toc-highlight">&lt;instance&gt; leftButtonReleased()</a></li></ul></li><li><a href="#middlebuttondown" class="table-of-contents__link toc-highlight">middleButtonDown</a><ul><li><a href="#instance-middlebuttondown" class="table-of-contents__link toc-highlight">&lt;instance&gt; middleButtonDown()</a></li></ul></li><li><a href="#middlebuttonreleased" class="table-of-contents__link toc-highlight">middleButtonReleased</a><ul><li><a href="#instance-middlebuttonreleased" class="table-of-contents__link toc-highlight">&lt;instance&gt; middleButtonReleased()</a></li></ul></li><li><a href="#nobuttondown" class="table-of-contents__link toc-highlight">noButtonDown</a><ul><li><a href="#instance-nobuttondown" class="table-of-contents__link toc-highlight">&lt;instance&gt; noButtonDown()</a></li></ul></li><li><a href="#positiontocamera" class="table-of-contents__link toc-highlight">positionToCamera</a><ul><li><a href="#instance-positiontocameracamera-output" class="table-of-contents__link toc-highlight">&lt;instance&gt; positionToCamera(camera, [output])</a></li></ul></li><li><a href="#reset" class="table-of-contents__link toc-highlight">reset</a><ul><li><a href="#instance-reset" class="table-of-contents__link toc-highlight">&lt;instance&gt; reset()</a></li></ul></li><li><a href="#rightbuttondown" class="table-of-contents__link toc-highlight">rightButtonDown</a><ul><li><a href="#instance-rightbuttondown" class="table-of-contents__link toc-highlight">&lt;instance&gt; rightButtonDown()</a></li></ul></li><li><a href="#rightbuttonreleased" class="table-of-contents__link toc-highlight">rightButtonReleased</a><ul><li><a href="#instance-rightbuttonreleased" class="table-of-contents__link toc-highlight">&lt;instance&gt; rightButtonReleased()</a></li></ul></li><li><a href="#updateworldpoint" class="table-of-contents__link toc-highlight">updateWorldPoint</a><ul><li><a href="#instance-updateworldpointcamera" class="table-of-contents__link toc-highlight">&lt;instance&gt; updateWorldPoint(camera)</a></li></ul></li><li><a href="#down" class="table-of-contents__link toc-highlight">down</a><ul><li><a href="#instance-downevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; down(event)</a></li></ul></li><li><a href="#move" class="table-of-contents__link toc-highlight">move</a><ul><li><a href="#instance-moveevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; move(event)</a></li></ul></li><li><a href="#touchcancel" class="table-of-contents__link toc-highlight">touchcancel</a><ul><li><a href="#instance-touchcanceltouch-event" class="table-of-contents__link toc-highlight">&lt;instance&gt; touchcancel(touch, event)</a></li></ul></li><li><a href="#touchend" class="table-of-contents__link toc-highlight">touchend</a><ul><li><a href="#instance-touchendtouch-event" class="table-of-contents__link toc-highlight">&lt;instance&gt; touchend(touch, event)</a></li></ul></li><li><a href="#touchmove" class="table-of-contents__link toc-highlight">touchmove</a><ul><li><a href="#instance-touchmovetouch-event" class="table-of-contents__link toc-highlight">&lt;instance&gt; touchmove(touch, event)</a></li></ul></li><li><a href="#touchstart" class="table-of-contents__link toc-highlight">touchstart</a><ul><li><a href="#instance-touchstarttouch-event" class="table-of-contents__link toc-highlight">&lt;instance&gt; touchstart(touch, event)</a></li></ul></li><li><a href="#up" class="table-of-contents__link toc-highlight">up</a><ul><li><a href="#instance-upevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; up(event)</a></li></ul></li><li><a href="#updatemotion" class="table-of-contents__link toc-highlight">updateMotion</a><ul><li><a href="#instance-updatemotion" class="table-of-contents__link toc-highlight">&lt;instance&gt; updateMotion()</a></li></ul></li><li><a href="#wheel" class="table-of-contents__link toc-highlight">wheel</a><ul><li><a href="#instance-wheelevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; wheel(event)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

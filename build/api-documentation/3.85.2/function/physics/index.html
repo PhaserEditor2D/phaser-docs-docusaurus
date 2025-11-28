@@ -1,0 +1,1234 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-function/Phaser.Physics" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Phaser.Physics | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/function/physics"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="Phaser.Physics | Phaser Help"><meta data-rh="true" name="description" content="OverlapCirc"><meta data-rh="true" property="og:description" content="OverlapCirc"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/function/physics"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/function/physics" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/function/physics" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Functions","item":"https://docs.phaser.io/api-documentation/3.85.2/function/"},{"@type":"ListItem","position":2,"name":"Phaser.Physics","item":"https://docs.phaser.io/api-documentation/3.85.2/function/physics"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/function/physics">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/function/physics">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/function/physics">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/function/physics">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Collapse sidebar category &#x27;Functions&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/actions"><span title="Phaser.Actions" class="linkLabel_WmDU">Phaser.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/core"><span title="Phaser.Core" class="linkLabel_WmDU">Phaser.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/create"><span title="Phaser.Create" class="linkLabel_WmDU">Phaser.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/curves"><span title="Phaser.Curves" class="linkLabel_WmDU">Phaser.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/dom"><span title="Phaser.DOM" class="linkLabel_WmDU">Phaser.DOM</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/display"><span title="Phaser.Display" class="linkLabel_WmDU">Phaser.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/gameobjects"><span title="Phaser.GameObjects" class="linkLabel_WmDU">Phaser.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/geom"><span title="Phaser.Geom" class="linkLabel_WmDU">Phaser.Geom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/input"><span title="Phaser.Input" class="linkLabel_WmDU">Phaser.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/loader"><span title="Phaser.Loader" class="linkLabel_WmDU">Phaser.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/math"><span title="Phaser.Math" class="linkLabel_WmDU">Phaser.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/function/physics"><span title="Phaser.Physics" class="linkLabel_WmDU">Phaser.Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/plugins"><span title="Phaser.Plugins" class="linkLabel_WmDU">Phaser.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/renderer"><span title="Phaser.Renderer" class="linkLabel_WmDU">Phaser.Renderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/scenes"><span title="Phaser.Scenes" class="linkLabel_WmDU">Phaser.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/sound"><span title="Phaser.Sound" class="linkLabel_WmDU">Phaser.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/textures"><span title="Phaser.Textures" class="linkLabel_WmDU">Phaser.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/tilemaps"><span title="Phaser.Tilemaps" class="linkLabel_WmDU">Phaser.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/tweens"><span title="Phaser.Tweens" class="linkLabel_WmDU">Phaser.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/utils"><span title="Phaser.Utils" class="linkLabel_WmDU">Phaser.Utils</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/function/physics">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/function/"><span>Functions</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Phaser.Physics</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Phaser.Physics.Arcade.Components</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlapcirc">OverlapCirc<a href="#overlapcirc" class="hash-link" aria-label="Direct link to OverlapCirc" title="Direct link to OverlapCirc" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-overlapcircx-y-radius-includedynamic-includestatic">&lt;static&gt; OverlapCirc(x, y, radius, [includeDynamic], [includeStatic])<a href="#static-overlapcircx-y-radius-includedynamic-includestatic" class="hash-link" aria-label="Direct link to &lt;static&gt; OverlapCirc(x, y, radius, [includeDynamic], [includeStatic])" title="Direct link to &lt;static&gt; OverlapCirc(x, y, radius, [includeDynamic], [includeStatic])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This method will search the given circular area and return an array of all physics bodies that
+overlap with it. It can return either Dynamic, Static bodies or a mixture of both.</p>
+<p>A body only has to intersect with the search area to be considered, it doesn&#x27;t have to be fully
+contained within it.</p>
+<p>If Arcade Physics is set to use the RTree (which it is by default) then the search is rather fast,
+otherwise the search is O(N) for Dynamic Bodies.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td></td><td>The x coordinate of the center of the area to search within.</td></tr><tr><td>y</td><td>number</td><td>No</td><td></td><td>The y coordinate of the center of the area to search within.</td></tr><tr><td>radius</td><td>number</td><td>No</td><td></td><td>The radius of the area to search within.</td></tr><tr><td>includeDynamic</td><td>boolean</td><td>Yes</td><td>true</td><td>Should the search include Dynamic Bodies?</td></tr><tr><td>includeStatic</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the search include Static Bodies?</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a>&gt;, Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a>&gt; - An array of bodies that overlap with the given area.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/components/OverlapCirc.js#L6" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/OverlapCirc.js#L6</a><br>
+Since: 3.21.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlaprect">OverlapRect<a href="#overlaprect" class="hash-link" aria-label="Direct link to OverlapRect" title="Direct link to OverlapRect" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-overlaprectx-y-width-height-includedynamic-includestatic">&lt;static&gt; OverlapRect(x, y, width, height, [includeDynamic], [includeStatic])<a href="#static-overlaprectx-y-width-height-includedynamic-includestatic" class="hash-link" aria-label="Direct link to &lt;static&gt; OverlapRect(x, y, width, height, [includeDynamic], [includeStatic])" title="Direct link to &lt;static&gt; OverlapRect(x, y, width, height, [includeDynamic], [includeStatic])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This method will search the given rectangular area and return an array of all physics bodies that
+overlap with it. It can return either Dynamic, Static bodies or a mixture of both.</p>
+<p>A body only has to intersect with the search area to be considered, it doesn&#x27;t have to be fully
+contained within it.</p>
+<p>If Arcade Physics is set to use the RTree (which it is by default) then the search for is extremely fast,
+otherwise the search is O(N) for Dynamic Bodies.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td></td><td>The top-left x coordinate of the area to search within.</td></tr><tr><td>y</td><td>number</td><td>No</td><td></td><td>The top-left y coordinate of the area to search within.</td></tr><tr><td>width</td><td>number</td><td>No</td><td></td><td>The width of the area to search within.</td></tr><tr><td>height</td><td>number</td><td>No</td><td></td><td>The height of the area to search within.</td></tr><tr><td>includeDynamic</td><td>boolean</td><td>Yes</td><td>true</td><td>Should the search include Dynamic Bodies?</td></tr><tr><td>includeStatic</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the search include Static Bodies?</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a>&gt;, Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a>&gt; - An array of bodies that overlap with the given area.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/components/OverlapRect.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/OverlapRect.js#L1</a><br>
+Since: 3.17.0</p>
+</blockquote>
+<h1>Phaser.Physics.Arcade</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getcollideswith">GetCollidesWith<a href="#getcollideswith" class="hash-link" aria-label="Direct link to GetCollidesWith" title="Direct link to GetCollidesWith" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getcollideswithcategories">&lt;static&gt; GetCollidesWith(categories)<a href="#static-getcollideswithcategories" class="hash-link" aria-label="Direct link to &lt;static&gt; GetCollidesWith(categories)" title="Direct link to &lt;static&gt; GetCollidesWith(categories)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculates and returns the bitmask needed to determine if the given
+categories will collide with each other or not.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>categories</td><td>number | Array.&lt;number&gt;</td><td>No</td><td>A unique category bitfield, or an array of them.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The collision mask.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/GetCollidesWith.js#L7" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/GetCollidesWith.js#L7</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getoverlapx">GetOverlapX<a href="#getoverlapx" class="hash-link" aria-label="Direct link to GetOverlapX" title="Direct link to GetOverlapX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getoverlapxbody1-body2-overlaponly-bias">&lt;static&gt; GetOverlapX(body1, body2, overlapOnly, bias)<a href="#static-getoverlapxbody1-body2-overlaponly-bias" class="hash-link" aria-label="Direct link to &lt;static&gt; GetOverlapX(body1, body2, overlapOnly, bias)" title="Direct link to &lt;static&gt; GetOverlapX(body1, body2, overlapOnly, bias)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculates and returns the horizontal overlap between two arcade physics bodies and sets their properties
+accordingly, including: <code>touching.left</code>, <code>touching.right</code>, <code>touching.none</code> and `overlapX&#x27;.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body1</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The first Body to separate.</td></tr><tr><td>body2</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The second Body to separate.</td></tr><tr><td>overlapOnly</td><td>boolean</td><td>No</td><td>Is this an overlap only check, or part of separation?</td></tr><tr><td>bias</td><td>number</td><td>No</td><td>A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The amount of overlap.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/GetOverlapX.js#L9" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/GetOverlapX.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getoverlapy">GetOverlapY<a href="#getoverlapy" class="hash-link" aria-label="Direct link to GetOverlapY" title="Direct link to GetOverlapY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getoverlapybody1-body2-overlaponly-bias">&lt;static&gt; GetOverlapY(body1, body2, overlapOnly, bias)<a href="#static-getoverlapybody1-body2-overlaponly-bias" class="hash-link" aria-label="Direct link to &lt;static&gt; GetOverlapY(body1, body2, overlapOnly, bias)" title="Direct link to &lt;static&gt; GetOverlapY(body1, body2, overlapOnly, bias)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculates and returns the vertical overlap between two arcade physics bodies and sets their properties
+accordingly, including: <code>touching.up</code>, <code>touching.down</code>, <code>touching.none</code> and `overlapY&#x27;.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body1</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The first Body to separate.</td></tr><tr><td>body2</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The second Body to separate.</td></tr><tr><td>overlapOnly</td><td>boolean</td><td>No</td><td>Is this an overlap only check, or part of separation?</td></tr><tr><td>bias</td><td>number</td><td>No</td><td>A value added to the delta values during collision checks. Increase it to prevent sprite tunneling(sprites passing through another instead of colliding).</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The amount of overlap.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/GetOverlapY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/GetOverlapY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="separatex">SeparateX<a href="#separatex" class="hash-link" aria-label="Direct link to SeparateX" title="Direct link to SeparateX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-separatexbody1-body2-overlaponly-bias-overlap">&lt;static&gt; SeparateX(body1, body2, overlapOnly, bias, [overlap])<a href="#static-separatexbody1-body2-overlaponly-bias-overlap" class="hash-link" aria-label="Direct link to &lt;static&gt; SeparateX(body1, body2, overlapOnly, bias, [overlap])" title="Direct link to &lt;static&gt; SeparateX(body1, body2, overlapOnly, bias, [overlap])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Separates two overlapping bodies on the X-axis (horizontally).</p>
+<p>Separation involves moving two overlapping bodies so they don&#x27;t overlap anymore and adjusting their velocities based on their mass. This is a core part of collision detection.</p>
+<p>The bodies won&#x27;t be separated if there is no horizontal overlap between them, if they are static, or if either one uses custom logic for its separation.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body1</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The first Body to separate.</td></tr><tr><td>body2</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The second Body to separate.</td></tr><tr><td>overlapOnly</td><td>boolean</td><td>No</td><td>If <code>true</code>, the bodies will only have their overlap data set and no separation will take place.</td></tr><tr><td>bias</td><td>number</td><td>No</td><td>A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.</td></tr><tr><td>overlap</td><td>number</td><td>Yes</td><td>If given then this value will be used as the overlap and no check will be run.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the two bodies overlap vertically, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/SeparateX.js#L10" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/SeparateX.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="separatey">SeparateY<a href="#separatey" class="hash-link" aria-label="Direct link to SeparateY" title="Direct link to SeparateY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-separateybody1-body2-overlaponly-bias-overlap">&lt;static&gt; SeparateY(body1, body2, overlapOnly, bias, [overlap])<a href="#static-separateybody1-body2-overlaponly-bias-overlap" class="hash-link" aria-label="Direct link to &lt;static&gt; SeparateY(body1, body2, overlapOnly, bias, [overlap])" title="Direct link to &lt;static&gt; SeparateY(body1, body2, overlapOnly, bias, [overlap])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Separates two overlapping bodies on the Y-axis (vertically).</p>
+<p>Separation involves moving two overlapping bodies so they don&#x27;t overlap anymore and adjusting their velocities based on their mass. This is a core part of collision detection.</p>
+<p>The bodies won&#x27;t be separated if there is no vertical overlap between them, if they are static, or if either one uses custom logic for its separation.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body1</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The first Body to separate.</td></tr><tr><td>body2</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The second Body to separate.</td></tr><tr><td>overlapOnly</td><td>boolean</td><td>No</td><td>If <code>true</code>, the bodies will only have their overlap data set and no separation will take place.</td></tr><tr><td>bias</td><td>number</td><td>No</td><td>A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.</td></tr><tr><td>overlap</td><td>number</td><td>Yes</td><td>If given then this value will be used as the overlap and no check will be run.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the two bodies overlap vertically, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/SeparateY.js#L10" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/SeparateY.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setcollisionobject">SetCollisionObject<a href="#setcollisionobject" class="hash-link" aria-label="Direct link to SetCollisionObject" title="Direct link to SetCollisionObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setcollisionobjectnoneflip-data">&lt;static&gt; SetCollisionObject(noneFlip, [data])<a href="#static-setcollisionobjectnoneflip-data" class="hash-link" aria-label="Direct link to &lt;static&gt; SetCollisionObject(noneFlip, [data])" title="Direct link to &lt;static&gt; SetCollisionObject(noneFlip, [data])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Either sets or creates the Arcade Body Collision object.</p>
+<p>Mostly only used internally.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>noneFlip</td><td>boolean</td><td>No</td><td>Is <code>none</code> true or false?</td></tr><tr><td>data</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-physics-arcade#ArcadeBodyCollision">Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a></td><td>Yes</td><td>The collision data object to populate, or create if not given.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/typedef/types-physics-arcade#ArcadeBodyCollision">Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a> - The collision data.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/SetCollisionObject.js#L7" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/SetCollisionObject.js#L7</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<h1>Phaser.Physics.Arcade.ProcessX</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="set">Set<a href="#set" class="hash-link" aria-label="Direct link to Set" title="Direct link to Set" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setb1-b2-ov">&lt;static&gt; Set(b1, b2, ov)<a href="#static-setb1-b2-ov" class="hash-link" aria-label="Direct link to &lt;static&gt; Set(b1, b2, ov)" title="Direct link to &lt;static&gt; Set(b1, b2, ov)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets all of the local processing values and calculates the velocity exchanges.</p>
+<p>Then runs <code>BlockCheck</code> and returns the value from it.</p>
+<p>This method is called by <code>Phaser.Physics.Arcade.SeparateX</code> and should not be
+called directly.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>b1</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The first Body to separate.</td></tr><tr><td>b2</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The second Body to separate.</td></tr><tr><td>ov</td><td>number</td><td>No</td><td>The overlap value.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The BlockCheck result. 0 = not blocked. 1 = Body 1 blocked. 2 = Body 2 blocked.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessX.js#L25" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessX.js#L25</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="blockcheck">BlockCheck<a href="#blockcheck" class="hash-link" aria-label="Direct link to BlockCheck" title="Direct link to BlockCheck" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-blockcheck">&lt;static&gt; BlockCheck()<a href="#static-blockcheck" class="hash-link" aria-label="Direct link to &lt;static&gt; BlockCheck()" title="Direct link to &lt;static&gt; BlockCheck()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Blocked Direction checks, because it doesn&#x27;t matter if an object can be pushed
+or not, blocked is blocked.</p>
+<p><strong>Returns:</strong> number - The BlockCheck result. 0 = not blocked. 1 = Body 1 blocked. 2 = Body 2 blocked.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessX.js#L71" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessX.js#L71</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="check">Check<a href="#check" class="hash-link" aria-label="Direct link to Check" title="Direct link to Check" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-check">&lt;static&gt; Check()<a href="#static-check" class="hash-link" aria-label="Direct link to &lt;static&gt; Check()" title="Direct link to &lt;static&gt; Check()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The main check function. Runs through one of the four possible tests and returns the results.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if a check passed, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessX.js#L118" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessX.js#L118</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="run">Run<a href="#run" class="hash-link" aria-label="Direct link to Run" title="Direct link to Run" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-runside">&lt;static&gt; Run(side)<a href="#static-runside" class="hash-link" aria-label="Direct link to &lt;static&gt; Run(side)" title="Direct link to &lt;static&gt; Run(side)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The main check function. Runs through one of the four possible tests and returns the results.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>side</td><td>number</td><td>No</td><td>The side to test. As passed in by the <code>Check</code> function.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - Always returns <code>true</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessX.js#L169" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessX.js#L169</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="runimmovablebody1">RunImmovableBody1<a href="#runimmovablebody1" class="hash-link" aria-label="Direct link to RunImmovableBody1" title="Direct link to RunImmovableBody1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-runimmovablebody1blockedstate">&lt;static&gt; RunImmovableBody1(blockedState)<a href="#static-runimmovablebody1blockedstate" class="hash-link" aria-label="Direct link to &lt;static&gt; RunImmovableBody1(blockedState)" title="Direct link to &lt;static&gt; RunImmovableBody1(blockedState)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This function is run when Body1 is Immovable and Body2 is not.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>blockedState</td><td>number</td><td>No</td><td>The block state value.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessX.js#L331" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessX.js#L331</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="runimmovablebody2">RunImmovableBody2<a href="#runimmovablebody2" class="hash-link" aria-label="Direct link to RunImmovableBody2" title="Direct link to RunImmovableBody2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-runimmovablebody2blockedstate">&lt;static&gt; RunImmovableBody2(blockedState)<a href="#static-runimmovablebody2blockedstate" class="hash-link" aria-label="Direct link to &lt;static&gt; RunImmovableBody2(blockedState)" title="Direct link to &lt;static&gt; RunImmovableBody2(blockedState)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This function is run when Body2 is Immovable and Body1 is not.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>blockedState</td><td>number</td><td>No</td><td>The block state value.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessX.js#L367" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessX.js#L367</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h1>Phaser.Physics.Arcade.ProcessY</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="set-1">Set<a href="#set-1" class="hash-link" aria-label="Direct link to Set" title="Direct link to Set" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setb1-b2-ov-1">&lt;static&gt; Set(b1, b2, ov)<a href="#static-setb1-b2-ov-1" class="hash-link" aria-label="Direct link to &lt;static&gt; Set(b1, b2, ov)" title="Direct link to &lt;static&gt; Set(b1, b2, ov)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets all of the local processing values and calculates the velocity exchanges.</p>
+<p>Then runs <code>BlockCheck</code> and returns the value from it.</p>
+<p>This method is called by <code>Phaser.Physics.Arcade.SeparateY</code> and should not be
+called directly.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>b1</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The first Body to separate.</td></tr><tr><td>b2</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The second Body to separate.</td></tr><tr><td>ov</td><td>number</td><td>No</td><td>The overlap value.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The BlockCheck result. 0 = not blocked. 1 = Body 1 blocked. 2 = Body 2 blocked.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessY.js#L25" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessY.js#L25</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="blockcheck-1">BlockCheck<a href="#blockcheck-1" class="hash-link" aria-label="Direct link to BlockCheck" title="Direct link to BlockCheck" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-blockcheck-1">&lt;static&gt; BlockCheck()<a href="#static-blockcheck-1" class="hash-link" aria-label="Direct link to &lt;static&gt; BlockCheck()" title="Direct link to &lt;static&gt; BlockCheck()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Blocked Direction checks, because it doesn&#x27;t matter if an object can be pushed
+or not, blocked is blocked.</p>
+<p><strong>Returns:</strong> number - The BlockCheck result. 0 = not blocked. 1 = Body 1 blocked. 2 = Body 2 blocked.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessY.js#L71" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessY.js#L71</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="check-1">Check<a href="#check-1" class="hash-link" aria-label="Direct link to Check" title="Direct link to Check" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-check-1">&lt;static&gt; Check()<a href="#static-check-1" class="hash-link" aria-label="Direct link to &lt;static&gt; Check()" title="Direct link to &lt;static&gt; Check()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The main check function. Runs through one of the four possible tests and returns the results.</p>
+<p><strong>Returns:</strong> boolean - <code>true</code> if a check passed, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessY.js#L118" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessY.js#L118</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="run-1">Run<a href="#run-1" class="hash-link" aria-label="Direct link to Run" title="Direct link to Run" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-runside-1">&lt;static&gt; Run(side)<a href="#static-runside-1" class="hash-link" aria-label="Direct link to &lt;static&gt; Run(side)" title="Direct link to &lt;static&gt; Run(side)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The main check function. Runs through one of the four possible tests and returns the results.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>side</td><td>number</td><td>No</td><td>The side to test. As passed in by the <code>Check</code> function.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - Always returns <code>true</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessY.js#L169" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessY.js#L169</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="runimmovablebody1-1">RunImmovableBody1<a href="#runimmovablebody1-1" class="hash-link" aria-label="Direct link to RunImmovableBody1" title="Direct link to RunImmovableBody1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-runimmovablebody1blockedstate-1">&lt;static&gt; RunImmovableBody1(blockedState)<a href="#static-runimmovablebody1blockedstate-1" class="hash-link" aria-label="Direct link to &lt;static&gt; RunImmovableBody1(blockedState)" title="Direct link to &lt;static&gt; RunImmovableBody1(blockedState)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This function is run when Body1 is Immovable and Body2 is not.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>blockedState</td><td>number</td><td>No</td><td>The block state value.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessY.js#L331" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessY.js#L331</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="runimmovablebody2-1">RunImmovableBody2<a href="#runimmovablebody2-1" class="hash-link" aria-label="Direct link to RunImmovableBody2" title="Direct link to RunImmovableBody2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-runimmovablebody2blockedstate-1">&lt;static&gt; RunImmovableBody2(blockedState)<a href="#static-runimmovablebody2blockedstate-1" class="hash-link" aria-label="Direct link to &lt;static&gt; RunImmovableBody2(blockedState)" title="Direct link to &lt;static&gt; RunImmovableBody2(blockedState)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This function is run when Body2 is Immovable and Body1 is not.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>blockedState</td><td>number</td><td>No</td><td>The block state value.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/ProcessY.js#L367" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/ProcessY.js#L367</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h1>Phaser.Physics.Arcade.Tilemap</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="processtilecallbacks">ProcessTileCallbacks<a href="#processtilecallbacks" class="hash-link" aria-label="Direct link to ProcessTileCallbacks" title="Direct link to ProcessTileCallbacks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-processtilecallbackstile-sprite">&lt;static&gt; ProcessTileCallbacks(tile, sprite)<a href="#static-processtilecallbackstile-sprite" class="hash-link" aria-label="Direct link to &lt;static&gt; ProcessTileCallbacks(tile, sprite)" title="Direct link to &lt;static&gt; ProcessTileCallbacks(tile, sprite)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A function to process the collision callbacks between a single tile and an Arcade Physics enabled Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>tile</td><td><a class="" href="/api-documentation/3.85.2/class/tilemaps-tile">Phaser.Tilemaps.Tile</a></td><td>No</td><td>The Tile to process.</td></tr><tr><td>sprite</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-sprite">Phaser.GameObjects.Sprite</a></td><td>No</td><td>The Game Object to process with the Tile.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - The result of the callback, <code>true</code> for further processing, or <code>false</code> to skip this pair.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/tilemap/ProcessTileCallbacks.js#L7" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/tilemap/ProcessTileCallbacks.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="processtileseparationx">ProcessTileSeparationX<a href="#processtileseparationx" class="hash-link" aria-label="Direct link to ProcessTileSeparationX" title="Direct link to ProcessTileSeparationX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-processtileseparationxbody-x">&lt;static&gt; ProcessTileSeparationX(body, x)<a href="#static-processtileseparationxbody-x" class="hash-link" aria-label="Direct link to &lt;static&gt; ProcessTileSeparationX(body, x)" title="Direct link to &lt;static&gt; ProcessTileSeparationX(body, x)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal function to process the separation of a physics body from a tile.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The Body object to separate.</td></tr><tr><td>x</td><td>number</td><td>No</td><td>The x separation amount.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/tilemap/ProcessTileSeparationX.js#L7" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/tilemap/ProcessTileSeparationX.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="processtileseparationy">ProcessTileSeparationY<a href="#processtileseparationy" class="hash-link" aria-label="Direct link to ProcessTileSeparationY" title="Direct link to ProcessTileSeparationY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-processtileseparationybody-y">&lt;static&gt; ProcessTileSeparationY(body, y)<a href="#static-processtileseparationybody-y" class="hash-link" aria-label="Direct link to &lt;static&gt; ProcessTileSeparationY(body, y)" title="Direct link to &lt;static&gt; ProcessTileSeparationY(body, y)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal function to process the separation of a physics body from a tile.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The Body object to separate.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The y separation amount.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/tilemap/ProcessTileSeparationY.js#L7" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/tilemap/ProcessTileSeparationY.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="separatetile">SeparateTile<a href="#separatetile" class="hash-link" aria-label="Direct link to SeparateTile" title="Direct link to SeparateTile" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-separatetilei-body-tile-tileworldrect-tilemaplayer-tilebias-islayer">&lt;static&gt; SeparateTile(i, body, tile, tileWorldRect, tilemapLayer, tileBias, isLayer)<a href="#static-separatetilei-body-tile-tileworldrect-tilemaplayer-tilebias-islayer" class="hash-link" aria-label="Direct link to &lt;static&gt; SeparateTile(i, body, tile, tileWorldRect, tilemapLayer, tileBias, isLayer)" title="Direct link to &lt;static&gt; SeparateTile(i, body, tile, tileWorldRect, tilemapLayer, tileBias, isLayer)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The core separation function to separate a physics body and a tile.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>i</td><td>number</td><td>No</td><td>The index of the tile within the map data.</td></tr><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The Body object to separate.</td></tr><tr><td>tile</td><td><a class="" href="/api-documentation/3.85.2/class/tilemaps-tile">Phaser.Tilemaps.Tile</a></td><td>No</td><td>The tile to collide against.</td></tr><tr><td>tileWorldRect</td><td><a class="" href="/api-documentation/3.85.2/class/geom-rectangle">Phaser.Geom.Rectangle</a></td><td>No</td><td>A rectangle-like object defining the dimensions of the tile.</td></tr><tr><td>tilemapLayer</td><td><a class="" href="/api-documentation/3.85.2/class/tilemaps-tilemaplayer">Phaser.Tilemaps.TilemapLayer</a></td><td>No</td><td>The tilemapLayer to collide against.</td></tr><tr><td>tileBias</td><td>number</td><td>No</td><td>The tile bias value. Populated by the <code>World.TILE_BIAS</code> constant.</td></tr><tr><td>isLayer</td><td>boolean</td><td>No</td><td>Is this check coming from a TilemapLayer or an array of tiles?</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the body was separated, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/tilemap/SeparateTile.js#L11" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/tilemap/SeparateTile.js#L11</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilecheckx">TileCheckX<a href="#tilecheckx" class="hash-link" aria-label="Direct link to TileCheckX" title="Direct link to TileCheckX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tilecheckxbody-tile-tileleft-tileright-tilebias-islayer">&lt;static&gt; TileCheckX(body, tile, tileLeft, tileRight, tileBias, isLayer)<a href="#static-tilecheckxbody-tile-tileleft-tileright-tilebias-islayer" class="hash-link" aria-label="Direct link to &lt;static&gt; TileCheckX(body, tile, tileLeft, tileRight, tileBias, isLayer)" title="Direct link to &lt;static&gt; TileCheckX(body, tile, tileLeft, tileRight, tileBias, isLayer)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Check the body against the given tile on the X axis.
+Used internally by the SeparateTile function.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The Body object to separate.</td></tr><tr><td>tile</td><td><a class="" href="/api-documentation/3.85.2/class/tilemaps-tile">Phaser.Tilemaps.Tile</a></td><td>No</td><td>The tile to check.</td></tr><tr><td>tileLeft</td><td>number</td><td>No</td><td>The left position of the tile within the tile world.</td></tr><tr><td>tileRight</td><td>number</td><td>No</td><td>The right position of the tile within the tile world.</td></tr><tr><td>tileBias</td><td>number</td><td>No</td><td>The tile bias value. Populated by the <code>World.TILE_BIAS</code> constant.</td></tr><tr><td>isLayer</td><td>boolean</td><td>No</td><td>Is this check coming from a TilemapLayer or an array of tiles?</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The amount of separation that occurred.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/tilemap/TileCheckX.js#L9" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/tilemap/TileCheckX.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilechecky">TileCheckY<a href="#tilechecky" class="hash-link" aria-label="Direct link to TileCheckY" title="Direct link to TileCheckY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tilecheckybody-tile-tiletop-tilebottom-tilebias-islayer">&lt;static&gt; TileCheckY(body, tile, tileTop, tileBottom, tileBias, isLayer)<a href="#static-tilecheckybody-tile-tiletop-tilebottom-tilebias-islayer" class="hash-link" aria-label="Direct link to &lt;static&gt; TileCheckY(body, tile, tileTop, tileBottom, tileBias, isLayer)" title="Direct link to &lt;static&gt; TileCheckY(body, tile, tileTop, tileBottom, tileBias, isLayer)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Check the body against the given tile on the Y axis.
+Used internally by the SeparateTile function.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The Body object to separate.</td></tr><tr><td>tile</td><td><a class="" href="/api-documentation/3.85.2/class/tilemaps-tile">Phaser.Tilemaps.Tile</a></td><td>No</td><td>The tile to check.</td></tr><tr><td>tileTop</td><td>number</td><td>No</td><td>The top position of the tile within the tile world.</td></tr><tr><td>tileBottom</td><td>number</td><td>No</td><td>The bottom position of the tile within the tile world.</td></tr><tr><td>tileBias</td><td>number</td><td>No</td><td>The tile bias value. Populated by the <code>World.TILE_BIAS</code> constant.</td></tr><tr><td>isLayer</td><td>boolean</td><td>No</td><td>Is this check coming from a TilemapLayer or an array of tiles?</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The amount of separation that occurred.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/tilemap/TileCheckY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/tilemap/TileCheckY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tileintersectsbody">TileIntersectsBody<a href="#tileintersectsbody" class="hash-link" aria-label="Direct link to TileIntersectsBody" title="Direct link to TileIntersectsBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tileintersectsbodytileworldrect-body">&lt;static&gt; TileIntersectsBody(tileWorldRect, body)<a href="#static-tileintersectsbodytileworldrect-body" class="hash-link" aria-label="Direct link to &lt;static&gt; TileIntersectsBody(tileWorldRect, body)" title="Direct link to &lt;static&gt; TileIntersectsBody(tileWorldRect, body)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks for intersection between the given tile rectangle-like object and an Arcade Physics body.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>tileWorldRect</td><td>Object</td><td>No</td><td>A rectangle object that defines the tile placement in the world.</td></tr><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>The body to check for intersection against.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - Returns <code>true</code> of the tile intersects with the body, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/tilemap/TileIntersectsBody.js#L7" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/tilemap/TileIntersectsBody.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Physics.Matter</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mattergameobject">MatterGameObject<a href="#mattergameobject" class="hash-link" aria-label="Direct link to MatterGameObject" title="Direct link to MatterGameObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-mattergameobjectworld-gameobject-options-addtoworld">&lt;static&gt; MatterGameObject(world, gameObject, [options], [addToWorld])<a href="#static-mattergameobjectworld-gameobject-options-addtoworld" class="hash-link" aria-label="Direct link to &lt;static&gt; MatterGameObject(world, gameObject, [options], [addToWorld])" title="Direct link to &lt;static&gt; MatterGameObject(world, gameObject, [options], [addToWorld])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A Matter Game Object is a generic object that allows you to combine any Phaser Game Object,
+including those you have extended or created yourself, with all of the Matter Components.</p>
+<p>This enables you to use component methods such as <code>setVelocity</code> or <code>isSensor</code> directly from
+this Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>world</td><td><a class="" href="/api-documentation/3.85.2/class/physics-matter-world">Phaser.Physics.Matter.World</a></td><td>No</td><td></td><td>The Matter world to add the body to.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The Game Object that will have the Matter body applied to it.</td></tr><tr><td>options</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-physics-matter#MatterBodyConfig">Phaser.Types.Physics.Matter.MatterBodyConfig</a> | MatterJS.Body</td><td>Yes</td><td></td><td>A Matter Body configuration object, or an instance of a Matter Body.</td></tr><tr><td>addToWorld</td><td>boolean</td><td>Yes</td><td>true</td><td>Should the newly created body be immediately added to the World?</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The Game Object that was created with the Matter body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/matter-js/MatterGameObject.js#L26" target="_blank" rel="noopener noreferrer" class="">src/physics/matter-js/MatterGameObject.js#L26</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<h1>Phaser.Physics.Matter.PhysicsEditorParser</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parsebody">parseBody<a href="#parsebody" class="hash-link" aria-label="Direct link to parseBody" title="Direct link to parseBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-parsebodyx-y-config-options">&lt;static&gt; parseBody(x, y, config, [options])<a href="#static-parsebodyx-y-config-options" class="hash-link" aria-label="Direct link to &lt;static&gt; parseBody(x, y, config, [options])" title="Direct link to &lt;static&gt; parseBody(x, y, config, [options])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Parses a body element exported by PhysicsEditor.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The horizontal world location of the body.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The vertical world location of the body.</td></tr><tr><td>config</td><td>object</td><td>No</td><td>The body configuration and fixture (child body) definitions, as exported by PhysicsEditor.</td></tr><tr><td>options</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-physics-matter#MatterBodyConfig">Phaser.Types.Physics.Matter.MatterBodyConfig</a></td><td>Yes</td><td>An optional Body configuration object that is used to set initial Body properties on creation.</td></tr></tbody></table>
+<p><strong>Returns:</strong> MatterJS.BodyType - A compound Matter JS Body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/matter-js/PhysicsEditorParser.js#L24" target="_blank" rel="noopener noreferrer" class="">src/physics/matter-js/PhysicsEditorParser.js#L24</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parsefixture">parseFixture<a href="#parsefixture" class="hash-link" aria-label="Direct link to parseFixture" title="Direct link to parseFixture" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-parsefixturefixtureconfig">&lt;static&gt; parseFixture(fixtureConfig)<a href="#static-parsefixturefixtureconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; parseFixture(fixtureConfig)" title="Direct link to &lt;static&gt; parseFixture(fixtureConfig)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Parses an element of the &quot;fixtures&quot; list exported by PhysicsEditor</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>fixtureConfig</td><td>object</td><td>No</td><td>The fixture object to parse.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;MatterJS.BodyType&gt; - - An array of Matter JS Bodies.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/matter-js/PhysicsEditorParser.js#L70" target="_blank" rel="noopener noreferrer" class="">src/physics/matter-js/PhysicsEditorParser.js#L70</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parsevertices">parseVertices<a href="#parsevertices" class="hash-link" aria-label="Direct link to parseVertices" title="Direct link to parseVertices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-parseverticesvertexsets-options">&lt;static&gt; parseVertices(vertexSets, [options])<a href="#static-parseverticesvertexsets-options" class="hash-link" aria-label="Direct link to &lt;static&gt; parseVertices(vertexSets, [options])" title="Direct link to &lt;static&gt; parseVertices(vertexSets, [options])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Parses the &quot;vertices&quot; lists exported by PhysicsEditor.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>vertexSets</td><td>array</td><td>No</td><td>The vertex lists to parse.</td></tr><tr><td>options</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-physics-matter#MatterBodyConfig">Phaser.Types.Physics.Matter.MatterBodyConfig</a></td><td>Yes</td><td>An optional Body configuration object that is used to set initial Body properties on creation.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;MatterJS.BodyType&gt; - - An array of Matter JS Bodies.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/matter-js/PhysicsEditorParser.js#L104" target="_blank" rel="noopener noreferrer" class="">src/physics/matter-js/PhysicsEditorParser.js#L104</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<h1>Phaser.Physics.Matter.PhysicsJSONParser</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parsebody-1">parseBody<a href="#parsebody-1" class="hash-link" aria-label="Direct link to parseBody" title="Direct link to parseBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-parsebodyx-y-config-options-1">&lt;static&gt; parseBody(x, y, config, [options])<a href="#static-parsebodyx-y-config-options-1" class="hash-link" aria-label="Direct link to &lt;static&gt; parseBody(x, y, config, [options])" title="Direct link to &lt;static&gt; parseBody(x, y, config, [options])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Parses a body element from the given JSON data.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The horizontal world location of the body.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The vertical world location of the body.</td></tr><tr><td>config</td><td>object</td><td>No</td><td>The body configuration data.</td></tr><tr><td>options</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-physics-matter#MatterBodyConfig">Phaser.Types.Physics.Matter.MatterBodyConfig</a></td><td>Yes</td><td>An optional Body configuration object that is used to set initial Body properties on creation.</td></tr></tbody></table>
+<p><strong>Returns:</strong> MatterJS.BodyType - A Matter JS Body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/matter-js/PhysicsJSONParser.js#L53" target="_blank" rel="noopener noreferrer" class="">src/physics/matter-js/PhysicsJSONParser.js#L53</a><br>
+Since: 3.22.0</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/function/math"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Phaser.Math</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/function/plugins"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Phaser.Plugins</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overlapcirc" class="table-of-contents__link toc-highlight">OverlapCirc</a><ul><li><a href="#static-overlapcircx-y-radius-includedynamic-includestatic" class="table-of-contents__link toc-highlight">&lt;static&gt; OverlapCirc(x, y, radius, [includeDynamic], [includeStatic])</a></li></ul></li><li><a href="#overlaprect" class="table-of-contents__link toc-highlight">OverlapRect</a><ul><li><a href="#static-overlaprectx-y-width-height-includedynamic-includestatic" class="table-of-contents__link toc-highlight">&lt;static&gt; OverlapRect(x, y, width, height, [includeDynamic], [includeStatic])</a></li></ul></li><li><a href="#getcollideswith" class="table-of-contents__link toc-highlight">GetCollidesWith</a><ul><li><a href="#static-getcollideswithcategories" class="table-of-contents__link toc-highlight">&lt;static&gt; GetCollidesWith(categories)</a></li></ul></li><li><a href="#getoverlapx" class="table-of-contents__link toc-highlight">GetOverlapX</a><ul><li><a href="#static-getoverlapxbody1-body2-overlaponly-bias" class="table-of-contents__link toc-highlight">&lt;static&gt; GetOverlapX(body1, body2, overlapOnly, bias)</a></li></ul></li><li><a href="#getoverlapy" class="table-of-contents__link toc-highlight">GetOverlapY</a><ul><li><a href="#static-getoverlapybody1-body2-overlaponly-bias" class="table-of-contents__link toc-highlight">&lt;static&gt; GetOverlapY(body1, body2, overlapOnly, bias)</a></li></ul></li><li><a href="#separatex" class="table-of-contents__link toc-highlight">SeparateX</a><ul><li><a href="#static-separatexbody1-body2-overlaponly-bias-overlap" class="table-of-contents__link toc-highlight">&lt;static&gt; SeparateX(body1, body2, overlapOnly, bias, [overlap])</a></li></ul></li><li><a href="#separatey" class="table-of-contents__link toc-highlight">SeparateY</a><ul><li><a href="#static-separateybody1-body2-overlaponly-bias-overlap" class="table-of-contents__link toc-highlight">&lt;static&gt; SeparateY(body1, body2, overlapOnly, bias, [overlap])</a></li></ul></li><li><a href="#setcollisionobject" class="table-of-contents__link toc-highlight">SetCollisionObject</a><ul><li><a href="#static-setcollisionobjectnoneflip-data" class="table-of-contents__link toc-highlight">&lt;static&gt; SetCollisionObject(noneFlip, [data])</a></li></ul></li><li><a href="#set" class="table-of-contents__link toc-highlight">Set</a><ul><li><a href="#static-setb1-b2-ov" class="table-of-contents__link toc-highlight">&lt;static&gt; Set(b1, b2, ov)</a></li></ul></li><li><a href="#blockcheck" class="table-of-contents__link toc-highlight">BlockCheck</a><ul><li><a href="#static-blockcheck" class="table-of-contents__link toc-highlight">&lt;static&gt; BlockCheck()</a></li></ul></li><li><a href="#check" class="table-of-contents__link toc-highlight">Check</a><ul><li><a href="#static-check" class="table-of-contents__link toc-highlight">&lt;static&gt; Check()</a></li></ul></li><li><a href="#run" class="table-of-contents__link toc-highlight">Run</a><ul><li><a href="#static-runside" class="table-of-contents__link toc-highlight">&lt;static&gt; Run(side)</a></li></ul></li><li><a href="#runimmovablebody1" class="table-of-contents__link toc-highlight">RunImmovableBody1</a><ul><li><a href="#static-runimmovablebody1blockedstate" class="table-of-contents__link toc-highlight">&lt;static&gt; RunImmovableBody1(blockedState)</a></li></ul></li><li><a href="#runimmovablebody2" class="table-of-contents__link toc-highlight">RunImmovableBody2</a><ul><li><a href="#static-runimmovablebody2blockedstate" class="table-of-contents__link toc-highlight">&lt;static&gt; RunImmovableBody2(blockedState)</a></li></ul></li><li><a href="#set-1" class="table-of-contents__link toc-highlight">Set</a><ul><li><a href="#static-setb1-b2-ov-1" class="table-of-contents__link toc-highlight">&lt;static&gt; Set(b1, b2, ov)</a></li></ul></li><li><a href="#blockcheck-1" class="table-of-contents__link toc-highlight">BlockCheck</a><ul><li><a href="#static-blockcheck-1" class="table-of-contents__link toc-highlight">&lt;static&gt; BlockCheck()</a></li></ul></li><li><a href="#check-1" class="table-of-contents__link toc-highlight">Check</a><ul><li><a href="#static-check-1" class="table-of-contents__link toc-highlight">&lt;static&gt; Check()</a></li></ul></li><li><a href="#run-1" class="table-of-contents__link toc-highlight">Run</a><ul><li><a href="#static-runside-1" class="table-of-contents__link toc-highlight">&lt;static&gt; Run(side)</a></li></ul></li><li><a href="#runimmovablebody1-1" class="table-of-contents__link toc-highlight">RunImmovableBody1</a><ul><li><a href="#static-runimmovablebody1blockedstate-1" class="table-of-contents__link toc-highlight">&lt;static&gt; RunImmovableBody1(blockedState)</a></li></ul></li><li><a href="#runimmovablebody2-1" class="table-of-contents__link toc-highlight">RunImmovableBody2</a><ul><li><a href="#static-runimmovablebody2blockedstate-1" class="table-of-contents__link toc-highlight">&lt;static&gt; RunImmovableBody2(blockedState)</a></li></ul></li><li><a href="#processtilecallbacks" class="table-of-contents__link toc-highlight">ProcessTileCallbacks</a><ul><li><a href="#static-processtilecallbackstile-sprite" class="table-of-contents__link toc-highlight">&lt;static&gt; ProcessTileCallbacks(tile, sprite)</a></li></ul></li><li><a href="#processtileseparationx" class="table-of-contents__link toc-highlight">ProcessTileSeparationX</a><ul><li><a href="#static-processtileseparationxbody-x" class="table-of-contents__link toc-highlight">&lt;static&gt; ProcessTileSeparationX(body, x)</a></li></ul></li><li><a href="#processtileseparationy" class="table-of-contents__link toc-highlight">ProcessTileSeparationY</a><ul><li><a href="#static-processtileseparationybody-y" class="table-of-contents__link toc-highlight">&lt;static&gt; ProcessTileSeparationY(body, y)</a></li></ul></li><li><a href="#separatetile" class="table-of-contents__link toc-highlight">SeparateTile</a><ul><li><a href="#static-separatetilei-body-tile-tileworldrect-tilemaplayer-tilebias-islayer" class="table-of-contents__link toc-highlight">&lt;static&gt; SeparateTile(i, body, tile, tileWorldRect, tilemapLayer, tileBias, isLayer)</a></li></ul></li><li><a href="#tilecheckx" class="table-of-contents__link toc-highlight">TileCheckX</a><ul><li><a href="#static-tilecheckxbody-tile-tileleft-tileright-tilebias-islayer" class="table-of-contents__link toc-highlight">&lt;static&gt; TileCheckX(body, tile, tileLeft, tileRight, tileBias, isLayer)</a></li></ul></li><li><a href="#tilechecky" class="table-of-contents__link toc-highlight">TileCheckY</a><ul><li><a href="#static-tilecheckybody-tile-tiletop-tilebottom-tilebias-islayer" class="table-of-contents__link toc-highlight">&lt;static&gt; TileCheckY(body, tile, tileTop, tileBottom, tileBias, isLayer)</a></li></ul></li><li><a href="#tileintersectsbody" class="table-of-contents__link toc-highlight">TileIntersectsBody</a><ul><li><a href="#static-tileintersectsbodytileworldrect-body" class="table-of-contents__link toc-highlight">&lt;static&gt; TileIntersectsBody(tileWorldRect, body)</a></li></ul></li><li><a href="#mattergameobject" class="table-of-contents__link toc-highlight">MatterGameObject</a><ul><li><a href="#static-mattergameobjectworld-gameobject-options-addtoworld" class="table-of-contents__link toc-highlight">&lt;static&gt; MatterGameObject(world, gameObject, [options], [addToWorld])</a></li></ul></li><li><a href="#parsebody" class="table-of-contents__link toc-highlight">parseBody</a><ul><li><a href="#static-parsebodyx-y-config-options" class="table-of-contents__link toc-highlight">&lt;static&gt; parseBody(x, y, config, [options])</a></li></ul></li><li><a href="#parsefixture" class="table-of-contents__link toc-highlight">parseFixture</a><ul><li><a href="#static-parsefixturefixtureconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; parseFixture(fixtureConfig)</a></li></ul></li><li><a href="#parsevertices" class="table-of-contents__link toc-highlight">parseVertices</a><ul><li><a href="#static-parseverticesvertexsets-options" class="table-of-contents__link toc-highlight">&lt;static&gt; parseVertices(vertexSets, [options])</a></li></ul></li><li><a href="#parsebody-1" class="table-of-contents__link toc-highlight">parseBody</a><ul><li><a href="#static-parsebodyx-y-config-options-1" class="table-of-contents__link toc-highlight">&lt;static&gt; parseBody(x, y, config, [options])</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

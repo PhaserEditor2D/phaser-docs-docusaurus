@@ -1,0 +1,1447 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-class/Phaser.Sound.WebAudioSoundManager" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">WebAudioSoundManager | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/class/sound-webaudiosoundmanager"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="WebAudioSoundManager | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Sound.WebAudioSoundManager"><meta data-rh="true" property="og:description" content="Phaser.Sound.WebAudioSoundManager"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/class/sound-webaudiosoundmanager"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/class/sound-webaudiosoundmanager" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/class/sound-webaudiosoundmanager" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Class","item":"https://docs.phaser.io/api-documentation/3.85.2/class/"},{"@type":"ListItem","position":2,"name":"WebAudioSoundManager","item":"https://docs.phaser.io/api-documentation/3.85.2/class/sound-webaudiosoundmanager"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/class/sound-webaudiosoundmanager">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/class/sound-webaudiosoundmanager">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Collapse sidebar category &#x27;Class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/class"><span title="Class" class="linkLabel_WmDU">Class</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animation"><span title="Animation" class="linkLabel_WmDU">Animation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationframe"><span title="AnimationFrame" class="linkLabel_WmDU">AnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationmanager"><span title="AnimationManager" class="linkLabel_WmDU">AnimationManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationstate"><span title="AnimationState" class="linkLabel_WmDU">AnimationState</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cache-basecache"><span title="BaseCache" class="linkLabel_WmDU">BaseCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cache-cachemanager"><span title="CacheManager" class="linkLabel_WmDU">CacheManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-controls-fixedkeycontrol"><span title="FixedKeyControl" class="linkLabel_WmDU">FixedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-controls-smoothedkeycontrol"><span title="SmoothedKeyControl" class="linkLabel_WmDU">SmoothedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-basecamera"><span title="BaseCamera" class="linkLabel_WmDU">BaseCamera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-camera"><span title="Camera" class="linkLabel_WmDU">Camera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-cameramanager"><span title="CameraManager" class="linkLabel_WmDU">CameraManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-fade"><span title="Fade" class="linkLabel_WmDU">Fade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-flash"><span title="Flash" class="linkLabel_WmDU">Flash</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-pan"><span title="Pan" class="linkLabel_WmDU">Pan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-rotateto"><span title="RotateTo" class="linkLabel_WmDU">RotateTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-shake"><span title="Shake" class="linkLabel_WmDU">Shake</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-zoom"><span title="Zoom" class="linkLabel_WmDU">Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/core-config"><span title="Config" class="linkLabel_WmDU">Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/core-timestep"><span title="TimeStep" class="linkLabel_WmDU">TimeStep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-cubicbezier"><span title="CubicBezier" class="linkLabel_WmDU">CubicBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-moveto"><span title="MoveTo" class="linkLabel_WmDU">MoveTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-path"><span title="Path" class="linkLabel_WmDU">Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-quadraticbezier"><span title="QuadraticBezier" class="linkLabel_WmDU">QuadraticBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-spline"><span title="Spline" class="linkLabel_WmDU">Spline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/dom-requestanimationframe"><span title="RequestAnimationFrame" class="linkLabel_WmDU">RequestAnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/data-datamanager"><span title="DataManager" class="linkLabel_WmDU">DataManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/data-datamanagerplugin"><span title="DataManagerPlugin" class="linkLabel_WmDU">DataManagerPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-baseshader"><span title="BaseShader" class="linkLabel_WmDU">BaseShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-color"><span title="Color" class="linkLabel_WmDU">Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-masks-bitmapmask"><span title="BitmapMask" class="linkLabel_WmDU">BitmapMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-masks-geometrymask"><span title="GeometryMask" class="linkLabel_WmDU">GeometryMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-rgb"><span title="RGB" class="linkLabel_WmDU">RGB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/events-eventemitter"><span title="EventEmitter" class="linkLabel_WmDU">EventEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-barrel"><span title="Barrel" class="linkLabel_WmDU">Barrel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-bloom"><span title="Bloom" class="linkLabel_WmDU">Bloom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-blur"><span title="Blur" class="linkLabel_WmDU">Blur</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-bokeh"><span title="Bokeh" class="linkLabel_WmDU">Bokeh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-controller"><span title="Controller" class="linkLabel_WmDU">Controller</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-displacement"><span title="Displacement" class="linkLabel_WmDU">Displacement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-glow"><span title="Glow" class="linkLabel_WmDU">Glow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-gradient"><span title="Gradient" class="linkLabel_WmDU">Gradient</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-pixelate"><span title="Pixelate" class="linkLabel_WmDU">Pixelate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-shadow"><span title="Shadow" class="linkLabel_WmDU">Shadow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-shine"><span title="Shine" class="linkLabel_WmDU">Shine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-vignette"><span title="Vignette" class="linkLabel_WmDU">Vignette</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-wipe"><span title="Wipe" class="linkLabel_WmDU">Wipe</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/facebookinstantgamesleaderboard"><span title="FacebookInstantGamesLeaderboard" class="linkLabel_WmDU">FacebookInstantGamesLeaderboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/facebookinstantgamesplugin"><span title="FacebookInstantGamesPlugin" class="linkLabel_WmDU">FacebookInstantGamesPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/game"><span title="Game" class="linkLabel_WmDU">Game</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-arc"><span title="Arc" class="linkLabel_WmDU">Arc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-bitmaptext"><span title="BitmapText" class="linkLabel_WmDU">BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-blitter"><span title="Blitter" class="linkLabel_WmDU">Blitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-bob"><span title="Bob" class="linkLabel_WmDU">Bob</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-components-fx"><span title="FX" class="linkLabel_WmDU">FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-components-transformmatrix"><span title="TransformMatrix" class="linkLabel_WmDU">TransformMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-container"><span title="Container" class="linkLabel_WmDU">Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-domelement"><span title="DOMElement" class="linkLabel_WmDU">DOMElement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-displaylist"><span title="DisplayList" class="linkLabel_WmDU">DisplayList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-dynamicbitmaptext"><span title="DynamicBitmapText" class="linkLabel_WmDU">DynamicBitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-extern"><span title="Extern" class="linkLabel_WmDU">Extern</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobject"><span title="GameObject" class="linkLabel_WmDU">GameObject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobjectcreator"><span title="GameObjectCreator" class="linkLabel_WmDU">GameObjectCreator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobjectfactory"><span title="GameObjectFactory" class="linkLabel_WmDU">GameObjectFactory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-graphics"><span title="Graphics" class="linkLabel_WmDU">Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-grid"><span title="Grid" class="linkLabel_WmDU">Grid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-isobox"><span title="IsoBox" class="linkLabel_WmDU">IsoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-isotriangle"><span title="IsoTriangle" class="linkLabel_WmDU">IsoTriangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-layer"><span title="Layer" class="linkLabel_WmDU">Layer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-light"><span title="Light" class="linkLabel_WmDU">Light</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-lightsmanager"><span title="LightsManager" class="linkLabel_WmDU">LightsManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-lightsplugin"><span title="LightsPlugin" class="linkLabel_WmDU">LightsPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-mesh"><span title="Mesh" class="linkLabel_WmDU">Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-nineslice"><span title="NineSlice" class="linkLabel_WmDU">NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-emittercolorop"><span title="EmitterColorOp" class="linkLabel_WmDU">EmitterColorOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-emitterop"><span title="EmitterOp" class="linkLabel_WmDU">EmitterOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-gravitywell"><span title="GravityWell" class="linkLabel_WmDU">GravityWell</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particle"><span title="Particle" class="linkLabel_WmDU">Particle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particlebounds"><span title="ParticleBounds" class="linkLabel_WmDU">ParticleBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particleemitter"><span title="ParticleEmitter" class="linkLabel_WmDU">ParticleEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particleprocessor"><span title="ParticleProcessor" class="linkLabel_WmDU">ParticleProcessor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-deathzone"><span title="DeathZone" class="linkLabel_WmDU">DeathZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-edgezone"><span title="EdgeZone" class="linkLabel_WmDU">EdgeZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-randomzone"><span title="RandomZone" class="linkLabel_WmDU">RandomZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-pathfollower"><span title="PathFollower" class="linkLabel_WmDU">PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-plane"><span title="Plane" class="linkLabel_WmDU">Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-pointlight"><span title="PointLight" class="linkLabel_WmDU">PointLight</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rendertexture"><span title="RenderTexture" class="linkLabel_WmDU">RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rope"><span title="Rope" class="linkLabel_WmDU">Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-shader"><span title="Shader" class="linkLabel_WmDU">Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-shape"><span title="Shape" class="linkLabel_WmDU">Shape</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-star"><span title="Star" class="linkLabel_WmDU">Star</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-text"><span title="Text" class="linkLabel_WmDU">Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-textstyle"><span title="TextStyle" class="linkLabel_WmDU">TextStyle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-tilesprite"><span title="TileSprite" class="linkLabel_WmDU">TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-updatelist"><span title="UpdateList" class="linkLabel_WmDU">UpdateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-video"><span title="Video" class="linkLabel_WmDU">Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-zone"><span title="Zone" class="linkLabel_WmDU">Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-mesh-face"><span title="Face" class="linkLabel_WmDU">Face</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-mesh-vertex"><span title="Vertex" class="linkLabel_WmDU">Vertex</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-point"><span title="Point" class="linkLabel_WmDU">Point</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-axis"><span title="Axis" class="linkLabel_WmDU">Axis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-button"><span title="Button" class="linkLabel_WmDU">Button</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-gamepad"><span title="Gamepad" class="linkLabel_WmDU">Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-gamepadplugin"><span title="GamepadPlugin" class="linkLabel_WmDU">GamepadPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-inputmanager"><span title="InputManager" class="linkLabel_WmDU">InputManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-inputplugin"><span title="InputPlugin" class="linkLabel_WmDU">InputPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-key"><span title="Key" class="linkLabel_WmDU">Key</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keycombo"><span title="KeyCombo" class="linkLabel_WmDU">KeyCombo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keyboardmanager"><span title="KeyboardManager" class="linkLabel_WmDU">KeyboardManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keyboardplugin"><span title="KeyboardPlugin" class="linkLabel_WmDU">KeyboardPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-mouse-mousemanager"><span title="MouseManager" class="linkLabel_WmDU">MouseManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-pointer"><span title="Pointer" class="linkLabel_WmDU">Pointer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-touch-touchmanager"><span title="TouchManager" class="linkLabel_WmDU">TouchManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-file"><span title="File" class="linkLabel_WmDU">File</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-animationjsonfile"><span title="AnimationJSONFile" class="linkLabel_WmDU">AnimationJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-asepritefile"><span title="AsepriteFile" class="linkLabel_WmDU">AsepriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-atlasjsonfile"><span title="AtlasJSONFile" class="linkLabel_WmDU">AtlasJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-atlasxmlfile"><span title="AtlasXMLFile" class="linkLabel_WmDU">AtlasXMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-audiofile"><span title="AudioFile" class="linkLabel_WmDU">AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-audiospritefile"><span title="AudioSpriteFile" class="linkLabel_WmDU">AudioSpriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-binaryfile"><span title="BinaryFile" class="linkLabel_WmDU">BinaryFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-bitmapfontfile"><span title="BitmapFontFile" class="linkLabel_WmDU">BitmapFontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-cssfile"><span title="CSSFile" class="linkLabel_WmDU">CSSFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-compressedtexturefile"><span title="CompressedTextureFile" class="linkLabel_WmDU">CompressedTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-glslfile"><span title="GLSLFile" class="linkLabel_WmDU">GLSLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-html5audiofile"><span title="HTML5AudioFile" class="linkLabel_WmDU">HTML5AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-htmlfile"><span title="HTMLFile" class="linkLabel_WmDU">HTMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-htmltexturefile"><span title="HTMLTextureFile" class="linkLabel_WmDU">HTMLTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-imagefile"><span title="ImageFile" class="linkLabel_WmDU">ImageFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-jsonfile"><span title="JSONFile" class="linkLabel_WmDU">JSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-multiatlasfile"><span title="MultiAtlasFile" class="linkLabel_WmDU">MultiAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-multiscriptfile"><span title="MultiScriptFile" class="linkLabel_WmDU">MultiScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-objfile"><span title="OBJFile" class="linkLabel_WmDU">OBJFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-packfile"><span title="PackFile" class="linkLabel_WmDU">PackFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-pluginfile"><span title="PluginFile" class="linkLabel_WmDU">PluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-svgfile"><span title="SVGFile" class="linkLabel_WmDU">SVGFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scenefile"><span title="SceneFile" class="linkLabel_WmDU">SceneFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scenepluginfile"><span title="ScenePluginFile" class="linkLabel_WmDU">ScenePluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scriptfile"><span title="ScriptFile" class="linkLabel_WmDU">ScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-spritesheetfile"><span title="SpriteSheetFile" class="linkLabel_WmDU">SpriteSheetFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-textfile"><span title="TextFile" class="linkLabel_WmDU">TextFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapcsvfile"><span title="TilemapCSVFile" class="linkLabel_WmDU">TilemapCSVFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapimpactfile"><span title="TilemapImpactFile" class="linkLabel_WmDU">TilemapImpactFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapjsonfile"><span title="TilemapJSONFile" class="linkLabel_WmDU">TilemapJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-unityatlasfile"><span title="UnityAtlasFile" class="linkLabel_WmDU">UnityAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-videofile"><span title="VideoFile" class="linkLabel_WmDU">VideoFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-xmlfile"><span title="XMLFile" class="linkLabel_WmDU">XMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-loaderplugin"><span title="LoaderPlugin" class="linkLabel_WmDU">LoaderPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-multifile"><span title="MultiFile" class="linkLabel_WmDU">MultiFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-euler"><span title="Euler" class="linkLabel_WmDU">Euler</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-matrix3"><span title="Matrix3" class="linkLabel_WmDU">Matrix3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-matrix4"><span title="Matrix4" class="linkLabel_WmDU">Matrix4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-quaternion"><span title="Quaternion" class="linkLabel_WmDU">Quaternion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-randomdatagenerator"><span title="RandomDataGenerator" class="linkLabel_WmDU">RandomDataGenerator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector2"><span title="Vector2" class="linkLabel_WmDU">Vector2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector3"><span title="Vector3" class="linkLabel_WmDU">Vector3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector4"><span title="Vector4" class="linkLabel_WmDU">Vector4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-arcadephysics"><span title="ArcadePhysics" class="linkLabel_WmDU">ArcadePhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-body"><span title="Body" class="linkLabel_WmDU">Body</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-collider"><span title="Collider" class="linkLabel_WmDU">Collider</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-staticbody"><span title="StaticBody" class="linkLabel_WmDU">StaticBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-staticgroup"><span title="StaticGroup" class="linkLabel_WmDU">StaticGroup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-bodybounds"><span title="BodyBounds" class="linkLabel_WmDU">BodyBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-matterphysics"><span title="MatterPhysics" class="linkLabel_WmDU">MatterPhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-pointerconstraint"><span title="PointerConstraint" class="linkLabel_WmDU">PointerConstraint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-tilebody"><span title="TileBody" class="linkLabel_WmDU">TileBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-baseplugin"><span title="BasePlugin" class="linkLabel_WmDU">BasePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-pluginmanager"><span title="PluginManager" class="linkLabel_WmDU">PluginManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-canvas-canvasrenderer"><span title="CanvasRenderer" class="linkLabel_WmDU">CanvasRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelinemanager"><span title="PipelineManager" class="linkLabel_WmDU">PipelineManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-bitmapmaskpipeline"><span title="BitmapMaskPipeline" class="linkLabel_WmDU">BitmapMaskPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-barrelfxpipeline"><span title="BarrelFXPipeline" class="linkLabel_WmDU">BarrelFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-bloomfxpipeline"><span title="BloomFXPipeline" class="linkLabel_WmDU">BloomFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-blurfxpipeline"><span title="BlurFXPipeline" class="linkLabel_WmDU">BlurFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-bokehfxpipeline"><span title="BokehFXPipeline" class="linkLabel_WmDU">BokehFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-circlefxpipeline"><span title="CircleFXPipeline" class="linkLabel_WmDU">CircleFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-colormatrixfxpipeline"><span title="ColorMatrixFXPipeline" class="linkLabel_WmDU">ColorMatrixFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-displacementfxpipeline"><span title="DisplacementFXPipeline" class="linkLabel_WmDU">DisplacementFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-glowfxpipeline"><span title="GlowFXPipeline" class="linkLabel_WmDU">GlowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-gradientfxpipeline"><span title="GradientFXPipeline" class="linkLabel_WmDU">GradientFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-pixelatefxpipeline"><span title="PixelateFXPipeline" class="linkLabel_WmDU">PixelateFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-shadowfxpipeline"><span title="ShadowFXPipeline" class="linkLabel_WmDU">ShadowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-shinefxpipeline"><span title="ShineFXPipeline" class="linkLabel_WmDU">ShineFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-vignettefxpipeline"><span title="VignetteFXPipeline" class="linkLabel_WmDU">VignetteFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-wipefxpipeline"><span title="WipeFXPipeline" class="linkLabel_WmDU">WipeFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fxpipeline"><span title="FXPipeline" class="linkLabel_WmDU">FXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-lightpipeline"><span title="LightPipeline" class="linkLabel_WmDU">LightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-mobilepipeline"><span title="MobilePipeline" class="linkLabel_WmDU">MobilePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-multipipeline"><span title="MultiPipeline" class="linkLabel_WmDU">MultiPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-pointlightpipeline"><span title="PointLightPipeline" class="linkLabel_WmDU">PointLightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-postfxpipeline"><span title="PostFXPipeline" class="linkLabel_WmDU">PostFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-prefxpipeline"><span title="PreFXPipeline" class="linkLabel_WmDU">PreFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-ropepipeline"><span title="RopePipeline" class="linkLabel_WmDU">RopePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-singlepipeline"><span title="SinglePipeline" class="linkLabel_WmDU">SinglePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-utilitypipeline"><span title="UtilityPipeline" class="linkLabel_WmDU">UtilityPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-rendertarget"><span title="RenderTarget" class="linkLabel_WmDU">RenderTarget</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglpipeline"><span title="WebGLPipeline" class="linkLabel_WmDU">WebGLPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglrenderer"><span title="WebGLRenderer" class="linkLabel_WmDU">WebGLRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglshader"><span title="WebGLShader" class="linkLabel_WmDU">WebGLShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglattriblocationwrapper"><span title="WebGLAttribLocationWrapper" class="linkLabel_WmDU">WebGLAttribLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglbufferwrapper"><span title="WebGLBufferWrapper" class="linkLabel_WmDU">WebGLBufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglframebufferwrapper"><span title="WebGLFramebufferWrapper" class="linkLabel_WmDU">WebGLFramebufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglprogramwrapper"><span title="WebGLProgramWrapper" class="linkLabel_WmDU">WebGLProgramWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webgltexturewrapper"><span title="WebGLTextureWrapper" class="linkLabel_WmDU">WebGLTextureWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webgluniformlocationwrapper"><span title="WebGLUniformLocationWrapper" class="linkLabel_WmDU">WebGLUniformLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scale-scalemanager"><span title="ScaleManager" class="linkLabel_WmDU">ScaleManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scene"><span title="Scene" class="linkLabel_WmDU">Scene</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-scenemanager"><span title="SceneManager" class="linkLabel_WmDU">SceneManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-systems"><span title="Systems" class="linkLabel_WmDU">Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-basesound"><span title="BaseSound" class="linkLabel_WmDU">BaseSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-basesoundmanager"><span title="BaseSoundManager" class="linkLabel_WmDU">BaseSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-html5audiosound"><span title="HTML5AudioSound" class="linkLabel_WmDU">HTML5AudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-html5audiosoundmanager"><span title="HTML5AudioSoundManager" class="linkLabel_WmDU">HTML5AudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-noaudiosound"><span title="NoAudioSound" class="linkLabel_WmDU">NoAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-noaudiosoundmanager"><span title="NoAudioSoundManager" class="linkLabel_WmDU">NoAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-webaudiosound"><span title="WebAudioSound" class="linkLabel_WmDU">WebAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager"><span title="WebAudioSoundManager" class="linkLabel_WmDU">WebAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-list"><span title="List" class="linkLabel_WmDU">List</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-map"><span title="Map" class="linkLabel_WmDU">Map</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-processqueue"><span title="ProcessQueue" class="linkLabel_WmDU">ProcessQueue</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-rtree"><span title="RTree" class="linkLabel_WmDU">RTree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-set"><span title="Set" class="linkLabel_WmDU">Set</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-size"><span title="Size" class="linkLabel_WmDU">Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-canvastexture"><span title="CanvasTexture" class="linkLabel_WmDU">CanvasTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-dynamictexture"><span title="DynamicTexture" class="linkLabel_WmDU">DynamicTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-frame"><span title="Frame" class="linkLabel_WmDU">Frame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texture"><span title="Texture" class="linkLabel_WmDU">Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texturemanager"><span title="TextureManager" class="linkLabel_WmDU">TextureManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texturesource"><span title="TextureSource" class="linkLabel_WmDU">TextureSource</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-imagecollection"><span title="ImageCollection" class="linkLabel_WmDU">ImageCollection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-layerdata"><span title="LayerData" class="linkLabel_WmDU">LayerData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-mapdata"><span title="MapData" class="linkLabel_WmDU">MapData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-objecthelper"><span title="ObjectHelper" class="linkLabel_WmDU">ObjectHelper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-objectlayer"><span title="ObjectLayer" class="linkLabel_WmDU">ObjectLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tile"><span title="Tile" class="linkLabel_WmDU">Tile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tilemap"><span title="Tilemap" class="linkLabel_WmDU">Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tilemaplayer"><span title="TilemapLayer" class="linkLabel_WmDU">TilemapLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tileset"><span title="Tileset" class="linkLabel_WmDU">Tileset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-clock"><span title="Clock" class="linkLabel_WmDU">Clock</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-timeline"><span title="Timeline" class="linkLabel_WmDU">Timeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-timerevent"><span title="TimerEvent" class="linkLabel_WmDU">TimerEvent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-basetween"><span title="BaseTween" class="linkLabel_WmDU">BaseTween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-basetweendata"><span title="BaseTweenData" class="linkLabel_WmDU">BaseTweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tween"><span title="Tween" class="linkLabel_WmDU">Tween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenchain"><span title="TweenChain" class="linkLabel_WmDU">TweenChain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweendata"><span title="TweenData" class="linkLabel_WmDU">TweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenframedata"><span title="TweenFrameData" class="linkLabel_WmDU">TweenFrameData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenmanager"><span title="TweenManager" class="linkLabel_WmDU">TweenManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="linkLabel_WmDU">Class</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/class/sound-webaudiosoundmanager">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/class/"><span>Class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">WebAudioSoundManager</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>WebAudioSoundManager</h1></header><p>Web Audio API implementation of the Sound Manager.</p>
+<p>Not all browsers can play all audio formats.</p>
+<p>There is a good guide to what&#x27;s supported: <a href="https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support" target="_blank" rel="noopener noreferrer" class="">Cross-browser audio basics: Audio codec support</a>.</p>
+<p><strong>Constructor</strong></p>
+<p><code>new WebAudioSoundManager(game)</code></p>
+<p><strong>Parameters</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>game</td><td><a class="" href="/api-documentation/3.85.2/class/game">Phaser.Game</a></td><td>No</td><td>Reference to the current game instance.</td></tr></tbody></table>
+<hr>
+<p><strong>Scope</strong>: static</p>
+<p><strong>Extends</strong></p>
+<blockquote>
+<p><a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager">Phaser.Sound.BaseSoundManager</a></p>
+</blockquote>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L16" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L16</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Public Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="context">context<a href="#context" class="hash-link" aria-label="Direct link to context" title="Direct link to context" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="context-audiocontext">context: AudioContext<a href="#context-audiocontext" class="hash-link" aria-label="Direct link to context: AudioContext" title="Direct link to context: AudioContext" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The AudioContext being used for playback.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L40" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L40</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destination">destination<a href="#destination" class="hash-link" aria-label="Direct link to destination" title="Direct link to destination" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="destination-audionode">destination: AudioNode<a href="#destination-audionode" class="hash-link" aria-label="Direct link to destination: AudioNode" title="Direct link to destination: AudioNode" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Destination node for connecting individual sounds to.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L71" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L71</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="detune">detune<a href="#detune" class="hash-link" aria-label="Direct link to detune" title="Direct link to detune" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="detune-number">detune: number<a href="#detune-number" class="hash-link" aria-label="Direct link to detune: number" title="Direct link to detune: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Global detuning of all sounds in <a href="https://en.wikipedia.org/wiki/Cent_%28music%29" target="_blank" rel="noopener noreferrer" class="">cents</a>.
+The range of the value is -1200 to 1200, but we recommend setting it to <a href="https://en.wikipedia.org/wiki/50_Cent" target="_blank" rel="noopener noreferrer" class="">50</a>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#detune">Phaser.Sound.BaseSoundManager#detune</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L803" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L803</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="game">game<a href="#game" class="hash-link" aria-label="Direct link to game" title="Direct link to game" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="game-phasergame">game: <a class="" href="/api-documentation/3.85.2/class/game">Phaser.Game</a><a href="#game-phasergame" class="hash-link" aria-label="Direct link to game-phasergame" title="Direct link to game-phasergame" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Local reference to game.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#game">Phaser.Sound.BaseSoundManager#game</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L44" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L44</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gamelostfocus">gameLostFocus<a href="#gamelostfocus" class="hash-link" aria-label="Direct link to gameLostFocus" title="Direct link to gameLostFocus" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gamelostfocus-boolean">gameLostFocus: boolean<a href="#gamelostfocus-boolean" class="hash-link" aria-label="Direct link to gameLostFocus: boolean" title="Direct link to gameLostFocus: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Flag used to track if the game has lost focus.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#gameLostFocus">Phaser.Sound.BaseSoundManager#gameLostFocus</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L152" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L152</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="jsoncache">jsonCache<a href="#jsoncache" class="hash-link" aria-label="Direct link to jsonCache" title="Direct link to jsonCache" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="jsoncache-phasercachebasecache">jsonCache: <a class="" href="/api-documentation/3.85.2/class/cache-basecache">Phaser.Cache.BaseCache</a><a href="#jsoncache-phasercachebasecache" class="hash-link" aria-label="Direct link to jsoncache-phasercachebasecache" title="Direct link to jsoncache-phasercachebasecache" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Local reference to the JSON Cache, as used by Audio Sprites.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#jsonCache">Phaser.Sound.BaseSoundManager#jsonCache</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L54" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L54</a><br>
+Since: 3.7.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="listenerposition">listenerPosition<a href="#listenerposition" class="hash-link" aria-label="Direct link to listenerPosition" title="Direct link to listenerPosition" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="listenerposition-phasermathvector2">listenerPosition: <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a><a href="#listenerposition-phasermathvector2" class="hash-link" aria-label="Direct link to listenerposition-phasermathvector2" title="Direct link to listenerposition-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Spatial Audio listener position.</p>
+<p>Only available with WebAudio.</p>
+<p>You can modify the x/y properties of this Vec2 directly to
+adjust the listener position within the game world.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#listenerPosition">Phaser.Sound.BaseSoundManager#listenerPosition</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L162" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L162</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="locked">locked<a href="#locked" class="hash-link" aria-label="Direct link to locked" title="Direct link to locked" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="locked-boolean">locked: boolean<a href="#locked-boolean" class="hash-link" aria-label="Direct link to locked: boolean" title="Direct link to locked: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Mobile devices require sounds to be triggered from an explicit user action,
+such as a tap, before any sound can be loaded/played on a web page.
+Set to true if the audio system is currently locked awaiting user interaction.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#locked">Phaser.Sound.BaseSoundManager#locked</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L128" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L128</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mastermutenode">masterMuteNode<a href="#mastermutenode" class="hash-link" aria-label="Direct link to masterMuteNode" title="Direct link to masterMuteNode" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mastermutenode-gainnode">masterMuteNode: GainNode<a href="#mastermutenode-gainnode" class="hash-link" aria-label="Direct link to masterMuteNode: GainNode" title="Direct link to masterMuteNode: GainNode" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gain node responsible for controlling global muting.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L49" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L49</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mastervolumenode">masterVolumeNode<a href="#mastervolumenode" class="hash-link" aria-label="Direct link to masterVolumeNode" title="Direct link to masterVolumeNode" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mastervolumenode-gainnode">masterVolumeNode: GainNode<a href="#mastervolumenode-gainnode" class="hash-link" aria-label="Direct link to masterVolumeNode: GainNode" title="Direct link to masterVolumeNode: GainNode" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gain node responsible for controlling global volume.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L58" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L58</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mute">mute<a href="#mute" class="hash-link" aria-label="Direct link to mute" title="Direct link to mute" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mute-boolean">mute: boolean<a href="#mute-boolean" class="hash-link" aria-label="Direct link to mute: boolean" title="Direct link to mute: boolean" translate="no">​</a></h3>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#mute</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#GLOBAL_MUTE">Phaser.Sound.Events#event:GLOBAL_MUTE</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L471" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L471</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pauseonblur">pauseOnBlur<a href="#pauseonblur" class="hash-link" aria-label="Direct link to pauseOnBlur" title="Direct link to pauseOnBlur" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pauseonblur-boolean">pauseOnBlur: boolean<a href="#pauseonblur-boolean" class="hash-link" aria-label="Direct link to pauseOnBlur: boolean" title="Direct link to pauseOnBlur: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Flag indicating if sounds should be paused when game looses focus,
+for instance when user switches to another tab/program/app.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#pauseOnBlur">Phaser.Sound.BaseSoundManager#pauseOnBlur</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L95" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L95</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rate">rate<a href="#rate" class="hash-link" aria-label="Direct link to rate" title="Direct link to rate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rate-number">rate: number<a href="#rate-number" class="hash-link" aria-label="Direct link to rate: number" title="Direct link to rate: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Global playback rate at which all the sounds will be played.
+Value of 1.0 plays the audio at full speed, 0.5 plays the audio at half speed
+and 2.0 doubles the audio&#x27;s playback speed.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#rate">Phaser.Sound.BaseSoundManager#rate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L753" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L753</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="volume">volume<a href="#volume" class="hash-link" aria-label="Direct link to volume" title="Direct link to volume" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="volume-number">volume: number<a href="#volume-number" class="hash-link" aria-label="Direct link to volume: number" title="Direct link to volume: number" translate="no">​</a></h3>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#volume</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#GLOBAL_VOLUME">Phaser.Sound.Events#event:GLOBAL_VOLUME</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L511" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L511</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h1>Private Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_detune">_detune<a href="#_detune" class="hash-link" aria-label="Direct link to _detune" title="Direct link to _detune" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_detune-number">_detune: number<a href="#_detune-number" class="hash-link" aria-label="Direct link to _detune: number" title="Direct link to _detune: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Property that actually holds the value of global detune.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#_detune">Phaser.Sound.BaseSoundManager#_detune</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L117" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L117</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rate">_rate<a href="#_rate" class="hash-link" aria-label="Direct link to _rate" title="Direct link to _rate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rate-number">_rate: number<a href="#_rate-number" class="hash-link" aria-label="Direct link to _rate: number" title="Direct link to _rate: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Property that actually holds the value of global playback rate.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#_rate">Phaser.Sound.BaseSoundManager#_rate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L106" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L106</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sounds">sounds<a href="#sounds" class="hash-link" aria-label="Direct link to sounds" title="Direct link to sounds" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sounds-arrayphasersoundbasesound">sounds: Array.&lt;<a class="" href="/api-documentation/3.85.2/class/sound-basesound">Phaser.Sound.BaseSound</a>&gt;<a href="#sounds-arrayphasersoundbasesound" class="hash-link" aria-label="Direct link to sounds-arrayphasersoundbasesound" title="Direct link to sounds-arrayphasersoundbasesound" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An array containing all added sounds.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#sounds">Phaser.Sound.BaseSoundManager#sounds</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L64" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L64</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="unlocked">unlocked<a href="#unlocked" class="hash-link" aria-label="Direct link to unlocked" title="Direct link to unlocked" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="unlocked-boolean">unlocked: boolean<a href="#unlocked-boolean" class="hash-link" aria-label="Direct link to unlocked: boolean" title="Direct link to unlocked: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Flag used internally for handling when the audio system
+has been unlocked, if there ever was a need for it.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#unlocked">Phaser.Sound.BaseSoundManager#unlocked</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L140" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L140</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h1>Public Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="add">add<a href="#add" class="hash-link" aria-label="Direct link to add" title="Direct link to add" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addkey-config">&lt;instance&gt; add(key, [config])<a href="#instance-addkey-config" class="hash-link" aria-label="Direct link to &lt;instance&gt; add(key, [config])" title="Direct link to &lt;instance&gt; add(key, [config])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a new sound into the sound manager.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>Asset key for the sound.</td></tr><tr><td>config</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-sound#SoundConfig">Phaser.Types.Sound.SoundConfig</a></td><td>Yes</td><td>An optional config object containing default sound settings.</td></tr></tbody></table>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#add</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> - The new sound instance.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L173" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L173</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addaudiosprite">addAudioSprite<a href="#addaudiosprite" class="hash-link" aria-label="Direct link to addAudioSprite" title="Direct link to addAudioSprite" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addaudiospritekey-config">&lt;instance&gt; addAudioSprite(key, [config])<a href="#instance-addaudiospritekey-config" class="hash-link" aria-label="Direct link to &lt;instance&gt; addAudioSprite(key, [config])" title="Direct link to &lt;instance&gt; addAudioSprite(key, [config])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a new audio sprite sound into the sound manager.
+Audio Sprites are a combination of audio files and a JSON configuration.
+The JSON follows the format of that created by <a href="https://github.com/tonistiigi/audiosprite" target="_blank" rel="noopener noreferrer" class="">https://github.com/tonistiigi/audiosprite</a></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>Asset key for the sound.</td></tr><tr><td>config</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-sound#SoundConfig">Phaser.Types.Sound.SoundConfig</a></td><td>Yes</td><td>An optional config object containing default sound settings.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-noaudiosound">Phaser.Sound.NoAudioSound</a>, <a class="" href="/api-documentation/3.85.2/class/sound-html5audiosound">Phaser.Sound.HTML5AudioSound</a>, <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosound">Phaser.Sound.WebAudioSound</a> - The new audio sprite sound instance.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#addAudioSprite">Phaser.Sound.BaseSoundManager#addAudioSprite</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L196" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L196</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addlistener">addListener<a href="#addlistener" class="hash-link" aria-label="Direct link to addListener" title="Direct link to addListener" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addlistenerevent-fn-context">&lt;instance&gt; addListener(event, fn, [context])<a href="#instance-addlistenerevent-fn-context" class="hash-link" aria-label="Direct link to &lt;instance&gt; addListener(event, fn, [context])" title="Direct link to &lt;instance&gt; addListener(event, fn, [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add a listener for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td></td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>No</td><td></td><td>The listener function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>&quot;this&quot;</td><td>The context to invoke the listener with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#addListener">Phaser.Events.EventEmitter#addListener</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L111" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L111</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="createaudiocontext">createAudioContext<a href="#createaudiocontext" class="hash-link" aria-label="Direct link to createAudioContext" title="Direct link to createAudioContext" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-createaudiocontextgame">&lt;instance&gt; createAudioContext(game)<a href="#instance-createaudiocontextgame" class="hash-link" aria-label="Direct link to &lt;instance&gt; createAudioContext(game)" title="Direct link to &lt;instance&gt; createAudioContext(game)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Method responsible for instantiating and returning AudioContext instance.
+If an instance of an AudioContext class was provided through the game config,
+that instance will be returned instead. This can come in handy if you are reloading
+a Phaser game on a page that never properly refreshes (such as in an SPA project)
+and you want to reuse already instantiated AudioContext.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>game</td><td><a class="" href="/api-documentation/3.85.2/class/game">Phaser.Game</a></td><td>No</td><td>Reference to the current game instance.</td></tr></tbody></table>
+<p><strong>Returns:</strong> AudioContext - The AudioContext instance to be used for playback.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L94" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L94</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="decodeaudio">decodeAudio<a href="#decodeaudio" class="hash-link" aria-label="Direct link to decodeAudio" title="Direct link to decodeAudio" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-decodeaudioaudiokey-audiodata">&lt;instance&gt; decodeAudio([audioKey], [audioData])<a href="#instance-decodeaudioaudiokey-audiodata" class="hash-link" aria-label="Direct link to &lt;instance&gt; decodeAudio([audioKey], [audioData])" title="Direct link to &lt;instance&gt; decodeAudio([audioKey], [audioData])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Decode audio data into a format ready for playback via Web Audio.</p>
+<p>The audio data can be a base64 encoded string, an audio media-type data uri, or an ArrayBuffer instance.</p>
+<p>The <code>audioKey</code> is the key that will be used to save the decoded audio to the audio cache.</p>
+<p>Instead of passing a single entry you can instead pass an array of <code>Phaser.Types.Sound.DecodeAudioConfig</code>
+objects as the first and only argument.</p>
+<p>Decoding is an async process, so be sure to listen for the events to know when decoding has completed.</p>
+<p>Once the audio has decoded it can be added to the Sound Manager or played via its key.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>audioKey</td><td>Array.&lt;<a class="" href="/api-documentation/3.85.2/typedef/types-sound#DecodeAudioConfig">Phaser.Types.Sound.DecodeAudioConfig</a>&gt; | string</td><td>Yes</td><td>The string-based key to be used to reference the decoded audio in the audio cache, or an array of audio config objects.</td></tr><tr><td>audioData</td><td>ArrayBuffer | string</td><td>Yes</td><td>The audio data, either a base64 encoded string, an audio media-type data uri, or an ArrayBuffer instance.</td></tr></tbody></table>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#DECODED">Phaser.Sound.Events#event:DECODED</a>, <a class="" href="/api-documentation/3.85.2/event/sound-events#DECODED_ALL">Phaser.Sound.Events#event:DECODED_ALL</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L193" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L193</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">destroy<a href="#destroy" class="hash-link" aria-label="Direct link to destroy" title="Direct link to destroy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-destroy">&lt;instance&gt; destroy()<a href="#instance-destroy" class="hash-link" aria-label="Direct link to &lt;instance&gt; destroy()" title="Direct link to &lt;instance&gt; destroy()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calls Phaser.Sound.BaseSoundManager#destroy method
+and cleans up all Web Audio API related stuff.</p>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#destroy</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L421" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L421</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emit">emit<a href="#emit" class="hash-link" aria-label="Direct link to emit" title="Direct link to emit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-emitevent-args">&lt;instance&gt; emit(event, [args])<a href="#instance-emitevent-args" class="hash-link" aria-label="Direct link to &lt;instance&gt; emit(event, [args])" title="Direct link to &lt;instance&gt; emit(event, [args])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calls each of the listeners registered for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr><tr><td>args</td><td>*</td><td>Yes</td><td>Additional arguments that will be passed to the event handler.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the event had listeners, else <code>false</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#emit">Phaser.Events.EventEmitter#emit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L86" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L86</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="eventnames">eventNames<a href="#eventnames" class="hash-link" aria-label="Direct link to eventNames" title="Direct link to eventNames" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-eventnames">&lt;instance&gt; eventNames()<a href="#instance-eventnames" class="hash-link" aria-label="Direct link to &lt;instance&gt; eventNames()" title="Direct link to &lt;instance&gt; eventNames()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return an array listing the events for which the emitter has registered listeners.</p>
+<p><strong>Returns:</strong> Array.&lt;(string | symbol)&gt; - undefined</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#eventNames">Phaser.Events.EventEmitter#eventNames</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L55" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L55</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="get">get<a href="#get" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getkey">&lt;instance&gt; get(key)<a href="#instance-getkey" class="hash-link" aria-label="Direct link to &lt;instance&gt; get(key)" title="Direct link to &lt;instance&gt; get(key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the first sound in this Sound Manager that matches the given key.
+If none can be found it returns <code>null</code>.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>Sound asset key.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesound">Phaser.Sound.BaseSound</a> - - The sound, or null.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#get">Phaser.Sound.BaseSoundManager#get</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L241" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L241</a><br>
+Since: 3.23.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getall">getAll<a href="#getall" class="hash-link" aria-label="Direct link to getAll" title="Direct link to getAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getallkey">&lt;instance&gt; getAll([key])<a href="#instance-getallkey" class="hash-link" aria-label="Direct link to &lt;instance&gt; getAll([key])" title="Direct link to &lt;instance&gt; getAll([key])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets all sounds in this Sound Manager.</p>
+<p>You can optionally specify a key, in which case only Sound instances that match the given key
+will be returned.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>Yes</td><td>Optional asset key. If given, only Sound instances with this key will be returned.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;<a class="" href="/api-documentation/3.85.2/class/sound-basesound">Phaser.Sound.BaseSound</a>&gt; - - The sounds, or an empty array.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#getAll">Phaser.Sound.BaseSoundManager#getAll</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L260" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L260</a><br>
+Since: 3.23.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getallplaying">getAllPlaying<a href="#getallplaying" class="hash-link" aria-label="Direct link to getAllPlaying" title="Direct link to getAllPlaying" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getallplaying">&lt;instance&gt; getAllPlaying()<a href="#instance-getallplaying" class="hash-link" aria-label="Direct link to &lt;instance&gt; getAllPlaying()" title="Direct link to &lt;instance&gt; getAllPlaying()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns all sounds from this Sound Manager that are currently
+playing. That is, Sound instances that have their <code>isPlaying</code>
+property set to <code>true</code>.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Returns:</strong> Array.&lt;<a class="" href="/api-documentation/3.85.2/class/sound-basesound">Phaser.Sound.BaseSound</a>&gt; - - All currently playing sounds, or an empty array.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#getAllPlaying">Phaser.Sound.BaseSoundManager#getAllPlaying</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L288" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L288</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="isplaying">isPlaying<a href="#isplaying" class="hash-link" aria-label="Direct link to isPlaying" title="Direct link to isPlaying" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-isplayingkey">&lt;instance&gt; isPlaying(key)<a href="#instance-isplayingkey" class="hash-link" aria-label="Direct link to &lt;instance&gt; isPlaying(key)" title="Direct link to &lt;instance&gt; isPlaying(key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>When a key is given, returns true if any sound with that key is playing.</p>
+<p>When no key is given, returns true if any sound is playing.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>Sound asset key.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - - Per the key argument, true if any matching sound is playing, otherwise false.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#isPlaying">Phaser.Sound.BaseSoundManager#isPlaying</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L536" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L536</a><br>
+Since: 3.85.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="listenercount">listenerCount<a href="#listenercount" class="hash-link" aria-label="Direct link to listenerCount" title="Direct link to listenerCount" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-listenercountevent">&lt;instance&gt; listenerCount(event)<a href="#instance-listenercountevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; listenerCount(event)" title="Direct link to &lt;instance&gt; listenerCount(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return the number of listeners listening to a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The number of listeners.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#listenerCount">Phaser.Events.EventEmitter#listenerCount</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L75" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L75</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="listeners">listeners<a href="#listeners" class="hash-link" aria-label="Direct link to listeners" title="Direct link to listeners" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-listenersevent">&lt;instance&gt; listeners(event)<a href="#instance-listenersevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; listeners(event)" title="Direct link to &lt;instance&gt; listeners(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return the listeners registered for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;function()&gt; - The registered listeners.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#listeners">Phaser.Events.EventEmitter#listeners</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L64" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L64</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="off">off<a href="#off" class="hash-link" aria-label="Direct link to off" title="Direct link to off" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-offevent-fn-context-once">&lt;instance&gt; off(event, [fn], [context], [once])<a href="#instance-offevent-fn-context-once" class="hash-link" aria-label="Direct link to &lt;instance&gt; off(event, [fn], [context], [once])" title="Direct link to &lt;instance&gt; off(event, [fn], [context], [once])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Remove the listeners of a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>Yes</td><td>Only remove the listeners that match this function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>Only remove the listeners that have this context.</td></tr><tr><td>once</td><td>boolean</td><td>Yes</td><td>Only remove one-time listeners.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#off">Phaser.Events.EventEmitter#off</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L151" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L151</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="on">on<a href="#on" class="hash-link" aria-label="Direct link to on" title="Direct link to on" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onevent-fn-context">&lt;instance&gt; on(event, fn, [context])<a href="#instance-onevent-fn-context" class="hash-link" aria-label="Direct link to &lt;instance&gt; on(event, fn, [context])" title="Direct link to &lt;instance&gt; on(event, fn, [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add a listener for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td></td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>No</td><td></td><td>The listener function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>&quot;this&quot;</td><td>The context to invoke the listener with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#on">Phaser.Events.EventEmitter#on</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L98" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L98</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onblur">onBlur<a href="#onblur" class="hash-link" aria-label="Direct link to onBlur" title="Direct link to onBlur" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onblur">&lt;instance&gt; onBlur()<a href="#instance-onblur" class="hash-link" aria-label="Direct link to &lt;instance&gt; onBlur()" title="Direct link to &lt;instance&gt; onBlur()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Method used internally for pausing sound manager if
+Phaser.Sound.WebAudioSoundManager#pauseOnBlur is set to true.</p>
+<p><strong>Access:</strong> protected</p>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#onBlur</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L346" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L346</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="once">once<a href="#once" class="hash-link" aria-label="Direct link to once" title="Direct link to once" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onceevent-fn-context">&lt;instance&gt; once(event, fn, [context])<a href="#instance-onceevent-fn-context" class="hash-link" aria-label="Direct link to &lt;instance&gt; once(event, fn, [context])" title="Direct link to &lt;instance&gt; once(event, fn, [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add a one-time listener for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td></td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>No</td><td></td><td>The listener function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>&quot;this&quot;</td><td>The context to invoke the listener with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#once">Phaser.Events.EventEmitter#once</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L124" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L124</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onfocus">onFocus<a href="#onfocus" class="hash-link" aria-label="Direct link to onFocus" title="Direct link to onFocus" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onfocus">&lt;instance&gt; onFocus()<a href="#instance-onfocus" class="hash-link" aria-label="Direct link to &lt;instance&gt; onFocus()" title="Direct link to &lt;instance&gt; onFocus()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Method used internally for resuming sound manager if
+Phaser.Sound.WebAudioSoundManager#pauseOnBlur is set to true.</p>
+<p><strong>Access:</strong> protected</p>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#onFocus</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L362" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L362</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pauseall">pauseAll<a href="#pauseall" class="hash-link" aria-label="Direct link to pauseAll" title="Direct link to pauseAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-pauseall">&lt;instance&gt; pauseAll()<a href="#instance-pauseall" class="hash-link" aria-label="Direct link to &lt;instance&gt; pauseAll()" title="Direct link to &lt;instance&gt; pauseAll()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Pauses all the sounds in the game.</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#PAUSE_ALL">Phaser.Sound.Events#event:PAUSE_ALL</a></p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#pauseAll">Phaser.Sound.BaseSoundManager#pauseAll</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L446" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L446</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="play">play<a href="#play" class="hash-link" aria-label="Direct link to play" title="Direct link to play" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-playkey-extra">&lt;instance&gt; play(key, [extra])<a href="#instance-playkey-extra" class="hash-link" aria-label="Direct link to &lt;instance&gt; play(key, [extra])" title="Direct link to &lt;instance&gt; play(key, [extra])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a new sound to the sound manager and plays it.</p>
+<p>The sound will be automatically removed (destroyed) once playback ends.</p>
+<p>This lets you play a new sound on the fly without the need to keep a reference to it.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>Asset key for the sound.</td></tr><tr><td>extra</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-sound#SoundConfig">Phaser.Types.Sound.SoundConfig</a> | <a class="" href="/api-documentation/3.85.2/typedef/types-sound#SoundMarker">Phaser.Types.Sound.SoundMarker</a></td><td>Yes</td><td>An optional additional object containing settings to be applied to the sound. It could be either config or marker object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - Whether the sound started playing successfully.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#play">Phaser.Sound.BaseSoundManager#play</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L306" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L306</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="playaudiosprite">playAudioSprite<a href="#playaudiosprite" class="hash-link" aria-label="Direct link to playAudioSprite" title="Direct link to playAudioSprite" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-playaudiospritekey-spritename-config">&lt;instance&gt; playAudioSprite(key, spriteName, [config])<a href="#instance-playaudiospritekey-spritename-config" class="hash-link" aria-label="Direct link to &lt;instance&gt; playAudioSprite(key, spriteName, [config])" title="Direct link to &lt;instance&gt; playAudioSprite(key, spriteName, [config])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a new audio sprite sound to the sound manager and plays it.
+The sprite will be automatically removed (destroyed) once playback ends.
+This lets you play a new sound on the fly without the need to keep a reference to it.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>Asset key for the sound.</td></tr><tr><td>spriteName</td><td>string</td><td>No</td><td>The name of the sound sprite to play.</td></tr><tr><td>config</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-sound#SoundConfig">Phaser.Types.Sound.SoundConfig</a></td><td>Yes</td><td>An optional config object containing default sound settings.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - Whether the audio sprite sound started playing successfully.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#playAudioSprite">Phaser.Sound.BaseSoundManager#playAudioSprite</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L347" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L347</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove">remove<a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removesound">&lt;instance&gt; remove(sound)<a href="#instance-removesound" class="hash-link" aria-label="Direct link to &lt;instance&gt; remove(sound)" title="Direct link to &lt;instance&gt; remove(sound)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes a sound from the sound manager.
+The removed sound is destroyed before removal.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sound</td><td><a class="" href="/api-documentation/3.85.2/class/sound-basesound">Phaser.Sound.BaseSound</a></td><td>No</td><td>The sound object to remove.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - True if the sound was removed successfully, otherwise false.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#remove">Phaser.Sound.BaseSoundManager#remove</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L371" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L371</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removeall">removeAll<a href="#removeall" class="hash-link" aria-label="Direct link to removeAll" title="Direct link to removeAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removeall">&lt;instance&gt; removeAll()<a href="#instance-removeall" class="hash-link" aria-label="Direct link to &lt;instance&gt; removeAll()" title="Direct link to &lt;instance&gt; removeAll()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes all sounds from the manager, destroying the sounds.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#removeAll">Phaser.Sound.BaseSoundManager#removeAll</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L398" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L398</a><br>
+Since: 3.23.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removealllisteners">removeAllListeners<a href="#removealllisteners" class="hash-link" aria-label="Direct link to removeAllListeners" title="Direct link to removeAllListeners" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removealllistenersevent">&lt;instance&gt; removeAllListeners([event])<a href="#instance-removealllistenersevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; removeAllListeners([event])" title="Direct link to &lt;instance&gt; removeAllListeners([event])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Remove all listeners, or those of the specified event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>Yes</td><td>The event name.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#removeAllListeners">Phaser.Events.EventEmitter#removeAllListeners</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L165" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L165</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removebykey">removeByKey<a href="#removebykey" class="hash-link" aria-label="Direct link to removeByKey" title="Direct link to removeByKey" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removebykeykey">&lt;instance&gt; removeByKey(key)<a href="#instance-removebykeykey" class="hash-link" aria-label="Direct link to &lt;instance&gt; removeByKey(key)" title="Direct link to &lt;instance&gt; removeByKey(key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes all sounds from the sound manager that have an asset key matching the given value.
+The removed sounds are destroyed before removal.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>The key to match when removing sound objects.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The number of matching sound objects that were removed.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#removeByKey">Phaser.Sound.BaseSoundManager#removeByKey</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L414" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L414</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removelistener">removeListener<a href="#removelistener" class="hash-link" aria-label="Direct link to removeListener" title="Direct link to removeListener" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removelistenerevent-fn-context-once">&lt;instance&gt; removeListener(event, [fn], [context], [once])<a href="#instance-removelistenerevent-fn-context-once" class="hash-link" aria-label="Direct link to &lt;instance&gt; removeListener(event, [fn], [context], [once])" title="Direct link to &lt;instance&gt; removeListener(event, [fn], [context], [once])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Remove the listeners of a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>Yes</td><td>Only remove the listeners that match this function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>Only remove the listeners that have this context.</td></tr><tr><td>once</td><td>boolean</td><td>Yes</td><td>Only remove one-time listeners.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#removeListener">Phaser.Events.EventEmitter#removeListener</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L137" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L137</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resumeall">resumeAll<a href="#resumeall" class="hash-link" aria-label="Direct link to resumeAll" title="Direct link to resumeAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-resumeall">&lt;instance&gt; resumeAll()<a href="#instance-resumeall" class="hash-link" aria-label="Direct link to &lt;instance&gt; resumeAll()" title="Direct link to &lt;instance&gt; resumeAll()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Resumes all the sounds in the game.</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#RESUME_ALL">Phaser.Sound.Events#event:RESUME_ALL</a></p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#resumeAll">Phaser.Sound.BaseSoundManager#resumeAll</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L463" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L463</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setaudiocontext">setAudioContext<a href="#setaudiocontext" class="hash-link" aria-label="Direct link to setAudioContext" title="Direct link to setAudioContext" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setaudiocontextcontext">&lt;instance&gt; setAudioContext(context)<a href="#instance-setaudiocontextcontext" class="hash-link" aria-label="Direct link to &lt;instance&gt; setAudioContext(context)" title="Direct link to &lt;instance&gt; setAudioContext(context)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This method takes a new AudioContext reference and then sets
+this Sound Manager to use that context for all playback.</p>
+<p>As part of this call it also disconnects the master mute and volume
+nodes and then re-creates them on the new given context.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>context</td><td>AudioContext</td><td>No</td><td>Reference to an already created AudioContext instance.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - The WebAudioSoundManager instance.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L129" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L129</a><br>
+Since: 3.21.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setdetune">setDetune<a href="#setdetune" class="hash-link" aria-label="Direct link to setDetune" title="Direct link to setDetune" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setdetunevalue">&lt;instance&gt; setDetune(value)<a href="#instance-setdetunevalue" class="hash-link" aria-label="Direct link to &lt;instance&gt; setDetune(value)" title="Direct link to &lt;instance&gt; setDetune(value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the global detuning of all sounds in <a href="https://en.wikipedia.org/wiki/Cent_%28music%29" target="_blank" rel="noopener noreferrer" class="">cents</a>.
+The range of the value is -1200 to 1200, but we recommend setting it to <a href="https://en.wikipedia.org/wiki/50_Cent" target="_blank" rel="noopener noreferrer" class="">50</a>.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>The range of the value is -1200 to 1200, but we recommend setting it to <a href="https://en.wikipedia.org/wiki/50_Cent" target="_blank" rel="noopener noreferrer" class="">50</a>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - This Sound Manager.</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#GLOBAL_DETUNE">Phaser.Sound.Events#event:GLOBAL_DETUNE</a></p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#setDetune">Phaser.Sound.BaseSoundManager#setDetune</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L784" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L784</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setlistenerposition">setListenerPosition<a href="#setlistenerposition" class="hash-link" aria-label="Direct link to setListenerPosition" title="Direct link to setListenerPosition" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setlistenerpositionx-y">&lt;instance&gt; setListenerPosition([x], [y])<a href="#instance-setlistenerpositionx-y" class="hash-link" aria-label="Direct link to &lt;instance&gt; setListenerPosition([x], [y])" title="Direct link to &lt;instance&gt; setListenerPosition([x], [y])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the X and Y position of the Spatial Audio listener on this Web Audios context.</p>
+<p>If you call this method with no parameters it will default to the center-point of
+the game canvas. Depending on the type of game you&#x27;re making, you may need to call
+this method constantly to reset the listener position as the camera scrolls.</p>
+<p>Calling this method does nothing on HTML5Audio.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>Yes</td><td>The x position of the Spatial Audio listener.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>The y position of the Spatial Audio listener.</td></tr></tbody></table>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#setListenerPosition</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L274" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L274</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setmute">setMute<a href="#setmute" class="hash-link" aria-label="Direct link to setMute" title="Direct link to setMute" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setmutevalue">&lt;instance&gt; setMute(value)<a href="#instance-setmutevalue" class="hash-link" aria-label="Direct link to &lt;instance&gt; setMute(value)" title="Direct link to &lt;instance&gt; setMute(value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the muted state of all this Sound Manager.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>boolean</td><td>No</td><td><code>true</code> to mute all sounds, <code>false</code> to unmute them.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - This Sound Manager.</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#GLOBAL_MUTE">Phaser.Sound.Events#event:GLOBAL_MUTE</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L453" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L453</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setrate">setRate<a href="#setrate" class="hash-link" aria-label="Direct link to setRate" title="Direct link to setRate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setratevalue">&lt;instance&gt; setRate(value)<a href="#instance-setratevalue" class="hash-link" aria-label="Direct link to &lt;instance&gt; setRate(value)" title="Direct link to &lt;instance&gt; setRate(value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the global playback rate at which all the sounds will be played.</p>
+<p>For example, a value of 1.0 plays the audio at full speed, 0.5 plays the audio at half speed
+and 2.0 doubles the audios playback speed.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>Global playback rate at which all the sounds will be played.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - This Sound Manager.</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#GLOBAL_RATE">Phaser.Sound.Events#event:GLOBAL_RATE</a></p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#setRate">Phaser.Sound.BaseSoundManager#setRate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L732" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L732</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setvolume">setVolume<a href="#setvolume" class="hash-link" aria-label="Direct link to setVolume" title="Direct link to setVolume" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setvolumevalue">&lt;instance&gt; setVolume(value)<a href="#instance-setvolumevalue" class="hash-link" aria-label="Direct link to &lt;instance&gt; setVolume(value)" title="Direct link to &lt;instance&gt; setVolume(value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the volume of this Sound Manager.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>The global volume of this Sound Manager.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager">Phaser.Sound.WebAudioSoundManager</a> - This Sound Manager.</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#GLOBAL_VOLUME">Phaser.Sound.Events#event:GLOBAL_VOLUME</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L493" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L493</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shutdown">shutdown<a href="#shutdown" class="hash-link" aria-label="Direct link to shutdown" title="Direct link to shutdown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-shutdown">&lt;instance&gt; shutdown()<a href="#instance-shutdown" class="hash-link" aria-label="Direct link to &lt;instance&gt; shutdown()" title="Direct link to &lt;instance&gt; shutdown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes all listeners.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#shutdown">Phaser.Events.EventEmitter#shutdown</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L31" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L31</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stopall">stopAll<a href="#stopall" class="hash-link" aria-label="Direct link to stopAll" title="Direct link to stopAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-stopall">&lt;instance&gt; stopAll()<a href="#instance-stopall" class="hash-link" aria-label="Direct link to &lt;instance&gt; stopAll()" title="Direct link to &lt;instance&gt; stopAll()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Stops all the sounds in the game.</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#STOP_ALL">Phaser.Sound.Events#event:STOP_ALL</a></p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#stopAll">Phaser.Sound.BaseSoundManager#stopAll</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L497" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L497</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stopbykey">stopByKey<a href="#stopbykey" class="hash-link" aria-label="Direct link to stopByKey" title="Direct link to stopByKey" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-stopbykeykey">&lt;instance&gt; stopByKey(key)<a href="#instance-stopbykeykey" class="hash-link" aria-label="Direct link to &lt;instance&gt; stopByKey(key)" title="Direct link to &lt;instance&gt; stopByKey(key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Stops any sounds matching the given key.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>Sound asset key.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - - How many sounds were stopped.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#stopByKey">Phaser.Sound.BaseSoundManager#stopByKey</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L514" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L514</a><br>
+Since: 3.23.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="unlock">unlock<a href="#unlock" class="hash-link" aria-label="Direct link to unlock" title="Direct link to unlock" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-unlock">&lt;instance&gt; unlock()<a href="#instance-unlock" class="hash-link" aria-label="Direct link to &lt;instance&gt; unlock()" title="Direct link to &lt;instance&gt; unlock()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Unlocks Web Audio API on the initial input event.</p>
+<p>Read more about how this issue is handled here in <a href="https://medium.com/@pgoloskokovic/unlocking-web-audio-the-smarter-way-8858218c0e09" target="_blank" rel="noopener noreferrer" class="">this article</a>.</p>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#unlock</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L299" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L299</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="update">update<a href="#update" class="hash-link" aria-label="Direct link to update" title="Direct link to update" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-updatetime-delta">&lt;instance&gt; update(time, delta)<a href="#instance-updatetime-delta" class="hash-link" aria-label="Direct link to &lt;instance&gt; update(time, delta)" title="Direct link to &lt;instance&gt; update(time, delta)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Update method called on every game step.</p>
+<p>Removes destroyed sounds and updates every active sound in the game.</p>
+<p><strong>Access:</strong> protected</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>time</td><td>number</td><td>No</td><td>The current timestamp as generated by the Request Animation Frame or SetTimeout.</td></tr><tr><td>delta</td><td>number</td><td>No</td><td>The delta time elapsed since the last frame.</td></tr></tbody></table>
+<p><strong>Overrides:</strong> Phaser.Sound.BaseSoundManager#update</p>
+<p><strong>Fires:</strong> <a class="" href="/api-documentation/3.85.2/event/sound-events#UNLOCKED">Phaser.Sound.Events#event:UNLOCKED</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/webaudio/WebAudioSoundManager.js#L380" target="_blank" rel="noopener noreferrer" class="">src/sound/webaudio/WebAudioSoundManager.js#L380</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h1>Private Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="foreachactivesound">forEachActiveSound<a href="#foreachactivesound" class="hash-link" aria-label="Direct link to forEachActiveSound" title="Direct link to forEachActiveSound" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-foreachactivesoundcallback-scope">&lt;instance&gt; forEachActiveSound(callback, [scope])<a href="#instance-foreachactivesoundcallback-scope" class="hash-link" aria-label="Direct link to &lt;instance&gt; forEachActiveSound(callback, [scope])" title="Direct link to &lt;instance&gt; forEachActiveSound(callback, [scope])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Method used internally for iterating only over active sounds and skipping sounds that are marked for removal.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>callback</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-sound#EachActiveSoundCallback">Phaser.Types.Sound.EachActiveSoundCallback</a></td><td>No</td><td>Callback function. (manager: Phaser.Sound.BaseSoundManager, sound: Phaser.Sound.BaseSound, index: number, sounds: Phaser.Manager.BaseSound[]) =&gt; void</td></tr><tr><td>scope</td><td>*</td><td>Yes</td><td>Callback context.</td></tr></tbody></table>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#forEachActiveSound">Phaser.Sound.BaseSoundManager#forEachActiveSound</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L709" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L709</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ongameblur">onGameBlur<a href="#ongameblur" class="hash-link" aria-label="Direct link to onGameBlur" title="Direct link to onGameBlur" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-ongameblur">&lt;instance&gt; onGameBlur()<a href="#instance-ongameblur" class="hash-link" aria-label="Direct link to &lt;instance&gt; onGameBlur()" title="Direct link to &lt;instance&gt; onGameBlur()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal handler for Phaser.Core.Events#BLUR.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#onGameBlur">Phaser.Sound.BaseSoundManager#onGameBlur</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L617" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L617</a><br>
+Since: 3.23.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ongamefocus">onGameFocus<a href="#ongamefocus" class="hash-link" aria-label="Direct link to onGameFocus" title="Direct link to onGameFocus" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-ongamefocus">&lt;instance&gt; onGameFocus()<a href="#instance-ongamefocus" class="hash-link" aria-label="Direct link to &lt;instance&gt; onGameFocus()" title="Direct link to &lt;instance&gt; onGameFocus()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal handler for Phaser.Core.Events#FOCUS.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/sound-basesoundmanager#onGameFocus">Phaser.Sound.BaseSoundManager#onGameFocus</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/sound/BaseSoundManager.js#L634" target="_blank" rel="noopener noreferrer" class="">src/sound/BaseSoundManager.js#L634</a><br>
+Since: 3.23.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/class/sound-webaudiosound"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">WebAudioSound</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/class/structs-list"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">List</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#context" class="table-of-contents__link toc-highlight">context</a><ul><li><a href="#context-audiocontext" class="table-of-contents__link toc-highlight">context: AudioContext</a></li></ul></li><li><a href="#destination" class="table-of-contents__link toc-highlight">destination</a><ul><li><a href="#destination-audionode" class="table-of-contents__link toc-highlight">destination: AudioNode</a></li></ul></li><li><a href="#detune" class="table-of-contents__link toc-highlight">detune</a><ul><li><a href="#detune-number" class="table-of-contents__link toc-highlight">detune: number</a></li></ul></li><li><a href="#game" class="table-of-contents__link toc-highlight">game</a><ul><li><a href="#game-phasergame" class="table-of-contents__link toc-highlight">game: Phaser.Game</a></li></ul></li><li><a href="#gamelostfocus" class="table-of-contents__link toc-highlight">gameLostFocus</a><ul><li><a href="#gamelostfocus-boolean" class="table-of-contents__link toc-highlight">gameLostFocus: boolean</a></li></ul></li><li><a href="#jsoncache" class="table-of-contents__link toc-highlight">jsonCache</a><ul><li><a href="#jsoncache-phasercachebasecache" class="table-of-contents__link toc-highlight">jsonCache: Phaser.Cache.BaseCache</a></li></ul></li><li><a href="#listenerposition" class="table-of-contents__link toc-highlight">listenerPosition</a><ul><li><a href="#listenerposition-phasermathvector2" class="table-of-contents__link toc-highlight">listenerPosition: Phaser.Math.Vector2</a></li></ul></li><li><a href="#locked" class="table-of-contents__link toc-highlight">locked</a><ul><li><a href="#locked-boolean" class="table-of-contents__link toc-highlight">locked: boolean</a></li></ul></li><li><a href="#mastermutenode" class="table-of-contents__link toc-highlight">masterMuteNode</a><ul><li><a href="#mastermutenode-gainnode" class="table-of-contents__link toc-highlight">masterMuteNode: GainNode</a></li></ul></li><li><a href="#mastervolumenode" class="table-of-contents__link toc-highlight">masterVolumeNode</a><ul><li><a href="#mastervolumenode-gainnode" class="table-of-contents__link toc-highlight">masterVolumeNode: GainNode</a></li></ul></li><li><a href="#mute" class="table-of-contents__link toc-highlight">mute</a><ul><li><a href="#mute-boolean" class="table-of-contents__link toc-highlight">mute: boolean</a></li></ul></li><li><a href="#pauseonblur" class="table-of-contents__link toc-highlight">pauseOnBlur</a><ul><li><a href="#pauseonblur-boolean" class="table-of-contents__link toc-highlight">pauseOnBlur: boolean</a></li></ul></li><li><a href="#rate" class="table-of-contents__link toc-highlight">rate</a><ul><li><a href="#rate-number" class="table-of-contents__link toc-highlight">rate: number</a></li></ul></li><li><a href="#volume" class="table-of-contents__link toc-highlight">volume</a><ul><li><a href="#volume-number" class="table-of-contents__link toc-highlight">volume: number</a></li></ul></li><li><a href="#_detune" class="table-of-contents__link toc-highlight">_detune</a><ul><li><a href="#_detune-number" class="table-of-contents__link toc-highlight">_detune: number</a></li></ul></li><li><a href="#_rate" class="table-of-contents__link toc-highlight">_rate</a><ul><li><a href="#_rate-number" class="table-of-contents__link toc-highlight">_rate: number</a></li></ul></li><li><a href="#sounds" class="table-of-contents__link toc-highlight">sounds</a><ul><li><a href="#sounds-arrayphasersoundbasesound" class="table-of-contents__link toc-highlight">sounds: Array.&lt;Phaser.Sound.BaseSound&gt;</a></li></ul></li><li><a href="#unlocked" class="table-of-contents__link toc-highlight">unlocked</a><ul><li><a href="#unlocked-boolean" class="table-of-contents__link toc-highlight">unlocked: boolean</a></li></ul></li><li><a href="#add" class="table-of-contents__link toc-highlight">add</a><ul><li><a href="#instance-addkey-config" class="table-of-contents__link toc-highlight">&lt;instance&gt; add(key, [config])</a></li></ul></li><li><a href="#addaudiosprite" class="table-of-contents__link toc-highlight">addAudioSprite</a><ul><li><a href="#instance-addaudiospritekey-config" class="table-of-contents__link toc-highlight">&lt;instance&gt; addAudioSprite(key, [config])</a></li></ul></li><li><a href="#addlistener" class="table-of-contents__link toc-highlight">addListener</a><ul><li><a href="#instance-addlistenerevent-fn-context" class="table-of-contents__link toc-highlight">&lt;instance&gt; addListener(event, fn, [context])</a></li></ul></li><li><a href="#createaudiocontext" class="table-of-contents__link toc-highlight">createAudioContext</a><ul><li><a href="#instance-createaudiocontextgame" class="table-of-contents__link toc-highlight">&lt;instance&gt; createAudioContext(game)</a></li></ul></li><li><a href="#decodeaudio" class="table-of-contents__link toc-highlight">decodeAudio</a><ul><li><a href="#instance-decodeaudioaudiokey-audiodata" class="table-of-contents__link toc-highlight">&lt;instance&gt; decodeAudio([audioKey], [audioData])</a></li></ul></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">destroy</a><ul><li><a href="#instance-destroy" class="table-of-contents__link toc-highlight">&lt;instance&gt; destroy()</a></li></ul></li><li><a href="#emit" class="table-of-contents__link toc-highlight">emit</a><ul><li><a href="#instance-emitevent-args" class="table-of-contents__link toc-highlight">&lt;instance&gt; emit(event, [args])</a></li></ul></li><li><a href="#eventnames" class="table-of-contents__link toc-highlight">eventNames</a><ul><li><a href="#instance-eventnames" class="table-of-contents__link toc-highlight">&lt;instance&gt; eventNames()</a></li></ul></li><li><a href="#get" class="table-of-contents__link toc-highlight">get</a><ul><li><a href="#instance-getkey" class="table-of-contents__link toc-highlight">&lt;instance&gt; get(key)</a></li></ul></li><li><a href="#getall" class="table-of-contents__link toc-highlight">getAll</a><ul><li><a href="#instance-getallkey" class="table-of-contents__link toc-highlight">&lt;instance&gt; getAll([key])</a></li></ul></li><li><a href="#getallplaying" class="table-of-contents__link toc-highlight">getAllPlaying</a><ul><li><a href="#instance-getallplaying" class="table-of-contents__link toc-highlight">&lt;instance&gt; getAllPlaying()</a></li></ul></li><li><a href="#isplaying" class="table-of-contents__link toc-highlight">isPlaying</a><ul><li><a href="#instance-isplayingkey" class="table-of-contents__link toc-highlight">&lt;instance&gt; isPlaying(key)</a></li></ul></li><li><a href="#listenercount" class="table-of-contents__link toc-highlight">listenerCount</a><ul><li><a href="#instance-listenercountevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; listenerCount(event)</a></li></ul></li><li><a href="#listeners" class="table-of-contents__link toc-highlight">listeners</a><ul><li><a href="#instance-listenersevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; listeners(event)</a></li></ul></li><li><a href="#off" class="table-of-contents__link toc-highlight">off</a><ul><li><a href="#instance-offevent-fn-context-once" class="table-of-contents__link toc-highlight">&lt;instance&gt; off(event, [fn], [context], [once])</a></li></ul></li><li><a href="#on" class="table-of-contents__link toc-highlight">on</a><ul><li><a href="#instance-onevent-fn-context" class="table-of-contents__link toc-highlight">&lt;instance&gt; on(event, fn, [context])</a></li></ul></li><li><a href="#onblur" class="table-of-contents__link toc-highlight">onBlur</a><ul><li><a href="#instance-onblur" class="table-of-contents__link toc-highlight">&lt;instance&gt; onBlur()</a></li></ul></li><li><a href="#once" class="table-of-contents__link toc-highlight">once</a><ul><li><a href="#instance-onceevent-fn-context" class="table-of-contents__link toc-highlight">&lt;instance&gt; once(event, fn, [context])</a></li></ul></li><li><a href="#onfocus" class="table-of-contents__link toc-highlight">onFocus</a><ul><li><a href="#instance-onfocus" class="table-of-contents__link toc-highlight">&lt;instance&gt; onFocus()</a></li></ul></li><li><a href="#pauseall" class="table-of-contents__link toc-highlight">pauseAll</a><ul><li><a href="#instance-pauseall" class="table-of-contents__link toc-highlight">&lt;instance&gt; pauseAll()</a></li></ul></li><li><a href="#play" class="table-of-contents__link toc-highlight">play</a><ul><li><a href="#instance-playkey-extra" class="table-of-contents__link toc-highlight">&lt;instance&gt; play(key, [extra])</a></li></ul></li><li><a href="#playaudiosprite" class="table-of-contents__link toc-highlight">playAudioSprite</a><ul><li><a href="#instance-playaudiospritekey-spritename-config" class="table-of-contents__link toc-highlight">&lt;instance&gt; playAudioSprite(key, spriteName, [config])</a></li></ul></li><li><a href="#remove" class="table-of-contents__link toc-highlight">remove</a><ul><li><a href="#instance-removesound" class="table-of-contents__link toc-highlight">&lt;instance&gt; remove(sound)</a></li></ul></li><li><a href="#removeall" class="table-of-contents__link toc-highlight">removeAll</a><ul><li><a href="#instance-removeall" class="table-of-contents__link toc-highlight">&lt;instance&gt; removeAll()</a></li></ul></li><li><a href="#removealllisteners" class="table-of-contents__link toc-highlight">removeAllListeners</a><ul><li><a href="#instance-removealllistenersevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; removeAllListeners([event])</a></li></ul></li><li><a href="#removebykey" class="table-of-contents__link toc-highlight">removeByKey</a><ul><li><a href="#instance-removebykeykey" class="table-of-contents__link toc-highlight">&lt;instance&gt; removeByKey(key)</a></li></ul></li><li><a href="#removelistener" class="table-of-contents__link toc-highlight">removeListener</a><ul><li><a href="#instance-removelistenerevent-fn-context-once" class="table-of-contents__link toc-highlight">&lt;instance&gt; removeListener(event, [fn], [context], [once])</a></li></ul></li><li><a href="#resumeall" class="table-of-contents__link toc-highlight">resumeAll</a><ul><li><a href="#instance-resumeall" class="table-of-contents__link toc-highlight">&lt;instance&gt; resumeAll()</a></li></ul></li><li><a href="#setaudiocontext" class="table-of-contents__link toc-highlight">setAudioContext</a><ul><li><a href="#instance-setaudiocontextcontext" class="table-of-contents__link toc-highlight">&lt;instance&gt; setAudioContext(context)</a></li></ul></li><li><a href="#setdetune" class="table-of-contents__link toc-highlight">setDetune</a><ul><li><a href="#instance-setdetunevalue" class="table-of-contents__link toc-highlight">&lt;instance&gt; setDetune(value)</a></li></ul></li><li><a href="#setlistenerposition" class="table-of-contents__link toc-highlight">setListenerPosition</a><ul><li><a href="#instance-setlistenerpositionx-y" class="table-of-contents__link toc-highlight">&lt;instance&gt; setListenerPosition([x], [y])</a></li></ul></li><li><a href="#setmute" class="table-of-contents__link toc-highlight">setMute</a><ul><li><a href="#instance-setmutevalue" class="table-of-contents__link toc-highlight">&lt;instance&gt; setMute(value)</a></li></ul></li><li><a href="#setrate" class="table-of-contents__link toc-highlight">setRate</a><ul><li><a href="#instance-setratevalue" class="table-of-contents__link toc-highlight">&lt;instance&gt; setRate(value)</a></li></ul></li><li><a href="#setvolume" class="table-of-contents__link toc-highlight">setVolume</a><ul><li><a href="#instance-setvolumevalue" class="table-of-contents__link toc-highlight">&lt;instance&gt; setVolume(value)</a></li></ul></li><li><a href="#shutdown" class="table-of-contents__link toc-highlight">shutdown</a><ul><li><a href="#instance-shutdown" class="table-of-contents__link toc-highlight">&lt;instance&gt; shutdown()</a></li></ul></li><li><a href="#stopall" class="table-of-contents__link toc-highlight">stopAll</a><ul><li><a href="#instance-stopall" class="table-of-contents__link toc-highlight">&lt;instance&gt; stopAll()</a></li></ul></li><li><a href="#stopbykey" class="table-of-contents__link toc-highlight">stopByKey</a><ul><li><a href="#instance-stopbykeykey" class="table-of-contents__link toc-highlight">&lt;instance&gt; stopByKey(key)</a></li></ul></li><li><a href="#unlock" class="table-of-contents__link toc-highlight">unlock</a><ul><li><a href="#instance-unlock" class="table-of-contents__link toc-highlight">&lt;instance&gt; unlock()</a></li></ul></li><li><a href="#update" class="table-of-contents__link toc-highlight">update</a><ul><li><a href="#instance-updatetime-delta" class="table-of-contents__link toc-highlight">&lt;instance&gt; update(time, delta)</a></li></ul></li><li><a href="#foreachactivesound" class="table-of-contents__link toc-highlight">forEachActiveSound</a><ul><li><a href="#instance-foreachactivesoundcallback-scope" class="table-of-contents__link toc-highlight">&lt;instance&gt; forEachActiveSound(callback, [scope])</a></li></ul></li><li><a href="#ongameblur" class="table-of-contents__link toc-highlight">onGameBlur</a><ul><li><a href="#instance-ongameblur" class="table-of-contents__link toc-highlight">&lt;instance&gt; onGameBlur()</a></li></ul></li><li><a href="#ongamefocus" class="table-of-contents__link toc-highlight">onGameFocus</a><ul><li><a href="#instance-ongamefocus" class="table-of-contents__link toc-highlight">&lt;instance&gt; onGameFocus()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

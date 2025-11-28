@@ -1,0 +1,1787 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.86.0 docs-doc-page docs-doc-id-class/Phaser.Geom.Mesh.Vertex" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Vertex | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.86.0/class/geom-mesh-vertex"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.86.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" name="docsearch:version" content="3.86.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" property="og:title" content="Vertex | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Geom.Mesh.Vertex"><meta data-rh="true" property="og:description" content="Phaser.Geom.Mesh.Vertex"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.86.0/class/geom-mesh-vertex"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/class/geom-mesh-vertex" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/class/geom-mesh-vertex" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Class","item":"https://docs.phaser.io/api-documentation/3.86.0/class/"},{"@type":"ListItem","position":2,"name":"Vertex","item":"https://docs.phaser.io/api-documentation/3.86.0/class/geom-mesh-vertex"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.86.0/class/geom-mesh-vertex">API Documentation - v3.86.0</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/class/geom-mesh-vertex">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/class/geom-mesh-vertex">API Documentation - v3.85.2</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.86.0/class/geom-mesh-vertex">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser 3.86.0 API Documentation" class="linkLabel_WmDU">Phaser 3.86.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.86.0/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Collapse sidebar category &#x27;Class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/class"><span title="Class" class="linkLabel_WmDU">Class</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/animations-animation"><span title="Animation" class="linkLabel_WmDU">Animation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/animations-animationframe"><span title="AnimationFrame" class="linkLabel_WmDU">AnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/animations-animationmanager"><span title="AnimationManager" class="linkLabel_WmDU">AnimationManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/animations-animationstate"><span title="AnimationState" class="linkLabel_WmDU">AnimationState</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cache-basecache"><span title="BaseCache" class="linkLabel_WmDU">BaseCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cache-cachemanager"><span title="CacheManager" class="linkLabel_WmDU">CacheManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-controls-fixedkeycontrol"><span title="FixedKeyControl" class="linkLabel_WmDU">FixedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-controls-smoothedkeycontrol"><span title="SmoothedKeyControl" class="linkLabel_WmDU">SmoothedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-basecamera"><span title="BaseCamera" class="linkLabel_WmDU">BaseCamera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-camera"><span title="Camera" class="linkLabel_WmDU">Camera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-cameramanager"><span title="CameraManager" class="linkLabel_WmDU">CameraManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-effects-fade"><span title="Fade" class="linkLabel_WmDU">Fade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-effects-flash"><span title="Flash" class="linkLabel_WmDU">Flash</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-effects-pan"><span title="Pan" class="linkLabel_WmDU">Pan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-effects-rotateto"><span title="RotateTo" class="linkLabel_WmDU">RotateTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-effects-shake"><span title="Shake" class="linkLabel_WmDU">Shake</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/cameras-scene2d-effects-zoom"><span title="Zoom" class="linkLabel_WmDU">Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/core-config"><span title="Config" class="linkLabel_WmDU">Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/core-timestep"><span title="TimeStep" class="linkLabel_WmDU">TimeStep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-cubicbezier"><span title="CubicBezier" class="linkLabel_WmDU">CubicBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-moveto"><span title="MoveTo" class="linkLabel_WmDU">MoveTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-path"><span title="Path" class="linkLabel_WmDU">Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-quadraticbezier"><span title="QuadraticBezier" class="linkLabel_WmDU">QuadraticBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/curves-spline"><span title="Spline" class="linkLabel_WmDU">Spline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/dom-requestanimationframe"><span title="RequestAnimationFrame" class="linkLabel_WmDU">RequestAnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/data-datamanager"><span title="DataManager" class="linkLabel_WmDU">DataManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/data-datamanagerplugin"><span title="DataManagerPlugin" class="linkLabel_WmDU">DataManagerPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/display-baseshader"><span title="BaseShader" class="linkLabel_WmDU">BaseShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/display-color"><span title="Color" class="linkLabel_WmDU">Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/display-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/display-masks-bitmapmask"><span title="BitmapMask" class="linkLabel_WmDU">BitmapMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/display-masks-geometrymask"><span title="GeometryMask" class="linkLabel_WmDU">GeometryMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/display-rgb"><span title="RGB" class="linkLabel_WmDU">RGB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/events-eventemitter"><span title="EventEmitter" class="linkLabel_WmDU">EventEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-barrel"><span title="Barrel" class="linkLabel_WmDU">Barrel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-bloom"><span title="Bloom" class="linkLabel_WmDU">Bloom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-blur"><span title="Blur" class="linkLabel_WmDU">Blur</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-bokeh"><span title="Bokeh" class="linkLabel_WmDU">Bokeh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-controller"><span title="Controller" class="linkLabel_WmDU">Controller</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-displacement"><span title="Displacement" class="linkLabel_WmDU">Displacement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-glow"><span title="Glow" class="linkLabel_WmDU">Glow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-gradient"><span title="Gradient" class="linkLabel_WmDU">Gradient</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-pixelate"><span title="Pixelate" class="linkLabel_WmDU">Pixelate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-shadow"><span title="Shadow" class="linkLabel_WmDU">Shadow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-shine"><span title="Shine" class="linkLabel_WmDU">Shine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-vignette"><span title="Vignette" class="linkLabel_WmDU">Vignette</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/fx-wipe"><span title="Wipe" class="linkLabel_WmDU">Wipe</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/facebookinstantgamesleaderboard"><span title="FacebookInstantGamesLeaderboard" class="linkLabel_WmDU">FacebookInstantGamesLeaderboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/facebookinstantgamesplugin"><span title="FacebookInstantGamesPlugin" class="linkLabel_WmDU">FacebookInstantGamesPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/game"><span title="Game" class="linkLabel_WmDU">Game</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-arc"><span title="Arc" class="linkLabel_WmDU">Arc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-bitmaptext"><span title="BitmapText" class="linkLabel_WmDU">BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-blitter"><span title="Blitter" class="linkLabel_WmDU">Blitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-bob"><span title="Bob" class="linkLabel_WmDU">Bob</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-components-fx"><span title="FX" class="linkLabel_WmDU">FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-components-transformmatrix"><span title="TransformMatrix" class="linkLabel_WmDU">TransformMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-container"><span title="Container" class="linkLabel_WmDU">Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-domelement"><span title="DOMElement" class="linkLabel_WmDU">DOMElement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-displaylist"><span title="DisplayList" class="linkLabel_WmDU">DisplayList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-dynamicbitmaptext"><span title="DynamicBitmapText" class="linkLabel_WmDU">DynamicBitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-extern"><span title="Extern" class="linkLabel_WmDU">Extern</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-gameobject"><span title="GameObject" class="linkLabel_WmDU">GameObject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-gameobjectcreator"><span title="GameObjectCreator" class="linkLabel_WmDU">GameObjectCreator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-gameobjectfactory"><span title="GameObjectFactory" class="linkLabel_WmDU">GameObjectFactory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-graphics"><span title="Graphics" class="linkLabel_WmDU">Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-grid"><span title="Grid" class="linkLabel_WmDU">Grid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-isobox"><span title="IsoBox" class="linkLabel_WmDU">IsoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-isotriangle"><span title="IsoTriangle" class="linkLabel_WmDU">IsoTriangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-layer"><span title="Layer" class="linkLabel_WmDU">Layer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-light"><span title="Light" class="linkLabel_WmDU">Light</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-lightsmanager"><span title="LightsManager" class="linkLabel_WmDU">LightsManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-lightsplugin"><span title="LightsPlugin" class="linkLabel_WmDU">LightsPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-mesh"><span title="Mesh" class="linkLabel_WmDU">Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-nineslice"><span title="NineSlice" class="linkLabel_WmDU">NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-emittercolorop"><span title="EmitterColorOp" class="linkLabel_WmDU">EmitterColorOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-emitterop"><span title="EmitterOp" class="linkLabel_WmDU">EmitterOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-gravitywell"><span title="GravityWell" class="linkLabel_WmDU">GravityWell</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-particle"><span title="Particle" class="linkLabel_WmDU">Particle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-particlebounds"><span title="ParticleBounds" class="linkLabel_WmDU">ParticleBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-particleemitter"><span title="ParticleEmitter" class="linkLabel_WmDU">ParticleEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-particleprocessor"><span title="ParticleProcessor" class="linkLabel_WmDU">ParticleProcessor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-zones-deathzone"><span title="DeathZone" class="linkLabel_WmDU">DeathZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-zones-edgezone"><span title="EdgeZone" class="linkLabel_WmDU">EdgeZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-particles-zones-randomzone"><span title="RandomZone" class="linkLabel_WmDU">RandomZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-pathfollower"><span title="PathFollower" class="linkLabel_WmDU">PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-plane"><span title="Plane" class="linkLabel_WmDU">Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-pointlight"><span title="PointLight" class="linkLabel_WmDU">PointLight</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-rendertexture"><span title="RenderTexture" class="linkLabel_WmDU">RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-rope"><span title="Rope" class="linkLabel_WmDU">Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-shader"><span title="Shader" class="linkLabel_WmDU">Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-shape"><span title="Shape" class="linkLabel_WmDU">Shape</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-star"><span title="Star" class="linkLabel_WmDU">Star</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-text"><span title="Text" class="linkLabel_WmDU">Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-textstyle"><span title="TextStyle" class="linkLabel_WmDU">TextStyle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-tilesprite"><span title="TileSprite" class="linkLabel_WmDU">TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-updatelist"><span title="UpdateList" class="linkLabel_WmDU">UpdateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-video"><span title="Video" class="linkLabel_WmDU">Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/gameobjects-zone"><span title="Zone" class="linkLabel_WmDU">Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-mesh-face"><span title="Face" class="linkLabel_WmDU">Face</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.86.0/class/geom-mesh-vertex"><span title="Vertex" class="linkLabel_WmDU">Vertex</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-point"><span title="Point" class="linkLabel_WmDU">Point</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/geom-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-gamepad-axis"><span title="Axis" class="linkLabel_WmDU">Axis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-gamepad-button"><span title="Button" class="linkLabel_WmDU">Button</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-gamepad-gamepad"><span title="Gamepad" class="linkLabel_WmDU">Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-gamepad-gamepadplugin"><span title="GamepadPlugin" class="linkLabel_WmDU">GamepadPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-inputmanager"><span title="InputManager" class="linkLabel_WmDU">InputManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-inputplugin"><span title="InputPlugin" class="linkLabel_WmDU">InputPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-keyboard-key"><span title="Key" class="linkLabel_WmDU">Key</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-keyboard-keycombo"><span title="KeyCombo" class="linkLabel_WmDU">KeyCombo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-keyboard-keyboardmanager"><span title="KeyboardManager" class="linkLabel_WmDU">KeyboardManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-keyboard-keyboardplugin"><span title="KeyboardPlugin" class="linkLabel_WmDU">KeyboardPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-mouse-mousemanager"><span title="MouseManager" class="linkLabel_WmDU">MouseManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-pointer"><span title="Pointer" class="linkLabel_WmDU">Pointer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/input-touch-touchmanager"><span title="TouchManager" class="linkLabel_WmDU">TouchManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-file"><span title="File" class="linkLabel_WmDU">File</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-animationjsonfile"><span title="AnimationJSONFile" class="linkLabel_WmDU">AnimationJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-asepritefile"><span title="AsepriteFile" class="linkLabel_WmDU">AsepriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-atlasjsonfile"><span title="AtlasJSONFile" class="linkLabel_WmDU">AtlasJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-atlasxmlfile"><span title="AtlasXMLFile" class="linkLabel_WmDU">AtlasXMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-audiofile"><span title="AudioFile" class="linkLabel_WmDU">AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-audiospritefile"><span title="AudioSpriteFile" class="linkLabel_WmDU">AudioSpriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-binaryfile"><span title="BinaryFile" class="linkLabel_WmDU">BinaryFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-bitmapfontfile"><span title="BitmapFontFile" class="linkLabel_WmDU">BitmapFontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-cssfile"><span title="CSSFile" class="linkLabel_WmDU">CSSFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-compressedtexturefile"><span title="CompressedTextureFile" class="linkLabel_WmDU">CompressedTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-glslfile"><span title="GLSLFile" class="linkLabel_WmDU">GLSLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-html5audiofile"><span title="HTML5AudioFile" class="linkLabel_WmDU">HTML5AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-htmlfile"><span title="HTMLFile" class="linkLabel_WmDU">HTMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-htmltexturefile"><span title="HTMLTextureFile" class="linkLabel_WmDU">HTMLTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-imagefile"><span title="ImageFile" class="linkLabel_WmDU">ImageFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-jsonfile"><span title="JSONFile" class="linkLabel_WmDU">JSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-multiatlasfile"><span title="MultiAtlasFile" class="linkLabel_WmDU">MultiAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-multiscriptfile"><span title="MultiScriptFile" class="linkLabel_WmDU">MultiScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-objfile"><span title="OBJFile" class="linkLabel_WmDU">OBJFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-packfile"><span title="PackFile" class="linkLabel_WmDU">PackFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-pluginfile"><span title="PluginFile" class="linkLabel_WmDU">PluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-svgfile"><span title="SVGFile" class="linkLabel_WmDU">SVGFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-scenefile"><span title="SceneFile" class="linkLabel_WmDU">SceneFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-scenepluginfile"><span title="ScenePluginFile" class="linkLabel_WmDU">ScenePluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-scriptfile"><span title="ScriptFile" class="linkLabel_WmDU">ScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-spritesheetfile"><span title="SpriteSheetFile" class="linkLabel_WmDU">SpriteSheetFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-textfile"><span title="TextFile" class="linkLabel_WmDU">TextFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-tilemapcsvfile"><span title="TilemapCSVFile" class="linkLabel_WmDU">TilemapCSVFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-tilemapimpactfile"><span title="TilemapImpactFile" class="linkLabel_WmDU">TilemapImpactFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-tilemapjsonfile"><span title="TilemapJSONFile" class="linkLabel_WmDU">TilemapJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-unityatlasfile"><span title="UnityAtlasFile" class="linkLabel_WmDU">UnityAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-videofile"><span title="VideoFile" class="linkLabel_WmDU">VideoFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-filetypes-xmlfile"><span title="XMLFile" class="linkLabel_WmDU">XMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-loaderplugin"><span title="LoaderPlugin" class="linkLabel_WmDU">LoaderPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/loader-multifile"><span title="MultiFile" class="linkLabel_WmDU">MultiFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-euler"><span title="Euler" class="linkLabel_WmDU">Euler</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-matrix3"><span title="Matrix3" class="linkLabel_WmDU">Matrix3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-matrix4"><span title="Matrix4" class="linkLabel_WmDU">Matrix4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-quaternion"><span title="Quaternion" class="linkLabel_WmDU">Quaternion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-randomdatagenerator"><span title="RandomDataGenerator" class="linkLabel_WmDU">RandomDataGenerator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-vector2"><span title="Vector2" class="linkLabel_WmDU">Vector2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-vector3"><span title="Vector3" class="linkLabel_WmDU">Vector3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/math-vector4"><span title="Vector4" class="linkLabel_WmDU">Vector4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-arcadephysics"><span title="ArcadePhysics" class="linkLabel_WmDU">ArcadePhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-body"><span title="Body" class="linkLabel_WmDU">Body</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-collider"><span title="Collider" class="linkLabel_WmDU">Collider</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-staticbody"><span title="StaticBody" class="linkLabel_WmDU">StaticBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-staticgroup"><span title="StaticGroup" class="linkLabel_WmDU">StaticGroup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-arcade-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-bodybounds"><span title="BodyBounds" class="linkLabel_WmDU">BodyBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-matterphysics"><span title="MatterPhysics" class="linkLabel_WmDU">MatterPhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-pointerconstraint"><span title="PointerConstraint" class="linkLabel_WmDU">PointerConstraint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-tilebody"><span title="TileBody" class="linkLabel_WmDU">TileBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/physics-matter-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/plugins-baseplugin"><span title="BasePlugin" class="linkLabel_WmDU">BasePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/plugins-pluginmanager"><span title="PluginManager" class="linkLabel_WmDU">PluginManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/plugins-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-canvas-canvasrenderer"><span title="CanvasRenderer" class="linkLabel_WmDU">CanvasRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelinemanager"><span title="PipelineManager" class="linkLabel_WmDU">PipelineManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-bitmapmaskpipeline"><span title="BitmapMaskPipeline" class="linkLabel_WmDU">BitmapMaskPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-barrelfxpipeline"><span title="BarrelFXPipeline" class="linkLabel_WmDU">BarrelFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-bloomfxpipeline"><span title="BloomFXPipeline" class="linkLabel_WmDU">BloomFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-blurfxpipeline"><span title="BlurFXPipeline" class="linkLabel_WmDU">BlurFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-bokehfxpipeline"><span title="BokehFXPipeline" class="linkLabel_WmDU">BokehFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-circlefxpipeline"><span title="CircleFXPipeline" class="linkLabel_WmDU">CircleFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-colormatrixfxpipeline"><span title="ColorMatrixFXPipeline" class="linkLabel_WmDU">ColorMatrixFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-displacementfxpipeline"><span title="DisplacementFXPipeline" class="linkLabel_WmDU">DisplacementFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-glowfxpipeline"><span title="GlowFXPipeline" class="linkLabel_WmDU">GlowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-gradientfxpipeline"><span title="GradientFXPipeline" class="linkLabel_WmDU">GradientFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-pixelatefxpipeline"><span title="PixelateFXPipeline" class="linkLabel_WmDU">PixelateFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-shadowfxpipeline"><span title="ShadowFXPipeline" class="linkLabel_WmDU">ShadowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-shinefxpipeline"><span title="ShineFXPipeline" class="linkLabel_WmDU">ShineFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-vignettefxpipeline"><span title="VignetteFXPipeline" class="linkLabel_WmDU">VignetteFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fx-wipefxpipeline"><span title="WipeFXPipeline" class="linkLabel_WmDU">WipeFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-fxpipeline"><span title="FXPipeline" class="linkLabel_WmDU">FXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-lightpipeline"><span title="LightPipeline" class="linkLabel_WmDU">LightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-mobilepipeline"><span title="MobilePipeline" class="linkLabel_WmDU">MobilePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-multipipeline"><span title="MultiPipeline" class="linkLabel_WmDU">MultiPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-pointlightpipeline"><span title="PointLightPipeline" class="linkLabel_WmDU">PointLightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-postfxpipeline"><span title="PostFXPipeline" class="linkLabel_WmDU">PostFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-prefxpipeline"><span title="PreFXPipeline" class="linkLabel_WmDU">PreFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-ropepipeline"><span title="RopePipeline" class="linkLabel_WmDU">RopePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-singlepipeline"><span title="SinglePipeline" class="linkLabel_WmDU">SinglePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-pipelines-utilitypipeline"><span title="UtilityPipeline" class="linkLabel_WmDU">UtilityPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-rendertarget"><span title="RenderTarget" class="linkLabel_WmDU">RenderTarget</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-webglpipeline"><span title="WebGLPipeline" class="linkLabel_WmDU">WebGLPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-webglrenderer"><span title="WebGLRenderer" class="linkLabel_WmDU">WebGLRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-webglshader"><span title="WebGLShader" class="linkLabel_WmDU">WebGLShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-wrappers-webglattriblocationwrapper"><span title="WebGLAttribLocationWrapper" class="linkLabel_WmDU">WebGLAttribLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-wrappers-webglbufferwrapper"><span title="WebGLBufferWrapper" class="linkLabel_WmDU">WebGLBufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-wrappers-webglframebufferwrapper"><span title="WebGLFramebufferWrapper" class="linkLabel_WmDU">WebGLFramebufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-wrappers-webglprogramwrapper"><span title="WebGLProgramWrapper" class="linkLabel_WmDU">WebGLProgramWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-wrappers-webgltexturewrapper"><span title="WebGLTextureWrapper" class="linkLabel_WmDU">WebGLTextureWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/renderer-webgl-wrappers-webgluniformlocationwrapper"><span title="WebGLUniformLocationWrapper" class="linkLabel_WmDU">WebGLUniformLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/scale-scalemanager"><span title="ScaleManager" class="linkLabel_WmDU">ScaleManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/scene"><span title="Scene" class="linkLabel_WmDU">Scene</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/scenes-scenemanager"><span title="SceneManager" class="linkLabel_WmDU">SceneManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/scenes-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/scenes-systems"><span title="Systems" class="linkLabel_WmDU">Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-basesound"><span title="BaseSound" class="linkLabel_WmDU">BaseSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-basesoundmanager"><span title="BaseSoundManager" class="linkLabel_WmDU">BaseSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-html5audiosound"><span title="HTML5AudioSound" class="linkLabel_WmDU">HTML5AudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-html5audiosoundmanager"><span title="HTML5AudioSoundManager" class="linkLabel_WmDU">HTML5AudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-noaudiosound"><span title="NoAudioSound" class="linkLabel_WmDU">NoAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-noaudiosoundmanager"><span title="NoAudioSoundManager" class="linkLabel_WmDU">NoAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-webaudiosound"><span title="WebAudioSound" class="linkLabel_WmDU">WebAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/sound-webaudiosoundmanager"><span title="WebAudioSoundManager" class="linkLabel_WmDU">WebAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/structs-list"><span title="List" class="linkLabel_WmDU">List</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/structs-map"><span title="Map" class="linkLabel_WmDU">Map</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/structs-processqueue"><span title="ProcessQueue" class="linkLabel_WmDU">ProcessQueue</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/structs-rtree"><span title="RTree" class="linkLabel_WmDU">RTree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/structs-set"><span title="Set" class="linkLabel_WmDU">Set</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/structs-size"><span title="Size" class="linkLabel_WmDU">Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/textures-canvastexture"><span title="CanvasTexture" class="linkLabel_WmDU">CanvasTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/textures-dynamictexture"><span title="DynamicTexture" class="linkLabel_WmDU">DynamicTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/textures-frame"><span title="Frame" class="linkLabel_WmDU">Frame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/textures-texture"><span title="Texture" class="linkLabel_WmDU">Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/textures-texturemanager"><span title="TextureManager" class="linkLabel_WmDU">TextureManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/textures-texturesource"><span title="TextureSource" class="linkLabel_WmDU">TextureSource</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-imagecollection"><span title="ImageCollection" class="linkLabel_WmDU">ImageCollection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-layerdata"><span title="LayerData" class="linkLabel_WmDU">LayerData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-mapdata"><span title="MapData" class="linkLabel_WmDU">MapData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-objecthelper"><span title="ObjectHelper" class="linkLabel_WmDU">ObjectHelper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-objectlayer"><span title="ObjectLayer" class="linkLabel_WmDU">ObjectLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-tile"><span title="Tile" class="linkLabel_WmDU">Tile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-tilemap"><span title="Tilemap" class="linkLabel_WmDU">Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-tilemaplayer"><span title="TilemapLayer" class="linkLabel_WmDU">TilemapLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tilemaps-tileset"><span title="Tileset" class="linkLabel_WmDU">Tileset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/time-clock"><span title="Clock" class="linkLabel_WmDU">Clock</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/time-timeline"><span title="Timeline" class="linkLabel_WmDU">Timeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/time-timerevent"><span title="TimerEvent" class="linkLabel_WmDU">TimerEvent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tweens-basetween"><span title="BaseTween" class="linkLabel_WmDU">BaseTween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tweens-basetweendata"><span title="BaseTweenData" class="linkLabel_WmDU">BaseTweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tweens-tween"><span title="Tween" class="linkLabel_WmDU">Tween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tweens-tweenchain"><span title="TweenChain" class="linkLabel_WmDU">TweenChain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tweens-tweendata"><span title="TweenData" class="linkLabel_WmDU">TweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tweens-tweenframedata"><span title="TweenFrameData" class="linkLabel_WmDU">TweenFrameData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/tweens-tweenmanager"><span title="TweenManager" class="linkLabel_WmDU">TweenManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/class/"><span title="Class" class="linkLabel_WmDU">Class</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.86.0</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/class/geom-mesh-vertex">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.86.0/class/"><span>Class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Vertex</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.86.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Vertex</h1></header><p>A Vertex Geometry Object.</p>
+<p>This class consists of all the information required for a single vertex within a Face Geometry Object.</p>
+<p>Faces, and thus Vertex objects, are used by the Mesh Game Object in order to render objects in WebGL.</p>
+<p><strong>Constructor</strong></p>
+<p><code>new Vertex(x, y, z, u, v, [color], [alpha], [nx], [ny], [nz])</code></p>
+<p><strong>Parameters</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td></td><td>The x position of the vertex.</td></tr><tr><td>y</td><td>number</td><td>No</td><td></td><td>The y position of the vertex.</td></tr><tr><td>z</td><td>number</td><td>No</td><td></td><td>The z position of the vertex.</td></tr><tr><td>u</td><td>number</td><td>No</td><td></td><td>The UV u coordinate of the vertex.</td></tr><tr><td>v</td><td>number</td><td>No</td><td></td><td>The UV v coordinate of the vertex.</td></tr><tr><td>color</td><td>number</td><td>Yes</td><td>&quot;0xffffff&quot;</td><td>The color value of the vertex.</td></tr><tr><td>alpha</td><td>number</td><td>Yes</td><td>1</td><td>The alpha value of the vertex.</td></tr><tr><td>nx</td><td>number</td><td>Yes</td><td>0</td><td>The x normal value of the vertex.</td></tr><tr><td>ny</td><td>number</td><td>Yes</td><td>0</td><td>The y normal value of the vertex.</td></tr><tr><td>nz</td><td>number</td><td>Yes</td><td>0</td><td>The z normal value of the vertex.</td></tr></tbody></table>
+<hr>
+<p><strong>Scope</strong>: static</p>
+<p><strong>Extends</strong></p>
+<blockquote>
+<p><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></p>
+</blockquote>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L11" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L11</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h1>Public Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="alpha">alpha<a href="#alpha" class="hash-link" aria-label="Direct link to alpha" title="Direct link to alpha" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="alpha-number">alpha: number<a href="#alpha-number" class="hash-link" aria-label="Direct link to alpha: number" title="Direct link to alpha: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The alpha value of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L133" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L133</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="color">color<a href="#color" class="hash-link" aria-label="Direct link to color" title="Direct link to color" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="color-number">color: number<a href="#color-number" class="hash-link" aria-label="Direct link to color: number" title="Direct link to color: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The color value of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L124" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L124</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="nx">nx<a href="#nx" class="hash-link" aria-label="Direct link to nx" title="Direct link to nx" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nx-number">nx: number<a href="#nx-number" class="hash-link" aria-label="Direct link to nx: number" title="Direct link to nx: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The normalized projected x coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L79" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L79</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ny">ny<a href="#ny" class="hash-link" aria-label="Direct link to ny" title="Direct link to ny" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ny-number">ny: number<a href="#ny-number" class="hash-link" aria-label="Direct link to ny: number" title="Direct link to ny: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The normalized projected y coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L88" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L88</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="nz">nz<a href="#nz" class="hash-link" aria-label="Direct link to nz" title="Direct link to nz" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nz-number">nz: number<a href="#nz-number" class="hash-link" aria-label="Direct link to nz: number" title="Direct link to nz: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The normalized projected z coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L97" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L97</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ta">ta<a href="#ta" class="hash-link" aria-label="Direct link to ta" title="Direct link to ta" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ta-number">ta: number<a href="#ta-number" class="hash-link" aria-label="Direct link to ta: number" title="Direct link to ta: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The translated alpha value of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L160" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L160</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tu">tu<a href="#tu" class="hash-link" aria-label="Direct link to tu" title="Direct link to tu" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tu-number">tu: number<a href="#tu-number" class="hash-link" aria-label="Direct link to tu: number" title="Direct link to tu: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The translated uv u coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L169" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L169</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tv">tv<a href="#tv" class="hash-link" aria-label="Direct link to tv" title="Direct link to tv" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tv-number">tv: number<a href="#tv-number" class="hash-link" aria-label="Direct link to tv: number" title="Direct link to tv: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The translated uv v coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L178" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L178</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tx">tx<a href="#tx" class="hash-link" aria-label="Direct link to tx" title="Direct link to tx" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tx-number">tx: number<a href="#tx-number" class="hash-link" aria-label="Direct link to tx: number" title="Direct link to tx: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The translated x coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L142" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L142</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ty">ty<a href="#ty" class="hash-link" aria-label="Direct link to ty" title="Direct link to ty" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ty-number">ty: number<a href="#ty-number" class="hash-link" aria-label="Direct link to ty: number" title="Direct link to ty: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The translated y coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L151" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L151</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="u">u<a href="#u" class="hash-link" aria-label="Direct link to u" title="Direct link to u" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="u-number">u: number<a href="#u-number" class="hash-link" aria-label="Direct link to u: number" title="Direct link to u: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>UV u coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L106" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L106</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="v">v<a href="#v" class="hash-link" aria-label="Direct link to v" title="Direct link to v" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="v-number">v: number<a href="#v-number" class="hash-link" aria-label="Direct link to v: number" title="Direct link to v: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>UV v coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L115" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L115</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vx">vx<a href="#vx" class="hash-link" aria-label="Direct link to vx" title="Direct link to vx" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vx-number">vx: number<a href="#vx-number" class="hash-link" aria-label="Direct link to vx: number" title="Direct link to vx: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The projected x coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L52" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L52</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vy">vy<a href="#vy" class="hash-link" aria-label="Direct link to vy" title="Direct link to vy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vy-number">vy: number<a href="#vy-number" class="hash-link" aria-label="Direct link to vy: number" title="Direct link to vy: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The projected y coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L61" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L61</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vz">vz<a href="#vz" class="hash-link" aria-label="Direct link to vz" title="Direct link to vz" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vz-number">vz: number<a href="#vz-number" class="hash-link" aria-label="Direct link to vz: number" title="Direct link to vz: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The projected z coordinate of this vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L70" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L70</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="x">x<a href="#x" class="hash-link" aria-label="Direct link to x" title="Direct link to x" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="x-number">x: number<a href="#x-number" class="hash-link" aria-label="Direct link to x: number" title="Direct link to x: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The x component of this Vector.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#x">Phaser.Math.Vector3#x</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L33" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L33</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="y">y<a href="#y" class="hash-link" aria-label="Direct link to y" title="Direct link to y" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="y-number">y: number<a href="#y-number" class="hash-link" aria-label="Direct link to y: number" title="Direct link to y: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The y component of this Vector.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#y">Phaser.Math.Vector3#y</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L43" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L43</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="z">z<a href="#z" class="hash-link" aria-label="Direct link to z" title="Direct link to z" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="z-number">z: number<a href="#z-number" class="hash-link" aria-label="Direct link to z: number" title="Direct link to z: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The z component of this Vector.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#z">Phaser.Math.Vector3#z</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L53" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L53</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h1>Public Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="add">add<a href="#add" class="hash-link" aria-label="Direct link to add" title="Direct link to add" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addv">&lt;instance&gt; add(v)<a href="#instance-addv" class="hash-link" aria-label="Direct link to &lt;instance&gt; add(v)" title="Direct link to &lt;instance&gt; add(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add a given Vector to this Vector. Addition is component-wise.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to add to this Vector.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#add">Phaser.Math.Vector3#add</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L337" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L337</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addscalar">addScalar<a href="#addscalar" class="hash-link" aria-label="Direct link to addScalar" title="Direct link to addScalar" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addscalars">&lt;instance&gt; addScalar(s)<a href="#instance-addscalars" class="hash-link" aria-label="Direct link to &lt;instance&gt; addScalar(s)" title="Direct link to &lt;instance&gt; addScalar(s)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add the given value to each component of this Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>s</td><td>number</td><td>No</td><td>The amount to add to this Vector.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#addScalar">Phaser.Math.Vector3#addScalar</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L356" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L356</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addscale">addScale<a href="#addscale" class="hash-link" aria-label="Direct link to addScale" title="Direct link to addScale" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addscalev-scale">&lt;instance&gt; addScale(v, scale)<a href="#instance-addscalev-scale" class="hash-link" aria-label="Direct link to &lt;instance&gt; addScale(v, scale)" title="Direct link to &lt;instance&gt; addScale(v, scale)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add and scale a given Vector to this Vector. Addition is component-wise.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to add to this Vector.</td></tr><tr><td>scale</td><td>number</td><td>No</td><td>The amount to scale <code>v</code> by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#addScale">Phaser.Math.Vector3#addScale</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L375" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L375</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addvectors">addVectors<a href="#addvectors" class="hash-link" aria-label="Direct link to addVectors" title="Direct link to addVectors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addvectorsa-b">&lt;instance&gt; addVectors(a, b)<a href="#instance-addvectorsa-b" class="hash-link" aria-label="Direct link to &lt;instance&gt; addVectors(a, b)" title="Direct link to &lt;instance&gt; addVectors(a, b)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds the two given Vector3s and sets the results into this Vector3.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>a</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The first Vector to add.</td></tr><tr><td>b</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The second Vector to add.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#addVectors">Phaser.Math.Vector3#addVectors</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L147" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L147</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="applymatrix3">applyMatrix3<a href="#applymatrix3" class="hash-link" aria-label="Direct link to applyMatrix3" title="Direct link to applyMatrix3" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-applymatrix3mat3">&lt;instance&gt; applyMatrix3(mat3)<a href="#instance-applymatrix3mat3" class="hash-link" aria-label="Direct link to &lt;instance&gt; applyMatrix3(mat3)" title="Direct link to &lt;instance&gt; applyMatrix3(mat3)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a Matrix3 and applies it to this Vector3.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat3</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix3">Phaser.Math.Matrix3</a></td><td>No</td><td>The Matrix3 to apply to this Vector3.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#applyMatrix3">Phaser.Math.Vector3#applyMatrix3</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L671" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L671</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="applymatrix4">applyMatrix4<a href="#applymatrix4" class="hash-link" aria-label="Direct link to applyMatrix4" title="Direct link to applyMatrix4" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-applymatrix4mat4">&lt;instance&gt; applyMatrix4(mat4)<a href="#instance-applymatrix4mat4" class="hash-link" aria-label="Direct link to &lt;instance&gt; applyMatrix4(mat4)" title="Direct link to &lt;instance&gt; applyMatrix4(mat4)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a Matrix4 and applies it to this Vector3.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat4</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>The Matrix4 to apply to this Vector3.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#applyMatrix4">Phaser.Math.Vector3#applyMatrix4</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L695" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L695</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="clone">clone<a href="#clone" class="hash-link" aria-label="Direct link to clone" title="Direct link to clone" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-clone">&lt;instance&gt; clone()<a href="#instance-clone" class="hash-link" aria-label="Direct link to &lt;instance&gt; clone()" title="Direct link to &lt;instance&gt; clone()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Make a clone of this Vector3.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - A new Vector3 object containing this Vectors values.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#clone">Phaser.Math.Vector3#clone</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L134" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L134</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="copy">copy<a href="#copy" class="hash-link" aria-label="Direct link to copy" title="Direct link to copy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-copysrc">&lt;instance&gt; copy(src)<a href="#instance-copysrc" class="hash-link" aria-label="Direct link to &lt;instance&gt; copy(src)" title="Direct link to &lt;instance&gt; copy(src)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Copy the components of a given Vector into this Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>src</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to copy the components from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#copy">Phaser.Math.Vector3#copy</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L231" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L231</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross">cross<a href="#cross" class="hash-link" aria-label="Direct link to cross" title="Direct link to cross" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-crossv">&lt;instance&gt; cross(v)<a href="#instance-crossv" class="hash-link" aria-label="Direct link to &lt;instance&gt; cross(v)" title="Direct link to &lt;instance&gt; cross(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculate the cross (vector) product of this Vector (which will be modified) and the given Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to cross product with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#cross">Phaser.Math.Vector3#cross</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L617" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L617</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="crossvectors">crossVectors<a href="#crossvectors" class="hash-link" aria-label="Direct link to crossVectors" title="Direct link to crossVectors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-crossvectorsa-b">&lt;instance&gt; crossVectors(a, b)<a href="#instance-crossvectorsa-b" class="hash-link" aria-label="Direct link to &lt;instance&gt; crossVectors(a, b)" title="Direct link to &lt;instance&gt; crossVectors(a, b)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculate the cross (vector) product of two given Vectors.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>a</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The first Vector to multiply.</td></tr><tr><td>b</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The second Vector to multiply.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#crossVectors">Phaser.Math.Vector3#crossVectors</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L187" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L187</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="distance">distance<a href="#distance" class="hash-link" aria-label="Direct link to distance" title="Direct link to distance" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-distancev">&lt;instance&gt; distance(v)<a href="#instance-distancev" class="hash-link" aria-label="Direct link to &lt;instance&gt; distance(v)" title="Direct link to &lt;instance&gt; distance(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculate the distance between this Vector and the given Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to calculate the distance to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The distance from this Vector to the given Vector.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#distance">Phaser.Math.Vector3#distance</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L501" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L501</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="distancesq">distanceSq<a href="#distancesq" class="hash-link" aria-label="Direct link to distanceSq" title="Direct link to distanceSq" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-distancesqv">&lt;instance&gt; distanceSq(v)<a href="#instance-distancesqv" class="hash-link" aria-label="Direct link to &lt;instance&gt; distanceSq(v)" title="Direct link to &lt;instance&gt; distanceSq(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculate the distance between this Vector and the given Vector, squared.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to calculate the distance to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The distance from this Vector to the given Vector, squared.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#distanceSq">Phaser.Math.Vector3#distanceSq</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L520" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L520</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="divide">divide<a href="#divide" class="hash-link" aria-label="Direct link to divide" title="Direct link to divide" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-dividev">&lt;instance&gt; divide(v)<a href="#instance-dividev" class="hash-link" aria-label="Direct link to &lt;instance&gt; divide(v)" title="Direct link to &lt;instance&gt; divide(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Perform a component-wise division between this Vector and the given Vector.</p>
+<p>Divides this Vector by the given Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to divide this Vector by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#divide">Phaser.Math.Vector3#divide</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L463" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L463</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dot">dot<a href="#dot" class="hash-link" aria-label="Direct link to dot" title="Direct link to dot" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-dotv">&lt;instance&gt; dot(v)<a href="#instance-dotv" class="hash-link" aria-label="Direct link to &lt;instance&gt; dot(v)" title="Direct link to &lt;instance&gt; dot(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculate the dot product of this Vector and the given Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector3 to dot product with this Vector3.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The dot product of this Vector and <code>v</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#dot">Phaser.Math.Vector3#dot</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L602" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L602</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="equals">equals<a href="#equals" class="hash-link" aria-label="Direct link to equals" title="Direct link to equals" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-equalsv">&lt;instance&gt; equals(v)<a href="#instance-equalsv" class="hash-link" aria-label="Direct link to &lt;instance&gt; equals(v)" title="Direct link to &lt;instance&gt; equals(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Check whether this Vector is equal to a given Vector.</p>
+<p>Performs a strict equality check against each Vector&#x27;s components.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector3 to compare against.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - True if the two vectors strictly match, otherwise false.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#equals">Phaser.Math.Vector3#equals</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L214" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L214</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fromarray">fromArray<a href="#fromarray" class="hash-link" aria-label="Direct link to fromArray" title="Direct link to fromArray" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-fromarrayarray-offset">&lt;instance&gt; fromArray(array, [offset])<a href="#instance-fromarrayarray-offset" class="hash-link" aria-label="Direct link to &lt;instance&gt; fromArray(array, [offset])" title="Direct link to &lt;instance&gt; fromArray(array, [offset])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the components of this Vector3 from the given array, based on the offset.</p>
+<p>Vector3.x = array[offset]</p>
+<p>Vector3.y = array[offset + 1]</p>
+<p>Vector3.z = array[offset + 2]</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;number&gt;</td><td>No</td><td></td><td>The array of values to get this Vector from.</td></tr><tr><td>offset</td><td>number</td><td>Yes</td><td>0</td><td>The offset index into the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#fromArray">Phaser.Math.Vector3#fromArray</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L311" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L311</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="length">length<a href="#length" class="hash-link" aria-label="Direct link to length" title="Direct link to length" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-length">&lt;instance&gt; length()<a href="#instance-length" class="hash-link" aria-label="Direct link to &lt;instance&gt; length()" title="Direct link to &lt;instance&gt; length()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculate the length (or magnitude) of this Vector.</p>
+<p><strong>Returns:</strong> number - The length of this Vector.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#length">Phaser.Math.Vector3#length</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L539" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L539</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="lengthsq">lengthSq<a href="#lengthsq" class="hash-link" aria-label="Direct link to lengthSq" title="Direct link to lengthSq" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-lengthsq">&lt;instance&gt; lengthSq()<a href="#instance-lengthsq" class="hash-link" aria-label="Direct link to &lt;instance&gt; lengthSq()" title="Direct link to &lt;instance&gt; lengthSq()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calculate the length of this Vector squared.</p>
+<p><strong>Returns:</strong> number - The length of this Vector, squared.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#lengthSq">Phaser.Math.Vector3#lengthSq</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L556" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L556</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="lerp">lerp<a href="#lerp" class="hash-link" aria-label="Direct link to lerp" title="Direct link to lerp" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-lerpv-t">&lt;instance&gt; lerp(v, [t])<a href="#instance-lerpv-t" class="hash-link" aria-label="Direct link to &lt;instance&gt; lerp(v, [t])" title="Direct link to &lt;instance&gt; lerp(v, [t])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Linearly interpolate between this Vector and the given Vector.</p>
+<p>Interpolates this Vector towards the given Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td></td><td>The Vector3 to interpolate towards.</td></tr><tr><td>t</td><td>number</td><td>Yes</td><td>0</td><td>The interpolation percentage, between 0 and 1.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#lerp">Phaser.Math.Vector3#lerp</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L643" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L643</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="load">load<a href="#load" class="hash-link" aria-label="Direct link to load" title="Direct link to load" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-loadf32-u32-offset-textureunit-tinteffect">&lt;instance&gt; load(F32, U32, offset, textureUnit, tintEffect)<a href="#instance-loadf32-u32-offset-textureunit-tinteffect" class="hash-link" aria-label="Direct link to &lt;instance&gt; load(F32, U32, offset, textureUnit, tintEffect)" title="Direct link to &lt;instance&gt; load(F32, U32, offset, textureUnit, tintEffect)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Loads the data from this Vertex into the given Typed Arrays.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>F32</td><td>Float32Array</td><td>No</td><td>A Float32 Array to insert the position, UV and unit data in to.</td></tr><tr><td>U32</td><td>Uint32Array</td><td>No</td><td>A Uint32 Array to insert the color and alpha data in to.</td></tr><tr><td>offset</td><td>number</td><td>No</td><td>The index of the array to insert this Vertex to.</td></tr><tr><td>textureUnit</td><td>number</td><td>No</td><td>The texture unit currently in use.</td></tr><tr><td>tintEffect</td><td>number</td><td>No</td><td>The tint effect to use.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The new array offset.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L379" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L379</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="max">max<a href="#max" class="hash-link" aria-label="Direct link to max" title="Direct link to max" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-maxv">&lt;instance&gt; max(v)<a href="#instance-maxv" class="hash-link" aria-label="Direct link to &lt;instance&gt; max(v)" title="Direct link to &lt;instance&gt; max(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the components of this Vector to be the <code>Math.max</code> result from the given vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector3 to check the maximum values against.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#max">Phaser.Math.Vector3#max</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L115" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L115</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="min">min<a href="#min" class="hash-link" aria-label="Direct link to min" title="Direct link to min" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-minv">&lt;instance&gt; min(v)<a href="#instance-minv" class="hash-link" aria-label="Direct link to &lt;instance&gt; min(v)" title="Direct link to &lt;instance&gt; min(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the components of this Vector to be the <code>Math.min</code> result from the given vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector3 to check the minimum values against.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#min">Phaser.Math.Vector3#min</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L96" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L96</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="multiply">multiply<a href="#multiply" class="hash-link" aria-label="Direct link to multiply" title="Direct link to multiply" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-multiplyv">&lt;instance&gt; multiply(v)<a href="#instance-multiplyv" class="hash-link" aria-label="Direct link to &lt;instance&gt; multiply(v)" title="Direct link to &lt;instance&gt; multiply(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Perform a component-wise multiplication between this Vector and the given Vector.</p>
+<p>Multiplies this Vector by the given Vector.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to multiply this Vector by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#multiply">Phaser.Math.Vector3#multiply</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L414" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L414</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="negate">negate<a href="#negate" class="hash-link" aria-label="Direct link to negate" title="Direct link to negate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-negate">&lt;instance&gt; negate()<a href="#instance-negate" class="hash-link" aria-label="Direct link to &lt;instance&gt; negate()" title="Direct link to &lt;instance&gt; negate()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Negate the <code>x</code>, <code>y</code> and <code>z</code> components of this Vector.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#negate">Phaser.Math.Vector3#negate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L484" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L484</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="normalize">normalize<a href="#normalize" class="hash-link" aria-label="Direct link to normalize" title="Direct link to normalize" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-normalize">&lt;instance&gt; normalize()<a href="#instance-normalize" class="hash-link" aria-label="Direct link to &lt;instance&gt; normalize()" title="Direct link to &lt;instance&gt; normalize()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Normalize this Vector.</p>
+<p>Makes the vector a unit length vector (magnitude of 1) in the same direction.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#normalize">Phaser.Math.Vector3#normalize</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L573" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L573</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="project">project<a href="#project" class="hash-link" aria-label="Direct link to project" title="Direct link to project" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-projectmat">&lt;instance&gt; project(mat)<a href="#instance-projectmat" class="hash-link" aria-label="Direct link to &lt;instance&gt; project(mat)" title="Direct link to &lt;instance&gt; project(mat)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Multiplies this Vector3 by the specified matrix, applying a W divide. This is useful for projection,</p>
+<p>e.g. unprojecting a 2D point into 3D space.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>The Matrix4 to multiply this Vector3 with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#project">Phaser.Math.Vector3#project</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L833" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L833</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="projectviewmatrix">projectViewMatrix<a href="#projectviewmatrix" class="hash-link" aria-label="Direct link to projectViewMatrix" title="Direct link to projectViewMatrix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-projectviewmatrixviewmatrix-projectionmatrix">&lt;instance&gt; projectViewMatrix(viewMatrix, projectionMatrix)<a href="#instance-projectviewmatrixviewmatrix-projectionmatrix" class="hash-link" aria-label="Direct link to &lt;instance&gt; projectViewMatrix(viewMatrix, projectionMatrix)" title="Direct link to &lt;instance&gt; projectViewMatrix(viewMatrix, projectionMatrix)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Multiplies this Vector3 by the given view and projection matrices.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>viewMatrix</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>A View Matrix.</td></tr><tr><td>projectionMatrix</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>A Projection Matrix.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#projectViewMatrix">Phaser.Math.Vector3#projectViewMatrix</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L877" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L877</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reset">reset<a href="#reset" class="hash-link" aria-label="Direct link to reset" title="Direct link to reset" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-reset">&lt;instance&gt; reset()<a href="#instance-reset" class="hash-link" aria-label="Direct link to &lt;instance&gt; reset()" title="Direct link to &lt;instance&gt; reset()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Make this Vector the zero vector (0, 0, 0).</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#reset">Phaser.Math.Vector3#reset</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L945" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L945</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resize">resize<a href="#resize" class="hash-link" aria-label="Direct link to resize" title="Direct link to resize" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-resizex-y-width-height-originx-originy">&lt;instance&gt; resize(x, y, width, height, originX, originY)<a href="#instance-resizex-y-width-height-originx-originy" class="hash-link" aria-label="Direct link to &lt;instance&gt; resize(x, y, width, height, originX, originY)" title="Direct link to &lt;instance&gt; resize(x, y, width, height, originX, originY)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Resizes this Vertex by setting the x and y coordinates, then transforms this vertex</p>
+<p>by an identity matrix and dimensions, storing the results in <code>vx</code>, <code>vy</code> and <code>vz</code>.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The x position of the vertex.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The y position of the vertex.</td></tr><tr><td>width</td><td>number</td><td>No</td><td>The width of the parent Mesh.</td></tr><tr><td>height</td><td>number</td><td>No</td><td>The height of the parent Mesh.</td></tr><tr><td>originX</td><td>number</td><td>No</td><td>The originX of the parent Mesh.</td></tr><tr><td>originY</td><td>number</td><td>No</td><td>The originY of the parent Mesh.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/geom-mesh-vertex">Phaser.Geom.Mesh.Vertex</a> - This Vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L298" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L298</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scale">scale<a href="#scale" class="hash-link" aria-label="Direct link to scale" title="Direct link to scale" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-scalescale">&lt;instance&gt; scale(scale)<a href="#instance-scalescale" class="hash-link" aria-label="Direct link to &lt;instance&gt; scale(scale)" title="Direct link to &lt;instance&gt; scale(scale)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Scale this Vector by the given value.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>scale</td><td>number</td><td>No</td><td>The value to scale this Vector by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#scale">Phaser.Math.Vector3#scale</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L435" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L435</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scaleuv">scaleUV<a href="#scaleuv" class="hash-link" aria-label="Direct link to scaleUV" title="Direct link to scaleUV" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-scaleuvx-y">&lt;instance&gt; scaleUV(x, y)<a href="#instance-scaleuvx-y" class="hash-link" aria-label="Direct link to &lt;instance&gt; scaleUV(x, y)" title="Direct link to &lt;instance&gt; scaleUV(x, y)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Scales the original UV values by the given amounts.</p>
+<p>The original properties <code>Vertex.u</code> and <code>Vertex.v</code></p>
+<p>remain unchanged, only the translated properties</p>
+<p><code>Vertex.tu</code> and <code>Vertex.tv</code>, as used in rendering,</p>
+<p>are updated.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The amount to scale the UV u coordinate by.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The amount to scale the UV v coordinate by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/geom-mesh-vertex">Phaser.Geom.Mesh.Vertex</a> - This Vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L237" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L237</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scrolluv">scrollUV<a href="#scrolluv" class="hash-link" aria-label="Direct link to scrollUV" title="Direct link to scrollUV" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-scrolluvx-y">&lt;instance&gt; scrollUV(x, y)<a href="#instance-scrolluvx-y" class="hash-link" aria-label="Direct link to &lt;instance&gt; scrollUV(x, y)" title="Direct link to &lt;instance&gt; scrollUV(x, y)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Translates the original UV positions by the given amounts.</p>
+<p>The original properties <code>Vertex.u</code> and <code>Vertex.v</code></p>
+<p>remain unchanged, only the translated properties</p>
+<p><code>Vertex.tu</code> and <code>Vertex.tv</code>, as used in rendering,</p>
+<p>are updated.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The amount to scroll the UV u coordinate by.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The amount to scroll the UV v coordinate by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/geom-mesh-vertex">Phaser.Geom.Mesh.Vertex</a> - This Vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L213" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L213</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="set">set<a href="#set" class="hash-link" aria-label="Direct link to set" title="Direct link to set" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setx-y-z">&lt;instance&gt; set(x, [y], [z])<a href="#instance-setx-y-z" class="hash-link" aria-label="Direct link to &lt;instance&gt; set(x, [y], [z])" title="Direct link to &lt;instance&gt; set(x, [y], [z])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Set the <code>x</code>, <code>y</code>, and <code>z</code> components of this Vector to the given <code>x</code>, <code>y</code>, and <code>z</code> values.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number | object</td><td>No</td><td>The x value to set for this Vector, or an object containing x, y and z components.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>The y value to set for this Vector.</td></tr><tr><td>z</td><td>number</td><td>Yes</td><td>The z value to set for this Vector.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#set">Phaser.Math.Vector3#set</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L250" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L250</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setfrommatrixcolumn">setFromMatrixColumn<a href="#setfrommatrixcolumn" class="hash-link" aria-label="Direct link to setFromMatrixColumn" title="Direct link to setFromMatrixColumn" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setfrommatrixcolumnmat4-index">&lt;instance&gt; setFromMatrixColumn(mat4, index)<a href="#instance-setfrommatrixcolumnmat4-index" class="hash-link" aria-label="Direct link to &lt;instance&gt; setFromMatrixColumn(mat4, index)" title="Direct link to &lt;instance&gt; setFromMatrixColumn(mat4, index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the components of this Vector3 from the Matrix4 column specified.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat4</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>The Matrix4 to get the column from.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The column index.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#setFromMatrixColumn">Phaser.Math.Vector3#setFromMatrixColumn</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L295" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L295</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setfrommatrixposition">setFromMatrixPosition<a href="#setfrommatrixposition" class="hash-link" aria-label="Direct link to setFromMatrixPosition" title="Direct link to setFromMatrixPosition" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setfrommatrixpositionmat4">&lt;instance&gt; setFromMatrixPosition(mat4)<a href="#instance-setfrommatrixpositionmat4" class="hash-link" aria-label="Direct link to &lt;instance&gt; setFromMatrixPosition(mat4)" title="Direct link to &lt;instance&gt; setFromMatrixPosition(mat4)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the components of this Vector3 from the position of the given Matrix4.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat4</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>The Matrix4 to get the position from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#setFromMatrixPosition">Phaser.Math.Vector3#setFromMatrixPosition</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L280" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L280</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setuvs">setUVs<a href="#setuvs" class="hash-link" aria-label="Direct link to setUVs" title="Direct link to setUVs" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setuvsu-v">&lt;instance&gt; setUVs(u, v)<a href="#instance-setuvsu-v" class="hash-link" aria-label="Direct link to &lt;instance&gt; setUVs(u, v)" title="Direct link to &lt;instance&gt; setUVs(u, v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the U and V properties.</p>
+<p>Also resets the translated uv properties, undoing any scale</p>
+<p>or shift they may have had.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>u</td><td>number</td><td>No</td><td>The UV u coordinate of the vertex.</td></tr><tr><td>v</td><td>number</td><td>No</td><td>The UV v coordinate of the vertex.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/geom-mesh-vertex">Phaser.Geom.Mesh.Vertex</a> - This Vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L188" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L188</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="subtract">subtract<a href="#subtract" class="hash-link" aria-label="Direct link to subtract" title="Direct link to subtract" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-subtractv">&lt;instance&gt; subtract(v)<a href="#instance-subtractv" class="hash-link" aria-label="Direct link to &lt;instance&gt; subtract(v)" title="Direct link to &lt;instance&gt; subtract(v)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Subtract the given Vector from this Vector. Subtraction is component-wise.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>v</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector2">Phaser.Math.Vector2</a> | <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The Vector to subtract from this Vector.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#subtract">Phaser.Math.Vector3#subtract</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L395" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L395</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="subvectors">subVectors<a href="#subvectors" class="hash-link" aria-label="Direct link to subVectors" title="Direct link to subVectors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-subvectorsa-b">&lt;instance&gt; subVectors(a, b)<a href="#instance-subvectorsa-b" class="hash-link" aria-label="Direct link to &lt;instance&gt; subVectors(a, b)" title="Direct link to &lt;instance&gt; subVectors(a, b)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Subtracts the two given Vector3s and sets the results into this Vector3.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>a</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The first Vector to sub.</td></tr><tr><td>b</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a></td><td>No</td><td>The second Vector to sub.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#subVectors">Phaser.Math.Vector3#subVectors</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L167" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L167</a><br>
+Since: 3.85.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="transformcoordinates">transformCoordinates<a href="#transformcoordinates" class="hash-link" aria-label="Direct link to transformCoordinates" title="Direct link to transformCoordinates" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-transformcoordinatesmat">&lt;instance&gt; transformCoordinates(mat)<a href="#instance-transformcoordinatesmat" class="hash-link" aria-label="Direct link to &lt;instance&gt; transformCoordinates(mat)" title="Direct link to &lt;instance&gt; transformCoordinates(mat)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Transforms the coordinates of this Vector3 with the given Matrix4.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>The Matrix4 to transform this Vector3 with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#transformCoordinates">Phaser.Math.Vector3#transformCoordinates</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L769" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L769</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="transformcoordinateslocal">transformCoordinatesLocal<a href="#transformcoordinateslocal" class="hash-link" aria-label="Direct link to transformCoordinatesLocal" title="Direct link to transformCoordinatesLocal" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-transformcoordinateslocaltransformmatrix-width-height-cameraz">&lt;instance&gt; transformCoordinatesLocal(transformMatrix, width, height, cameraZ)<a href="#instance-transformcoordinateslocaltransformmatrix-width-height-cameraz" class="hash-link" aria-label="Direct link to &lt;instance&gt; transformCoordinatesLocal(transformMatrix, width, height, cameraZ)" title="Direct link to &lt;instance&gt; transformCoordinatesLocal(transformMatrix, width, height, cameraZ)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Transforms this vertex by the given matrix, storing the results in <code>vx</code>, <code>vy</code> and <code>vz</code>.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>transformMatrix</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>The transform matrix to apply to this vertex.</td></tr><tr><td>width</td><td>number</td><td>No</td><td>The width of the parent Mesh.</td></tr><tr><td>height</td><td>number</td><td>No</td><td>The height of the parent Mesh.</td></tr><tr><td>cameraZ</td><td>number</td><td>No</td><td>The z position of the MeshCamera.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L261" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L261</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="transformmat3">transformMat3<a href="#transformmat3" class="hash-link" aria-label="Direct link to transformMat3" title="Direct link to transformMat3" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-transformmat3mat">&lt;instance&gt; transformMat3(mat)<a href="#instance-transformmat3mat" class="hash-link" aria-label="Direct link to &lt;instance&gt; transformMat3(mat)" title="Direct link to &lt;instance&gt; transformMat3(mat)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Transform this Vector with the given Matrix.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix3">Phaser.Math.Matrix3</a></td><td>No</td><td>The Matrix3 to transform this Vector3 with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#transformMat3">Phaser.Math.Vector3#transformMat3</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L721" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L721</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="transformmat4">transformMat4<a href="#transformmat4" class="hash-link" aria-label="Direct link to transformMat4" title="Direct link to transformMat4" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-transformmat4mat">&lt;instance&gt; transformMat4(mat)<a href="#instance-transformmat4mat" class="hash-link" aria-label="Direct link to &lt;instance&gt; transformMat4(mat)" title="Direct link to &lt;instance&gt; transformMat4(mat)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Transform this Vector with the given Matrix4.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>mat</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>The Matrix4 to transform this Vector3 with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#transformMat4">Phaser.Math.Vector3#transformMat4</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L745" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L745</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="transformquat">transformQuat<a href="#transformquat" class="hash-link" aria-label="Direct link to transformQuat" title="Direct link to transformQuat" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-transformquatq">&lt;instance&gt; transformQuat(q)<a href="#instance-transformquatq" class="hash-link" aria-label="Direct link to &lt;instance&gt; transformQuat(q)" title="Direct link to &lt;instance&gt; transformQuat(q)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Transform this Vector with the given Quaternion.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>q</td><td><a class="" href="/api-documentation/3.86.0/class/math-quaternion">Phaser.Math.Quaternion</a></td><td>No</td><td>The Quaternion to transform this Vector with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#transformQuat">Phaser.Math.Vector3#transformQuat</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L798" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L798</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="unproject">unproject<a href="#unproject" class="hash-link" aria-label="Direct link to unproject" title="Direct link to unproject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-unprojectviewport-invprojectionview">&lt;instance&gt; unproject(viewport, invProjectionView)<a href="#instance-unprojectviewport-invprojectionview" class="hash-link" aria-label="Direct link to &lt;instance&gt; unproject(viewport, invProjectionView)" title="Direct link to &lt;instance&gt; unproject(viewport, invProjectionView)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Unproject this point from 2D space to 3D space.</p>
+<p>The point should have its x and y properties set to</p>
+<p>2D screen space, and the z either at 0 (near plane)</p>
+<p>or 1 (far plane). The provided matrix is assumed to already</p>
+<p>be combined, i.e. projection * view * model.</p>
+<p>After this operation, this vector&#x27;s (x, y, z) components will</p>
+<p>represent the unprojected 3D coordinate.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>viewport</td><td><a class="" href="/api-documentation/3.86.0/class/math-vector4">Phaser.Math.Vector4</a></td><td>No</td><td>Screen x, y, width and height in pixels.</td></tr><tr><td>invProjectionView</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>Combined projection and view matrix.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#unproject">Phaser.Math.Vector3#unproject</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L909" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L909</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="unprojectviewmatrix">unprojectViewMatrix<a href="#unprojectviewmatrix" class="hash-link" aria-label="Direct link to unprojectViewMatrix" title="Direct link to unprojectViewMatrix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-unprojectviewmatrixprojectionmatrix-worldmatrix">&lt;instance&gt; unprojectViewMatrix(projectionMatrix, worldMatrix)<a href="#instance-unprojectviewmatrixprojectionmatrix-worldmatrix" class="hash-link" aria-label="Direct link to &lt;instance&gt; unprojectViewMatrix(projectionMatrix, worldMatrix)" title="Direct link to &lt;instance&gt; unprojectViewMatrix(projectionMatrix, worldMatrix)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Multiplies this Vector3 by the given inversed projection matrix and world matrix.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>projectionMatrix</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>An inversed Projection Matrix.</td></tr><tr><td>worldMatrix</td><td><a class="" href="/api-documentation/3.86.0/class/math-matrix4">Phaser.Math.Matrix4</a></td><td>No</td><td>A World View Matrix.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#unprojectViewMatrix">Phaser.Math.Vector3#unprojectViewMatrix</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L893" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L893</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="up">up<a href="#up" class="hash-link" aria-label="Direct link to up" title="Direct link to up" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-up">&lt;instance&gt; up()<a href="#instance-up" class="hash-link" aria-label="Direct link to &lt;instance&gt; up()" title="Direct link to &lt;instance&gt; up()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Set this Vector to point up.</p>
+<p>Sets the y component of the vector to 1, and the others to 0.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3">Phaser.Math.Vector3</a> - This Vector3.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.86.0/class/math-vector3#up">Phaser.Math.Vector3#up</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/math/Vector3.js#L77" target="_blank" rel="noopener noreferrer" class="">src/math/Vector3.js#L77</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="update">update<a href="#update" class="hash-link" aria-label="Direct link to update" title="Direct link to update" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-updatea-b-c-d-e-f-roundpixels-alpha">&lt;instance&gt; update(a, b, c, d, e, f, roundPixels, alpha)<a href="#instance-updatea-b-c-d-e-f-roundpixels-alpha" class="hash-link" aria-label="Direct link to &lt;instance&gt; update(a, b, c, d, e, f, roundPixels, alpha)" title="Direct link to &lt;instance&gt; update(a, b, c, d, e, f, roundPixels, alpha)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Updates this Vertex based on the given transform.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>a</td><td>number</td><td>No</td><td>The parent transform matrix data a component.</td></tr><tr><td>b</td><td>number</td><td>No</td><td>The parent transform matrix data b component.</td></tr><tr><td>c</td><td>number</td><td>No</td><td>The parent transform matrix data c component.</td></tr><tr><td>d</td><td>number</td><td>No</td><td>The parent transform matrix data d component.</td></tr><tr><td>e</td><td>number</td><td>No</td><td>The parent transform matrix data e component.</td></tr><tr><td>f</td><td>number</td><td>No</td><td>The parent transform matrix data f component.</td></tr><tr><td>roundPixels</td><td>boolean</td><td>No</td><td>Round the vertex position or not?</td></tr><tr><td>alpha</td><td>number</td><td>No</td><td>The alpha of the parent object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/class/geom-mesh-vertex">Phaser.Geom.Mesh.Vertex</a> - This Vertex.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/geom/mesh/Vertex.js#L344" target="_blank" rel="noopener noreferrer" class="">src/geom/mesh/Vertex.js#L344</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.86.0/class/geom-mesh-face"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Face</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.86.0/class/geom-point"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Point</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#alpha" class="table-of-contents__link toc-highlight">alpha</a><ul><li><a href="#alpha-number" class="table-of-contents__link toc-highlight">alpha: number</a></li></ul></li><li><a href="#color" class="table-of-contents__link toc-highlight">color</a><ul><li><a href="#color-number" class="table-of-contents__link toc-highlight">color: number</a></li></ul></li><li><a href="#nx" class="table-of-contents__link toc-highlight">nx</a><ul><li><a href="#nx-number" class="table-of-contents__link toc-highlight">nx: number</a></li></ul></li><li><a href="#ny" class="table-of-contents__link toc-highlight">ny</a><ul><li><a href="#ny-number" class="table-of-contents__link toc-highlight">ny: number</a></li></ul></li><li><a href="#nz" class="table-of-contents__link toc-highlight">nz</a><ul><li><a href="#nz-number" class="table-of-contents__link toc-highlight">nz: number</a></li></ul></li><li><a href="#ta" class="table-of-contents__link toc-highlight">ta</a><ul><li><a href="#ta-number" class="table-of-contents__link toc-highlight">ta: number</a></li></ul></li><li><a href="#tu" class="table-of-contents__link toc-highlight">tu</a><ul><li><a href="#tu-number" class="table-of-contents__link toc-highlight">tu: number</a></li></ul></li><li><a href="#tv" class="table-of-contents__link toc-highlight">tv</a><ul><li><a href="#tv-number" class="table-of-contents__link toc-highlight">tv: number</a></li></ul></li><li><a href="#tx" class="table-of-contents__link toc-highlight">tx</a><ul><li><a href="#tx-number" class="table-of-contents__link toc-highlight">tx: number</a></li></ul></li><li><a href="#ty" class="table-of-contents__link toc-highlight">ty</a><ul><li><a href="#ty-number" class="table-of-contents__link toc-highlight">ty: number</a></li></ul></li><li><a href="#u" class="table-of-contents__link toc-highlight">u</a><ul><li><a href="#u-number" class="table-of-contents__link toc-highlight">u: number</a></li></ul></li><li><a href="#v" class="table-of-contents__link toc-highlight">v</a><ul><li><a href="#v-number" class="table-of-contents__link toc-highlight">v: number</a></li></ul></li><li><a href="#vx" class="table-of-contents__link toc-highlight">vx</a><ul><li><a href="#vx-number" class="table-of-contents__link toc-highlight">vx: number</a></li></ul></li><li><a href="#vy" class="table-of-contents__link toc-highlight">vy</a><ul><li><a href="#vy-number" class="table-of-contents__link toc-highlight">vy: number</a></li></ul></li><li><a href="#vz" class="table-of-contents__link toc-highlight">vz</a><ul><li><a href="#vz-number" class="table-of-contents__link toc-highlight">vz: number</a></li></ul></li><li><a href="#x" class="table-of-contents__link toc-highlight">x</a><ul><li><a href="#x-number" class="table-of-contents__link toc-highlight">x: number</a></li></ul></li><li><a href="#y" class="table-of-contents__link toc-highlight">y</a><ul><li><a href="#y-number" class="table-of-contents__link toc-highlight">y: number</a></li></ul></li><li><a href="#z" class="table-of-contents__link toc-highlight">z</a><ul><li><a href="#z-number" class="table-of-contents__link toc-highlight">z: number</a></li></ul></li><li><a href="#add" class="table-of-contents__link toc-highlight">add</a><ul><li><a href="#instance-addv" class="table-of-contents__link toc-highlight">&lt;instance&gt; add(v)</a></li></ul></li><li><a href="#addscalar" class="table-of-contents__link toc-highlight">addScalar</a><ul><li><a href="#instance-addscalars" class="table-of-contents__link toc-highlight">&lt;instance&gt; addScalar(s)</a></li></ul></li><li><a href="#addscale" class="table-of-contents__link toc-highlight">addScale</a><ul><li><a href="#instance-addscalev-scale" class="table-of-contents__link toc-highlight">&lt;instance&gt; addScale(v, scale)</a></li></ul></li><li><a href="#addvectors" class="table-of-contents__link toc-highlight">addVectors</a><ul><li><a href="#instance-addvectorsa-b" class="table-of-contents__link toc-highlight">&lt;instance&gt; addVectors(a, b)</a></li></ul></li><li><a href="#applymatrix3" class="table-of-contents__link toc-highlight">applyMatrix3</a><ul><li><a href="#instance-applymatrix3mat3" class="table-of-contents__link toc-highlight">&lt;instance&gt; applyMatrix3(mat3)</a></li></ul></li><li><a href="#applymatrix4" class="table-of-contents__link toc-highlight">applyMatrix4</a><ul><li><a href="#instance-applymatrix4mat4" class="table-of-contents__link toc-highlight">&lt;instance&gt; applyMatrix4(mat4)</a></li></ul></li><li><a href="#clone" class="table-of-contents__link toc-highlight">clone</a><ul><li><a href="#instance-clone" class="table-of-contents__link toc-highlight">&lt;instance&gt; clone()</a></li></ul></li><li><a href="#copy" class="table-of-contents__link toc-highlight">copy</a><ul><li><a href="#instance-copysrc" class="table-of-contents__link toc-highlight">&lt;instance&gt; copy(src)</a></li></ul></li><li><a href="#cross" class="table-of-contents__link toc-highlight">cross</a><ul><li><a href="#instance-crossv" class="table-of-contents__link toc-highlight">&lt;instance&gt; cross(v)</a></li></ul></li><li><a href="#crossvectors" class="table-of-contents__link toc-highlight">crossVectors</a><ul><li><a href="#instance-crossvectorsa-b" class="table-of-contents__link toc-highlight">&lt;instance&gt; crossVectors(a, b)</a></li></ul></li><li><a href="#distance" class="table-of-contents__link toc-highlight">distance</a><ul><li><a href="#instance-distancev" class="table-of-contents__link toc-highlight">&lt;instance&gt; distance(v)</a></li></ul></li><li><a href="#distancesq" class="table-of-contents__link toc-highlight">distanceSq</a><ul><li><a href="#instance-distancesqv" class="table-of-contents__link toc-highlight">&lt;instance&gt; distanceSq(v)</a></li></ul></li><li><a href="#divide" class="table-of-contents__link toc-highlight">divide</a><ul><li><a href="#instance-dividev" class="table-of-contents__link toc-highlight">&lt;instance&gt; divide(v)</a></li></ul></li><li><a href="#dot" class="table-of-contents__link toc-highlight">dot</a><ul><li><a href="#instance-dotv" class="table-of-contents__link toc-highlight">&lt;instance&gt; dot(v)</a></li></ul></li><li><a href="#equals" class="table-of-contents__link toc-highlight">equals</a><ul><li><a href="#instance-equalsv" class="table-of-contents__link toc-highlight">&lt;instance&gt; equals(v)</a></li></ul></li><li><a href="#fromarray" class="table-of-contents__link toc-highlight">fromArray</a><ul><li><a href="#instance-fromarrayarray-offset" class="table-of-contents__link toc-highlight">&lt;instance&gt; fromArray(array, [offset])</a></li></ul></li><li><a href="#length" class="table-of-contents__link toc-highlight">length</a><ul><li><a href="#instance-length" class="table-of-contents__link toc-highlight">&lt;instance&gt; length()</a></li></ul></li><li><a href="#lengthsq" class="table-of-contents__link toc-highlight">lengthSq</a><ul><li><a href="#instance-lengthsq" class="table-of-contents__link toc-highlight">&lt;instance&gt; lengthSq()</a></li></ul></li><li><a href="#lerp" class="table-of-contents__link toc-highlight">lerp</a><ul><li><a href="#instance-lerpv-t" class="table-of-contents__link toc-highlight">&lt;instance&gt; lerp(v, [t])</a></li></ul></li><li><a href="#load" class="table-of-contents__link toc-highlight">load</a><ul><li><a href="#instance-loadf32-u32-offset-textureunit-tinteffect" class="table-of-contents__link toc-highlight">&lt;instance&gt; load(F32, U32, offset, textureUnit, tintEffect)</a></li></ul></li><li><a href="#max" class="table-of-contents__link toc-highlight">max</a><ul><li><a href="#instance-maxv" class="table-of-contents__link toc-highlight">&lt;instance&gt; max(v)</a></li></ul></li><li><a href="#min" class="table-of-contents__link toc-highlight">min</a><ul><li><a href="#instance-minv" class="table-of-contents__link toc-highlight">&lt;instance&gt; min(v)</a></li></ul></li><li><a href="#multiply" class="table-of-contents__link toc-highlight">multiply</a><ul><li><a href="#instance-multiplyv" class="table-of-contents__link toc-highlight">&lt;instance&gt; multiply(v)</a></li></ul></li><li><a href="#negate" class="table-of-contents__link toc-highlight">negate</a><ul><li><a href="#instance-negate" class="table-of-contents__link toc-highlight">&lt;instance&gt; negate()</a></li></ul></li><li><a href="#normalize" class="table-of-contents__link toc-highlight">normalize</a><ul><li><a href="#instance-normalize" class="table-of-contents__link toc-highlight">&lt;instance&gt; normalize()</a></li></ul></li><li><a href="#project" class="table-of-contents__link toc-highlight">project</a><ul><li><a href="#instance-projectmat" class="table-of-contents__link toc-highlight">&lt;instance&gt; project(mat)</a></li></ul></li><li><a href="#projectviewmatrix" class="table-of-contents__link toc-highlight">projectViewMatrix</a><ul><li><a href="#instance-projectviewmatrixviewmatrix-projectionmatrix" class="table-of-contents__link toc-highlight">&lt;instance&gt; projectViewMatrix(viewMatrix, projectionMatrix)</a></li></ul></li><li><a href="#reset" class="table-of-contents__link toc-highlight">reset</a><ul><li><a href="#instance-reset" class="table-of-contents__link toc-highlight">&lt;instance&gt; reset()</a></li></ul></li><li><a href="#resize" class="table-of-contents__link toc-highlight">resize</a><ul><li><a href="#instance-resizex-y-width-height-originx-originy" class="table-of-contents__link toc-highlight">&lt;instance&gt; resize(x, y, width, height, originX, originY)</a></li></ul></li><li><a href="#scale" class="table-of-contents__link toc-highlight">scale</a><ul><li><a href="#instance-scalescale" class="table-of-contents__link toc-highlight">&lt;instance&gt; scale(scale)</a></li></ul></li><li><a href="#scaleuv" class="table-of-contents__link toc-highlight">scaleUV</a><ul><li><a href="#instance-scaleuvx-y" class="table-of-contents__link toc-highlight">&lt;instance&gt; scaleUV(x, y)</a></li></ul></li><li><a href="#scrolluv" class="table-of-contents__link toc-highlight">scrollUV</a><ul><li><a href="#instance-scrolluvx-y" class="table-of-contents__link toc-highlight">&lt;instance&gt; scrollUV(x, y)</a></li></ul></li><li><a href="#set" class="table-of-contents__link toc-highlight">set</a><ul><li><a href="#instance-setx-y-z" class="table-of-contents__link toc-highlight">&lt;instance&gt; set(x, [y], [z])</a></li></ul></li><li><a href="#setfrommatrixcolumn" class="table-of-contents__link toc-highlight">setFromMatrixColumn</a><ul><li><a href="#instance-setfrommatrixcolumnmat4-index" class="table-of-contents__link toc-highlight">&lt;instance&gt; setFromMatrixColumn(mat4, index)</a></li></ul></li><li><a href="#setfrommatrixposition" class="table-of-contents__link toc-highlight">setFromMatrixPosition</a><ul><li><a href="#instance-setfrommatrixpositionmat4" class="table-of-contents__link toc-highlight">&lt;instance&gt; setFromMatrixPosition(mat4)</a></li></ul></li><li><a href="#setuvs" class="table-of-contents__link toc-highlight">setUVs</a><ul><li><a href="#instance-setuvsu-v" class="table-of-contents__link toc-highlight">&lt;instance&gt; setUVs(u, v)</a></li></ul></li><li><a href="#subtract" class="table-of-contents__link toc-highlight">subtract</a><ul><li><a href="#instance-subtractv" class="table-of-contents__link toc-highlight">&lt;instance&gt; subtract(v)</a></li></ul></li><li><a href="#subvectors" class="table-of-contents__link toc-highlight">subVectors</a><ul><li><a href="#instance-subvectorsa-b" class="table-of-contents__link toc-highlight">&lt;instance&gt; subVectors(a, b)</a></li></ul></li><li><a href="#transformcoordinates" class="table-of-contents__link toc-highlight">transformCoordinates</a><ul><li><a href="#instance-transformcoordinatesmat" class="table-of-contents__link toc-highlight">&lt;instance&gt; transformCoordinates(mat)</a></li></ul></li><li><a href="#transformcoordinateslocal" class="table-of-contents__link toc-highlight">transformCoordinatesLocal</a><ul><li><a href="#instance-transformcoordinateslocaltransformmatrix-width-height-cameraz" class="table-of-contents__link toc-highlight">&lt;instance&gt; transformCoordinatesLocal(transformMatrix, width, height, cameraZ)</a></li></ul></li><li><a href="#transformmat3" class="table-of-contents__link toc-highlight">transformMat3</a><ul><li><a href="#instance-transformmat3mat" class="table-of-contents__link toc-highlight">&lt;instance&gt; transformMat3(mat)</a></li></ul></li><li><a href="#transformmat4" class="table-of-contents__link toc-highlight">transformMat4</a><ul><li><a href="#instance-transformmat4mat" class="table-of-contents__link toc-highlight">&lt;instance&gt; transformMat4(mat)</a></li></ul></li><li><a href="#transformquat" class="table-of-contents__link toc-highlight">transformQuat</a><ul><li><a href="#instance-transformquatq" class="table-of-contents__link toc-highlight">&lt;instance&gt; transformQuat(q)</a></li></ul></li><li><a href="#unproject" class="table-of-contents__link toc-highlight">unproject</a><ul><li><a href="#instance-unprojectviewport-invprojectionview" class="table-of-contents__link toc-highlight">&lt;instance&gt; unproject(viewport, invProjectionView)</a></li></ul></li><li><a href="#unprojectviewmatrix" class="table-of-contents__link toc-highlight">unprojectViewMatrix</a><ul><li><a href="#instance-unprojectviewmatrixprojectionmatrix-worldmatrix" class="table-of-contents__link toc-highlight">&lt;instance&gt; unprojectViewMatrix(projectionMatrix, worldMatrix)</a></li></ul></li><li><a href="#up" class="table-of-contents__link toc-highlight">up</a><ul><li><a href="#instance-up" class="table-of-contents__link toc-highlight">&lt;instance&gt; up()</a></li></ul></li><li><a href="#update" class="table-of-contents__link toc-highlight">update</a><ul><li><a href="#instance-updatea-b-c-d-e-f-roundpixels-alpha" class="table-of-contents__link toc-highlight">&lt;instance&gt; update(a, b, c, d, e, f, roundPixels, alpha)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

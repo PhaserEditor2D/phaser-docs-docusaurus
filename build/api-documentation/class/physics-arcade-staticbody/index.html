@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-class/Phaser.Physics.Arcade.StaticBody" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">StaticBody | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/class/physics-arcade-staticbody"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="StaticBody | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Physics.Arcade.StaticBody"><meta data-rh="true" property="og:description" content="Phaser.Physics.Arcade.StaticBody"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/class/physics-arcade-staticbody"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/class/physics-arcade-staticbody" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/class/physics-arcade-staticbody" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Class","item":"https://docs.phaser.io/api-documentation/class/"},{"@type":"ListItem","position":2,"name":"StaticBody","item":"https://docs.phaser.io/api-documentation/class/physics-arcade-staticbody"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/class/physics-arcade-staticbody">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/class/physics-arcade-staticbody">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/class/physics-arcade-staticbody">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/class/physics-arcade-staticbody">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Collapse sidebar category &#x27;Class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/class"><span title="Class" class="linkLabel_WmDU">Class</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animation"><span title="Animation" class="linkLabel_WmDU">Animation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationframe"><span title="AnimationFrame" class="linkLabel_WmDU">AnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationmanager"><span title="AnimationManager" class="linkLabel_WmDU">AnimationManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationstate"><span title="AnimationState" class="linkLabel_WmDU">AnimationState</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cache-basecache"><span title="BaseCache" class="linkLabel_WmDU">BaseCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cache-cachemanager"><span title="CacheManager" class="linkLabel_WmDU">CacheManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-controls-fixedkeycontrol"><span title="FixedKeyControl" class="linkLabel_WmDU">FixedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-controls-smoothedkeycontrol"><span title="SmoothedKeyControl" class="linkLabel_WmDU">SmoothedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-basecamera"><span title="BaseCamera" class="linkLabel_WmDU">BaseCamera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-camera"><span title="Camera" class="linkLabel_WmDU">Camera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-cameramanager"><span title="CameraManager" class="linkLabel_WmDU">CameraManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-fade"><span title="Fade" class="linkLabel_WmDU">Fade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-flash"><span title="Flash" class="linkLabel_WmDU">Flash</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-pan"><span title="Pan" class="linkLabel_WmDU">Pan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-rotateto"><span title="RotateTo" class="linkLabel_WmDU">RotateTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-shake"><span title="Shake" class="linkLabel_WmDU">Shake</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-zoom"><span title="Zoom" class="linkLabel_WmDU">Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/core-config"><span title="Config" class="linkLabel_WmDU">Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/core-timestep"><span title="TimeStep" class="linkLabel_WmDU">TimeStep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-cubicbezier"><span title="CubicBezier" class="linkLabel_WmDU">CubicBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-moveto"><span title="MoveTo" class="linkLabel_WmDU">MoveTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-path"><span title="Path" class="linkLabel_WmDU">Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-quadraticbezier"><span title="QuadraticBezier" class="linkLabel_WmDU">QuadraticBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-spline"><span title="Spline" class="linkLabel_WmDU">Spline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/dom-requestanimationframe"><span title="RequestAnimationFrame" class="linkLabel_WmDU">RequestAnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/data-datamanager"><span title="DataManager" class="linkLabel_WmDU">DataManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/data-datamanagerplugin"><span title="DataManagerPlugin" class="linkLabel_WmDU">DataManagerPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-baseshader"><span title="BaseShader" class="linkLabel_WmDU">BaseShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-color"><span title="Color" class="linkLabel_WmDU">Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-masks-bitmapmask"><span title="BitmapMask" class="linkLabel_WmDU">BitmapMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-masks-geometrymask"><span title="GeometryMask" class="linkLabel_WmDU">GeometryMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-rgb"><span title="RGB" class="linkLabel_WmDU">RGB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/events-eventemitter"><span title="EventEmitter" class="linkLabel_WmDU">EventEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-barrel"><span title="Barrel" class="linkLabel_WmDU">Barrel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-bloom"><span title="Bloom" class="linkLabel_WmDU">Bloom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-blur"><span title="Blur" class="linkLabel_WmDU">Blur</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-bokeh"><span title="Bokeh" class="linkLabel_WmDU">Bokeh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-controller"><span title="Controller" class="linkLabel_WmDU">Controller</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-displacement"><span title="Displacement" class="linkLabel_WmDU">Displacement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-glow"><span title="Glow" class="linkLabel_WmDU">Glow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-gradient"><span title="Gradient" class="linkLabel_WmDU">Gradient</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-pixelate"><span title="Pixelate" class="linkLabel_WmDU">Pixelate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-shadow"><span title="Shadow" class="linkLabel_WmDU">Shadow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-shine"><span title="Shine" class="linkLabel_WmDU">Shine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-vignette"><span title="Vignette" class="linkLabel_WmDU">Vignette</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-wipe"><span title="Wipe" class="linkLabel_WmDU">Wipe</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/facebookinstantgamesleaderboard"><span title="FacebookInstantGamesLeaderboard" class="linkLabel_WmDU">FacebookInstantGamesLeaderboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/facebookinstantgamesplugin"><span title="FacebookInstantGamesPlugin" class="linkLabel_WmDU">FacebookInstantGamesPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/game"><span title="Game" class="linkLabel_WmDU">Game</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-arc"><span title="Arc" class="linkLabel_WmDU">Arc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-bitmaptext"><span title="BitmapText" class="linkLabel_WmDU">BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-blitter"><span title="Blitter" class="linkLabel_WmDU">Blitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-bob"><span title="Bob" class="linkLabel_WmDU">Bob</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-components-fx"><span title="FX" class="linkLabel_WmDU">FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-components-transformmatrix"><span title="TransformMatrix" class="linkLabel_WmDU">TransformMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-container"><span title="Container" class="linkLabel_WmDU">Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-domelement"><span title="DOMElement" class="linkLabel_WmDU">DOMElement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-displaylist"><span title="DisplayList" class="linkLabel_WmDU">DisplayList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-dynamicbitmaptext"><span title="DynamicBitmapText" class="linkLabel_WmDU">DynamicBitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-extern"><span title="Extern" class="linkLabel_WmDU">Extern</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobject"><span title="GameObject" class="linkLabel_WmDU">GameObject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobjectcreator"><span title="GameObjectCreator" class="linkLabel_WmDU">GameObjectCreator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobjectfactory"><span title="GameObjectFactory" class="linkLabel_WmDU">GameObjectFactory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-graphics"><span title="Graphics" class="linkLabel_WmDU">Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-grid"><span title="Grid" class="linkLabel_WmDU">Grid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-isobox"><span title="IsoBox" class="linkLabel_WmDU">IsoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-isotriangle"><span title="IsoTriangle" class="linkLabel_WmDU">IsoTriangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-layer"><span title="Layer" class="linkLabel_WmDU">Layer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-light"><span title="Light" class="linkLabel_WmDU">Light</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-lightsmanager"><span title="LightsManager" class="linkLabel_WmDU">LightsManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-lightsplugin"><span title="LightsPlugin" class="linkLabel_WmDU">LightsPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-mesh"><span title="Mesh" class="linkLabel_WmDU">Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-nineslice"><span title="NineSlice" class="linkLabel_WmDU">NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-emittercolorop"><span title="EmitterColorOp" class="linkLabel_WmDU">EmitterColorOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-emitterop"><span title="EmitterOp" class="linkLabel_WmDU">EmitterOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-gravitywell"><span title="GravityWell" class="linkLabel_WmDU">GravityWell</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particle"><span title="Particle" class="linkLabel_WmDU">Particle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particlebounds"><span title="ParticleBounds" class="linkLabel_WmDU">ParticleBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particleemitter"><span title="ParticleEmitter" class="linkLabel_WmDU">ParticleEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particleprocessor"><span title="ParticleProcessor" class="linkLabel_WmDU">ParticleProcessor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-deathzone"><span title="DeathZone" class="linkLabel_WmDU">DeathZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-edgezone"><span title="EdgeZone" class="linkLabel_WmDU">EdgeZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-randomzone"><span title="RandomZone" class="linkLabel_WmDU">RandomZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-pathfollower"><span title="PathFollower" class="linkLabel_WmDU">PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-plane"><span title="Plane" class="linkLabel_WmDU">Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-pointlight"><span title="PointLight" class="linkLabel_WmDU">PointLight</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rendertexture"><span title="RenderTexture" class="linkLabel_WmDU">RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rope"><span title="Rope" class="linkLabel_WmDU">Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-shader"><span title="Shader" class="linkLabel_WmDU">Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-shape"><span title="Shape" class="linkLabel_WmDU">Shape</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-star"><span title="Star" class="linkLabel_WmDU">Star</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-text"><span title="Text" class="linkLabel_WmDU">Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-textstyle"><span title="TextStyle" class="linkLabel_WmDU">TextStyle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-tilesprite"><span title="TileSprite" class="linkLabel_WmDU">TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-updatelist"><span title="UpdateList" class="linkLabel_WmDU">UpdateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-video"><span title="Video" class="linkLabel_WmDU">Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-zone"><span title="Zone" class="linkLabel_WmDU">Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-mesh-face"><span title="Face" class="linkLabel_WmDU">Face</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-mesh-vertex"><span title="Vertex" class="linkLabel_WmDU">Vertex</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-point"><span title="Point" class="linkLabel_WmDU">Point</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-axis"><span title="Axis" class="linkLabel_WmDU">Axis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-button"><span title="Button" class="linkLabel_WmDU">Button</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-gamepad"><span title="Gamepad" class="linkLabel_WmDU">Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-gamepadplugin"><span title="GamepadPlugin" class="linkLabel_WmDU">GamepadPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-inputmanager"><span title="InputManager" class="linkLabel_WmDU">InputManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-inputplugin"><span title="InputPlugin" class="linkLabel_WmDU">InputPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-key"><span title="Key" class="linkLabel_WmDU">Key</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keycombo"><span title="KeyCombo" class="linkLabel_WmDU">KeyCombo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keyboardmanager"><span title="KeyboardManager" class="linkLabel_WmDU">KeyboardManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keyboardplugin"><span title="KeyboardPlugin" class="linkLabel_WmDU">KeyboardPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-mouse-mousemanager"><span title="MouseManager" class="linkLabel_WmDU">MouseManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-pointer"><span title="Pointer" class="linkLabel_WmDU">Pointer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-touch-touchmanager"><span title="TouchManager" class="linkLabel_WmDU">TouchManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-file"><span title="File" class="linkLabel_WmDU">File</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-animationjsonfile"><span title="AnimationJSONFile" class="linkLabel_WmDU">AnimationJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-asepritefile"><span title="AsepriteFile" class="linkLabel_WmDU">AsepriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-atlasjsonfile"><span title="AtlasJSONFile" class="linkLabel_WmDU">AtlasJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-atlasxmlfile"><span title="AtlasXMLFile" class="linkLabel_WmDU">AtlasXMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-audiofile"><span title="AudioFile" class="linkLabel_WmDU">AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-audiospritefile"><span title="AudioSpriteFile" class="linkLabel_WmDU">AudioSpriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-binaryfile"><span title="BinaryFile" class="linkLabel_WmDU">BinaryFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-bitmapfontfile"><span title="BitmapFontFile" class="linkLabel_WmDU">BitmapFontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-cssfile"><span title="CSSFile" class="linkLabel_WmDU">CSSFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-compressedtexturefile"><span title="CompressedTextureFile" class="linkLabel_WmDU">CompressedTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-fontfile"><span title="FontFile" class="linkLabel_WmDU">FontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-glslfile"><span title="GLSLFile" class="linkLabel_WmDU">GLSLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-html5audiofile"><span title="HTML5AudioFile" class="linkLabel_WmDU">HTML5AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-htmlfile"><span title="HTMLFile" class="linkLabel_WmDU">HTMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-htmltexturefile"><span title="HTMLTextureFile" class="linkLabel_WmDU">HTMLTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-imagefile"><span title="ImageFile" class="linkLabel_WmDU">ImageFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-jsonfile"><span title="JSONFile" class="linkLabel_WmDU">JSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-multiatlasfile"><span title="MultiAtlasFile" class="linkLabel_WmDU">MultiAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-multiscriptfile"><span title="MultiScriptFile" class="linkLabel_WmDU">MultiScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-objfile"><span title="OBJFile" class="linkLabel_WmDU">OBJFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-packfile"><span title="PackFile" class="linkLabel_WmDU">PackFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-pluginfile"><span title="PluginFile" class="linkLabel_WmDU">PluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-svgfile"><span title="SVGFile" class="linkLabel_WmDU">SVGFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scenefile"><span title="SceneFile" class="linkLabel_WmDU">SceneFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scenepluginfile"><span title="ScenePluginFile" class="linkLabel_WmDU">ScenePluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scriptfile"><span title="ScriptFile" class="linkLabel_WmDU">ScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-spritesheetfile"><span title="SpriteSheetFile" class="linkLabel_WmDU">SpriteSheetFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-textfile"><span title="TextFile" class="linkLabel_WmDU">TextFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapcsvfile"><span title="TilemapCSVFile" class="linkLabel_WmDU">TilemapCSVFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapimpactfile"><span title="TilemapImpactFile" class="linkLabel_WmDU">TilemapImpactFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapjsonfile"><span title="TilemapJSONFile" class="linkLabel_WmDU">TilemapJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-unityatlasfile"><span title="UnityAtlasFile" class="linkLabel_WmDU">UnityAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-videofile"><span title="VideoFile" class="linkLabel_WmDU">VideoFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-xmlfile"><span title="XMLFile" class="linkLabel_WmDU">XMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-loaderplugin"><span title="LoaderPlugin" class="linkLabel_WmDU">LoaderPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-multifile"><span title="MultiFile" class="linkLabel_WmDU">MultiFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-euler"><span title="Euler" class="linkLabel_WmDU">Euler</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-matrix3"><span title="Matrix3" class="linkLabel_WmDU">Matrix3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-matrix4"><span title="Matrix4" class="linkLabel_WmDU">Matrix4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-quaternion"><span title="Quaternion" class="linkLabel_WmDU">Quaternion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-randomdatagenerator"><span title="RandomDataGenerator" class="linkLabel_WmDU">RandomDataGenerator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector2"><span title="Vector2" class="linkLabel_WmDU">Vector2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector3"><span title="Vector3" class="linkLabel_WmDU">Vector3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector4"><span title="Vector4" class="linkLabel_WmDU">Vector4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-arcadephysics"><span title="ArcadePhysics" class="linkLabel_WmDU">ArcadePhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-body"><span title="Body" class="linkLabel_WmDU">Body</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-collider"><span title="Collider" class="linkLabel_WmDU">Collider</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/class/physics-arcade-staticbody"><span title="StaticBody" class="linkLabel_WmDU">StaticBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-staticgroup"><span title="StaticGroup" class="linkLabel_WmDU">StaticGroup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-bodybounds"><span title="BodyBounds" class="linkLabel_WmDU">BodyBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-matterphysics"><span title="MatterPhysics" class="linkLabel_WmDU">MatterPhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-pointerconstraint"><span title="PointerConstraint" class="linkLabel_WmDU">PointerConstraint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-tilebody"><span title="TileBody" class="linkLabel_WmDU">TileBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-baseplugin"><span title="BasePlugin" class="linkLabel_WmDU">BasePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-pluginmanager"><span title="PluginManager" class="linkLabel_WmDU">PluginManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-canvas-canvasrenderer"><span title="CanvasRenderer" class="linkLabel_WmDU">CanvasRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelinemanager"><span title="PipelineManager" class="linkLabel_WmDU">PipelineManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-bitmapmaskpipeline"><span title="BitmapMaskPipeline" class="linkLabel_WmDU">BitmapMaskPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-barrelfxpipeline"><span title="BarrelFXPipeline" class="linkLabel_WmDU">BarrelFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-bloomfxpipeline"><span title="BloomFXPipeline" class="linkLabel_WmDU">BloomFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-blurfxpipeline"><span title="BlurFXPipeline" class="linkLabel_WmDU">BlurFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-bokehfxpipeline"><span title="BokehFXPipeline" class="linkLabel_WmDU">BokehFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-circlefxpipeline"><span title="CircleFXPipeline" class="linkLabel_WmDU">CircleFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-colormatrixfxpipeline"><span title="ColorMatrixFXPipeline" class="linkLabel_WmDU">ColorMatrixFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-displacementfxpipeline"><span title="DisplacementFXPipeline" class="linkLabel_WmDU">DisplacementFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-glowfxpipeline"><span title="GlowFXPipeline" class="linkLabel_WmDU">GlowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-gradientfxpipeline"><span title="GradientFXPipeline" class="linkLabel_WmDU">GradientFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-pixelatefxpipeline"><span title="PixelateFXPipeline" class="linkLabel_WmDU">PixelateFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-shadowfxpipeline"><span title="ShadowFXPipeline" class="linkLabel_WmDU">ShadowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-shinefxpipeline"><span title="ShineFXPipeline" class="linkLabel_WmDU">ShineFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-vignettefxpipeline"><span title="VignetteFXPipeline" class="linkLabel_WmDU">VignetteFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-wipefxpipeline"><span title="WipeFXPipeline" class="linkLabel_WmDU">WipeFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fxpipeline"><span title="FXPipeline" class="linkLabel_WmDU">FXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-lightpipeline"><span title="LightPipeline" class="linkLabel_WmDU">LightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-mobilepipeline"><span title="MobilePipeline" class="linkLabel_WmDU">MobilePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-multipipeline"><span title="MultiPipeline" class="linkLabel_WmDU">MultiPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-pointlightpipeline"><span title="PointLightPipeline" class="linkLabel_WmDU">PointLightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-postfxpipeline"><span title="PostFXPipeline" class="linkLabel_WmDU">PostFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-prefxpipeline"><span title="PreFXPipeline" class="linkLabel_WmDU">PreFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-ropepipeline"><span title="RopePipeline" class="linkLabel_WmDU">RopePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-singlepipeline"><span title="SinglePipeline" class="linkLabel_WmDU">SinglePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-utilitypipeline"><span title="UtilityPipeline" class="linkLabel_WmDU">UtilityPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-rendertarget"><span title="RenderTarget" class="linkLabel_WmDU">RenderTarget</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglpipeline"><span title="WebGLPipeline" class="linkLabel_WmDU">WebGLPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglrenderer"><span title="WebGLRenderer" class="linkLabel_WmDU">WebGLRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglshader"><span title="WebGLShader" class="linkLabel_WmDU">WebGLShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglattriblocationwrapper"><span title="WebGLAttribLocationWrapper" class="linkLabel_WmDU">WebGLAttribLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglbufferwrapper"><span title="WebGLBufferWrapper" class="linkLabel_WmDU">WebGLBufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglframebufferwrapper"><span title="WebGLFramebufferWrapper" class="linkLabel_WmDU">WebGLFramebufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglprogramwrapper"><span title="WebGLProgramWrapper" class="linkLabel_WmDU">WebGLProgramWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webgltexturewrapper"><span title="WebGLTextureWrapper" class="linkLabel_WmDU">WebGLTextureWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webgluniformlocationwrapper"><span title="WebGLUniformLocationWrapper" class="linkLabel_WmDU">WebGLUniformLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scale-scalemanager"><span title="ScaleManager" class="linkLabel_WmDU">ScaleManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scene"><span title="Scene" class="linkLabel_WmDU">Scene</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-scenemanager"><span title="SceneManager" class="linkLabel_WmDU">SceneManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-systems"><span title="Systems" class="linkLabel_WmDU">Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-basesound"><span title="BaseSound" class="linkLabel_WmDU">BaseSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-basesoundmanager"><span title="BaseSoundManager" class="linkLabel_WmDU">BaseSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-html5audiosound"><span title="HTML5AudioSound" class="linkLabel_WmDU">HTML5AudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-html5audiosoundmanager"><span title="HTML5AudioSoundManager" class="linkLabel_WmDU">HTML5AudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-noaudiosound"><span title="NoAudioSound" class="linkLabel_WmDU">NoAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-noaudiosoundmanager"><span title="NoAudioSoundManager" class="linkLabel_WmDU">NoAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-webaudiosound"><span title="WebAudioSound" class="linkLabel_WmDU">WebAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-webaudiosoundmanager"><span title="WebAudioSoundManager" class="linkLabel_WmDU">WebAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-list"><span title="List" class="linkLabel_WmDU">List</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-map"><span title="Map" class="linkLabel_WmDU">Map</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-processqueue"><span title="ProcessQueue" class="linkLabel_WmDU">ProcessQueue</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-rtree"><span title="RTree" class="linkLabel_WmDU">RTree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-set"><span title="Set" class="linkLabel_WmDU">Set</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-size"><span title="Size" class="linkLabel_WmDU">Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-canvastexture"><span title="CanvasTexture" class="linkLabel_WmDU">CanvasTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-dynamictexture"><span title="DynamicTexture" class="linkLabel_WmDU">DynamicTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-frame"><span title="Frame" class="linkLabel_WmDU">Frame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texture"><span title="Texture" class="linkLabel_WmDU">Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texturemanager"><span title="TextureManager" class="linkLabel_WmDU">TextureManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texturesource"><span title="TextureSource" class="linkLabel_WmDU">TextureSource</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-imagecollection"><span title="ImageCollection" class="linkLabel_WmDU">ImageCollection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-layerdata"><span title="LayerData" class="linkLabel_WmDU">LayerData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-mapdata"><span title="MapData" class="linkLabel_WmDU">MapData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-objecthelper"><span title="ObjectHelper" class="linkLabel_WmDU">ObjectHelper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-objectlayer"><span title="ObjectLayer" class="linkLabel_WmDU">ObjectLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tile"><span title="Tile" class="linkLabel_WmDU">Tile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tilemap"><span title="Tilemap" class="linkLabel_WmDU">Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tilemaplayer"><span title="TilemapLayer" class="linkLabel_WmDU">TilemapLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tileset"><span title="Tileset" class="linkLabel_WmDU">Tileset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-clock"><span title="Clock" class="linkLabel_WmDU">Clock</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-timeline"><span title="Timeline" class="linkLabel_WmDU">Timeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-timerevent"><span title="TimerEvent" class="linkLabel_WmDU">TimerEvent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-basetween"><span title="BaseTween" class="linkLabel_WmDU">BaseTween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-basetweendata"><span title="BaseTweenData" class="linkLabel_WmDU">BaseTweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tween"><span title="Tween" class="linkLabel_WmDU">Tween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenchain"><span title="TweenChain" class="linkLabel_WmDU">TweenChain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweendata"><span title="TweenData" class="linkLabel_WmDU">TweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenframedata"><span title="TweenFrameData" class="linkLabel_WmDU">TweenFrameData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenmanager"><span title="TweenManager" class="linkLabel_WmDU">TweenManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/"><span title="Class" class="linkLabel_WmDU">Class</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/class/"><span>Class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">StaticBody</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>StaticBody</h1></header><p>A Static Arcade Physics Body.</p>
+<p>A Static Body never moves, and isn&#x27;t automatically synchronized with its parent Game Object.</p>
+<p>That means if you make any change to the parent&#x27;s origin, position, or scale after creating or adding the body, you&#x27;ll need to update the Static Body manually.</p>
+<p>A Static Body can collide with other Bodies, but is never moved by collisions.</p>
+<p>Its dynamic counterpart is <a class="" href="/api-documentation/class/Phaser.Physics.Arcade.Body">Phaser.Physics.Arcade.Body</a>.</p>
+<p><strong>Constructor</strong></p>
+<p><code>new StaticBody(world, [gameObject])</code></p>
+<p><strong>Parameters</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>world</td><td><a class="" href="/api-documentation/class/physics-arcade-world">Phaser.Physics.Arcade.World</a></td><td>No</td><td>The Arcade Physics simulation this Static Body belongs to.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>Yes</td><td>The Game Object this Body belongs to. As of Phaser 3.60 this is now optional.</td></tr></tbody></table>
+<hr>
+<p><strong>Scope</strong>: static</p>
+<p><strong>Extends</strong></p>
+<blockquote>
+<p><a class="" href="/api-documentation/namespace/physics-arcade-components-collision">Phaser.Physics.Arcade.Components.Collision</a></p>
+</blockquote>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L15" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L15</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Public Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="allowgravity">allowGravity<a href="#allowgravity" class="hash-link" aria-label="Direct link to allowGravity" title="Direct link to allowGravity" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="allowgravity-boolean">allowGravity: boolean<a href="#allowgravity-boolean" class="hash-link" aria-label="Direct link to allowGravity: boolean" title="Direct link to allowGravity: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A constant <code>false</code> value expected by the Arcade Physics simulation.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L233" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L233</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="blocked">blocked<a href="#blocked" class="hash-link" aria-label="Direct link to blocked" title="Direct link to blocked" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="blocked-phasertypesphysicsarcadearcadebodycollision">blocked: <a class="" href="/api-documentation/typedef/types-physics-arcade#ArcadeBodyCollision">Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a><a href="#blocked-phasertypesphysicsarcadearcadebodycollision" class="hash-link" aria-label="Direct link to blocked-phasertypesphysicsarcadearcadebodycollision" title="Direct link to blocked-phasertypesphysicsarcadearcadebodycollision" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This property is kept for compatibility with Dynamic Bodies.</p>
+<p>Avoid using it.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L439" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L439</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottom">bottom<a href="#bottom" class="hash-link" aria-label="Direct link to bottom" title="Direct link to bottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bottom-number">bottom: number<a href="#bottom-number" class="hash-link" aria-label="Direct link to bottom: number" title="Direct link to bottom: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The lowest y coordinate of the area of the StaticBody. (y + height)</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L1064" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L1064</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bounce">bounce<a href="#bounce" class="hash-link" aria-label="Direct link to bounce" title="Direct link to bounce" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bounce-phasermathvector2">bounce: <a class="" href="/api-documentation/class/math-vector2">Phaser.Math.Vector2</a><a href="#bounce-phasermathvector2" class="hash-link" aria-label="Direct link to bounce-phasermathvector2" title="Direct link to bounce-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Rebound, or restitution, following a collision, relative to 1. Always zero for a Static Body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L254" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L254</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="center">center<a href="#center" class="hash-link" aria-label="Direct link to center" title="Direct link to center" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="center-phasermathvector2">center: <a class="" href="/api-documentation/class/math-vector2">Phaser.Math.Vector2</a><a href="#center-phasermathvector2" class="hash-link" aria-label="Direct link to center-phasermathvector2" title="Direct link to center-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The center of the Static Body&#x27;s boundary.</p>
+<p>This is the midpoint of its <code>position</code> (top-left corner) and its bottom-right corner.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L213" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L213</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="checkcollision">checkCollision<a href="#checkcollision" class="hash-link" aria-label="Direct link to checkCollision" title="Direct link to checkCollision" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="checkcollision-phasertypesphysicsarcadearcadebodycollision">checkCollision: <a class="" href="/api-documentation/typedef/types-physics-arcade#ArcadeBodyCollision">Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a><a href="#checkcollision-phasertypesphysicsarcadearcadebodycollision" class="hash-link" aria-label="Direct link to checkcollision-phasertypesphysicsarcadearcadebodycollision" title="Direct link to checkcollision-phasertypesphysicsarcadearcadebodycollision" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether this StaticBody is checked for collisions and for which directions. You can set <code>checkCollision.none = false</code> to disable collision checks.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L409" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L409</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="collideworldbounds">collideWorldBounds<a href="#collideworldbounds" class="hash-link" aria-label="Direct link to collideWorldBounds" title="Direct link to collideWorldBounds" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="collideworldbounds-boolean">collideWorldBounds: boolean<a href="#collideworldbounds-boolean" class="hash-link" aria-label="Direct link to collideWorldBounds: boolean" title="Direct link to collideWorldBounds: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether this StaticBody interacts with the world boundary.</p>
+<p>Always false for a Static Body. (Static Bodies never collide with the world boundary.)</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L397" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L397</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="collisioncategory">collisionCategory<a href="#collisioncategory" class="hash-link" aria-label="Direct link to collisionCategory" title="Direct link to collisionCategory" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="collisioncategory-number">collisionCategory: number<a href="#collisioncategory-number" class="hash-link" aria-label="Direct link to collisionCategory: number" title="Direct link to collisionCategory: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Arcade Physics Body Collision Category.</p>
+<p>This can be set to any valid collision bitfield value.</p>
+<p>See the <code>setCollisionCategory</code> method for more details.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L459" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L459</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="collisionmask">collisionMask<a href="#collisionmask" class="hash-link" aria-label="Direct link to collisionMask" title="Direct link to collisionMask" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="collisionmask-number">collisionMask: number<a href="#collisionmask-number" class="hash-link" aria-label="Direct link to collisionMask: number" title="Direct link to collisionMask: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Arcade Physics Body Collision Mask.</p>
+<p>See the <code>setCollidesWith</code> method for more details.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L472" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L472</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="customseparatex">customSeparateX<a href="#customseparatex" class="hash-link" aria-label="Direct link to customSeparateX" title="Direct link to customSeparateX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="customseparatex-boolean">customSeparateX: boolean<a href="#customseparatex-boolean" class="hash-link" aria-label="Direct link to customSeparateX: boolean" title="Direct link to customSeparateX: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A flag disabling the default horizontal separation of colliding bodies. Pass your own <code>collideHandler</code> to the collider.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L337" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L337</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="customseparatey">customSeparateY<a href="#customseparatey" class="hash-link" aria-label="Direct link to customSeparateY" title="Direct link to customSeparateY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="customseparatey-boolean">customSeparateY: boolean<a href="#customseparatey-boolean" class="hash-link" aria-label="Direct link to customSeparateY: boolean" title="Direct link to customSeparateY: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A flag disabling the default vertical separation of colliding bodies. Pass your own <code>collideHandler</code> to the collider.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L347" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L347</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="debugbodycolor">debugBodyColor<a href="#debugbodycolor" class="hash-link" aria-label="Direct link to debugBodyColor" title="Direct link to debugBodyColor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="debugbodycolor-number">debugBodyColor: number<a href="#debugbodycolor-number" class="hash-link" aria-label="Direct link to debugBodyColor: number" title="Direct link to debugBodyColor: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The color of this Static Body on the debug display.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L112" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L112</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="debugshowbody">debugShowBody<a href="#debugshowbody" class="hash-link" aria-label="Direct link to debugShowBody" title="Direct link to debugShowBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="debugshowbody-boolean">debugShowBody: boolean<a href="#debugshowbody-boolean" class="hash-link" aria-label="Direct link to debugShowBody: boolean" title="Direct link to debugShowBody: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether the Static Body&#x27;s boundary is drawn to the debug display.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L103" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L103</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="embedded">embedded<a href="#embedded" class="hash-link" aria-label="Direct link to embedded" title="Direct link to embedded" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="embedded-boolean">embedded: boolean<a href="#embedded-boolean" class="hash-link" aria-label="Direct link to embedded: boolean" title="Direct link to embedded: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether this StaticBody has ever overlapped with another while both were not moving.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L387" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L387</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="enable">enable<a href="#enable" class="hash-link" aria-label="Direct link to enable" title="Direct link to enable" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="enable-boolean">enable: boolean<a href="#enable-boolean" class="hash-link" aria-label="Direct link to enable: boolean" title="Direct link to enable: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether this Static Body is updated by the physics simulation.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L121" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L121</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject">gameObject<a href="#gameobject" class="hash-link" aria-label="Direct link to gameObject" title="Direct link to gameObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject-phasergameobjectsgameobject">gameObject: <a class="" href="/api-documentation/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a><a href="#gameobject-phasergameobjectsgameobject" class="hash-link" aria-label="Direct link to gameobject-phasergameobjectsgameobject" title="Direct link to gameobject-phasergameobjectsgameobject" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Game Object this Static Body belongs to.</p>
+<p>As of Phaser 3.60 this is now optional and can be undefined.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L82" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L82</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gravity">gravity<a href="#gravity" class="hash-link" aria-label="Direct link to gravity" title="Direct link to gravity" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gravity-phasermathvector2">gravity: <a class="" href="/api-documentation/class/math-vector2">Phaser.Math.Vector2</a><a href="#gravity-phasermathvector2" class="hash-link" aria-label="Direct link to gravity-phasermathvector2" title="Direct link to gravity-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gravitational force applied specifically to this Body. Values are in pixels per second squared. Always zero for a Static Body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L244" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L244</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="halfheight">halfHeight<a href="#halfheight" class="hash-link" aria-label="Direct link to halfHeight" title="Direct link to halfHeight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="halfheight-number">halfHeight: number<a href="#halfheight-number" class="hash-link" aria-label="Direct link to halfHeight: number" title="Direct link to halfHeight: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Half the Static Body&#x27;s height, in pixels.</p>
+<p>If the Static Body is circular, this is also the Static Body&#x27;s radius.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L203" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L203</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="halfwidth">halfWidth<a href="#halfwidth" class="hash-link" aria-label="Direct link to halfWidth" title="Direct link to halfWidth" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="halfwidth-number">halfWidth: number<a href="#halfwidth-number" class="hash-link" aria-label="Direct link to halfWidth: number" title="Direct link to halfWidth: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Half the Static Body&#x27;s width, in pixels.</p>
+<p>If the Static Body is circular, this is also the Static Body&#x27;s radius.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L193" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L193</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="height">height<a href="#height" class="hash-link" aria-label="Direct link to height" title="Direct link to height" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="height-number">height: number<a href="#height-number" class="hash-link" aria-label="Direct link to height: number" title="Direct link to height: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The height of the Static Body&#x27;s boundary, in pixels.</p>
+<p>If the Static Body is circular, this is also the Static Body&#x27;s diameter.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L183" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L183</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="immovable">immovable<a href="#immovable" class="hash-link" aria-label="Direct link to immovable" title="Direct link to immovable" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="immovable-boolean">immovable: boolean<a href="#immovable-boolean" class="hash-link" aria-label="Direct link to immovable: boolean" title="Direct link to immovable: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether this object can be moved by collisions with another body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L308" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L308</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="isbody">isBody<a href="#isbody" class="hash-link" aria-label="Direct link to isBody" title="Direct link to isBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="isbody-boolean">isBody: boolean<a href="#isbody-boolean" class="hash-link" aria-label="Direct link to isBody: boolean" title="Direct link to isBody: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A quick-test flag that signifies this is a Body, used in the World collision handler.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L93" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L93</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="iscircle">isCircle<a href="#iscircle" class="hash-link" aria-label="Direct link to isCircle" title="Direct link to isCircle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iscircle-boolean">isCircle: boolean<a href="#iscircle-boolean" class="hash-link" aria-label="Direct link to isCircle: boolean" title="Direct link to isCircle: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether this Static Body&#x27;s boundary is circular (<code>true</code>) or rectangular (<code>false</code>).</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L131" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L131</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="left">left<a href="#left" class="hash-link" aria-label="Direct link to left" title="Direct link to left" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="left-number">left: number<a href="#left-number" class="hash-link" aria-label="Direct link to left: number" title="Direct link to left: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the left-most x coordinate of the area of the StaticBody.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L1013" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L1013</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mass">mass<a href="#mass" class="hash-link" aria-label="Direct link to mass" title="Direct link to mass" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mass-number">mass: number<a href="#mass-number" class="hash-link" aria-label="Direct link to mass: number" title="Direct link to mass: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The StaticBody&#x27;s inertia, relative to a default unit (1). With <code>bounce</code>, this affects the exchange of momentum (velocities) during collisions.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L298" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L298</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="offset">offset<a href="#offset" class="hash-link" aria-label="Direct link to offset" title="Direct link to offset" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="offset-phasermathvector2">offset: <a class="" href="/api-documentation/class/math-vector2">Phaser.Math.Vector2</a><a href="#offset-phasermathvector2" class="hash-link" aria-label="Direct link to offset-phasermathvector2" title="Direct link to offset-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The offset set by <a class="" href="/api-documentation/class/physics-arcade-staticbody#setCircle">Phaser.Physics.Arcade.StaticBody#setCircle</a> or <a class="" href="/api-documentation/class/physics-arcade-staticbody#setSize">Phaser.Physics.Arcade.StaticBody#setSize</a>.</p>
+<p>This doesn&#x27;t affect the Static Body&#x27;s position, because a Static Body does not follow its Game Object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L152" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L152</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="oncollide">onCollide<a href="#oncollide" class="hash-link" aria-label="Direct link to onCollide" title="Direct link to onCollide" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="oncollide-boolean">onCollide: boolean<a href="#oncollide-boolean" class="hash-link" aria-label="Direct link to onCollide: boolean" title="Direct link to onCollide: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether the simulation emits a <code>collide</code> event when this StaticBody collides with another.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L278" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L278</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onoverlap">onOverlap<a href="#onoverlap" class="hash-link" aria-label="Direct link to onOverlap" title="Direct link to onOverlap" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="onoverlap-boolean">onOverlap: boolean<a href="#onoverlap-boolean" class="hash-link" aria-label="Direct link to onOverlap: boolean" title="Direct link to onOverlap: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether the simulation emits an <code>overlap</code> event when this StaticBody overlaps with another.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L288" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L288</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onworldbounds">onWorldBounds<a href="#onworldbounds" class="hash-link" aria-label="Direct link to onWorldBounds" title="Direct link to onWorldBounds" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="onworldbounds-boolean">onWorldBounds: boolean<a href="#onworldbounds-boolean" class="hash-link" aria-label="Direct link to onWorldBounds: boolean" title="Direct link to onWorldBounds: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether the simulation emits a <code>worldbounds</code> event when this StaticBody collides with the world boundary.</p>
+<p>Always false for a Static Body. (Static Bodies never collide with the world boundary and never trigger a <code>worldbounds</code> event.)</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L266" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L266</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlapr">overlapR<a href="#overlapr" class="hash-link" aria-label="Direct link to overlapR" title="Direct link to overlapR" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlapr-number">overlapR: number<a href="#overlapr-number" class="hash-link" aria-label="Direct link to overlapR: number" title="Direct link to overlapR: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The amount of overlap (before separation), if this StaticBody is circular and colliding with another circular body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L377" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L377</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlapx">overlapX<a href="#overlapx" class="hash-link" aria-label="Direct link to overlapX" title="Direct link to overlapX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlapx-number">overlapX: number<a href="#overlapx-number" class="hash-link" aria-label="Direct link to overlapX: number" title="Direct link to overlapX: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The amount of horizontal overlap (before separation), if this Body is colliding with another.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L357" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L357</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlapy">overlapY<a href="#overlapy" class="hash-link" aria-label="Direct link to overlapY" title="Direct link to overlapY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overlapy-number">overlapY: number<a href="#overlapy-number" class="hash-link" aria-label="Direct link to overlapY: number" title="Direct link to overlapY: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The amount of vertical overlap (before separation), if this Body is colliding with another.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L367" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L367</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="physicstype">physicsType<a href="#physicstype" class="hash-link" aria-label="Direct link to physicsType" title="Direct link to physicsType" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="physicstype-number">physicsType: number<a href="#physicstype-number" class="hash-link" aria-label="Direct link to physicsType: number" title="Direct link to physicsType: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The StaticBody&#x27;s physics type (static by default).</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L449" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L449</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="position">position<a href="#position" class="hash-link" aria-label="Direct link to position" title="Direct link to position" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="position-phasermathvector2">position: <a class="" href="/api-documentation/class/math-vector2">Phaser.Math.Vector2</a><a href="#position-phasermathvector2" class="hash-link" aria-label="Direct link to position-phasermathvector2" title="Direct link to position-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The position of this Static Body within the simulation.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L164" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L164</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pushable">pushable<a href="#pushable" class="hash-link" aria-label="Direct link to pushable" title="Direct link to pushable" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pushable-boolean">pushable: boolean<a href="#pushable-boolean" class="hash-link" aria-label="Direct link to pushable: boolean" title="Direct link to pushable: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets if this Body can be pushed by another Body.</p>
+<p>A body that cannot be pushed will reflect back all of the velocity it is given to the</p>
+<p>colliding body. If that body is also not pushable, then the separation will be split</p>
+<p>between them evenly.</p>
+<p>If you want your body to never move or seperate at all, see the <code>setImmovable</code> method.</p>
+<p>By default, Static Bodies are not pushable.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L318" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L318</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="radius">radius<a href="#radius" class="hash-link" aria-label="Direct link to radius" title="Direct link to radius" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="radius-number">radius: number<a href="#radius-number" class="hash-link" aria-label="Direct link to radius: number" title="Direct link to radius: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>If this Static Body is circular, this is the radius of the boundary, as set by <a class="" href="/api-documentation/class/physics-arcade-staticbody#setCircle">Phaser.Physics.Arcade.StaticBody#setCircle</a>, in pixels.</p>
+<p>Equal to <code>halfWidth</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L141" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L141</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="right">right<a href="#right" class="hash-link" aria-label="Direct link to right" title="Direct link to right" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="right-number">right: number<a href="#right-number" class="hash-link" aria-label="Direct link to right: number" title="Direct link to right: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The right-most x coordinate of the area of the StaticBody.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L1030" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L1030</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="top">top<a href="#top" class="hash-link" aria-label="Direct link to top" title="Direct link to top" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="top-number">top: number<a href="#top-number" class="hash-link" aria-label="Direct link to top: number" title="Direct link to top: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The highest y coordinate of the area of the StaticBody.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L1047" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L1047</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="touching">touching<a href="#touching" class="hash-link" aria-label="Direct link to touching" title="Direct link to touching" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="touching-phasertypesphysicsarcadearcadebodycollision">touching: <a class="" href="/api-documentation/typedef/types-physics-arcade#ArcadeBodyCollision">Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a><a href="#touching-phasertypesphysicsarcadearcadebodycollision" class="hash-link" aria-label="Direct link to touching-phasertypesphysicsarcadearcadebodycollision" title="Direct link to touching-phasertypesphysicsarcadearcadebodycollision" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This property is kept for compatibility with Dynamic Bodies.</p>
+<p>Avoid using it.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L418" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L418</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="velocity">velocity<a href="#velocity" class="hash-link" aria-label="Direct link to velocity" title="Direct link to velocity" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="velocity-phasermathvector2">velocity: <a class="" href="/api-documentation/class/math-vector2">Phaser.Math.Vector2</a><a href="#velocity-phasermathvector2" class="hash-link" aria-label="Direct link to velocity-phasermathvector2" title="Direct link to velocity-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A constant zero velocity used by the Arcade Physics simulation for calculations.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L223" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L223</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wastouching">wasTouching<a href="#wastouching" class="hash-link" aria-label="Direct link to wasTouching" title="Direct link to wasTouching" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wastouching-phasertypesphysicsarcadearcadebodycollision">wasTouching: <a class="" href="/api-documentation/typedef/types-physics-arcade#ArcadeBodyCollision">Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a><a href="#wastouching-phasertypesphysicsarcadearcadebodycollision" class="hash-link" aria-label="Direct link to wastouching-phasertypesphysicsarcadearcadebodycollision" title="Direct link to wastouching-phasertypesphysicsarcadearcadebodycollision" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This property is kept for compatibility with Dynamic Bodies.</p>
+<p>Avoid using it.</p>
+<p>The values are always false for a Static Body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L428" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L428</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="width">width<a href="#width" class="hash-link" aria-label="Direct link to width" title="Direct link to width" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="width-number">width: number<a href="#width-number" class="hash-link" aria-label="Direct link to width: number" title="Direct link to width: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The width of the Static Body&#x27;s boundary, in pixels.</p>
+<p>If the Static Body is circular, this is also the Static Body&#x27;s diameter.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L173" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L173</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="world">world<a href="#world" class="hash-link" aria-label="Direct link to world" title="Direct link to world" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="world-phaserphysicsarcadeworld">world: <a class="" href="/api-documentation/class/physics-arcade-world">Phaser.Physics.Arcade.World</a><a href="#world-phaserphysicsarcadeworld" class="hash-link" aria-label="Direct link to world-phaserphysicsarcadeworld" title="Direct link to world-phaserphysicsarcadeworld" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Arcade Physics simulation this Static Body belongs to.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L73" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L73</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="x">x<a href="#x" class="hash-link" aria-label="Direct link to x" title="Direct link to x" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="x-number">x: number<a href="#x-number" class="hash-link" aria-label="Direct link to x: number" title="Direct link to x: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The x coordinate of the StaticBody.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L963" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L963</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="y">y<a href="#y" class="hash-link" aria-label="Direct link to y" title="Direct link to y" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="y-number">y: number<a href="#y-number" class="hash-link" aria-label="Direct link to y: number" title="Direct link to y: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The y coordinate of the StaticBody.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L988" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L988</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h1>Private Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_dx">_dx<a href="#_dx" class="hash-link" aria-label="Direct link to _dx" title="Direct link to _dx" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_dx-number">_dx: number<a href="#_dx-number" class="hash-link" aria-label="Direct link to _dx: number" title="Direct link to _dx: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The calculated change in the Static Body&#x27;s horizontal position during the current step.</p>
+<p>For a static body this is always zero.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L483" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L483</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_dy">_dy<a href="#_dy" class="hash-link" aria-label="Direct link to _dy" title="Direct link to _dy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_dy-number">_dy: number<a href="#_dy-number" class="hash-link" aria-label="Direct link to _dy: number" title="Direct link to _dy: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The calculated change in the Static Body&#x27;s vertical position during the current step.</p>
+<p>For a static body this is always zero.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L495" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L495</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h1>Public Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addcollideswith">addCollidesWith<a href="#addcollideswith" class="hash-link" aria-label="Direct link to addCollidesWith" title="Direct link to addCollidesWith" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addcollideswithcategory">&lt;instance&gt; addCollidesWith(category)<a href="#instance-addcollideswithcategory" class="hash-link" aria-label="Direct link to &lt;instance&gt; addCollidesWith(category)" title="Direct link to &lt;instance&gt; addCollidesWith(category)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds the given Collision Category to the list of those that this</p>
+<p>Arcade Physics Body will collide with.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>category</td><td>number</td><td>No</td><td>The collision category to add.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Game Object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/namespace/physics-arcade-components-collision#addCollidesWith">Phaser.Physics.Arcade.Components.Collision#addCollidesWith</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/components/Collision.js#L60" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/Collision.js#L60</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltaabsx">deltaAbsX<a href="#deltaabsx" class="hash-link" aria-label="Direct link to deltaAbsX" title="Direct link to deltaAbsX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-deltaabsx">&lt;instance&gt; deltaAbsX()<a href="#instance-deltaabsx" class="hash-link" aria-label="Direct link to &lt;instance&gt; deltaAbsX()" title="Direct link to &lt;instance&gt; deltaAbsX()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The absolute (non-negative) change in this StaticBody&#x27;s horizontal position from the previous step. Always zero.</p>
+<p><strong>Returns:</strong> number - Always zero for a Static Body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L818" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L818</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltaabsy">deltaAbsY<a href="#deltaabsy" class="hash-link" aria-label="Direct link to deltaAbsY" title="Direct link to deltaAbsY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-deltaabsy">&lt;instance&gt; deltaAbsY()<a href="#instance-deltaabsy" class="hash-link" aria-label="Direct link to &lt;instance&gt; deltaAbsY()" title="Direct link to &lt;instance&gt; deltaAbsY()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The absolute (non-negative) change in this StaticBody&#x27;s vertical position from the previous step. Always zero.</p>
+<p><strong>Returns:</strong> number - Always zero for a Static Body.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L831" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L831</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltax">deltaX<a href="#deltax" class="hash-link" aria-label="Direct link to deltaX" title="Direct link to deltaX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-deltax">&lt;instance&gt; deltaX()<a href="#instance-deltax" class="hash-link" aria-label="Direct link to &lt;instance&gt; deltaX()" title="Direct link to &lt;instance&gt; deltaX()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The change in this StaticBody&#x27;s horizontal position from the previous step. Always zero.</p>
+<p><strong>Returns:</strong> number - The change in this StaticBody&#x27;s velocity from the previous step. Always zero.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L844" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L844</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltay">deltaY<a href="#deltay" class="hash-link" aria-label="Direct link to deltaY" title="Direct link to deltaY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-deltay">&lt;instance&gt; deltaY()<a href="#instance-deltay" class="hash-link" aria-label="Direct link to &lt;instance&gt; deltaY()" title="Direct link to &lt;instance&gt; deltaY()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The change in this StaticBody&#x27;s vertical position from the previous step. Always zero.</p>
+<p><strong>Returns:</strong> number - The change in this StaticBody&#x27;s velocity from the previous step. Always zero.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L857" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L857</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deltaz">deltaZ<a href="#deltaz" class="hash-link" aria-label="Direct link to deltaZ" title="Direct link to deltaZ" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-deltaz">&lt;instance&gt; deltaZ()<a href="#instance-deltaz" class="hash-link" aria-label="Direct link to &lt;instance&gt; deltaZ()" title="Direct link to &lt;instance&gt; deltaZ()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The change in this StaticBody&#x27;s rotation from the previous step. Always zero.</p>
+<p><strong>Returns:</strong> number - The change in this StaticBody&#x27;s rotation from the previous step. Always zero.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L870" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L870</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">destroy<a href="#destroy" class="hash-link" aria-label="Direct link to destroy" title="Direct link to destroy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-destroy">&lt;instance&gt; destroy()<a href="#instance-destroy" class="hash-link" aria-label="Direct link to &lt;instance&gt; destroy()" title="Direct link to &lt;instance&gt; destroy()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Disables this Body and marks it for destruction during the next step.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L883" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L883</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drawdebug">drawDebug<a href="#drawdebug" class="hash-link" aria-label="Direct link to drawDebug" title="Direct link to drawDebug" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-drawdebuggraphic">&lt;instance&gt; drawDebug(graphic)<a href="#instance-drawdebuggraphic" class="hash-link" aria-label="Direct link to &lt;instance&gt; drawDebug(graphic)" title="Direct link to &lt;instance&gt; drawDebug(graphic)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Draws a graphical representation of the StaticBody for visual debugging purposes.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>graphic</td><td><a class="" href="/api-documentation/class/gameobjects-graphics">Phaser.GameObjects.Graphics</a></td><td>No</td><td>The Graphics object to use for the debug drawing of the StaticBody.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L896" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L896</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getbounds">getBounds<a href="#getbounds" class="hash-link" aria-label="Direct link to getBounds" title="Direct link to getBounds" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getboundsobj">&lt;instance&gt; getBounds(obj)<a href="#instance-getboundsobj" class="hash-link" aria-label="Direct link to &lt;instance&gt; getBounds(obj)" title="Direct link to &lt;instance&gt; getBounds(obj)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the x and y coordinates of the top left and bottom right points of the StaticBody.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>obj</td><td><a class="" href="/api-documentation/typedef/types-physics-arcade#ArcadeBodyBounds">Phaser.Types.Physics.Arcade.ArcadeBodyBounds</a></td><td>No</td><td>The object which will hold the coordinates of the bounds.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/typedef/types-physics-arcade#ArcadeBodyBounds">Phaser.Types.Physics.Arcade.ArcadeBodyBounds</a> - The same object that was passed with <code>x</code>, <code>y</code>, <code>right</code> and <code>bottom</code> values matching the respective values of the StaticBody.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L772" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L772</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hittest">hitTest<a href="#hittest" class="hash-link" aria-label="Direct link to hitTest" title="Direct link to hitTest" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-hittestx-y">&lt;instance&gt; hitTest(x, y)<a href="#instance-hittestx-y" class="hash-link" aria-label="Direct link to &lt;instance&gt; hitTest(x, y)" title="Direct link to &lt;instance&gt; hitTest(x, y)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if a given x,y coordinate is colliding with this Static Body.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The x coordinate to check against this body.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The y coordinate to check against this body.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the given coordinate lies within this body, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L792" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L792</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="postupdate">postUpdate<a href="#postupdate" class="hash-link" aria-label="Direct link to postUpdate" title="Direct link to postUpdate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-postupdate">&lt;instance&gt; postUpdate()<a href="#instance-postupdate" class="hash-link" aria-label="Direct link to &lt;instance&gt; postUpdate()" title="Direct link to &lt;instance&gt; postUpdate()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>NOOP</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L808" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L808</a><br>
+Since: 3.12.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removecollideswith">removeCollidesWith<a href="#removecollideswith" class="hash-link" aria-label="Direct link to removeCollidesWith" title="Direct link to removeCollidesWith" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removecollideswithcategory">&lt;instance&gt; removeCollidesWith(category)<a href="#instance-removecollideswithcategory" class="hash-link" aria-label="Direct link to &lt;instance&gt; removeCollidesWith(category)" title="Direct link to &lt;instance&gt; removeCollidesWith(category)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes the given Collision Category from the list of those that this</p>
+<p>Arcade Physics Body will collide with.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>category</td><td>number</td><td>No</td><td>The collision category to add.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Game Object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/namespace/physics-arcade-components-collision#removeCollidesWith">Phaser.Physics.Arcade.Components.Collision#removeCollidesWith</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/components/Collision.js#L80" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/Collision.js#L80</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reset">reset<a href="#reset" class="hash-link" aria-label="Direct link to reset" title="Direct link to reset" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-resetx-y">&lt;instance&gt; reset([x], [y])<a href="#instance-resetx-y" class="hash-link" aria-label="Direct link to &lt;instance&gt; reset([x], [y])" title="Direct link to &lt;instance&gt; reset([x], [y])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Resets this Static Body to its parent Game Object&#x27;s position.</p>
+<p>If <code>x</code> and <code>y</code> are given, the parent Game Object is placed there and this Static Body is centered on it.</p>
+<p>Otherwise this Static Body is centered on the Game Object&#x27;s current position.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>Yes</td><td>The x coordinate to reset the body to. If not given will use the parent Game Object&#x27;s coordinate.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>The y coordinate to reset the body to. If not given will use the parent Game Object&#x27;s coordinate.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L726" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L726</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resetcollisioncategory">resetCollisionCategory<a href="#resetcollisioncategory" class="hash-link" aria-label="Direct link to resetCollisionCategory" title="Direct link to resetCollisionCategory" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-resetcollisioncategory">&lt;instance&gt; resetCollisionCategory()<a href="#instance-resetcollisioncategory" class="hash-link" aria-label="Direct link to &lt;instance&gt; resetCollisionCategory()" title="Direct link to &lt;instance&gt; resetCollisionCategory()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Resets the Collision Category and Mask back to the defaults,</p>
+<p>which is to collide with everything.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Game Object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/namespace/physics-arcade-components-collision#resetCollisionCategory">Phaser.Physics.Arcade.Components.Collision#resetCollisionCategory</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/components/Collision.js#L130" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/Collision.js#L130</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setcircle">setCircle<a href="#setcircle" class="hash-link" aria-label="Direct link to setCircle" title="Direct link to setCircle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setcircleradius-offsetx-offsety">&lt;instance&gt; setCircle(radius, [offsetX], [offsetY])<a href="#instance-setcircleradius-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;instance&gt; setCircle(radius, [offsetX], [offsetY])" title="Direct link to &lt;instance&gt; setCircle(radius, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets this Static Body to have a circular body and sets its size and position.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>radius</td><td>number</td><td>No</td><td>The radius of the StaticBody, in pixels.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>The horizontal offset of the StaticBody from its Game Object, in pixels.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>The vertical offset of the StaticBody from its Game Object, in pixels.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Static Body object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L670" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L670</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setcollideswith">setCollidesWith<a href="#setcollideswith" class="hash-link" aria-label="Direct link to setCollidesWith" title="Direct link to setCollidesWith" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setcollideswithcategories">&lt;instance&gt; setCollidesWith(categories)<a href="#instance-setcollideswithcategories" class="hash-link" aria-label="Direct link to &lt;instance&gt; setCollidesWith(categories)" title="Direct link to &lt;instance&gt; setCollidesWith(categories)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets all of the Collision Categories that this Arcade Physics Body</p>
+<p>will collide with. You can either pass a single category value, or</p>
+<p>an array of them.</p>
+<p>Calling this method will reset all of the collision categories,</p>
+<p>so only those passed to this method are enabled.</p>
+<p>If you wish to add a new category to the existing mask, call</p>
+<p>the <code>addCollisionCategory</code> method.</p>
+<p>If you wish to reset the collision category and mask, call</p>
+<p>the <code>resetCollisionCategory</code> method.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>categories</td><td>number | Array.&lt;number&gt;</td><td>No</td><td>The collision category to collide with, or an array of them.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Game Object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/namespace/physics-arcade-components-collision#setCollidesWith">Phaser.Physics.Arcade.Components.Collision#setCollidesWith</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/components/Collision.js#L100" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/Collision.js#L100</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setcollisioncategory">setCollisionCategory<a href="#setcollisioncategory" class="hash-link" aria-label="Direct link to setCollisionCategory" title="Direct link to setCollisionCategory" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setcollisioncategorycategory">&lt;instance&gt; setCollisionCategory(category)<a href="#instance-setcollisioncategorycategory" class="hash-link" aria-label="Direct link to &lt;instance&gt; setCollisionCategory(category)" title="Direct link to &lt;instance&gt; setCollisionCategory(category)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the Collision Category that this Arcade Physics Body</p>
+<p>will use in order to determine what it can collide with.</p>
+<p>It can only have one single category assigned to it.</p>
+<p>If you wish to reset the collision category and mask, call</p>
+<p>the <code>resetCollisionCategory</code> method.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>category</td><td>number</td><td>No</td><td>The collision category.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Game Object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/namespace/physics-arcade-components-collision#setCollisionCategory">Phaser.Physics.Arcade.Components.Collision#setCollisionCategory</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/components/Collision.js#L17" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/Collision.js#L17</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setgameobject">setGameObject<a href="#setgameobject" class="hash-link" aria-label="Direct link to setGameObject" title="Direct link to setGameObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setgameobjectgameobject-update">&lt;instance&gt; setGameObject(gameObject, [update])<a href="#instance-setgameobjectgameobject-update" class="hash-link" aria-label="Direct link to &lt;instance&gt; setGameObject(gameObject, [update])" title="Direct link to &lt;instance&gt; setGameObject(gameObject, [update])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Changes the Game Object this Body is bound to.</p>
+<p>First it removes its reference from the old Game Object, then sets the new one.</p>
+<p>You can optionally update the position and dimensions of this Body to reflect that of the new Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td></td><td>The new Game Object that will own this Body.</td></tr><tr><td>update</td><td>boolean</td><td>Yes</td><td>true</td><td>Reposition and resize this Body to match the new Game Object?</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Static Body object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L508" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L508</a><br>
+Since: 3.1.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setmass">setMass<a href="#setmass" class="hash-link" aria-label="Direct link to setMass" title="Direct link to setMass" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setmassvalue">&lt;instance&gt; setMass(value)<a href="#instance-setmassvalue" class="hash-link" aria-label="Direct link to &lt;instance&gt; setMass(value)" title="Direct link to &lt;instance&gt; setMass(value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the Mass of the StaticBody. Will set the Mass to 0.1 if the value passed is less than or equal to zero.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>The value to set the Mass to. Values of zero or less are changed to 0.1.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Static Body object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L940" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L940</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setoffset">setOffset<a href="#setoffset" class="hash-link" aria-label="Direct link to setOffset" title="Direct link to setOffset" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setoffsetx-y">&lt;instance&gt; setOffset(x, y)<a href="#instance-setoffsetx-y" class="hash-link" aria-label="Direct link to &lt;instance&gt; setOffset(x, y)" title="Direct link to &lt;instance&gt; setOffset(x, y)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions the Static Body at an offset from its Game Object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The horizontal offset of the Static Body from the Game Object&#x27;s <code>x</code>.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The vertical offset of the Static Body from the Game Object&#x27;s <code>y</code>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Static Body object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L573" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L573</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setsize">setSize<a href="#setsize" class="hash-link" aria-label="Direct link to setSize" title="Direct link to setSize" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setsizewidth-height-center">&lt;instance&gt; setSize([width], [height], [center])<a href="#instance-setsizewidth-height-center" class="hash-link" aria-label="Direct link to &lt;instance&gt; setSize([width], [height], [center])" title="Direct link to &lt;instance&gt; setSize([width], [height], [center])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the size of the Static Body.</p>
+<p>When <code>center</code> is true, also repositions it.</p>
+<p>Resets the width and height to match current frame, if no width and height provided and a frame is found.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>width</td><td>number</td><td>Yes</td><td></td><td>The width of the Static Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame width.</td></tr><tr><td>height</td><td>number</td><td>Yes</td><td></td><td>The height of the Static Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame height.</td></tr><tr><td>center</td><td>boolean</td><td>Yes</td><td>true</td><td>Place the Static Body&#x27;s center on its Game Object&#x27;s center. Only works if the Game Object has the <code>getCenter</code> method.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Static Body object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L605" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L605</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stop">stop<a href="#stop" class="hash-link" aria-label="Direct link to stop" title="Direct link to stop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-stop">&lt;instance&gt; stop()<a href="#instance-stop" class="hash-link" aria-label="Direct link to &lt;instance&gt; stop()" title="Direct link to &lt;instance&gt; stop()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>NOOP function. A Static Body cannot be stopped.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Static Body object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L759" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L759</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="updatecenter">updateCenter<a href="#updatecenter" class="hash-link" aria-label="Direct link to updateCenter" title="Direct link to updateCenter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-updatecenter">&lt;instance&gt; updateCenter()<a href="#instance-updatecenter" class="hash-link" aria-label="Direct link to &lt;instance&gt; updateCenter()" title="Direct link to &lt;instance&gt; updateCenter()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Updates the StaticBody&#x27;s <code>center</code> from its <code>position</code> and dimensions.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L715" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L715</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="updatefromgameobject">updateFromGameObject<a href="#updatefromgameobject" class="hash-link" aria-label="Direct link to updateFromGameObject" title="Direct link to updateFromGameObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-updatefromgameobject">&lt;instance&gt; updateFromGameObject()<a href="#instance-updatefromgameobject" class="hash-link" aria-label="Direct link to &lt;instance&gt; updateFromGameObject()" title="Direct link to &lt;instance&gt; updateFromGameObject()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Syncs the Static Body&#x27;s position and size with its parent Game Object.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a> - This Static Body object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L544" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L544</a><br>
+Since: 3.1.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="willcollidewith">willCollideWith<a href="#willcollidewith" class="hash-link" aria-label="Direct link to willCollideWith" title="Direct link to willCollideWith" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-willcollidewithcategory">&lt;instance&gt; willCollideWith(category)<a href="#instance-willcollidewithcategory" class="hash-link" aria-label="Direct link to &lt;instance&gt; willCollideWith(category)" title="Direct link to &lt;instance&gt; willCollideWith(category)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks to see if the given Collision Category will collide with</p>
+<p>this Arcade Physics object or not.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>category</td><td>number</td><td>No</td><td>Collision category value to test.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the given category will collide with this object, otherwise <code>false</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/namespace/physics-arcade-components-collision#willCollideWith">Phaser.Physics.Arcade.Components.Collision#willCollideWith</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/components/Collision.js#L42" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/components/Collision.js#L42</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="willdrawdebug">willDrawDebug<a href="#willdrawdebug" class="hash-link" aria-label="Direct link to willDrawDebug" title="Direct link to willDrawDebug" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-willdrawdebug">&lt;instance&gt; willDrawDebug()<a href="#instance-willdrawdebug" class="hash-link" aria-label="Direct link to &lt;instance&gt; willDrawDebug()" title="Direct link to &lt;instance&gt; willDrawDebug()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Indicates whether the StaticBody is going to be showing a debug visualization during postUpdate.</p>
+<p><strong>Returns:</strong> boolean - Whether or not the StaticBody is going to show the debug visualization during postUpdate.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/physics/arcade/StaticBody.js#L927" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/StaticBody.js#L927</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/class/physics-arcade-sprite"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Sprite</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/class/physics-arcade-staticgroup"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">StaticGroup</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#allowgravity" class="table-of-contents__link toc-highlight">allowGravity</a><ul><li><a href="#allowgravity-boolean" class="table-of-contents__link toc-highlight">allowGravity: boolean</a></li></ul></li><li><a href="#blocked" class="table-of-contents__link toc-highlight">blocked</a><ul><li><a href="#blocked-phasertypesphysicsarcadearcadebodycollision" class="table-of-contents__link toc-highlight">blocked: Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a></li></ul></li><li><a href="#bottom" class="table-of-contents__link toc-highlight">bottom</a><ul><li><a href="#bottom-number" class="table-of-contents__link toc-highlight">bottom: number</a></li></ul></li><li><a href="#bounce" class="table-of-contents__link toc-highlight">bounce</a><ul><li><a href="#bounce-phasermathvector2" class="table-of-contents__link toc-highlight">bounce: Phaser.Math.Vector2</a></li></ul></li><li><a href="#center" class="table-of-contents__link toc-highlight">center</a><ul><li><a href="#center-phasermathvector2" class="table-of-contents__link toc-highlight">center: Phaser.Math.Vector2</a></li></ul></li><li><a href="#checkcollision" class="table-of-contents__link toc-highlight">checkCollision</a><ul><li><a href="#checkcollision-phasertypesphysicsarcadearcadebodycollision" class="table-of-contents__link toc-highlight">checkCollision: Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a></li></ul></li><li><a href="#collideworldbounds" class="table-of-contents__link toc-highlight">collideWorldBounds</a><ul><li><a href="#collideworldbounds-boolean" class="table-of-contents__link toc-highlight">collideWorldBounds: boolean</a></li></ul></li><li><a href="#collisioncategory" class="table-of-contents__link toc-highlight">collisionCategory</a><ul><li><a href="#collisioncategory-number" class="table-of-contents__link toc-highlight">collisionCategory: number</a></li></ul></li><li><a href="#collisionmask" class="table-of-contents__link toc-highlight">collisionMask</a><ul><li><a href="#collisionmask-number" class="table-of-contents__link toc-highlight">collisionMask: number</a></li></ul></li><li><a href="#customseparatex" class="table-of-contents__link toc-highlight">customSeparateX</a><ul><li><a href="#customseparatex-boolean" class="table-of-contents__link toc-highlight">customSeparateX: boolean</a></li></ul></li><li><a href="#customseparatey" class="table-of-contents__link toc-highlight">customSeparateY</a><ul><li><a href="#customseparatey-boolean" class="table-of-contents__link toc-highlight">customSeparateY: boolean</a></li></ul></li><li><a href="#debugbodycolor" class="table-of-contents__link toc-highlight">debugBodyColor</a><ul><li><a href="#debugbodycolor-number" class="table-of-contents__link toc-highlight">debugBodyColor: number</a></li></ul></li><li><a href="#debugshowbody" class="table-of-contents__link toc-highlight">debugShowBody</a><ul><li><a href="#debugshowbody-boolean" class="table-of-contents__link toc-highlight">debugShowBody: boolean</a></li></ul></li><li><a href="#embedded" class="table-of-contents__link toc-highlight">embedded</a><ul><li><a href="#embedded-boolean" class="table-of-contents__link toc-highlight">embedded: boolean</a></li></ul></li><li><a href="#enable" class="table-of-contents__link toc-highlight">enable</a><ul><li><a href="#enable-boolean" class="table-of-contents__link toc-highlight">enable: boolean</a></li></ul></li><li><a href="#gameobject" class="table-of-contents__link toc-highlight">gameObject</a><ul><li><a href="#gameobject-phasergameobjectsgameobject" class="table-of-contents__link toc-highlight">gameObject: Phaser.GameObjects.GameObject</a></li></ul></li><li><a href="#gravity" class="table-of-contents__link toc-highlight">gravity</a><ul><li><a href="#gravity-phasermathvector2" class="table-of-contents__link toc-highlight">gravity: Phaser.Math.Vector2</a></li></ul></li><li><a href="#halfheight" class="table-of-contents__link toc-highlight">halfHeight</a><ul><li><a href="#halfheight-number" class="table-of-contents__link toc-highlight">halfHeight: number</a></li></ul></li><li><a href="#halfwidth" class="table-of-contents__link toc-highlight">halfWidth</a><ul><li><a href="#halfwidth-number" class="table-of-contents__link toc-highlight">halfWidth: number</a></li></ul></li><li><a href="#height" class="table-of-contents__link toc-highlight">height</a><ul><li><a href="#height-number" class="table-of-contents__link toc-highlight">height: number</a></li></ul></li><li><a href="#immovable" class="table-of-contents__link toc-highlight">immovable</a><ul><li><a href="#immovable-boolean" class="table-of-contents__link toc-highlight">immovable: boolean</a></li></ul></li><li><a href="#isbody" class="table-of-contents__link toc-highlight">isBody</a><ul><li><a href="#isbody-boolean" class="table-of-contents__link toc-highlight">isBody: boolean</a></li></ul></li><li><a href="#iscircle" class="table-of-contents__link toc-highlight">isCircle</a><ul><li><a href="#iscircle-boolean" class="table-of-contents__link toc-highlight">isCircle: boolean</a></li></ul></li><li><a href="#left" class="table-of-contents__link toc-highlight">left</a><ul><li><a href="#left-number" class="table-of-contents__link toc-highlight">left: number</a></li></ul></li><li><a href="#mass" class="table-of-contents__link toc-highlight">mass</a><ul><li><a href="#mass-number" class="table-of-contents__link toc-highlight">mass: number</a></li></ul></li><li><a href="#offset" class="table-of-contents__link toc-highlight">offset</a><ul><li><a href="#offset-phasermathvector2" class="table-of-contents__link toc-highlight">offset: Phaser.Math.Vector2</a></li></ul></li><li><a href="#oncollide" class="table-of-contents__link toc-highlight">onCollide</a><ul><li><a href="#oncollide-boolean" class="table-of-contents__link toc-highlight">onCollide: boolean</a></li></ul></li><li><a href="#onoverlap" class="table-of-contents__link toc-highlight">onOverlap</a><ul><li><a href="#onoverlap-boolean" class="table-of-contents__link toc-highlight">onOverlap: boolean</a></li></ul></li><li><a href="#onworldbounds" class="table-of-contents__link toc-highlight">onWorldBounds</a><ul><li><a href="#onworldbounds-boolean" class="table-of-contents__link toc-highlight">onWorldBounds: boolean</a></li></ul></li><li><a href="#overlapr" class="table-of-contents__link toc-highlight">overlapR</a><ul><li><a href="#overlapr-number" class="table-of-contents__link toc-highlight">overlapR: number</a></li></ul></li><li><a href="#overlapx" class="table-of-contents__link toc-highlight">overlapX</a><ul><li><a href="#overlapx-number" class="table-of-contents__link toc-highlight">overlapX: number</a></li></ul></li><li><a href="#overlapy" class="table-of-contents__link toc-highlight">overlapY</a><ul><li><a href="#overlapy-number" class="table-of-contents__link toc-highlight">overlapY: number</a></li></ul></li><li><a href="#physicstype" class="table-of-contents__link toc-highlight">physicsType</a><ul><li><a href="#physicstype-number" class="table-of-contents__link toc-highlight">physicsType: number</a></li></ul></li><li><a href="#position" class="table-of-contents__link toc-highlight">position</a><ul><li><a href="#position-phasermathvector2" class="table-of-contents__link toc-highlight">position: Phaser.Math.Vector2</a></li></ul></li><li><a href="#pushable" class="table-of-contents__link toc-highlight">pushable</a><ul><li><a href="#pushable-boolean" class="table-of-contents__link toc-highlight">pushable: boolean</a></li></ul></li><li><a href="#radius" class="table-of-contents__link toc-highlight">radius</a><ul><li><a href="#radius-number" class="table-of-contents__link toc-highlight">radius: number</a></li></ul></li><li><a href="#right" class="table-of-contents__link toc-highlight">right</a><ul><li><a href="#right-number" class="table-of-contents__link toc-highlight">right: number</a></li></ul></li><li><a href="#top" class="table-of-contents__link toc-highlight">top</a><ul><li><a href="#top-number" class="table-of-contents__link toc-highlight">top: number</a></li></ul></li><li><a href="#touching" class="table-of-contents__link toc-highlight">touching</a><ul><li><a href="#touching-phasertypesphysicsarcadearcadebodycollision" class="table-of-contents__link toc-highlight">touching: Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a></li></ul></li><li><a href="#velocity" class="table-of-contents__link toc-highlight">velocity</a><ul><li><a href="#velocity-phasermathvector2" class="table-of-contents__link toc-highlight">velocity: Phaser.Math.Vector2</a></li></ul></li><li><a href="#wastouching" class="table-of-contents__link toc-highlight">wasTouching</a><ul><li><a href="#wastouching-phasertypesphysicsarcadearcadebodycollision" class="table-of-contents__link toc-highlight">wasTouching: Phaser.Types.Physics.Arcade.ArcadeBodyCollision</a></li></ul></li><li><a href="#width" class="table-of-contents__link toc-highlight">width</a><ul><li><a href="#width-number" class="table-of-contents__link toc-highlight">width: number</a></li></ul></li><li><a href="#world" class="table-of-contents__link toc-highlight">world</a><ul><li><a href="#world-phaserphysicsarcadeworld" class="table-of-contents__link toc-highlight">world: Phaser.Physics.Arcade.World</a></li></ul></li><li><a href="#x" class="table-of-contents__link toc-highlight">x</a><ul><li><a href="#x-number" class="table-of-contents__link toc-highlight">x: number</a></li></ul></li><li><a href="#y" class="table-of-contents__link toc-highlight">y</a><ul><li><a href="#y-number" class="table-of-contents__link toc-highlight">y: number</a></li></ul></li><li><a href="#_dx" class="table-of-contents__link toc-highlight">_dx</a><ul><li><a href="#_dx-number" class="table-of-contents__link toc-highlight">_dx: number</a></li></ul></li><li><a href="#_dy" class="table-of-contents__link toc-highlight">_dy</a><ul><li><a href="#_dy-number" class="table-of-contents__link toc-highlight">_dy: number</a></li></ul></li><li><a href="#addcollideswith" class="table-of-contents__link toc-highlight">addCollidesWith</a><ul><li><a href="#instance-addcollideswithcategory" class="table-of-contents__link toc-highlight">&lt;instance&gt; addCollidesWith(category)</a></li></ul></li><li><a href="#deltaabsx" class="table-of-contents__link toc-highlight">deltaAbsX</a><ul><li><a href="#instance-deltaabsx" class="table-of-contents__link toc-highlight">&lt;instance&gt; deltaAbsX()</a></li></ul></li><li><a href="#deltaabsy" class="table-of-contents__link toc-highlight">deltaAbsY</a><ul><li><a href="#instance-deltaabsy" class="table-of-contents__link toc-highlight">&lt;instance&gt; deltaAbsY()</a></li></ul></li><li><a href="#deltax" class="table-of-contents__link toc-highlight">deltaX</a><ul><li><a href="#instance-deltax" class="table-of-contents__link toc-highlight">&lt;instance&gt; deltaX()</a></li></ul></li><li><a href="#deltay" class="table-of-contents__link toc-highlight">deltaY</a><ul><li><a href="#instance-deltay" class="table-of-contents__link toc-highlight">&lt;instance&gt; deltaY()</a></li></ul></li><li><a href="#deltaz" class="table-of-contents__link toc-highlight">deltaZ</a><ul><li><a href="#instance-deltaz" class="table-of-contents__link toc-highlight">&lt;instance&gt; deltaZ()</a></li></ul></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">destroy</a><ul><li><a href="#instance-destroy" class="table-of-contents__link toc-highlight">&lt;instance&gt; destroy()</a></li></ul></li><li><a href="#drawdebug" class="table-of-contents__link toc-highlight">drawDebug</a><ul><li><a href="#instance-drawdebuggraphic" class="table-of-contents__link toc-highlight">&lt;instance&gt; drawDebug(graphic)</a></li></ul></li><li><a href="#getbounds" class="table-of-contents__link toc-highlight">getBounds</a><ul><li><a href="#instance-getboundsobj" class="table-of-contents__link toc-highlight">&lt;instance&gt; getBounds(obj)</a></li></ul></li><li><a href="#hittest" class="table-of-contents__link toc-highlight">hitTest</a><ul><li><a href="#instance-hittestx-y" class="table-of-contents__link toc-highlight">&lt;instance&gt; hitTest(x, y)</a></li></ul></li><li><a href="#postupdate" class="table-of-contents__link toc-highlight">postUpdate</a><ul><li><a href="#instance-postupdate" class="table-of-contents__link toc-highlight">&lt;instance&gt; postUpdate()</a></li></ul></li><li><a href="#removecollideswith" class="table-of-contents__link toc-highlight">removeCollidesWith</a><ul><li><a href="#instance-removecollideswithcategory" class="table-of-contents__link toc-highlight">&lt;instance&gt; removeCollidesWith(category)</a></li></ul></li><li><a href="#reset" class="table-of-contents__link toc-highlight">reset</a><ul><li><a href="#instance-resetx-y" class="table-of-contents__link toc-highlight">&lt;instance&gt; reset([x], [y])</a></li></ul></li><li><a href="#resetcollisioncategory" class="table-of-contents__link toc-highlight">resetCollisionCategory</a><ul><li><a href="#instance-resetcollisioncategory" class="table-of-contents__link toc-highlight">&lt;instance&gt; resetCollisionCategory()</a></li></ul></li><li><a href="#setcircle" class="table-of-contents__link toc-highlight">setCircle</a><ul><li><a href="#instance-setcircleradius-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;instance&gt; setCircle(radius, [offsetX], [offsetY])</a></li></ul></li><li><a href="#setcollideswith" class="table-of-contents__link toc-highlight">setCollidesWith</a><ul><li><a href="#instance-setcollideswithcategories" class="table-of-contents__link toc-highlight">&lt;instance&gt; setCollidesWith(categories)</a></li></ul></li><li><a href="#setcollisioncategory" class="table-of-contents__link toc-highlight">setCollisionCategory</a><ul><li><a href="#instance-setcollisioncategorycategory" class="table-of-contents__link toc-highlight">&lt;instance&gt; setCollisionCategory(category)</a></li></ul></li><li><a href="#setgameobject" class="table-of-contents__link toc-highlight">setGameObject</a><ul><li><a href="#instance-setgameobjectgameobject-update" class="table-of-contents__link toc-highlight">&lt;instance&gt; setGameObject(gameObject, [update])</a></li></ul></li><li><a href="#setmass" class="table-of-contents__link toc-highlight">setMass</a><ul><li><a href="#instance-setmassvalue" class="table-of-contents__link toc-highlight">&lt;instance&gt; setMass(value)</a></li></ul></li><li><a href="#setoffset" class="table-of-contents__link toc-highlight">setOffset</a><ul><li><a href="#instance-setoffsetx-y" class="table-of-contents__link toc-highlight">&lt;instance&gt; setOffset(x, y)</a></li></ul></li><li><a href="#setsize" class="table-of-contents__link toc-highlight">setSize</a><ul><li><a href="#instance-setsizewidth-height-center" class="table-of-contents__link toc-highlight">&lt;instance&gt; setSize([width], [height], [center])</a></li></ul></li><li><a href="#stop" class="table-of-contents__link toc-highlight">stop</a><ul><li><a href="#instance-stop" class="table-of-contents__link toc-highlight">&lt;instance&gt; stop()</a></li></ul></li><li><a href="#updatecenter" class="table-of-contents__link toc-highlight">updateCenter</a><ul><li><a href="#instance-updatecenter" class="table-of-contents__link toc-highlight">&lt;instance&gt; updateCenter()</a></li></ul></li><li><a href="#updatefromgameobject" class="table-of-contents__link toc-highlight">updateFromGameObject</a><ul><li><a href="#instance-updatefromgameobject" class="table-of-contents__link toc-highlight">&lt;instance&gt; updateFromGameObject()</a></li></ul></li><li><a href="#willcollidewith" class="table-of-contents__link toc-highlight">willCollideWith</a><ul><li><a href="#instance-willcollidewithcategory" class="table-of-contents__link toc-highlight">&lt;instance&gt; willCollideWith(category)</a></li></ul></li><li><a href="#willdrawdebug" class="table-of-contents__link toc-highlight">willDrawDebug</a><ul><li><a href="#instance-willdrawdebug" class="table-of-contents__link toc-highlight">&lt;instance&gt; willDrawDebug()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

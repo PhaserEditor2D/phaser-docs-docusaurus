@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-typedef/Phaser.Device" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Device | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/typedef/device"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="Device | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Device"><meta data-rh="true" property="og:description" content="Phaser.Device"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/typedef/device"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/device" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/device" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Typedefs","item":"https://docs.phaser.io/api-documentation/typedef/"},{"@type":"ListItem","position":2,"name":"Device","item":"https://docs.phaser.io/api-documentation/typedef/device"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/typedef/device">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/typedef/device">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/typedef/device">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/typedef/device">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Collapse sidebar category &#x27;Typedefs&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/typedef/device"><span title="Device" class="linkLabel_WmDU">Device</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/scale"><span title="Scale" class="linkLabel_WmDU">Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tilemaps"><span title="Tilemaps" class="linkLabel_WmDU">Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tweens"><span title="Tweens" class="linkLabel_WmDU">Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-actions"><span title="Types.Actions" class="linkLabel_WmDU">Types.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-animations"><span title="Types.Animations" class="linkLabel_WmDU">Types.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-controls"><span title="Types.Cameras.Controls" class="linkLabel_WmDU">Types.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-scene2d"><span title="Types.Cameras.Scene2D" class="linkLabel_WmDU">Types.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-core"><span title="Types.Core" class="linkLabel_WmDU">Types.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-create"><span title="Types.Create" class="linkLabel_WmDU">Types.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-curves"><span title="Types.Curves" class="linkLabel_WmDU">Types.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-display"><span title="Types.Display" class="linkLabel_WmDU">Types.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-bitmaptext"><span title="Types.GameObjects.BitmapText" class="linkLabel_WmDU">Types.GameObjects.BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-container"><span title="Types.GameObjects.Container" class="linkLabel_WmDU">Types.GameObjects.Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-graphics"><span title="Types.GameObjects.Graphics" class="linkLabel_WmDU">Types.GameObjects.Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-group"><span title="Types.GameObjects.Group" class="linkLabel_WmDU">Types.GameObjects.Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-mesh"><span title="Types.GameObjects.Mesh" class="linkLabel_WmDU">Types.GameObjects.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-nineslice"><span title="Types.GameObjects.NineSlice" class="linkLabel_WmDU">Types.GameObjects.NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-particles"><span title="Types.GameObjects.Particles" class="linkLabel_WmDU">Types.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-pathfollower"><span title="Types.GameObjects.PathFollower" class="linkLabel_WmDU">Types.GameObjects.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-plane"><span title="Types.GameObjects.Plane" class="linkLabel_WmDU">Types.GameObjects.Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rendertexture"><span title="Types.GameObjects.RenderTexture" class="linkLabel_WmDU">Types.GameObjects.RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rope"><span title="Types.GameObjects.Rope" class="linkLabel_WmDU">Types.GameObjects.Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-shader"><span title="Types.GameObjects.Shader" class="linkLabel_WmDU">Types.GameObjects.Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-sprite"><span title="Types.GameObjects.Sprite" class="linkLabel_WmDU">Types.GameObjects.Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-text"><span title="Types.GameObjects.Text" class="linkLabel_WmDU">Types.GameObjects.Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-tilesprite"><span title="Types.GameObjects.TileSprite" class="linkLabel_WmDU">Types.GameObjects.TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-video"><span title="Types.GameObjects.Video" class="linkLabel_WmDU">Types.GameObjects.Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-zone"><span title="Types.GameObjects.Zone" class="linkLabel_WmDU">Types.GameObjects.Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects"><span title="Types.GameObjects" class="linkLabel_WmDU">Types.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-geom-mesh"><span title="Types.Geom.Mesh" class="linkLabel_WmDU">Types.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-gamepad"><span title="Types.Input.Gamepad" class="linkLabel_WmDU">Types.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-keyboard"><span title="Types.Input.Keyboard" class="linkLabel_WmDU">Types.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input"><span title="Types.Input" class="linkLabel_WmDU">Types.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-loader-filetypes"><span title="Types.Loader.FileTypes" class="linkLabel_WmDU">Types.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-loader"><span title="Types.Loader" class="linkLabel_WmDU">Types.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-math"><span title="Types.Math" class="linkLabel_WmDU">Types.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-arcade"><span title="Types.Physics.Arcade" class="linkLabel_WmDU">Types.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-matter"><span title="Types.Physics.Matter" class="linkLabel_WmDU">Types.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-plugins"><span title="Types.Plugins" class="linkLabel_WmDU">Types.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-snapshot"><span title="Types.Renderer.Snapshot" class="linkLabel_WmDU">Types.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-webgl"><span title="Types.Renderer.WebGL" class="linkLabel_WmDU">Types.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-scenes"><span title="Types.Scenes" class="linkLabel_WmDU">Types.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-sound"><span title="Types.Sound" class="linkLabel_WmDU">Types.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-textures"><span title="Types.Textures" class="linkLabel_WmDU">Types.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tilemaps"><span title="Types.Tilemaps" class="linkLabel_WmDU">Types.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-time"><span title="Types.Time" class="linkLabel_WmDU">Types.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tweens"><span title="Types.Tweens" class="linkLabel_WmDU">Types.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/phaser"><span title="Phaser" class="linkLabel_WmDU">Phaser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="linkLabel_WmDU">Typedefs</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/typedef/"><span>Typedefs</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Device</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Device</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio">Audio<a href="#audio" class="hash-link" aria-label="Direct link to Audio" title="Direct link to Audio" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-audio">&lt;static&gt; Audio<a href="#static-audio" class="hash-link" aria-label="Direct link to &lt;static&gt; Audio" title="Direct link to &lt;static&gt; Audio" translate="no">​</a></h3>
+<p>Determines the audio playback capabilities of the device running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.audio</code> from within any Scene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>audioData</td><td>boolean</td><td>No</td><td>Can this device play HTML Audio tags?</td></tr><tr><td>dolby</td><td>boolean</td><td>No</td><td>Can this device play EC-3 Dolby Digital Plus files?</td></tr><tr><td>m4a</td><td>boolean</td><td>No</td><td>Can this device can play m4a files.</td></tr><tr><td>aac</td><td>boolean</td><td>No</td><td>Can this device can play aac files.</td></tr><tr><td>flac</td><td>boolean</td><td>No</td><td>Can this device can play flac files.</td></tr><tr><td>mp3</td><td>boolean</td><td>No</td><td>Can this device play mp3 files?</td></tr><tr><td>ogg</td><td>boolean</td><td>No</td><td>Can this device play ogg files?</td></tr><tr><td>opus</td><td>boolean</td><td>No</td><td>Can this device play opus files?</td></tr><tr><td>wav</td><td>boolean</td><td>No</td><td>Can this device play wav files?</td></tr><tr><td>webAudio</td><td>boolean</td><td>No</td><td>Does this device have the Web Audio API?</td></tr><tr><td>webm</td><td>boolean</td><td>No</td><td>Can this device play webm files?</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/Audio.js#L9" target="_blank" rel="noopener noreferrer" class="">src/device/Audio.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="browser">Browser<a href="#browser" class="hash-link" aria-label="Direct link to Browser" title="Direct link to Browser" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-browser">&lt;static&gt; Browser<a href="#static-browser" class="hash-link" aria-label="Direct link to &lt;static&gt; Browser" title="Direct link to &lt;static&gt; Browser" translate="no">​</a></h3>
+<p>Determines the browser type and version running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.browser</code> from within any Scene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>chrome</td><td>boolean</td><td>No</td><td>Set to true if running in Chrome.</td></tr><tr><td>edge</td><td>boolean</td><td>No</td><td>Set to true if running in Microsoft Edge browser.</td></tr><tr><td>firefox</td><td>boolean</td><td>No</td><td>Set to true if running in Firefox.</td></tr><tr><td>ie</td><td>boolean</td><td>No</td><td>Set to true if running in Internet Explorer 11 or less (not Edge).</td></tr><tr><td>mobileSafari</td><td>boolean</td><td>No</td><td>Set to true if running in Mobile Safari.</td></tr><tr><td>opera</td><td>boolean</td><td>No</td><td>Set to true if running in Opera.</td></tr><tr><td>safari</td><td>boolean</td><td>No</td><td>Set to true if running in Safari.</td></tr><tr><td>silk</td><td>boolean</td><td>No</td><td>Set to true if running in the Silk browser (as used on the Amazon Kindle)</td></tr><tr><td>trident</td><td>boolean</td><td>No</td><td>Set to true if running a Trident version of Internet Explorer (IE11+)</td></tr><tr><td>chromeVersion</td><td>number</td><td>No</td><td>If running in Chrome this will contain the major version number.</td></tr><tr><td>firefoxVersion</td><td>number</td><td>No</td><td>If running in Firefox this will contain the major version number.</td></tr><tr><td>ieVersion</td><td>number</td><td>No</td><td>If running in Internet Explorer this will contain the major version number. Beyond IE10 you should use Browser.trident and Browser.tridentVersion.</td></tr><tr><td>safariVersion</td><td>number</td><td>No</td><td>If running in Safari this will contain the major version number.</td></tr><tr><td>tridentVersion</td><td>number</td><td>No</td><td>If running in Internet Explorer 11 this will contain the major version number. See {@link <a href="http://msdn.microsoft.com/en-us/library/ie/ms537503(v=vs.85).aspx%7D" target="_blank" rel="noopener noreferrer" class="">http://msdn.microsoft.com/en-us/library/ie/ms537503(v=vs.85).aspx}</a></td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/Browser.js#L9" target="_blank" rel="noopener noreferrer" class="">src/device/Browser.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="canvasfeatures">CanvasFeatures<a href="#canvasfeatures" class="hash-link" aria-label="Direct link to CanvasFeatures" title="Direct link to CanvasFeatures" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-canvasfeatures">&lt;static&gt; CanvasFeatures<a href="#static-canvasfeatures" class="hash-link" aria-label="Direct link to &lt;static&gt; CanvasFeatures" title="Direct link to &lt;static&gt; CanvasFeatures" translate="no">​</a></h3>
+<p>Determines the canvas features of the browser running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.canvasFeatures</code> from within any Scene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>supportInverseAlpha</td><td>boolean</td><td>No</td><td>Set to true if the browser supports inversed alpha.</td></tr><tr><td>supportNewBlendModes</td><td>boolean</td><td>No</td><td>Set to true if the browser supports new canvas blend modes.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/CanvasFeatures.js#L9" target="_blank" rel="noopener noreferrer" class="">src/device/CanvasFeatures.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="features">Features<a href="#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-features">&lt;static&gt; Features<a href="#static-features" class="hash-link" aria-label="Direct link to &lt;static&gt; Features" title="Direct link to &lt;static&gt; Features" translate="no">​</a></h3>
+<p>Determines the features of the browser running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.features</code> from within any Scene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>canvas</td><td>boolean</td><td>No</td><td>Is canvas available?</td></tr><tr><td>canvasBitBltShift</td><td>boolean</td><td>No</td><td>True if canvas supports a &#x27;copy&#x27; bitblt onto itself when the source and destination regions overlap.</td></tr><tr><td>file</td><td>boolean</td><td>No</td><td>Is file available?</td></tr><tr><td>fileSystem</td><td>boolean</td><td>No</td><td>Is fileSystem available?</td></tr><tr><td>getUserMedia</td><td>boolean</td><td>No</td><td>Does the device support the getUserMedia API?</td></tr><tr><td>littleEndian</td><td>boolean</td><td>No</td><td>Is the device big or little endian? (only detected if the browser supports TypedArrays)</td></tr><tr><td>localStorage</td><td>boolean</td><td>No</td><td>Is localStorage available?</td></tr><tr><td>pointerLock</td><td>boolean</td><td>No</td><td>Is Pointer Lock available?</td></tr><tr><td>stableSort</td><td>boolean</td><td>No</td><td>Is Array.sort stable?</td></tr><tr><td>support32bit</td><td>boolean</td><td>No</td><td>Does the device context support 32bit pixel manipulation using array buffer views?</td></tr><tr><td>vibration</td><td>boolean</td><td>No</td><td>Does the device support the Vibration API?</td></tr><tr><td>webGL</td><td>boolean</td><td>No</td><td>Is webGL available?</td></tr><tr><td>worker</td><td>boolean</td><td>No</td><td>Is worker available?</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/Features.js#L11" target="_blank" rel="noopener noreferrer" class="">src/device/Features.js#L11</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fullscreen">Fullscreen<a href="#fullscreen" class="hash-link" aria-label="Direct link to Fullscreen" title="Direct link to Fullscreen" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-fullscreen">&lt;static&gt; Fullscreen<a href="#static-fullscreen" class="hash-link" aria-label="Direct link to &lt;static&gt; Fullscreen" title="Direct link to &lt;static&gt; Fullscreen" translate="no">​</a></h3>
+<p>Determines the full screen support of the browser running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.fullscreen</code> from within any Scene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>available</td><td>boolean</td><td>No</td><td>Does the browser support the Full Screen API?</td></tr><tr><td>keyboard</td><td>boolean</td><td>No</td><td>Does the browser support access to the Keyboard during Full Screen mode?</td></tr><tr><td>cancel</td><td>string</td><td>No</td><td>If the browser supports the Full Screen API this holds the call you need to use to cancel it.</td></tr><tr><td>request</td><td>string</td><td>No</td><td>If the browser supports the Full Screen API this holds the call you need to use to activate it.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/Fullscreen.js#L7" target="_blank" rel="noopener noreferrer" class="">src/device/Fullscreen.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="input">Input<a href="#input" class="hash-link" aria-label="Direct link to Input" title="Direct link to Input" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-input">&lt;static&gt; Input<a href="#static-input" class="hash-link" aria-label="Direct link to &lt;static&gt; Input" title="Direct link to &lt;static&gt; Input" translate="no">​</a></h3>
+<p>Determines the input support of the browser running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.input</code> from within any Scene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>wheelType</td><td>string</td><td>No</td><td>The newest type of Wheel/Scroll event supported: &#x27;wheel&#x27;, &#x27;mousewheel&#x27;, &#x27;DOMMouseScroll&#x27;</td></tr><tr><td>gamepads</td><td>boolean</td><td>No</td><td>Is navigator.getGamepads available?</td></tr><tr><td>mspointer</td><td>boolean</td><td>No</td><td>Is mspointer available?</td></tr><tr><td>touch</td><td>boolean</td><td>No</td><td>Is touch available?</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/Input.js#L9" target="_blank" rel="noopener noreferrer" class="">src/device/Input.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="os">OS<a href="#os" class="hash-link" aria-label="Direct link to OS" title="Direct link to OS" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-os">&lt;static&gt; OS<a href="#static-os" class="hash-link" aria-label="Direct link to &lt;static&gt; OS" title="Direct link to &lt;static&gt; OS" translate="no">​</a></h3>
+<p>Determines the operating system of the device running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.os</code> from within any Scene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>android</td><td>boolean</td><td>No</td><td>Is running on android?</td></tr><tr><td>chromeOS</td><td>boolean</td><td>No</td><td>Is running on chromeOS?</td></tr><tr><td>cordova</td><td>boolean</td><td>No</td><td>Is the game running under Apache Cordova?</td></tr><tr><td>crosswalk</td><td>boolean</td><td>No</td><td>Is the game running under the Intel Crosswalk XDK?</td></tr><tr><td>desktop</td><td>boolean</td><td>No</td><td>Is running on a desktop?</td></tr><tr><td>ejecta</td><td>boolean</td><td>No</td><td>Is the game running under Ejecta?</td></tr><tr><td>electron</td><td>boolean</td><td>No</td><td>Is the game running under GitHub Electron?</td></tr><tr><td>iOS</td><td>boolean</td><td>No</td><td>Is running on iOS?</td></tr><tr><td>iPad</td><td>boolean</td><td>No</td><td>Is running on iPad?</td></tr><tr><td>iPhone</td><td>boolean</td><td>No</td><td>Is running on iPhone?</td></tr><tr><td>kindle</td><td>boolean</td><td>No</td><td>Is running on an Amazon Kindle?</td></tr><tr><td>linux</td><td>boolean</td><td>No</td><td>Is running on linux?</td></tr><tr><td>macOS</td><td>boolean</td><td>No</td><td>Is running on macOS?</td></tr><tr><td>node</td><td>boolean</td><td>No</td><td>Is the game running under Node.js?</td></tr><tr><td>nodeWebkit</td><td>boolean</td><td>No</td><td>Is the game running under Node-Webkit?</td></tr><tr><td>webApp</td><td>boolean</td><td>No</td><td>Set to true if running as a WebApp, i.e. within a WebView</td></tr><tr><td>windows</td><td>boolean</td><td>No</td><td>Is running on windows?</td></tr><tr><td>windowsPhone</td><td>boolean</td><td>No</td><td>Is running on a Windows Phone?</td></tr><tr><td>iOSVersion</td><td>number</td><td>No</td><td>If running in iOS this will contain the major version number.</td></tr><tr><td>pixelRatio</td><td>number</td><td>No</td><td>PixelRatio of the host device?</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/OS.js#L7" target="_blank" rel="noopener noreferrer" class="">src/device/OS.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="video">Video<a href="#video" class="hash-link" aria-label="Direct link to Video" title="Direct link to Video" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-video">&lt;static&gt; Video<a href="#static-video" class="hash-link" aria-label="Direct link to &lt;static&gt; Video" title="Direct link to &lt;static&gt; Video" translate="no">​</a></h3>
+<p>Determines the video support of the browser running this Phaser Game instance.</p>
+<p>These values are read-only and populated during the boot sequence of the game.</p>
+<p>They are then referenced by internal game systems and are available for you to access</p>
+<p>via <code>this.sys.game.device.video</code> from within any Scene.</p>
+<p>In Phaser 3.20 the properties were renamed to drop the &#x27;Video&#x27; suffix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>h264</td><td>boolean</td><td>No</td><td>Can this device play h264 mp4 video files?</td></tr><tr><td>hls</td><td>boolean</td><td>No</td><td>Can this device play hls video files?</td></tr><tr><td>mp4</td><td>boolean</td><td>No</td><td>Can this device play h264 mp4 video files?</td></tr><tr><td>m4v</td><td>boolean</td><td>No</td><td>Can this device play m4v (typically mp4) video files?</td></tr><tr><td>ogg</td><td>boolean</td><td>No</td><td>Can this device play ogg video files?</td></tr><tr><td>vp9</td><td>boolean</td><td>No</td><td>Can this device play vp9 video files?</td></tr><tr><td>webm</td><td>boolean</td><td>No</td><td>Can this device play webm video files?</td></tr><tr><td>getVideoURL</td><td>function</td><td>No</td><td>Returns the first video URL that can be played by this browser.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Device</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/device/Video.js#L9" target="_blank" rel="noopener noreferrer" class="">src/device/Video.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/typedef/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Typedefs</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/typedef/physics-matter-events"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Physics.Matter.Events</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#audio" class="table-of-contents__link toc-highlight">Audio</a><ul><li><a href="#static-audio" class="table-of-contents__link toc-highlight">&lt;static&gt; Audio</a></li></ul></li><li><a href="#browser" class="table-of-contents__link toc-highlight">Browser</a><ul><li><a href="#static-browser" class="table-of-contents__link toc-highlight">&lt;static&gt; Browser</a></li></ul></li><li><a href="#canvasfeatures" class="table-of-contents__link toc-highlight">CanvasFeatures</a><ul><li><a href="#static-canvasfeatures" class="table-of-contents__link toc-highlight">&lt;static&gt; CanvasFeatures</a></li></ul></li><li><a href="#features" class="table-of-contents__link toc-highlight">Features</a><ul><li><a href="#static-features" class="table-of-contents__link toc-highlight">&lt;static&gt; Features</a></li></ul></li><li><a href="#fullscreen" class="table-of-contents__link toc-highlight">Fullscreen</a><ul><li><a href="#static-fullscreen" class="table-of-contents__link toc-highlight">&lt;static&gt; Fullscreen</a></li></ul></li><li><a href="#input" class="table-of-contents__link toc-highlight">Input</a><ul><li><a href="#static-input" class="table-of-contents__link toc-highlight">&lt;static&gt; Input</a></li></ul></li><li><a href="#os" class="table-of-contents__link toc-highlight">OS</a><ul><li><a href="#static-os" class="table-of-contents__link toc-highlight">&lt;static&gt; OS</a></li></ul></li><li><a href="#video" class="table-of-contents__link toc-highlight">Video</a><ul><li><a href="#static-video" class="table-of-contents__link toc-highlight">&lt;static&gt; Video</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

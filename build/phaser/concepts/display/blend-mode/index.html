@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-phaser/concepts/display/blend-mode" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Blend Mode | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/phaser/concepts/display/blend-mode"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Blend Mode | Phaser Help"><meta data-rh="true" name="description" content="Blend Mode"><meta data-rh="true" property="og:description" content="Blend Mode"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/phaser/concepts/display/blend-mode"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/phaser/concepts/display/blend-mode" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/phaser/concepts/display/blend-mode" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/api-documentation">API Documentation</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/api-documentation">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/api-documentation">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/api-documentation">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Blend Mode</h1></header><p>Control how textures are blended with the background when rendering. Setting a blend mode affects how the colors of a sprite or a game object are combined with the colors of the pixels behind them.</p>
+<p>Blend modes have different effects under Canvas and WebGL, and from browser to browser, depending on support. Blend Modes also cause a WebGL batch flush should it encounter a new blend mode. For these reasons try to be careful about the construction of your Scene and the frequency in which blend modes are used.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="webgl-and-canvas">WebGL and Canvas<a href="#webgl-and-canvas" class="hash-link" aria-label="Direct link to WebGL and Canvas" title="Direct link to WebGL and Canvas" translate="no">​</a></h2>
+<ul>
+<li class=""><code>&#x27;NORMAL&#x27;</code>, or <code>Phaser.BlendModes.NORMAL</code>, or <code>0</code>
+<ul>
+<li class="">Default setting and draws new shapes on top of the existing canvas content.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;ADD&#x27;</code>, or <code>Phaser.BlendModes.ADD</code>, or <code>1</code>
+<ul>
+<li class="">Where both shapes overlap the color is determined by adding color values.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;MULTIPLY&#x27;</code>, or <code>Phaser.BlendModes.MULTIPLY</code>, or <code>2</code>
+<ul>
+<li class="">The pixels are of the top layer are multiplied with the corresponding pixel of the bottom layer. A darker picture is the result.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;SCREEN&#x27;</code>, or <code>Phaser.BlendModes.SCREEN</code>, or <code>3</code>
+<ul>
+<li class="">The pixels are inverted, multiplied, and inverted again. A lighter picture is the result (opposite of multiply)</li>
+</ul>
+</li>
+<li class=""><code>&#x27;ERASE&#x27;</code>, or <code>Phaser.BlendModes.ERASE</code>, or <code>17</code>
+<ul>
+<li class="">Alpha erase blend mode. Only works when rendering to a framebuffer, like a <em>Render Texture</em></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="canvas-only">Canvas only<a href="#canvas-only" class="hash-link" aria-label="Direct link to Canvas only" title="Direct link to Canvas only" translate="no">​</a></h2>
+<ul>
+<li class=""><code>&#x27;OVERLAY&#x27;</code>, or <code>Phaser.BlendModes.OVERLAY</code>, or <code>4</code>
+<ul>
+<li class="">A combination of multiply and screen. Dark parts on the base layer become darker, and light parts become lighter.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;DARKEN&#x27;</code>, or <code>Phaser.BlendModes.DARKEN</code>, or <code>5</code>
+<ul>
+<li class="">Retains the darkest pixels of both layers.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;LIGHTEN&#x27;</code>, or <code>Phaser.BlendModes.LIGHTEN</code>, or <code>6</code>
+<ul>
+<li class="">Retains the lightest pixels of both layers.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;COLOR_DODGE&#x27;</code>, or <code>Phaser.BlendModes.COLOR_DODGE</code>, or <code>7</code>
+<ul>
+<li class="">Divides the bottom layer by the inverted top layer.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;COLOR_BURN&#x27;</code>, or <code>Phaser.BlendModes.COLOR_BURN</code>, or <code>8</code>
+<ul>
+<li class="">Divides the inverted bottom layer by the top layer, and then inverts the result.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;HARD_LIGHT&#x27;</code>, or <code>Phaser.BlendModes.HARD_LIGHT</code>, or <code>9</code>
+<ul>
+<li class="">A combination of multiply and screen like overlay, but with top and bottom layer swapped.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;SOFT_LIGHT&#x27;</code>, or <code>Phaser.BlendModes.SOFT_LIGHT</code>, or <code>10</code>
+<ul>
+<li class="">A softer version of hard-light. Pure black or white does not result in pure black or white.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;DIFFERENCE&#x27;</code>, or <code>Phaser.BlendModes.DIFFERENCE</code>, or <code>11</code>
+<ul>
+<li class="">Subtracts the bottom layer from the top layer or the other way round to always get a positive value.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;EXCLUSION&#x27;</code>, or <code>Phaser.BlendModes.EXCLUSION</code>, or <code>12</code>
+<ul>
+<li class="">Like difference, but with lower contrast.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;HUE&#x27;</code>, or <code>Phaser.BlendModes.HUE</code>, or <code>13</code>
+<ul>
+<li class="">Preserves the luma and chroma of the bottom layer, while adopting the hue of the top layer.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;SATURATION&#x27;</code>, or <code>Phaser.BlendModes.SATURATION</code>, or <code>14</code>
+<ul>
+<li class="">Preserves the luma and hue of the bottom layer, while adopting the chroma of the top layer.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;COLOR&#x27;</code>, or <code>Phaser.BlendModes.COLOR</code>, or <code>15</code>
+<ul>
+<li class="">Preserves the luma of the bottom layer, while adopting the hue and chroma of the top layer.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;LUMINOSITY&#x27;</code>, or <code>Phaser.BlendModes.LUMINOSITY</code>, or <code>16</code>
+<ul>
+<li class="">Preserves the hue and chroma of the bottom layer, while adopting the luma of the top layer.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;SOURCE_IN&#x27;</code>, or <code>Phaser.BlendModes.SOURCE_IN</code>, or <code>18</code>
+<ul>
+<li class="">The new shape is drawn only where both the new shape and the destination canvas overlap. Everything else is made transparent.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;SOURCE_OUT&#x27;</code>, or <code>Phaser.BlendModes.SOURCE_OUT</code>, or <code>19</code>
+<ul>
+<li class="">The new shape is drawn where it doesn&#x27;t overlap the existing canvas content.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;SOURCE_ATOP&#x27;</code>, or <code>Phaser.BlendModes.SOURCE_ATOP</code>, or <code>20</code>
+<ul>
+<li class="">The new shape is only drawn where it overlaps the existing canvas content.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;DESTINATION_OVER&#x27;</code>, or <code>Phaser.BlendModes.DESTINATION_OVER</code>, or <code>21</code>
+<ul>
+<li class="">New shapes are drawn behind the existing canvas content.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;DESTINATION_IN&#x27;</code>, or <code>Phaser.BlendModes.DESTINATION_IN</code>, or <code>22</code>
+<ul>
+<li class="">The existing canvas content is kept where both the new shape and existing canvas content overlap. Everything else is made transparent.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;DESTINATION_OUT&#x27;</code>, or <code>Phaser.BlendModes.DESTINATION_OUT</code>, or <code>23</code>
+<ul>
+<li class="">The existing content is kept where it doesn&#x27;t overlap the new shape.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;DESTINATION_ATOP&#x27;</code>, or <code>Phaser.BlendModes.DESTINATION_ATOP</code>, or <code>24</code>
+<ul>
+<li class="">The existing canvas is only kept where it overlaps the new shape. The new shape is drawn behind the canvas content.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;LIGHTER&#x27;</code>, or <code>Phaser.BlendModes.LIGHTER</code>, or <code>25</code>
+<ul>
+<li class="">Where both shapes overlap the color is determined by adding color values.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;COPY&#x27;</code>, or <code>Phaser.BlendModes.COPY</code>, or <code>26</code>
+<ul>
+<li class="">Only the new shape is shown.</li>
+</ul>
+</li>
+<li class=""><code>&#x27;XOR&#x27;</code>, or <code>Phaser.BlendModes.XOR</code>, or <code>27</code>
+<ul>
+<li class="">Shapes are made transparent where both overlap and drawn normal everywhere else.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="author-credits">Author Credits<a href="#author-credits" class="hash-link" aria-label="Direct link to Author Credits" title="Direct link to Author Credits" translate="no">​</a></h2>
+<p>Content on this page includes work by:</p>
+<ul>
+<li class=""><a href="https://github.com/rexrainbow" target="_blank" rel="noopener noreferrer" class="">RexRainbow</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#webgl-and-canvas" class="table-of-contents__link toc-highlight">WebGL and Canvas</a></li><li><a href="#canvas-only" class="table-of-contents__link toc-highlight">Canvas only</a></li><li><a href="#author-credits" class="table-of-contents__link toc-highlight">Author Credits</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

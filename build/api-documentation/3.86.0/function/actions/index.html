@@ -1,0 +1,3114 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.86.0 docs-doc-page docs-doc-id-function/Phaser.Actions" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Phaser.Actions | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.86.0/function/actions"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.86.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" name="docsearch:version" content="3.86.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" property="og:title" content="Phaser.Actions | Phaser Help"><meta data-rh="true" name="description" content="AlignTo"><meta data-rh="true" property="og:description" content="AlignTo"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.86.0/function/actions"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/function/actions" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/function/actions" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Functions","item":"https://docs.phaser.io/api-documentation/3.86.0/function/"},{"@type":"ListItem","position":2,"name":"Phaser.Actions","item":"https://docs.phaser.io/api-documentation/3.86.0/function/actions"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.86.0/function/actions">API Documentation - v3.86.0</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/function/actions">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/function/actions">API Documentation - v3.85.2</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.86.0/function/actions">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser 3.86.0 API Documentation" class="linkLabel_WmDU">Phaser 3.86.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.86.0/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Collapse sidebar category &#x27;Functions&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.86.0/function/actions"><span title="Phaser.Actions" class="linkLabel_WmDU">Phaser.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/core"><span title="Phaser.Core" class="linkLabel_WmDU">Phaser.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/create"><span title="Phaser.Create" class="linkLabel_WmDU">Phaser.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/curves"><span title="Phaser.Curves" class="linkLabel_WmDU">Phaser.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/dom"><span title="Phaser.DOM" class="linkLabel_WmDU">Phaser.DOM</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/display"><span title="Phaser.Display" class="linkLabel_WmDU">Phaser.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/gameobjects"><span title="Phaser.GameObjects" class="linkLabel_WmDU">Phaser.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/geom"><span title="Phaser.Geom" class="linkLabel_WmDU">Phaser.Geom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/input"><span title="Phaser.Input" class="linkLabel_WmDU">Phaser.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/loader"><span title="Phaser.Loader" class="linkLabel_WmDU">Phaser.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/math"><span title="Phaser.Math" class="linkLabel_WmDU">Phaser.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/physics"><span title="Phaser.Physics" class="linkLabel_WmDU">Phaser.Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/plugins"><span title="Phaser.Plugins" class="linkLabel_WmDU">Phaser.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/renderer"><span title="Phaser.Renderer" class="linkLabel_WmDU">Phaser.Renderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/scenes"><span title="Phaser.Scenes" class="linkLabel_WmDU">Phaser.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/sound"><span title="Phaser.Sound" class="linkLabel_WmDU">Phaser.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/textures"><span title="Phaser.Textures" class="linkLabel_WmDU">Phaser.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/tilemaps"><span title="Phaser.Tilemaps" class="linkLabel_WmDU">Phaser.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/tweens"><span title="Phaser.Tweens" class="linkLabel_WmDU">Phaser.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/utils"><span title="Phaser.Utils" class="linkLabel_WmDU">Phaser.Utils</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.86.0</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/function/actions">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.86.0/function/"><span>Functions</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Phaser.Actions</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.86.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Phaser.Actions</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="alignto">AlignTo<a href="#alignto" class="hash-link" aria-label="Direct link to AlignTo" title="Direct link to AlignTo" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-aligntoitems-position-offsetx-offsety">&lt;static&gt; AlignTo(items, position, [offsetX], [offsetY])<a href="#static-aligntoitems-position-offsetx-offsety" class="hash-link" aria-label="Direct link to &lt;static&gt; AlignTo(items, position, [offsetX], [offsetY])" title="Direct link to &lt;static&gt; AlignTo(items, position, [offsetX], [offsetY])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and aligns them next to each other.</p>
+<p>The alignment position is controlled by the <code>position</code> parameter, which should be one</p>
+<p>of the Phaser.Display.Align constants, such as <code>Phaser.Display.Align.TOP_LEFT</code>,</p>
+<p><code>Phaser.Display.Align.TOP_CENTER</code>, etc.</p>
+<p>The first item isn&#x27;t moved. The second item is aligned next to the first,</p>
+<p>then the third next to the second, and so on.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>position</td><td>number</td><td>No</td><td></td><td>The position to align the items with. This is an align constant, such as <code>Phaser.Display.Align.LEFT_CENTER</code>.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>0</td><td>Optional horizontal offset from the position.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>0</td><td>Optional vertical offset from the position.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/AlignTo.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/AlignTo.js#L9</a><br>
+Since: 3.22.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="angle">Angle<a href="#angle" class="hash-link" aria-label="Direct link to Angle" title="Direct link to Angle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-angleitems-value-step-index-direction">&lt;static&gt; Angle(items, value, [step], [index], [direction])<a href="#static-angleitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; Angle(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; Angle(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public <code>angle</code> property,</p>
+<p>and then adds the given value to each of their <code>angle</code> properties.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>Angle(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>angle</code> property.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/Angle.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/Angle.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="call">Call<a href="#call" class="hash-link" aria-label="Direct link to Call" title="Direct link to Call" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-callitems-callback-context">&lt;static&gt; Call(items, callback, context)<a href="#static-callitems-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; Call(items, callback, context)" title="Direct link to &lt;static&gt; Call(items, callback, context)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of objects and passes each of them to the given callback.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>The array of items to be updated by this action.</td></tr><tr><td>callback</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-actions#CallCallback">Phaser.Types.Actions.CallCallback</a></td><td>No</td><td>The callback to be invoked. It will be passed just one argument: the item from the array.</td></tr><tr><td>context</td><td>*</td><td>No</td><td>The scope in which the callback will be invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/Call.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/Call.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getfirst">GetFirst<a href="#getfirst" class="hash-link" aria-label="Direct link to GetFirst" title="Direct link to GetFirst" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getfirstitems-compare-index">&lt;static&gt; GetFirst(items, compare, [index])<a href="#static-getfirstitems-compare-index" class="hash-link" aria-label="Direct link to &lt;static&gt; GetFirst(items, compare, [index])" title="Direct link to &lt;static&gt; GetFirst(items, compare, [index])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of objects and returns the first element in the array that has properties which match</p>
+<p>all of those specified in the <code>compare</code> object. For example, if the compare object was: <code>{ scaleX: 0.5, alpha: 1 }</code></p>
+<p>then it would return the first item which had the property <code>scaleX</code> set to 0.5 and <code>alpha</code> set to 1.</p>
+<p>To use this with a Group: <code>GetFirst(group.getChildren(), compare, index)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be searched by this action.</td></tr><tr><td>compare</td><td>object</td><td>No</td><td></td><td>The comparison object. Each property in this object will be checked against the items of the array.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object, <a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The first object in the array that matches the comparison object, or <code>null</code> if no match was found.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/GetFirst.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/GetFirst.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getlast">GetLast<a href="#getlast" class="hash-link" aria-label="Direct link to GetLast" title="Direct link to GetLast" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getlastitems-compare-index">&lt;static&gt; GetLast(items, compare, [index])<a href="#static-getlastitems-compare-index" class="hash-link" aria-label="Direct link to &lt;static&gt; GetLast(items, compare, [index])" title="Direct link to &lt;static&gt; GetLast(items, compare, [index])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of objects and returns the last element in the array that has properties which match</p>
+<p>all of those specified in the <code>compare</code> object. For example, if the compare object was: <code>{ scaleX: 0.5, alpha: 1 }</code></p>
+<p>then it would return the last item which had the property <code>scaleX</code> set to 0.5 and <code>alpha</code> set to 1.</p>
+<p>To use this with a Group: <code>GetLast(group.getChildren(), compare, index)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be searched by this action.</td></tr><tr><td>compare</td><td>object</td><td>No</td><td></td><td>The comparison object. Each property in this object will be checked against the items of the array.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object, <a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> - The last object in the array that matches the comparison object, or <code>null</code> if no match was found.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/GetLast.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/GetLast.js#L7</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gridalign">GridAlign<a href="#gridalign" class="hash-link" aria-label="Direct link to GridAlign" title="Direct link to GridAlign" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gridalignitems-options">&lt;static&gt; GridAlign(items, options)<a href="#static-gridalignitems-options" class="hash-link" aria-label="Direct link to &lt;static&gt; GridAlign(items, options)" title="Direct link to &lt;static&gt; GridAlign(items, options)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have public <code>x</code> and <code>y</code> properties,</p>
+<p>and then aligns them based on the grid configuration given to this action.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>The array of items to be updated by this action.</td></tr><tr><td>options</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-actions#GridAlignConfig">Phaser.Types.Actions.GridAlignConfig</a></td><td>No</td><td>The GridAlign Configuration object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/GridAlign.js#L15" target="_blank" rel="noopener noreferrer" class="">src/actions/GridAlign.js#L15</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="incalpha">IncAlpha<a href="#incalpha" class="hash-link" aria-label="Direct link to IncAlpha" title="Direct link to IncAlpha" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-incalphaitems-value-step-index-direction">&lt;static&gt; IncAlpha(items, value, [step], [index], [direction])<a href="#static-incalphaitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; IncAlpha(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; IncAlpha(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public <code>alpha</code> property,</p>
+<p>and then adds the given value to each of their <code>alpha</code> properties.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>IncAlpha(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>alpha</code> property.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/IncAlpha.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/IncAlpha.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="incx">IncX<a href="#incx" class="hash-link" aria-label="Direct link to IncX" title="Direct link to IncX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-incxitems-value-step-index-direction">&lt;static&gt; IncX(items, value, [step], [index], [direction])<a href="#static-incxitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; IncX(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; IncX(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public <code>x</code> property,</p>
+<p>and then adds the given value to each of their <code>x</code> properties.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>IncX(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>x</code> property.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/IncX.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/IncX.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="incxy">IncXY<a href="#incxy" class="hash-link" aria-label="Direct link to IncXY" title="Direct link to IncXY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-incxyitems-x-y-stepx-stepy-index-direction">&lt;static&gt; IncXY(items, x, [y], [stepX], [stepY], [index], [direction])<a href="#static-incxyitems-x-y-stepx-stepy-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; IncXY(items, x, [y], [stepX], [stepY], [index], [direction])" title="Direct link to &lt;static&gt; IncXY(items, x, [y], [stepX], [stepY], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have public <code>x</code> and <code>y</code> properties,</p>
+<p>and then adds the given value to each of them.</p>
+<p>The optional <code>stepX</code> and <code>stepY</code> properties are applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>IncXY(group.getChildren(), x, y, stepX, stepY)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>x</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>x</code> property.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>&quot;x&quot;</td><td>The amount to be added to the <code>y</code> property. If <code>undefined</code> or <code>null</code> it uses the <code>x</code> value.</td></tr><tr><td>stepX</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>x</code> amount, multiplied by the iteration counter.</td></tr><tr><td>stepY</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>y</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/IncXY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/IncXY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="incy">IncY<a href="#incy" class="hash-link" aria-label="Direct link to IncY" title="Direct link to IncY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-incyitems-value-step-index-direction">&lt;static&gt; IncY(items, value, [step], [index], [direction])<a href="#static-incyitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; IncY(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; IncY(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public <code>y</code> property,</p>
+<p>and then adds the given value to each of their <code>y</code> properties.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>IncY(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>y</code> property.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/IncY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/IncY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="placeoncircle">PlaceOnCircle<a href="#placeoncircle" class="hash-link" aria-label="Direct link to PlaceOnCircle" title="Direct link to PlaceOnCircle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-placeoncircleitems-circle-startangle-endangle">&lt;static&gt; PlaceOnCircle(items, circle, [startAngle], [endAngle])<a href="#static-placeoncircleitems-circle-startangle-endangle" class="hash-link" aria-label="Direct link to &lt;static&gt; PlaceOnCircle(items, circle, [startAngle], [endAngle])" title="Direct link to &lt;static&gt; PlaceOnCircle(items, circle, [startAngle], [endAngle])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of a Circle.</p>
+<p>If you wish to pass a <code>Phaser.GameObjects.Circle</code> Shape to this function, you should pass its <code>geom</code> property.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>circle</td><td><a class="" href="/api-documentation/3.86.0/class/geom-circle">Phaser.Geom.Circle</a></td><td>No</td><td></td><td>The Circle to position the Game Objects on.</td></tr><tr><td>startAngle</td><td>number</td><td>Yes</td><td>0</td><td>Optional angle to start position from, in radians.</td></tr><tr><td>endAngle</td><td>number</td><td>Yes</td><td>6.28</td><td>Optional angle to stop position at, in radians.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PlaceOnCircle.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/PlaceOnCircle.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="placeonellipse">PlaceOnEllipse<a href="#placeonellipse" class="hash-link" aria-label="Direct link to PlaceOnEllipse" title="Direct link to PlaceOnEllipse" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-placeonellipseitems-ellipse-startangle-endangle">&lt;static&gt; PlaceOnEllipse(items, ellipse, [startAngle], [endAngle])<a href="#static-placeonellipseitems-ellipse-startangle-endangle" class="hash-link" aria-label="Direct link to &lt;static&gt; PlaceOnEllipse(items, ellipse, [startAngle], [endAngle])" title="Direct link to &lt;static&gt; PlaceOnEllipse(items, ellipse, [startAngle], [endAngle])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of an Ellipse.</p>
+<p>If you wish to pass a <code>Phaser.GameObjects.Ellipse</code> Shape to this function, you should pass its <code>geom</code> property.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>ellipse</td><td><a class="" href="/api-documentation/3.86.0/class/geom-ellipse">Phaser.Geom.Ellipse</a></td><td>No</td><td></td><td>The Ellipse to position the Game Objects on.</td></tr><tr><td>startAngle</td><td>number</td><td>Yes</td><td>0</td><td>Optional angle to start position from, in radians.</td></tr><tr><td>endAngle</td><td>number</td><td>Yes</td><td>6.28</td><td>Optional angle to stop position at, in radians.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PlaceOnEllipse.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/PlaceOnEllipse.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="placeonline">PlaceOnLine<a href="#placeonline" class="hash-link" aria-label="Direct link to PlaceOnLine" title="Direct link to PlaceOnLine" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-placeonlineitems-line-ease">&lt;static&gt; PlaceOnLine(items, line, [ease])<a href="#static-placeonlineitems-line-ease" class="hash-link" aria-label="Direct link to &lt;static&gt; PlaceOnLine(items, line, [ease])" title="Direct link to &lt;static&gt; PlaceOnLine(items, line, [ease])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Positions an array of Game Objects on evenly spaced points of a Line.</p>
+<p>If the ease parameter is supplied, it will space the points based on that easing function along the line.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>line</td><td><a class="" href="/api-documentation/3.86.0/class/geom-line">Phaser.Geom.Line</a></td><td>No</td><td>The Line to position the Game Objects on.</td></tr><tr><td>ease</td><td>string | function</td><td>Yes</td><td>An optional ease to use. This can be either a string from the EaseMap, or a custom function.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PlaceOnLine.js#L10" target="_blank" rel="noopener noreferrer" class="">src/actions/PlaceOnLine.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="placeonrectangle">PlaceOnRectangle<a href="#placeonrectangle" class="hash-link" aria-label="Direct link to PlaceOnRectangle" title="Direct link to PlaceOnRectangle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-placeonrectangleitems-rect-shift">&lt;static&gt; PlaceOnRectangle(items, rect, [shift])<a href="#static-placeonrectangleitems-rect-shift" class="hash-link" aria-label="Direct link to &lt;static&gt; PlaceOnRectangle(items, rect, [shift])" title="Direct link to &lt;static&gt; PlaceOnRectangle(items, rect, [shift])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of a Rectangle.</p>
+<p>Placement starts from the top-left of the rectangle, and proceeds in a clockwise direction.</p>
+<p>If the <code>shift</code> parameter is given you can offset where placement begins.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>rect</td><td><a class="" href="/api-documentation/3.86.0/class/geom-rectangle">Phaser.Geom.Rectangle</a></td><td>No</td><td></td><td>The Rectangle to position the Game Objects on.</td></tr><tr><td>shift</td><td>number</td><td>Yes</td><td>0</td><td>An optional positional offset.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PlaceOnRectangle.js#L11" target="_blank" rel="noopener noreferrer" class="">src/actions/PlaceOnRectangle.js#L11</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="placeontriangle">PlaceOnTriangle<a href="#placeontriangle" class="hash-link" aria-label="Direct link to PlaceOnTriangle" title="Direct link to PlaceOnTriangle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-placeontriangleitems-triangle-steprate">&lt;static&gt; PlaceOnTriangle(items, triangle, [stepRate])<a href="#static-placeontriangleitems-triangle-steprate" class="hash-link" aria-label="Direct link to &lt;static&gt; PlaceOnTriangle(items, triangle, [stepRate])" title="Direct link to &lt;static&gt; PlaceOnTriangle(items, triangle, [stepRate])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them on evenly spaced points around the edges of a Triangle.</p>
+<p>If you wish to pass a <code>Phaser.GameObjects.Triangle</code> Shape to this function, you should pass its <code>geom</code> property.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>triangle</td><td><a class="" href="/api-documentation/3.86.0/class/geom-triangle">Phaser.Geom.Triangle</a></td><td>No</td><td></td><td>The Triangle to position the Game Objects on.</td></tr><tr><td>stepRate</td><td>number</td><td>Yes</td><td>1</td><td>An optional step rate, to increase or decrease the packing of the Game Objects on the lines.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PlaceOnTriangle.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/PlaceOnTriangle.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="playanimation">PlayAnimation<a href="#playanimation" class="hash-link" aria-label="Direct link to PlayAnimation" title="Direct link to PlayAnimation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-playanimationitems-key-ignoreifplaying">&lt;static&gt; PlayAnimation(items, key, [ignoreIfPlaying])<a href="#static-playanimationitems-key-ignoreifplaying" class="hash-link" aria-label="Direct link to &lt;static&gt; PlayAnimation(items, key, [ignoreIfPlaying])" title="Direct link to &lt;static&gt; PlayAnimation(items, key, [ignoreIfPlaying])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Play an animation on all Game Objects in the array that have an Animation component.</p>
+<p>You can pass either an animation key, or an animation configuration object for more control over the playback.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>key</td><td>string | <a class="" href="/api-documentation/3.86.0/class/animations-animation">Phaser.Animations.Animation</a></td><td><a class="" href="/api-documentation/3.86.0/typedef/types-animations#PlayAnimationConfig">Phaser.Types.Animations.PlayAnimationConfig</a></td><td>No</td><td></td></tr><tr><td>ignoreIfPlaying</td><td>boolean</td><td>Yes</td><td>false</td><td>If this animation is already playing then ignore this call.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PlayAnimation.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/PlayAnimation.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="propertyvalueinc">PropertyValueInc<a href="#propertyvalueinc" class="hash-link" aria-label="Direct link to PropertyValueInc" title="Direct link to PropertyValueInc" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-propertyvalueincitems-key-value-step-index-direction">&lt;static&gt; PropertyValueInc(items, key, value, [step], [index], [direction])<a href="#static-propertyvalueincitems-key-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; PropertyValueInc(items, key, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; PropertyValueInc(items, key, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public property as defined in <code>key</code>,</p>
+<p>and then adds the given value to it.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>PropertyValueInc(group.getChildren(), key, value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>key</td><td>string</td><td>No</td><td></td><td>The property to be updated.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the property.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PropertyValueInc.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/PropertyValueInc.js#L7</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="propertyvalueset">PropertyValueSet<a href="#propertyvalueset" class="hash-link" aria-label="Direct link to PropertyValueSet" title="Direct link to PropertyValueSet" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-propertyvaluesetitems-key-value-step-index-direction">&lt;static&gt; PropertyValueSet(items, key, value, [step], [index], [direction])<a href="#static-propertyvaluesetitems-key-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; PropertyValueSet(items, key, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; PropertyValueSet(items, key, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public property as defined in <code>key</code>,</p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>PropertyValueSet(group.getChildren(), key, value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>key</td><td>string</td><td>No</td><td></td><td>The property to be updated.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/PropertyValueSet.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/PropertyValueSet.js#L7</a><br>
+Since: 3.3.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomcircle">RandomCircle<a href="#randomcircle" class="hash-link" aria-label="Direct link to RandomCircle" title="Direct link to RandomCircle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomcircleitems-circle">&lt;static&gt; RandomCircle(items, circle)<a href="#static-randomcircleitems-circle" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomCircle(items, circle)" title="Direct link to &lt;static&gt; RandomCircle(items, circle)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them at random locations within the Circle.</p>
+<p>If you wish to pass a <code>Phaser.GameObjects.Circle</code> Shape to this function, you should pass its <code>geom</code> property.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>circle</td><td><a class="" href="/api-documentation/3.86.0/class/geom-circle">Phaser.Geom.Circle</a></td><td>No</td><td>The Circle to position the Game Objects within.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/RandomCircle.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/RandomCircle.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomellipse">RandomEllipse<a href="#randomellipse" class="hash-link" aria-label="Direct link to RandomEllipse" title="Direct link to RandomEllipse" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomellipseitems-ellipse">&lt;static&gt; RandomEllipse(items, ellipse)<a href="#static-randomellipseitems-ellipse" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomEllipse(items, ellipse)" title="Direct link to &lt;static&gt; RandomEllipse(items, ellipse)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them at random locations within the Ellipse.</p>
+<p>If you wish to pass a <code>Phaser.GameObjects.Ellipse</code> Shape to this function, you should pass its <code>geom</code> property.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>ellipse</td><td><a class="" href="/api-documentation/3.86.0/class/geom-ellipse">Phaser.Geom.Ellipse</a></td><td>No</td><td>The Ellipse to position the Game Objects within.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/RandomEllipse.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/RandomEllipse.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomline">RandomLine<a href="#randomline" class="hash-link" aria-label="Direct link to RandomLine" title="Direct link to RandomLine" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomlineitems-line">&lt;static&gt; RandomLine(items, line)<a href="#static-randomlineitems-line" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomLine(items, line)" title="Direct link to &lt;static&gt; RandomLine(items, line)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them at random locations on the Line.</p>
+<p>If you wish to pass a <code>Phaser.GameObjects.Line</code> Shape to this function, you should pass its <code>geom</code> property.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>line</td><td><a class="" href="/api-documentation/3.86.0/class/geom-line">Phaser.Geom.Line</a></td><td>No</td><td>The Line to position the Game Objects randomly on.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/RandomLine.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/RandomLine.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomrectangle">RandomRectangle<a href="#randomrectangle" class="hash-link" aria-label="Direct link to RandomRectangle" title="Direct link to RandomRectangle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomrectangleitems-rect">&lt;static&gt; RandomRectangle(items, rect)<a href="#static-randomrectangleitems-rect" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomRectangle(items, rect)" title="Direct link to &lt;static&gt; RandomRectangle(items, rect)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them at random locations within the Rectangle.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>rect</td><td><a class="" href="/api-documentation/3.86.0/class/geom-rectangle">Phaser.Geom.Rectangle</a></td><td>No</td><td>The Rectangle to position the Game Objects within.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/RandomRectangle.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/RandomRectangle.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomtriangle">RandomTriangle<a href="#randomtriangle" class="hash-link" aria-label="Direct link to RandomTriangle" title="Direct link to RandomTriangle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomtriangleitems-triangle">&lt;static&gt; RandomTriangle(items, triangle)<a href="#static-randomtriangleitems-triangle" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomTriangle(items, triangle)" title="Direct link to &lt;static&gt; RandomTriangle(items, triangle)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and positions them at random locations within the Triangle.</p>
+<p>If you wish to pass a <code>Phaser.GameObjects.Triangle</code> Shape to this function, you should pass its <code>geom</code> property.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>triangle</td><td><a class="" href="/api-documentation/3.86.0/class/geom-triangle">Phaser.Geom.Triangle</a></td><td>No</td><td>The Triangle to position the Game Objects within.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/RandomTriangle.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/RandomTriangle.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotate">Rotate<a href="#rotate" class="hash-link" aria-label="Direct link to Rotate" title="Direct link to Rotate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotateitems-value-step-index-direction">&lt;static&gt; Rotate(items, value, [step], [index], [direction])<a href="#static-rotateitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; Rotate(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; Rotate(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public <code>rotation</code> property,</p>
+<p>and then adds the given value to each of their <code>rotation</code> properties.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>Rotate(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>rotation</code> property (in radians).</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/Rotate.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/Rotate.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotatearound">RotateAround<a href="#rotatearound" class="hash-link" aria-label="Direct link to RotateAround" title="Direct link to RotateAround" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotatearounditems-point-angle">&lt;static&gt; RotateAround(items, point, angle)<a href="#static-rotatearounditems-point-angle" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateAround(items, point, angle)" title="Direct link to &lt;static&gt; RotateAround(items, point, angle)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Rotates each item around the given point by the given angle.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>point</td><td>object</td><td>No</td><td>Any object with public <code>x</code> and <code>y</code> properties.</td></tr><tr><td>angle</td><td>number</td><td>No</td><td>The angle to rotate by, in radians.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/RotateAround.js#L10" target="_blank" rel="noopener noreferrer" class="">src/actions/RotateAround.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotatearounddistance">RotateAroundDistance<a href="#rotatearounddistance" class="hash-link" aria-label="Direct link to RotateAroundDistance" title="Direct link to RotateAroundDistance" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotatearounddistanceitems-point-angle-distance">&lt;static&gt; RotateAroundDistance(items, point, angle, distance)<a href="#static-rotatearounddistanceitems-point-angle-distance" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateAroundDistance(items, point, angle, distance)" title="Direct link to &lt;static&gt; RotateAroundDistance(items, point, angle, distance)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Rotates an array of Game Objects around a point by the given angle and distance.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>point</td><td>object</td><td>No</td><td>Any object with public <code>x</code> and <code>y</code> properties.</td></tr><tr><td>angle</td><td>number</td><td>No</td><td>The angle to rotate by, in radians.</td></tr><tr><td>distance</td><td>number</td><td>No</td><td>The distance from the point of rotation in pixels.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/RotateAroundDistance.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/RotateAroundDistance.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scalex">ScaleX<a href="#scalex" class="hash-link" aria-label="Direct link to ScaleX" title="Direct link to ScaleX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scalexitems-value-step-index-direction">&lt;static&gt; ScaleX(items, value, [step], [index], [direction])<a href="#static-scalexitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; ScaleX(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; ScaleX(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public <code>scaleX</code> property,</p>
+<p>and then adds the given value to each of their <code>scaleX</code> properties.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>ScaleX(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>scaleX</code> property.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/ScaleX.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/ScaleX.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scalexy">ScaleXY<a href="#scalexy" class="hash-link" aria-label="Direct link to ScaleXY" title="Direct link to ScaleXY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scalexyitems-scalex-scaley-stepx-stepy-index-direction">&lt;static&gt; ScaleXY(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])<a href="#static-scalexyitems-scalex-scaley-stepx-stepy-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; ScaleXY(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])" title="Direct link to &lt;static&gt; ScaleXY(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have public <code>scaleX</code> and <code>scaleY</code> properties,</p>
+<p>and then adds the given value to each of them.</p>
+<p>The optional <code>stepX</code> and <code>stepY</code> properties are applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>ScaleXY(group.getChildren(), scaleX, scaleY, stepX, stepY)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>scaleX</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>scaleX</code> property.</td></tr><tr><td>scaleY</td><td>number</td><td>Yes</td><td></td><td>The amount to be added to the <code>scaleY</code> property. If <code>undefined</code> or <code>null</code> it uses the <code>scaleX</code> value.</td></tr><tr><td>stepX</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>scaleX</code> amount, multiplied by the iteration counter.</td></tr><tr><td>stepY</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>scaleY</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/ScaleXY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/ScaleXY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scaley">ScaleY<a href="#scaley" class="hash-link" aria-label="Direct link to ScaleY" title="Direct link to ScaleY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-scaleyitems-value-step-index-direction">&lt;static&gt; ScaleY(items, value, [step], [index], [direction])<a href="#static-scaleyitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; ScaleY(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; ScaleY(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have a public <code>scaleY</code> property,</p>
+<p>and then adds the given value to each of their <code>scaleY</code> properties.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>ScaleY(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to be added to the <code>scaleY</code> property.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/ScaleY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/ScaleY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setalpha">SetAlpha<a href="#setalpha" class="hash-link" aria-label="Direct link to SetAlpha" title="Direct link to SetAlpha" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setalphaitems-value-step-index-direction">&lt;static&gt; SetAlpha(items, value, [step], [index], [direction])<a href="#static-setalphaitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetAlpha(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetAlpha(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>alpha</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetAlpha(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetAlpha.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetAlpha.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setblendmode">SetBlendMode<a href="#setblendmode" class="hash-link" aria-label="Direct link to SetBlendMode" title="Direct link to SetBlendMode" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setblendmodeitems-value-index-direction">&lt;static&gt; SetBlendMode(items, value, [index], [direction])<a href="#static-setblendmodeitems-value-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetBlendMode(items, value, [index], [direction])" title="Direct link to &lt;static&gt; SetBlendMode(items, value, [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>blendMode</code></p>
+<p>and then sets it to the given value.</p>
+<p>To use this with a Group: <code>SetBlendMode(group.getChildren(), value)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td><a class="" href="/api-documentation/3.86.0/namespace/blendmodes">Phaser.BlendModes</a> | string</td><td>number</td><td>No</td><td></td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetBlendMode.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetBlendMode.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setdepth">SetDepth<a href="#setdepth" class="hash-link" aria-label="Direct link to SetDepth" title="Direct link to SetDepth" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setdepthitems-value-step-index-direction">&lt;static&gt; SetDepth(items, value, [step], [index], [direction])<a href="#static-setdepthitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetDepth(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetDepth(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>depth</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetDepth(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetDepth.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetDepth.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sethitarea">SetHitArea<a href="#sethitarea" class="hash-link" aria-label="Direct link to SetHitArea" title="Direct link to SetHitArea" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-sethitareaitems-hitarea-callback">&lt;static&gt; SetHitArea(items, [hitArea], [callback])<a href="#static-sethitareaitems-hitarea-callback" class="hash-link" aria-label="Direct link to &lt;static&gt; SetHitArea(items, [hitArea], [callback])" title="Direct link to &lt;static&gt; SetHitArea(items, [hitArea], [callback])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Passes all provided Game Objects to the Input Manager to enable them for input with identical areas and callbacks.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>hitArea</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#InputConfiguration">Phaser.Types.Input.InputConfiguration</a> | any</td><td>Yes</td><td>Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not given it will try to create a Rectangle based on the texture frame.</td></tr><tr><td>callback</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#HitAreaCallback">Phaser.Types.Input.HitAreaCallback</a></td><td>Yes</td><td>The callback that determines if the pointer is within the Hit Area shape or not. If you provide a shape you must also provide a callback.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetHitArea.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/SetHitArea.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setorigin">SetOrigin<a href="#setorigin" class="hash-link" aria-label="Direct link to SetOrigin" title="Direct link to SetOrigin" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setoriginitems-originx-originy-stepx-stepy-index-direction">&lt;static&gt; SetOrigin(items, originX, [originY], [stepX], [stepY], [index], [direction])<a href="#static-setoriginitems-originx-originy-stepx-stepy-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetOrigin(items, originX, [originY], [stepX], [stepY], [index], [direction])" title="Direct link to &lt;static&gt; SetOrigin(items, originX, [originY], [stepX], [stepY], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public properties <code>originX</code> and <code>originY</code></p>
+<p>and then sets them to the given values.</p>
+<p>The optional <code>stepX</code> and <code>stepY</code> properties are applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetOrigin(group.getChildren(), originX, originY, stepX, stepY)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>originX</td><td>number</td><td>No</td><td></td><td>The amount to set the <code>originX</code> property to.</td></tr><tr><td>originY</td><td>number</td><td>Yes</td><td></td><td>The amount to set the <code>originY</code> property to. If <code>undefined</code> or <code>null</code> it uses the <code>originX</code> value.</td></tr><tr><td>stepX</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>originX</code> amount, multiplied by the iteration counter.</td></tr><tr><td>stepY</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>originY</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetOrigin.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetOrigin.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setrotation">SetRotation<a href="#setrotation" class="hash-link" aria-label="Direct link to SetRotation" title="Direct link to SetRotation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setrotationitems-value-step-index-direction">&lt;static&gt; SetRotation(items, value, [step], [index], [direction])<a href="#static-setrotationitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetRotation(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetRotation(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>rotation</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetRotation(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetRotation.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetRotation.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setscale">SetScale<a href="#setscale" class="hash-link" aria-label="Direct link to SetScale" title="Direct link to SetScale" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setscaleitems-scalex-scaley-stepx-stepy-index-direction">&lt;static&gt; SetScale(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])<a href="#static-setscaleitems-scalex-scaley-stepx-stepy-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetScale(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])" title="Direct link to &lt;static&gt; SetScale(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public properties <code>scaleX</code> and <code>scaleY</code></p>
+<p>and then sets them to the given values.</p>
+<p>The optional <code>stepX</code> and <code>stepY</code> properties are applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetScale(group.getChildren(), scaleX, scaleY, stepX, stepY)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>scaleX</td><td>number</td><td>No</td><td></td><td>The amount to set the <code>scaleX</code> property to.</td></tr><tr><td>scaleY</td><td>number</td><td>Yes</td><td></td><td>The amount to set the <code>scaleY</code> property to. If <code>undefined</code> or <code>null</code> it uses the <code>scaleX</code> value.</td></tr><tr><td>stepX</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>scaleX</code> amount, multiplied by the iteration counter.</td></tr><tr><td>stepY</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>scaleY</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetScale.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetScale.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setscalex">SetScaleX<a href="#setscalex" class="hash-link" aria-label="Direct link to SetScaleX" title="Direct link to SetScaleX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setscalexitems-value-step-index-direction">&lt;static&gt; SetScaleX(items, value, [step], [index], [direction])<a href="#static-setscalexitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetScaleX(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetScaleX(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>scaleX</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetScaleX(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetScaleX.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetScaleX.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setscaley">SetScaleY<a href="#setscaley" class="hash-link" aria-label="Direct link to SetScaleY" title="Direct link to SetScaleY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setscaleyitems-value-step-index-direction">&lt;static&gt; SetScaleY(items, value, [step], [index], [direction])<a href="#static-setscaleyitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetScaleY(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetScaleY(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>scaleY</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetScaleY(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetScaleY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetScaleY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setscrollfactor">SetScrollFactor<a href="#setscrollfactor" class="hash-link" aria-label="Direct link to SetScrollFactor" title="Direct link to SetScrollFactor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setscrollfactoritems-scrollfactorx-scrollfactory-stepx-stepy-index-direction">&lt;static&gt; SetScrollFactor(items, scrollFactorX, [scrollFactorY], [stepX], [stepY], [index], [direction])<a href="#static-setscrollfactoritems-scrollfactorx-scrollfactory-stepx-stepy-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetScrollFactor(items, scrollFactorX, [scrollFactorY], [stepX], [stepY], [index], [direction])" title="Direct link to &lt;static&gt; SetScrollFactor(items, scrollFactorX, [scrollFactorY], [stepX], [stepY], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public properties <code>scrollFactorX</code> and <code>scrollFactorY</code></p>
+<p>and then sets them to the given values.</p>
+<p>The optional <code>stepX</code> and <code>stepY</code> properties are applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetScrollFactor(group.getChildren(), scrollFactorX, scrollFactorY, stepX, stepY)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>scrollFactorX</td><td>number</td><td>No</td><td></td><td>The amount to set the <code>scrollFactorX</code> property to.</td></tr><tr><td>scrollFactorY</td><td>number</td><td>Yes</td><td></td><td>The amount to set the <code>scrollFactorY</code> property to. If <code>undefined</code> or <code>null</code> it uses the <code>scrollFactorX</code> value.</td></tr><tr><td>stepX</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>scrollFactorX</code> amount, multiplied by the iteration counter.</td></tr><tr><td>stepY</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>scrollFactorY</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetScrollFactor.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetScrollFactor.js#L9</a><br>
+Since: 3.21.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setscrollfactorx">SetScrollFactorX<a href="#setscrollfactorx" class="hash-link" aria-label="Direct link to SetScrollFactorX" title="Direct link to SetScrollFactorX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setscrollfactorxitems-value-step-index-direction">&lt;static&gt; SetScrollFactorX(items, value, [step], [index], [direction])<a href="#static-setscrollfactorxitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetScrollFactorX(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetScrollFactorX(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>scrollFactorX</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetScrollFactorX(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetScrollFactorX.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetScrollFactorX.js#L9</a><br>
+Since: 3.21.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setscrollfactory">SetScrollFactorY<a href="#setscrollfactory" class="hash-link" aria-label="Direct link to SetScrollFactorY" title="Direct link to SetScrollFactorY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setscrollfactoryitems-value-step-index-direction">&lt;static&gt; SetScrollFactorY(items, value, [step], [index], [direction])<a href="#static-setscrollfactoryitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetScrollFactorY(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetScrollFactorY(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>scrollFactorY</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetScrollFactorY(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetScrollFactorY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetScrollFactorY.js#L9</a><br>
+Since: 3.21.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="settint">SetTint<a href="#settint" class="hash-link" aria-label="Direct link to SetTint" title="Direct link to SetTint" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-settintitems-topleft-topright-bottomleft-bottomright">&lt;static&gt; SetTint(items, topLeft, [topRight], [bottomLeft], [bottomRight])<a href="#static-settintitems-topleft-topright-bottomleft-bottomright" class="hash-link" aria-label="Direct link to &lt;static&gt; SetTint(items, topLeft, [topRight], [bottomLeft], [bottomRight])" title="Direct link to &lt;static&gt; SetTint(items, topLeft, [topRight], [bottomLeft], [bottomRight])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public method setTint() and then updates it to the given value(s). You can specify tint color per corner or provide only one color value for <code>topLeft</code> parameter, in which case whole item will be tinted with that color.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>topLeft</td><td>number</td><td>No</td><td>The tint being applied to top-left corner of item. If other parameters are given no value, this tint will be applied to whole item.</td></tr><tr><td>topRight</td><td>number</td><td>Yes</td><td>The tint to be applied to top-right corner of item.</td></tr><tr><td>bottomLeft</td><td>number</td><td>Yes</td><td>The tint to be applied to the bottom-left corner of item.</td></tr><tr><td>bottomRight</td><td>number</td><td>Yes</td><td>The tint to be applied to the bottom-right corner of item.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetTint.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/SetTint.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setvisible">SetVisible<a href="#setvisible" class="hash-link" aria-label="Direct link to SetVisible" title="Direct link to SetVisible" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setvisibleitems-value-index-direction">&lt;static&gt; SetVisible(items, value, [index], [direction])<a href="#static-setvisibleitems-value-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetVisible(items, value, [index], [direction])" title="Direct link to &lt;static&gt; SetVisible(items, value, [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>visible</code></p>
+<p>and then sets it to the given value.</p>
+<p>To use this with a Group: <code>SetVisible(group.getChildren(), value)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>boolean</td><td>No</td><td></td><td>The value to set the property to.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetVisible.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetVisible.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setx">SetX<a href="#setx" class="hash-link" aria-label="Direct link to SetX" title="Direct link to SetX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setxitems-value-step-index-direction">&lt;static&gt; SetX(items, value, [step], [index], [direction])<a href="#static-setxitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetX(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetX(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>x</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetX(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetX.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetX.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setxy">SetXY<a href="#setxy" class="hash-link" aria-label="Direct link to SetXY" title="Direct link to SetXY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setxyitems-x-y-stepx-stepy-index-direction">&lt;static&gt; SetXY(items, x, [y], [stepX], [stepY], [index], [direction])<a href="#static-setxyitems-x-y-stepx-stepy-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetXY(items, x, [y], [stepX], [stepY], [index], [direction])" title="Direct link to &lt;static&gt; SetXY(items, x, [y], [stepX], [stepY], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public properties <code>x</code> and <code>y</code></p>
+<p>and then sets them to the given values.</p>
+<p>The optional <code>stepX</code> and <code>stepY</code> properties are applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetXY(group.getChildren(), x, y, stepX, stepY)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>x</td><td>number</td><td>No</td><td></td><td>The amount to set the <code>x</code> property to.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>&quot;x&quot;</td><td>The amount to set the <code>y</code> property to. If <code>undefined</code> or <code>null</code> it uses the <code>x</code> value.</td></tr><tr><td>stepX</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>x</code> amount, multiplied by the iteration counter.</td></tr><tr><td>stepY</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>y</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetXY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetXY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sety">SetY<a href="#sety" class="hash-link" aria-label="Direct link to SetY" title="Direct link to SetY" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setyitems-value-step-index-direction">&lt;static&gt; SetY(items, value, [step], [index], [direction])<a href="#static-setyitems-value-step-index-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; SetY(items, value, [step], [index], [direction])" title="Direct link to &lt;static&gt; SetY(items, value, [step], [index], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects, or any objects that have the public property <code>y</code></p>
+<p>and then sets it to the given value.</p>
+<p>The optional <code>step</code> property is applied incrementally, multiplied by each item in the array.</p>
+<p>To use this with a Group: <code>SetY(group.getChildren(), value, step)</code></p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>The array of items to be updated by this action.</td></tr><tr><td>value</td><td>number</td><td>No</td><td></td><td>The amount to set the property to.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>0</td><td>This is added to the <code>value</code> amount, multiplied by the iteration counter.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>An optional offset to start searching from within the items array.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>1</td><td>The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SetY.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SetY.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shiftposition">ShiftPosition<a href="#shiftposition" class="hash-link" aria-label="Direct link to ShiftPosition" title="Direct link to ShiftPosition" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-shiftpositionitems-x-y-direction-output">&lt;static&gt; ShiftPosition(items, x, y, [direction], [output])<a href="#static-shiftpositionitems-x-y-direction-output" class="hash-link" aria-label="Direct link to &lt;static&gt; ShiftPosition(items, x, y, [direction], [output])" title="Direct link to &lt;static&gt; ShiftPosition(items, x, y, [direction], [output])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of items, such as Game Objects, or any objects with public <code>x</code> and</p>
+<p><code>y</code> properties and then iterates through them. As this function iterates, it moves</p>
+<p>the position of the current element to be that of the previous entry in the array.</p>
+<p>This repeats until all items have been moved.</p>
+<p>The direction controls the order of iteration. A value of 0 (the default) assumes</p>
+<p>that the final item in the array is the &#x27;head&#x27; item.</p>
+<p>A direction value of 1 assumes that the first item in the array is the &#x27;head&#x27; item.</p>
+<p>The position of the &#x27;head&#x27; item is set to the x/y values given to this function.</p>
+<p>Every other item in the array is then updated, in sequence, to be that of the</p>
+<p>previous (or next) entry in the array.</p>
+<p>The final x/y coords are returned, or set in the &#x27;output&#x27; Vector2.</p>
+<p>Think of it as being like the game Snake, where the &#x27;head&#x27; is moved and then</p>
+<p>each body piece is moved into the space of the previous piece.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>Array.&lt;<a class="" href="/api-documentation/3.86.0/typedef/types-math#Vector2Like">Phaser.Types.Math.Vector2Like</a>&gt; | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects, or objects with public x and y positions. The contents of this array are updated by this Action.</td></tr><tr><td>x</td><td>number</td><td>No</td><td></td><td>The x coordinate to place the head item at.</td></tr><tr><td>y</td><td>number</td><td>No</td><td></td><td>The y coordinate to place the head item at.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>0</td><td>The iteration direction. 0 = first to last and 1 = last to first.</td></tr><tr><td>output</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-math#Vector2Like">Phaser.Types.Math.Vector2Like</a></td><td>Yes</td><td></td><td>An optional Vec2Like object to store the final position in.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.86.0/typedef/types-math#Vector2Like">Phaser.Types.Math.Vector2Like</a> - The output vector.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/ShiftPosition.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/ShiftPosition.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shuffle">Shuffle<a href="#shuffle" class="hash-link" aria-label="Direct link to Shuffle" title="Direct link to Shuffle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-shuffleitems">&lt;static&gt; Shuffle(items)<a href="#static-shuffleitems" class="hash-link" aria-label="Direct link to &lt;static&gt; Shuffle(items)" title="Direct link to &lt;static&gt; Shuffle(items)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Shuffles the array in place. The shuffled array is both modified and returned.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/Shuffle.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/Shuffle.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="smootherstep">SmootherStep<a href="#smootherstep" class="hash-link" aria-label="Direct link to SmootherStep" title="Direct link to SmootherStep" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-smootherstepitems-property-min-max-inc">&lt;static&gt; SmootherStep(items, property, min, max, [inc])<a href="#static-smootherstepitems-property-min-max-inc" class="hash-link" aria-label="Direct link to &lt;static&gt; SmootherStep(items, property, min, max, [inc])" title="Direct link to &lt;static&gt; SmootherStep(items, property, min, max, [inc])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Smootherstep is a sigmoid-like interpolation and clamping function.</p>
+<p>The function depends on three parameters, the input x, the &quot;left edge&quot; and the &quot;right edge&quot;, with the left edge being assumed smaller than the right edge. The function receives a real number x as an argument and returns 0 if x is less than or equal to the left edge, 1 if x is greater than or equal to the right edge, and smoothly interpolates, using a Hermite polynomial, between 0 and 1 otherwise. The slope of the smoothstep function is zero at both edges. This is convenient for creating a sequence of transitions using smoothstep to interpolate each segment as an alternative to using more sophisticated or expensive interpolation techniques.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>property</td><td>string</td><td>No</td><td></td><td>The property of the Game Object to interpolate.</td></tr><tr><td>min</td><td>number</td><td>No</td><td></td><td>The minimum interpolation value.</td></tr><tr><td>max</td><td>number</td><td>No</td><td></td><td>The maximum interpolation value.</td></tr><tr><td>inc</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the values be incremented? <code>true</code> or set (<code>false</code>)</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SmootherStep.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SmootherStep.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="smoothstep">SmoothStep<a href="#smoothstep" class="hash-link" aria-label="Direct link to SmoothStep" title="Direct link to SmoothStep" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-smoothstepitems-property-min-max-inc">&lt;static&gt; SmoothStep(items, property, min, max, [inc])<a href="#static-smoothstepitems-property-min-max-inc" class="hash-link" aria-label="Direct link to &lt;static&gt; SmoothStep(items, property, min, max, [inc])" title="Direct link to &lt;static&gt; SmoothStep(items, property, min, max, [inc])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Smoothstep is a sigmoid-like interpolation and clamping function.</p>
+<p>The function depends on three parameters, the input x, the &quot;left edge&quot;</p>
+<p>and the &quot;right edge&quot;, with the left edge being assumed smaller than the right edge.</p>
+<p>The function receives a real number x as an argument and returns 0 if x is less than</p>
+<p>or equal to the left edge, 1 if x is greater than or equal to the right edge, and smoothly</p>
+<p>interpolates, using a Hermite polynomial, between 0 and 1 otherwise. The slope of the</p>
+<p>smoothstep function is zero at both edges.</p>
+<p>This is convenient for creating a sequence of transitions using smoothstep to interpolate</p>
+<p>each segment as an alternative to using more sophisticated or expensive interpolation techniques.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>property</td><td>string</td><td>No</td><td></td><td>The property of the Game Object to interpolate.</td></tr><tr><td>min</td><td>number</td><td>No</td><td></td><td>The minimum interpolation value.</td></tr><tr><td>max</td><td>number</td><td>No</td><td></td><td>The maximum interpolation value.</td></tr><tr><td>inc</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the property value be incremented (<code>true</code>) or set (<code>false</code>)?</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/SmoothStep.js#L9" target="_blank" rel="noopener noreferrer" class="">src/actions/SmoothStep.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spread">Spread<a href="#spread" class="hash-link" aria-label="Direct link to Spread" title="Direct link to Spread" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-spreaditems-property-min-max-inc">&lt;static&gt; Spread(items, property, min, max, [inc])<a href="#static-spreaditems-property-min-max-inc" class="hash-link" aria-label="Direct link to &lt;static&gt; Spread(items, property, min, max, [inc])" title="Direct link to &lt;static&gt; Spread(items, property, min, max, [inc])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and then modifies their <code>property</code> so the value equals, or is incremented, by the</p>
+<p>calculated spread value.</p>
+<p>The spread value is derived from the given <code>min</code> and <code>max</code> values and the total number of items in the array.</p>
+<p>For example, to cause an array of Sprites to change in alpha from 0 to 1 you could call:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token maybe-class-name">Phaser</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access maybe-class-name">Actions</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access maybe-class-name" style="color:#d73a49">Spread</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">itemsArray</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;alpha&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>property</td><td>string</td><td>No</td><td></td><td>The property of the Game Object to spread.</td></tr><tr><td>min</td><td>number</td><td>No</td><td></td><td>The minimum value.</td></tr><tr><td>max</td><td>number</td><td>No</td><td></td><td>The maximum value.</td></tr><tr><td>inc</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the values be incremented? <code>true</code> or set (<code>false</code>)</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that were passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/Spread.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/Spread.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="togglevisible">ToggleVisible<a href="#togglevisible" class="hash-link" aria-label="Direct link to ToggleVisible" title="Direct link to ToggleVisible" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-togglevisibleitems">&lt;static&gt; ToggleVisible(items)<a href="#static-togglevisibleitems" class="hash-link" aria-label="Direct link to &lt;static&gt; ToggleVisible(items)" title="Direct link to &lt;static&gt; ToggleVisible(items)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array of Game Objects and toggles the visibility of each one.</p>
+<p>Those previously <code>visible = false</code> will become <code>visible = true</code>, and vice versa.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/ToggleVisible.js#L7" target="_blank" rel="noopener noreferrer" class="">src/actions/ToggleVisible.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wrapinrectangle">WrapInRectangle<a href="#wrapinrectangle" class="hash-link" aria-label="Direct link to WrapInRectangle" title="Direct link to WrapInRectangle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-wrapinrectangleitems-rect-padding">&lt;static&gt; WrapInRectangle(items, rect, [padding])<a href="#static-wrapinrectangleitems-rect-padding" class="hash-link" aria-label="Direct link to &lt;static&gt; WrapInRectangle(items, rect, [padding])" title="Direct link to &lt;static&gt; WrapInRectangle(items, rect, [padding])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Iterates through the given array and makes sure that each objects x and y</p>
+<p>properties are wrapped to keep them contained within the given Rectangles</p>
+<p>area.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>items</td><td>array | Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td></td><td>An array of Game Objects. The contents of this array are updated by this Action.</td></tr><tr><td>rect</td><td><a class="" href="/api-documentation/3.86.0/class/geom-rectangle">Phaser.Geom.Rectangle</a></td><td>No</td><td></td><td>The rectangle which the objects will be wrapped to remain within.</td></tr><tr><td>padding</td><td>number</td><td>Yes</td><td>0</td><td>An amount added to each side of the rectangle during the operation.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array, Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; - The array of Game Objects that was passed to this Action.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/actions/WrapInRectangle.js#L10" target="_blank" rel="noopener noreferrer" class="">src/actions/WrapInRectangle.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.86.0/function/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Functions</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.86.0/function/core"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Phaser.Core</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#alignto" class="table-of-contents__link toc-highlight">AlignTo</a><ul><li><a href="#static-aligntoitems-position-offsetx-offsety" class="table-of-contents__link toc-highlight">&lt;static&gt; AlignTo(items, position, [offsetX], [offsetY])</a></li></ul></li><li><a href="#angle" class="table-of-contents__link toc-highlight">Angle</a><ul><li><a href="#static-angleitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; Angle(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#call" class="table-of-contents__link toc-highlight">Call</a><ul><li><a href="#static-callitems-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; Call(items, callback, context)</a></li></ul></li><li><a href="#getfirst" class="table-of-contents__link toc-highlight">GetFirst</a><ul><li><a href="#static-getfirstitems-compare-index" class="table-of-contents__link toc-highlight">&lt;static&gt; GetFirst(items, compare, [index])</a></li></ul></li><li><a href="#getlast" class="table-of-contents__link toc-highlight">GetLast</a><ul><li><a href="#static-getlastitems-compare-index" class="table-of-contents__link toc-highlight">&lt;static&gt; GetLast(items, compare, [index])</a></li></ul></li><li><a href="#gridalign" class="table-of-contents__link toc-highlight">GridAlign</a><ul><li><a href="#static-gridalignitems-options" class="table-of-contents__link toc-highlight">&lt;static&gt; GridAlign(items, options)</a></li></ul></li><li><a href="#incalpha" class="table-of-contents__link toc-highlight">IncAlpha</a><ul><li><a href="#static-incalphaitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; IncAlpha(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#incx" class="table-of-contents__link toc-highlight">IncX</a><ul><li><a href="#static-incxitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; IncX(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#incxy" class="table-of-contents__link toc-highlight">IncXY</a><ul><li><a href="#static-incxyitems-x-y-stepx-stepy-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; IncXY(items, x, [y], [stepX], [stepY], [index], [direction])</a></li></ul></li><li><a href="#incy" class="table-of-contents__link toc-highlight">IncY</a><ul><li><a href="#static-incyitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; IncY(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#placeoncircle" class="table-of-contents__link toc-highlight">PlaceOnCircle</a><ul><li><a href="#static-placeoncircleitems-circle-startangle-endangle" class="table-of-contents__link toc-highlight">&lt;static&gt; PlaceOnCircle(items, circle, [startAngle], [endAngle])</a></li></ul></li><li><a href="#placeonellipse" class="table-of-contents__link toc-highlight">PlaceOnEllipse</a><ul><li><a href="#static-placeonellipseitems-ellipse-startangle-endangle" class="table-of-contents__link toc-highlight">&lt;static&gt; PlaceOnEllipse(items, ellipse, [startAngle], [endAngle])</a></li></ul></li><li><a href="#placeonline" class="table-of-contents__link toc-highlight">PlaceOnLine</a><ul><li><a href="#static-placeonlineitems-line-ease" class="table-of-contents__link toc-highlight">&lt;static&gt; PlaceOnLine(items, line, [ease])</a></li></ul></li><li><a href="#placeonrectangle" class="table-of-contents__link toc-highlight">PlaceOnRectangle</a><ul><li><a href="#static-placeonrectangleitems-rect-shift" class="table-of-contents__link toc-highlight">&lt;static&gt; PlaceOnRectangle(items, rect, [shift])</a></li></ul></li><li><a href="#placeontriangle" class="table-of-contents__link toc-highlight">PlaceOnTriangle</a><ul><li><a href="#static-placeontriangleitems-triangle-steprate" class="table-of-contents__link toc-highlight">&lt;static&gt; PlaceOnTriangle(items, triangle, [stepRate])</a></li></ul></li><li><a href="#playanimation" class="table-of-contents__link toc-highlight">PlayAnimation</a><ul><li><a href="#static-playanimationitems-key-ignoreifplaying" class="table-of-contents__link toc-highlight">&lt;static&gt; PlayAnimation(items, key, [ignoreIfPlaying])</a></li></ul></li><li><a href="#propertyvalueinc" class="table-of-contents__link toc-highlight">PropertyValueInc</a><ul><li><a href="#static-propertyvalueincitems-key-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; PropertyValueInc(items, key, value, [step], [index], [direction])</a></li></ul></li><li><a href="#propertyvalueset" class="table-of-contents__link toc-highlight">PropertyValueSet</a><ul><li><a href="#static-propertyvaluesetitems-key-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; PropertyValueSet(items, key, value, [step], [index], [direction])</a></li></ul></li><li><a href="#randomcircle" class="table-of-contents__link toc-highlight">RandomCircle</a><ul><li><a href="#static-randomcircleitems-circle" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomCircle(items, circle)</a></li></ul></li><li><a href="#randomellipse" class="table-of-contents__link toc-highlight">RandomEllipse</a><ul><li><a href="#static-randomellipseitems-ellipse" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomEllipse(items, ellipse)</a></li></ul></li><li><a href="#randomline" class="table-of-contents__link toc-highlight">RandomLine</a><ul><li><a href="#static-randomlineitems-line" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomLine(items, line)</a></li></ul></li><li><a href="#randomrectangle" class="table-of-contents__link toc-highlight">RandomRectangle</a><ul><li><a href="#static-randomrectangleitems-rect" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomRectangle(items, rect)</a></li></ul></li><li><a href="#randomtriangle" class="table-of-contents__link toc-highlight">RandomTriangle</a><ul><li><a href="#static-randomtriangleitems-triangle" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomTriangle(items, triangle)</a></li></ul></li><li><a href="#rotate" class="table-of-contents__link toc-highlight">Rotate</a><ul><li><a href="#static-rotateitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; Rotate(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#rotatearound" class="table-of-contents__link toc-highlight">RotateAround</a><ul><li><a href="#static-rotatearounditems-point-angle" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateAround(items, point, angle)</a></li></ul></li><li><a href="#rotatearounddistance" class="table-of-contents__link toc-highlight">RotateAroundDistance</a><ul><li><a href="#static-rotatearounddistanceitems-point-angle-distance" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateAroundDistance(items, point, angle, distance)</a></li></ul></li><li><a href="#scalex" class="table-of-contents__link toc-highlight">ScaleX</a><ul><li><a href="#static-scalexitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; ScaleX(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#scalexy" class="table-of-contents__link toc-highlight">ScaleXY</a><ul><li><a href="#static-scalexyitems-scalex-scaley-stepx-stepy-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; ScaleXY(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])</a></li></ul></li><li><a href="#scaley" class="table-of-contents__link toc-highlight">ScaleY</a><ul><li><a href="#static-scaleyitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; ScaleY(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#setalpha" class="table-of-contents__link toc-highlight">SetAlpha</a><ul><li><a href="#static-setalphaitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetAlpha(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#setblendmode" class="table-of-contents__link toc-highlight">SetBlendMode</a><ul><li><a href="#static-setblendmodeitems-value-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetBlendMode(items, value, [index], [direction])</a></li></ul></li><li><a href="#setdepth" class="table-of-contents__link toc-highlight">SetDepth</a><ul><li><a href="#static-setdepthitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetDepth(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#sethitarea" class="table-of-contents__link toc-highlight">SetHitArea</a><ul><li><a href="#static-sethitareaitems-hitarea-callback" class="table-of-contents__link toc-highlight">&lt;static&gt; SetHitArea(items, [hitArea], [callback])</a></li></ul></li><li><a href="#setorigin" class="table-of-contents__link toc-highlight">SetOrigin</a><ul><li><a href="#static-setoriginitems-originx-originy-stepx-stepy-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetOrigin(items, originX, [originY], [stepX], [stepY], [index], [direction])</a></li></ul></li><li><a href="#setrotation" class="table-of-contents__link toc-highlight">SetRotation</a><ul><li><a href="#static-setrotationitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetRotation(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#setscale" class="table-of-contents__link toc-highlight">SetScale</a><ul><li><a href="#static-setscaleitems-scalex-scaley-stepx-stepy-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetScale(items, scaleX, [scaleY], [stepX], [stepY], [index], [direction])</a></li></ul></li><li><a href="#setscalex" class="table-of-contents__link toc-highlight">SetScaleX</a><ul><li><a href="#static-setscalexitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetScaleX(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#setscaley" class="table-of-contents__link toc-highlight">SetScaleY</a><ul><li><a href="#static-setscaleyitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetScaleY(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#setscrollfactor" class="table-of-contents__link toc-highlight">SetScrollFactor</a><ul><li><a href="#static-setscrollfactoritems-scrollfactorx-scrollfactory-stepx-stepy-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetScrollFactor(items, scrollFactorX, [scrollFactorY], [stepX], [stepY], [index], [direction])</a></li></ul></li><li><a href="#setscrollfactorx" class="table-of-contents__link toc-highlight">SetScrollFactorX</a><ul><li><a href="#static-setscrollfactorxitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetScrollFactorX(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#setscrollfactory" class="table-of-contents__link toc-highlight">SetScrollFactorY</a><ul><li><a href="#static-setscrollfactoryitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetScrollFactorY(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#settint" class="table-of-contents__link toc-highlight">SetTint</a><ul><li><a href="#static-settintitems-topleft-topright-bottomleft-bottomright" class="table-of-contents__link toc-highlight">&lt;static&gt; SetTint(items, topLeft, [topRight], [bottomLeft], [bottomRight])</a></li></ul></li><li><a href="#setvisible" class="table-of-contents__link toc-highlight">SetVisible</a><ul><li><a href="#static-setvisibleitems-value-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetVisible(items, value, [index], [direction])</a></li></ul></li><li><a href="#setx" class="table-of-contents__link toc-highlight">SetX</a><ul><li><a href="#static-setxitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetX(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#setxy" class="table-of-contents__link toc-highlight">SetXY</a><ul><li><a href="#static-setxyitems-x-y-stepx-stepy-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetXY(items, x, [y], [stepX], [stepY], [index], [direction])</a></li></ul></li><li><a href="#sety" class="table-of-contents__link toc-highlight">SetY</a><ul><li><a href="#static-setyitems-value-step-index-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; SetY(items, value, [step], [index], [direction])</a></li></ul></li><li><a href="#shiftposition" class="table-of-contents__link toc-highlight">ShiftPosition</a><ul><li><a href="#static-shiftpositionitems-x-y-direction-output" class="table-of-contents__link toc-highlight">&lt;static&gt; ShiftPosition(items, x, y, [direction], [output])</a></li></ul></li><li><a href="#shuffle" class="table-of-contents__link toc-highlight">Shuffle</a><ul><li><a href="#static-shuffleitems" class="table-of-contents__link toc-highlight">&lt;static&gt; Shuffle(items)</a></li></ul></li><li><a href="#smootherstep" class="table-of-contents__link toc-highlight">SmootherStep</a><ul><li><a href="#static-smootherstepitems-property-min-max-inc" class="table-of-contents__link toc-highlight">&lt;static&gt; SmootherStep(items, property, min, max, [inc])</a></li></ul></li><li><a href="#smoothstep" class="table-of-contents__link toc-highlight">SmoothStep</a><ul><li><a href="#static-smoothstepitems-property-min-max-inc" class="table-of-contents__link toc-highlight">&lt;static&gt; SmoothStep(items, property, min, max, [inc])</a></li></ul></li><li><a href="#spread" class="table-of-contents__link toc-highlight">Spread</a><ul><li><a href="#static-spreaditems-property-min-max-inc" class="table-of-contents__link toc-highlight">&lt;static&gt; Spread(items, property, min, max, [inc])</a></li></ul></li><li><a href="#togglevisible" class="table-of-contents__link toc-highlight">ToggleVisible</a><ul><li><a href="#static-togglevisibleitems" class="table-of-contents__link toc-highlight">&lt;static&gt; ToggleVisible(items)</a></li></ul></li><li><a href="#wrapinrectangle" class="table-of-contents__link toc-highlight">WrapInRectangle</a><ul><li><a href="#static-wrapinrectangleitems-rect-padding" class="table-of-contents__link toc-highlight">&lt;static&gt; WrapInRectangle(items, rect, [padding])</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

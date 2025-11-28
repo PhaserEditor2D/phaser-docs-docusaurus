@@ -1,0 +1,1620 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-typedef/Phaser.Types.GameObjects.Particles" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Types.GameObjects.Particles | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/typedef/types-gameobjects-particles"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="Types.GameObjects.Particles | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Types.GameObjects.Particles"><meta data-rh="true" property="og:description" content="Phaser.Types.GameObjects.Particles"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/typedef/types-gameobjects-particles"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/types-gameobjects-particles" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/typedef/types-gameobjects-particles" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Typedefs","item":"https://docs.phaser.io/api-documentation/typedef/"},{"@type":"ListItem","position":2,"name":"Types.GameObjects.Particles","item":"https://docs.phaser.io/api-documentation/typedef/types-gameobjects-particles"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/typedef/types-gameobjects-particles">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/typedef/types-gameobjects-particles">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/typedef/types-gameobjects-particles">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/typedef/types-gameobjects-particles">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Collapse sidebar category &#x27;Typedefs&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/device"><span title="Device" class="linkLabel_WmDU">Device</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/scale"><span title="Scale" class="linkLabel_WmDU">Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tilemaps"><span title="Tilemaps" class="linkLabel_WmDU">Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/tweens"><span title="Tweens" class="linkLabel_WmDU">Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-actions"><span title="Types.Actions" class="linkLabel_WmDU">Types.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-animations"><span title="Types.Animations" class="linkLabel_WmDU">Types.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-controls"><span title="Types.Cameras.Controls" class="linkLabel_WmDU">Types.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-cameras-scene2d"><span title="Types.Cameras.Scene2D" class="linkLabel_WmDU">Types.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-core"><span title="Types.Core" class="linkLabel_WmDU">Types.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-create"><span title="Types.Create" class="linkLabel_WmDU">Types.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-curves"><span title="Types.Curves" class="linkLabel_WmDU">Types.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-display"><span title="Types.Display" class="linkLabel_WmDU">Types.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-bitmaptext"><span title="Types.GameObjects.BitmapText" class="linkLabel_WmDU">Types.GameObjects.BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-container"><span title="Types.GameObjects.Container" class="linkLabel_WmDU">Types.GameObjects.Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-graphics"><span title="Types.GameObjects.Graphics" class="linkLabel_WmDU">Types.GameObjects.Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-group"><span title="Types.GameObjects.Group" class="linkLabel_WmDU">Types.GameObjects.Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-mesh"><span title="Types.GameObjects.Mesh" class="linkLabel_WmDU">Types.GameObjects.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-nineslice"><span title="Types.GameObjects.NineSlice" class="linkLabel_WmDU">Types.GameObjects.NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/typedef/types-gameobjects-particles"><span title="Types.GameObjects.Particles" class="linkLabel_WmDU">Types.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-pathfollower"><span title="Types.GameObjects.PathFollower" class="linkLabel_WmDU">Types.GameObjects.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-plane"><span title="Types.GameObjects.Plane" class="linkLabel_WmDU">Types.GameObjects.Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rendertexture"><span title="Types.GameObjects.RenderTexture" class="linkLabel_WmDU">Types.GameObjects.RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-rope"><span title="Types.GameObjects.Rope" class="linkLabel_WmDU">Types.GameObjects.Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-shader"><span title="Types.GameObjects.Shader" class="linkLabel_WmDU">Types.GameObjects.Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-sprite"><span title="Types.GameObjects.Sprite" class="linkLabel_WmDU">Types.GameObjects.Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-text"><span title="Types.GameObjects.Text" class="linkLabel_WmDU">Types.GameObjects.Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-tilesprite"><span title="Types.GameObjects.TileSprite" class="linkLabel_WmDU">Types.GameObjects.TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-video"><span title="Types.GameObjects.Video" class="linkLabel_WmDU">Types.GameObjects.Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects-zone"><span title="Types.GameObjects.Zone" class="linkLabel_WmDU">Types.GameObjects.Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-gameobjects"><span title="Types.GameObjects" class="linkLabel_WmDU">Types.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-geom-mesh"><span title="Types.Geom.Mesh" class="linkLabel_WmDU">Types.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-gamepad"><span title="Types.Input.Gamepad" class="linkLabel_WmDU">Types.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input-keyboard"><span title="Types.Input.Keyboard" class="linkLabel_WmDU">Types.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-input"><span title="Types.Input" class="linkLabel_WmDU">Types.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-loader-filetypes"><span title="Types.Loader.FileTypes" class="linkLabel_WmDU">Types.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-loader"><span title="Types.Loader" class="linkLabel_WmDU">Types.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-math"><span title="Types.Math" class="linkLabel_WmDU">Types.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-arcade"><span title="Types.Physics.Arcade" class="linkLabel_WmDU">Types.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-physics-matter"><span title="Types.Physics.Matter" class="linkLabel_WmDU">Types.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-plugins"><span title="Types.Plugins" class="linkLabel_WmDU">Types.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-snapshot"><span title="Types.Renderer.Snapshot" class="linkLabel_WmDU">Types.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-renderer-webgl"><span title="Types.Renderer.WebGL" class="linkLabel_WmDU">Types.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-scenes"><span title="Types.Scenes" class="linkLabel_WmDU">Types.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-sound"><span title="Types.Sound" class="linkLabel_WmDU">Types.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-textures"><span title="Types.Textures" class="linkLabel_WmDU">Types.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tilemaps"><span title="Types.Tilemaps" class="linkLabel_WmDU">Types.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-time"><span title="Types.Time" class="linkLabel_WmDU">Types.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/types-tweens"><span title="Types.Tweens" class="linkLabel_WmDU">Types.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/phaser"><span title="Phaser" class="linkLabel_WmDU">Phaser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="linkLabel_WmDU">Typedefs</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/typedef/"><span>Typedefs</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Types.GameObjects.Particles</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Types.GameObjects.Particles</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deathzoneobject">DeathZoneObject<a href="#deathzoneobject" class="hash-link" aria-label="Direct link to DeathZoneObject" title="Direct link to DeathZoneObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-deathzoneobject">&lt;static&gt; DeathZoneObject<a href="#static-deathzoneobject" class="hash-link" aria-label="Direct link to &lt;static&gt; DeathZoneObject" title="Direct link to &lt;static&gt; DeathZoneObject" translate="no">​</a></h3>
+<p><strong>Type</strong>: <a class="" href="/api-documentation/class/gameobjects-particles-zones-deathzone">Phaser.GameObjects.Particles.Zones.DeathZone</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterDeathZoneConfig">Phaser.Types.GameObjects.Particles.ParticleEmitterDeathZoneConfig</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#DeathZoneSource">Phaser.Types.GameObjects.Particles.DeathZoneSource</a></p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/DeathZoneObject.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/DeathZoneObject.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deathzonesource">DeathZoneSource<a href="#deathzonesource" class="hash-link" aria-label="Direct link to DeathZoneSource" title="Direct link to DeathZoneSource" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-deathzonesource">&lt;static&gt; DeathZoneSource<a href="#static-deathzonesource" class="hash-link" aria-label="Direct link to &lt;static&gt; DeathZoneSource" title="Direct link to &lt;static&gt; DeathZoneSource" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>contains</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#DeathZoneSourceCallback">Phaser.Types.GameObjects.Particles.DeathZoneSourceCallback</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/DeathZoneSource.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/DeathZoneSource.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deathzonesourcecallback">DeathZoneSourceCallback<a href="#deathzonesourcecallback" class="hash-link" aria-label="Direct link to DeathZoneSourceCallback" title="Direct link to DeathZoneSourceCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-deathzonesourcecallback">&lt;static&gt; DeathZoneSourceCallback<a href="#static-deathzonesourcecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; DeathZoneSourceCallback" title="Direct link to &lt;static&gt; DeathZoneSourceCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/DeathZoneSourceCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/DeathZoneSourceCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="edgezonesource">EdgeZoneSource<a href="#edgezonesource" class="hash-link" aria-label="Direct link to EdgeZoneSource" title="Direct link to EdgeZoneSource" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-edgezonesource">&lt;static&gt; EdgeZoneSource<a href="#static-edgezonesource" class="hash-link" aria-label="Direct link to &lt;static&gt; EdgeZoneSource" title="Direct link to &lt;static&gt; EdgeZoneSource" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>getPoints</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EdgeZoneSourceCallback">Phaser.Types.GameObjects.Particles.EdgeZoneSourceCallback</a></td><td>No</td><td>A function placing points on the sources edge or edges.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EdgeZoneSource.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EdgeZoneSource.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="edgezonesourcecallback">EdgeZoneSourceCallback<a href="#edgezonesourcecallback" class="hash-link" aria-label="Direct link to EdgeZoneSourceCallback" title="Direct link to EdgeZoneSourceCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-edgezonesourcecallback">&lt;static&gt; EdgeZoneSourceCallback<a href="#static-edgezonesourcecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; EdgeZoneSourceCallback" title="Direct link to &lt;static&gt; EdgeZoneSourceCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EdgeZoneSourceCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EdgeZoneSourceCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteropcustomemitconfig">EmitterOpCustomEmitConfig<a href="#emitteropcustomemitconfig" class="hash-link" aria-label="Direct link to EmitterOpCustomEmitConfig" title="Direct link to EmitterOpCustomEmitConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteropcustomemitconfig">&lt;static&gt; EmitterOpCustomEmitConfig<a href="#static-emitteropcustomemitconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpCustomEmitConfig" title="Direct link to &lt;static&gt; EmitterOpCustomEmitConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>onEmit</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitCallback</a></td><td>No</td><td>A callback that is invoked each time the emitter emits a particle.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpCustomEmitConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpCustomEmitConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteropcustomupdateconfig">EmitterOpCustomUpdateConfig<a href="#emitteropcustomupdateconfig" class="hash-link" aria-label="Direct link to EmitterOpCustomUpdateConfig" title="Direct link to EmitterOpCustomUpdateConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteropcustomupdateconfig">&lt;static&gt; EmitterOpCustomUpdateConfig<a href="#static-emitteropcustomupdateconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpCustomUpdateConfig" title="Direct link to &lt;static&gt; EmitterOpCustomUpdateConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>onEmit</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitCallback</a></td><td>Yes</td><td>A callback that is invoked each time the emitter emits a particle.</td></tr><tr><td>onUpdate</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateCallback</a></td><td>No</td><td>A callback that is invoked each time the emitter updates.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpCustomUpdateConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpCustomUpdateConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteropeaseconfig">EmitterOpEaseConfig<a href="#emitteropeaseconfig" class="hash-link" aria-label="Direct link to EmitterOpEaseConfig" title="Direct link to EmitterOpEaseConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteropeaseconfig">&lt;static&gt; EmitterOpEaseConfig<a href="#static-emitteropeaseconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpEaseConfig" title="Direct link to &lt;static&gt; EmitterOpEaseConfig" translate="no">​</a></h3>
+<p>Defines an operation yielding a value incremented continuously across a range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>start</td><td>number</td><td>No</td><td></td><td>The starting value.</td></tr><tr><td>end</td><td>number</td><td>No</td><td></td><td>The ending value.</td></tr><tr><td>random</td><td>boolean</td><td>Yes</td><td></td><td>If true, the particle starts with a minimum random value between the start and end values.</td></tr><tr><td>ease</td><td>string | function</td><td>Yes</td><td>&quot;&#x27;Linear&#x27;&quot;</td><td>The ease to find. This can be either a string from the EaseMap, or a custom function.</td></tr><tr><td>easeParams</td><td>Array.&lt;number&gt;</td><td>Yes</td><td></td><td>An optional array of ease parameters to go with the ease.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpEaseConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpEaseConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteropinterpolationconfig">EmitterOpInterpolationConfig<a href="#emitteropinterpolationconfig" class="hash-link" aria-label="Direct link to EmitterOpInterpolationConfig" title="Direct link to EmitterOpInterpolationConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteropinterpolationconfig">&lt;static&gt; EmitterOpInterpolationConfig<a href="#static-emitteropinterpolationconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpInterpolationConfig" title="Direct link to &lt;static&gt; EmitterOpInterpolationConfig" translate="no">​</a></h3>
+<p>Defines an operation yielding a value incremented continuously across an interpolated data set.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>values</td><td>Array.&lt;number&gt;</td><td>No</td><td></td><td>The array of number values to interpolate through.</td></tr><tr><td>interpolation</td><td>string | function</td><td>Yes</td><td>&quot;&#x27;Linear&#x27;&quot;</td><td>The interpolation function to use. Typically one of <code>linear</code>, <code>bezier</code> or <code>catmull</code> or a custom function.</td></tr><tr><td>ease</td><td>string | function</td><td>Yes</td><td>&quot;&#x27;Linear&#x27;&quot;</td><td>An optional ease function to use. This can be either a string from the EaseMap, or a custom function.</td></tr><tr><td>easeParams</td><td>Array.&lt;number&gt;</td><td>Yes</td><td></td><td>An optional array of ease parameters to go with the ease.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpInterpolationConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpInterpolationConfig.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteroponemitcallback">EmitterOpOnEmitCallback<a href="#emitteroponemitcallback" class="hash-link" aria-label="Direct link to EmitterOpOnEmitCallback" title="Direct link to EmitterOpOnEmitCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteroponemitcallback">&lt;static&gt; EmitterOpOnEmitCallback<a href="#static-emitteroponemitcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpOnEmitCallback" title="Direct link to &lt;static&gt; EmitterOpOnEmitCallback" translate="no">​</a></h3>
+<p>The returned value sets what the property will be at the START of the particle&#x27;s life, on emit.</p>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpOnEmitCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpOnEmitCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteroponemittype">EmitterOpOnEmitType<a href="#emitteroponemittype" class="hash-link" aria-label="Direct link to EmitterOpOnEmitType" title="Direct link to EmitterOpOnEmitType" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteroponemittype">&lt;static&gt; EmitterOpOnEmitType<a href="#static-emitteroponemittype" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpOnEmitType" title="Direct link to &lt;static&gt; EmitterOpOnEmitType" translate="no">​</a></h3>
+<p><strong>Type</strong>: number | Array.&lt;number&gt; | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitCallback</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpRandomConfig">Phaser.Types.GameObjects.Particles.EmitterOpRandomConfig</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpRandomMinMaxConfig">Phaser.Types.GameObjects.Particles.EmitterOpRandomMinMaxConfig</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpSteppedConfig">Phaser.Types.GameObjects.Particles.EmitterOpSteppedConfig</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpCustomEmitConfig">Phaser.Types.GameObjects.Particles.EmitterOpCustomEmitConfig</a></p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpOnEmitType.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpOnEmitType.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteroponupdatecallback">EmitterOpOnUpdateCallback<a href="#emitteroponupdatecallback" class="hash-link" aria-label="Direct link to EmitterOpOnUpdateCallback" title="Direct link to EmitterOpOnUpdateCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteroponupdatecallback">&lt;static&gt; EmitterOpOnUpdateCallback<a href="#static-emitteroponupdatecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpOnUpdateCallback" title="Direct link to &lt;static&gt; EmitterOpOnUpdateCallback" translate="no">​</a></h3>
+<p>The returned value updates the property for the duration of the particle&#x27;s life.</p>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpOnUpdateCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpOnUpdateCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteroponupdatetype">EmitterOpOnUpdateType<a href="#emitteroponupdatetype" class="hash-link" aria-label="Direct link to EmitterOpOnUpdateType" title="Direct link to EmitterOpOnUpdateType" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteroponupdatetype">&lt;static&gt; EmitterOpOnUpdateType<a href="#static-emitteroponupdatetype" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpOnUpdateType" title="Direct link to &lt;static&gt; EmitterOpOnUpdateType" translate="no">​</a></h3>
+<p><strong>Type</strong>: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateCallback</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpEaseConfig">Phaser.Types.GameObjects.Particles.EmitterOpEaseConfig</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpCustomUpdateConfig">Phaser.Types.GameObjects.Particles.EmitterOpCustomUpdateConfig</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpInterpolationConfig">Phaser.Types.GameObjects.Particles.EmitterOpInterpolationConfig</a></p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpOnUpdateType.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpOnUpdateType.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteroprandomconfig">EmitterOpRandomConfig<a href="#emitteroprandomconfig" class="hash-link" aria-label="Direct link to EmitterOpRandomConfig" title="Direct link to EmitterOpRandomConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteroprandomconfig">&lt;static&gt; EmitterOpRandomConfig<a href="#static-emitteroprandomconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpRandomConfig" title="Direct link to &lt;static&gt; EmitterOpRandomConfig" translate="no">​</a></h3>
+<p>Defines an operation yielding a random value within a range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>random</td><td>Array.&lt;number&gt;</td><td>No</td><td>The minimum and maximum values, as [min, max].</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpRandomConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpRandomConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteroprandomminmaxconfig">EmitterOpRandomMinMaxConfig<a href="#emitteroprandomminmaxconfig" class="hash-link" aria-label="Direct link to EmitterOpRandomMinMaxConfig" title="Direct link to EmitterOpRandomMinMaxConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteroprandomminmaxconfig">&lt;static&gt; EmitterOpRandomMinMaxConfig<a href="#static-emitteroprandomminmaxconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpRandomMinMaxConfig" title="Direct link to &lt;static&gt; EmitterOpRandomMinMaxConfig" translate="no">​</a></h3>
+<p>Defines an operation yielding a random value within a range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>min</td><td>number</td><td>No</td><td>The minimum value.</td></tr><tr><td>max</td><td>number</td><td>No</td><td>The maximum value.</td></tr><tr><td>int</td><td>boolean</td><td>Yes</td><td>If true, only integers are selected from the range.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpRandomMinMaxConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpRandomMinMaxConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitteropsteppedconfig">EmitterOpSteppedConfig<a href="#emitteropsteppedconfig" class="hash-link" aria-label="Direct link to EmitterOpSteppedConfig" title="Direct link to EmitterOpSteppedConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitteropsteppedconfig">&lt;static&gt; EmitterOpSteppedConfig<a href="#static-emitteropsteppedconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitterOpSteppedConfig" title="Direct link to &lt;static&gt; EmitterOpSteppedConfig" translate="no">​</a></h3>
+<p>Defines an operation yielding a value incremented by steps across a range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>start</td><td>number</td><td>No</td><td>The starting value.</td></tr><tr><td>end</td><td>number</td><td>No</td><td>The ending value.</td></tr><tr><td>steps</td><td>number</td><td>No</td><td>The number of steps between start and end.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitterOpSteppedConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitterOpSteppedConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitzonedata">EmitZoneData<a href="#emitzonedata" class="hash-link" aria-label="Direct link to EmitZoneData" title="Direct link to EmitZoneData" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitzonedata">&lt;static&gt; EmitZoneData<a href="#static-emitzonedata" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitZoneData" title="Direct link to &lt;static&gt; EmitZoneData" translate="no">​</a></h3>
+<p><strong>Type</strong>: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterEdgeZoneConfig">Phaser.Types.GameObjects.Particles.ParticleEmitterEdgeZoneConfig</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterRandomZoneConfig">Phaser.Types.GameObjects.Particles.ParticleEmitterRandomZoneConfig</a> | <a class="" href="/api-documentation/class/gameobjects-particles-zones-edgezone">Phaser.GameObjects.Particles.Zones.EdgeZone</a> | <a class="" href="/api-documentation/class/gameobjects-particles-zones-randomzone">Phaser.GameObjects.Particles.Zones.RandomZone</a></p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitZoneData.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitZoneData.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitzoneobject">EmitZoneObject<a href="#emitzoneobject" class="hash-link" aria-label="Direct link to EmitZoneObject" title="Direct link to EmitZoneObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-emitzoneobject">&lt;static&gt; EmitZoneObject<a href="#static-emitzoneobject" class="hash-link" aria-label="Direct link to &lt;static&gt; EmitZoneObject" title="Direct link to &lt;static&gt; EmitZoneObject" translate="no">​</a></h3>
+<p><strong>Type</strong>: <a class="" href="/api-documentation/class/gameobjects-particles-zones-edgezone">Phaser.GameObjects.Particles.Zones.EdgeZone</a> | <a class="" href="/api-documentation/class/gameobjects-particles-zones-randomzone">Phaser.GameObjects.Particles.Zones.RandomZone</a></p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/EmitZoneObject.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/EmitZoneObject.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gravitywellconfig">GravityWellConfig<a href="#gravitywellconfig" class="hash-link" aria-label="Direct link to GravityWellConfig" title="Direct link to GravityWellConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gravitywellconfig">&lt;static&gt; GravityWellConfig<a href="#static-gravitywellconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; GravityWellConfig" title="Direct link to &lt;static&gt; GravityWellConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>Yes</td><td>0</td><td>The x coordinate of the Gravity Well, in world space.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>0</td><td>The y coordinate of the Gravity Well, in world space.</td></tr><tr><td>power</td><td>number</td><td>Yes</td><td>0</td><td>The strength of the gravity force - larger numbers produce a stronger force.</td></tr><tr><td>epsilon</td><td>number</td><td>Yes</td><td>100</td><td>The minimum distance for which the gravity force is calculated.</td></tr><tr><td>gravity</td><td>number</td><td>Yes</td><td>50</td><td>The gravitational force of this Gravity Well.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/GravityWellConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/GravityWellConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleclassconstructor">ParticleClassConstructor<a href="#particleclassconstructor" class="hash-link" aria-label="Direct link to ParticleClassConstructor" title="Direct link to ParticleClassConstructor" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleclassconstructor">&lt;static&gt; ParticleClassConstructor<a href="#static-particleclassconstructor" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleClassConstructor" title="Direct link to &lt;static&gt; ParticleClassConstructor" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleClassConstructor.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleClassConstructor.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particledata">ParticleData<a href="#particledata" class="hash-link" aria-label="Direct link to ParticleData" title="Direct link to ParticleData" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particledata">&lt;static&gt; ParticleData<a href="#static-particledata" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleData" title="Direct link to &lt;static&gt; ParticleData" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>tint</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0xffffff,max:0xffffff}&quot;</td><td>No description provided</td></tr><tr><td>alpha</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:1,max:1}&quot;</td><td>No description provided</td></tr><tr><td>rotate</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>scaleX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:1,max:1}&quot;</td><td>No description provided</td></tr><tr><td>scaleY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:1,max:1}&quot;</td><td>No description provided</td></tr><tr><td>x</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>y</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>accelerationX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>accelerationY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>maxVelocityX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>maxVelocityY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>moveToX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>moveToY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr><tr><td>bounce</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleDataValue">Phaser.Types.GameObjects.Particles.ParticleDataValue</a></td><td>Yes</td><td>&quot;{min:0,max:0}&quot;</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleData.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleData.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particledatavalue">ParticleDataValue<a href="#particledatavalue" class="hash-link" aria-label="Direct link to ParticleDataValue" title="Direct link to ParticleDataValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particledatavalue">&lt;static&gt; ParticleDataValue<a href="#static-particledatavalue" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleDataValue" title="Direct link to &lt;static&gt; ParticleDataValue" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>min</td><td>number</td><td>No</td><td>The minimum value.</td></tr><tr><td>max</td><td>number</td><td>No</td><td>The maximum value.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleDataValue.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleDataValue.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particledeathcallback">ParticleDeathCallback<a href="#particledeathcallback" class="hash-link" aria-label="Direct link to ParticleDeathCallback" title="Direct link to ParticleDeathCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particledeathcallback">&lt;static&gt; ParticleDeathCallback<a href="#static-particledeathcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleDeathCallback" title="Direct link to &lt;static&gt; ParticleDeathCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleDeathCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleDeathCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitteranimconfig">ParticleEmitterAnimConfig<a href="#particleemitteranimconfig" class="hash-link" aria-label="Direct link to ParticleEmitterAnimConfig" title="Direct link to ParticleEmitterAnimConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitteranimconfig">&lt;static&gt; ParticleEmitterAnimConfig<a href="#static-particleemitteranimconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterAnimConfig" title="Direct link to &lt;static&gt; ParticleEmitterAnimConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>anims</td><td>string | Array.&lt;string&gt;</td><td><a class="" href="/api-documentation/typedef/types-animations#PlayAnimationConfig">Phaser.Types.Animations.PlayAnimationConfig</a></td><td>Array.&lt;<a class="" href="/api-documentation/typedef/types-animations#PlayAnimationConfig">Phaser.Types.Animations.PlayAnimationConfig</a>&gt;</td><td>Yes</td></tr><tr><td>cycle</td><td>boolean</td><td>Yes</td><td>false</td><td>Whether animations will be assigned consecutively (true) or at random (false).</td></tr><tr><td>quantity</td><td>number</td><td>Yes</td><td>1</td><td>The number of consecutive particles receiving each animation, when <code>cycle</code> is true.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterAnimConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterAnimConfig.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitterbounds">ParticleEmitterBounds<a href="#particleemitterbounds" class="hash-link" aria-label="Direct link to ParticleEmitterBounds" title="Direct link to ParticleEmitterBounds" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitterbounds">&lt;static&gt; ParticleEmitterBounds<a href="#static-particleemitterbounds" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterBounds" title="Direct link to &lt;static&gt; ParticleEmitterBounds" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The left edge of the rectangle.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The top edge of the rectangle.</td></tr><tr><td>width</td><td>number</td><td>No</td><td>The width of the rectangle.</td></tr><tr><td>height</td><td>number</td><td>No</td><td>The height of the rectangle.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterBounds.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterBounds.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitterboundsalt">ParticleEmitterBoundsAlt<a href="#particleemitterboundsalt" class="hash-link" aria-label="Direct link to ParticleEmitterBoundsAlt" title="Direct link to ParticleEmitterBoundsAlt" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitterboundsalt">&lt;static&gt; ParticleEmitterBoundsAlt<a href="#static-particleemitterboundsalt" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterBoundsAlt" title="Direct link to &lt;static&gt; ParticleEmitterBoundsAlt" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The left edge of the rectangle.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The top edge of the rectangle.</td></tr><tr><td>w</td><td>number</td><td>No</td><td>The width of the rectangle.</td></tr><tr><td>h</td><td>number</td><td>No</td><td>The height of the rectangle.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterBoundsAlt.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterBoundsAlt.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemittercallback">ParticleEmitterCallback<a href="#particleemittercallback" class="hash-link" aria-label="Direct link to ParticleEmitterCallback" title="Direct link to ParticleEmitterCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemittercallback">&lt;static&gt; ParticleEmitterCallback<a href="#static-particleemittercallback" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterCallback" title="Direct link to &lt;static&gt; ParticleEmitterCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitterconfig">ParticleEmitterConfig<a href="#particleemitterconfig" class="hash-link" aria-label="Direct link to ParticleEmitterConfig" title="Direct link to ParticleEmitterConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitterconfig">&lt;static&gt; ParticleEmitterConfig<a href="#static-particleemitterconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterConfig" title="Direct link to &lt;static&gt; ParticleEmitterConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>active</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#active}. Setting this to false will stop the emitter from running at all. If you just wish to stop particles from emitting, set <code>emitting</code> property instead.</td></tr><tr><td>blendMode</td><td><a class="" href="/api-documentation/namespace/blendmodes">Phaser.BlendModes</a> | string</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#blendMode}.</td></tr><tr><td>callbackScope</td><td>*</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallbackScope} and {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallbackScope}.</td></tr><tr><td>collideBottom</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideBottom}.</td></tr><tr><td>collideLeft</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideLeft}.</td></tr><tr><td>collideRight</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideRight}.</td></tr><tr><td>collideTop</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideTop}.</td></tr><tr><td>deathCallback</td><td>function</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallback}.</td></tr><tr><td>deathCallbackScope</td><td>*</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallbackScope}.</td></tr><tr><td>emitCallback</td><td>function</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallback}.</td></tr><tr><td>emitCallbackScope</td><td>*</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallbackScope}.</td></tr><tr><td>follow</td><td><a class="" href="/api-documentation/typedef/types-math#Vector2Like">Phaser.Types.Math.Vector2Like</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#follow}.</td></tr><tr><td>frequency</td><td>number</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#frequency}.</td></tr><tr><td>gravityX</td><td>number</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#gravityX}.</td></tr><tr><td>gravityY</td><td>number</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#gravityY}.</td></tr><tr><td>maxParticles</td><td>number</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxParticles}.</td></tr><tr><td>maxAliveParticles</td><td>number</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxAliveParticles}.</td></tr><tr><td>name</td><td>string</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#name}.</td></tr><tr><td>emitting</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitting}.</td></tr><tr><td>particleBringToTop</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleBringToTop}.</td></tr><tr><td>particleClass</td><td>function</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleClass}.</td></tr><tr><td>radial</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#radial}.</td></tr><tr><td>timeScale</td><td>number</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#timeScale}.</td></tr><tr><td>trackVisible</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#trackVisible}.</td></tr><tr><td>visible</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#visible}.</td></tr><tr><td>accelerationX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationX}.</td></tr><tr><td>accelerationY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationY}.</td></tr><tr><td>alpha</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleAlpha}.</td></tr><tr><td>angle</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleAngle} (emit only).</td></tr><tr><td>bounce</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#bounce}.</td></tr><tr><td>delay</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#delay} (emit only).</td></tr><tr><td>hold</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#hold} (emit only).</td></tr><tr><td>lifespan</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#lifespan} (emit only).</td></tr><tr><td>maxVelocityX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityX}.</td></tr><tr><td>maxVelocityY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityY}.</td></tr><tr><td>moveToX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToX}. If set, overrides <code>angle</code> and <code>speed</code> properties.</td></tr><tr><td>moveToY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToY}. If set, overrides <code>angle</code> and <code>speed</code> properties.</td></tr><tr><td>quantity</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#quantity} (emit only).</td></tr><tr><td>rotate</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleRotate}.</td></tr><tr><td>scale</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>As {@link Phaser.GameObjects.Particles.ParticleEmitter#setScale}.</td></tr><tr><td>scaleX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleScaleX}.</td></tr><tr><td>scaleY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleScaleY}.</td></tr><tr><td>speed</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>As {@link Phaser.GameObjects.Particles.ParticleEmitter#setSpeed} (emit only).</td></tr><tr><td>speedX</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#speedX} (emit only).</td></tr><tr><td>speedY</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#speedY} (emit only).</td></tr><tr><td>tint</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleTint}.</td></tr><tr><td>color</td><td>Array.&lt;number&gt;</td><td>Yes</td><td>An array of color values that the Particles interpolate through during their life. If set, overrides any <code>tint</code> property.</td></tr><tr><td>colorEase</td><td>string</td><td>Yes</td><td>The string-based name of the Easing function to use if you have enabled Particle color interpolation via the <code>color</code> property, otherwise has no effect.</td></tr><tr><td>x</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleX}.</td></tr><tr><td>y</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleY}.</td></tr><tr><td>emitZone</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitZoneData">Phaser.Types.GameObjects.Particles.EmitZoneData</a> | Array.&lt;<a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitZoneData">Phaser.Types.GameObjects.Particles.EmitZoneData</a>&gt;</td><td>Yes</td><td>As {@link Phaser.GameObjects.Particles.ParticleEmitter#setEmitZone}.</td></tr><tr><td>deathZone</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#DeathZoneObject">Phaser.Types.GameObjects.Particles.DeathZoneObject</a> | Array.&lt;<a class="" href="/api-documentation/typedef/types-gameobjects-particles#DeathZoneObject">Phaser.Types.GameObjects.Particles.DeathZoneObject</a>&gt;</td><td>Yes</td><td>As {@link Phaser.GameObjects.Particles.ParticleEmitter#setDeathZone}.</td></tr><tr><td>bounds</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterBounds">Phaser.Types.GameObjects.Particles.ParticleEmitterBounds</a> | <a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterBoundsAlt">Phaser.Types.GameObjects.Particles.ParticleEmitterBoundsAlt</a></td><td>Yes</td><td>As {@link Phaser.GameObjects.Particles.ParticleEmitter#setBounds}.</td></tr><tr><td>followOffset</td><td><a class="" href="/api-documentation/typedef/types-math#Vector2Like">Phaser.Types.Math.Vector2Like</a></td><td>Yes</td><td>Offset coordinates that assigns to {@link Phaser.GameObjects.Particles.ParticleEmitter#followOffset}.</td></tr><tr><td>anim</td><td>string | Array.&lt;string&gt;</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterAnimConfig">Phaser.Types.GameObjects.Particles.ParticleEmitterAnimConfig</a></td><td>Yes</td></tr><tr><td>frame</td><td>number | Array.&lt;number&gt;</td><td>string</td><td>Array.&lt;string&gt;</td></tr><tr><td>texture</td><td>string | <a class="" href="/api-documentation/class/textures-texture">Phaser.Textures.Texture</a></td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#texture}. Overrides any texture already set on the Emitter.</td></tr><tr><td>reserve</td><td>number</td><td>Yes</td><td>Creates specified number of inactive particles and adds them to this emitter&#x27;s pool. {@link Phaser.GameObjects.Particles.ParticleEmitter#reserve}</td></tr><tr><td>advance</td><td>number</td><td>Yes</td><td>If you wish to &#x27;fast forward&#x27; the emitter in time, set this value to a number representing the amount of ms the emitter should advance. Doing so implicitly sets <code>emitting</code> to <code>true</code>.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>Limit the emitter to emit particles for a maximum of <code>duration</code> ms. Default to zero, meaning &#x27;forever&#x27;.</td></tr><tr><td>stopAfter</td><td>number</td><td>Yes</td><td>Limit the emitter to emit this exact number of particles and then stop. Default to zero, meaning no limit.</td></tr><tr><td>sortCallback</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleSortCallback">Phaser.Types.GameObjects.Particles.ParticleSortCallback</a></td><td>Yes</td><td>A custom callback that sorts particles prior to rendering. Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#sortCallback}.</td></tr><tr><td>sortOrderAsc</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#sortOrderAsc}.</td></tr><tr><td>sortProperty</td><td>string</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#sortProperty}.</td></tr><tr><td>tintFill</td><td>boolean</td><td>Yes</td><td>Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#tintFill}.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemittercreatorconfig">ParticleEmitterCreatorConfig<a href="#particleemittercreatorconfig" class="hash-link" aria-label="Direct link to ParticleEmitterCreatorConfig" title="Direct link to ParticleEmitterCreatorConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemittercreatorconfig">&lt;static&gt; ParticleEmitterCreatorConfig<a href="#static-particleemittercreatorconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterCreatorConfig" title="Direct link to &lt;static&gt; ParticleEmitterCreatorConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>Yes</td><td>The key of the Texture this Emitter will use to render particles, as stored in the Texture Manager.</td></tr><tr><td>config</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterConfig">Phaser.Types.GameObjects.Particles.ParticleEmitterConfig</a></td><td>Yes</td><td>The Particle Emitter configuration object.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterCreatorConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterCreatorConfig.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitterdeathzoneconfig">ParticleEmitterDeathZoneConfig<a href="#particleemitterdeathzoneconfig" class="hash-link" aria-label="Direct link to ParticleEmitterDeathZoneConfig" title="Direct link to ParticleEmitterDeathZoneConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitterdeathzoneconfig">&lt;static&gt; ParticleEmitterDeathZoneConfig<a href="#static-particleemitterdeathzoneconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterDeathZoneConfig" title="Direct link to &lt;static&gt; ParticleEmitterDeathZoneConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>source</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#DeathZoneSource">Phaser.Types.GameObjects.Particles.DeathZoneSource</a></td><td>No</td><td></td><td>A shape representing the zone. See {@link Phaser.GameObjects.Particles.Zones.DeathZone#source}.</td></tr><tr><td>type</td><td>string</td><td>Yes</td><td>&quot;&#x27;onEnter&#x27;&quot;</td><td>&#x27;onEnter&#x27; or &#x27;onLeave&#x27;.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterDeathZoneConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterDeathZoneConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitteredgezoneconfig">ParticleEmitterEdgeZoneConfig<a href="#particleemitteredgezoneconfig" class="hash-link" aria-label="Direct link to ParticleEmitterEdgeZoneConfig" title="Direct link to ParticleEmitterEdgeZoneConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitteredgezoneconfig">&lt;static&gt; ParticleEmitterEdgeZoneConfig<a href="#static-particleemitteredgezoneconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterEdgeZoneConfig" title="Direct link to &lt;static&gt; ParticleEmitterEdgeZoneConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>source</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#EdgeZoneSource">Phaser.Types.GameObjects.Particles.EdgeZoneSource</a></td><td>No</td><td></td><td>A shape representing the zone. See {@link Phaser.GameObjects.Particles.Zones.EdgeZone#source}.</td></tr><tr><td>type</td><td>string</td><td>No</td><td></td><td>&#x27;edge&#x27;.</td></tr><tr><td>quantity</td><td>number</td><td>No</td><td></td><td>The number of particles to place on the source edge. Set to 0 to use <code>stepRate</code> instead.</td></tr><tr><td>stepRate</td><td>number</td><td>Yes</td><td></td><td>The distance between each particle. When set, <code>quantity</code> is implied and should be set to 0.</td></tr><tr><td>yoyo</td><td>boolean</td><td>Yes</td><td>false</td><td>Whether particles are placed from start to end and then end to start.</td></tr><tr><td>seamless</td><td>boolean</td><td>Yes</td><td>true</td><td>Whether one endpoint will be removed if it&#x27;s identical to the other.</td></tr><tr><td>total</td><td>number</td><td>Yes</td><td>1</td><td>The total number of particles this zone will emit before passing over to the next emission zone in the Emitter.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterEdgeZoneConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterEdgeZoneConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitterframeconfig">ParticleEmitterFrameConfig<a href="#particleemitterframeconfig" class="hash-link" aria-label="Direct link to ParticleEmitterFrameConfig" title="Direct link to ParticleEmitterFrameConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitterframeconfig">&lt;static&gt; ParticleEmitterFrameConfig<a href="#static-particleemitterframeconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterFrameConfig" title="Direct link to &lt;static&gt; ParticleEmitterFrameConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>frames</td><td>Array.&lt;number&gt; | Array.&lt;string&gt;</td><td>Array.&lt;<a class="" href="/api-documentation/class/textures-frame">Phaser.Textures.Frame</a>&gt;</td><td>Yes</td></tr><tr><td>cycle</td><td>boolean</td><td>Yes</td><td>Whether texture frames will be assigned consecutively (true) or at random (false).</td></tr><tr><td>quantity</td><td>number</td><td>Yes</td><td>The number of consecutive particles receiving each texture frame, when <code>cycle</code> is true.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterFrameConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterFrameConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitterops">ParticleEmitterOps<a href="#particleemitterops" class="hash-link" aria-label="Direct link to ParticleEmitterOps" title="Direct link to ParticleEmitterOps" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitterops">&lt;static&gt; ParticleEmitterOps<a href="#static-particleemitterops" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterOps" title="Direct link to &lt;static&gt; ParticleEmitterOps" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>accelerationX</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The accelerationX EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>accelerationY</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The accelerationY EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>alpha</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The alpha EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>angle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The angle EmitterOp instance. This is an onEmit operator only.</td></tr><tr><td>bounce</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The bounce EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>color</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emittercolorop">Phaser.GameObjects.Particles.EmitterColorOp</a></td><td>No</td><td>The color EmitterColorOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>delay</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The delay EmitterOp instance. This is an onEmit operator only.</td></tr><tr><td>hold</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The hold EmitterOp instance. This is an onEmit operator only.</td></tr><tr><td>lifespan</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The lifespan EmitterOp instance. This is an onEmit operator only.</td></tr><tr><td>maxVelocityX</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The maxVelocityX EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>maxVelocityY</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The maxVelocityY EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>moveToX</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The moveToX EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>moveToY</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The moveToY EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>quantity</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The quantity EmitterOp instance. This is an onEmit operator only.</td></tr><tr><td>rotate</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The rotate EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>scaleX</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The scaleX EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>scaleY</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The scaleY EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>speedX</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The speedX EmitterOp instance. This is an onEmit operator only.</td></tr><tr><td>speedY</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The speedY EmitterOp instance. This is an onEmit operator only.</td></tr><tr><td>tint</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The tint EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>x</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The x EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr><tr><td>y</td><td><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></td><td>No</td><td>The y EmitterOp instance. This is an onEmit and onUpdate operator.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterOps.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterOps.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particleemitterrandomzoneconfig">ParticleEmitterRandomZoneConfig<a href="#particleemitterrandomzoneconfig" class="hash-link" aria-label="Direct link to ParticleEmitterRandomZoneConfig" title="Direct link to ParticleEmitterRandomZoneConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particleemitterrandomzoneconfig">&lt;static&gt; ParticleEmitterRandomZoneConfig<a href="#static-particleemitterrandomzoneconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleEmitterRandomZoneConfig" title="Direct link to &lt;static&gt; ParticleEmitterRandomZoneConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#RandomZoneSource">Phaser.Types.GameObjects.Particles.RandomZoneSource</a></td><td>No</td><td>A shape representing the zone. See {@link Phaser.GameObjects.Particles.Zones.RandomZone#source}.</td></tr><tr><td>type</td><td>string</td><td>Yes</td><td>&#x27;random&#x27;.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleEmitterRandomZoneConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleEmitterRandomZoneConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="particlesortcallback">ParticleSortCallback<a href="#particlesortcallback" class="hash-link" aria-label="Direct link to ParticleSortCallback" title="Direct link to ParticleSortCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-particlesortcallback">&lt;static&gt; ParticleSortCallback<a href="#static-particlesortcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; ParticleSortCallback" title="Direct link to &lt;static&gt; ParticleSortCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/ParticleSortCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/ParticleSortCallback.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomzonesource">RandomZoneSource<a href="#randomzonesource" class="hash-link" aria-label="Direct link to RandomZoneSource" title="Direct link to RandomZoneSource" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomzonesource">&lt;static&gt; RandomZoneSource<a href="#static-randomzonesource" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomZoneSource" title="Direct link to &lt;static&gt; RandomZoneSource" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>getRandomPoint</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#RandomZoneSourceCallback">Phaser.Types.GameObjects.Particles.RandomZoneSourceCallback</a></td><td>No</td><td>A function modifying its point argument.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/RandomZoneSource.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/RandomZoneSource.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomzonesourcecallback">RandomZoneSourceCallback<a href="#randomzonesourcecallback" class="hash-link" aria-label="Direct link to RandomZoneSourceCallback" title="Direct link to RandomZoneSourceCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-randomzonesourcecallback">&lt;static&gt; RandomZoneSourceCallback<a href="#static-randomzonesourcecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; RandomZoneSourceCallback" title="Direct link to &lt;static&gt; RandomZoneSourceCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.GameObjects.Particles</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/typedefs/RandomZoneSourceCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/typedefs/RandomZoneSourceCallback.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/typedef/types-gameobjects-nineslice"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Types.GameObjects.NineSlice</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/typedef/types-gameobjects-pathfollower"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Types.GameObjects.PathFollower</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#deathzoneobject" class="table-of-contents__link toc-highlight">DeathZoneObject</a><ul><li><a href="#static-deathzoneobject" class="table-of-contents__link toc-highlight">&lt;static&gt; DeathZoneObject</a></li></ul></li><li><a href="#deathzonesource" class="table-of-contents__link toc-highlight">DeathZoneSource</a><ul><li><a href="#static-deathzonesource" class="table-of-contents__link toc-highlight">&lt;static&gt; DeathZoneSource</a></li></ul></li><li><a href="#deathzonesourcecallback" class="table-of-contents__link toc-highlight">DeathZoneSourceCallback</a><ul><li><a href="#static-deathzonesourcecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; DeathZoneSourceCallback</a></li></ul></li><li><a href="#edgezonesource" class="table-of-contents__link toc-highlight">EdgeZoneSource</a><ul><li><a href="#static-edgezonesource" class="table-of-contents__link toc-highlight">&lt;static&gt; EdgeZoneSource</a></li></ul></li><li><a href="#edgezonesourcecallback" class="table-of-contents__link toc-highlight">EdgeZoneSourceCallback</a><ul><li><a href="#static-edgezonesourcecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; EdgeZoneSourceCallback</a></li></ul></li><li><a href="#emitteropcustomemitconfig" class="table-of-contents__link toc-highlight">EmitterOpCustomEmitConfig</a><ul><li><a href="#static-emitteropcustomemitconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpCustomEmitConfig</a></li></ul></li><li><a href="#emitteropcustomupdateconfig" class="table-of-contents__link toc-highlight">EmitterOpCustomUpdateConfig</a><ul><li><a href="#static-emitteropcustomupdateconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpCustomUpdateConfig</a></li></ul></li><li><a href="#emitteropeaseconfig" class="table-of-contents__link toc-highlight">EmitterOpEaseConfig</a><ul><li><a href="#static-emitteropeaseconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpEaseConfig</a></li></ul></li><li><a href="#emitteropinterpolationconfig" class="table-of-contents__link toc-highlight">EmitterOpInterpolationConfig</a><ul><li><a href="#static-emitteropinterpolationconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpInterpolationConfig</a></li></ul></li><li><a href="#emitteroponemitcallback" class="table-of-contents__link toc-highlight">EmitterOpOnEmitCallback</a><ul><li><a href="#static-emitteroponemitcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpOnEmitCallback</a></li></ul></li><li><a href="#emitteroponemittype" class="table-of-contents__link toc-highlight">EmitterOpOnEmitType</a><ul><li><a href="#static-emitteroponemittype" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpOnEmitType</a></li></ul></li><li><a href="#emitteroponupdatecallback" class="table-of-contents__link toc-highlight">EmitterOpOnUpdateCallback</a><ul><li><a href="#static-emitteroponupdatecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpOnUpdateCallback</a></li></ul></li><li><a href="#emitteroponupdatetype" class="table-of-contents__link toc-highlight">EmitterOpOnUpdateType</a><ul><li><a href="#static-emitteroponupdatetype" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpOnUpdateType</a></li></ul></li><li><a href="#emitteroprandomconfig" class="table-of-contents__link toc-highlight">EmitterOpRandomConfig</a><ul><li><a href="#static-emitteroprandomconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpRandomConfig</a></li></ul></li><li><a href="#emitteroprandomminmaxconfig" class="table-of-contents__link toc-highlight">EmitterOpRandomMinMaxConfig</a><ul><li><a href="#static-emitteroprandomminmaxconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpRandomMinMaxConfig</a></li></ul></li><li><a href="#emitteropsteppedconfig" class="table-of-contents__link toc-highlight">EmitterOpSteppedConfig</a><ul><li><a href="#static-emitteropsteppedconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitterOpSteppedConfig</a></li></ul></li><li><a href="#emitzonedata" class="table-of-contents__link toc-highlight">EmitZoneData</a><ul><li><a href="#static-emitzonedata" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitZoneData</a></li></ul></li><li><a href="#emitzoneobject" class="table-of-contents__link toc-highlight">EmitZoneObject</a><ul><li><a href="#static-emitzoneobject" class="table-of-contents__link toc-highlight">&lt;static&gt; EmitZoneObject</a></li></ul></li><li><a href="#gravitywellconfig" class="table-of-contents__link toc-highlight">GravityWellConfig</a><ul><li><a href="#static-gravitywellconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; GravityWellConfig</a></li></ul></li><li><a href="#particleclassconstructor" class="table-of-contents__link toc-highlight">ParticleClassConstructor</a><ul><li><a href="#static-particleclassconstructor" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleClassConstructor</a></li></ul></li><li><a href="#particledata" class="table-of-contents__link toc-highlight">ParticleData</a><ul><li><a href="#static-particledata" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleData</a></li></ul></li><li><a href="#particledatavalue" class="table-of-contents__link toc-highlight">ParticleDataValue</a><ul><li><a href="#static-particledatavalue" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleDataValue</a></li></ul></li><li><a href="#particledeathcallback" class="table-of-contents__link toc-highlight">ParticleDeathCallback</a><ul><li><a href="#static-particledeathcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleDeathCallback</a></li></ul></li><li><a href="#particleemitteranimconfig" class="table-of-contents__link toc-highlight">ParticleEmitterAnimConfig</a><ul><li><a href="#static-particleemitteranimconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterAnimConfig</a></li></ul></li><li><a href="#particleemitterbounds" class="table-of-contents__link toc-highlight">ParticleEmitterBounds</a><ul><li><a href="#static-particleemitterbounds" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterBounds</a></li></ul></li><li><a href="#particleemitterboundsalt" class="table-of-contents__link toc-highlight">ParticleEmitterBoundsAlt</a><ul><li><a href="#static-particleemitterboundsalt" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterBoundsAlt</a></li></ul></li><li><a href="#particleemittercallback" class="table-of-contents__link toc-highlight">ParticleEmitterCallback</a><ul><li><a href="#static-particleemittercallback" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterCallback</a></li></ul></li><li><a href="#particleemitterconfig" class="table-of-contents__link toc-highlight">ParticleEmitterConfig</a><ul><li><a href="#static-particleemitterconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterConfig</a></li></ul></li><li><a href="#particleemittercreatorconfig" class="table-of-contents__link toc-highlight">ParticleEmitterCreatorConfig</a><ul><li><a href="#static-particleemittercreatorconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterCreatorConfig</a></li></ul></li><li><a href="#particleemitterdeathzoneconfig" class="table-of-contents__link toc-highlight">ParticleEmitterDeathZoneConfig</a><ul><li><a href="#static-particleemitterdeathzoneconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterDeathZoneConfig</a></li></ul></li><li><a href="#particleemitteredgezoneconfig" class="table-of-contents__link toc-highlight">ParticleEmitterEdgeZoneConfig</a><ul><li><a href="#static-particleemitteredgezoneconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterEdgeZoneConfig</a></li></ul></li><li><a href="#particleemitterframeconfig" class="table-of-contents__link toc-highlight">ParticleEmitterFrameConfig</a><ul><li><a href="#static-particleemitterframeconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterFrameConfig</a></li></ul></li><li><a href="#particleemitterops" class="table-of-contents__link toc-highlight">ParticleEmitterOps</a><ul><li><a href="#static-particleemitterops" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterOps</a></li></ul></li><li><a href="#particleemitterrandomzoneconfig" class="table-of-contents__link toc-highlight">ParticleEmitterRandomZoneConfig</a><ul><li><a href="#static-particleemitterrandomzoneconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleEmitterRandomZoneConfig</a></li></ul></li><li><a href="#particlesortcallback" class="table-of-contents__link toc-highlight">ParticleSortCallback</a><ul><li><a href="#static-particlesortcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; ParticleSortCallback</a></li></ul></li><li><a href="#randomzonesource" class="table-of-contents__link toc-highlight">RandomZoneSource</a><ul><li><a href="#static-randomzonesource" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomZoneSource</a></li></ul></li><li><a href="#randomzonesourcecallback" class="table-of-contents__link toc-highlight">RandomZoneSourceCallback</a><ul><li><a href="#static-randomzonesourcecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; RandomZoneSourceCallback</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

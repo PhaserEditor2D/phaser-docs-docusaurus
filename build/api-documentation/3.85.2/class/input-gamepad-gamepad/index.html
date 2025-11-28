@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-class/Phaser.Input.Gamepad.Gamepad" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Gamepad | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/class/input-gamepad-gamepad"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="Gamepad | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Input.Gamepad.Gamepad"><meta data-rh="true" property="og:description" content="Phaser.Input.Gamepad.Gamepad"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/class/input-gamepad-gamepad"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/class/input-gamepad-gamepad" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/class/input-gamepad-gamepad" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Class","item":"https://docs.phaser.io/api-documentation/3.85.2/class/"},{"@type":"ListItem","position":2,"name":"Gamepad","item":"https://docs.phaser.io/api-documentation/3.85.2/class/input-gamepad-gamepad"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/class/input-gamepad-gamepad">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/class/input-gamepad-gamepad">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Collapse sidebar category &#x27;Class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/class"><span title="Class" class="linkLabel_WmDU">Class</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animation"><span title="Animation" class="linkLabel_WmDU">Animation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationframe"><span title="AnimationFrame" class="linkLabel_WmDU">AnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationmanager"><span title="AnimationManager" class="linkLabel_WmDU">AnimationManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/animations-animationstate"><span title="AnimationState" class="linkLabel_WmDU">AnimationState</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cache-basecache"><span title="BaseCache" class="linkLabel_WmDU">BaseCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cache-cachemanager"><span title="CacheManager" class="linkLabel_WmDU">CacheManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-controls-fixedkeycontrol"><span title="FixedKeyControl" class="linkLabel_WmDU">FixedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-controls-smoothedkeycontrol"><span title="SmoothedKeyControl" class="linkLabel_WmDU">SmoothedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-basecamera"><span title="BaseCamera" class="linkLabel_WmDU">BaseCamera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-camera"><span title="Camera" class="linkLabel_WmDU">Camera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-cameramanager"><span title="CameraManager" class="linkLabel_WmDU">CameraManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-fade"><span title="Fade" class="linkLabel_WmDU">Fade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-flash"><span title="Flash" class="linkLabel_WmDU">Flash</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-pan"><span title="Pan" class="linkLabel_WmDU">Pan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-rotateto"><span title="RotateTo" class="linkLabel_WmDU">RotateTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-shake"><span title="Shake" class="linkLabel_WmDU">Shake</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/cameras-scene2d-effects-zoom"><span title="Zoom" class="linkLabel_WmDU">Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/core-config"><span title="Config" class="linkLabel_WmDU">Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/core-timestep"><span title="TimeStep" class="linkLabel_WmDU">TimeStep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-cubicbezier"><span title="CubicBezier" class="linkLabel_WmDU">CubicBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-moveto"><span title="MoveTo" class="linkLabel_WmDU">MoveTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-path"><span title="Path" class="linkLabel_WmDU">Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-quadraticbezier"><span title="QuadraticBezier" class="linkLabel_WmDU">QuadraticBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/curves-spline"><span title="Spline" class="linkLabel_WmDU">Spline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/dom-requestanimationframe"><span title="RequestAnimationFrame" class="linkLabel_WmDU">RequestAnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/data-datamanager"><span title="DataManager" class="linkLabel_WmDU">DataManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/data-datamanagerplugin"><span title="DataManagerPlugin" class="linkLabel_WmDU">DataManagerPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-baseshader"><span title="BaseShader" class="linkLabel_WmDU">BaseShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-color"><span title="Color" class="linkLabel_WmDU">Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-masks-bitmapmask"><span title="BitmapMask" class="linkLabel_WmDU">BitmapMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-masks-geometrymask"><span title="GeometryMask" class="linkLabel_WmDU">GeometryMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/display-rgb"><span title="RGB" class="linkLabel_WmDU">RGB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/events-eventemitter"><span title="EventEmitter" class="linkLabel_WmDU">EventEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-barrel"><span title="Barrel" class="linkLabel_WmDU">Barrel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-bloom"><span title="Bloom" class="linkLabel_WmDU">Bloom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-blur"><span title="Blur" class="linkLabel_WmDU">Blur</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-bokeh"><span title="Bokeh" class="linkLabel_WmDU">Bokeh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-controller"><span title="Controller" class="linkLabel_WmDU">Controller</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-displacement"><span title="Displacement" class="linkLabel_WmDU">Displacement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-glow"><span title="Glow" class="linkLabel_WmDU">Glow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-gradient"><span title="Gradient" class="linkLabel_WmDU">Gradient</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-pixelate"><span title="Pixelate" class="linkLabel_WmDU">Pixelate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-shadow"><span title="Shadow" class="linkLabel_WmDU">Shadow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-shine"><span title="Shine" class="linkLabel_WmDU">Shine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-vignette"><span title="Vignette" class="linkLabel_WmDU">Vignette</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/fx-wipe"><span title="Wipe" class="linkLabel_WmDU">Wipe</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/facebookinstantgamesleaderboard"><span title="FacebookInstantGamesLeaderboard" class="linkLabel_WmDU">FacebookInstantGamesLeaderboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/facebookinstantgamesplugin"><span title="FacebookInstantGamesPlugin" class="linkLabel_WmDU">FacebookInstantGamesPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/game"><span title="Game" class="linkLabel_WmDU">Game</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-arc"><span title="Arc" class="linkLabel_WmDU">Arc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-bitmaptext"><span title="BitmapText" class="linkLabel_WmDU">BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-blitter"><span title="Blitter" class="linkLabel_WmDU">Blitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-bob"><span title="Bob" class="linkLabel_WmDU">Bob</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-components-fx"><span title="FX" class="linkLabel_WmDU">FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-components-transformmatrix"><span title="TransformMatrix" class="linkLabel_WmDU">TransformMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-container"><span title="Container" class="linkLabel_WmDU">Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-domelement"><span title="DOMElement" class="linkLabel_WmDU">DOMElement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-displaylist"><span title="DisplayList" class="linkLabel_WmDU">DisplayList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-dynamicbitmaptext"><span title="DynamicBitmapText" class="linkLabel_WmDU">DynamicBitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-extern"><span title="Extern" class="linkLabel_WmDU">Extern</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobject"><span title="GameObject" class="linkLabel_WmDU">GameObject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobjectcreator"><span title="GameObjectCreator" class="linkLabel_WmDU">GameObjectCreator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-gameobjectfactory"><span title="GameObjectFactory" class="linkLabel_WmDU">GameObjectFactory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-graphics"><span title="Graphics" class="linkLabel_WmDU">Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-grid"><span title="Grid" class="linkLabel_WmDU">Grid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-isobox"><span title="IsoBox" class="linkLabel_WmDU">IsoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-isotriangle"><span title="IsoTriangle" class="linkLabel_WmDU">IsoTriangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-layer"><span title="Layer" class="linkLabel_WmDU">Layer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-light"><span title="Light" class="linkLabel_WmDU">Light</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-lightsmanager"><span title="LightsManager" class="linkLabel_WmDU">LightsManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-lightsplugin"><span title="LightsPlugin" class="linkLabel_WmDU">LightsPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-mesh"><span title="Mesh" class="linkLabel_WmDU">Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-nineslice"><span title="NineSlice" class="linkLabel_WmDU">NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-emittercolorop"><span title="EmitterColorOp" class="linkLabel_WmDU">EmitterColorOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-emitterop"><span title="EmitterOp" class="linkLabel_WmDU">EmitterOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-gravitywell"><span title="GravityWell" class="linkLabel_WmDU">GravityWell</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particle"><span title="Particle" class="linkLabel_WmDU">Particle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particlebounds"><span title="ParticleBounds" class="linkLabel_WmDU">ParticleBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particleemitter"><span title="ParticleEmitter" class="linkLabel_WmDU">ParticleEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-particleprocessor"><span title="ParticleProcessor" class="linkLabel_WmDU">ParticleProcessor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-deathzone"><span title="DeathZone" class="linkLabel_WmDU">DeathZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-edgezone"><span title="EdgeZone" class="linkLabel_WmDU">EdgeZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-particles-zones-randomzone"><span title="RandomZone" class="linkLabel_WmDU">RandomZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-pathfollower"><span title="PathFollower" class="linkLabel_WmDU">PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-plane"><span title="Plane" class="linkLabel_WmDU">Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-pointlight"><span title="PointLight" class="linkLabel_WmDU">PointLight</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rendertexture"><span title="RenderTexture" class="linkLabel_WmDU">RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-rope"><span title="Rope" class="linkLabel_WmDU">Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-shader"><span title="Shader" class="linkLabel_WmDU">Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-shape"><span title="Shape" class="linkLabel_WmDU">Shape</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-star"><span title="Star" class="linkLabel_WmDU">Star</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-text"><span title="Text" class="linkLabel_WmDU">Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-textstyle"><span title="TextStyle" class="linkLabel_WmDU">TextStyle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-tilesprite"><span title="TileSprite" class="linkLabel_WmDU">TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-updatelist"><span title="UpdateList" class="linkLabel_WmDU">UpdateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-video"><span title="Video" class="linkLabel_WmDU">Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/gameobjects-zone"><span title="Zone" class="linkLabel_WmDU">Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-mesh-face"><span title="Face" class="linkLabel_WmDU">Face</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-mesh-vertex"><span title="Vertex" class="linkLabel_WmDU">Vertex</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-point"><span title="Point" class="linkLabel_WmDU">Point</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/geom-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-axis"><span title="Axis" class="linkLabel_WmDU">Axis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-button"><span title="Button" class="linkLabel_WmDU">Button</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-gamepad"><span title="Gamepad" class="linkLabel_WmDU">Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-gamepad-gamepadplugin"><span title="GamepadPlugin" class="linkLabel_WmDU">GamepadPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-inputmanager"><span title="InputManager" class="linkLabel_WmDU">InputManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-inputplugin"><span title="InputPlugin" class="linkLabel_WmDU">InputPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-key"><span title="Key" class="linkLabel_WmDU">Key</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keycombo"><span title="KeyCombo" class="linkLabel_WmDU">KeyCombo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keyboardmanager"><span title="KeyboardManager" class="linkLabel_WmDU">KeyboardManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-keyboard-keyboardplugin"><span title="KeyboardPlugin" class="linkLabel_WmDU">KeyboardPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-mouse-mousemanager"><span title="MouseManager" class="linkLabel_WmDU">MouseManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-pointer"><span title="Pointer" class="linkLabel_WmDU">Pointer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/input-touch-touchmanager"><span title="TouchManager" class="linkLabel_WmDU">TouchManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-file"><span title="File" class="linkLabel_WmDU">File</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-animationjsonfile"><span title="AnimationJSONFile" class="linkLabel_WmDU">AnimationJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-asepritefile"><span title="AsepriteFile" class="linkLabel_WmDU">AsepriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-atlasjsonfile"><span title="AtlasJSONFile" class="linkLabel_WmDU">AtlasJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-atlasxmlfile"><span title="AtlasXMLFile" class="linkLabel_WmDU">AtlasXMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-audiofile"><span title="AudioFile" class="linkLabel_WmDU">AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-audiospritefile"><span title="AudioSpriteFile" class="linkLabel_WmDU">AudioSpriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-binaryfile"><span title="BinaryFile" class="linkLabel_WmDU">BinaryFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-bitmapfontfile"><span title="BitmapFontFile" class="linkLabel_WmDU">BitmapFontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-cssfile"><span title="CSSFile" class="linkLabel_WmDU">CSSFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-compressedtexturefile"><span title="CompressedTextureFile" class="linkLabel_WmDU">CompressedTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-glslfile"><span title="GLSLFile" class="linkLabel_WmDU">GLSLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-html5audiofile"><span title="HTML5AudioFile" class="linkLabel_WmDU">HTML5AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-htmlfile"><span title="HTMLFile" class="linkLabel_WmDU">HTMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-htmltexturefile"><span title="HTMLTextureFile" class="linkLabel_WmDU">HTMLTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-imagefile"><span title="ImageFile" class="linkLabel_WmDU">ImageFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-jsonfile"><span title="JSONFile" class="linkLabel_WmDU">JSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-multiatlasfile"><span title="MultiAtlasFile" class="linkLabel_WmDU">MultiAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-multiscriptfile"><span title="MultiScriptFile" class="linkLabel_WmDU">MultiScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-objfile"><span title="OBJFile" class="linkLabel_WmDU">OBJFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-packfile"><span title="PackFile" class="linkLabel_WmDU">PackFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-pluginfile"><span title="PluginFile" class="linkLabel_WmDU">PluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-svgfile"><span title="SVGFile" class="linkLabel_WmDU">SVGFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scenefile"><span title="SceneFile" class="linkLabel_WmDU">SceneFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scenepluginfile"><span title="ScenePluginFile" class="linkLabel_WmDU">ScenePluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-scriptfile"><span title="ScriptFile" class="linkLabel_WmDU">ScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-spritesheetfile"><span title="SpriteSheetFile" class="linkLabel_WmDU">SpriteSheetFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-textfile"><span title="TextFile" class="linkLabel_WmDU">TextFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapcsvfile"><span title="TilemapCSVFile" class="linkLabel_WmDU">TilemapCSVFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapimpactfile"><span title="TilemapImpactFile" class="linkLabel_WmDU">TilemapImpactFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-tilemapjsonfile"><span title="TilemapJSONFile" class="linkLabel_WmDU">TilemapJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-unityatlasfile"><span title="UnityAtlasFile" class="linkLabel_WmDU">UnityAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-videofile"><span title="VideoFile" class="linkLabel_WmDU">VideoFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-filetypes-xmlfile"><span title="XMLFile" class="linkLabel_WmDU">XMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-loaderplugin"><span title="LoaderPlugin" class="linkLabel_WmDU">LoaderPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/loader-multifile"><span title="MultiFile" class="linkLabel_WmDU">MultiFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-euler"><span title="Euler" class="linkLabel_WmDU">Euler</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-matrix3"><span title="Matrix3" class="linkLabel_WmDU">Matrix3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-matrix4"><span title="Matrix4" class="linkLabel_WmDU">Matrix4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-quaternion"><span title="Quaternion" class="linkLabel_WmDU">Quaternion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-randomdatagenerator"><span title="RandomDataGenerator" class="linkLabel_WmDU">RandomDataGenerator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector2"><span title="Vector2" class="linkLabel_WmDU">Vector2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector3"><span title="Vector3" class="linkLabel_WmDU">Vector3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/math-vector4"><span title="Vector4" class="linkLabel_WmDU">Vector4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-arcadephysics"><span title="ArcadePhysics" class="linkLabel_WmDU">ArcadePhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-body"><span title="Body" class="linkLabel_WmDU">Body</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-collider"><span title="Collider" class="linkLabel_WmDU">Collider</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-staticbody"><span title="StaticBody" class="linkLabel_WmDU">StaticBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-staticgroup"><span title="StaticGroup" class="linkLabel_WmDU">StaticGroup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-arcade-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-bodybounds"><span title="BodyBounds" class="linkLabel_WmDU">BodyBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-matterphysics"><span title="MatterPhysics" class="linkLabel_WmDU">MatterPhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-pointerconstraint"><span title="PointerConstraint" class="linkLabel_WmDU">PointerConstraint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-tilebody"><span title="TileBody" class="linkLabel_WmDU">TileBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/physics-matter-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-baseplugin"><span title="BasePlugin" class="linkLabel_WmDU">BasePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-pluginmanager"><span title="PluginManager" class="linkLabel_WmDU">PluginManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/plugins-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-canvas-canvasrenderer"><span title="CanvasRenderer" class="linkLabel_WmDU">CanvasRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelinemanager"><span title="PipelineManager" class="linkLabel_WmDU">PipelineManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-bitmapmaskpipeline"><span title="BitmapMaskPipeline" class="linkLabel_WmDU">BitmapMaskPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-barrelfxpipeline"><span title="BarrelFXPipeline" class="linkLabel_WmDU">BarrelFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-bloomfxpipeline"><span title="BloomFXPipeline" class="linkLabel_WmDU">BloomFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-blurfxpipeline"><span title="BlurFXPipeline" class="linkLabel_WmDU">BlurFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-bokehfxpipeline"><span title="BokehFXPipeline" class="linkLabel_WmDU">BokehFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-circlefxpipeline"><span title="CircleFXPipeline" class="linkLabel_WmDU">CircleFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-colormatrixfxpipeline"><span title="ColorMatrixFXPipeline" class="linkLabel_WmDU">ColorMatrixFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-displacementfxpipeline"><span title="DisplacementFXPipeline" class="linkLabel_WmDU">DisplacementFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-glowfxpipeline"><span title="GlowFXPipeline" class="linkLabel_WmDU">GlowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-gradientfxpipeline"><span title="GradientFXPipeline" class="linkLabel_WmDU">GradientFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-pixelatefxpipeline"><span title="PixelateFXPipeline" class="linkLabel_WmDU">PixelateFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-shadowfxpipeline"><span title="ShadowFXPipeline" class="linkLabel_WmDU">ShadowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-shinefxpipeline"><span title="ShineFXPipeline" class="linkLabel_WmDU">ShineFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-vignettefxpipeline"><span title="VignetteFXPipeline" class="linkLabel_WmDU">VignetteFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fx-wipefxpipeline"><span title="WipeFXPipeline" class="linkLabel_WmDU">WipeFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-fxpipeline"><span title="FXPipeline" class="linkLabel_WmDU">FXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-lightpipeline"><span title="LightPipeline" class="linkLabel_WmDU">LightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-mobilepipeline"><span title="MobilePipeline" class="linkLabel_WmDU">MobilePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-multipipeline"><span title="MultiPipeline" class="linkLabel_WmDU">MultiPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-pointlightpipeline"><span title="PointLightPipeline" class="linkLabel_WmDU">PointLightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-postfxpipeline"><span title="PostFXPipeline" class="linkLabel_WmDU">PostFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-prefxpipeline"><span title="PreFXPipeline" class="linkLabel_WmDU">PreFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-ropepipeline"><span title="RopePipeline" class="linkLabel_WmDU">RopePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-singlepipeline"><span title="SinglePipeline" class="linkLabel_WmDU">SinglePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-pipelines-utilitypipeline"><span title="UtilityPipeline" class="linkLabel_WmDU">UtilityPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-rendertarget"><span title="RenderTarget" class="linkLabel_WmDU">RenderTarget</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglpipeline"><span title="WebGLPipeline" class="linkLabel_WmDU">WebGLPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglrenderer"><span title="WebGLRenderer" class="linkLabel_WmDU">WebGLRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-webglshader"><span title="WebGLShader" class="linkLabel_WmDU">WebGLShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglattriblocationwrapper"><span title="WebGLAttribLocationWrapper" class="linkLabel_WmDU">WebGLAttribLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglbufferwrapper"><span title="WebGLBufferWrapper" class="linkLabel_WmDU">WebGLBufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglframebufferwrapper"><span title="WebGLFramebufferWrapper" class="linkLabel_WmDU">WebGLFramebufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webglprogramwrapper"><span title="WebGLProgramWrapper" class="linkLabel_WmDU">WebGLProgramWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webgltexturewrapper"><span title="WebGLTextureWrapper" class="linkLabel_WmDU">WebGLTextureWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/renderer-webgl-wrappers-webgluniformlocationwrapper"><span title="WebGLUniformLocationWrapper" class="linkLabel_WmDU">WebGLUniformLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scale-scalemanager"><span title="ScaleManager" class="linkLabel_WmDU">ScaleManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scene"><span title="Scene" class="linkLabel_WmDU">Scene</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-scenemanager"><span title="SceneManager" class="linkLabel_WmDU">SceneManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/scenes-systems"><span title="Systems" class="linkLabel_WmDU">Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-basesound"><span title="BaseSound" class="linkLabel_WmDU">BaseSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-basesoundmanager"><span title="BaseSoundManager" class="linkLabel_WmDU">BaseSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-html5audiosound"><span title="HTML5AudioSound" class="linkLabel_WmDU">HTML5AudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-html5audiosoundmanager"><span title="HTML5AudioSoundManager" class="linkLabel_WmDU">HTML5AudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-noaudiosound"><span title="NoAudioSound" class="linkLabel_WmDU">NoAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-noaudiosoundmanager"><span title="NoAudioSoundManager" class="linkLabel_WmDU">NoAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-webaudiosound"><span title="WebAudioSound" class="linkLabel_WmDU">WebAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/sound-webaudiosoundmanager"><span title="WebAudioSoundManager" class="linkLabel_WmDU">WebAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-list"><span title="List" class="linkLabel_WmDU">List</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-map"><span title="Map" class="linkLabel_WmDU">Map</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-processqueue"><span title="ProcessQueue" class="linkLabel_WmDU">ProcessQueue</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-rtree"><span title="RTree" class="linkLabel_WmDU">RTree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-set"><span title="Set" class="linkLabel_WmDU">Set</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/structs-size"><span title="Size" class="linkLabel_WmDU">Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-canvastexture"><span title="CanvasTexture" class="linkLabel_WmDU">CanvasTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-dynamictexture"><span title="DynamicTexture" class="linkLabel_WmDU">DynamicTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-frame"><span title="Frame" class="linkLabel_WmDU">Frame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texture"><span title="Texture" class="linkLabel_WmDU">Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texturemanager"><span title="TextureManager" class="linkLabel_WmDU">TextureManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/textures-texturesource"><span title="TextureSource" class="linkLabel_WmDU">TextureSource</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-imagecollection"><span title="ImageCollection" class="linkLabel_WmDU">ImageCollection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-layerdata"><span title="LayerData" class="linkLabel_WmDU">LayerData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-mapdata"><span title="MapData" class="linkLabel_WmDU">MapData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-objecthelper"><span title="ObjectHelper" class="linkLabel_WmDU">ObjectHelper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-objectlayer"><span title="ObjectLayer" class="linkLabel_WmDU">ObjectLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tile"><span title="Tile" class="linkLabel_WmDU">Tile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tilemap"><span title="Tilemap" class="linkLabel_WmDU">Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tilemaplayer"><span title="TilemapLayer" class="linkLabel_WmDU">TilemapLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tilemaps-tileset"><span title="Tileset" class="linkLabel_WmDU">Tileset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-clock"><span title="Clock" class="linkLabel_WmDU">Clock</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-timeline"><span title="Timeline" class="linkLabel_WmDU">Timeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/time-timerevent"><span title="TimerEvent" class="linkLabel_WmDU">TimerEvent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-basetween"><span title="BaseTween" class="linkLabel_WmDU">BaseTween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-basetweendata"><span title="BaseTweenData" class="linkLabel_WmDU">BaseTweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tween"><span title="Tween" class="linkLabel_WmDU">Tween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenchain"><span title="TweenChain" class="linkLabel_WmDU">TweenChain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweendata"><span title="TweenData" class="linkLabel_WmDU">TweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenframedata"><span title="TweenFrameData" class="linkLabel_WmDU">TweenFrameData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/tweens-tweenmanager"><span title="TweenManager" class="linkLabel_WmDU">TweenManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="linkLabel_WmDU">Class</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/class/input-gamepad-gamepad">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/class/"><span>Class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Gamepad</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Gamepad</h1></header><p>A single Gamepad.</p>
+<p>These are created, updated and managed by the Gamepad Plugin.</p>
+<p><strong>Constructor</strong></p>
+<p><code>new Gamepad(manager, pad)</code></p>
+<p><strong>Parameters</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>manager</td><td><a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepadplugin">Phaser.Input.Gamepad.GamepadPlugin</a></td><td>No</td><td>A reference to the Gamepad Plugin.</td></tr><tr><td>pad</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-input-gamepad#Pad">Phaser.Types.Input.Gamepad.Pad</a></td><td>No</td><td>The Gamepad object, as extracted from GamepadEvent.</td></tr></tbody></table>
+<hr>
+<p><strong>Scope</strong>: static</p>
+<p><strong>Extends</strong></p>
+<blockquote>
+<p><a class="" href="/api-documentation/3.85.2/class/events-eventemitter">Phaser.Events.EventEmitter</a></p>
+</blockquote>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L13" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L13</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Public Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a">A<a href="#a" class="hash-link" aria-label="Direct link to A" title="Direct link to A" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-boolean">A: boolean<a href="#a-boolean" class="hash-link" aria-label="Direct link to A: boolean" title="Direct link to A: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s bottom button in the right button cluster being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+On a Dual Shock controller it&#x27;s the X button.
+On an XBox controller it&#x27;s the A button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L609" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L609</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="axes">axes<a href="#axes" class="hash-link" aria-label="Direct link to axes" title="Direct link to axes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="axes-arrayphaserinputgamepadaxis">axes: Array.&lt;<a class="" href="/api-documentation/3.85.2/class/input-gamepad-axis">Phaser.Input.Gamepad.Axis</a>&gt;<a href="#axes-arrayphaserinputgamepadaxis" class="hash-link" aria-label="Direct link to axes-arrayphaserinputgamepadaxis" title="Direct link to axes-arrayphaserinputgamepadaxis" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An array of Gamepad Axis objects, corresponding to the different axes available on the Gamepad, if any.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L105" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L105</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="b">B<a href="#b" class="hash-link" aria-label="Direct link to B" title="Direct link to B" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="b-boolean">B: boolean<a href="#b-boolean" class="hash-link" aria-label="Direct link to B: boolean" title="Direct link to B: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s right button in the right button cluster being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+On a Dual Shock controller it&#x27;s the Circle button.
+On an XBox controller it&#x27;s the B button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L666" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L666</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="buttons">buttons<a href="#buttons" class="hash-link" aria-label="Direct link to buttons" title="Direct link to buttons" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="buttons-arrayphaserinputgamepadbutton">buttons: Array.&lt;<a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a>&gt;<a href="#buttons-arrayphaserinputgamepadbutton" class="hash-link" aria-label="Direct link to buttons-arrayphaserinputgamepadbutton" title="Direct link to buttons-arrayphaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An array of Gamepad Button objects, corresponding to the different buttons available on the Gamepad.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L89" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L89</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="connected">connected<a href="#connected" class="hash-link" aria-label="Direct link to connected" title="Direct link to connected" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="connected-boolean">connected: boolean<a href="#connected-boolean" class="hash-link" aria-label="Direct link to connected: boolean" title="Direct link to connected: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is this Gamepad currently connected or not?</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L504" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L504</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="down">down<a href="#down" class="hash-link" aria-label="Direct link to down" title="Direct link to down" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="down-boolean">down: boolean<a href="#down-boolean" class="hash-link" aria-label="Direct link to down: boolean" title="Direct link to down: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s Down button being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+This is the d-pad down button under standard Gamepad mapping.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L591" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L591</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="id">id<a href="#id" class="hash-link" aria-label="Direct link to id" title="Direct link to id" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="id-string">id: string<a href="#id-string" class="hash-link" aria-label="Direct link to id: string" title="Direct link to id: string" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A string containing some information about the controller.</p>
+<p>This is not strictly specified, but in Firefox it will contain three pieces of information
+separated by dashes (-): two 4-digit hexadecimal strings containing the USB vendor and
+product id of the controller, and the name of the controller as provided by the driver.
+In Chrome it will contain the name of the controller as provided by the driver,
+followed by vendor and product 4-digit hexadecimal strings.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L56" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L56</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="index">index<a href="#index" class="hash-link" aria-label="Direct link to index" title="Direct link to index" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="index-number">index: number<a href="#index-number" class="hash-link" aria-label="Direct link to index: number" title="Direct link to index: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An integer that is unique for each Gamepad currently connected to the system.
+This can be used to distinguish multiple controllers.
+Note that disconnecting a device and then connecting a new device may reuse the previous index.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L71" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L71</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="l1">L1<a href="#l1" class="hash-link" aria-label="Direct link to L1" title="Direct link to L1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="l1-number">L1: number<a href="#l1-number" class="hash-link" aria-label="Direct link to L1: number" title="Direct link to L1: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the value of the Gamepad&#x27;s top left shoulder button.
+If the Gamepad doesn&#x27;t have this button it will always return zero.
+The value is a float between 0 and 1, corresponding to how depressed the button is.
+On a Dual Shock controller it&#x27;s the L1 button.
+On an XBox controller it&#x27;s the LB button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L685" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L685</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="l2">L2<a href="#l2" class="hash-link" aria-label="Direct link to L2" title="Direct link to L2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="l2-number">L2: number<a href="#l2-number" class="hash-link" aria-label="Direct link to L2: number" title="Direct link to L2: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the value of the Gamepad&#x27;s bottom left shoulder button.
+If the Gamepad doesn&#x27;t have this button it will always return zero.
+The value is a float between 0 and 1, corresponding to how depressed the button is.
+On a Dual Shock controller it&#x27;s the L2 button.
+On an XBox controller it&#x27;s the LT button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L705" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L705</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="left">left<a href="#left" class="hash-link" aria-label="Direct link to left" title="Direct link to left" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="left-boolean">left: boolean<a href="#left-boolean" class="hash-link" aria-label="Direct link to left: boolean" title="Direct link to left: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s Left button being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+This is the d-pad left button under standard Gamepad mapping.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L537" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L537</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="leftstick">leftStick<a href="#leftstick" class="hash-link" aria-label="Direct link to leftStick" title="Direct link to leftStick" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="leftstick-phasermathvector2">leftStick: <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a><a href="#leftstick-phasermathvector2" class="hash-link" aria-label="Direct link to leftstick-phasermathvector2" title="Direct link to leftstick-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A Vector2 containing the most recent values from the Gamepad&#x27;s left axis stick.
+This is updated automatically as part of the Gamepad.update cycle.
+The H Axis is mapped to the <code>Vector2.x</code> property, and the V Axis to the <code>Vector2.y</code> property.
+The values are based on the Axis thresholds.
+If the Gamepad does not have a left axis stick, the values will always be zero.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L291" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L291</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="manager">manager<a href="#manager" class="hash-link" aria-label="Direct link to manager" title="Direct link to manager" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manager-phaserinputgamepadgamepadplugin">manager: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepadplugin">Phaser.Input.Gamepad.GamepadPlugin</a><a href="#manager-phaserinputgamepadgamepadplugin" class="hash-link" aria-label="Direct link to manager-phaserinputgamepadgamepadplugin" title="Direct link to manager-phaserinputgamepadgamepadplugin" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Gamepad Plugin.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L38" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L38</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pad">pad<a href="#pad" class="hash-link" aria-label="Direct link to pad" title="Direct link to pad" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pad-any">pad: any<a href="#pad-any" class="hash-link" aria-label="Direct link to pad: any" title="Direct link to pad: any" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the native Gamepad object that is connected to the browser.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L47" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L47</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="r1">R1<a href="#r1" class="hash-link" aria-label="Direct link to R1" title="Direct link to R1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="r1-number">R1: number<a href="#r1-number" class="hash-link" aria-label="Direct link to R1: number" title="Direct link to R1: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the value of the Gamepad&#x27;s top right shoulder button.
+If the Gamepad doesn&#x27;t have this button it will always return zero.
+The value is a float between 0 and 1, corresponding to how depressed the button is.
+On a Dual Shock controller it&#x27;s the R1 button.
+On an XBox controller it&#x27;s the RB button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L725" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L725</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="r2">R2<a href="#r2" class="hash-link" aria-label="Direct link to R2" title="Direct link to R2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="r2-number">R2: number<a href="#r2-number" class="hash-link" aria-label="Direct link to R2: number" title="Direct link to R2: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the value of the Gamepad&#x27;s bottom right shoulder button.
+If the Gamepad doesn&#x27;t have this button it will always return zero.
+The value is a float between 0 and 1, corresponding to how depressed the button is.
+On a Dual Shock controller it&#x27;s the R2 button.
+On an XBox controller it&#x27;s the RT button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L745" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L745</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="right">right<a href="#right" class="hash-link" aria-label="Direct link to right" title="Direct link to right" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="right-boolean">right: boolean<a href="#right-boolean" class="hash-link" aria-label="Direct link to right: boolean" title="Direct link to right: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s Right button being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+This is the d-pad right button under standard Gamepad mapping.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L555" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L555</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rightstick">rightStick<a href="#rightstick" class="hash-link" aria-label="Direct link to rightStick" title="Direct link to rightStick" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rightstick-phasermathvector2">rightStick: <a class="" href="/api-documentation/3.85.2/class/math-vector2">Phaser.Math.Vector2</a><a href="#rightstick-phasermathvector2" class="hash-link" aria-label="Direct link to rightstick-phasermathvector2" title="Direct link to rightstick-phasermathvector2" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A Vector2 containing the most recent values from the Gamepad&#x27;s right axis stick.
+This is updated automatically as part of the Gamepad.update cycle.
+The H Axis is mapped to the <code>Vector2.x</code> property, and the V Axis to the <code>Vector2.y</code> property.
+The values are based on the Axis thresholds.
+If the Gamepad does not have a right axis stick, the values will always be zero.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L304" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L304</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="timestamp">timestamp<a href="#timestamp" class="hash-link" aria-label="Direct link to timestamp" title="Direct link to timestamp" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="timestamp-number">timestamp: number<a href="#timestamp-number" class="hash-link" aria-label="Direct link to timestamp: number" title="Direct link to timestamp: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A timestamp containing the most recent time this Gamepad was updated.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L521" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L521</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="up">up<a href="#up" class="hash-link" aria-label="Direct link to up" title="Direct link to up" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="up-boolean">up: boolean<a href="#up-boolean" class="hash-link" aria-label="Direct link to up: boolean" title="Direct link to up: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s Up button being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+This is the d-pad up button under standard Gamepad mapping.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L573" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L573</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vibration">vibration<a href="#vibration" class="hash-link" aria-label="Direct link to vibration" title="Direct link to vibration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vibration-gamepadhapticactuator">vibration: GamepadHapticActuator<a href="#vibration-gamepadhapticactuator" class="hash-link" aria-label="Direct link to vibration: GamepadHapticActuator" title="Direct link to vibration: GamepadHapticActuator" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The Gamepad&#x27;s Haptic Actuator (Vibration / Rumble support).
+This is highly experimental and only set if both present on the device,
+and exposed by both the hardware and browser.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L114" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L114</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="x">X<a href="#x" class="hash-link" aria-label="Direct link to X" title="Direct link to X" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="x-boolean">X: boolean<a href="#x-boolean" class="hash-link" aria-label="Direct link to X: boolean" title="Direct link to X: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s left button in the right button cluster being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+On a Dual Shock controller it&#x27;s the Square button.
+On an XBox controller it&#x27;s the X button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L647" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L647</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="y">Y<a href="#y" class="hash-link" aria-label="Direct link to Y" title="Direct link to Y" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="y-boolean">Y: boolean<a href="#y-boolean" class="hash-link" aria-label="Direct link to Y: boolean" title="Direct link to Y: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is the Gamepad&#x27;s top button in the right button cluster being pressed?
+If the Gamepad doesn&#x27;t have this button it will always return false.
+On a Dual Shock controller it&#x27;s the Triangle button.
+On an XBox controller it&#x27;s the Y button.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L628" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L628</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h1>Private Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_created">_created<a href="#_created" class="hash-link" aria-label="Direct link to _created" title="Direct link to _created" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_created-number">_created: number<a href="#_created-number" class="hash-link" aria-label="Direct link to _created: number" title="Direct link to _created: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>When was this Gamepad created? Used to avoid duplicate event spamming in the update loop.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L317" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L317</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fbleftbottom">_FBLeftBottom<a href="#_fbleftbottom" class="hash-link" aria-label="Direct link to _FBLeftBottom" title="Direct link to _FBLeftBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fbleftbottom-phaserinputgamepadbutton">_FBLeftBottom: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_fbleftbottom-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _fbleftbottom-phaserinputgamepadbutton" title="Direct link to _fbleftbottom-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Bottom Left Front Button (L2 Shoulder Button)</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L219" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L219</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fblefttop">_FBLeftTop<a href="#_fblefttop" class="hash-link" aria-label="Direct link to _FBLeftTop" title="Direct link to _FBLeftTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fblefttop-phaserinputgamepadbutton">_FBLeftTop: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_fblefttop-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _fblefttop-phaserinputgamepadbutton" title="Direct link to _fblefttop-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Top Left Front Button (L1 Shoulder Button)</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L209" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L209</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fbrightbottom">_FBRightBottom<a href="#_fbrightbottom" class="hash-link" aria-label="Direct link to _FBRightBottom" title="Direct link to _FBRightBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fbrightbottom-phaserinputgamepadbutton">_FBRightBottom: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_fbrightbottom-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _fbrightbottom-phaserinputgamepadbutton" title="Direct link to _fbrightbottom-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Bottom Right Front Button (R2 Shoulder Button)</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L239" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L239</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fbrighttop">_FBRightTop<a href="#_fbrighttop" class="hash-link" aria-label="Direct link to _FBRightTop" title="Direct link to _FBRightTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_fbrighttop-phaserinputgamepadbutton">_FBRightTop: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_fbrighttop-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _fbrighttop-phaserinputgamepadbutton" title="Direct link to _fbrighttop-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Top Right Front Button (R1 Shoulder Button)</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L229" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L229</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_haxisleft">_HAxisLeft<a href="#_haxisleft" class="hash-link" aria-label="Direct link to _HAxisLeft" title="Direct link to _HAxisLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_haxisleft-phaserinputgamepadbutton">_HAxisLeft: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_haxisleft-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _haxisleft-phaserinputgamepadbutton" title="Direct link to _haxisleft-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Horizontal Axis for the Left Stick.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L251" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L251</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_haxisright">_HAxisRight<a href="#_haxisright" class="hash-link" aria-label="Direct link to _HAxisRight" title="Direct link to _HAxisRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_haxisright-phaserinputgamepadbutton">_HAxisRight: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_haxisright-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _haxisright-phaserinputgamepadbutton" title="Direct link to _haxisright-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Horizontal Axis for the Right Stick.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L271" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L271</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lcbottom">_LCBottom<a href="#_lcbottom" class="hash-link" aria-label="Direct link to _LCBottom" title="Direct link to _LCBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lcbottom-phaserinputgamepadbutton">_LCBottom: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_lcbottom-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _lcbottom-phaserinputgamepadbutton" title="Direct link to _lcbottom-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Bottom Button in the Left Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L159" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L159</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lcleft">_LCLeft<a href="#_lcleft" class="hash-link" aria-label="Direct link to _LCLeft" title="Direct link to _LCLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lcleft-phaserinputgamepadbutton">_LCLeft: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_lcleft-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _lcleft-phaserinputgamepadbutton" title="Direct link to _lcleft-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Left Button in the Left Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L129" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L129</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lcright">_LCRight<a href="#_lcright" class="hash-link" aria-label="Direct link to _LCRight" title="Direct link to _LCRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lcright-phaserinputgamepadbutton">_LCRight: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_lcright-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _lcright-phaserinputgamepadbutton" title="Direct link to _lcright-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Right Button in the Left Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L139" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L139</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lctop">_LCTop<a href="#_lctop" class="hash-link" aria-label="Direct link to _LCTop" title="Direct link to _LCTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_lctop-phaserinputgamepadbutton">_LCTop: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_lctop-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _lctop-phaserinputgamepadbutton" title="Direct link to _lctop-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Top Button in the Left Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L149" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L149</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rcbottom">_RCBottom<a href="#_rcbottom" class="hash-link" aria-label="Direct link to _RCBottom" title="Direct link to _RCBottom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rcbottom-phaserinputgamepadbutton">_RCBottom: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_rcbottom-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _rcbottom-phaserinputgamepadbutton" title="Direct link to _rcbottom-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Bottom Button in the Right Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L199" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L199</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rcleft">_RCLeft<a href="#_rcleft" class="hash-link" aria-label="Direct link to _RCLeft" title="Direct link to _RCLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rcleft-phaserinputgamepadbutton">_RCLeft: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_rcleft-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _rcleft-phaserinputgamepadbutton" title="Direct link to _rcleft-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Left Button in the Right Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L169" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L169</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rcright">_RCRight<a href="#_rcright" class="hash-link" aria-label="Direct link to _RCRight" title="Direct link to _RCRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rcright-phaserinputgamepadbutton">_RCRight: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_rcright-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _rcright-phaserinputgamepadbutton" title="Direct link to _rcright-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Right Button in the Right Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L179" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L179</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rctop">_RCTop<a href="#_rctop" class="hash-link" aria-label="Direct link to _RCTop" title="Direct link to _RCTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_rctop-phaserinputgamepadbutton">_RCTop: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_rctop-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _rctop-phaserinputgamepadbutton" title="Direct link to _rctop-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Top Button in the Right Cluster.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L189" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L189</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_vaxisleft">_VAxisLeft<a href="#_vaxisleft" class="hash-link" aria-label="Direct link to _VAxisLeft" title="Direct link to _VAxisLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_vaxisleft-phaserinputgamepadbutton">_VAxisLeft: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_vaxisleft-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _vaxisleft-phaserinputgamepadbutton" title="Direct link to _vaxisleft-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Vertical Axis for the Left Stick.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L261" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L261</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_vaxisright">_VAxisRight<a href="#_vaxisright" class="hash-link" aria-label="Direct link to _VAxisRight" title="Direct link to _VAxisRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_vaxisright-phaserinputgamepadbutton">_VAxisRight: <a class="" href="/api-documentation/3.85.2/class/input-gamepad-button">Phaser.Input.Gamepad.Button</a><a href="#_vaxisright-phaserinputgamepadbutton" class="hash-link" aria-label="Direct link to _vaxisright-phaserinputgamepadbutton" title="Direct link to _vaxisright-phaserinputgamepadbutton" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Vertical Axis for the Right Stick.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L281" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L281</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h1>Public Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addlistener">addListener<a href="#addlistener" class="hash-link" aria-label="Direct link to addListener" title="Direct link to addListener" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addlistenerevent-fn-context">&lt;instance&gt; addListener(event, fn, [context])<a href="#instance-addlistenerevent-fn-context" class="hash-link" aria-label="Direct link to &lt;instance&gt; addListener(event, fn, [context])" title="Direct link to &lt;instance&gt; addListener(event, fn, [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add a listener for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td></td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>No</td><td></td><td>The listener function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>&quot;this&quot;</td><td>The context to invoke the listener with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">Phaser.Input.Gamepad.Gamepad</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#addListener">Phaser.Events.EventEmitter#addListener</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L111" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L111</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">destroy<a href="#destroy" class="hash-link" aria-label="Direct link to destroy" title="Direct link to destroy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-destroy">&lt;instance&gt; destroy()<a href="#instance-destroy" class="hash-link" aria-label="Direct link to &lt;instance&gt; destroy()" title="Direct link to &lt;instance&gt; destroy()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Destroys this Gamepad instance, its buttons and axes, and releases external references it holds.</p>
+<p><strong>Overrides:</strong> Phaser.Events.EventEmitter#destroy</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L475" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L475</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emit">emit<a href="#emit" class="hash-link" aria-label="Direct link to emit" title="Direct link to emit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-emitevent-args">&lt;instance&gt; emit(event, [args])<a href="#instance-emitevent-args" class="hash-link" aria-label="Direct link to &lt;instance&gt; emit(event, [args])" title="Direct link to &lt;instance&gt; emit(event, [args])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Calls each of the listeners registered for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr><tr><td>args</td><td>*</td><td>Yes</td><td>Additional arguments that will be passed to the event handler.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the event had listeners, else <code>false</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#emit">Phaser.Events.EventEmitter#emit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L86" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L86</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="eventnames">eventNames<a href="#eventnames" class="hash-link" aria-label="Direct link to eventNames" title="Direct link to eventNames" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-eventnames">&lt;instance&gt; eventNames()<a href="#instance-eventnames" class="hash-link" aria-label="Direct link to &lt;instance&gt; eventNames()" title="Direct link to &lt;instance&gt; eventNames()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return an array listing the events for which the emitter has registered listeners.</p>
+<p><strong>Returns:</strong> Array.&lt;(string | symbol)&gt; - undefined</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#eventNames">Phaser.Events.EventEmitter#eventNames</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L55" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L55</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getaxistotal">getAxisTotal<a href="#getaxistotal" class="hash-link" aria-label="Direct link to getAxisTotal" title="Direct link to getAxisTotal" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getaxistotal">&lt;instance&gt; getAxisTotal()<a href="#instance-getaxistotal" class="hash-link" aria-label="Direct link to &lt;instance&gt; getAxisTotal()" title="Direct link to &lt;instance&gt; getAxisTotal()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the total number of axis this Gamepad claims to support.</p>
+<p><strong>Returns:</strong> number - The total number of axes this Gamepad claims to support.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L328" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L328</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getaxisvalue">getAxisValue<a href="#getaxisvalue" class="hash-link" aria-label="Direct link to getAxisValue" title="Direct link to getAxisValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getaxisvalueindex">&lt;instance&gt; getAxisValue(index)<a href="#instance-getaxisvalueindex" class="hash-link" aria-label="Direct link to &lt;instance&gt; getAxisValue(index)" title="Direct link to &lt;instance&gt; getAxisValue(index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the value of an axis based on the given index.
+The index must be valid within the range of axes supported by this Gamepad.
+The return value will be a float between 0 and 1.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>index</td><td>number</td><td>No</td><td>The index of the axes to get the value for.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The value of the axis, between 0 and 1.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L341" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L341</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getbuttontotal">getButtonTotal<a href="#getbuttontotal" class="hash-link" aria-label="Direct link to getButtonTotal" title="Direct link to getButtonTotal" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getbuttontotal">&lt;instance&gt; getButtonTotal()<a href="#instance-getbuttontotal" class="hash-link" aria-label="Direct link to &lt;instance&gt; getButtonTotal()" title="Direct link to &lt;instance&gt; getButtonTotal()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the total number of buttons this Gamepad claims to have.</p>
+<p><strong>Returns:</strong> number - The total number of buttons this Gamepad claims to have.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L375" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L375</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getbuttonvalue">getButtonValue<a href="#getbuttonvalue" class="hash-link" aria-label="Direct link to getButtonValue" title="Direct link to getButtonValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getbuttonvalueindex">&lt;instance&gt; getButtonValue(index)<a href="#instance-getbuttonvalueindex" class="hash-link" aria-label="Direct link to &lt;instance&gt; getButtonValue(index)" title="Direct link to &lt;instance&gt; getButtonValue(index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Gets the value of a button based on the given index.
+The index must be valid within the range of buttons supported by this Gamepad.</p>
+<p>The return value will be either 0 or 1 for an analogue button, or a float between 0 and 1
+for a pressure-sensitive digital button, such as the shoulder buttons on a Dual Shock.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>index</td><td>number</td><td>No</td><td>The index of the button to get the value for.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The value of the button, between 0 and 1.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L388" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L388</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="isbuttondown">isButtonDown<a href="#isbuttondown" class="hash-link" aria-label="Direct link to isButtonDown" title="Direct link to isButtonDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-isbuttondownindex">&lt;instance&gt; isButtonDown(index)<a href="#instance-isbuttondownindex" class="hash-link" aria-label="Direct link to &lt;instance&gt; isButtonDown(index)" title="Direct link to &lt;instance&gt; isButtonDown(index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns if the button is pressed down or not.
+The index must be valid within the range of buttons supported by this Gamepad.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>index</td><td>number</td><td>No</td><td>The index of the button to get the value for.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the button is considered as being pressed down, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L407" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L407</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="listenercount">listenerCount<a href="#listenercount" class="hash-link" aria-label="Direct link to listenerCount" title="Direct link to listenerCount" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-listenercountevent">&lt;instance&gt; listenerCount(event)<a href="#instance-listenercountevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; listenerCount(event)" title="Direct link to &lt;instance&gt; listenerCount(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return the number of listeners listening to a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The number of listeners.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#listenerCount">Phaser.Events.EventEmitter#listenerCount</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L75" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L75</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="listeners">listeners<a href="#listeners" class="hash-link" aria-label="Direct link to listeners" title="Direct link to listeners" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-listenersevent">&lt;instance&gt; listeners(event)<a href="#instance-listenersevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; listeners(event)" title="Direct link to &lt;instance&gt; listeners(event)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Return the listeners registered for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;function()&gt; - The registered listeners.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#listeners">Phaser.Events.EventEmitter#listeners</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L64" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L64</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="off">off<a href="#off" class="hash-link" aria-label="Direct link to off" title="Direct link to off" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-offevent-fn-context-once">&lt;instance&gt; off(event, [fn], [context], [once])<a href="#instance-offevent-fn-context-once" class="hash-link" aria-label="Direct link to &lt;instance&gt; off(event, [fn], [context], [once])" title="Direct link to &lt;instance&gt; off(event, [fn], [context], [once])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Remove the listeners of a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>Yes</td><td>Only remove the listeners that match this function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>Only remove the listeners that have this context.</td></tr><tr><td>once</td><td>boolean</td><td>Yes</td><td>Only remove one-time listeners.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">Phaser.Input.Gamepad.Gamepad</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#off">Phaser.Events.EventEmitter#off</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L151" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L151</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="on">on<a href="#on" class="hash-link" aria-label="Direct link to on" title="Direct link to on" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onevent-fn-context">&lt;instance&gt; on(event, fn, [context])<a href="#instance-onevent-fn-context" class="hash-link" aria-label="Direct link to &lt;instance&gt; on(event, fn, [context])" title="Direct link to &lt;instance&gt; on(event, fn, [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add a listener for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td></td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>No</td><td></td><td>The listener function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>&quot;this&quot;</td><td>The context to invoke the listener with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">Phaser.Input.Gamepad.Gamepad</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#on">Phaser.Events.EventEmitter#on</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L98" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L98</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="once">once<a href="#once" class="hash-link" aria-label="Direct link to once" title="Direct link to once" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onceevent-fn-context">&lt;instance&gt; once(event, fn, [context])<a href="#instance-onceevent-fn-context" class="hash-link" aria-label="Direct link to &lt;instance&gt; once(event, fn, [context])" title="Direct link to &lt;instance&gt; once(event, fn, [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Add a one-time listener for a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td></td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>No</td><td></td><td>The listener function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>&quot;this&quot;</td><td>The context to invoke the listener with.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">Phaser.Input.Gamepad.Gamepad</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#once">Phaser.Events.EventEmitter#once</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L124" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L124</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removealllisteners">removeAllListeners<a href="#removealllisteners" class="hash-link" aria-label="Direct link to removeAllListeners" title="Direct link to removeAllListeners" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removealllistenersevent">&lt;instance&gt; removeAllListeners([event])<a href="#instance-removealllistenersevent" class="hash-link" aria-label="Direct link to &lt;instance&gt; removeAllListeners([event])" title="Direct link to &lt;instance&gt; removeAllListeners([event])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Remove all listeners, or those of the specified event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>Yes</td><td>The event name.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">Phaser.Input.Gamepad.Gamepad</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#removeAllListeners">Phaser.Events.EventEmitter#removeAllListeners</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L165" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L165</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removelistener">removeListener<a href="#removelistener" class="hash-link" aria-label="Direct link to removeListener" title="Direct link to removeListener" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removelistenerevent-fn-context-once">&lt;instance&gt; removeListener(event, [fn], [context], [once])<a href="#instance-removelistenerevent-fn-context-once" class="hash-link" aria-label="Direct link to &lt;instance&gt; removeListener(event, [fn], [context], [once])" title="Direct link to &lt;instance&gt; removeListener(event, [fn], [context], [once])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Remove the listeners of a given event.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>string | symbol</td><td>No</td><td>The event name.</td></tr><tr><td>fn</td><td>function</td><td>Yes</td><td>Only remove the listeners that match this function.</td></tr><tr><td>context</td><td>*</td><td>Yes</td><td>Only remove the listeners that have this context.</td></tr><tr><td>once</td><td>boolean</td><td>Yes</td><td>Only remove one-time listeners.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/3.85.2/class/input-gamepad-gamepad">Phaser.Input.Gamepad.Gamepad</a> - <code>this</code>.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#removeListener">Phaser.Events.EventEmitter#removeListener</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L137" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L137</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setaxisthreshold">setAxisThreshold<a href="#setaxisthreshold" class="hash-link" aria-label="Direct link to setAxisThreshold" title="Direct link to setAxisThreshold" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setaxisthresholdvalue">&lt;instance&gt; setAxisThreshold(value)<a href="#instance-setaxisthresholdvalue" class="hash-link" aria-label="Direct link to &lt;instance&gt; setAxisThreshold(value)" title="Direct link to &lt;instance&gt; setAxisThreshold(value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the threshold value of all axis on this Gamepad.
+The value is a float between 0 and 1 and is the amount below which the axis is considered as not having been moved.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>A value between 0 and 1.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L358" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L358</a><br>
+Since: 3.10.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shutdown">shutdown<a href="#shutdown" class="hash-link" aria-label="Direct link to shutdown" title="Direct link to shutdown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-shutdown">&lt;instance&gt; shutdown()<a href="#instance-shutdown" class="hash-link" aria-label="Direct link to &lt;instance&gt; shutdown()" title="Direct link to &lt;instance&gt; shutdown()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes all listeners.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/3.85.2/class/events-eventemitter#shutdown">Phaser.Events.EventEmitter#shutdown</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/events/EventEmitter.js#L31" target="_blank" rel="noopener noreferrer" class="">src/events/EventEmitter.js#L31</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h1>Private Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="update">update<a href="#update" class="hash-link" aria-label="Direct link to update" title="Direct link to update" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-update">&lt;instance&gt; update()<a href="#instance-update" class="hash-link" aria-label="Direct link to &lt;instance&gt; update()" title="Direct link to &lt;instance&gt; update()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Internal update handler for this Gamepad.
+Called automatically by the Gamepad Manager as part of its update.</p>
+<p><strong>Access:</strong> private</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/input/gamepad/Gamepad.js#L423" target="_blank" rel="noopener noreferrer" class="">src/input/gamepad/Gamepad.js#L423</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/class/input-gamepad-button"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Button</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/class/input-gamepad-gamepadplugin"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">GamepadPlugin</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#a" class="table-of-contents__link toc-highlight">A</a><ul><li><a href="#a-boolean" class="table-of-contents__link toc-highlight">A: boolean</a></li></ul></li><li><a href="#axes" class="table-of-contents__link toc-highlight">axes</a><ul><li><a href="#axes-arrayphaserinputgamepadaxis" class="table-of-contents__link toc-highlight">axes: Array.&lt;Phaser.Input.Gamepad.Axis&gt;</a></li></ul></li><li><a href="#b" class="table-of-contents__link toc-highlight">B</a><ul><li><a href="#b-boolean" class="table-of-contents__link toc-highlight">B: boolean</a></li></ul></li><li><a href="#buttons" class="table-of-contents__link toc-highlight">buttons</a><ul><li><a href="#buttons-arrayphaserinputgamepadbutton" class="table-of-contents__link toc-highlight">buttons: Array.&lt;Phaser.Input.Gamepad.Button&gt;</a></li></ul></li><li><a href="#connected" class="table-of-contents__link toc-highlight">connected</a><ul><li><a href="#connected-boolean" class="table-of-contents__link toc-highlight">connected: boolean</a></li></ul></li><li><a href="#down" class="table-of-contents__link toc-highlight">down</a><ul><li><a href="#down-boolean" class="table-of-contents__link toc-highlight">down: boolean</a></li></ul></li><li><a href="#id" class="table-of-contents__link toc-highlight">id</a><ul><li><a href="#id-string" class="table-of-contents__link toc-highlight">id: string</a></li></ul></li><li><a href="#index" class="table-of-contents__link toc-highlight">index</a><ul><li><a href="#index-number" class="table-of-contents__link toc-highlight">index: number</a></li></ul></li><li><a href="#l1" class="table-of-contents__link toc-highlight">L1</a><ul><li><a href="#l1-number" class="table-of-contents__link toc-highlight">L1: number</a></li></ul></li><li><a href="#l2" class="table-of-contents__link toc-highlight">L2</a><ul><li><a href="#l2-number" class="table-of-contents__link toc-highlight">L2: number</a></li></ul></li><li><a href="#left" class="table-of-contents__link toc-highlight">left</a><ul><li><a href="#left-boolean" class="table-of-contents__link toc-highlight">left: boolean</a></li></ul></li><li><a href="#leftstick" class="table-of-contents__link toc-highlight">leftStick</a><ul><li><a href="#leftstick-phasermathvector2" class="table-of-contents__link toc-highlight">leftStick: Phaser.Math.Vector2</a></li></ul></li><li><a href="#manager" class="table-of-contents__link toc-highlight">manager</a><ul><li><a href="#manager-phaserinputgamepadgamepadplugin" class="table-of-contents__link toc-highlight">manager: Phaser.Input.Gamepad.GamepadPlugin</a></li></ul></li><li><a href="#pad" class="table-of-contents__link toc-highlight">pad</a><ul><li><a href="#pad-any" class="table-of-contents__link toc-highlight">pad: any</a></li></ul></li><li><a href="#r1" class="table-of-contents__link toc-highlight">R1</a><ul><li><a href="#r1-number" class="table-of-contents__link toc-highlight">R1: number</a></li></ul></li><li><a href="#r2" class="table-of-contents__link toc-highlight">R2</a><ul><li><a href="#r2-number" class="table-of-contents__link toc-highlight">R2: number</a></li></ul></li><li><a href="#right" class="table-of-contents__link toc-highlight">right</a><ul><li><a href="#right-boolean" class="table-of-contents__link toc-highlight">right: boolean</a></li></ul></li><li><a href="#rightstick" class="table-of-contents__link toc-highlight">rightStick</a><ul><li><a href="#rightstick-phasermathvector2" class="table-of-contents__link toc-highlight">rightStick: Phaser.Math.Vector2</a></li></ul></li><li><a href="#timestamp" class="table-of-contents__link toc-highlight">timestamp</a><ul><li><a href="#timestamp-number" class="table-of-contents__link toc-highlight">timestamp: number</a></li></ul></li><li><a href="#up" class="table-of-contents__link toc-highlight">up</a><ul><li><a href="#up-boolean" class="table-of-contents__link toc-highlight">up: boolean</a></li></ul></li><li><a href="#vibration" class="table-of-contents__link toc-highlight">vibration</a><ul><li><a href="#vibration-gamepadhapticactuator" class="table-of-contents__link toc-highlight">vibration: GamepadHapticActuator</a></li></ul></li><li><a href="#x" class="table-of-contents__link toc-highlight">X</a><ul><li><a href="#x-boolean" class="table-of-contents__link toc-highlight">X: boolean</a></li></ul></li><li><a href="#y" class="table-of-contents__link toc-highlight">Y</a><ul><li><a href="#y-boolean" class="table-of-contents__link toc-highlight">Y: boolean</a></li></ul></li><li><a href="#_created" class="table-of-contents__link toc-highlight">_created</a><ul><li><a href="#_created-number" class="table-of-contents__link toc-highlight">_created: number</a></li></ul></li><li><a href="#_fbleftbottom" class="table-of-contents__link toc-highlight">_FBLeftBottom</a><ul><li><a href="#_fbleftbottom-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_FBLeftBottom: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_fblefttop" class="table-of-contents__link toc-highlight">_FBLeftTop</a><ul><li><a href="#_fblefttop-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_FBLeftTop: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_fbrightbottom" class="table-of-contents__link toc-highlight">_FBRightBottom</a><ul><li><a href="#_fbrightbottom-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_FBRightBottom: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_fbrighttop" class="table-of-contents__link toc-highlight">_FBRightTop</a><ul><li><a href="#_fbrighttop-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_FBRightTop: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_haxisleft" class="table-of-contents__link toc-highlight">_HAxisLeft</a><ul><li><a href="#_haxisleft-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_HAxisLeft: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_haxisright" class="table-of-contents__link toc-highlight">_HAxisRight</a><ul><li><a href="#_haxisright-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_HAxisRight: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_lcbottom" class="table-of-contents__link toc-highlight">_LCBottom</a><ul><li><a href="#_lcbottom-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_LCBottom: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_lcleft" class="table-of-contents__link toc-highlight">_LCLeft</a><ul><li><a href="#_lcleft-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_LCLeft: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_lcright" class="table-of-contents__link toc-highlight">_LCRight</a><ul><li><a href="#_lcright-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_LCRight: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_lctop" class="table-of-contents__link toc-highlight">_LCTop</a><ul><li><a href="#_lctop-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_LCTop: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_rcbottom" class="table-of-contents__link toc-highlight">_RCBottom</a><ul><li><a href="#_rcbottom-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_RCBottom: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_rcleft" class="table-of-contents__link toc-highlight">_RCLeft</a><ul><li><a href="#_rcleft-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_RCLeft: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_rcright" class="table-of-contents__link toc-highlight">_RCRight</a><ul><li><a href="#_rcright-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_RCRight: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_rctop" class="table-of-contents__link toc-highlight">_RCTop</a><ul><li><a href="#_rctop-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_RCTop: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_vaxisleft" class="table-of-contents__link toc-highlight">_VAxisLeft</a><ul><li><a href="#_vaxisleft-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_VAxisLeft: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#_vaxisright" class="table-of-contents__link toc-highlight">_VAxisRight</a><ul><li><a href="#_vaxisright-phaserinputgamepadbutton" class="table-of-contents__link toc-highlight">_VAxisRight: Phaser.Input.Gamepad.Button</a></li></ul></li><li><a href="#addlistener" class="table-of-contents__link toc-highlight">addListener</a><ul><li><a href="#instance-addlistenerevent-fn-context" class="table-of-contents__link toc-highlight">&lt;instance&gt; addListener(event, fn, [context])</a></li></ul></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">destroy</a><ul><li><a href="#instance-destroy" class="table-of-contents__link toc-highlight">&lt;instance&gt; destroy()</a></li></ul></li><li><a href="#emit" class="table-of-contents__link toc-highlight">emit</a><ul><li><a href="#instance-emitevent-args" class="table-of-contents__link toc-highlight">&lt;instance&gt; emit(event, [args])</a></li></ul></li><li><a href="#eventnames" class="table-of-contents__link toc-highlight">eventNames</a><ul><li><a href="#instance-eventnames" class="table-of-contents__link toc-highlight">&lt;instance&gt; eventNames()</a></li></ul></li><li><a href="#getaxistotal" class="table-of-contents__link toc-highlight">getAxisTotal</a><ul><li><a href="#instance-getaxistotal" class="table-of-contents__link toc-highlight">&lt;instance&gt; getAxisTotal()</a></li></ul></li><li><a href="#getaxisvalue" class="table-of-contents__link toc-highlight">getAxisValue</a><ul><li><a href="#instance-getaxisvalueindex" class="table-of-contents__link toc-highlight">&lt;instance&gt; getAxisValue(index)</a></li></ul></li><li><a href="#getbuttontotal" class="table-of-contents__link toc-highlight">getButtonTotal</a><ul><li><a href="#instance-getbuttontotal" class="table-of-contents__link toc-highlight">&lt;instance&gt; getButtonTotal()</a></li></ul></li><li><a href="#getbuttonvalue" class="table-of-contents__link toc-highlight">getButtonValue</a><ul><li><a href="#instance-getbuttonvalueindex" class="table-of-contents__link toc-highlight">&lt;instance&gt; getButtonValue(index)</a></li></ul></li><li><a href="#isbuttondown" class="table-of-contents__link toc-highlight">isButtonDown</a><ul><li><a href="#instance-isbuttondownindex" class="table-of-contents__link toc-highlight">&lt;instance&gt; isButtonDown(index)</a></li></ul></li><li><a href="#listenercount" class="table-of-contents__link toc-highlight">listenerCount</a><ul><li><a href="#instance-listenercountevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; listenerCount(event)</a></li></ul></li><li><a href="#listeners" class="table-of-contents__link toc-highlight">listeners</a><ul><li><a href="#instance-listenersevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; listeners(event)</a></li></ul></li><li><a href="#off" class="table-of-contents__link toc-highlight">off</a><ul><li><a href="#instance-offevent-fn-context-once" class="table-of-contents__link toc-highlight">&lt;instance&gt; off(event, [fn], [context], [once])</a></li></ul></li><li><a href="#on" class="table-of-contents__link toc-highlight">on</a><ul><li><a href="#instance-onevent-fn-context" class="table-of-contents__link toc-highlight">&lt;instance&gt; on(event, fn, [context])</a></li></ul></li><li><a href="#once" class="table-of-contents__link toc-highlight">once</a><ul><li><a href="#instance-onceevent-fn-context" class="table-of-contents__link toc-highlight">&lt;instance&gt; once(event, fn, [context])</a></li></ul></li><li><a href="#removealllisteners" class="table-of-contents__link toc-highlight">removeAllListeners</a><ul><li><a href="#instance-removealllistenersevent" class="table-of-contents__link toc-highlight">&lt;instance&gt; removeAllListeners([event])</a></li></ul></li><li><a href="#removelistener" class="table-of-contents__link toc-highlight">removeListener</a><ul><li><a href="#instance-removelistenerevent-fn-context-once" class="table-of-contents__link toc-highlight">&lt;instance&gt; removeListener(event, [fn], [context], [once])</a></li></ul></li><li><a href="#setaxisthreshold" class="table-of-contents__link toc-highlight">setAxisThreshold</a><ul><li><a href="#instance-setaxisthresholdvalue" class="table-of-contents__link toc-highlight">&lt;instance&gt; setAxisThreshold(value)</a></li></ul></li><li><a href="#shutdown" class="table-of-contents__link toc-highlight">shutdown</a><ul><li><a href="#instance-shutdown" class="table-of-contents__link toc-highlight">&lt;instance&gt; shutdown()</a></li></ul></li><li><a href="#update" class="table-of-contents__link toc-highlight">update</a><ul><li><a href="#instance-update" class="table-of-contents__link toc-highlight">&lt;instance&gt; update()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

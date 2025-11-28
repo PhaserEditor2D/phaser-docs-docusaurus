@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-typedef/Phaser.Types.Physics.Arcade" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Types.Physics.Arcade | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-physics-arcade"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="Types.Physics.Arcade | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Types.Physics.Arcade"><meta data-rh="true" property="og:description" content="Phaser.Types.Physics.Arcade"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-physics-arcade"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-physics-arcade" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-physics-arcade" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Typedefs","item":"https://docs.phaser.io/api-documentation/3.85.2/typedef/"},{"@type":"ListItem","position":2,"name":"Types.Physics.Arcade","item":"https://docs.phaser.io/api-documentation/3.85.2/typedef/types-physics-arcade"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/typedef/types-physics-arcade">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/typedef/types-physics-arcade">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/typedef/types-physics-arcade">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/typedef/types-physics-arcade">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Collapse sidebar category &#x27;Typedefs&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/device"><span title="Device" class="linkLabel_WmDU">Device</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/scale"><span title="Scale" class="linkLabel_WmDU">Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/tilemaps"><span title="Tilemaps" class="linkLabel_WmDU">Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/tweens"><span title="Tweens" class="linkLabel_WmDU">Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-actions"><span title="Types.Actions" class="linkLabel_WmDU">Types.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-animations"><span title="Types.Animations" class="linkLabel_WmDU">Types.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-cameras-controls"><span title="Types.Cameras.Controls" class="linkLabel_WmDU">Types.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-cameras-scene2d"><span title="Types.Cameras.Scene2D" class="linkLabel_WmDU">Types.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-core"><span title="Types.Core" class="linkLabel_WmDU">Types.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-create"><span title="Types.Create" class="linkLabel_WmDU">Types.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-curves"><span title="Types.Curves" class="linkLabel_WmDU">Types.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-display"><span title="Types.Display" class="linkLabel_WmDU">Types.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-bitmaptext"><span title="Types.GameObjects.BitmapText" class="linkLabel_WmDU">Types.GameObjects.BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-container"><span title="Types.GameObjects.Container" class="linkLabel_WmDU">Types.GameObjects.Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-graphics"><span title="Types.GameObjects.Graphics" class="linkLabel_WmDU">Types.GameObjects.Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-group"><span title="Types.GameObjects.Group" class="linkLabel_WmDU">Types.GameObjects.Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-mesh"><span title="Types.GameObjects.Mesh" class="linkLabel_WmDU">Types.GameObjects.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-nineslice"><span title="Types.GameObjects.NineSlice" class="linkLabel_WmDU">Types.GameObjects.NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-particles"><span title="Types.GameObjects.Particles" class="linkLabel_WmDU">Types.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-pathfollower"><span title="Types.GameObjects.PathFollower" class="linkLabel_WmDU">Types.GameObjects.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-plane"><span title="Types.GameObjects.Plane" class="linkLabel_WmDU">Types.GameObjects.Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-rendertexture"><span title="Types.GameObjects.RenderTexture" class="linkLabel_WmDU">Types.GameObjects.RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-rope"><span title="Types.GameObjects.Rope" class="linkLabel_WmDU">Types.GameObjects.Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-shader"><span title="Types.GameObjects.Shader" class="linkLabel_WmDU">Types.GameObjects.Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-sprite"><span title="Types.GameObjects.Sprite" class="linkLabel_WmDU">Types.GameObjects.Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-text"><span title="Types.GameObjects.Text" class="linkLabel_WmDU">Types.GameObjects.Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-tilesprite"><span title="Types.GameObjects.TileSprite" class="linkLabel_WmDU">Types.GameObjects.TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-video"><span title="Types.GameObjects.Video" class="linkLabel_WmDU">Types.GameObjects.Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-zone"><span title="Types.GameObjects.Zone" class="linkLabel_WmDU">Types.GameObjects.Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects"><span title="Types.GameObjects" class="linkLabel_WmDU">Types.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-geom-mesh"><span title="Types.Geom.Mesh" class="linkLabel_WmDU">Types.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-input-gamepad"><span title="Types.Input.Gamepad" class="linkLabel_WmDU">Types.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-input-keyboard"><span title="Types.Input.Keyboard" class="linkLabel_WmDU">Types.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-input"><span title="Types.Input" class="linkLabel_WmDU">Types.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-loader-filetypes"><span title="Types.Loader.FileTypes" class="linkLabel_WmDU">Types.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-loader"><span title="Types.Loader" class="linkLabel_WmDU">Types.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-math"><span title="Types.Math" class="linkLabel_WmDU">Types.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/typedef/types-physics-arcade"><span title="Types.Physics.Arcade" class="linkLabel_WmDU">Types.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-physics-matter"><span title="Types.Physics.Matter" class="linkLabel_WmDU">Types.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-plugins"><span title="Types.Plugins" class="linkLabel_WmDU">Types.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-renderer-snapshot"><span title="Types.Renderer.Snapshot" class="linkLabel_WmDU">Types.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-renderer-webgl"><span title="Types.Renderer.WebGL" class="linkLabel_WmDU">Types.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-scenes"><span title="Types.Scenes" class="linkLabel_WmDU">Types.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-sound"><span title="Types.Sound" class="linkLabel_WmDU">Types.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-textures"><span title="Types.Textures" class="linkLabel_WmDU">Types.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-tilemaps"><span title="Types.Tilemaps" class="linkLabel_WmDU">Types.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-time"><span title="Types.Time" class="linkLabel_WmDU">Types.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-tweens"><span title="Types.Tweens" class="linkLabel_WmDU">Types.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/phaser"><span title="Phaser" class="linkLabel_WmDU">Phaser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="linkLabel_WmDU">Typedefs</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/typedef/types-physics-arcade">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/typedef/"><span>Typedefs</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Types.Physics.Arcade</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Types.Physics.Arcade</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadebodybounds">ArcadeBodyBounds<a href="#arcadebodybounds" class="hash-link" aria-label="Direct link to ArcadeBodyBounds" title="Direct link to ArcadeBodyBounds" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadebodybounds">&lt;static&gt; ArcadeBodyBounds<a href="#static-arcadebodybounds" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadeBodyBounds" title="Direct link to &lt;static&gt; ArcadeBodyBounds" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>No</td><td>The left edge.</td></tr><tr><td>y</td><td>number</td><td>No</td><td>The upper edge.</td></tr><tr><td>right</td><td>number</td><td>No</td><td>The right edge.</td></tr><tr><td>bottom</td><td>number</td><td>No</td><td>The lower edge.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadeBodyBounds.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadeBodyBounds.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadebodycollision">ArcadeBodyCollision<a href="#arcadebodycollision" class="hash-link" aria-label="Direct link to ArcadeBodyCollision" title="Direct link to ArcadeBodyCollision" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadebodycollision">&lt;static&gt; ArcadeBodyCollision<a href="#static-arcadebodycollision" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadeBodyCollision" title="Direct link to &lt;static&gt; ArcadeBodyCollision" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>none</td><td>boolean</td><td>No</td><td>True if the Body is not colliding.</td></tr><tr><td>up</td><td>boolean</td><td>No</td><td>True if the Body is colliding on its upper edge.</td></tr><tr><td>down</td><td>boolean</td><td>No</td><td>True if the Body is colliding on its lower edge.</td></tr><tr><td>left</td><td>boolean</td><td>No</td><td>True if the Body is colliding on its left edge.</td></tr><tr><td>right</td><td>boolean</td><td>No</td><td>True if the Body is colliding on its right edge.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadeBodyCollision.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadeBodyCollision.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadecollider">ArcadeCollider<a href="#arcadecollider" class="hash-link" aria-label="Direct link to ArcadeCollider" title="Direct link to ArcadeCollider" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadecollider">&lt;static&gt; ArcadeCollider<a href="#static-arcadecollider" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadeCollider" title="Direct link to &lt;static&gt; ArcadeCollider" translate="no">​</a></h3>
+<p>An Arcade Physics Collider Type.</p>
+<p><strong>Type</strong>: <a class="" href="/api-documentation/3.85.2/class/physics-arcade-sprite">Phaser.Physics.Arcade.Sprite</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-image">Phaser.Physics.Arcade.Image</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticgroup">Phaser.Physics.Arcade.StaticGroup</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-group">Phaser.Physics.Arcade.Group</a> | <a class="" href="/api-documentation/3.85.2/class/tilemaps-tilemaplayer">Phaser.Tilemaps.TilemapLayer</a></p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadeCollider.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadeCollider.js#L1</a><br>
+Since: 3.70.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadecollidertype">ArcadeColliderType<a href="#arcadecollidertype" class="hash-link" aria-label="Direct link to ArcadeColliderType" title="Direct link to ArcadeColliderType" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadecollidertype">&lt;static&gt; ArcadeColliderType<a href="#static-arcadecollidertype" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadeColliderType" title="Direct link to &lt;static&gt; ArcadeColliderType" translate="no">​</a></h3>
+<p>An Arcade Physics Collider Type.</p>
+<p><strong>Type</strong>: <a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a> | <a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a> | <a class="" href="/api-documentation/3.85.2/class/gameobjects-group">Phaser.GameObjects.Group</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-sprite">Phaser.Physics.Arcade.Sprite</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-image">Phaser.Physics.Arcade.Image</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticgroup">Phaser.Physics.Arcade.StaticGroup</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-group">Phaser.Physics.Arcade.Group</a> | <a class="" href="/api-documentation/3.85.2/class/tilemaps-tilemaplayer">Phaser.Tilemaps.TilemapLayer</a> | Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a>&gt; | Array.&lt;<a class="" href="/api-documentation/3.85.2/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt; | Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-sprite">Phaser.Physics.Arcade.Sprite</a>&gt; | Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-image">Phaser.Physics.Arcade.Image</a>&gt; | Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticgroup">Phaser.Physics.Arcade.StaticGroup</a>&gt; | Array.&lt;<a class="" href="/api-documentation/3.85.2/class/physics-arcade-group">Phaser.Physics.Arcade.Group</a>&gt; | Array.&lt;<a class="" href="/api-documentation/3.85.2/class/tilemaps-tilemaplayer">Phaser.Tilemaps.TilemapLayer</a>&gt;</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadeColliderType.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadeColliderType.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadephysicscallback">ArcadePhysicsCallback<a href="#arcadephysicscallback" class="hash-link" aria-label="Direct link to ArcadePhysicsCallback" title="Direct link to ArcadePhysicsCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadephysicscallback">&lt;static&gt; ArcadePhysicsCallback<a href="#static-arcadephysicscallback" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadePhysicsCallback" title="Direct link to &lt;static&gt; ArcadePhysicsCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadePhysicsCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadePhysicsCallback.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadeworldconfig">ArcadeWorldConfig<a href="#arcadeworldconfig" class="hash-link" aria-label="Direct link to ArcadeWorldConfig" title="Direct link to ArcadeWorldConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadeworldconfig">&lt;static&gt; ArcadeWorldConfig<a href="#static-arcadeworldconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadeWorldConfig" title="Direct link to &lt;static&gt; ArcadeWorldConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>fps</td><td>number</td><td>Yes</td><td>60</td><td>Sets {@link Phaser.Physics.Arcade.World#fps}.</td></tr><tr><td>fixedStep</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.World#fixedStep}.</td></tr><tr><td>timeScale</td><td>number</td><td>Yes</td><td>1</td><td>Sets {@link Phaser.Physics.Arcade.World#timeScale}.</td></tr><tr><td>gravity</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-math#Vector2Like">Phaser.Types.Math.Vector2Like</a></td><td>Yes</td><td></td><td>Sets {@link Phaser.Physics.Arcade.World#gravity}.</td></tr><tr><td>x</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.World#bounds bounds.x}.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.World#bounds bounds.y}.</td></tr><tr><td>width</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.World#bounds bounds.width}.</td></tr><tr><td>height</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.World#bounds bounds.height}.</td></tr><tr><td>checkCollision</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-physics-arcade#CheckCollisionObject">Phaser.Types.Physics.Arcade.CheckCollisionObject</a></td><td>Yes</td><td></td><td>Sets {@link Phaser.Physics.Arcade.World#checkCollision}.</td></tr><tr><td>overlapBias</td><td>number</td><td>Yes</td><td>4</td><td>Sets {@link Phaser.Physics.Arcade.World#OVERLAP_BIAS}.</td></tr><tr><td>tileBias</td><td>number</td><td>Yes</td><td>16</td><td>Sets {@link Phaser.Physics.Arcade.World#TILE_BIAS}.</td></tr><tr><td>forceX</td><td>boolean</td><td>Yes</td><td>false</td><td>Sets {@link Phaser.Physics.Arcade.World#forceX}.</td></tr><tr><td>isPaused</td><td>boolean</td><td>Yes</td><td>false</td><td>Sets {@link Phaser.Physics.Arcade.World#isPaused}.</td></tr><tr><td>debug</td><td>boolean</td><td>Yes</td><td>false</td><td>Sets {@link Phaser.Physics.Arcade.World#debug}.</td></tr><tr><td>debugShowBody</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.World#defaults debugShowBody}.</td></tr><tr><td>debugShowStaticBody</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.World#defaults debugShowStaticBody}.</td></tr><tr><td>debugShowVelocity</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.World#defaults debugShowStaticBody}.</td></tr><tr><td>debugBodyColor</td><td>number</td><td>Yes</td><td>&quot;0xff00ff&quot;</td><td>Sets {@link Phaser.Physics.Arcade.World#defaults bodyDebugColor}.</td></tr><tr><td>debugStaticBodyColor</td><td>number</td><td>Yes</td><td>&quot;0x0000ff&quot;</td><td>Sets {@link Phaser.Physics.Arcade.World#defaults staticBodyDebugColor}.</td></tr><tr><td>debugVelocityColor</td><td>number</td><td>Yes</td><td>&quot;0x00ff00&quot;</td><td>Sets {@link Phaser.Physics.Arcade.World#defaults velocityDebugColor}.</td></tr><tr><td>maxEntries</td><td>number</td><td>Yes</td><td>16</td><td>Sets {@link Phaser.Physics.Arcade.World#maxEntries}.</td></tr><tr><td>useTree</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.World#useTree}.</td></tr><tr><td>customUpdate</td><td>boolean</td><td>Yes</td><td>false</td><td>If enabled, you need to call <code>World.update</code> yourself.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadeWorldConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadeWorldConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadeworlddefaults">ArcadeWorldDefaults<a href="#arcadeworlddefaults" class="hash-link" aria-label="Direct link to ArcadeWorldDefaults" title="Direct link to ArcadeWorldDefaults" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadeworlddefaults">&lt;static&gt; ArcadeWorldDefaults<a href="#static-arcadeworlddefaults" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadeWorldDefaults" title="Direct link to &lt;static&gt; ArcadeWorldDefaults" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>debugShowBody</td><td>boolean</td><td>No</td><td>Set to <code>true</code> to render dynamic body outlines to the debug display.</td></tr><tr><td>debugShowStaticBody</td><td>boolean</td><td>No</td><td>Set to <code>true</code> to render static body outlines to the debug display.</td></tr><tr><td>debugShowVelocity</td><td>boolean</td><td>No</td><td>Set to <code>true</code> to render body velocity markers to the debug display.</td></tr><tr><td>bodyDebugColor</td><td>number</td><td>No</td><td>The color of dynamic body outlines when rendered to the debug display.</td></tr><tr><td>staticBodyDebugColor</td><td>number</td><td>No</td><td>The color of static body outlines when rendered to the debug display.</td></tr><tr><td>velocityDebugColor</td><td>number</td><td>No</td><td>The color of the velocity markers when rendered to the debug display.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadeWorldDefaults.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadeWorldDefaults.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arcadeworldtreeminmax">ArcadeWorldTreeMinMax<a href="#arcadeworldtreeminmax" class="hash-link" aria-label="Direct link to ArcadeWorldTreeMinMax" title="Direct link to ArcadeWorldTreeMinMax" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arcadeworldtreeminmax">&lt;static&gt; ArcadeWorldTreeMinMax<a href="#static-arcadeworldtreeminmax" class="hash-link" aria-label="Direct link to &lt;static&gt; ArcadeWorldTreeMinMax" title="Direct link to &lt;static&gt; ArcadeWorldTreeMinMax" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>minX</td><td>number</td><td>No</td><td>The minimum x value used in RTree searches.</td></tr><tr><td>minY</td><td>number</td><td>No</td><td>The minimum y value used in RTree searches.</td></tr><tr><td>maxX</td><td>number</td><td>No</td><td>The maximum x value used in RTree searches.</td></tr><tr><td>maxY</td><td>number</td><td>No</td><td>The maximum y value used in RTree searches.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ArcadeWorldTreeMinMax.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ArcadeWorldTreeMinMax.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="checkcollisionobject">CheckCollisionObject<a href="#checkcollisionobject" class="hash-link" aria-label="Direct link to CheckCollisionObject" title="Direct link to CheckCollisionObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-checkcollisionobject">&lt;static&gt; CheckCollisionObject<a href="#static-checkcollisionobject" class="hash-link" aria-label="Direct link to &lt;static&gt; CheckCollisionObject" title="Direct link to &lt;static&gt; CheckCollisionObject" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>up</td><td>boolean</td><td>No</td><td>Will bodies collide with the top side of the world bounds?</td></tr><tr><td>down</td><td>boolean</td><td>No</td><td>Will bodies collide with the bottom side of the world bounds?</td></tr><tr><td>left</td><td>boolean</td><td>No</td><td>Will bodies collide with the left side of the world bounds?</td></tr><tr><td>right</td><td>boolean</td><td>No</td><td>Will bodies collide with the right side of the world bounds?</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/CheckCollisionObject.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/CheckCollisionObject.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobjectwithbody">GameObjectWithBody<a href="#gameobjectwithbody" class="hash-link" aria-label="Direct link to GameObjectWithBody" title="Direct link to GameObjectWithBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gameobjectwithbody">&lt;static&gt; GameObjectWithBody<a href="#static-gameobjectwithbody" class="hash-link" aria-label="Direct link to &lt;static&gt; GameObjectWithBody" title="Direct link to &lt;static&gt; GameObjectWithBody" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a> | <a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/GameObjectWithBody.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/GameObjectWithBody.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobjectwithdynamicbody">GameObjectWithDynamicBody<a href="#gameobjectwithdynamicbody" class="hash-link" aria-label="Direct link to GameObjectWithDynamicBody" title="Direct link to GameObjectWithDynamicBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gameobjectwithdynamicbody">&lt;static&gt; GameObjectWithDynamicBody<a href="#static-gameobjectwithdynamicbody" class="hash-link" aria-label="Direct link to &lt;static&gt; GameObjectWithDynamicBody" title="Direct link to &lt;static&gt; GameObjectWithDynamicBody" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/GameObjectWithDynamicBody.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/GameObjectWithDynamicBody.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobjectwithstaticbody">GameObjectWithStaticBody<a href="#gameobjectwithstaticbody" class="hash-link" aria-label="Direct link to GameObjectWithStaticBody" title="Direct link to GameObjectWithStaticBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gameobjectwithstaticbody">&lt;static&gt; GameObjectWithStaticBody<a href="#static-gameobjectwithstaticbody" class="hash-link" aria-label="Direct link to &lt;static&gt; GameObjectWithStaticBody" title="Direct link to &lt;static&gt; GameObjectWithStaticBody" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/GameObjectWithStaticBody.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/GameObjectWithStaticBody.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="imagewithdynamicbody">ImageWithDynamicBody<a href="#imagewithdynamicbody" class="hash-link" aria-label="Direct link to ImageWithDynamicBody" title="Direct link to ImageWithDynamicBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-imagewithdynamicbody">&lt;static&gt; ImageWithDynamicBody<a href="#static-imagewithdynamicbody" class="hash-link" aria-label="Direct link to &lt;static&gt; ImageWithDynamicBody" title="Direct link to &lt;static&gt; ImageWithDynamicBody" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ImageWithDynamicBody.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ImageWithDynamicBody.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="imagewithstaticbody">ImageWithStaticBody<a href="#imagewithstaticbody" class="hash-link" aria-label="Direct link to ImageWithStaticBody" title="Direct link to ImageWithStaticBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-imagewithstaticbody">&lt;static&gt; ImageWithStaticBody<a href="#static-imagewithstaticbody" class="hash-link" aria-label="Direct link to &lt;static&gt; ImageWithStaticBody" title="Direct link to &lt;static&gt; ImageWithStaticBody" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/ImageWithStaticBody.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/ImageWithStaticBody.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="physicsgroupconfig">PhysicsGroupConfig<a href="#physicsgroupconfig" class="hash-link" aria-label="Direct link to PhysicsGroupConfig" title="Direct link to PhysicsGroupConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-physicsgroupconfig">&lt;static&gt; PhysicsGroupConfig<a href="#static-physicsgroupconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; PhysicsGroupConfig" title="Direct link to &lt;static&gt; PhysicsGroupConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>collideWorldBounds</td><td>boolean</td><td>Yes</td><td>false</td><td>Sets {@link Phaser.Physics.Arcade.Body#collideWorldBounds}.</td></tr><tr><td>customBoundsRectangle</td><td><a class="" href="/api-documentation/3.85.2/class/geom-rectangle">Phaser.Geom.Rectangle</a></td><td>Yes</td><td>null</td><td>Sets {@link Phaser.Physics.Arcade.Body#setBoundsRectangle setBoundsRectangle}.</td></tr><tr><td>accelerationX</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#acceleration acceleration.x}.</td></tr><tr><td>accelerationY</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#acceleration acceleration.y}.</td></tr><tr><td>allowDrag</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.Body#allowDrag}.</td></tr><tr><td>allowGravity</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.Body#allowGravity}.</td></tr><tr><td>allowRotation</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.Body#allowRotation}.</td></tr><tr><td>useDamping</td><td>boolean</td><td>Yes</td><td>false</td><td>Sets {@link Phaser.Physics.Arcade.Body#useDamping useDamping}.</td></tr><tr><td>bounceX</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#bounce bounce.x}.</td></tr><tr><td>bounceY</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#bounce bounce.y}.</td></tr><tr><td>dragX</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#drag drag.x}.</td></tr><tr><td>dragY</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#drag drag.y}.</td></tr><tr><td>enable</td><td>boolean</td><td>Yes</td><td>true</td><td>Sets {@link Phaser.Physics.Arcade.Body#enable enable}.</td></tr><tr><td>gravityX</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#gravity gravity.x}.</td></tr><tr><td>gravityY</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#gravity gravity.y}.</td></tr><tr><td>frictionX</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#friction friction.x}.</td></tr><tr><td>frictionY</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#friction friction.y}.</td></tr><tr><td>maxSpeed</td><td>number</td><td>Yes</td><td>-1</td><td>Sets {@link Phaser.Physics.Arcade.Body#maxSpeed maxSpeed}.</td></tr><tr><td>maxVelocityX</td><td>number</td><td>Yes</td><td>10000</td><td>Sets {@link Phaser.Physics.Arcade.Body#maxVelocity maxVelocity.x}.</td></tr><tr><td>maxVelocityY</td><td>number</td><td>Yes</td><td>10000</td><td>Sets {@link Phaser.Physics.Arcade.Body#maxVelocity maxVelocity.y}.</td></tr><tr><td>velocityX</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#velocity velocity.x}.</td></tr><tr><td>velocityY</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#velocity velocity.y}.</td></tr><tr><td>angularVelocity</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#angularVelocity}.</td></tr><tr><td>angularAcceleration</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#angularAcceleration}.</td></tr><tr><td>angularDrag</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#angularDrag}.</td></tr><tr><td>mass</td><td>number</td><td>Yes</td><td>0</td><td>Sets {@link Phaser.Physics.Arcade.Body#mass}.</td></tr><tr><td>immovable</td><td>boolean</td><td>Yes</td><td>false</td><td>Sets {@link Phaser.Physics.Arcade.Body#immovable}.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/PhysicsGroupConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/PhysicsGroupConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="physicsgroupdefaults">PhysicsGroupDefaults<a href="#physicsgroupdefaults" class="hash-link" aria-label="Direct link to PhysicsGroupDefaults" title="Direct link to PhysicsGroupDefaults" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-physicsgroupdefaults">&lt;static&gt; PhysicsGroupDefaults<a href="#static-physicsgroupdefaults" class="hash-link" aria-label="Direct link to &lt;static&gt; PhysicsGroupDefaults" title="Direct link to &lt;static&gt; PhysicsGroupDefaults" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>setCollideWorldBounds</td><td>boolean</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setCollideWorldBounds}.</td></tr><tr><td>setBoundsRectangle</td><td><a class="" href="/api-documentation/3.85.2/class/geom-rectangle">Phaser.Geom.Rectangle</a></td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setBoundsRectangle}.</td></tr><tr><td>setAccelerationX</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAccelerationX}.</td></tr><tr><td>setAccelerationY</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAccelerationY}.</td></tr><tr><td>setAllowDrag</td><td>boolean</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAllowDrag}.</td></tr><tr><td>setAllowGravity</td><td>boolean</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAllowGravity}.</td></tr><tr><td>setAllowRotation</td><td>boolean</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAllowRotation}.</td></tr><tr><td>setDamping</td><td>boolean</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setDamping}.</td></tr><tr><td>setBounceX</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setBounceX}.</td></tr><tr><td>setBounceY</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setBounceY}.</td></tr><tr><td>setDragX</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setDragX}.</td></tr><tr><td>setDragY</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setDragY}.</td></tr><tr><td>setEnable</td><td>boolean</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setEnable}.</td></tr><tr><td>setGravityX</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setGravityX}.</td></tr><tr><td>setGravityY</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setGravityY}.</td></tr><tr><td>setFrictionX</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setFrictionX}.</td></tr><tr><td>setFrictionY</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setFrictionY}.</td></tr><tr><td>setMaxSpeed</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setMaxSpeed}.</td></tr><tr><td>setVelocityX</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setVelocityX}.</td></tr><tr><td>setVelocityY</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setVelocityY}.</td></tr><tr><td>setAngularVelocity</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAngularVelocity}.</td></tr><tr><td>setAngularAcceleration</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAngularAcceleration}.</td></tr><tr><td>setAngularDrag</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setAngularDrag}.</td></tr><tr><td>setMass</td><td>number</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setMass}.</td></tr><tr><td>setImmovable</td><td>boolean</td><td>No</td><td>As {@link Phaser.Physics.Arcade.Body#setImmovable}.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/PhysicsGroupDefaults.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/PhysicsGroupDefaults.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spritewithdynamicbody">SpriteWithDynamicBody<a href="#spritewithdynamicbody" class="hash-link" aria-label="Direct link to SpriteWithDynamicBody" title="Direct link to SpriteWithDynamicBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-spritewithdynamicbody">&lt;static&gt; SpriteWithDynamicBody<a href="#static-spritewithdynamicbody" class="hash-link" aria-label="Direct link to &lt;static&gt; SpriteWithDynamicBody" title="Direct link to &lt;static&gt; SpriteWithDynamicBody" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-body">Phaser.Physics.Arcade.Body</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/SpriteWithDynamicBody.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/SpriteWithDynamicBody.js#L1</a></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spritewithstaticbody">SpriteWithStaticBody<a href="#spritewithstaticbody" class="hash-link" aria-label="Direct link to SpriteWithStaticBody" title="Direct link to SpriteWithStaticBody" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-spritewithstaticbody">&lt;static&gt; SpriteWithStaticBody<a href="#static-spritewithstaticbody" class="hash-link" aria-label="Direct link to &lt;static&gt; SpriteWithStaticBody" title="Direct link to &lt;static&gt; SpriteWithStaticBody" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>body</td><td><a class="" href="/api-documentation/3.85.2/class/physics-arcade-staticbody">Phaser.Physics.Arcade.StaticBody</a></td><td>No</td><td>No description provided</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Physics.Arcade</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/physics/arcade/typedefs/SpriteWithStaticBody.js#L1" target="_blank" rel="noopener noreferrer" class="">src/physics/arcade/typedefs/SpriteWithStaticBody.js#L1</a></p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/typedef/types-math"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Types.Math</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/typedef/types-physics-matter"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Types.Physics.Matter</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#arcadebodybounds" class="table-of-contents__link toc-highlight">ArcadeBodyBounds</a><ul><li><a href="#static-arcadebodybounds" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadeBodyBounds</a></li></ul></li><li><a href="#arcadebodycollision" class="table-of-contents__link toc-highlight">ArcadeBodyCollision</a><ul><li><a href="#static-arcadebodycollision" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadeBodyCollision</a></li></ul></li><li><a href="#arcadecollider" class="table-of-contents__link toc-highlight">ArcadeCollider</a><ul><li><a href="#static-arcadecollider" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadeCollider</a></li></ul></li><li><a href="#arcadecollidertype" class="table-of-contents__link toc-highlight">ArcadeColliderType</a><ul><li><a href="#static-arcadecollidertype" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadeColliderType</a></li></ul></li><li><a href="#arcadephysicscallback" class="table-of-contents__link toc-highlight">ArcadePhysicsCallback</a><ul><li><a href="#static-arcadephysicscallback" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadePhysicsCallback</a></li></ul></li><li><a href="#arcadeworldconfig" class="table-of-contents__link toc-highlight">ArcadeWorldConfig</a><ul><li><a href="#static-arcadeworldconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadeWorldConfig</a></li></ul></li><li><a href="#arcadeworlddefaults" class="table-of-contents__link toc-highlight">ArcadeWorldDefaults</a><ul><li><a href="#static-arcadeworlddefaults" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadeWorldDefaults</a></li></ul></li><li><a href="#arcadeworldtreeminmax" class="table-of-contents__link toc-highlight">ArcadeWorldTreeMinMax</a><ul><li><a href="#static-arcadeworldtreeminmax" class="table-of-contents__link toc-highlight">&lt;static&gt; ArcadeWorldTreeMinMax</a></li></ul></li><li><a href="#checkcollisionobject" class="table-of-contents__link toc-highlight">CheckCollisionObject</a><ul><li><a href="#static-checkcollisionobject" class="table-of-contents__link toc-highlight">&lt;static&gt; CheckCollisionObject</a></li></ul></li><li><a href="#gameobjectwithbody" class="table-of-contents__link toc-highlight">GameObjectWithBody</a><ul><li><a href="#static-gameobjectwithbody" class="table-of-contents__link toc-highlight">&lt;static&gt; GameObjectWithBody</a></li></ul></li><li><a href="#gameobjectwithdynamicbody" class="table-of-contents__link toc-highlight">GameObjectWithDynamicBody</a><ul><li><a href="#static-gameobjectwithdynamicbody" class="table-of-contents__link toc-highlight">&lt;static&gt; GameObjectWithDynamicBody</a></li></ul></li><li><a href="#gameobjectwithstaticbody" class="table-of-contents__link toc-highlight">GameObjectWithStaticBody</a><ul><li><a href="#static-gameobjectwithstaticbody" class="table-of-contents__link toc-highlight">&lt;static&gt; GameObjectWithStaticBody</a></li></ul></li><li><a href="#imagewithdynamicbody" class="table-of-contents__link toc-highlight">ImageWithDynamicBody</a><ul><li><a href="#static-imagewithdynamicbody" class="table-of-contents__link toc-highlight">&lt;static&gt; ImageWithDynamicBody</a></li></ul></li><li><a href="#imagewithstaticbody" class="table-of-contents__link toc-highlight">ImageWithStaticBody</a><ul><li><a href="#static-imagewithstaticbody" class="table-of-contents__link toc-highlight">&lt;static&gt; ImageWithStaticBody</a></li></ul></li><li><a href="#physicsgroupconfig" class="table-of-contents__link toc-highlight">PhysicsGroupConfig</a><ul><li><a href="#static-physicsgroupconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; PhysicsGroupConfig</a></li></ul></li><li><a href="#physicsgroupdefaults" class="table-of-contents__link toc-highlight">PhysicsGroupDefaults</a><ul><li><a href="#static-physicsgroupdefaults" class="table-of-contents__link toc-highlight">&lt;static&gt; PhysicsGroupDefaults</a></li></ul></li><li><a href="#spritewithdynamicbody" class="table-of-contents__link toc-highlight">SpriteWithDynamicBody</a><ul><li><a href="#static-spritewithdynamicbody" class="table-of-contents__link toc-highlight">&lt;static&gt; SpriteWithDynamicBody</a></li></ul></li><li><a href="#spritewithstaticbody" class="table-of-contents__link toc-highlight">SpriteWithStaticBody</a><ul><li><a href="#static-spritewithstaticbody" class="table-of-contents__link toc-highlight">&lt;static&gt; SpriteWithStaticBody</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

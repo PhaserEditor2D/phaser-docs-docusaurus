@@ -1,0 +1,2896 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-function/Phaser.Utils" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Phaser.Utils | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/function/utils"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="Phaser.Utils | Phaser Help"><meta data-rh="true" name="description" content="Add"><meta data-rh="true" property="og:description" content="Add"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/function/utils"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/function/utils" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/function/utils" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Functions","item":"https://docs.phaser.io/api-documentation/function/"},{"@type":"ListItem","position":2,"name":"Phaser.Utils","item":"https://docs.phaser.io/api-documentation/function/utils"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/function/utils">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/function/utils">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/function/utils">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/function/utils">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Collapse sidebar category &#x27;Functions&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/actions"><span title="Phaser.Actions" class="linkLabel_WmDU">Phaser.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/core"><span title="Phaser.Core" class="linkLabel_WmDU">Phaser.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/create"><span title="Phaser.Create" class="linkLabel_WmDU">Phaser.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/curves"><span title="Phaser.Curves" class="linkLabel_WmDU">Phaser.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/dom"><span title="Phaser.DOM" class="linkLabel_WmDU">Phaser.DOM</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/display"><span title="Phaser.Display" class="linkLabel_WmDU">Phaser.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/gameobjects"><span title="Phaser.GameObjects" class="linkLabel_WmDU">Phaser.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/geom"><span title="Phaser.Geom" class="linkLabel_WmDU">Phaser.Geom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/input"><span title="Phaser.Input" class="linkLabel_WmDU">Phaser.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/loader"><span title="Phaser.Loader" class="linkLabel_WmDU">Phaser.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/math"><span title="Phaser.Math" class="linkLabel_WmDU">Phaser.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/physics"><span title="Phaser.Physics" class="linkLabel_WmDU">Phaser.Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/plugins"><span title="Phaser.Plugins" class="linkLabel_WmDU">Phaser.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/renderer"><span title="Phaser.Renderer" class="linkLabel_WmDU">Phaser.Renderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/scenes"><span title="Phaser.Scenes" class="linkLabel_WmDU">Phaser.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/sound"><span title="Phaser.Sound" class="linkLabel_WmDU">Phaser.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/textures"><span title="Phaser.Textures" class="linkLabel_WmDU">Phaser.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/tilemaps"><span title="Phaser.Tilemaps" class="linkLabel_WmDU">Phaser.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/tweens"><span title="Phaser.Tweens" class="linkLabel_WmDU">Phaser.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/function/utils"><span title="Phaser.Utils" class="linkLabel_WmDU">Phaser.Utils</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/function/"><span>Functions</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Phaser.Utils</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Phaser.Utils.Array</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="add">Add<a href="#add" class="hash-link" aria-label="Direct link to Add" title="Direct link to Add" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-addarray-item-limit-callback-context">&lt;static&gt; Add(array, item, [limit], [callback], [context])<a href="#static-addarray-item-limit-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; Add(array, item, [limit], [callback], [context])" title="Direct link to &lt;static&gt; Add(array, item, [limit], [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds the given item, or array of items, to the array.</p>
+<p>Each item must be unique within the array.</p>
+<p>The array is modified in-place and returned.</p>
+<p>You can optionally specify a limit to the maximum size of the array. If the quantity of items being</p>
+<p>added will take the array length over this limit, it will stop adding once the limit is reached.</p>
+<p>You can optionally specify a callback to be invoked for each item successfully added to the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be added to.</td></tr><tr><td>item</td><td>any | Array.&lt;any&gt;</td><td>No</td><td>The item, or array of items, to add to the array. Each item must be unique within the array.</td></tr><tr><td>limit</td><td>number</td><td>Yes</td><td>Optional limit which caps the size of the array.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for each item successfully added to the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Add.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Add.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addat">AddAt<a href="#addat" class="hash-link" aria-label="Direct link to AddAt" title="Direct link to AddAt" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-addatarray-item-index-limit-callback-context">&lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])<a href="#static-addatarray-item-index-limit-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])" title="Direct link to &lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds the given item, or array of items, to the array starting at the index specified.</p>
+<p>Each item must be unique within the array.</p>
+<p>Existing elements in the array are shifted up.</p>
+<p>The array is modified in-place and returned.</p>
+<p>You can optionally specify a limit to the maximum size of the array. If the quantity of items being</p>
+<p>added will take the array length over this limit, it will stop adding once the limit is reached.</p>
+<p>You can optionally specify a callback to be invoked for each item successfully added to the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to be added to.</td></tr><tr><td>item</td><td>any | Array.&lt;any&gt;</td><td>No</td><td></td><td>The item, or array of items, to add to the array.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>The index in the array where the item will be inserted.</td></tr><tr><td>limit</td><td>number</td><td>Yes</td><td></td><td>Optional limit which caps the size of the array.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td></td><td>A callback to be invoked for each item successfully added to the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td></td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/AddAt.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/AddAt.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bringtotop">BringToTop<a href="#bringtotop" class="hash-link" aria-label="Direct link to BringToTop" title="Direct link to BringToTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bringtotoparray-item">&lt;static&gt; BringToTop(array, item)<a href="#static-bringtotoparray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; BringToTop(array, item)" title="Direct link to &lt;static&gt; BringToTop(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given element to the top of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The element that was moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/BringToTop.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/BringToTop.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="countallmatching">CountAllMatching<a href="#countallmatching" class="hash-link" aria-label="Direct link to CountAllMatching" title="Direct link to CountAllMatching" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-countallmatchingarray-property-value-startindex-endindex">&lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])<a href="#static-countallmatchingarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])" title="Direct link to &lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the total number of elements in the array which have a property matching the given value.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>No</td><td>The property to test on each array element.</td></tr><tr><td>value</td><td>*</td><td>No</td><td>The value to test the property against. Must pass a strict (<code>===</code>) comparison check.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>An optional end index to search to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The total number of elements with properties matching the given value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/CountAllMatching.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/CountAllMatching.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="each">Each<a href="#each" class="hash-link" aria-label="Direct link to Each" title="Direct link to Each" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-eacharray-callback-context-args">&lt;static&gt; Each(array, callback, context, [args])<a href="#static-eacharray-callback-context-args" class="hash-link" aria-label="Direct link to &lt;static&gt; Each(array, callback, context, [args])" title="Direct link to &lt;static&gt; Each(array, callback, context, [args])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Passes each element in the array to the given callback.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>callback</td><td>function</td><td>No</td><td>A callback to be invoked for each item in the array.</td></tr><tr><td>context</td><td>object</td><td>No</td><td>The context in which the callback is invoked.</td></tr><tr><td>args</td><td>*</td><td>Yes</td><td>Additional arguments that will be passed to the callback, after the current array item.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Each.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Each.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="eachinrange">EachInRange<a href="#eachinrange" class="hash-link" aria-label="Direct link to EachInRange" title="Direct link to EachInRange" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-eachinrangearray-callback-context-startindex-endindex-args">&lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])<a href="#static-eachinrangearray-callback-context-startindex-endindex-args" class="hash-link" aria-label="Direct link to &lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])" title="Direct link to &lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Passes each element in the array, between the start and end indexes, to the given callback.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>callback</td><td>function</td><td>No</td><td>A callback to be invoked for each item in the array.</td></tr><tr><td>context</td><td>object</td><td>No</td><td>The context in which the callback is invoked.</td></tr><tr><td>startIndex</td><td>number</td><td>No</td><td>The start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>No</td><td>The end index to search to.</td></tr><tr><td>args</td><td>*</td><td>Yes</td><td>Additional arguments that will be passed to the callback, after the child.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/EachInRange.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/EachInRange.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="findclosestinsorted">FindClosestInSorted<a href="#findclosestinsorted" class="hash-link" aria-label="Direct link to FindClosestInSorted" title="Direct link to FindClosestInSorted" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-findclosestinsortedvalue-array-key">&lt;static&gt; FindClosestInSorted(value, array, [key])<a href="#static-findclosestinsortedvalue-array-key" class="hash-link" aria-label="Direct link to &lt;static&gt; FindClosestInSorted(value, array, [key])" title="Direct link to &lt;static&gt; FindClosestInSorted(value, array, [key])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Searches a pre-sorted array for the closet value to the given number.</p>
+<p>If the <code>key</code> argument is given it will assume the array contains objects that all have the required <code>key</code> property name,</p>
+<p>and will check for the closest value of those to the given number.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>The value to search for in the array.</td></tr><tr><td>array</td><td>array</td><td>No</td><td>The array to search, which must be sorted.</td></tr><tr><td>key</td><td>string</td><td>Yes</td><td>An optional property key. If specified the array elements property will be checked against value.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number, any - The nearest value found in the array, or if a <code>key</code> was given, the nearest object with the matching property value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/FindClosestInSorted.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/FindClosestInSorted.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="flatten">Flatten<a href="#flatten" class="hash-link" aria-label="Direct link to Flatten" title="Direct link to Flatten" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-flattenarray-output">&lt;static&gt; Flatten(array, [output])<a href="#static-flattenarray-output" class="hash-link" aria-label="Direct link to &lt;static&gt; Flatten(array, [output])" title="Direct link to &lt;static&gt; Flatten(array, [output])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array and flattens it, returning a shallow-copy flattened array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to flatten.</td></tr><tr><td>output</td><td>array</td><td>Yes</td><td>An array to hold the results in.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The flattened output array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Flatten.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Flatten.js#L7</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getall">GetAll<a href="#getall" class="hash-link" aria-label="Direct link to GetAll" title="Direct link to GetAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getallarray-property-value-startindex-endindex">&lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])<a href="#static-getallarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])" title="Direct link to &lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns all elements in the array.</p>
+<p>You can optionally specify a matching criteria using the <code>property</code> and <code>value</code> arguments.</p>
+<p>For example: <code>getAll(&#x27;visible&#x27;, true)</code> would return only elements that have their visible property set.</p>
+<p>Optionally you can specify a start and end index. For example if the array had 100 elements,</p>
+<p>and you set <code>startIndex</code> to 0 and <code>endIndex</code> to 50, it would return matches from only</p>
+<p>the first 50 elements.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>Yes</td><td>The property to test on each array element.</td></tr><tr><td>value</td><td>*</td><td>Yes</td><td>The value to test the property against. Must pass a strict (<code>===</code>) comparison check.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>An optional end index to search to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - All matching elements from the array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/GetAll.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/GetAll.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getfirst">GetFirst<a href="#getfirst" class="hash-link" aria-label="Direct link to GetFirst" title="Direct link to GetFirst" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getfirstarray-property-value-startindex-endindex">&lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])<a href="#static-getfirstarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])" title="Direct link to &lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the first element in the array.</p>
+<p>You can optionally specify a matching criteria using the <code>property</code> and <code>value</code> arguments.</p>
+<p>For example: <code>getAll(&#x27;visible&#x27;, true)</code> would return the first element that had its <code>visible</code> property set.</p>
+<p>Optionally you can specify a start and end index. For example if the array had 100 elements,</p>
+<p>and you set <code>startIndex</code> to 0 and <code>endIndex</code> to 50, it would search only the first 50 elements.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>Yes</td><td></td><td>The property to test on each array element.</td></tr><tr><td>value</td><td>*</td><td>Yes</td><td></td><td>The value to test the property against. Must pass a strict (<code>===</code>) comparison check.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>0</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>&quot;array.length&quot;</td><td>An optional end index to search up to (but not included)</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - The first matching element from the array, or <code>null</code> if no element could be found in the range given.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/GetFirst.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/GetFirst.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getrandom">GetRandom<a href="#getrandom" class="hash-link" aria-label="Direct link to GetRandom" title="Direct link to GetRandom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getrandomarray-startindex-length">&lt;static&gt; GetRandom(array, [startIndex], [length])<a href="#static-getrandomarray-startindex-length" class="hash-link" aria-label="Direct link to &lt;static&gt; GetRandom(array, [startIndex], [length])" title="Direct link to &lt;static&gt; GetRandom(array, [startIndex], [length])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns a Random element from the array.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;T&gt;</td><td>No</td><td></td><td>The array to select the random entry from.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>0</td><td>An optional start index.</td></tr><tr><td>length</td><td>number</td><td>Yes</td><td>&quot;array.length&quot;</td><td>An optional length, the total number of elements (from the startIndex) to choose from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> T - A random element from the array, or <code>null</code> if no element could be found in the range given.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/GetRandom.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/GetRandom.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="moveabove">MoveAbove<a href="#moveabove" class="hash-link" aria-label="Direct link to MoveAbove" title="Direct link to MoveAbove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-moveabovearray-item1-item2">&lt;static&gt; MoveAbove(array, item1, item2)<a href="#static-moveabovearray-item1-item2" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveAbove(array, item1, item2)" title="Direct link to &lt;static&gt; MoveAbove(array, item1, item2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element above another one in the array.</p>
+<p>If the given element is already above the other, it isn&#x27;t moved.</p>
+<p>Above means toward the end of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item1</td><td>*</td><td>No</td><td>The element to move above base element.</td></tr><tr><td>item2</td><td>*</td><td>No</td><td>The base element.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveAbove.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveAbove.js#L7</a><br>
+Since: 3.55.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="movebelow">MoveBelow<a href="#movebelow" class="hash-link" aria-label="Direct link to MoveBelow" title="Direct link to MoveBelow" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-movebelowarray-item1-item2">&lt;static&gt; MoveBelow(array, item1, item2)<a href="#static-movebelowarray-item1-item2" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveBelow(array, item1, item2)" title="Direct link to &lt;static&gt; MoveBelow(array, item1, item2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element below another one in the array.</p>
+<p>If the given element is already below the other, it isn&#x27;t moved.</p>
+<p>Below means toward the start of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item1</td><td>*</td><td>No</td><td>The element to move below base element.</td></tr><tr><td>item2</td><td>*</td><td>No</td><td>The base element.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveBelow.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveBelow.js#L7</a><br>
+Since: 3.55.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="movedown">MoveDown<a href="#movedown" class="hash-link" aria-label="Direct link to MoveDown" title="Direct link to MoveDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-movedownarray-item">&lt;static&gt; MoveDown(array, item)<a href="#static-movedownarray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveDown(array, item)" title="Direct link to &lt;static&gt; MoveDown(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element down one place in the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move down the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveDown.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveDown.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="moveto">MoveTo<a href="#moveto" class="hash-link" aria-label="Direct link to MoveTo" title="Direct link to MoveTo" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-movetoarray-item-index">&lt;static&gt; MoveTo(array, item, index)<a href="#static-movetoarray-item-index" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveTo(array, item, index)" title="Direct link to &lt;static&gt; MoveTo(array, item, index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves an element in an array to a new position within the same array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The new index that the element will be moved to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The element that was moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveTo.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveTo.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="moveup">MoveUp<a href="#moveup" class="hash-link" aria-label="Direct link to MoveUp" title="Direct link to MoveUp" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-moveuparray-item">&lt;static&gt; MoveUp(array, item)<a href="#static-moveuparray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveUp(array, item)" title="Direct link to &lt;static&gt; MoveUp(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element up one place in the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move up the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveUp.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveUp.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="numberarray">NumberArray<a href="#numberarray" class="hash-link" aria-label="Direct link to NumberArray" title="Direct link to NumberArray" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-numberarraystart-end-prefix-suffix">&lt;static&gt; NumberArray(start, end, [prefix], [suffix])<a href="#static-numberarraystart-end-prefix-suffix" class="hash-link" aria-label="Direct link to &lt;static&gt; NumberArray(start, end, [prefix], [suffix])" title="Direct link to &lt;static&gt; NumberArray(start, end, [prefix], [suffix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Create an array representing the range of numbers (usually integers), between, and inclusive of,</p>
+<p>the given <code>start</code> and <code>end</code> arguments. For example:</p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(2, 4); // array = [2, 3, 4]</code></p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(0, 9); // array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code></p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(8, 2); // array = [8, 7, 6, 5, 4, 3, 2]</code></p>
+<p>This is equivalent to <code>Phaser.Utils.Array.NumberArrayStep(start, end, 1)</code>.</p>
+<p>You can optionally provide a prefix and / or suffix string. If given the array will contain</p>
+<p>strings, not integers. For example:</p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(1, 4, &#x27;Level &#x27;); // array = [&quot;Level 1&quot;, &quot;Level 2&quot;, &quot;Level 3&quot;, &quot;Level 4&quot;]</code></p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(5, 7, &#x27;HD-&#x27;, &#x27;.png&#x27;); // array = [&quot;HD-5.png&quot;, &quot;HD-6.png&quot;, &quot;HD-7.png&quot;]</code></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>start</td><td>number</td><td>No</td><td>The minimum value the array starts with.</td></tr><tr><td>end</td><td>number</td><td>No</td><td>The maximum value the array contains.</td></tr><tr><td>prefix</td><td>string</td><td>Yes</td><td>Optional prefix to place before the number. If provided the array will contain strings, not integers.</td></tr><tr><td>suffix</td><td>string</td><td>Yes</td><td>Optional suffix to place after the number. If provided the array will contain strings, not integers.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;number&gt;, Array.&lt;string&gt; - The array of number values, or strings if a prefix or suffix was provided.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/NumberArray.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/NumberArray.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="numberarraystep">NumberArrayStep<a href="#numberarraystep" class="hash-link" aria-label="Direct link to NumberArrayStep" title="Direct link to NumberArrayStep" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-numberarraystepstart-end-step">&lt;static&gt; NumberArrayStep([start], [end], [step])<a href="#static-numberarraystepstart-end-step" class="hash-link" aria-label="Direct link to &lt;static&gt; NumberArrayStep([start], [end], [step])" title="Direct link to &lt;static&gt; NumberArrayStep([start], [end], [step])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Create an array of numbers (positive and/or negative) progressing from <code>start</code></p>
+<p>up to but not including <code>end</code> by advancing by <code>step</code>.</p>
+<p>If <code>start</code> is less than <code>end</code> a zero-length range is created unless a negative <code>step</code> is specified.</p>
+<p>Certain values for <code>start</code> and <code>end</code> (eg. NaN/undefined/null) are currently coerced to 0;</p>
+<p>for forward compatibility make sure to pass in actual numbers.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>start</td><td>number</td><td>Yes</td><td>0</td><td>The start of the range.</td></tr><tr><td>end</td><td>number</td><td>Yes</td><td>null</td><td>The end of the range.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>1</td><td>The value to increment or decrement by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;number&gt; - The array of number values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/NumberArrayStep.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/NumberArrayStep.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quickselect">QuickSelect<a href="#quickselect" class="hash-link" aria-label="Direct link to QuickSelect" title="Direct link to QuickSelect" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-quickselectarr-k-left-right-compare">&lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])<a href="#static-quickselectarr-k-left-right-compare" class="hash-link" aria-label="Direct link to &lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])" title="Direct link to &lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A <a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Rivest_algorithm" target="_blank" rel="noopener noreferrer" class="">Floyd-Rivest</a> quick selection algorithm.</p>
+<p>Rearranges the array items so that all items in the [left, k] range are smaller than all items in [k, right];</p>
+<p>The k-th element will have the (k - left + 1)th smallest value in [left, right].</p>
+<p>The array is modified in-place.</p>
+<p>Based on code by <a href="https://www.npmjs.com/~mourner" target="_blank" rel="noopener noreferrer" class="">Vladimir Agafonkin</a></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>arr</td><td>array</td><td>No</td><td></td><td>The array to sort.</td></tr><tr><td>k</td><td>number</td><td>No</td><td></td><td>The k-th element index.</td></tr><tr><td>left</td><td>number</td><td>Yes</td><td>0</td><td>The index of the left part of the range.</td></tr><tr><td>right</td><td>number</td><td>Yes</td><td></td><td>The index of the right part of the range.</td></tr><tr><td>compare</td><td>function</td><td>Yes</td><td></td><td>An optional comparison function. Is passed two elements and should return 0, 1 or -1.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/QuickSelect.js#L25" target="_blank" rel="noopener noreferrer" class="">src/utils/array/QuickSelect.js#L25</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="range">Range<a href="#range" class="hash-link" aria-label="Direct link to Range" title="Direct link to Range" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rangea-b-options">&lt;static&gt; Range(a, b, [options])<a href="#static-rangea-b-options" class="hash-link" aria-label="Direct link to &lt;static&gt; Range(a, b, [options])" title="Direct link to &lt;static&gt; Range(a, b, [options])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates an array populated with a range of values, based on the given arguments and configuration object.</p>
+<p>Range ([a,b,c], [1,2,3]) =</p>
+<p>a1, a2, a3, b1, b2, b3, c1, c2, c3</p>
+<p>Range ([a,b], [1,2,3], qty = 3) =</p>
+<p>a1, a1, a1, a2, a2, a2, a3, a3, a3, b1, b1, b1, b2, b2, b2, b3, b3, b3</p>
+<p>Range ([a,b,c], [1,2,3], repeat x1) =</p>
+<p>a1, a2, a3, b1, b2, b3, c1, c2, c3, a1, a2, a3, b1, b2, b3, c1, c2, c3</p>
+<p>Range ([a,b], [1,2], repeat -1 = endless, max = 14) =</p>
+<p>Maybe if max is set then repeat goes to -1 automatically?</p>
+<p>a1, a2, b1, b2, a1, a2, b1, b2, a1, a2, b1, b2, a1, a2 (capped at 14 elements)</p>
+<p>Range ([a], [1,2,3,4,5], random = true) =</p>
+<p>a4, a1, a5, a2, a3</p>
+<p>Range ([a, b], [1,2,3], random = true) =</p>
+<p>b3, a2, a1, b1, a3, b2</p>
+<p>Range ([a, b, c], [1,2,3], randomB = true) =</p>
+<p>a3, a1, a2, b2, b3, b1, c1, c3, c2</p>
+<p>Range ([a], [1,2,3,4,5], yoyo = true) =</p>
+<p>a1, a2, a3, a4, a5, a5, a4, a3, a2, a1</p>
+<p>Range ([a, b], [1,2,3], yoyo = true) =</p>
+<p>a1, a2, a3, b1, b2, b3, b3, b2, b1, a3, a2, a1</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>a</td><td>array</td><td>No</td><td>The first array of range elements.</td></tr><tr><td>b</td><td>array</td><td>No</td><td>The second array of range elements.</td></tr><tr><td>options</td><td>object</td><td>Yes</td><td>A range configuration object. Can contain: repeat, random, randomB, yoyo, max, qty.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - An array of arranged elements.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Range.js#L28" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Range.js#L28</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove">Remove<a href="#remove" class="hash-link" aria-label="Direct link to Remove" title="Direct link to Remove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removearray-item-callback-context">&lt;static&gt; Remove(array, item, [callback], [context])<a href="#static-removearray-item-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; Remove(array, item, [callback], [context])" title="Direct link to &lt;static&gt; Remove(array, item, [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes the given item, or array of items, from the array.</p>
+<p>The array is modified in-place.</p>
+<p>You can optionally specify a callback to be invoked for each item successfully removed from the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be modified.</td></tr><tr><td>item</td><td>* | Array.&lt;*&gt;</td><td>No</td><td>The item, or array of items, to be removed from the array.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for each item successfully removed from the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <em>, Array.&lt;</em>&gt; - The item, or array of items, that were successfully removed from the array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Remove.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Remove.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removeat">RemoveAt<a href="#removeat" class="hash-link" aria-label="Direct link to RemoveAt" title="Direct link to RemoveAt" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removeatarray-index-callback-context">&lt;static&gt; RemoveAt(array, index, [callback], [context])<a href="#static-removeatarray-index-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; RemoveAt(array, index, [callback], [context])" title="Direct link to &lt;static&gt; RemoveAt(array, index, [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes the item from the given position in the array.</p>
+<p>The array is modified in-place.</p>
+<p>You can optionally specify a callback to be invoked for the item if it is successfully removed from the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be modified.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The array index to remove the item from. The index must be in bounds or it will throw an error.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for the item removed from the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The item that was removed.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RemoveAt.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RemoveAt.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removebetween">RemoveBetween<a href="#removebetween" class="hash-link" aria-label="Direct link to RemoveBetween" title="Direct link to RemoveBetween" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removebetweenarray-startindex-endindex-callback-context">&lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])<a href="#static-removebetweenarray-startindex-endindex-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])" title="Direct link to &lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes the item within the given range in the array.</p>
+<p>The array is modified in-place.</p>
+<p>You can optionally specify a callback to be invoked for the item/s successfully removed from the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be modified.</td></tr><tr><td>startIndex</td><td>number</td><td>No</td><td>The start index to remove from.</td></tr><tr><td>endIndex</td><td>number</td><td>No</td><td>The end index to remove to.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for the item removed from the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;*&gt; - An array of items that were removed.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RemoveBetween.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RemoveBetween.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removerandomelement">RemoveRandomElement<a href="#removerandomelement" class="hash-link" aria-label="Direct link to RemoveRandomElement" title="Direct link to RemoveRandomElement" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removerandomelementarray-start-length">&lt;static&gt; RemoveRandomElement(array, [start], [length])<a href="#static-removerandomelementarray-start-length" class="hash-link" aria-label="Direct link to &lt;static&gt; RemoveRandomElement(array, [start], [length])" title="Direct link to &lt;static&gt; RemoveRandomElement(array, [start], [length])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes a random object from the given array and returns it.</p>
+<p>Will return null if there are no array items that fall within the specified range or if there is no item for the randomly chosen index.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to removed a random element from.</td></tr><tr><td>start</td><td>number</td><td>Yes</td><td>0</td><td>The array index to start the search from.</td></tr><tr><td>length</td><td>number</td><td>Yes</td><td>&quot;array.length&quot;</td><td>Optional restriction on the number of elements to randomly select from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - The random element that was removed, or <code>null</code> if there were no array elements that fell within the given range.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RemoveRandomElement.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RemoveRandomElement.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="replace">Replace<a href="#replace" class="hash-link" aria-label="Direct link to Replace" title="Direct link to Replace" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-replacearray-oldchild-newchild">&lt;static&gt; Replace(array, oldChild, newChild)<a href="#static-replacearray-oldchild-newchild" class="hash-link" aria-label="Direct link to &lt;static&gt; Replace(array, oldChild, newChild)" title="Direct link to &lt;static&gt; Replace(array, oldChild, newChild)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Replaces an element of the array with the new element.</p>
+<p>The new element cannot already be a member of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search within.</td></tr><tr><td>oldChild</td><td>*</td><td>No</td><td>The element in the array that will be replaced.</td></tr><tr><td>newChild</td><td>*</td><td>No</td><td>The element to be inserted into the array at the position of <code>oldChild</code>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - Returns true if the oldChild was successfully replaced, otherwise returns false.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Replace.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Replace.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotateleft">RotateLeft<a href="#rotateleft" class="hash-link" aria-label="Direct link to RotateLeft" title="Direct link to RotateLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotateleftarray-total">&lt;static&gt; RotateLeft(array, [total])<a href="#static-rotateleftarray-total" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateLeft(array, [total])" title="Direct link to &lt;static&gt; RotateLeft(array, [total])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the element at the start of the array to the end, shifting all items in the process.</p>
+<p>The &quot;rotation&quot; happens to the left.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to shift to the left. This array is modified in place.</td></tr><tr><td>total</td><td>number</td><td>Yes</td><td>1</td><td>The number of times to shift the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The most recently shifted element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RotateLeft.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RotateLeft.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotateright">RotateRight<a href="#rotateright" class="hash-link" aria-label="Direct link to RotateRight" title="Direct link to RotateRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotaterightarray-total">&lt;static&gt; RotateRight(array, [total])<a href="#static-rotaterightarray-total" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateRight(array, [total])" title="Direct link to &lt;static&gt; RotateRight(array, [total])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the element at the end of the array to the start, shifting all items in the process.</p>
+<p>The &quot;rotation&quot; happens to the right.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to shift to the right. This array is modified in place.</td></tr><tr><td>total</td><td>number</td><td>Yes</td><td>1</td><td>The number of times to shift the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The most recently shifted element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RotateRight.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RotateRight.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="saferange">SafeRange<a href="#saferange" class="hash-link" aria-label="Direct link to SafeRange" title="Direct link to SafeRange" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-saferangearray-startindex-endindex-throwerror">&lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])<a href="#static-saferangearray-startindex-endindex-throwerror" class="hash-link" aria-label="Direct link to &lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])" title="Direct link to &lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Tests if the start and end indexes are a safe range for the given array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to check.</td></tr><tr><td>startIndex</td><td>number</td><td>No</td><td></td><td>The start index.</td></tr><tr><td>endIndex</td><td>number</td><td>No</td><td></td><td>The end index.</td></tr><tr><td>throwError</td><td>boolean</td><td>Yes</td><td>true</td><td>Throw an error if the range is out of bounds.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - True if the range is safe, otherwise false.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SafeRange.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SafeRange.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sendtoback">SendToBack<a href="#sendtoback" class="hash-link" aria-label="Direct link to SendToBack" title="Direct link to SendToBack" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-sendtobackarray-item">&lt;static&gt; SendToBack(array, item)<a href="#static-sendtobackarray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; SendToBack(array, item)" title="Direct link to &lt;static&gt; SendToBack(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given element to the bottom of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The element that was moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SendToBack.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SendToBack.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setall">SetAll<a href="#setall" class="hash-link" aria-label="Direct link to SetAll" title="Direct link to SetAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setallarray-property-value-startindex-endindex">&lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])<a href="#static-setallarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])" title="Direct link to &lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Scans the array for elements with the given property. If found, the property is set to the <code>value</code>.</p>
+<p>For example: <code>SetAll(&#x27;visible&#x27;, true)</code> would set all elements that have a <code>visible</code> property to <code>false</code>.</p>
+<p>Optionally you can specify a start and end index. For example if the array had 100 elements,</p>
+<p>and you set <code>startIndex</code> to 0 and <code>endIndex</code> to 50, it would update only the first 50 elements.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>No</td><td>The property to test for on each array element.</td></tr><tr><td>value</td><td>*</td><td>No</td><td>The value to set the property to.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>An optional end index to search to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SetAll.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SetAll.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shuffle">Shuffle<a href="#shuffle" class="hash-link" aria-label="Direct link to Shuffle" title="Direct link to Shuffle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-shufflearray">&lt;static&gt; Shuffle(array)<a href="#static-shufflearray" class="hash-link" aria-label="Direct link to &lt;static&gt; Shuffle(array)" title="Direct link to &lt;static&gt; Shuffle(array)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Shuffles the contents of the given array using the Fisher-Yates implementation.</p>
+<p>The original array is modified directly and returned.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;T&gt;</td><td>No</td><td>The array to shuffle. This array is modified in place.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;T&gt; - The shuffled array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Shuffle.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Shuffle.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sortbydigits">SortByDigits<a href="#sortbydigits" class="hash-link" aria-label="Direct link to SortByDigits" title="Direct link to SortByDigits" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-sortbydigitsarray">&lt;static&gt; SortByDigits(array)<a href="#static-sortbydigitsarray" class="hash-link" aria-label="Direct link to &lt;static&gt; SortByDigits(array)" title="Direct link to &lt;static&gt; SortByDigits(array)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes the given array and runs a numeric sort on it, ignoring any non-digits that</p>
+<p>may be in the entries.</p>
+<p>You should only run this on arrays containing strings.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;string&gt;</td><td>No</td><td>The input array of strings.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;string&gt; - The sorted input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SortByDigits.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SortByDigits.js#L7</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spliceone">SpliceOne<a href="#spliceone" class="hash-link" aria-label="Direct link to SpliceOne" title="Direct link to SpliceOne" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-spliceonearray-index">&lt;static&gt; SpliceOne(array, index)<a href="#static-spliceonearray-index" class="hash-link" aria-label="Direct link to &lt;static&gt; SpliceOne(array, index)" title="Direct link to &lt;static&gt; SpliceOne(array, index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes a single item from an array and returns it without creating gc, like the native splice does.</p>
+<p>Based on code by Mike Reinstein.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to splice from.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The index of the item which should be spliced.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The item which was spliced (removed).</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SpliceOne.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SpliceOne.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stablesort">StableSort<a href="#stablesort" class="hash-link" aria-label="Direct link to StableSort" title="Direct link to StableSort" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-stablesortarray-compare">&lt;static&gt; StableSort(array, [compare])<a href="#static-stablesortarray-compare" class="hash-link" aria-label="Direct link to &lt;static&gt; StableSort(array, [compare])" title="Direct link to &lt;static&gt; StableSort(array, [compare])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An in-place stable array sort, because <code>Array#sort()</code> is not guaranteed stable.</p>
+<p>This is an implementation of merge sort, without recursion.</p>
+<p>Function based on the Two-Screen/stable sort 0.1.8 from <a href="https://github.com/Two-Screen/stable" target="_blank" rel="noopener noreferrer" class="">https://github.com/Two-Screen/stable</a></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array to be sorted.</td></tr><tr><td>compare</td><td>function</td><td>Yes</td><td>The comparison function.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The sorted result.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/StableSort.js#L142" target="_blank" rel="noopener noreferrer" class="">src/utils/array/StableSort.js#L142</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="swap">Swap<a href="#swap" class="hash-link" aria-label="Direct link to Swap" title="Direct link to Swap" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-swaparray-item1-item2">&lt;static&gt; Swap(array, item1, item2)<a href="#static-swaparray-item1-item2" class="hash-link" aria-label="Direct link to &lt;static&gt; Swap(array, item1, item2)" title="Direct link to &lt;static&gt; Swap(array, item1, item2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Swaps the position of two elements in the given array.</p>
+<p>The elements must exist in the same array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item1</td><td>*</td><td>No</td><td>The first element to swap.</td></tr><tr><td>item2</td><td>*</td><td>No</td><td>The second element to swap.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Swap.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Swap.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<h1>Phaser.Utils.Array.Matrix</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="checkmatrix">CheckMatrix<a href="#checkmatrix" class="hash-link" aria-label="Direct link to CheckMatrix" title="Direct link to CheckMatrix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-checkmatrixmatrix">&lt;static&gt; CheckMatrix([matrix])<a href="#static-checkmatrixmatrix" class="hash-link" aria-label="Direct link to &lt;static&gt; CheckMatrix([matrix])" title="Direct link to &lt;static&gt; CheckMatrix([matrix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks if an array can be used as a matrix.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td>The array to check.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the given <code>matrix</code> array is a valid matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/CheckMatrix.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/CheckMatrix.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="matrixtostring">MatrixToString<a href="#matrixtostring" class="hash-link" aria-label="Direct link to MatrixToString" title="Direct link to MatrixToString" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-matrixtostringmatrix">&lt;static&gt; MatrixToString([matrix])<a href="#static-matrixtostringmatrix" class="hash-link" aria-label="Direct link to &lt;static&gt; MatrixToString([matrix])" title="Direct link to &lt;static&gt; MatrixToString([matrix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Generates a string (which you can pass to console.log) from the given Array Matrix.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td>A 2-dimensional array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - A string representing the matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/MatrixToString.js#L10" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/MatrixToString.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reversecolumns">ReverseColumns<a href="#reversecolumns" class="hash-link" aria-label="Direct link to ReverseColumns" title="Direct link to ReverseColumns" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-reversecolumnsmatrix">&lt;static&gt; ReverseColumns([matrix])<a href="#static-reversecolumnsmatrix" class="hash-link" aria-label="Direct link to &lt;static&gt; ReverseColumns([matrix])" title="Direct link to &lt;static&gt; ReverseColumns([matrix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Reverses the columns in the given Array Matrix.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td>The array matrix to reverse the columns for.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - The column reversed matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/ReverseColumns.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/ReverseColumns.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reverserows">ReverseRows<a href="#reverserows" class="hash-link" aria-label="Direct link to ReverseRows" title="Direct link to ReverseRows" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-reverserowsmatrix">&lt;static&gt; ReverseRows([matrix])<a href="#static-reverserowsmatrix" class="hash-link" aria-label="Direct link to &lt;static&gt; ReverseRows([matrix])" title="Direct link to &lt;static&gt; ReverseRows([matrix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Reverses the rows in the given Array Matrix.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td>The array matrix to reverse the rows for.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - The column reversed matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/ReverseRows.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/ReverseRows.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotate180">Rotate180<a href="#rotate180" class="hash-link" aria-label="Direct link to Rotate180" title="Direct link to Rotate180" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotate180matrix">&lt;static&gt; Rotate180([matrix])<a href="#static-rotate180matrix" class="hash-link" aria-label="Direct link to &lt;static&gt; Rotate180([matrix])" title="Direct link to &lt;static&gt; Rotate180([matrix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Rotates the array matrix 180 degrees.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td>The array to rotate.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - The rotated matrix array. The source matrix should be discard for the returned matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/Rotate180.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/Rotate180.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotateleft-1">RotateLeft<a href="#rotateleft-1" class="hash-link" aria-label="Direct link to RotateLeft" title="Direct link to RotateLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotateleftmatrix-amount">&lt;static&gt; RotateLeft([matrix], [amount])<a href="#static-rotateleftmatrix-amount" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateLeft([matrix], [amount])" title="Direct link to &lt;static&gt; RotateLeft([matrix], [amount])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Rotates the array matrix to the left (or 90 degrees)</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td></td><td>The array to rotate.</td></tr><tr><td>amount</td><td>number</td><td>Yes</td><td>1</td><td>The number of times to rotate the matrix.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - The rotated matrix array. The source matrix should be discard for the returned matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/RotateLeft.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/RotateLeft.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotatematrix">RotateMatrix<a href="#rotatematrix" class="hash-link" aria-label="Direct link to RotateMatrix" title="Direct link to RotateMatrix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotatematrixmatrix-direction">&lt;static&gt; RotateMatrix([matrix], [direction])<a href="#static-rotatematrixmatrix-direction" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateMatrix([matrix], [direction])" title="Direct link to &lt;static&gt; RotateMatrix([matrix], [direction])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Rotates the array matrix based on the given rotation value.</p>
+<p>The value can be given in degrees: 90, -90, 270, -270 or 180,</p>
+<p>or a string command: <code>rotateLeft</code>, <code>rotateRight</code> or <code>rotate180</code>.</p>
+<p>Based on the routine from <a href="http://jsfiddle.net/MrPolywhirl/NH42z/" target="_blank" rel="noopener noreferrer" class="">http://jsfiddle.net/MrPolywhirl/NH42z/</a>.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td></td><td>The array to rotate.</td></tr><tr><td>direction</td><td>number | string</td><td>Yes</td><td>90</td><td>The amount to rotate the matrix by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - The rotated matrix array. The source matrix should be discard for the returned matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/RotateMatrix.js#L10" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/RotateMatrix.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotateright-1">RotateRight<a href="#rotateright-1" class="hash-link" aria-label="Direct link to RotateRight" title="Direct link to RotateRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotaterightmatrix-amount">&lt;static&gt; RotateRight([matrix], [amount])<a href="#static-rotaterightmatrix-amount" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateRight([matrix], [amount])" title="Direct link to &lt;static&gt; RotateRight([matrix], [amount])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Rotates the array matrix to the left (or -90 degrees)</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td></td><td>The array to rotate.</td></tr><tr><td>amount</td><td>number</td><td>Yes</td><td>1</td><td>The number of times to rotate the matrix.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - The rotated matrix array. The source matrix should be discard for the returned matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/RotateRight.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/RotateRight.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="translate">Translate<a href="#translate" class="hash-link" aria-label="Direct link to Translate" title="Direct link to Translate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-translatematrix-x-y">&lt;static&gt; Translate([matrix], [x], [y])<a href="#static-translatematrix-x-y" class="hash-link" aria-label="Direct link to &lt;static&gt; Translate([matrix], [x], [y])" title="Direct link to &lt;static&gt; Translate([matrix], [x], [y])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Translates the given Array Matrix by shifting each column and row the</p>
+<p>amount specified.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>matrix</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td></td><td>The array matrix to translate.</td></tr><tr><td>x</td><td>number</td><td>Yes</td><td>0</td><td>The amount to horizontally translate the matrix by.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>0</td><td>The amount to vertically translate the matrix by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - The translated matrix.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/TranslateMatrix.js#L10" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/TranslateMatrix.js#L10</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="transposematrix">TransposeMatrix<a href="#transposematrix" class="hash-link" aria-label="Direct link to TransposeMatrix" title="Direct link to TransposeMatrix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-transposematrixarray">&lt;static&gt; TransposeMatrix([array])<a href="#static-transposematrixarray" class="hash-link" aria-label="Direct link to &lt;static&gt; TransposeMatrix([array])" title="Direct link to &lt;static&gt; TransposeMatrix([array])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Transposes the elements of the given matrix (array of arrays).</p>
+<p>The transpose of a matrix is a new matrix whose rows are the columns of the original.</p>
+<p>A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)</p>
+<p>have the same length. There must be at least two rows. This is an example matrix:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 1, 1, 1, 1, 1, 1 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 1, 2, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 3, 4, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 2, 0, 0, 0, 0, 4 ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   [ 3, 3, 3, 3, 3, 3 ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;Array.&lt;T&gt;&gt;</td><td>Yes</td><td>The array matrix to transpose.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;Array.&lt;T&gt;&gt; - A new array matrix which is a transposed version of the given array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/matrix/TransposeMatrix.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/matrix/TransposeMatrix.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Utils.Base64</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="arraybuffertobase64">ArrayBufferToBase64<a href="#arraybuffertobase64" class="hash-link" aria-label="Direct link to ArrayBufferToBase64" title="Direct link to ArrayBufferToBase64" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-arraybuffertobase64arraybuffer-mediatype">&lt;static&gt; ArrayBufferToBase64(arrayBuffer, [mediaType])<a href="#static-arraybuffertobase64arraybuffer-mediatype" class="hash-link" aria-label="Direct link to &lt;static&gt; ArrayBufferToBase64(arrayBuffer, [mediaType])" title="Direct link to &lt;static&gt; ArrayBufferToBase64(arrayBuffer, [mediaType])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts an ArrayBuffer into a base64 string.</p>
+<p>The resulting string can optionally be a data uri if the <code>mediaType</code> argument is provided.</p>
+<p>See <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs" target="_blank" rel="noopener noreferrer" class="">https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs</a> for more details.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>arrayBuffer</td><td>ArrayBuffer</td><td>No</td><td>The Array Buffer to encode.</td></tr><tr><td>mediaType</td><td>string</td><td>Yes</td><td>An optional media type, i.e. <code>audio/ogg</code> or <code>image/jpeg</code>. If included the resulting string will be a data URI.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The base64 encoded Array Buffer.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/base64/ArrayBufferToBase64.js#L10" target="_blank" rel="noopener noreferrer" class="">src/utils/base64/ArrayBufferToBase64.js#L10</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="base64toarraybuffer">Base64ToArrayBuffer<a href="#base64toarraybuffer" class="hash-link" aria-label="Direct link to Base64ToArrayBuffer" title="Direct link to Base64ToArrayBuffer" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-base64toarraybufferbase64">&lt;static&gt; Base64ToArrayBuffer(base64)<a href="#static-base64toarraybufferbase64" class="hash-link" aria-label="Direct link to &lt;static&gt; Base64ToArrayBuffer(base64)" title="Direct link to &lt;static&gt; Base64ToArrayBuffer(base64)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Converts a base64 string, either with or without a data uri, into an Array Buffer.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>base64</td><td>string</td><td>No</td><td>The base64 string to be decoded. Can optionally contain a data URI header, which will be stripped out prior to decoding.</td></tr></tbody></table>
+<p><strong>Returns:</strong> ArrayBuffer - An ArrayBuffer decoded from the base64 data.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/base64/Base64ToArrayBuffer.js#L18" target="_blank" rel="noopener noreferrer" class="">src/utils/base64/Base64ToArrayBuffer.js#L18</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="noop">NOOP<a href="#noop" class="hash-link" aria-label="Direct link to NOOP" title="Direct link to NOOP" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-noop">&lt;static&gt; NOOP()<a href="#static-noop" class="hash-link" aria-label="Direct link to &lt;static&gt; NOOP()" title="Direct link to &lt;static&gt; NOOP()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A NOOP (No Operation) callback function.</p>
+<p>Used internally by Phaser when it&#x27;s more expensive to determine if a callback exists</p>
+<p>than it is to just invoke an empty function.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/NOOP.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/NOOP.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="null">NULL<a href="#null" class="hash-link" aria-label="Direct link to NULL" title="Direct link to NULL" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-null">&lt;static&gt; NULL()<a href="#static-null" class="hash-link" aria-label="Direct link to &lt;static&gt; NULL()" title="Direct link to &lt;static&gt; NULL()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A NULL OP callback function.</p>
+<p>This function always returns <code>null</code>.</p>
+<p>Used internally by Phaser when it&#x27;s more expensive to determine if a callback exists</p>
+<p>than it is to just invoke an empty function.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/NULL.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/NULL.js#L7</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<h1>Phaser.Utils.Objects</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="clone">Clone<a href="#clone" class="hash-link" aria-label="Direct link to Clone" title="Direct link to Clone" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-cloneobj">&lt;static&gt; Clone(obj)<a href="#static-cloneobj" class="hash-link" aria-label="Direct link to &lt;static&gt; Clone(obj)" title="Direct link to &lt;static&gt; Clone(obj)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Shallow Object Clone. Will not clone nested objects.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>obj</td><td>object</td><td>No</td><td>The object to clone.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - A new object with the same properties as the input object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/Clone.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/Clone.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deepcopy">DeepCopy<a href="#deepcopy" class="hash-link" aria-label="Direct link to DeepCopy" title="Direct link to DeepCopy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-deepcopyobj">&lt;static&gt; DeepCopy(obj)<a href="#static-deepcopyobj" class="hash-link" aria-label="Direct link to &lt;static&gt; DeepCopy(obj)" title="Direct link to &lt;static&gt; DeepCopy(obj)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Deep Copy the given object or array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>obj</td><td>object</td><td>No</td><td>The object to deep copy.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - A deep copy of the original object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/DeepCopy.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/DeepCopy.js#L7</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extend">Extend<a href="#extend" class="hash-link" aria-label="Direct link to Extend" title="Direct link to Extend" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-extendargs">&lt;static&gt; Extend([args])<a href="#static-extendargs" class="hash-link" aria-label="Direct link to &lt;static&gt; Extend([args])" title="Direct link to &lt;static&gt; Extend([args])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This is a slightly modified version of <a href="http://api.jquery.com/jQuery.extend/" target="_blank" rel="noopener noreferrer" class="">http://api.jquery.com/jQuery.extend/</a></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>args</td><td>*</td><td>Yes</td><td>The objects that will be mixed.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - The extended object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/Extend.js#L13" target="_blank" rel="noopener noreferrer" class="">src/utils/object/Extend.js#L13</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getadvancedvalue">GetAdvancedValue<a href="#getadvancedvalue" class="hash-link" aria-label="Direct link to GetAdvancedValue" title="Direct link to GetAdvancedValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getadvancedvaluesource-key-defaultvalue">&lt;static&gt; GetAdvancedValue(source, key, defaultValue)<a href="#static-getadvancedvaluesource-key-defaultvalue" class="hash-link" aria-label="Direct link to &lt;static&gt; GetAdvancedValue(source, key, defaultValue)" title="Direct link to &lt;static&gt; GetAdvancedValue(source, key, defaultValue)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Retrieves a value from an object. Allows for more advanced selection options, including:</p>
+<p>Allowed types:</p>
+<p>Explicit:</p>
+<p>{</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x: 4</span><br></span></code></pre></div></div>
+<p>}</p>
+<p>From function</p>
+<p>{</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x: function ()</span><br></span></code></pre></div></div>
+<p>}</p>
+<p>Randomly pick one element from the array</p>
+<p>{</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x: [a, b, c, d, e, f]</span><br></span></code></pre></div></div>
+<p>}</p>
+<p>Random integer between min and max:</p>
+<p>{</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x: { randInt: [min, max] }</span><br></span></code></pre></div></div>
+<p>}</p>
+<p>Random float between min and max:</p>
+<p>{</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x: { randFloat: [min, max] }</span><br></span></code></pre></div></div>
+<p>}</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>The object to retrieve the value from.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (<code>.</code>) - <code>banner.hideBanner</code> would return the value of the <code>hideBanner</code> property from the object stored in the <code>banner</code> property of the <code>source</code> object.</td></tr><tr><td>defaultValue</td><td>*</td><td>No</td><td>The value to return if the <code>key</code> isn&#x27;t found in the <code>source</code> object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The value of the requested key.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/GetAdvancedValue.js#L10" target="_blank" rel="noopener noreferrer" class="">src/utils/object/GetAdvancedValue.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getfastvalue">GetFastValue<a href="#getfastvalue" class="hash-link" aria-label="Direct link to GetFastValue" title="Direct link to GetFastValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getfastvaluesource-key-defaultvalue">&lt;static&gt; GetFastValue(source, key, [defaultValue])<a href="#static-getfastvaluesource-key-defaultvalue" class="hash-link" aria-label="Direct link to &lt;static&gt; GetFastValue(source, key, [defaultValue])" title="Direct link to &lt;static&gt; GetFastValue(source, key, [defaultValue])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Finds the key within the top level of the <a class="" href="/api-documentation/class/source">source</a> object, or returns <a class="" href="/api-documentation/class/defaultValue">defaultValue</a></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>The object to search</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The key for the property on source. Must exist at the top level of the source object (no periods)</td></tr><tr><td>defaultValue</td><td>*</td><td>Yes</td><td>The default value to use if the key does not exist.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The value if found; otherwise, defaultValue (null if none provided)</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/GetFastValue.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/GetFastValue.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getminmaxvalue">GetMinMaxValue<a href="#getminmaxvalue" class="hash-link" aria-label="Direct link to GetMinMaxValue" title="Direct link to GetMinMaxValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getminmaxvaluesource-key-min-max-defaultvalue">&lt;static&gt; GetMinMaxValue(source, key, min, max, defaultValue)<a href="#static-getminmaxvaluesource-key-min-max-defaultvalue" class="hash-link" aria-label="Direct link to &lt;static&gt; GetMinMaxValue(source, key, min, max, defaultValue)" title="Direct link to &lt;static&gt; GetMinMaxValue(source, key, min, max, defaultValue)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Retrieves and clamps a numerical value from an object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>The object to retrieve the value from.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (<code>.</code>).</td></tr><tr><td>min</td><td>number</td><td>No</td><td>The minimum value which can be returned.</td></tr><tr><td>max</td><td>number</td><td>No</td><td>The maximum value which can be returned.</td></tr><tr><td>defaultValue</td><td>number</td><td>No</td><td>The value to return if the property doesn&#x27;t exist. It&#x27;s also constrained to the given bounds.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The clamped value from the <code>source</code> object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/GetMinMaxValue.js#L10" target="_blank" rel="noopener noreferrer" class="">src/utils/object/GetMinMaxValue.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getvalue">GetValue<a href="#getvalue" class="hash-link" aria-label="Direct link to GetValue" title="Direct link to GetValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getvaluesource-key-defaultvalue-altsource">&lt;static&gt; GetValue(source, key, defaultValue, [altSource])<a href="#static-getvaluesource-key-defaultvalue-altsource" class="hash-link" aria-label="Direct link to &lt;static&gt; GetValue(source, key, defaultValue, [altSource])" title="Direct link to &lt;static&gt; GetValue(source, key, defaultValue, [altSource])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Retrieves a value from an object, or an alternative object, falling to a back-up default value if not found.</p>
+<p>The key is a string, which can be split based on the use of the period character.</p>
+<p>For example:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> source </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">lives</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">3</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">render</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token literal-property property" style="color:#36acaa">screen</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token literal-property property" style="color:#36acaa">width</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1024</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> lives </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function maybe-class-name" style="color:#d73a49">GetValue</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">source</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;lives&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> width </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function maybe-class-name" style="color:#d73a49">GetValue</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">source</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;render.screen.width&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">800</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> height </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function maybe-class-name" style="color:#d73a49">GetValue</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">source</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;render.screen.height&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">600</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>In the code above, <code>lives</code> will be 3 because it&#x27;s defined at the top level of <code>source</code>.</p>
+<p>The <code>width</code> value will be 1024 because it can be found inside the <code>render.screen</code> object.</p>
+<p>The <code>height</code> value will be 600, the default value, because it is missing from the <code>render.screen</code> object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>The primary object to try to retrieve the value from. If not found in here, <code>altSource</code> is checked.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (<code>.</code>) - <code>banner.hideBanner</code> would return the value of the <code>hideBanner</code> property from the object stored in the <code>banner</code> property of the <code>source</code> object.</td></tr><tr><td>defaultValue</td><td>*</td><td>No</td><td>The value to return if the <code>key</code> isn&#x27;t found in the <code>source</code> object.</td></tr><tr><td>altSource</td><td>object</td><td>Yes</td><td>An alternative object to retrieve the value from. If the property exists in <code>source</code> then <code>altSource</code> will not be used.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The value of the requested key.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/GetValue.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/GetValue.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hasall">HasAll<a href="#hasall" class="hash-link" aria-label="Direct link to HasAll" title="Direct link to HasAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-hasallsource-keys">&lt;static&gt; HasAll(source, keys)<a href="#static-hasallsource-keys" class="hash-link" aria-label="Direct link to &lt;static&gt; HasAll(source, keys)" title="Direct link to &lt;static&gt; HasAll(source, keys)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Verifies that an object contains all requested keys</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>an object on which to check for key existence</td></tr><tr><td>keys</td><td>Array.&lt;string&gt;</td><td>No</td><td>an array of keys to ensure the source object contains</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - true if the source object contains all keys, false otherwise.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/HasAll.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/HasAll.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hasany">HasAny<a href="#hasany" class="hash-link" aria-label="Direct link to HasAny" title="Direct link to HasAny" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-hasanysource-keys">&lt;static&gt; HasAny(source, keys)<a href="#static-hasanysource-keys" class="hash-link" aria-label="Direct link to &lt;static&gt; HasAny(source, keys)" title="Direct link to &lt;static&gt; HasAny(source, keys)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Verifies that an object contains at least one of the requested keys</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>an object on which to check for key existence</td></tr><tr><td>keys</td><td>Array.&lt;string&gt;</td><td>No</td><td>an array of keys to search the object for</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - true if the source object contains at least one of the keys, false otherwise</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/HasAny.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/HasAny.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hasvalue">HasValue<a href="#hasvalue" class="hash-link" aria-label="Direct link to HasValue" title="Direct link to HasValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-hasvaluesource-key">&lt;static&gt; HasValue(source, key)<a href="#static-hasvaluesource-key" class="hash-link" aria-label="Direct link to &lt;static&gt; HasValue(source, key)" title="Direct link to &lt;static&gt; HasValue(source, key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Determine whether the source object has a property with the specified key.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>The source object to be checked.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The property to check for within the object</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the provided <code>key</code> exists on the <code>source</code> object, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/HasValue.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/HasValue.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="isplainobject">IsPlainObject<a href="#isplainobject" class="hash-link" aria-label="Direct link to IsPlainObject" title="Direct link to IsPlainObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-isplainobjectobj">&lt;static&gt; IsPlainObject(obj)<a href="#static-isplainobjectobj" class="hash-link" aria-label="Direct link to &lt;static&gt; IsPlainObject(obj)" title="Direct link to &lt;static&gt; IsPlainObject(obj)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This is a slightly modified version of jQuery.isPlainObject.</p>
+<p>A plain object is an object whose internal class property is [object Object].</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>obj</td><td>object</td><td>No</td><td>The object to inspect.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the object is plain, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/IsPlainObject.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/IsPlainObject.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="merge">Merge<a href="#merge" class="hash-link" aria-label="Direct link to Merge" title="Direct link to Merge" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-mergeobj1-obj2">&lt;static&gt; Merge(obj1, obj2)<a href="#static-mergeobj1-obj2" class="hash-link" aria-label="Direct link to &lt;static&gt; Merge(obj1, obj2)" title="Direct link to &lt;static&gt; Merge(obj1, obj2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates a new Object using all values from obj1 and obj2.</p>
+<p>If a value exists in both obj1 and obj2, the value in obj1 is used.</p>
+<p>This is only a shallow copy. Deeply nested objects are not cloned, so be sure to only use this</p>
+<p>function on shallow objects.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>obj1</td><td>object</td><td>No</td><td>The first object.</td></tr><tr><td>obj2</td><td>object</td><td>No</td><td>The second object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - A new object containing the union of obj1&#x27;s and obj2&#x27;s properties.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/Merge.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/object/Merge.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mergeright">MergeRight<a href="#mergeright" class="hash-link" aria-label="Direct link to MergeRight" title="Direct link to MergeRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-mergerightobj1-obj2">&lt;static&gt; MergeRight(obj1, obj2)<a href="#static-mergerightobj1-obj2" class="hash-link" aria-label="Direct link to &lt;static&gt; MergeRight(obj1, obj2)" title="Direct link to &lt;static&gt; MergeRight(obj1, obj2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates a new Object using all values from obj1.</p>
+<p>Then scans obj2. If a property is found in obj2 that <em>also</em> exists in obj1, the value from obj2 is used, otherwise the property is skipped.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>obj1</td><td>object</td><td>No</td><td>The first object to merge.</td></tr><tr><td>obj2</td><td>object</td><td>No</td><td>The second object to merge. Keys from this object which also exist in <code>obj1</code> will be copied to <code>obj1</code>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - The merged object. <code>obj1</code> and <code>obj2</code> are not modified.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/MergeRight.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/object/MergeRight.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pick">Pick<a href="#pick" class="hash-link" aria-label="Direct link to Pick" title="Direct link to Pick" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-pickobject-keys">&lt;static&gt; Pick(object, keys)<a href="#static-pickobject-keys" class="hash-link" aria-label="Direct link to &lt;static&gt; Pick(object, keys)" title="Direct link to &lt;static&gt; Pick(object, keys)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns a new object that only contains the <code>keys</code> that were found on the object provided.</p>
+<p>If no <code>keys</code> are found, an empty object is returned.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>object</td><td>object</td><td>No</td><td>The object to pick the provided keys from.</td></tr><tr><td>keys</td><td>array</td><td>No</td><td>An array of properties to retrieve from the provided object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - A new object that only contains the <code>keys</code> that were found on the provided object. If no <code>keys</code> were found, an empty object will be returned.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/Pick.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/object/Pick.js#L9</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setvalue">SetValue<a href="#setvalue" class="hash-link" aria-label="Direct link to SetValue" title="Direct link to SetValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setvaluesource-key-value">&lt;static&gt; SetValue(source, key, value)<a href="#static-setvaluesource-key-value" class="hash-link" aria-label="Direct link to &lt;static&gt; SetValue(source, key, value)" title="Direct link to &lt;static&gt; SetValue(source, key, value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets a value in an object, allowing for dot notation to control the depth of the property.</p>
+<p>For example:</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> data </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">world</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token literal-property property" style="color:#36acaa">position</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token literal-property property" style="color:#36acaa">x</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">200</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token literal-property property" style="color:#36acaa">y</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">100</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token function maybe-class-name" style="color:#d73a49">SetValue</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">data</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;world.position.y&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">300</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token console class-name">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">data</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">world</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">position</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">y</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// 300</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>source</td><td>object</td><td>No</td><td>The object to set the value in.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property in the object. If a property is nested, the names of its preceding properties should be separated by a dot (<code>.</code>)</td></tr><tr><td>value</td><td>any</td><td>No</td><td>The value to set into the property, if found in the source object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the property key was valid and the value was set, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/object/SetValue.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/object/SetValue.js#L7</a><br>
+Since: 3.17.0</p>
+</blockquote>
+<h1>Phaser.Utils.String</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="format">Format<a href="#format" class="hash-link" aria-label="Direct link to Format" title="Direct link to Format" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-formatstring-values">&lt;static&gt; Format(string, values)<a href="#static-formatstring-values" class="hash-link" aria-label="Direct link to &lt;static&gt; Format(string, values)" title="Direct link to &lt;static&gt; Format(string, values)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a string and replaces instances of markers with values in the given array.</p>
+<p>The markers take the form of <code>%1</code>, <code>%2</code>, etc. I.e.:</p>
+<p><code>Format(&quot;The %1 is worth %2 gold&quot;, [ &#x27;Sword&#x27;, 500 ])</code></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>string</td><td>string</td><td>No</td><td>The string containing the replacement markers.</td></tr><tr><td>values</td><td>array</td><td>No</td><td>An array containing values that will replace the markers. If no value exists an empty string is inserted instead.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The string containing replaced values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/string/Format.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/string/Format.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pad">Pad<a href="#pad" class="hash-link" aria-label="Direct link to Pad" title="Direct link to Pad" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-padstr-len-pad-dir">&lt;static&gt; Pad(str, [len], [pad], [dir])<a href="#static-padstr-len-pad-dir" class="hash-link" aria-label="Direct link to &lt;static&gt; Pad(str, [len], [pad], [dir])" title="Direct link to &lt;static&gt; Pad(str, [len], [pad], [dir])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes the given string and pads it out, to the length required, using the character</p>
+<p>specified. For example if you need a string to be 6 characters long, you can call:</p>
+<p><code>pad(&#x27;bob&#x27;, 6, &#x27;-&#x27;, 2)</code></p>
+<p>This would return: <code>bob---</code> as it has padded it out to 6 characters, using the <code>-</code> on the right.</p>
+<p>You can also use it to pad numbers (they are always returned as strings):</p>
+<p><code>pad(512, 6, &#x27;0&#x27;, 1)</code></p>
+<p>Would return: <code>000512</code> with the string padded to the left.</p>
+<p>If you don&#x27;t specify a direction it&#x27;ll pad to both sides:</p>
+<p><code>pad(&#x27;c64&#x27;, 7, &#x27;*&#x27;)</code></p>
+<p>Would return: <code>**c64**</code></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>str</td><td>string | number</td><td>object</td><td>No</td><td></td></tr><tr><td>len</td><td>number</td><td>Yes</td><td>0</td><td>The number of characters to be added.</td></tr><tr><td>pad</td><td>string</td><td>Yes</td><td>&quot;&quot; &quot;&quot;</td><td>The string to pad it out with (defaults to a space).</td></tr><tr><td>dir</td><td>number</td><td>Yes</td><td>3</td><td>The direction dir = 1 (left), 2 (right), 3 (both).</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The padded string.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/string/Pad.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/string/Pad.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removeat-1">RemoveAt<a href="#removeat-1" class="hash-link" aria-label="Direct link to RemoveAt" title="Direct link to RemoveAt" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removeatstring-index">&lt;static&gt; RemoveAt(string, index)<a href="#static-removeatstring-index" class="hash-link" aria-label="Direct link to &lt;static&gt; RemoveAt(string, index)" title="Direct link to &lt;static&gt; RemoveAt(string, index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a string and removes the character at the given index.</p>
+<p>The index is zero based.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>string</td><td>string</td><td>No</td><td>The string to be worked on.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The index of the character to be removed. This value is zero-based.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The modified string.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/string/RemoveAt.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/string/RemoveAt.js#L7</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reverse">Reverse<a href="#reverse" class="hash-link" aria-label="Direct link to Reverse" title="Direct link to Reverse" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-reversestring">&lt;static&gt; Reverse(string)<a href="#static-reversestring" class="hash-link" aria-label="Direct link to &lt;static&gt; Reverse(string)" title="Direct link to &lt;static&gt; Reverse(string)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes the given string and reverses it, returning the reversed string.</p>
+<p>For example if given the string <code>Atari 520ST</code> it would return <code>TS025 iratA</code>.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>string</td><td>string</td><td>No</td><td>The string to be reversed.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The reversed string.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/string/Reverse.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/string/Reverse.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="uppercasefirst">UppercaseFirst<a href="#uppercasefirst" class="hash-link" aria-label="Direct link to UppercaseFirst" title="Direct link to UppercaseFirst" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-uppercasefirststr">&lt;static&gt; UppercaseFirst(str)<a href="#static-uppercasefirststr" class="hash-link" aria-label="Direct link to &lt;static&gt; UppercaseFirst(str)" title="Direct link to &lt;static&gt; UppercaseFirst(str)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Capitalizes the first letter of a string if there is one.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>str</td><td>string</td><td>No</td><td>The string to capitalize.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - A new string, same as the first, but with the first letter capitalized.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/string/UppercaseFirst.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/string/UppercaseFirst.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="uuid">UUID<a href="#uuid" class="hash-link" aria-label="Direct link to UUID" title="Direct link to UUID" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-uuid">&lt;static&gt; UUID()<a href="#static-uuid" class="hash-link" aria-label="Direct link to &lt;static&gt; UUID()" title="Direct link to &lt;static&gt; UUID()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates and returns an RFC4122 version 4 compliant UUID.</p>
+<p>The string is in the form: <code>xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</code> where each <code>x</code> is replaced with a random</p>
+<p>hexadecimal digit from 0 to f, and <code>y</code> is replaced with a random hexadecimal digit from 8 to b.</p>
+<p><strong>Returns:</strong> string - The UUID string.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/string/UUID.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/string/UUID.js#L7</a><br>
+Since: 3.12.0</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/function/tweens"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Phaser.Tweens</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/function/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Functions</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#add" class="table-of-contents__link toc-highlight">Add</a><ul><li><a href="#static-addarray-item-limit-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; Add(array, item, [limit], [callback], [context])</a></li></ul></li><li><a href="#addat" class="table-of-contents__link toc-highlight">AddAt</a><ul><li><a href="#static-addatarray-item-index-limit-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])</a></li></ul></li><li><a href="#bringtotop" class="table-of-contents__link toc-highlight">BringToTop</a><ul><li><a href="#static-bringtotoparray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; BringToTop(array, item)</a></li></ul></li><li><a href="#countallmatching" class="table-of-contents__link toc-highlight">CountAllMatching</a><ul><li><a href="#static-countallmatchingarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])</a></li></ul></li><li><a href="#each" class="table-of-contents__link toc-highlight">Each</a><ul><li><a href="#static-eacharray-callback-context-args" class="table-of-contents__link toc-highlight">&lt;static&gt; Each(array, callback, context, [args])</a></li></ul></li><li><a href="#eachinrange" class="table-of-contents__link toc-highlight">EachInRange</a><ul><li><a href="#static-eachinrangearray-callback-context-startindex-endindex-args" class="table-of-contents__link toc-highlight">&lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])</a></li></ul></li><li><a href="#findclosestinsorted" class="table-of-contents__link toc-highlight">FindClosestInSorted</a><ul><li><a href="#static-findclosestinsortedvalue-array-key" class="table-of-contents__link toc-highlight">&lt;static&gt; FindClosestInSorted(value, array, [key])</a></li></ul></li><li><a href="#flatten" class="table-of-contents__link toc-highlight">Flatten</a><ul><li><a href="#static-flattenarray-output" class="table-of-contents__link toc-highlight">&lt;static&gt; Flatten(array, [output])</a></li></ul></li><li><a href="#getall" class="table-of-contents__link toc-highlight">GetAll</a><ul><li><a href="#static-getallarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])</a></li></ul></li><li><a href="#getfirst" class="table-of-contents__link toc-highlight">GetFirst</a><ul><li><a href="#static-getfirstarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])</a></li></ul></li><li><a href="#getrandom" class="table-of-contents__link toc-highlight">GetRandom</a><ul><li><a href="#static-getrandomarray-startindex-length" class="table-of-contents__link toc-highlight">&lt;static&gt; GetRandom(array, [startIndex], [length])</a></li></ul></li><li><a href="#moveabove" class="table-of-contents__link toc-highlight">MoveAbove</a><ul><li><a href="#static-moveabovearray-item1-item2" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveAbove(array, item1, item2)</a></li></ul></li><li><a href="#movebelow" class="table-of-contents__link toc-highlight">MoveBelow</a><ul><li><a href="#static-movebelowarray-item1-item2" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveBelow(array, item1, item2)</a></li></ul></li><li><a href="#movedown" class="table-of-contents__link toc-highlight">MoveDown</a><ul><li><a href="#static-movedownarray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveDown(array, item)</a></li></ul></li><li><a href="#moveto" class="table-of-contents__link toc-highlight">MoveTo</a><ul><li><a href="#static-movetoarray-item-index" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveTo(array, item, index)</a></li></ul></li><li><a href="#moveup" class="table-of-contents__link toc-highlight">MoveUp</a><ul><li><a href="#static-moveuparray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveUp(array, item)</a></li></ul></li><li><a href="#numberarray" class="table-of-contents__link toc-highlight">NumberArray</a><ul><li><a href="#static-numberarraystart-end-prefix-suffix" class="table-of-contents__link toc-highlight">&lt;static&gt; NumberArray(start, end, [prefix], [suffix])</a></li></ul></li><li><a href="#numberarraystep" class="table-of-contents__link toc-highlight">NumberArrayStep</a><ul><li><a href="#static-numberarraystepstart-end-step" class="table-of-contents__link toc-highlight">&lt;static&gt; NumberArrayStep([start], [end], [step])</a></li></ul></li><li><a href="#quickselect" class="table-of-contents__link toc-highlight">QuickSelect</a><ul><li><a href="#static-quickselectarr-k-left-right-compare" class="table-of-contents__link toc-highlight">&lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])</a></li></ul></li><li><a href="#range" class="table-of-contents__link toc-highlight">Range</a><ul><li><a href="#static-rangea-b-options" class="table-of-contents__link toc-highlight">&lt;static&gt; Range(a, b, [options])</a></li></ul></li><li><a href="#remove" class="table-of-contents__link toc-highlight">Remove</a><ul><li><a href="#static-removearray-item-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; Remove(array, item, [callback], [context])</a></li></ul></li><li><a href="#removeat" class="table-of-contents__link toc-highlight">RemoveAt</a><ul><li><a href="#static-removeatarray-index-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; RemoveAt(array, index, [callback], [context])</a></li></ul></li><li><a href="#removebetween" class="table-of-contents__link toc-highlight">RemoveBetween</a><ul><li><a href="#static-removebetweenarray-startindex-endindex-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])</a></li></ul></li><li><a href="#removerandomelement" class="table-of-contents__link toc-highlight">RemoveRandomElement</a><ul><li><a href="#static-removerandomelementarray-start-length" class="table-of-contents__link toc-highlight">&lt;static&gt; RemoveRandomElement(array, [start], [length])</a></li></ul></li><li><a href="#replace" class="table-of-contents__link toc-highlight">Replace</a><ul><li><a href="#static-replacearray-oldchild-newchild" class="table-of-contents__link toc-highlight">&lt;static&gt; Replace(array, oldChild, newChild)</a></li></ul></li><li><a href="#rotateleft" class="table-of-contents__link toc-highlight">RotateLeft</a><ul><li><a href="#static-rotateleftarray-total" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateLeft(array, [total])</a></li></ul></li><li><a href="#rotateright" class="table-of-contents__link toc-highlight">RotateRight</a><ul><li><a href="#static-rotaterightarray-total" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateRight(array, [total])</a></li></ul></li><li><a href="#saferange" class="table-of-contents__link toc-highlight">SafeRange</a><ul><li><a href="#static-saferangearray-startindex-endindex-throwerror" class="table-of-contents__link toc-highlight">&lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])</a></li></ul></li><li><a href="#sendtoback" class="table-of-contents__link toc-highlight">SendToBack</a><ul><li><a href="#static-sendtobackarray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; SendToBack(array, item)</a></li></ul></li><li><a href="#setall" class="table-of-contents__link toc-highlight">SetAll</a><ul><li><a href="#static-setallarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])</a></li></ul></li><li><a href="#shuffle" class="table-of-contents__link toc-highlight">Shuffle</a><ul><li><a href="#static-shufflearray" class="table-of-contents__link toc-highlight">&lt;static&gt; Shuffle(array)</a></li></ul></li><li><a href="#sortbydigits" class="table-of-contents__link toc-highlight">SortByDigits</a><ul><li><a href="#static-sortbydigitsarray" class="table-of-contents__link toc-highlight">&lt;static&gt; SortByDigits(array)</a></li></ul></li><li><a href="#spliceone" class="table-of-contents__link toc-highlight">SpliceOne</a><ul><li><a href="#static-spliceonearray-index" class="table-of-contents__link toc-highlight">&lt;static&gt; SpliceOne(array, index)</a></li></ul></li><li><a href="#stablesort" class="table-of-contents__link toc-highlight">StableSort</a><ul><li><a href="#static-stablesortarray-compare" class="table-of-contents__link toc-highlight">&lt;static&gt; StableSort(array, [compare])</a></li></ul></li><li><a href="#swap" class="table-of-contents__link toc-highlight">Swap</a><ul><li><a href="#static-swaparray-item1-item2" class="table-of-contents__link toc-highlight">&lt;static&gt; Swap(array, item1, item2)</a></li></ul></li><li><a href="#checkmatrix" class="table-of-contents__link toc-highlight">CheckMatrix</a><ul><li><a href="#static-checkmatrixmatrix" class="table-of-contents__link toc-highlight">&lt;static&gt; CheckMatrix([matrix])</a></li></ul></li><li><a href="#matrixtostring" class="table-of-contents__link toc-highlight">MatrixToString</a><ul><li><a href="#static-matrixtostringmatrix" class="table-of-contents__link toc-highlight">&lt;static&gt; MatrixToString([matrix])</a></li></ul></li><li><a href="#reversecolumns" class="table-of-contents__link toc-highlight">ReverseColumns</a><ul><li><a href="#static-reversecolumnsmatrix" class="table-of-contents__link toc-highlight">&lt;static&gt; ReverseColumns([matrix])</a></li></ul></li><li><a href="#reverserows" class="table-of-contents__link toc-highlight">ReverseRows</a><ul><li><a href="#static-reverserowsmatrix" class="table-of-contents__link toc-highlight">&lt;static&gt; ReverseRows([matrix])</a></li></ul></li><li><a href="#rotate180" class="table-of-contents__link toc-highlight">Rotate180</a><ul><li><a href="#static-rotate180matrix" class="table-of-contents__link toc-highlight">&lt;static&gt; Rotate180([matrix])</a></li></ul></li><li><a href="#rotateleft-1" class="table-of-contents__link toc-highlight">RotateLeft</a><ul><li><a href="#static-rotateleftmatrix-amount" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateLeft([matrix], [amount])</a></li></ul></li><li><a href="#rotatematrix" class="table-of-contents__link toc-highlight">RotateMatrix</a><ul><li><a href="#static-rotatematrixmatrix-direction" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateMatrix([matrix], [direction])</a></li></ul></li><li><a href="#rotateright-1" class="table-of-contents__link toc-highlight">RotateRight</a><ul><li><a href="#static-rotaterightmatrix-amount" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateRight([matrix], [amount])</a></li></ul></li><li><a href="#translate" class="table-of-contents__link toc-highlight">Translate</a><ul><li><a href="#static-translatematrix-x-y" class="table-of-contents__link toc-highlight">&lt;static&gt; Translate([matrix], [x], [y])</a></li></ul></li><li><a href="#transposematrix" class="table-of-contents__link toc-highlight">TransposeMatrix</a><ul><li><a href="#static-transposematrixarray" class="table-of-contents__link toc-highlight">&lt;static&gt; TransposeMatrix([array])</a></li></ul></li><li><a href="#arraybuffertobase64" class="table-of-contents__link toc-highlight">ArrayBufferToBase64</a><ul><li><a href="#static-arraybuffertobase64arraybuffer-mediatype" class="table-of-contents__link toc-highlight">&lt;static&gt; ArrayBufferToBase64(arrayBuffer, [mediaType])</a></li></ul></li><li><a href="#base64toarraybuffer" class="table-of-contents__link toc-highlight">Base64ToArrayBuffer</a><ul><li><a href="#static-base64toarraybufferbase64" class="table-of-contents__link toc-highlight">&lt;static&gt; Base64ToArrayBuffer(base64)</a></li></ul></li><li><a href="#noop" class="table-of-contents__link toc-highlight">NOOP</a><ul><li><a href="#static-noop" class="table-of-contents__link toc-highlight">&lt;static&gt; NOOP()</a></li></ul></li><li><a href="#null" class="table-of-contents__link toc-highlight">NULL</a><ul><li><a href="#static-null" class="table-of-contents__link toc-highlight">&lt;static&gt; NULL()</a></li></ul></li><li><a href="#clone" class="table-of-contents__link toc-highlight">Clone</a><ul><li><a href="#static-cloneobj" class="table-of-contents__link toc-highlight">&lt;static&gt; Clone(obj)</a></li></ul></li><li><a href="#deepcopy" class="table-of-contents__link toc-highlight">DeepCopy</a><ul><li><a href="#static-deepcopyobj" class="table-of-contents__link toc-highlight">&lt;static&gt; DeepCopy(obj)</a></li></ul></li><li><a href="#extend" class="table-of-contents__link toc-highlight">Extend</a><ul><li><a href="#static-extendargs" class="table-of-contents__link toc-highlight">&lt;static&gt; Extend([args])</a></li></ul></li><li><a href="#getadvancedvalue" class="table-of-contents__link toc-highlight">GetAdvancedValue</a><ul><li><a href="#static-getadvancedvaluesource-key-defaultvalue" class="table-of-contents__link toc-highlight">&lt;static&gt; GetAdvancedValue(source, key, defaultValue)</a></li></ul></li><li><a href="#getfastvalue" class="table-of-contents__link toc-highlight">GetFastValue</a><ul><li><a href="#static-getfastvaluesource-key-defaultvalue" class="table-of-contents__link toc-highlight">&lt;static&gt; GetFastValue(source, key, [defaultValue])</a></li></ul></li><li><a href="#getminmaxvalue" class="table-of-contents__link toc-highlight">GetMinMaxValue</a><ul><li><a href="#static-getminmaxvaluesource-key-min-max-defaultvalue" class="table-of-contents__link toc-highlight">&lt;static&gt; GetMinMaxValue(source, key, min, max, defaultValue)</a></li></ul></li><li><a href="#getvalue" class="table-of-contents__link toc-highlight">GetValue</a><ul><li><a href="#static-getvaluesource-key-defaultvalue-altsource" class="table-of-contents__link toc-highlight">&lt;static&gt; GetValue(source, key, defaultValue, [altSource])</a></li></ul></li><li><a href="#hasall" class="table-of-contents__link toc-highlight">HasAll</a><ul><li><a href="#static-hasallsource-keys" class="table-of-contents__link toc-highlight">&lt;static&gt; HasAll(source, keys)</a></li></ul></li><li><a href="#hasany" class="table-of-contents__link toc-highlight">HasAny</a><ul><li><a href="#static-hasanysource-keys" class="table-of-contents__link toc-highlight">&lt;static&gt; HasAny(source, keys)</a></li></ul></li><li><a href="#hasvalue" class="table-of-contents__link toc-highlight">HasValue</a><ul><li><a href="#static-hasvaluesource-key" class="table-of-contents__link toc-highlight">&lt;static&gt; HasValue(source, key)</a></li></ul></li><li><a href="#isplainobject" class="table-of-contents__link toc-highlight">IsPlainObject</a><ul><li><a href="#static-isplainobjectobj" class="table-of-contents__link toc-highlight">&lt;static&gt; IsPlainObject(obj)</a></li></ul></li><li><a href="#merge" class="table-of-contents__link toc-highlight">Merge</a><ul><li><a href="#static-mergeobj1-obj2" class="table-of-contents__link toc-highlight">&lt;static&gt; Merge(obj1, obj2)</a></li></ul></li><li><a href="#mergeright" class="table-of-contents__link toc-highlight">MergeRight</a><ul><li><a href="#static-mergerightobj1-obj2" class="table-of-contents__link toc-highlight">&lt;static&gt; MergeRight(obj1, obj2)</a></li></ul></li><li><a href="#pick" class="table-of-contents__link toc-highlight">Pick</a><ul><li><a href="#static-pickobject-keys" class="table-of-contents__link toc-highlight">&lt;static&gt; Pick(object, keys)</a></li></ul></li><li><a href="#setvalue" class="table-of-contents__link toc-highlight">SetValue</a><ul><li><a href="#static-setvaluesource-key-value" class="table-of-contents__link toc-highlight">&lt;static&gt; SetValue(source, key, value)</a></li></ul></li><li><a href="#format" class="table-of-contents__link toc-highlight">Format</a><ul><li><a href="#static-formatstring-values" class="table-of-contents__link toc-highlight">&lt;static&gt; Format(string, values)</a></li></ul></li><li><a href="#pad" class="table-of-contents__link toc-highlight">Pad</a><ul><li><a href="#static-padstr-len-pad-dir" class="table-of-contents__link toc-highlight">&lt;static&gt; Pad(str, [len], [pad], [dir])</a></li></ul></li><li><a href="#removeat-1" class="table-of-contents__link toc-highlight">RemoveAt</a><ul><li><a href="#static-removeatstring-index" class="table-of-contents__link toc-highlight">&lt;static&gt; RemoveAt(string, index)</a></li></ul></li><li><a href="#reverse" class="table-of-contents__link toc-highlight">Reverse</a><ul><li><a href="#static-reversestring" class="table-of-contents__link toc-highlight">&lt;static&gt; Reverse(string)</a></li></ul></li><li><a href="#uppercasefirst" class="table-of-contents__link toc-highlight">UppercaseFirst</a><ul><li><a href="#static-uppercasefirststr" class="table-of-contents__link toc-highlight">&lt;static&gt; UppercaseFirst(str)</a></li></ul></li><li><a href="#uuid" class="table-of-contents__link toc-highlight">UUID</a><ul><li><a href="#static-uuid" class="table-of-contents__link toc-highlight">&lt;static&gt; UUID()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-class/Phaser.GameObjects.Components.FX" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">FX | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/class/gameobjects-components-fx"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="FX | Phaser Help"><meta data-rh="true" name="description" content="Phaser.GameObjects.Components.FX"><meta data-rh="true" property="og:description" content="Phaser.GameObjects.Components.FX"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/class/gameobjects-components-fx"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/class/gameobjects-components-fx" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/class/gameobjects-components-fx" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Class","item":"https://docs.phaser.io/api-documentation/class/"},{"@type":"ListItem","position":2,"name":"FX","item":"https://docs.phaser.io/api-documentation/class/gameobjects-components-fx"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/class/gameobjects-components-fx">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/class/gameobjects-components-fx">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/class/gameobjects-components-fx">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/class/gameobjects-components-fx">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Collapse sidebar category &#x27;Class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/class"><span title="Class" class="linkLabel_WmDU">Class</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animation"><span title="Animation" class="linkLabel_WmDU">Animation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationframe"><span title="AnimationFrame" class="linkLabel_WmDU">AnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationmanager"><span title="AnimationManager" class="linkLabel_WmDU">AnimationManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationstate"><span title="AnimationState" class="linkLabel_WmDU">AnimationState</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cache-basecache"><span title="BaseCache" class="linkLabel_WmDU">BaseCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cache-cachemanager"><span title="CacheManager" class="linkLabel_WmDU">CacheManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-controls-fixedkeycontrol"><span title="FixedKeyControl" class="linkLabel_WmDU">FixedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-controls-smoothedkeycontrol"><span title="SmoothedKeyControl" class="linkLabel_WmDU">SmoothedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-basecamera"><span title="BaseCamera" class="linkLabel_WmDU">BaseCamera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-camera"><span title="Camera" class="linkLabel_WmDU">Camera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-cameramanager"><span title="CameraManager" class="linkLabel_WmDU">CameraManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-fade"><span title="Fade" class="linkLabel_WmDU">Fade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-flash"><span title="Flash" class="linkLabel_WmDU">Flash</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-pan"><span title="Pan" class="linkLabel_WmDU">Pan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-rotateto"><span title="RotateTo" class="linkLabel_WmDU">RotateTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-shake"><span title="Shake" class="linkLabel_WmDU">Shake</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-zoom"><span title="Zoom" class="linkLabel_WmDU">Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/core-config"><span title="Config" class="linkLabel_WmDU">Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/core-timestep"><span title="TimeStep" class="linkLabel_WmDU">TimeStep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-cubicbezier"><span title="CubicBezier" class="linkLabel_WmDU">CubicBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-moveto"><span title="MoveTo" class="linkLabel_WmDU">MoveTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-path"><span title="Path" class="linkLabel_WmDU">Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-quadraticbezier"><span title="QuadraticBezier" class="linkLabel_WmDU">QuadraticBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-spline"><span title="Spline" class="linkLabel_WmDU">Spline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/dom-requestanimationframe"><span title="RequestAnimationFrame" class="linkLabel_WmDU">RequestAnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/data-datamanager"><span title="DataManager" class="linkLabel_WmDU">DataManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/data-datamanagerplugin"><span title="DataManagerPlugin" class="linkLabel_WmDU">DataManagerPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-baseshader"><span title="BaseShader" class="linkLabel_WmDU">BaseShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-color"><span title="Color" class="linkLabel_WmDU">Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-masks-bitmapmask"><span title="BitmapMask" class="linkLabel_WmDU">BitmapMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-masks-geometrymask"><span title="GeometryMask" class="linkLabel_WmDU">GeometryMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-rgb"><span title="RGB" class="linkLabel_WmDU">RGB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/events-eventemitter"><span title="EventEmitter" class="linkLabel_WmDU">EventEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-barrel"><span title="Barrel" class="linkLabel_WmDU">Barrel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-bloom"><span title="Bloom" class="linkLabel_WmDU">Bloom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-blur"><span title="Blur" class="linkLabel_WmDU">Blur</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-bokeh"><span title="Bokeh" class="linkLabel_WmDU">Bokeh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-controller"><span title="Controller" class="linkLabel_WmDU">Controller</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-displacement"><span title="Displacement" class="linkLabel_WmDU">Displacement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-glow"><span title="Glow" class="linkLabel_WmDU">Glow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-gradient"><span title="Gradient" class="linkLabel_WmDU">Gradient</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-pixelate"><span title="Pixelate" class="linkLabel_WmDU">Pixelate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-shadow"><span title="Shadow" class="linkLabel_WmDU">Shadow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-shine"><span title="Shine" class="linkLabel_WmDU">Shine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-vignette"><span title="Vignette" class="linkLabel_WmDU">Vignette</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-wipe"><span title="Wipe" class="linkLabel_WmDU">Wipe</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/facebookinstantgamesleaderboard"><span title="FacebookInstantGamesLeaderboard" class="linkLabel_WmDU">FacebookInstantGamesLeaderboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/facebookinstantgamesplugin"><span title="FacebookInstantGamesPlugin" class="linkLabel_WmDU">FacebookInstantGamesPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/game"><span title="Game" class="linkLabel_WmDU">Game</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-arc"><span title="Arc" class="linkLabel_WmDU">Arc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-bitmaptext"><span title="BitmapText" class="linkLabel_WmDU">BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-blitter"><span title="Blitter" class="linkLabel_WmDU">Blitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-bob"><span title="Bob" class="linkLabel_WmDU">Bob</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/class/gameobjects-components-fx"><span title="FX" class="linkLabel_WmDU">FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-components-transformmatrix"><span title="TransformMatrix" class="linkLabel_WmDU">TransformMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-container"><span title="Container" class="linkLabel_WmDU">Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-domelement"><span title="DOMElement" class="linkLabel_WmDU">DOMElement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-displaylist"><span title="DisplayList" class="linkLabel_WmDU">DisplayList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-dynamicbitmaptext"><span title="DynamicBitmapText" class="linkLabel_WmDU">DynamicBitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-extern"><span title="Extern" class="linkLabel_WmDU">Extern</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobject"><span title="GameObject" class="linkLabel_WmDU">GameObject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobjectcreator"><span title="GameObjectCreator" class="linkLabel_WmDU">GameObjectCreator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobjectfactory"><span title="GameObjectFactory" class="linkLabel_WmDU">GameObjectFactory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-graphics"><span title="Graphics" class="linkLabel_WmDU">Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-grid"><span title="Grid" class="linkLabel_WmDU">Grid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-isobox"><span title="IsoBox" class="linkLabel_WmDU">IsoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-isotriangle"><span title="IsoTriangle" class="linkLabel_WmDU">IsoTriangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-layer"><span title="Layer" class="linkLabel_WmDU">Layer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-light"><span title="Light" class="linkLabel_WmDU">Light</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-lightsmanager"><span title="LightsManager" class="linkLabel_WmDU">LightsManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-lightsplugin"><span title="LightsPlugin" class="linkLabel_WmDU">LightsPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-mesh"><span title="Mesh" class="linkLabel_WmDU">Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-nineslice"><span title="NineSlice" class="linkLabel_WmDU">NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-emittercolorop"><span title="EmitterColorOp" class="linkLabel_WmDU">EmitterColorOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-emitterop"><span title="EmitterOp" class="linkLabel_WmDU">EmitterOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-gravitywell"><span title="GravityWell" class="linkLabel_WmDU">GravityWell</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particle"><span title="Particle" class="linkLabel_WmDU">Particle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particlebounds"><span title="ParticleBounds" class="linkLabel_WmDU">ParticleBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particleemitter"><span title="ParticleEmitter" class="linkLabel_WmDU">ParticleEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particleprocessor"><span title="ParticleProcessor" class="linkLabel_WmDU">ParticleProcessor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-deathzone"><span title="DeathZone" class="linkLabel_WmDU">DeathZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-edgezone"><span title="EdgeZone" class="linkLabel_WmDU">EdgeZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-randomzone"><span title="RandomZone" class="linkLabel_WmDU">RandomZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-pathfollower"><span title="PathFollower" class="linkLabel_WmDU">PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-plane"><span title="Plane" class="linkLabel_WmDU">Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-pointlight"><span title="PointLight" class="linkLabel_WmDU">PointLight</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rendertexture"><span title="RenderTexture" class="linkLabel_WmDU">RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rope"><span title="Rope" class="linkLabel_WmDU">Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-shader"><span title="Shader" class="linkLabel_WmDU">Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-shape"><span title="Shape" class="linkLabel_WmDU">Shape</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-star"><span title="Star" class="linkLabel_WmDU">Star</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-text"><span title="Text" class="linkLabel_WmDU">Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-textstyle"><span title="TextStyle" class="linkLabel_WmDU">TextStyle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-tilesprite"><span title="TileSprite" class="linkLabel_WmDU">TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-updatelist"><span title="UpdateList" class="linkLabel_WmDU">UpdateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-video"><span title="Video" class="linkLabel_WmDU">Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-zone"><span title="Zone" class="linkLabel_WmDU">Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-mesh-face"><span title="Face" class="linkLabel_WmDU">Face</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-mesh-vertex"><span title="Vertex" class="linkLabel_WmDU">Vertex</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-point"><span title="Point" class="linkLabel_WmDU">Point</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-axis"><span title="Axis" class="linkLabel_WmDU">Axis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-button"><span title="Button" class="linkLabel_WmDU">Button</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-gamepad"><span title="Gamepad" class="linkLabel_WmDU">Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-gamepadplugin"><span title="GamepadPlugin" class="linkLabel_WmDU">GamepadPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-inputmanager"><span title="InputManager" class="linkLabel_WmDU">InputManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-inputplugin"><span title="InputPlugin" class="linkLabel_WmDU">InputPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-key"><span title="Key" class="linkLabel_WmDU">Key</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keycombo"><span title="KeyCombo" class="linkLabel_WmDU">KeyCombo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keyboardmanager"><span title="KeyboardManager" class="linkLabel_WmDU">KeyboardManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keyboardplugin"><span title="KeyboardPlugin" class="linkLabel_WmDU">KeyboardPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-mouse-mousemanager"><span title="MouseManager" class="linkLabel_WmDU">MouseManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-pointer"><span title="Pointer" class="linkLabel_WmDU">Pointer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-touch-touchmanager"><span title="TouchManager" class="linkLabel_WmDU">TouchManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-file"><span title="File" class="linkLabel_WmDU">File</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-animationjsonfile"><span title="AnimationJSONFile" class="linkLabel_WmDU">AnimationJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-asepritefile"><span title="AsepriteFile" class="linkLabel_WmDU">AsepriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-atlasjsonfile"><span title="AtlasJSONFile" class="linkLabel_WmDU">AtlasJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-atlasxmlfile"><span title="AtlasXMLFile" class="linkLabel_WmDU">AtlasXMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-audiofile"><span title="AudioFile" class="linkLabel_WmDU">AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-audiospritefile"><span title="AudioSpriteFile" class="linkLabel_WmDU">AudioSpriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-binaryfile"><span title="BinaryFile" class="linkLabel_WmDU">BinaryFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-bitmapfontfile"><span title="BitmapFontFile" class="linkLabel_WmDU">BitmapFontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-cssfile"><span title="CSSFile" class="linkLabel_WmDU">CSSFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-compressedtexturefile"><span title="CompressedTextureFile" class="linkLabel_WmDU">CompressedTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-fontfile"><span title="FontFile" class="linkLabel_WmDU">FontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-glslfile"><span title="GLSLFile" class="linkLabel_WmDU">GLSLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-html5audiofile"><span title="HTML5AudioFile" class="linkLabel_WmDU">HTML5AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-htmlfile"><span title="HTMLFile" class="linkLabel_WmDU">HTMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-htmltexturefile"><span title="HTMLTextureFile" class="linkLabel_WmDU">HTMLTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-imagefile"><span title="ImageFile" class="linkLabel_WmDU">ImageFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-jsonfile"><span title="JSONFile" class="linkLabel_WmDU">JSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-multiatlasfile"><span title="MultiAtlasFile" class="linkLabel_WmDU">MultiAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-multiscriptfile"><span title="MultiScriptFile" class="linkLabel_WmDU">MultiScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-objfile"><span title="OBJFile" class="linkLabel_WmDU">OBJFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-packfile"><span title="PackFile" class="linkLabel_WmDU">PackFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-pluginfile"><span title="PluginFile" class="linkLabel_WmDU">PluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-svgfile"><span title="SVGFile" class="linkLabel_WmDU">SVGFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scenefile"><span title="SceneFile" class="linkLabel_WmDU">SceneFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scenepluginfile"><span title="ScenePluginFile" class="linkLabel_WmDU">ScenePluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scriptfile"><span title="ScriptFile" class="linkLabel_WmDU">ScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-spritesheetfile"><span title="SpriteSheetFile" class="linkLabel_WmDU">SpriteSheetFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-textfile"><span title="TextFile" class="linkLabel_WmDU">TextFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapcsvfile"><span title="TilemapCSVFile" class="linkLabel_WmDU">TilemapCSVFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapimpactfile"><span title="TilemapImpactFile" class="linkLabel_WmDU">TilemapImpactFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapjsonfile"><span title="TilemapJSONFile" class="linkLabel_WmDU">TilemapJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-unityatlasfile"><span title="UnityAtlasFile" class="linkLabel_WmDU">UnityAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-videofile"><span title="VideoFile" class="linkLabel_WmDU">VideoFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-xmlfile"><span title="XMLFile" class="linkLabel_WmDU">XMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-loaderplugin"><span title="LoaderPlugin" class="linkLabel_WmDU">LoaderPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-multifile"><span title="MultiFile" class="linkLabel_WmDU">MultiFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-euler"><span title="Euler" class="linkLabel_WmDU">Euler</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-matrix3"><span title="Matrix3" class="linkLabel_WmDU">Matrix3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-matrix4"><span title="Matrix4" class="linkLabel_WmDU">Matrix4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-quaternion"><span title="Quaternion" class="linkLabel_WmDU">Quaternion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-randomdatagenerator"><span title="RandomDataGenerator" class="linkLabel_WmDU">RandomDataGenerator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector2"><span title="Vector2" class="linkLabel_WmDU">Vector2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector3"><span title="Vector3" class="linkLabel_WmDU">Vector3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector4"><span title="Vector4" class="linkLabel_WmDU">Vector4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-arcadephysics"><span title="ArcadePhysics" class="linkLabel_WmDU">ArcadePhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-body"><span title="Body" class="linkLabel_WmDU">Body</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-collider"><span title="Collider" class="linkLabel_WmDU">Collider</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-staticbody"><span title="StaticBody" class="linkLabel_WmDU">StaticBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-staticgroup"><span title="StaticGroup" class="linkLabel_WmDU">StaticGroup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-bodybounds"><span title="BodyBounds" class="linkLabel_WmDU">BodyBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-matterphysics"><span title="MatterPhysics" class="linkLabel_WmDU">MatterPhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-pointerconstraint"><span title="PointerConstraint" class="linkLabel_WmDU">PointerConstraint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-tilebody"><span title="TileBody" class="linkLabel_WmDU">TileBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-baseplugin"><span title="BasePlugin" class="linkLabel_WmDU">BasePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-pluginmanager"><span title="PluginManager" class="linkLabel_WmDU">PluginManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-canvas-canvasrenderer"><span title="CanvasRenderer" class="linkLabel_WmDU">CanvasRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelinemanager"><span title="PipelineManager" class="linkLabel_WmDU">PipelineManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-bitmapmaskpipeline"><span title="BitmapMaskPipeline" class="linkLabel_WmDU">BitmapMaskPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-barrelfxpipeline"><span title="BarrelFXPipeline" class="linkLabel_WmDU">BarrelFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-bloomfxpipeline"><span title="BloomFXPipeline" class="linkLabel_WmDU">BloomFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-blurfxpipeline"><span title="BlurFXPipeline" class="linkLabel_WmDU">BlurFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-bokehfxpipeline"><span title="BokehFXPipeline" class="linkLabel_WmDU">BokehFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-circlefxpipeline"><span title="CircleFXPipeline" class="linkLabel_WmDU">CircleFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-colormatrixfxpipeline"><span title="ColorMatrixFXPipeline" class="linkLabel_WmDU">ColorMatrixFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-displacementfxpipeline"><span title="DisplacementFXPipeline" class="linkLabel_WmDU">DisplacementFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-glowfxpipeline"><span title="GlowFXPipeline" class="linkLabel_WmDU">GlowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-gradientfxpipeline"><span title="GradientFXPipeline" class="linkLabel_WmDU">GradientFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-pixelatefxpipeline"><span title="PixelateFXPipeline" class="linkLabel_WmDU">PixelateFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-shadowfxpipeline"><span title="ShadowFXPipeline" class="linkLabel_WmDU">ShadowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-shinefxpipeline"><span title="ShineFXPipeline" class="linkLabel_WmDU">ShineFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-vignettefxpipeline"><span title="VignetteFXPipeline" class="linkLabel_WmDU">VignetteFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-wipefxpipeline"><span title="WipeFXPipeline" class="linkLabel_WmDU">WipeFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fxpipeline"><span title="FXPipeline" class="linkLabel_WmDU">FXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-lightpipeline"><span title="LightPipeline" class="linkLabel_WmDU">LightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-mobilepipeline"><span title="MobilePipeline" class="linkLabel_WmDU">MobilePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-multipipeline"><span title="MultiPipeline" class="linkLabel_WmDU">MultiPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-pointlightpipeline"><span title="PointLightPipeline" class="linkLabel_WmDU">PointLightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-postfxpipeline"><span title="PostFXPipeline" class="linkLabel_WmDU">PostFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-prefxpipeline"><span title="PreFXPipeline" class="linkLabel_WmDU">PreFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-ropepipeline"><span title="RopePipeline" class="linkLabel_WmDU">RopePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-singlepipeline"><span title="SinglePipeline" class="linkLabel_WmDU">SinglePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-utilitypipeline"><span title="UtilityPipeline" class="linkLabel_WmDU">UtilityPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-rendertarget"><span title="RenderTarget" class="linkLabel_WmDU">RenderTarget</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglpipeline"><span title="WebGLPipeline" class="linkLabel_WmDU">WebGLPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglrenderer"><span title="WebGLRenderer" class="linkLabel_WmDU">WebGLRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglshader"><span title="WebGLShader" class="linkLabel_WmDU">WebGLShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglattriblocationwrapper"><span title="WebGLAttribLocationWrapper" class="linkLabel_WmDU">WebGLAttribLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglbufferwrapper"><span title="WebGLBufferWrapper" class="linkLabel_WmDU">WebGLBufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglframebufferwrapper"><span title="WebGLFramebufferWrapper" class="linkLabel_WmDU">WebGLFramebufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglprogramwrapper"><span title="WebGLProgramWrapper" class="linkLabel_WmDU">WebGLProgramWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webgltexturewrapper"><span title="WebGLTextureWrapper" class="linkLabel_WmDU">WebGLTextureWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webgluniformlocationwrapper"><span title="WebGLUniformLocationWrapper" class="linkLabel_WmDU">WebGLUniformLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scale-scalemanager"><span title="ScaleManager" class="linkLabel_WmDU">ScaleManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scene"><span title="Scene" class="linkLabel_WmDU">Scene</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-scenemanager"><span title="SceneManager" class="linkLabel_WmDU">SceneManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-systems"><span title="Systems" class="linkLabel_WmDU">Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-basesound"><span title="BaseSound" class="linkLabel_WmDU">BaseSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-basesoundmanager"><span title="BaseSoundManager" class="linkLabel_WmDU">BaseSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-html5audiosound"><span title="HTML5AudioSound" class="linkLabel_WmDU">HTML5AudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-html5audiosoundmanager"><span title="HTML5AudioSoundManager" class="linkLabel_WmDU">HTML5AudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-noaudiosound"><span title="NoAudioSound" class="linkLabel_WmDU">NoAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-noaudiosoundmanager"><span title="NoAudioSoundManager" class="linkLabel_WmDU">NoAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-webaudiosound"><span title="WebAudioSound" class="linkLabel_WmDU">WebAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-webaudiosoundmanager"><span title="WebAudioSoundManager" class="linkLabel_WmDU">WebAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-list"><span title="List" class="linkLabel_WmDU">List</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-map"><span title="Map" class="linkLabel_WmDU">Map</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-processqueue"><span title="ProcessQueue" class="linkLabel_WmDU">ProcessQueue</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-rtree"><span title="RTree" class="linkLabel_WmDU">RTree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-set"><span title="Set" class="linkLabel_WmDU">Set</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-size"><span title="Size" class="linkLabel_WmDU">Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-canvastexture"><span title="CanvasTexture" class="linkLabel_WmDU">CanvasTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-dynamictexture"><span title="DynamicTexture" class="linkLabel_WmDU">DynamicTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-frame"><span title="Frame" class="linkLabel_WmDU">Frame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texture"><span title="Texture" class="linkLabel_WmDU">Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texturemanager"><span title="TextureManager" class="linkLabel_WmDU">TextureManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texturesource"><span title="TextureSource" class="linkLabel_WmDU">TextureSource</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-imagecollection"><span title="ImageCollection" class="linkLabel_WmDU">ImageCollection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-layerdata"><span title="LayerData" class="linkLabel_WmDU">LayerData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-mapdata"><span title="MapData" class="linkLabel_WmDU">MapData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-objecthelper"><span title="ObjectHelper" class="linkLabel_WmDU">ObjectHelper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-objectlayer"><span title="ObjectLayer" class="linkLabel_WmDU">ObjectLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tile"><span title="Tile" class="linkLabel_WmDU">Tile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tilemap"><span title="Tilemap" class="linkLabel_WmDU">Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tilemaplayer"><span title="TilemapLayer" class="linkLabel_WmDU">TilemapLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tileset"><span title="Tileset" class="linkLabel_WmDU">Tileset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-clock"><span title="Clock" class="linkLabel_WmDU">Clock</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-timeline"><span title="Timeline" class="linkLabel_WmDU">Timeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-timerevent"><span title="TimerEvent" class="linkLabel_WmDU">TimerEvent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-basetween"><span title="BaseTween" class="linkLabel_WmDU">BaseTween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-basetweendata"><span title="BaseTweenData" class="linkLabel_WmDU">BaseTweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tween"><span title="Tween" class="linkLabel_WmDU">Tween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenchain"><span title="TweenChain" class="linkLabel_WmDU">TweenChain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweendata"><span title="TweenData" class="linkLabel_WmDU">TweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenframedata"><span title="TweenFrameData" class="linkLabel_WmDU">TweenFrameData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenmanager"><span title="TweenManager" class="linkLabel_WmDU">TweenManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/"><span title="Class" class="linkLabel_WmDU">Class</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/class/"><span>Class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">FX</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>FX</h1></header><p>The FX Component features a set of methods used for applying a range of special built-in effects to a Game Object.</p>
+<p>The effects include the following:</p>
+<ul>
+<li class="">
+<p>Barrel Distortion</p>
+</li>
+<li class="">
+<p>Bloom</p>
+</li>
+<li class="">
+<p>Blur</p>
+</li>
+<li class="">
+<p>Bokeh / Tilt Shift</p>
+</li>
+<li class="">
+<p>Circle Outline</p>
+</li>
+<li class="">
+<p>Color Matrix</p>
+</li>
+<li class="">
+<p>Glow</p>
+</li>
+<li class="">
+<p>Displacement</p>
+</li>
+<li class="">
+<p>Gradient</p>
+</li>
+<li class="">
+<p>Pixelate</p>
+</li>
+<li class="">
+<p>Shine</p>
+</li>
+<li class="">
+<p>Shadow</p>
+</li>
+<li class="">
+<p>Vignette</p>
+</li>
+<li class="">
+<p>Wipe / Reveal</p>
+</li>
+</ul>
+<p>All Game Objects support Post FX. These are effects applied after the Game Object has been rendered.</p>
+<p>Texture-based Game Objects also support Pre FX, including:</p>
+<ul>
+<li class="">
+<p>Image</p>
+</li>
+<li class="">
+<p>Sprite</p>
+</li>
+<li class="">
+<p>TileSprite</p>
+</li>
+<li class="">
+<p>Text</p>
+</li>
+<li class="">
+<p>RenderTexture</p>
+</li>
+<li class="">
+<p>Video</p>
+</li>
+</ul>
+<p>And any Game Object that extends the above.</p>
+<p>The difference between Pre FX and Post FX are that all Post FX take place in a canvas (renderer) sized frame buffer,</p>
+<p>after the Game Object has been rendered. Pre FX, however, take place in a texture sized frame buffer, which is sized</p>
+<p>based on the Game Object itself. The end result is then composited back to the main game canvas. For intensive effects,</p>
+<p>such as blur, bloom or glow, which can require many iterations, this is a much more efficient way to apply the effect,</p>
+<p>as only it only has to work on a Game Object sized texture and not all pixels in the canvas.</p>
+<p>In short, you should always try and use a Pre FX if you can.</p>
+<p>Due to the way that FX work they can be stacked-up. For example, you can apply a blur to a Game Object, then apply</p>
+<p>a bloom effect to the same Game Object. The bloom effect will be applied to the blurred texture, not the original.</p>
+<p>Keep the order in mind when stacking effects.</p>
+<p>All effects are WebGL only and do not have canvas counterparts.</p>
+<p>As you can appreciate, some effects are more expensive than others. For example, a bloom effect is going to be more</p>
+<p>expensive than a simple color matrix effect, so please consider using them wisely and performance test your target</p>
+<p>platforms early on in production.</p>
+<p>This component is created automatically by the <code>PostPipeline</code> class and does not need to be instantiated directly.</p>
+<p><strong>Constructor</strong></p>
+<p><code>new FX(gameObject, isPost)</code></p>
+<p><strong>Parameters</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gameObject</td><td><a class="" href="/api-documentation/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>A reference to the Game Object that owns this FX Component.</td></tr><tr><td>isPost</td><td>boolean</td><td>No</td><td>Is this a Pre or Post FX Component?</td></tr></tbody></table>
+<hr>
+<p><strong>Scope</strong>: static</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L11" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L11</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<h1>Public Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="enabled">enabled<a href="#enabled" class="hash-link" aria-label="Direct link to enabled" title="Direct link to enabled" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="enabled-boolean">enabled: boolean<a href="#enabled-boolean" class="hash-link" aria-label="Direct link to enabled: boolean" title="Direct link to enabled: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Has this FX Component been enabled?</p>
+<p>You should treat this property as read-only, although it is toggled</p>
+<p>automaticaly during internal use.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L100" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L100</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject">gameObject<a href="#gameobject" class="hash-link" aria-label="Direct link to gameObject" title="Direct link to gameObject" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject-phasergameobjectsgameobject">gameObject: <a class="" href="/api-documentation/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a><a href="#gameobject-phasergameobjectsgameobject" class="hash-link" aria-label="Direct link to gameobject-phasergameobjectsgameobject" title="Direct link to gameobject-phasergameobjectsgameobject" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A reference to the Game Object that owns this FX Component.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L80" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L80</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ispost">isPost<a href="#ispost" class="hash-link" aria-label="Direct link to isPost" title="Direct link to isPost" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ispost-boolean">isPost: boolean<a href="#ispost-boolean" class="hash-link" aria-label="Direct link to isPost: boolean" title="Direct link to isPost: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Is this a Post FX Controller? or a Pre FX Controller?</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L90" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L90</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="list">list<a href="#list" class="hash-link" aria-label="Direct link to list" title="Direct link to list" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="list-arrayphaserfxcontroller">list: Array.&lt;<a class="" href="/api-documentation/class/fx-controller">Phaser.FX.Controller</a>&gt;<a href="#list-arrayphaserfxcontroller" class="hash-link" aria-label="Direct link to list-arrayphaserfxcontroller" title="Direct link to list-arrayphaserfxcontroller" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An array containing all of the Pre FX Controllers that</p>
+<p>have been added to this FX Component. They are processed in</p>
+<p>the order they are added.</p>
+<p>This array is empty if this is a Post FX Component.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L112" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L112</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="padding">padding<a href="#padding" class="hash-link" aria-label="Direct link to padding" title="Direct link to padding" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="padding-number">padding: number<a href="#padding-number" class="hash-link" aria-label="Direct link to padding: number" title="Direct link to padding: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The amount of extra padding to be applied to this Game Object</p>
+<p>when it is being rendered by a PreFX Pipeline.</p>
+<p>Lots of FX require additional spacing added to the texture the</p>
+<p>Game Object uses, for example a glow or shadow effect, and this</p>
+<p>method allows you to control how much extra padding is included</p>
+<p>in addition to the texture size.</p>
+<p>You do not need to set this if you&#x27;re only using Post FX.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L125" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L125</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h1>Public Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="add">add<a href="#add" class="hash-link" aria-label="Direct link to add" title="Direct link to add" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addfx-config">&lt;instance&gt; add(fx, [config])<a href="#instance-addfx-config" class="hash-link" aria-label="Direct link to &lt;instance&gt; add(fx, [config])" title="Direct link to &lt;instance&gt; add(fx, [config])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds the given FX Controler to this FX Component.</p>
+<p>Note that adding an FX Controller does not remove any existing FX. They all stack-up</p>
+<p>on-top of each other. If you don&#x27;t want this, make sure to call either <code>remove</code> or</p>
+<p><code>clear</code> first.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>fx</td><td><a class="" href="/api-documentation/class/fx-controller">Phaser.FX.Controller</a></td><td>No</td><td>The FX Controller to add to this FX Component.</td></tr><tr><td>config</td><td>object</td><td>Yes</td><td>Optional configuration object that is passed to the pipeline during instantiation.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-controller">Phaser.FX.Controller</a> - The FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L377" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L377</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addbarrel">addBarrel<a href="#addbarrel" class="hash-link" aria-label="Direct link to addBarrel" title="Direct link to addBarrel" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addbarrelamount">&lt;instance&gt; addBarrel([amount])<a href="#instance-addbarrelamount" class="hash-link" aria-label="Direct link to &lt;instance&gt; addBarrel([amount])" title="Direct link to &lt;instance&gt; addBarrel([amount])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Barrel effect.</p>
+<p>A barrel effect allows you to apply either a &#x27;pinch&#x27; or &#x27;expand&#x27; distortion to</p>
+<p>a Game Object. The amount of the effect can be modified in real-time.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>amount</td><td>number</td><td>Yes</td><td>1</td><td>The amount of distortion applied to the barrel effect. A value of 1 is no distortion. Typically keep this within +- 1.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-barrel">Phaser.FX.Barrel</a> - The Barrel FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L671" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L671</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addbloom">addBloom<a href="#addbloom" class="hash-link" aria-label="Direct link to addBloom" title="Direct link to addBloom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addbloomcolor-offsetx-offsety-blurstrength-strength-steps">&lt;instance&gt; addBloom([color], [offsetX], [offsetY], [blurStrength], [strength], [steps])<a href="#instance-addbloomcolor-offsetx-offsety-blurstrength-strength-steps" class="hash-link" aria-label="Direct link to &lt;instance&gt; addBloom([color], [offsetX], [offsetY], [blurStrength], [strength], [steps])" title="Direct link to &lt;instance&gt; addBloom([color], [offsetX], [offsetY], [blurStrength], [strength], [steps])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Bloom effect.</p>
+<p>Bloom is an effect used to reproduce an imaging artifact of real-world cameras.</p>
+<p>The effect produces fringes of light extending from the borders of bright areas in an image,</p>
+<p>contributing to the illusion of an extremely bright light overwhelming the</p>
+<p>camera or eye capturing the scene.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>color</td><td>number</td><td>Yes</td><td></td><td>The color of the Bloom, as a hex value.</td></tr><tr><td>offsetX</td><td>number</td><td>Yes</td><td>1</td><td>The horizontal offset of the bloom effect.</td></tr><tr><td>offsetY</td><td>number</td><td>Yes</td><td>1</td><td>The vertical offset of the bloom effect.</td></tr><tr><td>blurStrength</td><td>number</td><td>Yes</td><td>1</td><td>The strength of the blur process of the bloom effect.</td></tr><tr><td>strength</td><td>number</td><td>Yes</td><td>1</td><td>The strength of the blend process of the bloom effect.</td></tr><tr><td>steps</td><td>number</td><td>Yes</td><td>4</td><td>The number of steps to run the Bloom effect for. This value should always be an integer.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-bloom">Phaser.FX.Bloom</a> - The Bloom FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L600" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L600</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addblur">addBlur<a href="#addblur" class="hash-link" aria-label="Direct link to addBlur" title="Direct link to addBlur" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addblurquality-x-y-strength-color-steps">&lt;instance&gt; addBlur([quality], [x], [y], [strength], [color], [steps])<a href="#instance-addblurquality-x-y-strength-color-steps" class="hash-link" aria-label="Direct link to &lt;instance&gt; addBlur([quality], [x], [y], [strength], [color], [steps])" title="Direct link to &lt;instance&gt; addBlur([quality], [x], [y], [strength], [color], [steps])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Blur effect.</p>
+<p>A Gaussian blur is the result of blurring an image by a Gaussian function. It is a widely used effect,</p>
+<p>typically to reduce image noise and reduce detail. The visual effect of this blurring technique is a</p>
+<p>smooth blur resembling that of viewing the image through a translucent screen, distinctly different</p>
+<p>from the bokeh effect produced by an out-of-focus lens or the shadow of an object under usual illumination.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>quality</td><td>number</td><td>Yes</td><td>0</td><td>The quality of the blur effect. Can be either 0 for Low Quality, 1 for Medium Quality or 2 for High Quality.</td></tr><tr><td>x</td><td>number</td><td>Yes</td><td>2</td><td>The horizontal offset of the blur effect.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>2</td><td>The vertical offset of the blur effect.</td></tr><tr><td>strength</td><td>number</td><td>Yes</td><td>1</td><td>The strength of the blur effect.</td></tr><tr><td>color</td><td>number</td><td>Yes</td><td>&quot;0xffffff&quot;</td><td>The color of the blur, as a hex value.</td></tr><tr><td>steps</td><td>number</td><td>Yes</td><td>4</td><td>The number of steps to run the blur effect for. This value should always be an integer.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-blur">Phaser.FX.Blur</a> - The Blur FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L548" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L548</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addbokeh">addBokeh<a href="#addbokeh" class="hash-link" aria-label="Direct link to addBokeh" title="Direct link to addBokeh" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addbokehradius-amount-contrast">&lt;instance&gt; addBokeh([radius], [amount], [contrast])<a href="#instance-addbokehradius-amount-contrast" class="hash-link" aria-label="Direct link to &lt;instance&gt; addBokeh([radius], [amount], [contrast])" title="Direct link to &lt;instance&gt; addBokeh([radius], [amount], [contrast])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Bokeh effect.</p>
+<p>Bokeh refers to a visual effect that mimics the photographic technique of creating a shallow depth of field.</p>
+<p>This effect is used to emphasize the game&#x27;s main subject or action, by blurring the background or foreground</p>
+<p>elements, resulting in a more immersive and visually appealing experience. It is achieved through rendering</p>
+<p>techniques that simulate the out-of-focus areas, giving a sense of depth and realism to the game&#x27;s graphics.</p>
+<p>See also Tilt Shift.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>radius</td><td>number</td><td>Yes</td><td>0.5</td><td>The radius of the bokeh effect.</td></tr><tr><td>amount</td><td>number</td><td>Yes</td><td>1</td><td>The amount of the bokeh effect.</td></tr><tr><td>contrast</td><td>number</td><td>Yes</td><td>0.2</td><td>The color contrast of the bokeh effect.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-bokeh">Phaser.FX.Bokeh</a> - The Bokeh FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L774" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L774</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addcircle">addCircle<a href="#addcircle" class="hash-link" aria-label="Direct link to addCircle" title="Direct link to addCircle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addcirclethickness-color-backgroundcolor-scale-feather">&lt;instance&gt; addCircle([thickness], [color], [backgroundColor], [scale], [feather])<a href="#instance-addcirclethickness-color-backgroundcolor-scale-feather" class="hash-link" aria-label="Direct link to &lt;instance&gt; addCircle([thickness], [color], [backgroundColor], [scale], [feather])" title="Direct link to &lt;instance&gt; addCircle([thickness], [color], [backgroundColor], [scale], [feather])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Circle effect.</p>
+<p>This effect will draw a circle around the texture of the Game Object, effectively masking off</p>
+<p>any area outside of the circle without the need for an actual mask. You can control the thickness</p>
+<p>of the circle, the color of the circle and the color of the background, should the texture be</p>
+<p>transparent. You can also control the feathering applied to the circle, allowing for a harsh or soft edge.</p>
+<p>Please note that adding this effect to a Game Object will not change the input area or physics body of</p>
+<p>the Game Object, should it have one.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>thickness</td><td>number</td><td>Yes</td><td>8</td><td>The width of the circle around the texture, in pixels.</td></tr><tr><td>color</td><td>number</td><td>Yes</td><td>&quot;0xfeedb6&quot;</td><td>The color of the circular ring, given as a number value.</td></tr><tr><td>backgroundColor</td><td>number</td><td>Yes</td><td>&quot;0xff0000&quot;</td><td>The color of the background, behind the texture, given as a number value.</td></tr><tr><td>scale</td><td>number</td><td>Yes</td><td>1</td><td>The scale of the circle. The default scale is 1, which is a circle the full size of the underlying texture.</td></tr><tr><td>feather</td><td>number</td><td>Yes</td><td>0.005</td><td>The amount of feathering to apply to the circle from the ring.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-circle">Phaser.FX.Circle</a> - The Circle FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L644" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L644</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addcolormatrix">addColorMatrix<a href="#addcolormatrix" class="hash-link" aria-label="Direct link to addColorMatrix" title="Direct link to addColorMatrix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addcolormatrix">&lt;instance&gt; addColorMatrix()<a href="#instance-addcolormatrix" class="hash-link" aria-label="Direct link to &lt;instance&gt; addColorMatrix()" title="Direct link to &lt;instance&gt; addColorMatrix()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a ColorMatrix effect.</p>
+<p>The color matrix effect is a visual technique that involves manipulating the colors of an image</p>
+<p>or scene using a mathematical matrix. This process can adjust hue, saturation, brightness, and contrast,</p>
+<p>allowing developers to create various stylistic appearances or mood settings within the game.</p>
+<p>Common applications include simulating different lighting conditions, applying color filters,</p>
+<p>or achieving a specific visual style.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-colormatrix">Phaser.FX.ColorMatrix</a> - The ColorMatrix FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L625" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L625</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="adddisplacement">addDisplacement<a href="#adddisplacement" class="hash-link" aria-label="Direct link to addDisplacement" title="Direct link to addDisplacement" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-adddisplacementtexture-x-y">&lt;instance&gt; addDisplacement([texture], [x], [y])<a href="#instance-adddisplacementtexture-x-y" class="hash-link" aria-label="Direct link to &lt;instance&gt; addDisplacement([texture], [x], [y])" title="Direct link to &lt;instance&gt; addDisplacement([texture], [x], [y])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Displacement effect.</p>
+<p>The displacement effect is a visual technique that alters the position of pixels in an image</p>
+<p>or texture based on the values of a displacement map. This effect is used to create the illusion</p>
+<p>of depth, surface irregularities, or distortion in otherwise flat elements. It can be applied to</p>
+<p>characters, objects, or backgrounds to enhance realism, convey movement, or achieve various</p>
+<p>stylistic appearances.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>texture</td><td>string</td><td>Yes</td><td>&quot;&#x27;__WHITE&#x27;&quot;</td><td>The unique string-based key of the texture to use for displacement, which must exist in the Texture Manager.</td></tr><tr><td>x</td><td>number</td><td>Yes</td><td>0.005</td><td>The amount of horizontal displacement to apply. A very small float number, such as 0.005.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>0.005</td><td>The amount of vertical displacement to apply. A very small float number, such as 0.005.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-displacement">Phaser.FX.Displacement</a> - The Displacement FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L689" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L689</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addglow">addGlow<a href="#addglow" class="hash-link" aria-label="Direct link to addGlow" title="Direct link to addGlow" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addglowcolor-outerstrength-innerstrength-knockout-quality-distance">&lt;instance&gt; addGlow([color], [outerStrength], [innerStrength], [knockout], [quality], [distance])<a href="#instance-addglowcolor-outerstrength-innerstrength-knockout-quality-distance" class="hash-link" aria-label="Direct link to &lt;instance&gt; addGlow([color], [outerStrength], [innerStrength], [knockout], [quality], [distance])" title="Direct link to &lt;instance&gt; addGlow([color], [outerStrength], [innerStrength], [knockout], [quality], [distance])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Glow effect.</p>
+<p>The glow effect is a visual technique that creates a soft, luminous halo around game objects,</p>
+<p>characters, or UI elements. This effect is used to emphasize importance, enhance visual appeal,</p>
+<p>or convey a sense of energy, magic, or otherworldly presence. The effect can also be set on</p>
+<p>the inside of the Game Object. The color and strength of the glow can be modified.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>color</td><td>number</td><td>Yes</td><td>&quot;0xffffff&quot;</td><td>The color of the glow effect as a number value.</td></tr><tr><td>outerStrength</td><td>number</td><td>Yes</td><td>4</td><td>The strength of the glow outward from the edge of the Sprite.</td></tr><tr><td>innerStrength</td><td>number</td><td>Yes</td><td>0</td><td>The strength of the glow inward from the edge of the Sprite.</td></tr><tr><td>knockout</td><td>boolean</td><td>Yes</td><td>false</td><td>If <code>true</code> only the glow is drawn, not the texture itself.</td></tr><tr><td>quality</td><td>number</td><td>Yes</td><td>0.1</td><td>Only available for PostFX. Sets the quality of this Glow effect. Default is 0.1. Cannot be changed post-creation.</td></tr><tr><td>distance</td><td>number</td><td>Yes</td><td>10</td><td>Only available for PostFX. Sets the distance of this Glow effect. Default is 10. Cannot be changed post-creation.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-glow">Phaser.FX.Glow</a> - The Glow FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L433" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L433</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addgradient">addGradient<a href="#addgradient" class="hash-link" aria-label="Direct link to addGradient" title="Direct link to addGradient" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addgradientcolor1-color2-alpha-fromx-fromy-tox-toy-size">&lt;instance&gt; addGradient([color1], [color2], [alpha], [fromX], [fromY], [toX], [toY], [size])<a href="#instance-addgradientcolor1-color2-alpha-fromx-fromy-tox-toy-size" class="hash-link" aria-label="Direct link to &lt;instance&gt; addGradient([color1], [color2], [alpha], [fromX], [fromY], [toX], [toY], [size])" title="Direct link to &lt;instance&gt; addGradient([color1], [color2], [alpha], [fromX], [fromY], [toX], [toY], [size])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Gradient effect.</p>
+<p>The gradient overlay effect is a visual technique where a smooth color transition is applied over Game Objects,</p>
+<p>such as sprites or UI components. This effect is used to enhance visual appeal, emphasize depth, or create</p>
+<p>stylistic and atmospheric variations. It can also be utilized to convey information, such as representing</p>
+<p>progress or health status through color changes.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>color1</td><td>number</td><td>Yes</td><td>&quot;0xff0000&quot;</td><td>The first gradient color, given as a number value.</td></tr><tr><td>color2</td><td>number</td><td>Yes</td><td>&quot;0x00ff00&quot;</td><td>The second gradient color, given as a number value.</td></tr><tr><td>alpha</td><td>number</td><td>Yes</td><td>0.2</td><td>The alpha value of the gradient effect.</td></tr><tr><td>fromX</td><td>number</td><td>Yes</td><td>0</td><td>The horizontal position the gradient will start from. This value is normalized, between 0 and 1, and is not in pixels.</td></tr><tr><td>fromY</td><td>number</td><td>Yes</td><td>0</td><td>The vertical position the gradient will start from. This value is normalized, between 0 and 1, and is not in pixels.</td></tr><tr><td>toX</td><td>number</td><td>Yes</td><td>0</td><td>The horizontal position the gradient will end at. This value is normalized, between 0 and 1, and is not in pixels.</td></tr><tr><td>toY</td><td>number</td><td>Yes</td><td>1</td><td>The vertical position the gradient will end at. This value is normalized, between 0 and 1, and is not in pixels.</td></tr><tr><td>size</td><td>number</td><td>Yes</td><td>0</td><td>How many &#x27;chunks&#x27; the gradient is divided in to, as spread over the entire height of the texture. Leave this at zero for a smooth gradient, or set higher for a more retro chunky effect.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-gradient">Phaser.FX.Gradient</a> - The Gradient FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L573" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L573</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addpixelate">addPixelate<a href="#addpixelate" class="hash-link" aria-label="Direct link to addPixelate" title="Direct link to addPixelate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addpixelateamount">&lt;instance&gt; addPixelate([amount])<a href="#instance-addpixelateamount" class="hash-link" aria-label="Direct link to &lt;instance&gt; addPixelate([amount])" title="Direct link to &lt;instance&gt; addPixelate([amount])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Pixelate effect.</p>
+<p>The pixelate effect is a visual technique that deliberately reduces the resolution or detail of an image,</p>
+<p>creating a blocky or mosaic appearance composed of large, visible pixels. This effect can be used for stylistic</p>
+<p>purposes, as a homage to retro gaming, or as a means to obscure certain elements within the game, such as</p>
+<p>during a transition or to censor specific content.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>amount</td><td>number</td><td>Yes</td><td>1</td><td>The amount of pixelation to apply.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-pixelate">Phaser.FX.Pixelate</a> - The Pixelate FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L483" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L483</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addreveal">addReveal<a href="#addreveal" class="hash-link" aria-label="Direct link to addReveal" title="Direct link to addReveal" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addrevealwipewidth-direction-axis">&lt;instance&gt; addReveal([wipeWidth], [direction], [axis])<a href="#instance-addrevealwipewidth-direction-axis" class="hash-link" aria-label="Direct link to &lt;instance&gt; addReveal([wipeWidth], [direction], [axis])" title="Direct link to &lt;instance&gt; addReveal([wipeWidth], [direction], [axis])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Reveal Wipe effect.</p>
+<p>The wipe or reveal effect is a visual technique that gradually uncovers or conceals elements</p>
+<p>in the game, such as images, text, or scene transitions. This effect is often used to create</p>
+<p>a sense of progression, reveal hidden content, or provide a smooth and visually appealing transition</p>
+<p>between game states.</p>
+<p>You can set both the direction and the axis of the wipe effect. The following combinations are possible:</p>
+<ul>
+<li class="">
+<p>left to right: direction 0, axis 0</p>
+</li>
+<li class="">
+<p>right to left: direction 1, axis 0</p>
+</li>
+<li class="">
+<p>top to bottom: direction 1, axis 1</p>
+</li>
+<li class="">
+<p>bottom to top: direction 1, axis 0</p>
+</li>
+</ul>
+<p>It is up to you to set the <code>progress</code> value yourself, i.e. via a Tween, in order to transition the effect.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>wipeWidth</td><td>number</td><td>Yes</td><td>0.1</td><td>The width of the wipe effect. This value is normalized in the range 0 to 1.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>0</td><td>The direction of the wipe effect. Either 0 or 1. Set in conjunction with the axis property.</td></tr><tr><td>axis</td><td>number</td><td>Yes</td><td>0</td><td>The axis of the wipe effect. Either 0 or 1. Set in conjunction with the direction property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-wipe">Phaser.FX.Wipe</a> - The Wipe FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L743" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L743</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addshadow">addShadow<a href="#addshadow" class="hash-link" aria-label="Direct link to addShadow" title="Direct link to addShadow" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addshadowx-y-decay-power-color-samples-intensity">&lt;instance&gt; addShadow([x], [y], [decay], [power], [color], [samples], [intensity])<a href="#instance-addshadowx-y-decay-power-color-samples-intensity" class="hash-link" aria-label="Direct link to &lt;instance&gt; addShadow([x], [y], [decay], [power], [color], [samples], [intensity])" title="Direct link to &lt;instance&gt; addShadow([x], [y], [decay], [power], [color], [samples], [intensity])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Shadow effect.</p>
+<p>The shadow effect is a visual technique used to create the illusion of depth and realism by adding darker,</p>
+<p>offset silhouettes or shapes beneath game objects, characters, or environments. These simulated shadows</p>
+<p>help to enhance the visual appeal and immersion, making the 2D game world appear more dynamic and three-dimensional.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>Yes</td><td>0</td><td>The horizontal offset of the shadow effect.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>0</td><td>The vertical offset of the shadow effect.</td></tr><tr><td>decay</td><td>number</td><td>Yes</td><td>0.1</td><td>The amount of decay for shadow effect.</td></tr><tr><td>power</td><td>number</td><td>Yes</td><td>1</td><td>The power of the shadow effect.</td></tr><tr><td>color</td><td>number</td><td>Yes</td><td>&quot;0x000000&quot;</td><td>The color of the shadow.</td></tr><tr><td>samples</td><td>number</td><td>Yes</td><td>6</td><td>The number of samples that the shadow effect will run for. An integer between 1 and 12.</td></tr><tr><td>intensity</td><td>number</td><td>Yes</td><td>1</td><td>The intensity of the shadow effect.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-shadow">Phaser.FX.Shadow</a> - The Shadow FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L458" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L458</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addshine">addShine<a href="#addshine" class="hash-link" aria-label="Direct link to addShine" title="Direct link to addShine" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addshinespeed-linewidth-gradient-reveal">&lt;instance&gt; addShine([speed], [lineWidth], [gradient], [reveal])<a href="#instance-addshinespeed-linewidth-gradient-reveal" class="hash-link" aria-label="Direct link to &lt;instance&gt; addShine([speed], [lineWidth], [gradient], [reveal])" title="Direct link to &lt;instance&gt; addShine([speed], [lineWidth], [gradient], [reveal])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Shine effect.</p>
+<p>The shine effect is a visual technique that simulates the appearance of reflective</p>
+<p>or glossy surfaces by passing a light beam across a Game Object. This effect is used to</p>
+<p>enhance visual appeal, emphasize certain features, and create a sense of depth or</p>
+<p>material properties.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>speed</td><td>number</td><td>Yes</td><td>0.5</td><td>The speed of the Shine effect.</td></tr><tr><td>lineWidth</td><td>number</td><td>Yes</td><td>0.5</td><td>The line width of the Shine effect.</td></tr><tr><td>gradient</td><td>number</td><td>Yes</td><td>3</td><td>The gradient of the Shine effect.</td></tr><tr><td>reveal</td><td>boolean</td><td>Yes</td><td>false</td><td>Does this Shine effect reveal or get added to its target?</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-shine">Phaser.FX.Shine</a> - The Shine FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L525" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L525</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addtiltshift">addTiltShift<a href="#addtiltshift" class="hash-link" aria-label="Direct link to addTiltShift" title="Direct link to addTiltShift" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addtiltshiftradius-amount-contrast-blurx-blury-strength">&lt;instance&gt; addTiltShift([radius], [amount], [contrast], [blurX], [blurY], [strength])<a href="#instance-addtiltshiftradius-amount-contrast-blurx-blury-strength" class="hash-link" aria-label="Direct link to &lt;instance&gt; addTiltShift([radius], [amount], [contrast], [blurX], [blurY], [strength])" title="Direct link to &lt;instance&gt; addTiltShift([radius], [amount], [contrast], [blurX], [blurY], [strength])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Tilt Shift effect.</p>
+<p>This Bokeh effect can also be used to generate a Tilt Shift effect, which is a technique used to create a miniature</p>
+<p>effect by blurring everything except a small area of the image. This effect is achieved by blurring the</p>
+<p>top and bottom elements, while keeping the center area in focus.</p>
+<p>See also Bokeh.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>radius</td><td>number</td><td>Yes</td><td>0.5</td><td>The radius of the bokeh effect.</td></tr><tr><td>amount</td><td>number</td><td>Yes</td><td>1</td><td>The amount of the bokeh effect.</td></tr><tr><td>contrast</td><td>number</td><td>Yes</td><td>0.2</td><td>The color contrast of the bokeh effect.</td></tr><tr><td>blurX</td><td>number</td><td>Yes</td><td>1</td><td>The amount of horizontal blur.</td></tr><tr><td>blurY</td><td>number</td><td>Yes</td><td>1</td><td>The amount of vertical blur.</td></tr><tr><td>strength</td><td>number</td><td>Yes</td><td>1</td><td>The strength of the blur.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-bokeh">Phaser.FX.Bokeh</a> - The Bokeh TiltShift FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L798" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L798</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addvignette">addVignette<a href="#addvignette" class="hash-link" aria-label="Direct link to addVignette" title="Direct link to addVignette" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addvignettex-y-radius-strength">&lt;instance&gt; addVignette([x], [y], [radius], [strength])<a href="#instance-addvignettex-y-radius-strength" class="hash-link" aria-label="Direct link to &lt;instance&gt; addVignette([x], [y], [radius], [strength])" title="Direct link to &lt;instance&gt; addVignette([x], [y], [radius], [strength])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Vignette effect.</p>
+<p>The vignette effect is a visual technique where the edges of the screen, or a Game Object, gradually darken or blur,</p>
+<p>creating a frame-like appearance. This effect is used to draw the player&#x27;s focus towards the central action or subject,</p>
+<p>enhance immersion, and provide a cinematic or artistic quality to the game&#x27;s visuals.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>x</td><td>number</td><td>Yes</td><td>0.5</td><td>The horizontal offset of the vignette effect. This value is normalized to the range 0 to 1.</td></tr><tr><td>y</td><td>number</td><td>Yes</td><td>0.5</td><td>The vertical offset of the vignette effect. This value is normalized to the range 0 to 1.</td></tr><tr><td>radius</td><td>number</td><td>Yes</td><td>0.5</td><td>The radius of the vignette effect. This value is normalized to the range 0 to 1.</td></tr><tr><td>strength</td><td>number</td><td>Yes</td><td>0.5</td><td>The strength of the vignette effect.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-vignette">Phaser.FX.Vignette</a> - The Vignette FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L503" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L503</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addwipe">addWipe<a href="#addwipe" class="hash-link" aria-label="Direct link to addWipe" title="Direct link to addWipe" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-addwipewipewidth-direction-axis">&lt;instance&gt; addWipe([wipeWidth], [direction], [axis])<a href="#instance-addwipewipewidth-direction-axis" class="hash-link" aria-label="Direct link to &lt;instance&gt; addWipe([wipeWidth], [direction], [axis])" title="Direct link to &lt;instance&gt; addWipe([wipeWidth], [direction], [axis])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds a Wipe effect.</p>
+<p>The wipe or reveal effect is a visual technique that gradually uncovers or conceals elements</p>
+<p>in the game, such as images, text, or scene transitions. This effect is often used to create</p>
+<p>a sense of progression, reveal hidden content, or provide a smooth and visually appealing transition</p>
+<p>between game states.</p>
+<p>You can set both the direction and the axis of the wipe effect. The following combinations are possible:</p>
+<ul>
+<li class="">
+<p>left to right: direction 0, axis 0</p>
+</li>
+<li class="">
+<p>right to left: direction 1, axis 0</p>
+</li>
+<li class="">
+<p>top to bottom: direction 1, axis 1</p>
+</li>
+<li class="">
+<p>bottom to top: direction 1, axis 0</p>
+</li>
+</ul>
+<p>It is up to you to set the <code>progress</code> value yourself, i.e. via a Tween, in order to transition the effect.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>wipeWidth</td><td>number</td><td>Yes</td><td>0.1</td><td>The width of the wipe effect. This value is normalized in the range 0 to 1.</td></tr><tr><td>direction</td><td>number</td><td>Yes</td><td>0</td><td>The direction of the wipe effect. Either 0 or 1. Set in conjunction with the axis property.</td></tr><tr><td>axis</td><td>number</td><td>Yes</td><td>0</td><td>The axis of the wipe effect. Either 0 or 1. Set in conjunction with the direction property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/fx-wipe">Phaser.FX.Wipe</a> - The Wipe FX Controller.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L712" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L712</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="clear">clear<a href="#clear" class="hash-link" aria-label="Direct link to clear" title="Direct link to clear" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-clear">&lt;instance&gt; clear()<a href="#instance-clear" class="hash-link" aria-label="Direct link to &lt;instance&gt; clear()" title="Direct link to &lt;instance&gt; clear()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Destroys and removes all FX Controllers that are part of this FX Component,</p>
+<p>then disables it.</p>
+<p>If this is a Pre FX Component it will only remove Pre FX.</p>
+<p>If this is a Post FX Component it will only remove Post FX.</p>
+<p>To remove both at once use the <code>GameObject.clearFX</code> method instead.</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/gameobjects-components-fx">Phaser.GameObjects.Components.FX</a> - This Game Object instance.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L244" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L244</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">destroy<a href="#destroy" class="hash-link" aria-label="Direct link to destroy" title="Direct link to destroy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-destroy">&lt;instance&gt; destroy()<a href="#instance-destroy" class="hash-link" aria-label="Direct link to &lt;instance&gt; destroy()" title="Direct link to &lt;instance&gt; destroy()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Destroys this FX Component.</p>
+<p>Called automatically when Game Objects are destroyed.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L824" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L824</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="disable">disable<a href="#disable" class="hash-link" aria-label="Direct link to disable" title="Direct link to disable" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-disableclear">&lt;instance&gt; disable([clear])<a href="#instance-disableclear" class="hash-link" aria-label="Direct link to &lt;instance&gt; disable([clear])" title="Direct link to &lt;instance&gt; disable([clear])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Disables this FX Component.</p>
+<p>This will reset the pipeline on the Game Object that owns this component back to its</p>
+<p>default and flag this component as disabled.</p>
+<p>You can re-enable it again by calling <code>enable</code> for Pre FX or by adding an FX for Post FX.</p>
+<p>Optionally, set <code>clear</code> to destroy all current FX Controllers.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>clear</td><td>boolean</td><td>Yes</td><td>false</td><td>Destroy and remove all FX Controllers that are part of this component.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/gameobjects-components-fx">Phaser.GameObjects.Components.FX</a> - This Game Object instance.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L341" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L341</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="enable">enable<a href="#enable" class="hash-link" aria-label="Direct link to enable" title="Direct link to enable" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-enablepadding">&lt;instance&gt; enable([padding])<a href="#instance-enablepadding" class="hash-link" aria-label="Direct link to &lt;instance&gt; enable([padding])" title="Direct link to &lt;instance&gt; enable([padding])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Enables this FX Component and applies the FXPipeline to the parent Game Object.</p>
+<p>This is called automatically whenever you call a method such as <code>addBloom</code>, etc.</p>
+<p>You can check the <code>enabled</code> property to see if the Game Object is already enabled, or not.</p>
+<p>This only applies to Pre FX. Post FX are always enabled.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>padding</td><td>number</td><td>Yes</td><td>0</td><td>The amount of padding to add to this Game Object.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L204" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L204</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onfx">onFX<a href="#onfx" class="hash-link" aria-label="Direct link to onFX" title="Direct link to onFX" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onfxpipeline">&lt;instance&gt; onFX(pipeline)<a href="#instance-onfxpipeline" class="hash-link" aria-label="Direct link to &lt;instance&gt; onFX(pipeline)" title="Direct link to &lt;instance&gt; onFX(pipeline)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This callback is invoked when this Game Object is rendered by a PreFX Pipeline.</p>
+<p>This happens when the pipeline uses its <code>drawSprite</code> method.</p>
+<p>It&#x27;s invoked prior to the draw, allowing you to set shader uniforms, etc on the pipeline.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pipeline</td><td><a class="" href="/api-documentation/class/renderer-webgl-pipelines-prefxpipeline">Phaser.Renderer.WebGL.Pipelines.PreFXPipeline</a></td><td>No</td><td>The PreFX Pipeline that invoked this callback.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L188" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L188</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onfxcopy">onFXCopy<a href="#onfxcopy" class="hash-link" aria-label="Direct link to onFXCopy" title="Direct link to onFXCopy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onfxcopypipeline">&lt;instance&gt; onFXCopy(pipeline)<a href="#instance-onfxcopypipeline" class="hash-link" aria-label="Direct link to &lt;instance&gt; onFXCopy(pipeline)" title="Direct link to &lt;instance&gt; onFXCopy(pipeline)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>This callback is invoked when this Game Object is copied by a PreFX Pipeline.</p>
+<p>This happens when the pipeline uses its <code>copySprite</code> method.</p>
+<p>It&#x27;s invoked prior to the copy, allowing you to set shader uniforms, etc on the pipeline.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pipeline</td><td><a class="" href="/api-documentation/class/renderer-webgl-pipelines-prefxpipeline">Phaser.Renderer.WebGL.Pipelines.PreFXPipeline</a></td><td>No</td><td>The PreFX Pipeline that invoked this callback.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L172" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L172</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove">remove<a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-removefx">&lt;instance&gt; remove(fx)<a href="#instance-removefx" class="hash-link" aria-label="Direct link to &lt;instance&gt; remove(fx)" title="Direct link to &lt;instance&gt; remove(fx)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Searches for the given FX Controller within this FX Component.</p>
+<p>If found, the controller is removed from this component and then destroyed.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>fx</td><td><a class="" href="/api-documentation/class/fx-controller">Phaser.FX.Controller</a></td><td>No</td><td>The FX Controller to remove from this FX Component.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/gameobjects-components-fx">Phaser.GameObjects.Components.FX</a> - This Game Object instance.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L281" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L281</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setpadding">setPadding<a href="#setpadding" class="hash-link" aria-label="Direct link to setPadding" title="Direct link to setPadding" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setpaddingpadding">&lt;instance&gt; setPadding([padding])<a href="#instance-setpaddingpadding" class="hash-link" aria-label="Direct link to &lt;instance&gt; setPadding([padding])" title="Direct link to &lt;instance&gt; setPadding([padding])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the amount of extra padding to be applied to this Game Object</p>
+<p>when it is being rendered by a PreFX Pipeline.</p>
+<p>Lots of FX require additional spacing added to the texture the</p>
+<p>Game Object uses, for example a glow or shadow effect, and this</p>
+<p>method allows you to control how much extra padding is included</p>
+<p>in addition to the texture size.</p>
+<p>You do not need to set this if you&#x27;re only using Post FX.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">webglOnly</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>padding</td><td>number</td><td>Yes</td><td>0</td><td>The amount of padding to add to this Game Object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/gameobjects-components-fx">Phaser.GameObjects.Components.FX</a> - This Game Object instance.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/components/FX.js#L144" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/components/FX.js#L144</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/class/gameobjects-bob"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Bob</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/class/gameobjects-components-transformmatrix"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">TransformMatrix</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#enabled" class="table-of-contents__link toc-highlight">enabled</a><ul><li><a href="#enabled-boolean" class="table-of-contents__link toc-highlight">enabled: boolean</a></li></ul></li><li><a href="#gameobject" class="table-of-contents__link toc-highlight">gameObject</a><ul><li><a href="#gameobject-phasergameobjectsgameobject" class="table-of-contents__link toc-highlight">gameObject: Phaser.GameObjects.GameObject</a></li></ul></li><li><a href="#ispost" class="table-of-contents__link toc-highlight">isPost</a><ul><li><a href="#ispost-boolean" class="table-of-contents__link toc-highlight">isPost: boolean</a></li></ul></li><li><a href="#list" class="table-of-contents__link toc-highlight">list</a><ul><li><a href="#list-arrayphaserfxcontroller" class="table-of-contents__link toc-highlight">list: Array.&lt;Phaser.FX.Controller&gt;</a></li></ul></li><li><a href="#padding" class="table-of-contents__link toc-highlight">padding</a><ul><li><a href="#padding-number" class="table-of-contents__link toc-highlight">padding: number</a></li></ul></li><li><a href="#add" class="table-of-contents__link toc-highlight">add</a><ul><li><a href="#instance-addfx-config" class="table-of-contents__link toc-highlight">&lt;instance&gt; add(fx, [config])</a></li></ul></li><li><a href="#addbarrel" class="table-of-contents__link toc-highlight">addBarrel</a><ul><li><a href="#instance-addbarrelamount" class="table-of-contents__link toc-highlight">&lt;instance&gt; addBarrel([amount])</a></li></ul></li><li><a href="#addbloom" class="table-of-contents__link toc-highlight">addBloom</a><ul><li><a href="#instance-addbloomcolor-offsetx-offsety-blurstrength-strength-steps" class="table-of-contents__link toc-highlight">&lt;instance&gt; addBloom([color], [offsetX], [offsetY], [blurStrength], [strength], [steps])</a></li></ul></li><li><a href="#addblur" class="table-of-contents__link toc-highlight">addBlur</a><ul><li><a href="#instance-addblurquality-x-y-strength-color-steps" class="table-of-contents__link toc-highlight">&lt;instance&gt; addBlur([quality], [x], [y], [strength], [color], [steps])</a></li></ul></li><li><a href="#addbokeh" class="table-of-contents__link toc-highlight">addBokeh</a><ul><li><a href="#instance-addbokehradius-amount-contrast" class="table-of-contents__link toc-highlight">&lt;instance&gt; addBokeh([radius], [amount], [contrast])</a></li></ul></li><li><a href="#addcircle" class="table-of-contents__link toc-highlight">addCircle</a><ul><li><a href="#instance-addcirclethickness-color-backgroundcolor-scale-feather" class="table-of-contents__link toc-highlight">&lt;instance&gt; addCircle([thickness], [color], [backgroundColor], [scale], [feather])</a></li></ul></li><li><a href="#addcolormatrix" class="table-of-contents__link toc-highlight">addColorMatrix</a><ul><li><a href="#instance-addcolormatrix" class="table-of-contents__link toc-highlight">&lt;instance&gt; addColorMatrix()</a></li></ul></li><li><a href="#adddisplacement" class="table-of-contents__link toc-highlight">addDisplacement</a><ul><li><a href="#instance-adddisplacementtexture-x-y" class="table-of-contents__link toc-highlight">&lt;instance&gt; addDisplacement([texture], [x], [y])</a></li></ul></li><li><a href="#addglow" class="table-of-contents__link toc-highlight">addGlow</a><ul><li><a href="#instance-addglowcolor-outerstrength-innerstrength-knockout-quality-distance" class="table-of-contents__link toc-highlight">&lt;instance&gt; addGlow([color], [outerStrength], [innerStrength], [knockout], [quality], [distance])</a></li></ul></li><li><a href="#addgradient" class="table-of-contents__link toc-highlight">addGradient</a><ul><li><a href="#instance-addgradientcolor1-color2-alpha-fromx-fromy-tox-toy-size" class="table-of-contents__link toc-highlight">&lt;instance&gt; addGradient([color1], [color2], [alpha], [fromX], [fromY], [toX], [toY], [size])</a></li></ul></li><li><a href="#addpixelate" class="table-of-contents__link toc-highlight">addPixelate</a><ul><li><a href="#instance-addpixelateamount" class="table-of-contents__link toc-highlight">&lt;instance&gt; addPixelate([amount])</a></li></ul></li><li><a href="#addreveal" class="table-of-contents__link toc-highlight">addReveal</a><ul><li><a href="#instance-addrevealwipewidth-direction-axis" class="table-of-contents__link toc-highlight">&lt;instance&gt; addReveal([wipeWidth], [direction], [axis])</a></li></ul></li><li><a href="#addshadow" class="table-of-contents__link toc-highlight">addShadow</a><ul><li><a href="#instance-addshadowx-y-decay-power-color-samples-intensity" class="table-of-contents__link toc-highlight">&lt;instance&gt; addShadow([x], [y], [decay], [power], [color], [samples], [intensity])</a></li></ul></li><li><a href="#addshine" class="table-of-contents__link toc-highlight">addShine</a><ul><li><a href="#instance-addshinespeed-linewidth-gradient-reveal" class="table-of-contents__link toc-highlight">&lt;instance&gt; addShine([speed], [lineWidth], [gradient], [reveal])</a></li></ul></li><li><a href="#addtiltshift" class="table-of-contents__link toc-highlight">addTiltShift</a><ul><li><a href="#instance-addtiltshiftradius-amount-contrast-blurx-blury-strength" class="table-of-contents__link toc-highlight">&lt;instance&gt; addTiltShift([radius], [amount], [contrast], [blurX], [blurY], [strength])</a></li></ul></li><li><a href="#addvignette" class="table-of-contents__link toc-highlight">addVignette</a><ul><li><a href="#instance-addvignettex-y-radius-strength" class="table-of-contents__link toc-highlight">&lt;instance&gt; addVignette([x], [y], [radius], [strength])</a></li></ul></li><li><a href="#addwipe" class="table-of-contents__link toc-highlight">addWipe</a><ul><li><a href="#instance-addwipewipewidth-direction-axis" class="table-of-contents__link toc-highlight">&lt;instance&gt; addWipe([wipeWidth], [direction], [axis])</a></li></ul></li><li><a href="#clear" class="table-of-contents__link toc-highlight">clear</a><ul><li><a href="#instance-clear" class="table-of-contents__link toc-highlight">&lt;instance&gt; clear()</a></li></ul></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">destroy</a><ul><li><a href="#instance-destroy" class="table-of-contents__link toc-highlight">&lt;instance&gt; destroy()</a></li></ul></li><li><a href="#disable" class="table-of-contents__link toc-highlight">disable</a><ul><li><a href="#instance-disableclear" class="table-of-contents__link toc-highlight">&lt;instance&gt; disable([clear])</a></li></ul></li><li><a href="#enable" class="table-of-contents__link toc-highlight">enable</a><ul><li><a href="#instance-enablepadding" class="table-of-contents__link toc-highlight">&lt;instance&gt; enable([padding])</a></li></ul></li><li><a href="#onfx" class="table-of-contents__link toc-highlight">onFX</a><ul><li><a href="#instance-onfxpipeline" class="table-of-contents__link toc-highlight">&lt;instance&gt; onFX(pipeline)</a></li></ul></li><li><a href="#onfxcopy" class="table-of-contents__link toc-highlight">onFXCopy</a><ul><li><a href="#instance-onfxcopypipeline" class="table-of-contents__link toc-highlight">&lt;instance&gt; onFXCopy(pipeline)</a></li></ul></li><li><a href="#remove" class="table-of-contents__link toc-highlight">remove</a><ul><li><a href="#instance-removefx" class="table-of-contents__link toc-highlight">&lt;instance&gt; remove(fx)</a></li></ul></li><li><a href="#setpadding" class="table-of-contents__link toc-highlight">setPadding</a><ul><li><a href="#instance-setpaddingpadding" class="table-of-contents__link toc-highlight">&lt;instance&gt; setPadding([padding])</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

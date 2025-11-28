@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.86.0 docs-doc-page docs-doc-id-function/Phaser.Renderer" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Phaser.Renderer | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.86.0/function/renderer"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.86.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" name="docsearch:version" content="3.86.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" property="og:title" content="Phaser.Renderer | Phaser Help"><meta data-rh="true" name="description" content="GetBlendModes"><meta data-rh="true" property="og:description" content="GetBlendModes"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.86.0/function/renderer"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/function/renderer" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/function/renderer" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Functions","item":"https://docs.phaser.io/api-documentation/3.86.0/function/"},{"@type":"ListItem","position":2,"name":"Phaser.Renderer","item":"https://docs.phaser.io/api-documentation/3.86.0/function/renderer"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.86.0/function/renderer">API Documentation - v3.86.0</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/function/renderer">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/function/renderer">API Documentation - v3.85.2</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.86.0/function/renderer">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser 3.86.0 API Documentation" class="linkLabel_WmDU">Phaser 3.86.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.86.0/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Collapse sidebar category &#x27;Functions&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/actions"><span title="Phaser.Actions" class="linkLabel_WmDU">Phaser.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/core"><span title="Phaser.Core" class="linkLabel_WmDU">Phaser.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/create"><span title="Phaser.Create" class="linkLabel_WmDU">Phaser.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/curves"><span title="Phaser.Curves" class="linkLabel_WmDU">Phaser.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/dom"><span title="Phaser.DOM" class="linkLabel_WmDU">Phaser.DOM</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/display"><span title="Phaser.Display" class="linkLabel_WmDU">Phaser.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/gameobjects"><span title="Phaser.GameObjects" class="linkLabel_WmDU">Phaser.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/geom"><span title="Phaser.Geom" class="linkLabel_WmDU">Phaser.Geom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/input"><span title="Phaser.Input" class="linkLabel_WmDU">Phaser.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/loader"><span title="Phaser.Loader" class="linkLabel_WmDU">Phaser.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/math"><span title="Phaser.Math" class="linkLabel_WmDU">Phaser.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/physics"><span title="Phaser.Physics" class="linkLabel_WmDU">Phaser.Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/plugins"><span title="Phaser.Plugins" class="linkLabel_WmDU">Phaser.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.86.0/function/renderer"><span title="Phaser.Renderer" class="linkLabel_WmDU">Phaser.Renderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/scenes"><span title="Phaser.Scenes" class="linkLabel_WmDU">Phaser.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/sound"><span title="Phaser.Sound" class="linkLabel_WmDU">Phaser.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/textures"><span title="Phaser.Textures" class="linkLabel_WmDU">Phaser.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/tilemaps"><span title="Phaser.Tilemaps" class="linkLabel_WmDU">Phaser.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/tweens"><span title="Phaser.Tweens" class="linkLabel_WmDU">Phaser.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/utils"><span title="Phaser.Utils" class="linkLabel_WmDU">Phaser.Utils</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/function/"><span title="Functions" class="linkLabel_WmDU">Functions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.86.0</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/function/renderer">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.86.0/function/"><span>Functions</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Phaser.Renderer</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.86.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Phaser.Renderer.Canvas</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getblendmodes">GetBlendModes<a href="#getblendmodes" class="hash-link" aria-label="Direct link to GetBlendModes" title="Direct link to GetBlendModes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getblendmodes">&lt;static&gt; GetBlendModes()<a href="#static-getblendmodes" class="hash-link" aria-label="Direct link to &lt;static&gt; GetBlendModes()" title="Direct link to &lt;static&gt; GetBlendModes()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns an array which maps the default blend modes to supported Canvas blend modes.</p>
+<p>If the browser doesn&#x27;t support a blend mode, it will default to the normal <code>source-over</code> blend mode.</p>
+<p><strong>Returns:</strong> array - Which Canvas blend mode corresponds to which default Phaser blend mode.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/canvas/utils/GetBlendModes.js#L10" target="_blank" rel="noopener noreferrer" class="">src/renderer/canvas/utils/GetBlendModes.js#L10</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="settransform">SetTransform<a href="#settransform" class="hash-link" aria-label="Direct link to SetTransform" title="Direct link to SetTransform" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-settransformrenderer-ctx-src-camera-parentmatrix">&lt;static&gt; SetTransform(renderer, ctx, src, camera, [parentMatrix])<a href="#static-settransformrenderer-ctx-src-camera-parentmatrix" class="hash-link" aria-label="Direct link to &lt;static&gt; SetTransform(renderer, ctx, src, camera, [parentMatrix])" title="Direct link to &lt;static&gt; SetTransform(renderer, ctx, src, camera, [parentMatrix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a reference to the Canvas Renderer, a Canvas Rendering Context, a Game Object, a Camera and a parent matrix</p>
+<p>and then performs the following steps:</p>
+<ol>
+<li class="">
+<p>Checks the alpha of the source combined with the Camera alpha. If 0 or less it aborts.</p>
+</li>
+<li class="">
+<p>Takes the Camera and Game Object matrix and multiplies them, combined with the parent matrix if given.</p>
+</li>
+<li class="">
+<p>Sets the blend mode of the context to be that used by the Game Object.</p>
+</li>
+<li class="">
+<p>Sets the alpha value of the context to be that used by the Game Object combined with the Camera.</p>
+</li>
+<li class="">
+<p>Saves the context state.</p>
+</li>
+<li class="">
+<p>Sets the final matrix values into the context via setTransform.</p>
+</li>
+<li class="">
+<p>If the Game Object has a texture frame, imageSmoothingEnabled is set based on frame.source.scaleMode.</p>
+</li>
+<li class="">
+<p>If the Game Object does not have a texture frame, imageSmoothingEnabled is set based on Renderer.antialias.</p>
+</li>
+</ol>
+<p>This function is only meant to be used internally. Most of the Canvas Renderer classes use it.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>renderer</td><td><a class="" href="/api-documentation/3.86.0/class/renderer-canvas-canvasrenderer">Phaser.Renderer.Canvas.CanvasRenderer</a></td><td>No</td><td>A reference to the current active Canvas renderer.</td></tr><tr><td>ctx</td><td>CanvasRenderingContext2D</td><td>No</td><td>The canvas context to set the transform on.</td></tr><tr><td>src</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object being rendered. Can be any type that extends the base class.</td></tr><tr><td>camera</td><td><a class="" href="/api-documentation/3.86.0/class/cameras-scene2d-camera">Phaser.Cameras.Scene2D.Camera</a></td><td>No</td><td>The Camera that is rendering the Game Object.</td></tr><tr><td>parentMatrix</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-components-transformmatrix">Phaser.GameObjects.Components.TransformMatrix</a></td><td>Yes</td><td>A parent transform matrix to apply to the Game Object before rendering.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the Game Object context was set, otherwise <code>false</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/canvas/utils/SetTransform.js#L9" target="_blank" rel="noopener noreferrer" class="">src/renderer/canvas/utils/SetTransform.js#L9</a><br>
+Since: 3.12.0</p>
+</blockquote>
+<h1>Phaser.Renderer.Snapshot</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="canvas">Canvas<a href="#canvas" class="hash-link" aria-label="Direct link to Canvas" title="Direct link to Canvas" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-canvassourcecanvas-config">&lt;static&gt; Canvas(sourceCanvas, config)<a href="#static-canvassourcecanvas-config" class="hash-link" aria-label="Direct link to &lt;static&gt; Canvas(sourceCanvas, config)" title="Direct link to &lt;static&gt; Canvas(sourceCanvas, config)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a snapshot of an area from the current frame displayed by a canvas.</p>
+<p>This is then copied to an Image object. When this loads, the results are sent</p>
+<p>to the callback provided in the Snapshot Configuration object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sourceCanvas</td><td>HTMLCanvasElement</td><td>No</td><td>The canvas to take a snapshot of.</td></tr><tr><td>config</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-renderer-snapshot#SnapshotState">Phaser.Types.Renderer.Snapshot.SnapshotState</a></td><td>No</td><td>The snapshot configuration object.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/snapshot/CanvasSnapshot.js#L11" target="_blank" rel="noopener noreferrer" class="">src/renderer/snapshot/CanvasSnapshot.js#L11</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="webgl">WebGL<a href="#webgl" class="hash-link" aria-label="Direct link to WebGL" title="Direct link to WebGL" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-webglsourcecontext-config">&lt;static&gt; WebGL(sourceContext, config)<a href="#static-webglsourcecontext-config" class="hash-link" aria-label="Direct link to &lt;static&gt; WebGL(sourceContext, config)" title="Direct link to &lt;static&gt; WebGL(sourceContext, config)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes a snapshot of an area from the current frame displayed by a WebGL canvas.</p>
+<p>This is then copied to an Image object. When this loads, the results are sent</p>
+<p>to the callback provided in the Snapshot Configuration object.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>sourceContext</td><td>WebGLRenderingContext</td><td>No</td><td>The WebGL context to take a snapshot of.</td></tr><tr><td>config</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-renderer-snapshot#SnapshotState">Phaser.Types.Renderer.Snapshot.SnapshotState</a></td><td>No</td><td>The snapshot configuration object.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/snapshot/WebGLSnapshot.js#L11" target="_blank" rel="noopener noreferrer" class="">src/renderer/snapshot/WebGLSnapshot.js#L11</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h1>Phaser.Renderer.WebGL.Utils</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gettintfromfloats">getTintFromFloats<a href="#gettintfromfloats" class="hash-link" aria-label="Direct link to getTintFromFloats" title="Direct link to getTintFromFloats" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gettintfromfloatsr-g-b-a">&lt;static&gt; getTintFromFloats(r, g, b, a)<a href="#static-gettintfromfloatsr-g-b-a" class="hash-link" aria-label="Direct link to &lt;static&gt; getTintFromFloats(r, g, b, a)" title="Direct link to &lt;static&gt; getTintFromFloats(r, g, b, a)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Packs four floats on a range from 0.0 to 1.0 into a single Uint32</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>r</td><td>number</td><td>No</td><td>Red component in a range from 0.0 to 1.0</td></tr><tr><td>g</td><td>number</td><td>No</td><td>Green component in a range from 0.0 to 1.0</td></tr><tr><td>b</td><td>number</td><td>No</td><td>Blue component in a range from 0.0 to 1.0</td></tr><tr><td>a</td><td>number</td><td>No</td><td>Alpha component in a range from 0.0 to 1.0</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The packed RGBA values as a Uint32.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/webgl/Utils.js#L15" target="_blank" rel="noopener noreferrer" class="">src/renderer/webgl/Utils.js#L15</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gettintappendfloatalpha">getTintAppendFloatAlpha<a href="#gettintappendfloatalpha" class="hash-link" aria-label="Direct link to getTintAppendFloatAlpha" title="Direct link to getTintAppendFloatAlpha" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gettintappendfloatalphargb-a">&lt;static&gt; getTintAppendFloatAlpha(rgb, a)<a href="#static-gettintappendfloatalphargb-a" class="hash-link" aria-label="Direct link to &lt;static&gt; getTintAppendFloatAlpha(rgb, a)" title="Direct link to &lt;static&gt; getTintAppendFloatAlpha(rgb, a)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Packs a Uint24, representing RGB components, with a Float32, representing</p>
+<p>the alpha component, with a range between 0.0 and 1.0 and return a Uint32</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>rgb</td><td>number</td><td>No</td><td>Uint24 representing RGB components</td></tr><tr><td>a</td><td>number</td><td>No</td><td>Float32 representing Alpha component</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - Packed RGBA as Uint32</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/webgl/Utils.js#L38" target="_blank" rel="noopener noreferrer" class="">src/renderer/webgl/Utils.js#L38</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gettintappendfloatalphaandswap">getTintAppendFloatAlphaAndSwap<a href="#gettintappendfloatalphaandswap" class="hash-link" aria-label="Direct link to getTintAppendFloatAlphaAndSwap" title="Direct link to getTintAppendFloatAlphaAndSwap" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-gettintappendfloatalphaandswaprgb-a">&lt;static&gt; getTintAppendFloatAlphaAndSwap(rgb, a)<a href="#static-gettintappendfloatalphaandswaprgb-a" class="hash-link" aria-label="Direct link to &lt;static&gt; getTintAppendFloatAlphaAndSwap(rgb, a)" title="Direct link to &lt;static&gt; getTintAppendFloatAlphaAndSwap(rgb, a)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Packs a Uint24, representing RGB components, with a Float32, representing</p>
+<p>the alpha component, with a range between 0.0 and 1.0 and return a</p>
+<p>swizzled Uint32</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>rgb</td><td>number</td><td>No</td><td>Uint24 representing RGB components</td></tr><tr><td>a</td><td>number</td><td>No</td><td>Float32 representing Alpha component</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - Packed RGBA as Uint32</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/webgl/Utils.js#L57" target="_blank" rel="noopener noreferrer" class="">src/renderer/webgl/Utils.js#L57</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getfloatsfromuintrgb">getFloatsFromUintRGB<a href="#getfloatsfromuintrgb" class="hash-link" aria-label="Direct link to getFloatsFromUintRGB" title="Direct link to getFloatsFromUintRGB" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getfloatsfromuintrgbrgb">&lt;static&gt; getFloatsFromUintRGB(rgb)<a href="#static-getfloatsfromuintrgbrgb" class="hash-link" aria-label="Direct link to &lt;static&gt; getFloatsFromUintRGB(rgb)" title="Direct link to &lt;static&gt; getFloatsFromUintRGB(rgb)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Unpacks a Uint24 RGB into an array of floats of ranges of 0.0 and 1.0</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>rgb</td><td>number</td><td>No</td><td>RGB packed as a Uint24</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - Array of floats representing each component as a float</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/webgl/Utils.js#L80" target="_blank" rel="noopener noreferrer" class="">src/renderer/webgl/Utils.js#L80</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="checkshadermax">checkShaderMax<a href="#checkshadermax" class="hash-link" aria-label="Direct link to checkShaderMax" title="Direct link to checkShaderMax" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-checkshadermaxgl-maxtextures">&lt;static&gt; checkShaderMax(gl, maxTextures)<a href="#static-checkshadermaxgl-maxtextures" class="hash-link" aria-label="Direct link to &lt;static&gt; checkShaderMax(gl, maxTextures)" title="Direct link to &lt;static&gt; checkShaderMax(gl, maxTextures)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Check to see how many texture units the GPU supports in a fragment shader</p>
+<p>and if the value specific in the game config is allowed.</p>
+<p>This value is hard-clamped to 16 for performance reasons on Android devices.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>gl</td><td>WebGLRenderingContext</td><td>No</td><td>The WebGLContext used to create the shaders.</td></tr><tr><td>maxTextures</td><td>number</td><td>No</td><td>The Game Config maxTextures value.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The number of texture units that is supported by this browser and GPU.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/webgl/Utils.js#L99" target="_blank" rel="noopener noreferrer" class="">src/renderer/webgl/Utils.js#L99</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parsefragmentshadermaxtextures">parseFragmentShaderMaxTextures<a href="#parsefragmentshadermaxtextures" class="hash-link" aria-label="Direct link to parseFragmentShaderMaxTextures" title="Direct link to parseFragmentShaderMaxTextures" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-parsefragmentshadermaxtexturesfragmentshadersource-maxtextures">&lt;static&gt; parseFragmentShaderMaxTextures(fragmentShaderSource, maxTextures)<a href="#static-parsefragmentshadermaxtexturesfragmentshadersource-maxtextures" class="hash-link" aria-label="Direct link to &lt;static&gt; parseFragmentShaderMaxTextures(fragmentShaderSource, maxTextures)" title="Direct link to &lt;static&gt; parseFragmentShaderMaxTextures(fragmentShaderSource, maxTextures)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks the given Fragment Shader Source for <code>%count%</code> and <code>%forloop%</code> declarations and</p>
+<p>replaces those with GLSL code for setting <code>texture = texture2D(uMainSampler[i], outTexCoord)</code>.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>fragmentShaderSource</td><td>string</td><td>No</td><td>The Fragment Shader source code to operate on.</td></tr><tr><td>maxTextures</td><td>number</td><td>No</td><td>The number of maxTextures value.</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The modified Fragment Shader source.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/webgl/Utils.js#L131" target="_blank" rel="noopener noreferrer" class="">src/renderer/webgl/Utils.js#L131</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setglowquality">setGlowQuality<a href="#setglowquality" class="hash-link" aria-label="Direct link to setGlowQuality" title="Direct link to setGlowQuality" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setglowqualityshader-game-quality-distance">&lt;static&gt; setGlowQuality(shader, game, [quality], [distance])<a href="#static-setglowqualityshader-game-quality-distance" class="hash-link" aria-label="Direct link to &lt;static&gt; setGlowQuality(shader, game, [quality], [distance])" title="Direct link to &lt;static&gt; setGlowQuality(shader, game, [quality], [distance])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes the Glow FX Shader source and parses out the <strong>SIZE</strong> and <strong>DIST</strong></p>
+<p>consts with the configuration values.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>shader</td><td>string</td><td>No</td><td>The Fragment Shader source code to operate on.</td></tr><tr><td>game</td><td><a class="" href="/api-documentation/3.86.0/class/game">Phaser.Game</a></td><td>No</td><td>The Phaser Game instance.</td></tr><tr><td>quality</td><td>number</td><td>Yes</td><td>The quality of the glow (defaults to 0.1)</td></tr><tr><td>distance</td><td>number</td><td>Yes</td><td>The distance of the glow (defaults to 10)</td></tr></tbody></table>
+<p><strong>Returns:</strong> string - The modified Fragment Shader source.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/renderer/webgl/Utils.js#L174" target="_blank" rel="noopener noreferrer" class="">src/renderer/webgl/Utils.js#L174</a><br>
+Since: 3.60.0</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.86.0/function/plugins"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Phaser.Plugins</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.86.0/function/scenes"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Phaser.Scenes</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#getblendmodes" class="table-of-contents__link toc-highlight">GetBlendModes</a><ul><li><a href="#static-getblendmodes" class="table-of-contents__link toc-highlight">&lt;static&gt; GetBlendModes()</a></li></ul></li><li><a href="#settransform" class="table-of-contents__link toc-highlight">SetTransform</a><ul><li><a href="#static-settransformrenderer-ctx-src-camera-parentmatrix" class="table-of-contents__link toc-highlight">&lt;static&gt; SetTransform(renderer, ctx, src, camera, [parentMatrix])</a></li></ul></li><li><a href="#canvas" class="table-of-contents__link toc-highlight">Canvas</a><ul><li><a href="#static-canvassourcecanvas-config" class="table-of-contents__link toc-highlight">&lt;static&gt; Canvas(sourceCanvas, config)</a></li></ul></li><li><a href="#webgl" class="table-of-contents__link toc-highlight">WebGL</a><ul><li><a href="#static-webglsourcecontext-config" class="table-of-contents__link toc-highlight">&lt;static&gt; WebGL(sourceContext, config)</a></li></ul></li><li><a href="#gettintfromfloats" class="table-of-contents__link toc-highlight">getTintFromFloats</a><ul><li><a href="#static-gettintfromfloatsr-g-b-a" class="table-of-contents__link toc-highlight">&lt;static&gt; getTintFromFloats(r, g, b, a)</a></li></ul></li><li><a href="#gettintappendfloatalpha" class="table-of-contents__link toc-highlight">getTintAppendFloatAlpha</a><ul><li><a href="#static-gettintappendfloatalphargb-a" class="table-of-contents__link toc-highlight">&lt;static&gt; getTintAppendFloatAlpha(rgb, a)</a></li></ul></li><li><a href="#gettintappendfloatalphaandswap" class="table-of-contents__link toc-highlight">getTintAppendFloatAlphaAndSwap</a><ul><li><a href="#static-gettintappendfloatalphaandswaprgb-a" class="table-of-contents__link toc-highlight">&lt;static&gt; getTintAppendFloatAlphaAndSwap(rgb, a)</a></li></ul></li><li><a href="#getfloatsfromuintrgb" class="table-of-contents__link toc-highlight">getFloatsFromUintRGB</a><ul><li><a href="#static-getfloatsfromuintrgbrgb" class="table-of-contents__link toc-highlight">&lt;static&gt; getFloatsFromUintRGB(rgb)</a></li></ul></li><li><a href="#checkshadermax" class="table-of-contents__link toc-highlight">checkShaderMax</a><ul><li><a href="#static-checkshadermaxgl-maxtextures" class="table-of-contents__link toc-highlight">&lt;static&gt; checkShaderMax(gl, maxTextures)</a></li></ul></li><li><a href="#parsefragmentshadermaxtextures" class="table-of-contents__link toc-highlight">parseFragmentShaderMaxTextures</a><ul><li><a href="#static-parsefragmentshadermaxtexturesfragmentshadersource-maxtextures" class="table-of-contents__link toc-highlight">&lt;static&gt; parseFragmentShaderMaxTextures(fragmentShaderSource, maxTextures)</a></li></ul></li><li><a href="#setglowquality" class="table-of-contents__link toc-highlight">setGlowQuality</a><ul><li><a href="#static-setglowqualityshader-game-quality-distance" class="table-of-contents__link toc-highlight">&lt;static&gt; setGlowQuality(shader, game, [quality], [distance])</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

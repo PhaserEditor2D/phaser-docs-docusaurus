@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-class/Phaser.GameObjects.Particles.EmitterColorOp" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">EmitterColorOp | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/class/gameobjects-particles-emittercolorop"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="EmitterColorOp | Phaser Help"><meta data-rh="true" name="description" content="Phaser.GameObjects.Particles.EmitterColorOp"><meta data-rh="true" property="og:description" content="Phaser.GameObjects.Particles.EmitterColorOp"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/class/gameobjects-particles-emittercolorop"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/class/gameobjects-particles-emittercolorop" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/class/gameobjects-particles-emittercolorop" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Class","item":"https://docs.phaser.io/api-documentation/class/"},{"@type":"ListItem","position":2,"name":"EmitterColorOp","item":"https://docs.phaser.io/api-documentation/class/gameobjects-particles-emittercolorop"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/class/gameobjects-particles-emittercolorop">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/class/gameobjects-particles-emittercolorop">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/class/gameobjects-particles-emittercolorop">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/class/gameobjects-particles-emittercolorop">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Collapse sidebar category &#x27;Class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/class"><span title="Class" class="linkLabel_WmDU">Class</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animation"><span title="Animation" class="linkLabel_WmDU">Animation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationframe"><span title="AnimationFrame" class="linkLabel_WmDU">AnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationmanager"><span title="AnimationManager" class="linkLabel_WmDU">AnimationManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/animations-animationstate"><span title="AnimationState" class="linkLabel_WmDU">AnimationState</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cache-basecache"><span title="BaseCache" class="linkLabel_WmDU">BaseCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cache-cachemanager"><span title="CacheManager" class="linkLabel_WmDU">CacheManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-controls-fixedkeycontrol"><span title="FixedKeyControl" class="linkLabel_WmDU">FixedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-controls-smoothedkeycontrol"><span title="SmoothedKeyControl" class="linkLabel_WmDU">SmoothedKeyControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-basecamera"><span title="BaseCamera" class="linkLabel_WmDU">BaseCamera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-camera"><span title="Camera" class="linkLabel_WmDU">Camera</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-cameramanager"><span title="CameraManager" class="linkLabel_WmDU">CameraManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-fade"><span title="Fade" class="linkLabel_WmDU">Fade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-flash"><span title="Flash" class="linkLabel_WmDU">Flash</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-pan"><span title="Pan" class="linkLabel_WmDU">Pan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-rotateto"><span title="RotateTo" class="linkLabel_WmDU">RotateTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-shake"><span title="Shake" class="linkLabel_WmDU">Shake</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/cameras-scene2d-effects-zoom"><span title="Zoom" class="linkLabel_WmDU">Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/core-config"><span title="Config" class="linkLabel_WmDU">Config</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/core-timestep"><span title="TimeStep" class="linkLabel_WmDU">TimeStep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-cubicbezier"><span title="CubicBezier" class="linkLabel_WmDU">CubicBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-moveto"><span title="MoveTo" class="linkLabel_WmDU">MoveTo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-path"><span title="Path" class="linkLabel_WmDU">Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-quadraticbezier"><span title="QuadraticBezier" class="linkLabel_WmDU">QuadraticBezier</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/curves-spline"><span title="Spline" class="linkLabel_WmDU">Spline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/dom-requestanimationframe"><span title="RequestAnimationFrame" class="linkLabel_WmDU">RequestAnimationFrame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/data-datamanager"><span title="DataManager" class="linkLabel_WmDU">DataManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/data-datamanagerplugin"><span title="DataManagerPlugin" class="linkLabel_WmDU">DataManagerPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-baseshader"><span title="BaseShader" class="linkLabel_WmDU">BaseShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-color"><span title="Color" class="linkLabel_WmDU">Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-masks-bitmapmask"><span title="BitmapMask" class="linkLabel_WmDU">BitmapMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-masks-geometrymask"><span title="GeometryMask" class="linkLabel_WmDU">GeometryMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/display-rgb"><span title="RGB" class="linkLabel_WmDU">RGB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/events-eventemitter"><span title="EventEmitter" class="linkLabel_WmDU">EventEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-barrel"><span title="Barrel" class="linkLabel_WmDU">Barrel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-bloom"><span title="Bloom" class="linkLabel_WmDU">Bloom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-blur"><span title="Blur" class="linkLabel_WmDU">Blur</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-bokeh"><span title="Bokeh" class="linkLabel_WmDU">Bokeh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-colormatrix"><span title="ColorMatrix" class="linkLabel_WmDU">ColorMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-controller"><span title="Controller" class="linkLabel_WmDU">Controller</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-displacement"><span title="Displacement" class="linkLabel_WmDU">Displacement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-glow"><span title="Glow" class="linkLabel_WmDU">Glow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-gradient"><span title="Gradient" class="linkLabel_WmDU">Gradient</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-pixelate"><span title="Pixelate" class="linkLabel_WmDU">Pixelate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-shadow"><span title="Shadow" class="linkLabel_WmDU">Shadow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-shine"><span title="Shine" class="linkLabel_WmDU">Shine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-vignette"><span title="Vignette" class="linkLabel_WmDU">Vignette</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/fx-wipe"><span title="Wipe" class="linkLabel_WmDU">Wipe</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/facebookinstantgamesleaderboard"><span title="FacebookInstantGamesLeaderboard" class="linkLabel_WmDU">FacebookInstantGamesLeaderboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/facebookinstantgamesplugin"><span title="FacebookInstantGamesPlugin" class="linkLabel_WmDU">FacebookInstantGamesPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/game"><span title="Game" class="linkLabel_WmDU">Game</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-arc"><span title="Arc" class="linkLabel_WmDU">Arc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-bitmaptext"><span title="BitmapText" class="linkLabel_WmDU">BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-blitter"><span title="Blitter" class="linkLabel_WmDU">Blitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-bob"><span title="Bob" class="linkLabel_WmDU">Bob</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-components-fx"><span title="FX" class="linkLabel_WmDU">FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-components-transformmatrix"><span title="TransformMatrix" class="linkLabel_WmDU">TransformMatrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-container"><span title="Container" class="linkLabel_WmDU">Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-curve"><span title="Curve" class="linkLabel_WmDU">Curve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-domelement"><span title="DOMElement" class="linkLabel_WmDU">DOMElement</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-displaylist"><span title="DisplayList" class="linkLabel_WmDU">DisplayList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-dynamicbitmaptext"><span title="DynamicBitmapText" class="linkLabel_WmDU">DynamicBitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-extern"><span title="Extern" class="linkLabel_WmDU">Extern</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobject"><span title="GameObject" class="linkLabel_WmDU">GameObject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobjectcreator"><span title="GameObjectCreator" class="linkLabel_WmDU">GameObjectCreator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-gameobjectfactory"><span title="GameObjectFactory" class="linkLabel_WmDU">GameObjectFactory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-graphics"><span title="Graphics" class="linkLabel_WmDU">Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-grid"><span title="Grid" class="linkLabel_WmDU">Grid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-isobox"><span title="IsoBox" class="linkLabel_WmDU">IsoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-isotriangle"><span title="IsoTriangle" class="linkLabel_WmDU">IsoTriangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-layer"><span title="Layer" class="linkLabel_WmDU">Layer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-light"><span title="Light" class="linkLabel_WmDU">Light</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-lightsmanager"><span title="LightsManager" class="linkLabel_WmDU">LightsManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-lightsplugin"><span title="LightsPlugin" class="linkLabel_WmDU">LightsPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-mesh"><span title="Mesh" class="linkLabel_WmDU">Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-nineslice"><span title="NineSlice" class="linkLabel_WmDU">NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/class/gameobjects-particles-emittercolorop"><span title="EmitterColorOp" class="linkLabel_WmDU">EmitterColorOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-emitterop"><span title="EmitterOp" class="linkLabel_WmDU">EmitterOp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-gravitywell"><span title="GravityWell" class="linkLabel_WmDU">GravityWell</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particle"><span title="Particle" class="linkLabel_WmDU">Particle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particlebounds"><span title="ParticleBounds" class="linkLabel_WmDU">ParticleBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particleemitter"><span title="ParticleEmitter" class="linkLabel_WmDU">ParticleEmitter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-particleprocessor"><span title="ParticleProcessor" class="linkLabel_WmDU">ParticleProcessor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-deathzone"><span title="DeathZone" class="linkLabel_WmDU">DeathZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-edgezone"><span title="EdgeZone" class="linkLabel_WmDU">EdgeZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-particles-zones-randomzone"><span title="RandomZone" class="linkLabel_WmDU">RandomZone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-pathfollower"><span title="PathFollower" class="linkLabel_WmDU">PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-plane"><span title="Plane" class="linkLabel_WmDU">Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-pointlight"><span title="PointLight" class="linkLabel_WmDU">PointLight</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rendertexture"><span title="RenderTexture" class="linkLabel_WmDU">RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-rope"><span title="Rope" class="linkLabel_WmDU">Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-shader"><span title="Shader" class="linkLabel_WmDU">Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-shape"><span title="Shape" class="linkLabel_WmDU">Shape</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-star"><span title="Star" class="linkLabel_WmDU">Star</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-text"><span title="Text" class="linkLabel_WmDU">Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-textstyle"><span title="TextStyle" class="linkLabel_WmDU">TextStyle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-tilesprite"><span title="TileSprite" class="linkLabel_WmDU">TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-updatelist"><span title="UpdateList" class="linkLabel_WmDU">UpdateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-video"><span title="Video" class="linkLabel_WmDU">Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/gameobjects-zone"><span title="Zone" class="linkLabel_WmDU">Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-circle"><span title="Circle" class="linkLabel_WmDU">Circle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-ellipse"><span title="Ellipse" class="linkLabel_WmDU">Ellipse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-line"><span title="Line" class="linkLabel_WmDU">Line</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-mesh-face"><span title="Face" class="linkLabel_WmDU">Face</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-mesh-vertex"><span title="Vertex" class="linkLabel_WmDU">Vertex</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-point"><span title="Point" class="linkLabel_WmDU">Point</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-polygon"><span title="Polygon" class="linkLabel_WmDU">Polygon</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-rectangle"><span title="Rectangle" class="linkLabel_WmDU">Rectangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/geom-triangle"><span title="Triangle" class="linkLabel_WmDU">Triangle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-axis"><span title="Axis" class="linkLabel_WmDU">Axis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-button"><span title="Button" class="linkLabel_WmDU">Button</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-gamepad"><span title="Gamepad" class="linkLabel_WmDU">Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-gamepad-gamepadplugin"><span title="GamepadPlugin" class="linkLabel_WmDU">GamepadPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-inputmanager"><span title="InputManager" class="linkLabel_WmDU">InputManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-inputplugin"><span title="InputPlugin" class="linkLabel_WmDU">InputPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-key"><span title="Key" class="linkLabel_WmDU">Key</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keycombo"><span title="KeyCombo" class="linkLabel_WmDU">KeyCombo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keyboardmanager"><span title="KeyboardManager" class="linkLabel_WmDU">KeyboardManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-keyboard-keyboardplugin"><span title="KeyboardPlugin" class="linkLabel_WmDU">KeyboardPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-mouse-mousemanager"><span title="MouseManager" class="linkLabel_WmDU">MouseManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-pointer"><span title="Pointer" class="linkLabel_WmDU">Pointer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/input-touch-touchmanager"><span title="TouchManager" class="linkLabel_WmDU">TouchManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-file"><span title="File" class="linkLabel_WmDU">File</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-animationjsonfile"><span title="AnimationJSONFile" class="linkLabel_WmDU">AnimationJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-asepritefile"><span title="AsepriteFile" class="linkLabel_WmDU">AsepriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-atlasjsonfile"><span title="AtlasJSONFile" class="linkLabel_WmDU">AtlasJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-atlasxmlfile"><span title="AtlasXMLFile" class="linkLabel_WmDU">AtlasXMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-audiofile"><span title="AudioFile" class="linkLabel_WmDU">AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-audiospritefile"><span title="AudioSpriteFile" class="linkLabel_WmDU">AudioSpriteFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-binaryfile"><span title="BinaryFile" class="linkLabel_WmDU">BinaryFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-bitmapfontfile"><span title="BitmapFontFile" class="linkLabel_WmDU">BitmapFontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-cssfile"><span title="CSSFile" class="linkLabel_WmDU">CSSFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-compressedtexturefile"><span title="CompressedTextureFile" class="linkLabel_WmDU">CompressedTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-fontfile"><span title="FontFile" class="linkLabel_WmDU">FontFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-glslfile"><span title="GLSLFile" class="linkLabel_WmDU">GLSLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-html5audiofile"><span title="HTML5AudioFile" class="linkLabel_WmDU">HTML5AudioFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-htmlfile"><span title="HTMLFile" class="linkLabel_WmDU">HTMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-htmltexturefile"><span title="HTMLTextureFile" class="linkLabel_WmDU">HTMLTextureFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-imagefile"><span title="ImageFile" class="linkLabel_WmDU">ImageFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-jsonfile"><span title="JSONFile" class="linkLabel_WmDU">JSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-multiatlasfile"><span title="MultiAtlasFile" class="linkLabel_WmDU">MultiAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-multiscriptfile"><span title="MultiScriptFile" class="linkLabel_WmDU">MultiScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-objfile"><span title="OBJFile" class="linkLabel_WmDU">OBJFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-packfile"><span title="PackFile" class="linkLabel_WmDU">PackFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-pluginfile"><span title="PluginFile" class="linkLabel_WmDU">PluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-svgfile"><span title="SVGFile" class="linkLabel_WmDU">SVGFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scenefile"><span title="SceneFile" class="linkLabel_WmDU">SceneFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scenepluginfile"><span title="ScenePluginFile" class="linkLabel_WmDU">ScenePluginFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-scriptfile"><span title="ScriptFile" class="linkLabel_WmDU">ScriptFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-spritesheetfile"><span title="SpriteSheetFile" class="linkLabel_WmDU">SpriteSheetFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-textfile"><span title="TextFile" class="linkLabel_WmDU">TextFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapcsvfile"><span title="TilemapCSVFile" class="linkLabel_WmDU">TilemapCSVFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapimpactfile"><span title="TilemapImpactFile" class="linkLabel_WmDU">TilemapImpactFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-tilemapjsonfile"><span title="TilemapJSONFile" class="linkLabel_WmDU">TilemapJSONFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-unityatlasfile"><span title="UnityAtlasFile" class="linkLabel_WmDU">UnityAtlasFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-videofile"><span title="VideoFile" class="linkLabel_WmDU">VideoFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-filetypes-xmlfile"><span title="XMLFile" class="linkLabel_WmDU">XMLFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-loaderplugin"><span title="LoaderPlugin" class="linkLabel_WmDU">LoaderPlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/loader-multifile"><span title="MultiFile" class="linkLabel_WmDU">MultiFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-euler"><span title="Euler" class="linkLabel_WmDU">Euler</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-matrix3"><span title="Matrix3" class="linkLabel_WmDU">Matrix3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-matrix4"><span title="Matrix4" class="linkLabel_WmDU">Matrix4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-quaternion"><span title="Quaternion" class="linkLabel_WmDU">Quaternion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-randomdatagenerator"><span title="RandomDataGenerator" class="linkLabel_WmDU">RandomDataGenerator</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector2"><span title="Vector2" class="linkLabel_WmDU">Vector2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector3"><span title="Vector3" class="linkLabel_WmDU">Vector3</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/math-vector4"><span title="Vector4" class="linkLabel_WmDU">Vector4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-arcadephysics"><span title="ArcadePhysics" class="linkLabel_WmDU">ArcadePhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-body"><span title="Body" class="linkLabel_WmDU">Body</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-collider"><span title="Collider" class="linkLabel_WmDU">Collider</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-group"><span title="Group" class="linkLabel_WmDU">Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-staticbody"><span title="StaticBody" class="linkLabel_WmDU">StaticBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-staticgroup"><span title="StaticGroup" class="linkLabel_WmDU">StaticGroup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-arcade-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-bodybounds"><span title="BodyBounds" class="linkLabel_WmDU">BodyBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-factory"><span title="Factory" class="linkLabel_WmDU">Factory</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-image"><span title="Image" class="linkLabel_WmDU">Image</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-matterphysics"><span title="MatterPhysics" class="linkLabel_WmDU">MatterPhysics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-pointerconstraint"><span title="PointerConstraint" class="linkLabel_WmDU">PointerConstraint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-sprite"><span title="Sprite" class="linkLabel_WmDU">Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-tilebody"><span title="TileBody" class="linkLabel_WmDU">TileBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/physics-matter-world"><span title="World" class="linkLabel_WmDU">World</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-baseplugin"><span title="BasePlugin" class="linkLabel_WmDU">BasePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-pluginmanager"><span title="PluginManager" class="linkLabel_WmDU">PluginManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/plugins-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-canvas-canvasrenderer"><span title="CanvasRenderer" class="linkLabel_WmDU">CanvasRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelinemanager"><span title="PipelineManager" class="linkLabel_WmDU">PipelineManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-bitmapmaskpipeline"><span title="BitmapMaskPipeline" class="linkLabel_WmDU">BitmapMaskPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-barrelfxpipeline"><span title="BarrelFXPipeline" class="linkLabel_WmDU">BarrelFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-bloomfxpipeline"><span title="BloomFXPipeline" class="linkLabel_WmDU">BloomFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-blurfxpipeline"><span title="BlurFXPipeline" class="linkLabel_WmDU">BlurFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-bokehfxpipeline"><span title="BokehFXPipeline" class="linkLabel_WmDU">BokehFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-circlefxpipeline"><span title="CircleFXPipeline" class="linkLabel_WmDU">CircleFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-colormatrixfxpipeline"><span title="ColorMatrixFXPipeline" class="linkLabel_WmDU">ColorMatrixFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-displacementfxpipeline"><span title="DisplacementFXPipeline" class="linkLabel_WmDU">DisplacementFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-glowfxpipeline"><span title="GlowFXPipeline" class="linkLabel_WmDU">GlowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-gradientfxpipeline"><span title="GradientFXPipeline" class="linkLabel_WmDU">GradientFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-pixelatefxpipeline"><span title="PixelateFXPipeline" class="linkLabel_WmDU">PixelateFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-shadowfxpipeline"><span title="ShadowFXPipeline" class="linkLabel_WmDU">ShadowFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-shinefxpipeline"><span title="ShineFXPipeline" class="linkLabel_WmDU">ShineFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-vignettefxpipeline"><span title="VignetteFXPipeline" class="linkLabel_WmDU">VignetteFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fx-wipefxpipeline"><span title="WipeFXPipeline" class="linkLabel_WmDU">WipeFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-fxpipeline"><span title="FXPipeline" class="linkLabel_WmDU">FXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-lightpipeline"><span title="LightPipeline" class="linkLabel_WmDU">LightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-mobilepipeline"><span title="MobilePipeline" class="linkLabel_WmDU">MobilePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-multipipeline"><span title="MultiPipeline" class="linkLabel_WmDU">MultiPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-pointlightpipeline"><span title="PointLightPipeline" class="linkLabel_WmDU">PointLightPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-postfxpipeline"><span title="PostFXPipeline" class="linkLabel_WmDU">PostFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-prefxpipeline"><span title="PreFXPipeline" class="linkLabel_WmDU">PreFXPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-ropepipeline"><span title="RopePipeline" class="linkLabel_WmDU">RopePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-singlepipeline"><span title="SinglePipeline" class="linkLabel_WmDU">SinglePipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-pipelines-utilitypipeline"><span title="UtilityPipeline" class="linkLabel_WmDU">UtilityPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-rendertarget"><span title="RenderTarget" class="linkLabel_WmDU">RenderTarget</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglpipeline"><span title="WebGLPipeline" class="linkLabel_WmDU">WebGLPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglrenderer"><span title="WebGLRenderer" class="linkLabel_WmDU">WebGLRenderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-webglshader"><span title="WebGLShader" class="linkLabel_WmDU">WebGLShader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglattriblocationwrapper"><span title="WebGLAttribLocationWrapper" class="linkLabel_WmDU">WebGLAttribLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglbufferwrapper"><span title="WebGLBufferWrapper" class="linkLabel_WmDU">WebGLBufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglframebufferwrapper"><span title="WebGLFramebufferWrapper" class="linkLabel_WmDU">WebGLFramebufferWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webglprogramwrapper"><span title="WebGLProgramWrapper" class="linkLabel_WmDU">WebGLProgramWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webgltexturewrapper"><span title="WebGLTextureWrapper" class="linkLabel_WmDU">WebGLTextureWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/renderer-webgl-wrappers-webgluniformlocationwrapper"><span title="WebGLUniformLocationWrapper" class="linkLabel_WmDU">WebGLUniformLocationWrapper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scale-scalemanager"><span title="ScaleManager" class="linkLabel_WmDU">ScaleManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scene"><span title="Scene" class="linkLabel_WmDU">Scene</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-scenemanager"><span title="SceneManager" class="linkLabel_WmDU">SceneManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-sceneplugin"><span title="ScenePlugin" class="linkLabel_WmDU">ScenePlugin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/scenes-systems"><span title="Systems" class="linkLabel_WmDU">Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-basesound"><span title="BaseSound" class="linkLabel_WmDU">BaseSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-basesoundmanager"><span title="BaseSoundManager" class="linkLabel_WmDU">BaseSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-html5audiosound"><span title="HTML5AudioSound" class="linkLabel_WmDU">HTML5AudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-html5audiosoundmanager"><span title="HTML5AudioSoundManager" class="linkLabel_WmDU">HTML5AudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-noaudiosound"><span title="NoAudioSound" class="linkLabel_WmDU">NoAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-noaudiosoundmanager"><span title="NoAudioSoundManager" class="linkLabel_WmDU">NoAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-webaudiosound"><span title="WebAudioSound" class="linkLabel_WmDU">WebAudioSound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/sound-webaudiosoundmanager"><span title="WebAudioSoundManager" class="linkLabel_WmDU">WebAudioSoundManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-list"><span title="List" class="linkLabel_WmDU">List</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-map"><span title="Map" class="linkLabel_WmDU">Map</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-processqueue"><span title="ProcessQueue" class="linkLabel_WmDU">ProcessQueue</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-rtree"><span title="RTree" class="linkLabel_WmDU">RTree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-set"><span title="Set" class="linkLabel_WmDU">Set</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/structs-size"><span title="Size" class="linkLabel_WmDU">Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-canvastexture"><span title="CanvasTexture" class="linkLabel_WmDU">CanvasTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-dynamictexture"><span title="DynamicTexture" class="linkLabel_WmDU">DynamicTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-frame"><span title="Frame" class="linkLabel_WmDU">Frame</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texture"><span title="Texture" class="linkLabel_WmDU">Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texturemanager"><span title="TextureManager" class="linkLabel_WmDU">TextureManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/textures-texturesource"><span title="TextureSource" class="linkLabel_WmDU">TextureSource</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-imagecollection"><span title="ImageCollection" class="linkLabel_WmDU">ImageCollection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-layerdata"><span title="LayerData" class="linkLabel_WmDU">LayerData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-mapdata"><span title="MapData" class="linkLabel_WmDU">MapData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-objecthelper"><span title="ObjectHelper" class="linkLabel_WmDU">ObjectHelper</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-objectlayer"><span title="ObjectLayer" class="linkLabel_WmDU">ObjectLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tile"><span title="Tile" class="linkLabel_WmDU">Tile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tilemap"><span title="Tilemap" class="linkLabel_WmDU">Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tilemaplayer"><span title="TilemapLayer" class="linkLabel_WmDU">TilemapLayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tilemaps-tileset"><span title="Tileset" class="linkLabel_WmDU">Tileset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-clock"><span title="Clock" class="linkLabel_WmDU">Clock</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-timeline"><span title="Timeline" class="linkLabel_WmDU">Timeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/time-timerevent"><span title="TimerEvent" class="linkLabel_WmDU">TimerEvent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-basetween"><span title="BaseTween" class="linkLabel_WmDU">BaseTween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-basetweendata"><span title="BaseTweenData" class="linkLabel_WmDU">BaseTweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tween"><span title="Tween" class="linkLabel_WmDU">Tween</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenchain"><span title="TweenChain" class="linkLabel_WmDU">TweenChain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweendata"><span title="TweenData" class="linkLabel_WmDU">TweenData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenframedata"><span title="TweenFrameData" class="linkLabel_WmDU">TweenFrameData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/tweens-tweenmanager"><span title="TweenManager" class="linkLabel_WmDU">TweenManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/class/"><span title="Class" class="linkLabel_WmDU">Class</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/class/"><span>Class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">EmitterColorOp</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>EmitterColorOp</h1></header><p>This class is responsible for taking control over the color property</p>
+<p>in the Particle class and managing its emission and updating functions.</p>
+<p>See the <code>ParticleEmitter</code> class for more details on emitter op configuration.</p>
+<p><strong>Constructor</strong></p>
+<p><code>new EmitterColorOp(key)</code></p>
+<p><strong>Parameters</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>key</td><td>string</td><td>No</td><td>The name of the property.</td></tr></tbody></table>
+<hr>
+<p><strong>Scope</strong>: static</p>
+<p><strong>Extends</strong></p>
+<blockquote>
+<p><a class="" href="/api-documentation/class/gameobjects-particles-emitterop">Phaser.GameObjects.Particles.EmitterOp</a></p>
+</blockquote>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L14" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L14</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<h1>Public Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="active">active<a href="#active" class="hash-link" aria-label="Direct link to active" title="Direct link to active" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="active-boolean">active: boolean<a href="#active-boolean" class="hash-link" aria-label="Direct link to active: boolean" title="Direct link to active: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Set to <code>false</code> to disable this EmitterOp.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#active">Phaser.GameObjects.Particles.EmitterOp#active</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L203" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L203</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="b">b<a href="#b" class="hash-link" aria-label="Direct link to b" title="Direct link to b" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="b-arraynumber">b: Array.&lt;number&gt;<a href="#b-arraynumber" class="hash-link" aria-label="Direct link to b: Array.&lt;number&gt;" title="Direct link to b: Array.&lt;number&gt;" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An array containing the blue color values.</p>
+<p>Populated during the <code>setMethods</code> method.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L65" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L65</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="counter">counter<a href="#counter" class="hash-link" aria-label="Direct link to counter" title="Direct link to counter" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="counter-number">counter: number<a href="#counter-number" class="hash-link" aria-label="Direct link to counter: number" title="Direct link to counter: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The step counter for stepped easing, per emit.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#counter">Phaser.GameObjects.Particles.EmitterOp#counter</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L89" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L89</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="current">current<a href="#current" class="hash-link" aria-label="Direct link to current" title="Direct link to current" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="current-number">current: number<a href="#current-number" class="hash-link" aria-label="Direct link to current: number" title="Direct link to current: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The most recently calculated value. Updated every time an</p>
+<p>emission or update method is called. Treat as read-only.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#current">Phaser.GameObjects.Particles.EmitterOp#current</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L132" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L132</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="defaultvalue">defaultValue<a href="#defaultvalue" class="hash-link" aria-label="Direct link to defaultValue" title="Direct link to defaultValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="defaultvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype">defaultValue: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a>, <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a><a href="#defaultvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" class="hash-link" aria-label="Direct link to defaultvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" title="Direct link to defaultvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The default value of this property.</p>
+<p>This can be a simple value, an array, a function or an onEmit</p>
+<p>configuration object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#defaultValue">Phaser.GameObjects.Particles.EmitterOp#defaultValue</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L66" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L66</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="direction">direction<a href="#direction" class="hash-link" aria-label="Direct link to direction" title="Direct link to direction" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="direction-number">direction: number<a href="#direction-number" class="hash-link" aria-label="Direct link to direction: number" title="Direct link to direction: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The counter direction. 0 for up and 1 for down.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#direction">Phaser.GameObjects.Particles.EmitterOp#direction</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L110" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L110</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ease">ease<a href="#ease" class="hash-link" aria-label="Direct link to ease" title="Direct link to ease" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ease-function">ease: function<a href="#ease-function" class="hash-link" aria-label="Direct link to ease: function" title="Direct link to ease: function" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The easing function to use for updating this property, if any.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#ease">Phaser.GameObjects.Particles.EmitterOp#ease</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L152" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L152</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitonly">emitOnly<a href="#emitonly" class="hash-link" aria-label="Direct link to emitOnly" title="Direct link to emitOnly" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="emitonly-boolean">emitOnly: boolean<a href="#emitonly-boolean" class="hash-link" aria-label="Direct link to emitOnly: boolean" title="Direct link to emitOnly: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Whether this property can only be modified when a Particle is emitted.</p>
+<p>Set to <code>true</code> to allow only <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#onEmit">Phaser.GameObjects.Particles.EmitterOp#onEmit</a> callbacks to be set and</p>
+<p>affect this property.</p>
+<p>Set to <code>false</code> to allow both <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#onEmit">Phaser.GameObjects.Particles.EmitterOp#onEmit</a> and</p>
+<p><a class="" href="/api-documentation/class/gameobjects-particles-emitterop#onUpdate">Phaser.GameObjects.Particles.EmitterOp#onUpdate</a> callbacks to be set and affect this property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#emitOnly">Phaser.GameObjects.Particles.EmitterOp#emitOnly</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L170" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L170</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="end">end<a href="#end" class="hash-link" aria-label="Direct link to end" title="Direct link to end" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="end-number">end: number<a href="#end-number" class="hash-link" aria-label="Direct link to end: number" title="Direct link to end: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The end value for this property to ease between.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#end">Phaser.GameObjects.Particles.EmitterOp#end</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L142" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L142</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="g">g<a href="#g" class="hash-link" aria-label="Direct link to g" title="Direct link to g" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="g-arraynumber">g: Array.&lt;number&gt;<a href="#g-arraynumber" class="hash-link" aria-label="Direct link to g: Array.&lt;number&gt;" title="Direct link to g: Array.&lt;number&gt;" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An array containing the green color values.</p>
+<p>Populated during the <code>setMethods</code> method.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L54" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L54</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interpolation">interpolation<a href="#interpolation" class="hash-link" aria-label="Direct link to interpolation" title="Direct link to interpolation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="interpolation-function">interpolation: function<a href="#interpolation-function" class="hash-link" aria-label="Direct link to interpolation: function" title="Direct link to interpolation: function" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The interpolation function to use for updating this property, if any.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#interpolation">Phaser.GameObjects.Particles.EmitterOp#interpolation</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L161" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L161</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="method">method<a href="#method" class="hash-link" aria-label="Direct link to method" title="Direct link to method" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="method-number">method: number<a href="#method-number" class="hash-link" aria-label="Direct link to method: number" title="Direct link to method: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The onEmit method type of this EmitterOp.</p>
+<p>Set as part of <code>setMethod</code> and cached here to avoid</p>
+<p>re-setting when only the value changes.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#method">Phaser.GameObjects.Particles.EmitterOp#method</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L212" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L212</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onemit">onEmit<a href="#onemit" class="hash-link" aria-label="Direct link to onEmit" title="Direct link to onEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="onemit-phasertypesgameobjectsparticlesemitteroponemitcallback">onEmit: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitCallback</a><a href="#onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" class="hash-link" aria-label="Direct link to onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" title="Direct link to onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The callback to run for Particles when they are emitted from the Particle Emitter.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#onEmit">Phaser.GameObjects.Particles.EmitterOp#onEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L185" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L185</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onupdate">onUpdate<a href="#onupdate" class="hash-link" aria-label="Direct link to onUpdate" title="Direct link to onUpdate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback">onUpdate: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateCallback</a><a href="#onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" class="hash-link" aria-label="Direct link to onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" title="Direct link to onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The callback to run for Particles when they are updated.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#onUpdate">Phaser.GameObjects.Particles.EmitterOp#onUpdate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L194" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L194</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="propertykey">propertyKey<a href="#propertykey" class="hash-link" aria-label="Direct link to propertyKey" title="Direct link to propertyKey" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="propertykey-string">propertyKey: string<a href="#propertykey-string" class="hash-link" aria-label="Direct link to propertyKey: string" title="Direct link to propertyKey: string" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The name of this property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#propertyKey">Phaser.GameObjects.Particles.EmitterOp#propertyKey</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L45" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L45</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="propertyvalue">propertyValue<a href="#propertyvalue" class="hash-link" aria-label="Direct link to propertyValue" title="Direct link to propertyValue" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="propertyvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype">propertyValue: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitType">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType</a>, <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateType">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a><a href="#propertyvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" class="hash-link" aria-label="Direct link to propertyvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" title="Direct link to propertyvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The current value of this property.</p>
+<p>This can be a simple value, an array, a function or an onEmit</p>
+<p>configuration object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#propertyValue">Phaser.GameObjects.Particles.EmitterOp#propertyValue</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L54" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L54</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="r">r<a href="#r" class="hash-link" aria-label="Direct link to r" title="Direct link to r" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="r-arraynumber">r: Array.&lt;number&gt;<a href="#r-arraynumber" class="hash-link" aria-label="Direct link to r: Array.&lt;number&gt;" title="Direct link to r: Array.&lt;number&gt;" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An array containing the red color values.</p>
+<p>Populated during the <code>setMethods</code> method.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L43" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L43</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="start">start<a href="#start" class="hash-link" aria-label="Direct link to start" title="Direct link to start" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="start-number-arraynumber">start: number, Array.&lt;number&gt;<a href="#start-number-arraynumber" class="hash-link" aria-label="Direct link to start: number, Array.&lt;number&gt;" title="Direct link to start: number, Array.&lt;number&gt;" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The start value for this property to ease between.</p>
+<p>If an interpolation this holds a reference to the number data array.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#start">Phaser.GameObjects.Particles.EmitterOp#start</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L120" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L120</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="steps">steps<a href="#steps" class="hash-link" aria-label="Direct link to steps" title="Direct link to steps" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="steps-number">steps: number<a href="#steps-number" class="hash-link" aria-label="Direct link to steps: number" title="Direct link to steps: number" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The number of steps for stepped easing between <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#start">Phaser.GameObjects.Particles.EmitterOp#start</a> and</p>
+<p><a class="" href="/api-documentation/class/gameobjects-particles-emitterop#end">Phaser.GameObjects.Particles.EmitterOp#end</a> values, per emit.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#steps">Phaser.GameObjects.Particles.EmitterOp#steps</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L78" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L78</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="yoyo">yoyo<a href="#yoyo" class="hash-link" aria-label="Direct link to yoyo" title="Direct link to yoyo" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yoyo-boolean">yoyo: boolean<a href="#yoyo-boolean" class="hash-link" aria-label="Direct link to yoyo: boolean" title="Direct link to yoyo: boolean" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>When the step counter reaches it&#x27;s maximum, should it then</p>
+<p>yoyo back to the start again, or flip over to it?</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#yoyo">Phaser.GameObjects.Particles.EmitterOp#yoyo</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L99" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L99</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h1>Private Members</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_onemit">_onEmit<a href="#_onemit" class="hash-link" aria-label="Direct link to _onEmit" title="Direct link to _onEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_onemit-phasertypesgameobjectsparticlesemitteroponemitcallback">_onEmit: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnEmitCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnEmitCallback</a><a href="#_onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" class="hash-link" aria-label="Direct link to _onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" title="Direct link to _onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The callback to run for Particles when they are emitted from the Particle Emitter.</p>
+<p>This is set during <code>setMethods</code> and used by <code>proxyEmit</code>.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#_onEmit">Phaser.GameObjects.Particles.EmitterOp#_onEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L224" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L224</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="_onupdate">_onUpdate<a href="#_onupdate" class="hash-link" aria-label="Direct link to _onUpdate" title="Direct link to _onUpdate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="_onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback">_onUpdate: <a class="" href="/api-documentation/typedef/types-gameobjects-particles#EmitterOpOnUpdateCallback">Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateCallback</a><a href="#_onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" class="hash-link" aria-label="Direct link to _onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" title="Direct link to _onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The callback to run for Particles when they are updated.</p>
+<p>This is set during <code>setMethods</code> and used by <code>proxyUpdate</code>.</p>
+<p><strong>Access:</strong> private</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#_onUpdate">Phaser.GameObjects.Particles.EmitterOp#_onUpdate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L235" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L235</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h1>Public Methods</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="defaultemit">defaultEmit<a href="#defaultemit" class="hash-link" aria-label="Direct link to defaultEmit" title="Direct link to defaultEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-defaultemitparticle-key-value">&lt;instance&gt; defaultEmit(particle, key, [value])<a href="#instance-defaultemitparticle-key-value" class="hash-link" aria-label="Direct link to &lt;instance&gt; defaultEmit(particle, key, [value])" title="Direct link to &lt;instance&gt; defaultEmit(particle, key, [value])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The returned value sets what the property will be at the START of the particles life, on emit.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property.</td></tr><tr><td>value</td><td>number</td><td>Yes</td><td>The current value of the property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#defaultEmit">Phaser.GameObjects.Particles.EmitterOp#defaultEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L596" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L596</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="defaultupdate">defaultUpdate<a href="#defaultupdate" class="hash-link" aria-label="Direct link to defaultUpdate" title="Direct link to defaultUpdate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-defaultupdateparticle-key-t-value">&lt;instance&gt; defaultUpdate(particle, key, t, value)<a href="#instance-defaultupdateparticle-key-t-value" class="hash-link" aria-label="Direct link to &lt;instance&gt; defaultUpdate(particle, key, t, value)" title="Direct link to &lt;instance&gt; defaultUpdate(particle, key, t, value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The returned value updates the property for the duration of the particles life.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property.</td></tr><tr><td>t</td><td>number</td><td>No</td><td>The current normalized lifetime of the particle, between 0 (birth) and 1 (death).</td></tr><tr><td>value</td><td>number</td><td>No</td><td>The current value of the property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#defaultUpdate">Phaser.GameObjects.Particles.EmitterOp#defaultUpdate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L613" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L613</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">destroy<a href="#destroy" class="hash-link" aria-label="Direct link to destroy" title="Direct link to destroy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-destroy">&lt;instance&gt; destroy()<a href="#instance-destroy" class="hash-link" aria-label="Direct link to &lt;instance&gt; destroy()" title="Direct link to &lt;instance&gt; destroy()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Destroys this EmitterOp instance and all of its references.</p>
+<p>Called automatically when the ParticleEmitter that owns this</p>
+<p>EmitterOp is destroyed.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#destroy">Phaser.GameObjects.Particles.EmitterOp#destroy</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L901" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L901</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="easedvalueemit">easedValueEmit<a href="#easedvalueemit" class="hash-link" aria-label="Direct link to easedValueEmit" title="Direct link to easedValueEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-easedvalueemitparticle-key">&lt;instance&gt; easedValueEmit(particle, key)<a href="#instance-easedvalueemitparticle-key" class="hash-link" aria-label="Direct link to &lt;instance&gt; easedValueEmit(particle, key)" title="Direct link to &lt;instance&gt; easedValueEmit(particle, key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onEmit</code> callback for an eased property.</p>
+<p>It prepares the particle for easing by <a class="" href="/api-documentation/class/gameobjects-particles-emittercolorop#easeValueUpdate">Phaser.GameObjects.Particles.EmitterColorOp#easeValueUpdate</a>.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property.</td></tr></tbody></table>
+<p><strong>Overrides:</strong> Phaser.GameObjects.Particles.EmitterOp#easedValueEmit</p>
+<p><strong>Returns:</strong> number - {@link Phaser.GameObjects.Particles.EmitterColorOp#start}, as the new value of the property.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L153" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L153</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="easevalueupdate">easeValueUpdate<a href="#easevalueupdate" class="hash-link" aria-label="Direct link to easeValueUpdate" title="Direct link to easeValueUpdate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-easevalueupdateparticle-key-t">&lt;instance&gt; easeValueUpdate(particle, key, t)<a href="#instance-easevalueupdateparticle-key-t" class="hash-link" aria-label="Direct link to &lt;instance&gt; easeValueUpdate(particle, key, t)" title="Direct link to &lt;instance&gt; easeValueUpdate(particle, key, t)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onUpdate</code> callback that returns an eased value between the</p>
+<p><a class="" href="/api-documentation/class/gameobjects-particles-emittercolorop#start">Phaser.GameObjects.Particles.EmitterColorOp#start</a> and <a class="" href="/api-documentation/class/gameobjects-particles-emittercolorop#end">Phaser.GameObjects.Particles.EmitterColorOp#end</a></p>
+<p>range.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property.</td></tr><tr><td>t</td><td>number</td><td>No</td><td>The current normalized lifetime of the particle, between 0 (birth) and 1 (death).</td></tr></tbody></table>
+<p><strong>Overrides:</strong> Phaser.GameObjects.Particles.EmitterOp#easeValueUpdate</p>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L173" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L173</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getmethod">getMethod<a href="#getmethod" class="hash-link" aria-label="Direct link to getMethod" title="Direct link to getMethod" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-getmethod">&lt;instance&gt; getMethod()<a href="#instance-getmethod" class="hash-link" aria-label="Direct link to &lt;instance&gt; getMethod()" title="Direct link to &lt;instance&gt; getMethod()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Checks the type of <code>EmitterOp.propertyValue</code> to determine which</p>
+<p>method is required in order to return values from this op function.</p>
+<p><strong>Overrides:</strong> Phaser.GameObjects.Particles.EmitterOp#getMethod</p>
+<p><strong>Returns:</strong> number - A number between 0 and 9 which should be passed to <code>setMethods</code>.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L77" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L77</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="has">has<a href="#has" class="hash-link" aria-label="Direct link to has" title="Direct link to has" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-hasobject-key">&lt;instance&gt; has(object, key)<a href="#instance-hasobject-key" class="hash-link" aria-label="Direct link to &lt;instance&gt; has(object, key)" title="Direct link to &lt;instance&gt; has(object, key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Check whether an object has the given property.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>object</td><td>object</td><td>No</td><td>The object to check.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The key of the property to look for in the object.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if the property exists in the object, <code>false</code> otherwise.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#has">Phaser.GameObjects.Particles.EmitterOp#has</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L546" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L546</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hasboth">hasBoth<a href="#hasboth" class="hash-link" aria-label="Direct link to hasBoth" title="Direct link to hasBoth" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-hasbothobject-key1-key2">&lt;instance&gt; hasBoth(object, key1, key2)<a href="#instance-hasbothobject-key1-key2" class="hash-link" aria-label="Direct link to &lt;instance&gt; hasBoth(object, key1, key2)" title="Direct link to &lt;instance&gt; hasBoth(object, key1, key2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Check whether an object has both of the given properties.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>object</td><td>object</td><td>No</td><td>The object to check.</td></tr><tr><td>key1</td><td>string</td><td>No</td><td>The key of the first property to check the object for.</td></tr><tr><td>key2</td><td>string</td><td>No</td><td>The key of the second property to check the object for.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if both properties exist in the object, <code>false</code> otherwise.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#hasBoth">Phaser.GameObjects.Particles.EmitterOp#hasBoth</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L562" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L562</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="haseither">hasEither<a href="#haseither" class="hash-link" aria-label="Direct link to hasEither" title="Direct link to hasEither" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-haseitherobject-key1-key2">&lt;instance&gt; hasEither(object, key1, key2)<a href="#instance-haseitherobject-key1-key2" class="hash-link" aria-label="Direct link to &lt;instance&gt; hasEither(object, key1, key2)" title="Direct link to &lt;instance&gt; hasEither(object, key1, key2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Check whether an object has at least one of the given properties.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>object</td><td>object</td><td>No</td><td>The object to check.</td></tr><tr><td>key1</td><td>string</td><td>No</td><td>The key of the first property to check the object for.</td></tr><tr><td>key2</td><td>string</td><td>No</td><td>The key of the second property to check the object for.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - <code>true</code> if at least one of the properties exists in the object, <code>false</code> if neither exist.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#hasEither">Phaser.GameObjects.Particles.EmitterOp#hasEither</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L579" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L579</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="loadconfig">loadConfig<a href="#loadconfig" class="hash-link" aria-label="Direct link to loadConfig" title="Direct link to loadConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-loadconfigconfig-newkey">&lt;instance&gt; loadConfig([config], [newKey])<a href="#instance-loadconfigconfig-newkey" class="hash-link" aria-label="Direct link to &lt;instance&gt; loadConfig([config], [newKey])" title="Direct link to &lt;instance&gt; loadConfig([config], [newKey])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Load the property from a Particle Emitter configuration object.</p>
+<p>Optionally accepts a new property key to use, replacing the current one.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>config</td><td><a class="" href="/api-documentation/typedef/types-gameobjects-particles#ParticleEmitterConfig">Phaser.Types.GameObjects.Particles.ParticleEmitterConfig</a></td><td>Yes</td><td>Settings for the Particle Emitter that owns this property.</td></tr><tr><td>newKey</td><td>string</td><td>Yes</td><td>The new key to use for this property, if any.</td></tr></tbody></table>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#loadConfig">Phaser.GameObjects.Particles.EmitterOp#loadConfig</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L247" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L247</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="onchange">onChange<a href="#onchange" class="hash-link" aria-label="Direct link to onChange" title="Direct link to onChange" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-onchangevalue">&lt;instance&gt; onChange(value)<a href="#instance-onchangevalue" class="hash-link" aria-label="Direct link to &lt;instance&gt; onChange(value)" title="Direct link to &lt;instance&gt; onChange(value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Change the current value of the property and update its callback methods.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>The new numeric value of this property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emittercolorop">Phaser.GameObjects.Particles.EmitterColorOp</a> - This Emitter Op object.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#onChange">Phaser.GameObjects.Particles.EmitterOp#onChange</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L300" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L300</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proxyemit">proxyEmit<a href="#proxyemit" class="hash-link" aria-label="Direct link to proxyEmit" title="Direct link to proxyEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-proxyemitparticle-key-value">&lt;instance&gt; proxyEmit(particle, key, [value])<a href="#instance-proxyemitparticle-key-value" class="hash-link" aria-label="Direct link to &lt;instance&gt; proxyEmit(particle, key, [value])" title="Direct link to &lt;instance&gt; proxyEmit(particle, key, [value])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The returned value sets what the property will be at the START of the particles life, on emit.</p>
+<p>This method is only used when you have provided a custom emit callback.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property.</td></tr><tr><td>value</td><td>number</td><td>Yes</td><td>The current value of the property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#proxyEmit">Phaser.GameObjects.Particles.EmitterOp#proxyEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L631" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L631</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proxyupdate">proxyUpdate<a href="#proxyupdate" class="hash-link" aria-label="Direct link to proxyUpdate" title="Direct link to proxyUpdate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-proxyupdateparticle-key-t-value">&lt;instance&gt; proxyUpdate(particle, key, t, value)<a href="#instance-proxyupdateparticle-key-t-value" class="hash-link" aria-label="Direct link to &lt;instance&gt; proxyUpdate(particle, key, t, value)" title="Direct link to &lt;instance&gt; proxyUpdate(particle, key, t, value)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>The returned value updates the property for the duration of the particles life.</p>
+<p>This method is only used when you have provided a custom update callback.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The name of the property.</td></tr><tr><td>t</td><td>number</td><td>No</td><td>The current normalized lifetime of the particle, between 0 (birth) and 1 (death).</td></tr><tr><td>value</td><td>number</td><td>No</td><td>The current value of the property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#proxyUpdate">Phaser.GameObjects.Particles.EmitterOp#proxyUpdate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L654" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L654</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomrangedintemit">randomRangedIntEmit<a href="#randomrangedintemit" class="hash-link" aria-label="Direct link to randomRangedIntEmit" title="Direct link to randomRangedIntEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-randomrangedintemitparticle-key">&lt;instance&gt; randomRangedIntEmit(particle, key)<a href="#instance-randomrangedintemitparticle-key" class="hash-link" aria-label="Direct link to &lt;instance&gt; randomRangedIntEmit(particle, key)" title="Direct link to &lt;instance&gt; randomRangedIntEmit(particle, key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onEmit</code> callback that returns a value between the <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#start">Phaser.GameObjects.Particles.EmitterOp#start</a> and</p>
+<p><a class="" href="/api-documentation/class/gameobjects-particles-emitterop#end">Phaser.GameObjects.Particles.EmitterOp#end</a> range.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The key of the property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#randomRangedIntEmit">Phaser.GameObjects.Particles.EmitterOp#randomRangedIntEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L748" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L748</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomrangedvalueemit">randomRangedValueEmit<a href="#randomrangedvalueemit" class="hash-link" aria-label="Direct link to randomRangedValueEmit" title="Direct link to randomRangedValueEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-randomrangedvalueemitparticle-key">&lt;instance&gt; randomRangedValueEmit(particle, key)<a href="#instance-randomrangedvalueemitparticle-key" class="hash-link" aria-label="Direct link to &lt;instance&gt; randomRangedValueEmit(particle, key)" title="Direct link to &lt;instance&gt; randomRangedValueEmit(particle, key)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onEmit</code> callback that returns a value between the <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#start">Phaser.GameObjects.Particles.EmitterOp#start</a> and</p>
+<p><a class="" href="/api-documentation/class/gameobjects-particles-emitterop#end">Phaser.GameObjects.Particles.EmitterOp#end</a> range.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>particle</td><td><a class="" href="/api-documentation/class/gameobjects-particles-particle">Phaser.GameObjects.Particles.Particle</a></td><td>No</td><td>The particle.</td></tr><tr><td>key</td><td>string</td><td>No</td><td>The key of the property.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#randomRangedValueEmit">Phaser.GameObjects.Particles.EmitterOp#randomRangedValueEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L721" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L721</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="randomstaticvalueemit">randomStaticValueEmit<a href="#randomstaticvalueemit" class="hash-link" aria-label="Direct link to randomStaticValueEmit" title="Direct link to randomStaticValueEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-randomstaticvalueemit">&lt;instance&gt; randomStaticValueEmit()<a href="#instance-randomstaticvalueemit" class="hash-link" aria-label="Direct link to &lt;instance&gt; randomStaticValueEmit()" title="Direct link to &lt;instance&gt; randomStaticValueEmit()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onEmit</code> callback that returns a random value from the current value array.</p>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#randomStaticValueEmit">Phaser.GameObjects.Particles.EmitterOp#randomStaticValueEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L704" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L704</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setease">setEase<a href="#setease" class="hash-link" aria-label="Direct link to setEase" title="Direct link to setEase" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-seteaseease">&lt;instance&gt; setEase(ease)<a href="#instance-seteaseease" class="hash-link" aria-label="Direct link to &lt;instance&gt; setEase(ease)" title="Direct link to &lt;instance&gt; setEase(ease)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the Ease function to use for Color interpolation.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>ease</td><td>string</td><td>No</td><td>The string-based name of the Ease function to use.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L138" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L138</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setmethods">setMethods<a href="#setmethods" class="hash-link" aria-label="Direct link to setMethods" title="Direct link to setMethods" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-setmethods">&lt;instance&gt; setMethods()<a href="#instance-setmethods" class="hash-link" aria-label="Direct link to &lt;instance&gt; setMethods()" title="Direct link to &lt;instance&gt; setMethods()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Sets the EmitterColorOp method values, if in use.</p>
+<p><strong>Overrides:</strong> Phaser.GameObjects.Particles.EmitterOp#setMethods</p>
+<p><strong>Returns:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emittercolorop">Phaser.GameObjects.Particles.EmitterColorOp</a> - This Emitter Op object.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterColorOp.js#L91" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterColorOp.js#L91</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="staticvalueemit">staticValueEmit<a href="#staticvalueemit" class="hash-link" aria-label="Direct link to staticValueEmit" title="Direct link to staticValueEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-staticvalueemit">&lt;instance&gt; staticValueEmit()<a href="#instance-staticvalueemit" class="hash-link" aria-label="Direct link to &lt;instance&gt; staticValueEmit()" title="Direct link to &lt;instance&gt; staticValueEmit()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onEmit</code> callback that returns the current value of the property.</p>
+<p><strong>Returns:</strong> number - The current value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#staticValueEmit">Phaser.GameObjects.Particles.EmitterOp#staticValueEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L678" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L678</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="staticvalueupdate">staticValueUpdate<a href="#staticvalueupdate" class="hash-link" aria-label="Direct link to staticValueUpdate" title="Direct link to staticValueUpdate" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-staticvalueupdate">&lt;instance&gt; staticValueUpdate()<a href="#instance-staticvalueupdate" class="hash-link" aria-label="Direct link to &lt;instance&gt; staticValueUpdate()" title="Direct link to &lt;instance&gt; staticValueUpdate()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onUpdate</code> callback that returns the current value of the property.</p>
+<p><strong>Returns:</strong> number - The current value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#staticValueUpdate">Phaser.GameObjects.Particles.EmitterOp#staticValueUpdate</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L691" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L691</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="steppedemit">steppedEmit<a href="#steppedemit" class="hash-link" aria-label="Direct link to steppedEmit" title="Direct link to steppedEmit" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-steppedemit">&lt;instance&gt; steppedEmit()<a href="#instance-steppedemit" class="hash-link" aria-label="Direct link to &lt;instance&gt; steppedEmit()" title="Direct link to &lt;instance&gt; steppedEmit()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An <code>onEmit</code> callback that returns a stepped value between the</p>
+<p><a class="" href="/api-documentation/class/gameobjects-particles-emitterop#start">Phaser.GameObjects.Particles.EmitterOp#start</a> and <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#end">Phaser.GameObjects.Particles.EmitterOp#end</a></p>
+<p>range.</p>
+<p><strong>Returns:</strong> number - The new value of the property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#steppedEmit">Phaser.GameObjects.Particles.EmitterOp#steppedEmit</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L775" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L775</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tojson">toJSON<a href="#tojson" class="hash-link" aria-label="Direct link to toJSON" title="Direct link to toJSON" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instance-tojson">&lt;instance&gt; toJSON()<a href="#instance-tojson" class="hash-link" aria-label="Direct link to &lt;instance&gt; toJSON()" title="Direct link to &lt;instance&gt; toJSON()" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Build a JSON representation of this Particle Emitter property.</p>
+<p><strong>Returns:</strong> object - A JSON representation of this Particle Emitter property.</p>
+<p><strong>Inherits:</strong> <a class="" href="/api-documentation/class/gameobjects-particles-emitterop#toJSON">Phaser.GameObjects.Particles.EmitterOp#toJSON</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/gameobjects/particles/EmitterOp.js#L287" target="_blank" rel="noopener noreferrer" class="">src/gameobjects/particles/EmitterOp.js#L287</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/class/gameobjects-nineslice"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">NineSlice</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/class/gameobjects-particles-emitterop"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">EmitterOp</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#active" class="table-of-contents__link toc-highlight">active</a><ul><li><a href="#active-boolean" class="table-of-contents__link toc-highlight">active: boolean</a></li></ul></li><li><a href="#b" class="table-of-contents__link toc-highlight">b</a><ul><li><a href="#b-arraynumber" class="table-of-contents__link toc-highlight">b: Array.&lt;number&gt;</a></li></ul></li><li><a href="#counter" class="table-of-contents__link toc-highlight">counter</a><ul><li><a href="#counter-number" class="table-of-contents__link toc-highlight">counter: number</a></li></ul></li><li><a href="#current" class="table-of-contents__link toc-highlight">current</a><ul><li><a href="#current-number" class="table-of-contents__link toc-highlight">current: number</a></li></ul></li><li><a href="#defaultvalue" class="table-of-contents__link toc-highlight">defaultValue</a><ul><li><a href="#defaultvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" class="table-of-contents__link toc-highlight">defaultValue: Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType, Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></li></ul></li><li><a href="#direction" class="table-of-contents__link toc-highlight">direction</a><ul><li><a href="#direction-number" class="table-of-contents__link toc-highlight">direction: number</a></li></ul></li><li><a href="#ease" class="table-of-contents__link toc-highlight">ease</a><ul><li><a href="#ease-function" class="table-of-contents__link toc-highlight">ease: function</a></li></ul></li><li><a href="#emitonly" class="table-of-contents__link toc-highlight">emitOnly</a><ul><li><a href="#emitonly-boolean" class="table-of-contents__link toc-highlight">emitOnly: boolean</a></li></ul></li><li><a href="#end" class="table-of-contents__link toc-highlight">end</a><ul><li><a href="#end-number" class="table-of-contents__link toc-highlight">end: number</a></li></ul></li><li><a href="#g" class="table-of-contents__link toc-highlight">g</a><ul><li><a href="#g-arraynumber" class="table-of-contents__link toc-highlight">g: Array.&lt;number&gt;</a></li></ul></li><li><a href="#interpolation" class="table-of-contents__link toc-highlight">interpolation</a><ul><li><a href="#interpolation-function" class="table-of-contents__link toc-highlight">interpolation: function</a></li></ul></li><li><a href="#method" class="table-of-contents__link toc-highlight">method</a><ul><li><a href="#method-number" class="table-of-contents__link toc-highlight">method: number</a></li></ul></li><li><a href="#onemit" class="table-of-contents__link toc-highlight">onEmit</a><ul><li><a href="#onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" class="table-of-contents__link toc-highlight">onEmit: Phaser.Types.GameObjects.Particles.EmitterOpOnEmitCallback</a></li></ul></li><li><a href="#onupdate" class="table-of-contents__link toc-highlight">onUpdate</a><ul><li><a href="#onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" class="table-of-contents__link toc-highlight">onUpdate: Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateCallback</a></li></ul></li><li><a href="#propertykey" class="table-of-contents__link toc-highlight">propertyKey</a><ul><li><a href="#propertykey-string" class="table-of-contents__link toc-highlight">propertyKey: string</a></li></ul></li><li><a href="#propertyvalue" class="table-of-contents__link toc-highlight">propertyValue</a><ul><li><a href="#propertyvalue-phasertypesgameobjectsparticlesemitteroponemittype-phasertypesgameobjectsparticlesemitteroponupdatetype" class="table-of-contents__link toc-highlight">propertyValue: Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType, Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateType</a></li></ul></li><li><a href="#r" class="table-of-contents__link toc-highlight">r</a><ul><li><a href="#r-arraynumber" class="table-of-contents__link toc-highlight">r: Array.&lt;number&gt;</a></li></ul></li><li><a href="#start" class="table-of-contents__link toc-highlight">start</a><ul><li><a href="#start-number-arraynumber" class="table-of-contents__link toc-highlight">start: number, Array.&lt;number&gt;</a></li></ul></li><li><a href="#steps" class="table-of-contents__link toc-highlight">steps</a><ul><li><a href="#steps-number" class="table-of-contents__link toc-highlight">steps: number</a></li></ul></li><li><a href="#yoyo" class="table-of-contents__link toc-highlight">yoyo</a><ul><li><a href="#yoyo-boolean" class="table-of-contents__link toc-highlight">yoyo: boolean</a></li></ul></li><li><a href="#_onemit" class="table-of-contents__link toc-highlight">_onEmit</a><ul><li><a href="#_onemit-phasertypesgameobjectsparticlesemitteroponemitcallback" class="table-of-contents__link toc-highlight">_onEmit: Phaser.Types.GameObjects.Particles.EmitterOpOnEmitCallback</a></li></ul></li><li><a href="#_onupdate" class="table-of-contents__link toc-highlight">_onUpdate</a><ul><li><a href="#_onupdate-phasertypesgameobjectsparticlesemitteroponupdatecallback" class="table-of-contents__link toc-highlight">_onUpdate: Phaser.Types.GameObjects.Particles.EmitterOpOnUpdateCallback</a></li></ul></li><li><a href="#defaultemit" class="table-of-contents__link toc-highlight">defaultEmit</a><ul><li><a href="#instance-defaultemitparticle-key-value" class="table-of-contents__link toc-highlight">&lt;instance&gt; defaultEmit(particle, key, [value])</a></li></ul></li><li><a href="#defaultupdate" class="table-of-contents__link toc-highlight">defaultUpdate</a><ul><li><a href="#instance-defaultupdateparticle-key-t-value" class="table-of-contents__link toc-highlight">&lt;instance&gt; defaultUpdate(particle, key, t, value)</a></li></ul></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">destroy</a><ul><li><a href="#instance-destroy" class="table-of-contents__link toc-highlight">&lt;instance&gt; destroy()</a></li></ul></li><li><a href="#easedvalueemit" class="table-of-contents__link toc-highlight">easedValueEmit</a><ul><li><a href="#instance-easedvalueemitparticle-key" class="table-of-contents__link toc-highlight">&lt;instance&gt; easedValueEmit(particle, key)</a></li></ul></li><li><a href="#easevalueupdate" class="table-of-contents__link toc-highlight">easeValueUpdate</a><ul><li><a href="#instance-easevalueupdateparticle-key-t" class="table-of-contents__link toc-highlight">&lt;instance&gt; easeValueUpdate(particle, key, t)</a></li></ul></li><li><a href="#getmethod" class="table-of-contents__link toc-highlight">getMethod</a><ul><li><a href="#instance-getmethod" class="table-of-contents__link toc-highlight">&lt;instance&gt; getMethod()</a></li></ul></li><li><a href="#has" class="table-of-contents__link toc-highlight">has</a><ul><li><a href="#instance-hasobject-key" class="table-of-contents__link toc-highlight">&lt;instance&gt; has(object, key)</a></li></ul></li><li><a href="#hasboth" class="table-of-contents__link toc-highlight">hasBoth</a><ul><li><a href="#instance-hasbothobject-key1-key2" class="table-of-contents__link toc-highlight">&lt;instance&gt; hasBoth(object, key1, key2)</a></li></ul></li><li><a href="#haseither" class="table-of-contents__link toc-highlight">hasEither</a><ul><li><a href="#instance-haseitherobject-key1-key2" class="table-of-contents__link toc-highlight">&lt;instance&gt; hasEither(object, key1, key2)</a></li></ul></li><li><a href="#loadconfig" class="table-of-contents__link toc-highlight">loadConfig</a><ul><li><a href="#instance-loadconfigconfig-newkey" class="table-of-contents__link toc-highlight">&lt;instance&gt; loadConfig([config], [newKey])</a></li></ul></li><li><a href="#onchange" class="table-of-contents__link toc-highlight">onChange</a><ul><li><a href="#instance-onchangevalue" class="table-of-contents__link toc-highlight">&lt;instance&gt; onChange(value)</a></li></ul></li><li><a href="#proxyemit" class="table-of-contents__link toc-highlight">proxyEmit</a><ul><li><a href="#instance-proxyemitparticle-key-value" class="table-of-contents__link toc-highlight">&lt;instance&gt; proxyEmit(particle, key, [value])</a></li></ul></li><li><a href="#proxyupdate" class="table-of-contents__link toc-highlight">proxyUpdate</a><ul><li><a href="#instance-proxyupdateparticle-key-t-value" class="table-of-contents__link toc-highlight">&lt;instance&gt; proxyUpdate(particle, key, t, value)</a></li></ul></li><li><a href="#randomrangedintemit" class="table-of-contents__link toc-highlight">randomRangedIntEmit</a><ul><li><a href="#instance-randomrangedintemitparticle-key" class="table-of-contents__link toc-highlight">&lt;instance&gt; randomRangedIntEmit(particle, key)</a></li></ul></li><li><a href="#randomrangedvalueemit" class="table-of-contents__link toc-highlight">randomRangedValueEmit</a><ul><li><a href="#instance-randomrangedvalueemitparticle-key" class="table-of-contents__link toc-highlight">&lt;instance&gt; randomRangedValueEmit(particle, key)</a></li></ul></li><li><a href="#randomstaticvalueemit" class="table-of-contents__link toc-highlight">randomStaticValueEmit</a><ul><li><a href="#instance-randomstaticvalueemit" class="table-of-contents__link toc-highlight">&lt;instance&gt; randomStaticValueEmit()</a></li></ul></li><li><a href="#setease" class="table-of-contents__link toc-highlight">setEase</a><ul><li><a href="#instance-seteaseease" class="table-of-contents__link toc-highlight">&lt;instance&gt; setEase(ease)</a></li></ul></li><li><a href="#setmethods" class="table-of-contents__link toc-highlight">setMethods</a><ul><li><a href="#instance-setmethods" class="table-of-contents__link toc-highlight">&lt;instance&gt; setMethods()</a></li></ul></li><li><a href="#staticvalueemit" class="table-of-contents__link toc-highlight">staticValueEmit</a><ul><li><a href="#instance-staticvalueemit" class="table-of-contents__link toc-highlight">&lt;instance&gt; staticValueEmit()</a></li></ul></li><li><a href="#staticvalueupdate" class="table-of-contents__link toc-highlight">staticValueUpdate</a><ul><li><a href="#instance-staticvalueupdate" class="table-of-contents__link toc-highlight">&lt;instance&gt; staticValueUpdate()</a></li></ul></li><li><a href="#steppedemit" class="table-of-contents__link toc-highlight">steppedEmit</a><ul><li><a href="#instance-steppedemit" class="table-of-contents__link toc-highlight">&lt;instance&gt; steppedEmit()</a></li></ul></li><li><a href="#tojson" class="table-of-contents__link toc-highlight">toJSON</a><ul><li><a href="#instance-tojson" class="table-of-contents__link toc-highlight">&lt;instance&gt; toJSON()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

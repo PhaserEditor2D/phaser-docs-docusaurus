@@ -1,0 +1,1914 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.86.0 docs-doc-page docs-doc-id-event/Phaser.Input.Events" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Input.Events | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.86.0/event/input-events"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.86.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" name="docsearch:version" content="3.86.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.86.0"><meta data-rh="true" property="og:title" content="Input.Events | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Input.Events"><meta data-rh="true" property="og:description" content="Phaser.Input.Events"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.86.0/event/input-events"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/event/input-events" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.86.0/event/input-events" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Events","item":"https://docs.phaser.io/api-documentation/3.86.0/event/"},{"@type":"ListItem","position":2,"name":"Input.Events","item":"https://docs.phaser.io/api-documentation/3.86.0/event/input-events"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.86.0/event/input-events">API Documentation - v3.86.0</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/event/input-events">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/event/input-events">API Documentation - v3.85.2</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.86.0/event/input-events">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/api-documentation"><span title="Phaser 3.86.0 API Documentation" class="linkLabel_WmDU">Phaser 3.86.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.86.0/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Collapse sidebar category &#x27;Events&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/animations-events"><span title="Animations.Events" class="linkLabel_WmDU">Animations.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/cache-events"><span title="Cache.Events" class="linkLabel_WmDU">Cache.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/cameras-scene2d-events"><span title="Cameras.Scene2D.Events" class="linkLabel_WmDU">Cameras.Scene2D.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/core-events"><span title="Core.Events" class="linkLabel_WmDU">Core.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/data-events"><span title="Data.Events" class="linkLabel_WmDU">Data.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/gameobjects-events"><span title="GameObjects.Events" class="linkLabel_WmDU">GameObjects.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/gameobjects-particles-events"><span title="GameObjects.Particles.Events" class="linkLabel_WmDU">GameObjects.Particles.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.86.0/event/input-events"><span title="Input.Events" class="linkLabel_WmDU">Input.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/input-gamepad-events"><span title="Input.Gamepad.Events" class="linkLabel_WmDU">Input.Gamepad.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/input-keyboard-events"><span title="Input.Keyboard.Events" class="linkLabel_WmDU">Input.Keyboard.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/loader-events"><span title="Loader.Events" class="linkLabel_WmDU">Loader.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/physics-arcade-events"><span title="Physics.Arcade.Events" class="linkLabel_WmDU">Physics.Arcade.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/renderer-events"><span title="Renderer.Events" class="linkLabel_WmDU">Renderer.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/renderer-webgl-pipelines-events"><span title="Renderer.WebGL.Pipelines.Events" class="linkLabel_WmDU">Renderer.WebGL.Pipelines.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/scale-events"><span title="Scale.Events" class="linkLabel_WmDU">Scale.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/scenes-events"><span title="Scenes.Events" class="linkLabel_WmDU">Scenes.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/sound-events"><span title="Sound.Events" class="linkLabel_WmDU">Sound.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/structs-events"><span title="Structs.Events" class="linkLabel_WmDU">Structs.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/textures-events"><span title="Textures.Events" class="linkLabel_WmDU">Textures.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/time-events"><span title="Time.Events" class="linkLabel_WmDU">Time.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/tweens-events"><span title="Tweens.Events" class="linkLabel_WmDU">Tweens.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.86.0/event/"><span title="Events" class="linkLabel_WmDU">Events</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.86.0/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.86.0</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/event/input-events">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.86.0/event/"><span>Events</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Input.Events</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.86.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Input.Events</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="boot">BOOT<a href="#boot" class="hash-link" aria-label="Direct link to BOOT" title="Direct link to BOOT" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Boot Event.</p>
+<p>This internal event is dispatched by the Input Plugin when it boots, signalling to all of its systems to create themselves.</p>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/BOOT_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/BOOT_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="destroy">DESTROY<a href="#destroy" class="hash-link" aria-label="Direct link to DESTROY" title="Direct link to DESTROY" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Destroy Event.</p>
+<p>This internal event is dispatched by the Input Plugin when it is destroyed, signalling to all of its systems to destroy themselves.</p>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DESTROY_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DESTROY_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drag_end">DRAG_END<a href="#drag_end" class="hash-link" aria-label="Direct link to DRAG_END" title="Direct link to DRAG_END" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Drag End Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer stops dragging a Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;dragend&#x27;, listener)</code>.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_DRAG_END]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_END} event instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The interactive Game Object that this pointer stopped dragging.</td></tr><tr><td>dropped</td><td>boolean</td><td>No</td><td>Whether the Game Object was dropped onto a target.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DRAG_END_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DRAG_END_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drag_enter">DRAG_ENTER<a href="#drag_enter" class="hash-link" aria-label="Direct link to DRAG_ENTER" title="Direct link to DRAG_ENTER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Drag Enter Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer drags a Game Object into a Drag Target.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;dragenter&#x27;, listener)</code>.</p>
+<p>A Pointer can only drag a single Game Object at once.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_DRAG_ENTER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_ENTER} event instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The interactive Game Object that this pointer is dragging.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The drag target that this pointer has moved into.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DRAG_ENTER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DRAG_ENTER_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drag">DRAG<a href="#drag" class="hash-link" aria-label="Direct link to DRAG" title="Direct link to DRAG" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Drag Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer moves while dragging a Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;drag&#x27;, listener)</code>.</p>
+<p>A Pointer can only drag a single Game Object at once.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_DRAG]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG} event instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The interactive Game Object that this pointer is dragging.</td></tr><tr><td>dragX</td><td>number</td><td>No</td><td>The x coordinate where the Pointer is currently dragging the Game Object, in world space.</td></tr><tr><td>dragY</td><td>number</td><td>No</td><td>The y coordinate where the Pointer is currently dragging the Game Object, in world space.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DRAG_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DRAG_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drag_leave">DRAG_LEAVE<a href="#drag_leave" class="hash-link" aria-label="Direct link to DRAG_LEAVE" title="Direct link to DRAG_LEAVE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Drag Leave Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer drags a Game Object out of a Drag Target.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;dragleave&#x27;, listener)</code>.</p>
+<p>A Pointer can only drag a single Game Object at once.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_DRAG_LEAVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_LEAVE} event instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The interactive Game Object that this pointer is dragging.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The drag target that this pointer has left.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DRAG_LEAVE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DRAG_LEAVE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drag_over">DRAG_OVER<a href="#drag_over" class="hash-link" aria-label="Direct link to DRAG_OVER" title="Direct link to DRAG_OVER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Drag Over Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer drags a Game Object over a Drag Target.</p>
+<p>When the Game Object first enters the drag target it will emit a <code>dragenter</code> event. If it then moves while within</p>
+<p>the drag target, it will emit this event instead.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;dragover&#x27;, listener)</code>.</p>
+<p>A Pointer can only drag a single Game Object at once.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_DRAG_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_OVER} event instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The interactive Game Object that this pointer is dragging.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The drag target that this pointer has moved over.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DRAG_OVER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DRAG_OVER_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drag_start">DRAG_START<a href="#drag_start" class="hash-link" aria-label="Direct link to DRAG_START" title="Direct link to DRAG_START" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Drag Start Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer starts to drag any Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;dragstart&#x27;, listener)</code>.</p>
+<p>A Pointer can only drag a single Game Object at once.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_DRAG_START]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DRAG_START} event instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The interactive Game Object that this pointer is dragging.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DRAG_START_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DRAG_START_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="drop">DROP<a href="#drop" class="hash-link" aria-label="Direct link to DROP" title="Direct link to DROP" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Drop Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer drops a Game Object on a Drag Target.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;drop&#x27;, listener)</code>.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_DROP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DROP} event instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The interactive Game Object that this pointer was dragging.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Drag Target the <code>gameObject</code> has been dropped on.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/DROP_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/DROP_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_down">GAMEOBJECT_DOWN<a href="#gameobject_down" class="hash-link" aria-label="Direct link to GAMEOBJECT_DOWN" title="Direct link to GAMEOBJECT_DOWN" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Down Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is pressed down on <em>any</em> interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameobjectdown&#x27;, listener)</code>.</p>
+<p>To receive this event, the Game Objects must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_POINTER_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_DOWN} event instead.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_DOWN}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DOWN}</p>
+</li>
+<li class="">
+<p>[POINTER_DOWN]{@linkcode Phaser.Input.Events#event:POINTER_DOWN} or [POINTER_DOWN_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_DOWN_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object the pointer was pressed down on.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DOWN_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DOWN_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_drag_end">GAMEOBJECT_DRAG_END<a href="#gameobject_drag_end" class="hash-link" aria-label="Direct link to GAMEOBJECT_DRAG_END" title="Direct link to GAMEOBJECT_DRAG_END" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Drag End Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer stops dragging it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;dragend&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive and enabled for drag.</p>
+<p>See <a class="" href="/api-documentation/3.86.0/event/Phaser.GameObjects.GameObject#setInteractive">GameObject.setInteractive</a> for more details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>dragX</td><td>number</td><td>No</td><td>The x coordinate where the Pointer stopped dragging the Game Object, in world space.</td></tr><tr><td>dragY</td><td>number</td><td>No</td><td>The y coordinate where the Pointer stopped dragging the Game Object, in world space.</td></tr><tr><td>dropped</td><td>boolean</td><td>No</td><td>Whether the Game Object was dropped onto a target.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DRAG_END_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DRAG_END_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_drag_enter">GAMEOBJECT_DRAG_ENTER<a href="#gameobject_drag_enter" class="hash-link" aria-label="Direct link to GAMEOBJECT_DRAG_ENTER" title="Direct link to GAMEOBJECT_DRAG_ENTER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Drag Enter Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer drags it into a drag target.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;dragenter&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive and enabled for drag.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The drag target that this pointer has moved into.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DRAG_ENTER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DRAG_ENTER_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_drag">GAMEOBJECT_DRAG<a href="#gameobject_drag" class="hash-link" aria-label="Direct link to GAMEOBJECT_DRAG" title="Direct link to GAMEOBJECT_DRAG" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Drag Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer moves while dragging it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;drag&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive and enabled for drag.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>dragX</td><td>number</td><td>No</td><td>The x coordinate where the Pointer is currently dragging the Game Object, in world space.</td></tr><tr><td>dragY</td><td>number</td><td>No</td><td>The y coordinate where the Pointer is currently dragging the Game Object, in world space.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DRAG_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DRAG_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_drag_leave">GAMEOBJECT_DRAG_LEAVE<a href="#gameobject_drag_leave" class="hash-link" aria-label="Direct link to GAMEOBJECT_DRAG_LEAVE" title="Direct link to GAMEOBJECT_DRAG_LEAVE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Drag Leave Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer drags it out of a drag target.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;dragleave&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive and enabled for drag.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The drag target that this pointer has left.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DRAG_LEAVE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DRAG_LEAVE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_drag_over">GAMEOBJECT_DRAG_OVER<a href="#gameobject_drag_over" class="hash-link" aria-label="Direct link to GAMEOBJECT_DRAG_OVER" title="Direct link to GAMEOBJECT_DRAG_OVER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Drag Over Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer drags it over a drag target.</p>
+<p>When the Game Object first enters the drag target it will emit a <code>dragenter</code> event. If it then moves while within</p>
+<p>the drag target, it will emit this event instead.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;dragover&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive and enabled for drag.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The drag target that this pointer has moved over.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DRAG_OVER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DRAG_OVER_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_drag_start">GAMEOBJECT_DRAG_START<a href="#gameobject_drag_start" class="hash-link" aria-label="Direct link to GAMEOBJECT_DRAG_START" title="Direct link to GAMEOBJECT_DRAG_START" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Drag Start Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer starts to drag it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;dragstart&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive and enabled for drag.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>There are lots of useful drag related properties that are set within the Game Object when dragging occurs.</p>
+<p>For example, <code>gameObject.input.dragStartX</code>, <code>dragStartY</code> and so on.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>dragX</td><td>number</td><td>No</td><td>The x coordinate where the Pointer is currently dragging the Game Object, in world space.</td></tr><tr><td>dragY</td><td>number</td><td>No</td><td>The y coordinate where the Pointer is currently dragging the Game Object, in world space.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DRAG_START_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DRAG_START_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_drop">GAMEOBJECT_DROP<a href="#gameobject_drop" class="hash-link" aria-label="Direct link to GAMEOBJECT_DROP" title="Direct link to GAMEOBJECT_DROP" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Drop Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer drops it on a Drag Target.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;drop&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive and enabled for drag.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>target</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Drag Target the <code>gameObject</code> has been dropped on.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_DROP_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_DROP_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_move">GAMEOBJECT_MOVE<a href="#gameobject_move" class="hash-link" aria-label="Direct link to GAMEOBJECT_MOVE" title="Direct link to GAMEOBJECT_MOVE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Move Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is moved across <em>any</em> interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameobjectmove&#x27;, listener)</code>.</p>
+<p>To receive this event, the Game Objects must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_POINTER_MOVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_MOVE} event instead.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_MOVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_MOVE}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_MOVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_MOVE}</p>
+</li>
+<li class="">
+<p>[POINTER_MOVE]{@linkcode Phaser.Input.Events#event:POINTER_MOVE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object the pointer was moved on.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_MOVE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_MOVE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_out">GAMEOBJECT_OUT<a href="#gameobject_out" class="hash-link" aria-label="Direct link to GAMEOBJECT_OUT" title="Direct link to GAMEOBJECT_OUT" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Out Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer moves out of <em>any</em> interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameobjectout&#x27;, listener)</code>.</p>
+<p>To receive this event, the Game Objects must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_POINTER_OUT]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OUT} event instead.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_OUT]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OUT}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_OUT]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_OUT}</p>
+</li>
+<li class="">
+<p>[POINTER_OUT]{@linkcode Phaser.Input.Events#event:POINTER_OUT}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+<p>If the pointer leaves the game canvas itself, it will not trigger an this event. To handle those cases,</p>
+<p>please listen for the [GAME_OUT]{@linkcode Phaser.Input.Events#event:GAME_OUT} event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object the pointer moved out of.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_OUT_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_OUT_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_over">GAMEOBJECT_OVER<a href="#gameobject_over" class="hash-link" aria-label="Direct link to GAMEOBJECT_OVER" title="Direct link to GAMEOBJECT_OVER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Over Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer moves over <em>any</em> interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameobjectover&#x27;, listener)</code>.</p>
+<p>To receive this event, the Game Objects must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_POINTER_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OVER} event instead.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OVER}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_OVER}</p>
+</li>
+<li class="">
+<p>[POINTER_OVER]{@linkcode Phaser.Input.Events#event:POINTER_OVER}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object the pointer moved over.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_OVER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_OVER_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_pointer_down">GAMEOBJECT_POINTER_DOWN<a href="#gameobject_pointer_down" class="hash-link" aria-label="Direct link to GAMEOBJECT_POINTER_DOWN" title="Direct link to GAMEOBJECT_POINTER_DOWN" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Pointer Down Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer is pressed down on it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;pointerdown&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_DOWN}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DOWN}</p>
+</li>
+<li class="">
+<p>[POINTER_DOWN]{@linkcode Phaser.Input.Events#event:POINTER_DOWN} or [POINTER_DOWN_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_DOWN_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>localX</td><td>number</td><td>No</td><td>The x coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>localY</td><td>number</td><td>No</td><td>The y coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_POINTER_DOWN_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_POINTER_DOWN_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_pointer_move">GAMEOBJECT_POINTER_MOVE<a href="#gameobject_pointer_move" class="hash-link" aria-label="Direct link to GAMEOBJECT_POINTER_MOVE" title="Direct link to GAMEOBJECT_POINTER_MOVE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Pointer Move Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer is moved while over it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;pointermove&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_MOVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_MOVE}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_MOVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_MOVE}</p>
+</li>
+<li class="">
+<p>[POINTER_MOVE]{@linkcode Phaser.Input.Events#event:POINTER_MOVE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>localX</td><td>number</td><td>No</td><td>The x coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>localY</td><td>number</td><td>No</td><td>The y coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_POINTER_MOVE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_POINTER_MOVE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_pointer_out">GAMEOBJECT_POINTER_OUT<a href="#gameobject_pointer_out" class="hash-link" aria-label="Direct link to GAMEOBJECT_POINTER_OUT" title="Direct link to GAMEOBJECT_POINTER_OUT" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Pointer Out Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer moves out of it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;pointerout&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_OUT]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OUT}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_OUT]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_OUT}</p>
+</li>
+<li class="">
+<p>[POINTER_OUT]{@linkcode Phaser.Input.Events#event:POINTER_OUT}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+<p>If the pointer leaves the game canvas itself, it will not trigger an this event. To handle those cases,</p>
+<p>please listen for the [GAME_OUT]{@linkcode Phaser.Input.Events#event:GAME_OUT} event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_POINTER_OUT_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_POINTER_OUT_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_pointer_over">GAMEOBJECT_POINTER_OVER<a href="#gameobject_pointer_over" class="hash-link" aria-label="Direct link to GAMEOBJECT_POINTER_OVER" title="Direct link to GAMEOBJECT_POINTER_OVER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Pointer Over Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer moves over it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;pointerover&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OVER}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_OVER}</p>
+</li>
+<li class="">
+<p>[POINTER_OVER]{@linkcode Phaser.Input.Events#event:POINTER_OVER}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>localX</td><td>number</td><td>No</td><td>The x coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>localY</td><td>number</td><td>No</td><td>The y coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_POINTER_OVER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_POINTER_OVER_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_pointer_up">GAMEOBJECT_POINTER_UP<a href="#gameobject_pointer_up" class="hash-link" aria-label="Direct link to GAMEOBJECT_POINTER_UP" title="Direct link to GAMEOBJECT_POINTER_UP" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Pointer Up Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer is released while over it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;pointerup&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_UP}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_UP}</p>
+</li>
+<li class="">
+<p>[POINTER_UP]{@linkcode Phaser.Input.Events#event:POINTER_UP} or [POINTER_UP_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_UP_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>localX</td><td>number</td><td>No</td><td>The x coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>localY</td><td>number</td><td>No</td><td>The y coordinate that the Pointer interacted with this object on, relative to the Game Object&#x27;s top-left position.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_POINTER_UP_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_POINTER_UP_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_pointer_wheel">GAMEOBJECT_POINTER_WHEEL<a href="#gameobject_pointer_wheel" class="hash-link" aria-label="Direct link to GAMEOBJECT_POINTER_WHEEL" title="Direct link to GAMEOBJECT_POINTER_WHEEL" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Pointer Wheel Event.</p>
+<p>This event is dispatched by an interactive Game Object if a pointer has its wheel moved while over it.</p>
+<p>Listen to this event from a Game Object using: <code>gameObject.on(&#x27;wheel&#x27;, listener)</code>.</p>
+<p>Note that the scope of the listener is automatically set to be the Game Object instance itself.</p>
+<p>To receive this event, the Game Object must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_WHEEL}</p>
+</li>
+<li class="">
+<p>[POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:POINTER_WHEEL}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>deltaX</td><td>number</td><td>No</td><td>The horizontal scroll amount that occurred due to the user moving a mouse wheel or similar input device.</td></tr><tr><td>deltaY</td><td>number</td><td>No</td><td>The vertical scroll amount that occurred due to the user moving a mouse wheel or similar input device. This value will typically be less than 0 if the user scrolls up and greater than zero if scrolling down.</td></tr><tr><td>deltaZ</td><td>number</td><td>No</td><td>The z-axis scroll amount that occurred due to the user moving a mouse wheel or similar input device.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_POINTER_WHEEL_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_POINTER_WHEEL_EVENT.js#L7</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_up">GAMEOBJECT_UP<a href="#gameobject_up" class="hash-link" aria-label="Direct link to GAMEOBJECT_UP" title="Direct link to GAMEOBJECT_UP" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Up Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is released while over <em>any</em> interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameobjectup&#x27;, listener)</code>.</p>
+<p>To receive this event, the Game Objects must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_POINTER_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_UP} event instead.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_UP}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_UP}</p>
+</li>
+<li class="">
+<p>[POINTER_UP]{@linkcode Phaser.Input.Events#event:POINTER_UP} or [POINTER_UP_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_UP_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object the pointer was over when released.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_UP_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_UP_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gameobject_wheel">GAMEOBJECT_WHEEL<a href="#gameobject_wheel" class="hash-link" aria-label="Direct link to GAMEOBJECT_WHEEL" title="Direct link to GAMEOBJECT_WHEEL" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Game Object Wheel Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer has its wheel moved while over <em>any</em> interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameobjectwheel&#x27;, listener)</code>.</p>
+<p>To receive this event, the Game Objects must have been set as interactive.</p>
+<p>See [GameObject.setInteractive]{@link Phaser.GameObjects.GameObject#setInteractive} for more details.</p>
+<p>To listen for this event from a <em>specific</em> Game Object, use the [GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL} event instead.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_WHEEL}</p>
+</li>
+<li class="">
+<p>[POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:POINTER_WHEEL}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>gameObject</td><td><a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a></td><td>No</td><td>The Game Object the pointer was over when the wheel changed.</td></tr><tr><td>deltaX</td><td>number</td><td>No</td><td>The horizontal scroll amount that occurred due to the user moving a mouse wheel or similar input device.</td></tr><tr><td>deltaY</td><td>number</td><td>No</td><td>The vertical scroll amount that occurred due to the user moving a mouse wheel or similar input device. This value will typically be less than 0 if the user scrolls up and greater than zero if scrolling down.</td></tr><tr><td>deltaZ</td><td>number</td><td>No</td><td>The z-axis scroll amount that occurred due to the user moving a mouse wheel or similar input device.</td></tr><tr><td>event</td><td><a class="" href="/api-documentation/3.86.0/typedef/types-input#EventData">Phaser.Types.Input.EventData</a></td><td>No</td><td>The Phaser input event. You can call <code>stopPropagation()</code> to halt it from going any further in the event flow.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAMEOBJECT_WHEEL_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAMEOBJECT_WHEEL_EVENT.js#L7</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="game_out">GAME_OUT<a href="#game_out" class="hash-link" aria-label="Direct link to GAME_OUT" title="Direct link to GAME_OUT" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Game Out Event.</p>
+<p>This event is dispatched by the Input Plugin if the active pointer leaves the game canvas and is now</p>
+<p>outside of it, elsewhere on the web page.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameout&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>time</td><td>number</td><td>No</td><td>The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.</td></tr><tr><td>event</td><td>MouseEvent | TouchEvent</td><td>No</td><td>The DOM Event that triggered the canvas out.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAME_OUT_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAME_OUT_EVENT.js#L7</a><br>
+Since: 3.16.1</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="game_over">GAME_OVER<a href="#game_over" class="hash-link" aria-label="Direct link to GAME_OVER" title="Direct link to GAME_OVER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Game Over Event.</p>
+<p>This event is dispatched by the Input Plugin if the active pointer enters the game canvas and is now</p>
+<p>over of it, having previously been elsewhere on the web page.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;gameover&#x27;, listener)</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>time</td><td>number</td><td>No</td><td>The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.</td></tr><tr><td>event</td><td>MouseEvent | TouchEvent</td><td>No</td><td>The DOM Event that triggered the canvas over.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/GAME_OVER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/GAME_OVER_EVENT.js#L7</a><br>
+Since: 3.16.1</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="manager_boot">MANAGER_BOOT<a href="#manager_boot" class="hash-link" aria-label="Direct link to MANAGER_BOOT" title="Direct link to MANAGER_BOOT" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Manager Boot Event.</p>
+<p>This internal event is dispatched by the Input Manager when it boots.</p>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/MANAGER_BOOT_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/MANAGER_BOOT_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="manager_process">MANAGER_PROCESS<a href="#manager_process" class="hash-link" aria-label="Direct link to MANAGER_PROCESS" title="Direct link to MANAGER_PROCESS" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Manager Process Event.</p>
+<p>This internal event is dispatched by the Input Manager when not using the legacy queue system,</p>
+<p>and it wants the Input Plugins to update themselves.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>time</td><td>number</td><td>No</td><td>The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.</td></tr><tr><td>delta</td><td>number</td><td>No</td><td>The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/MANAGER_PROCESS_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/MANAGER_PROCESS_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="manager_update">MANAGER_UPDATE<a href="#manager_update" class="hash-link" aria-label="Direct link to MANAGER_UPDATE" title="Direct link to MANAGER_UPDATE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Manager Update Event.</p>
+<p>This internal event is dispatched by the Input Manager as part of its update step.</p>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/MANAGER_UPDATE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/MANAGER_UPDATE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointerlock_change">POINTERLOCK_CHANGE<a href="#pointerlock_change" class="hash-link" aria-label="Direct link to POINTERLOCK_CHANGE" title="Direct link to POINTERLOCK_CHANGE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Manager Pointer Lock Change Event.</p>
+<p>This event is dispatched by the Input Manager when it is processing a native Pointer Lock Change DOM Event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>event</td><td>Event</td><td>No</td><td>The native DOM Event.</td></tr><tr><td>locked</td><td>boolean</td><td>No</td><td>The locked state of the Mouse Pointer.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTERLOCK_CHANGE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTERLOCK_CHANGE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_down">POINTER_DOWN<a href="#pointer_down" class="hash-link" aria-label="Direct link to POINTER_DOWN" title="Direct link to POINTER_DOWN" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Down Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is pressed down anywhere.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;pointerdown&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_DOWN}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DOWN}</p>
+</li>
+<li class="">
+<p>[POINTER_DOWN]{@linkcode Phaser.Input.Events#event:POINTER_DOWN} or [POINTER_DOWN_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_DOWN_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>currentlyOver</td><td>Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array containing all interactive Game Objects that the pointer was over when the event was created.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_DOWN_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_DOWN_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_down_outside">POINTER_DOWN_OUTSIDE<a href="#pointer_down_outside" class="hash-link" aria-label="Direct link to POINTER_DOWN_OUTSIDE" title="Direct link to POINTER_DOWN_OUTSIDE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Down Outside Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is pressed down anywhere outside of the game canvas.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;pointerdownoutside&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_DOWN}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_DOWN]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_DOWN}</p>
+</li>
+<li class="">
+<p>[POINTER_DOWN]{@linkcode Phaser.Input.Events#event:POINTER_DOWN} or [POINTER_DOWN_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_DOWN_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_DOWN_OUTSIDE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_DOWN_OUTSIDE_EVENT.js#L7</a><br>
+Since: 3.16.1</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_move">POINTER_MOVE<a href="#pointer_move" class="hash-link" aria-label="Direct link to POINTER_MOVE" title="Direct link to POINTER_MOVE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Move Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is moved anywhere.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;pointermove&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_MOVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_MOVE}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_MOVE]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_MOVE}</p>
+</li>
+<li class="">
+<p>[POINTER_MOVE]{@linkcode Phaser.Input.Events#event:POINTER_MOVE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>currentlyOver</td><td>Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array containing all interactive Game Objects that the pointer was over when the event was created.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_MOVE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_MOVE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_out">POINTER_OUT<a href="#pointer_out" class="hash-link" aria-label="Direct link to POINTER_OUT" title="Direct link to POINTER_OUT" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Out Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer moves out of any interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;pointerout&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_OUT]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OUT}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_OUT]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_OUT}</p>
+</li>
+<li class="">
+<p>[POINTER_OUT]{@linkcode Phaser.Input.Events#event:POINTER_OUT}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+<p>If the pointer leaves the game canvas itself, it will not trigger an this event. To handle those cases,</p>
+<p>please listen for the [GAME_OUT]{@linkcode Phaser.Input.Events#event:GAME_OUT} event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>justOut</td><td>Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array containing all interactive Game Objects that the pointer moved out of when the event was created.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_OUT_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_OUT_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_over">POINTER_OVER<a href="#pointer_over" class="hash-link" aria-label="Direct link to POINTER_OVER" title="Direct link to POINTER_OVER" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Over Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer moves over any interactive Game Object.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;pointerover&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_OVER}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_OVER]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_OVER}</p>
+</li>
+<li class="">
+<p>[POINTER_OVER]{@linkcode Phaser.Input.Events#event:POINTER_OVER}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>justOver</td><td>Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array containing all interactive Game Objects that the pointer moved over when the event was created.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_OVER_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_OVER_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_up">POINTER_UP<a href="#pointer_up" class="hash-link" aria-label="Direct link to POINTER_UP" title="Direct link to POINTER_UP" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Up Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is released anywhere.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;pointerup&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_UP}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_UP}</p>
+</li>
+<li class="">
+<p>[POINTER_UP]{@linkcode Phaser.Input.Events#event:POINTER_UP} or [POINTER_UP_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_UP_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>currentlyOver</td><td>Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array containing all interactive Game Objects that the pointer was over when the event was created.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_UP_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_UP_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_up_outside">POINTER_UP_OUTSIDE<a href="#pointer_up_outside" class="hash-link" aria-label="Direct link to POINTER_UP_OUTSIDE" title="Direct link to POINTER_UP_OUTSIDE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Up Outside Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer is released anywhere outside of the game canvas.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;pointerupoutside&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_UP}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_UP]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_UP}</p>
+</li>
+<li class="">
+<p>[POINTER_UP]{@linkcode Phaser.Input.Events#event:POINTER_UP} or [POINTER_UP_OUTSIDE]{@linkcode Phaser.Input.Events#event:POINTER_UP_OUTSIDE}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_UP_OUTSIDE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_UP_OUTSIDE_EVENT.js#L7</a><br>
+Since: 3.16.1</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pointer_wheel">POINTER_WHEEL<a href="#pointer_wheel" class="hash-link" aria-label="Direct link to POINTER_WHEEL" title="Direct link to POINTER_WHEEL" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Pointer Wheel Input Event.</p>
+<p>This event is dispatched by the Input Plugin belonging to a Scene if a pointer has its wheel updated.</p>
+<p>Listen to this event from within a Scene using: <code>this.input.on(&#x27;wheel&#x27;, listener)</code>.</p>
+<p>The event hierarchy is as follows:</p>
+<ol>
+<li class="">
+<p>[GAMEOBJECT_POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_POINTER_WHEEL}</p>
+</li>
+<li class="">
+<p>[GAMEOBJECT_WHEEL]{@linkcode Phaser.Input.Events#event:GAMEOBJECT_WHEEL}</p>
+</li>
+<li class="">
+<p>[POINTER_WHEEL]{@linkcode Phaser.Input.Events#event:POINTER_WHEEL}</p>
+</li>
+</ol>
+<p>With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop</p>
+<p>the propagation of this event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>pointer</td><td><a class="" href="/api-documentation/3.86.0/class/input-pointer">Phaser.Input.Pointer</a></td><td>No</td><td>The Pointer responsible for triggering this event.</td></tr><tr><td>currentlyOver</td><td>Array.&lt;<a class="" href="/api-documentation/3.86.0/class/gameobjects-gameobject">Phaser.GameObjects.GameObject</a>&gt;</td><td>No</td><td>An array containing all interactive Game Objects that the pointer was over when the event was created.</td></tr><tr><td>deltaX</td><td>number</td><td>No</td><td>The horizontal scroll amount that occurred due to the user moving a mouse wheel or similar input device.</td></tr><tr><td>deltaY</td><td>number</td><td>No</td><td>The vertical scroll amount that occurred due to the user moving a mouse wheel or similar input device. This value will typically be less than 0 if the user scrolls up and greater than zero if scrolling down.</td></tr><tr><td>deltaZ</td><td>number</td><td>No</td><td>The z-axis scroll amount that occurred due to the user moving a mouse wheel or similar input device.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/POINTER_WHEEL_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/POINTER_WHEEL_EVENT.js#L7</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pre_update">PRE_UPDATE<a href="#pre_update" class="hash-link" aria-label="Direct link to PRE_UPDATE" title="Direct link to PRE_UPDATE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Pre-Update Event.</p>
+<p>This internal event is dispatched by the Input Plugin at the start of its <code>preUpdate</code> method.</p>
+<p>This hook is designed specifically for input plugins, but can also be listened to from user-land code.</p>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/PRE_UPDATE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/PRE_UPDATE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shutdown">SHUTDOWN<a href="#shutdown" class="hash-link" aria-label="Direct link to SHUTDOWN" title="Direct link to SHUTDOWN" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Shutdown Event.</p>
+<p>This internal event is dispatched by the Input Plugin when it shuts down, signalling to all of its systems to shut themselves down.</p>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/SHUTDOWN_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/SHUTDOWN_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="start">START<a href="#start" class="hash-link" aria-label="Direct link to START" title="Direct link to START" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Start Event.</p>
+<p>This internal event is dispatched by the Input Plugin when it has finished setting-up,</p>
+<p>signalling to all of its internal systems to start.</p>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/START_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/START_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="update">UPDATE<a href="#update" class="hash-link" aria-label="Direct link to UPDATE" title="Direct link to UPDATE" translate="no">​</a></h2>
+<p><strong>Description:</strong> The Input Plugin Update Event.</p>
+<p>This internal event is dispatched by the Input Plugin at the start of its <code>update</code> method.</p>
+<p>This hook is designed specifically for input plugins, but can also be listened to from user-land code.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>time</td><td>number</td><td>No</td><td>The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.</td></tr><tr><td>delta</td><td>number</td><td>No</td><td>The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.</td></tr></tbody></table>
+<p><strong>Member of:</strong> <a class="" href="/api-documentation/3.86.0/namespace/input-events">Phaser.Input.Events</a></p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.86.0/src/input/events/UPDATE_EVENT.js#L7" target="_blank" rel="noopener noreferrer" class="">src/input/events/UPDATE_EVENT.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.86.0/event/gameobjects-particles-events"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">GameObjects.Particles.Events</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.86.0/event/input-gamepad-events"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Input.Gamepad.Events</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#boot" class="table-of-contents__link toc-highlight">BOOT</a></li><li><a href="#destroy" class="table-of-contents__link toc-highlight">DESTROY</a></li><li><a href="#drag_end" class="table-of-contents__link toc-highlight">DRAG_END</a></li><li><a href="#drag_enter" class="table-of-contents__link toc-highlight">DRAG_ENTER</a></li><li><a href="#drag" class="table-of-contents__link toc-highlight">DRAG</a></li><li><a href="#drag_leave" class="table-of-contents__link toc-highlight">DRAG_LEAVE</a></li><li><a href="#drag_over" class="table-of-contents__link toc-highlight">DRAG_OVER</a></li><li><a href="#drag_start" class="table-of-contents__link toc-highlight">DRAG_START</a></li><li><a href="#drop" class="table-of-contents__link toc-highlight">DROP</a></li><li><a href="#gameobject_down" class="table-of-contents__link toc-highlight">GAMEOBJECT_DOWN</a></li><li><a href="#gameobject_drag_end" class="table-of-contents__link toc-highlight">GAMEOBJECT_DRAG_END</a></li><li><a href="#gameobject_drag_enter" class="table-of-contents__link toc-highlight">GAMEOBJECT_DRAG_ENTER</a></li><li><a href="#gameobject_drag" class="table-of-contents__link toc-highlight">GAMEOBJECT_DRAG</a></li><li><a href="#gameobject_drag_leave" class="table-of-contents__link toc-highlight">GAMEOBJECT_DRAG_LEAVE</a></li><li><a href="#gameobject_drag_over" class="table-of-contents__link toc-highlight">GAMEOBJECT_DRAG_OVER</a></li><li><a href="#gameobject_drag_start" class="table-of-contents__link toc-highlight">GAMEOBJECT_DRAG_START</a></li><li><a href="#gameobject_drop" class="table-of-contents__link toc-highlight">GAMEOBJECT_DROP</a></li><li><a href="#gameobject_move" class="table-of-contents__link toc-highlight">GAMEOBJECT_MOVE</a></li><li><a href="#gameobject_out" class="table-of-contents__link toc-highlight">GAMEOBJECT_OUT</a></li><li><a href="#gameobject_over" class="table-of-contents__link toc-highlight">GAMEOBJECT_OVER</a></li><li><a href="#gameobject_pointer_down" class="table-of-contents__link toc-highlight">GAMEOBJECT_POINTER_DOWN</a></li><li><a href="#gameobject_pointer_move" class="table-of-contents__link toc-highlight">GAMEOBJECT_POINTER_MOVE</a></li><li><a href="#gameobject_pointer_out" class="table-of-contents__link toc-highlight">GAMEOBJECT_POINTER_OUT</a></li><li><a href="#gameobject_pointer_over" class="table-of-contents__link toc-highlight">GAMEOBJECT_POINTER_OVER</a></li><li><a href="#gameobject_pointer_up" class="table-of-contents__link toc-highlight">GAMEOBJECT_POINTER_UP</a></li><li><a href="#gameobject_pointer_wheel" class="table-of-contents__link toc-highlight">GAMEOBJECT_POINTER_WHEEL</a></li><li><a href="#gameobject_up" class="table-of-contents__link toc-highlight">GAMEOBJECT_UP</a></li><li><a href="#gameobject_wheel" class="table-of-contents__link toc-highlight">GAMEOBJECT_WHEEL</a></li><li><a href="#game_out" class="table-of-contents__link toc-highlight">GAME_OUT</a></li><li><a href="#game_over" class="table-of-contents__link toc-highlight">GAME_OVER</a></li><li><a href="#manager_boot" class="table-of-contents__link toc-highlight">MANAGER_BOOT</a></li><li><a href="#manager_process" class="table-of-contents__link toc-highlight">MANAGER_PROCESS</a></li><li><a href="#manager_update" class="table-of-contents__link toc-highlight">MANAGER_UPDATE</a></li><li><a href="#pointerlock_change" class="table-of-contents__link toc-highlight">POINTERLOCK_CHANGE</a></li><li><a href="#pointer_down" class="table-of-contents__link toc-highlight">POINTER_DOWN</a></li><li><a href="#pointer_down_outside" class="table-of-contents__link toc-highlight">POINTER_DOWN_OUTSIDE</a></li><li><a href="#pointer_move" class="table-of-contents__link toc-highlight">POINTER_MOVE</a></li><li><a href="#pointer_out" class="table-of-contents__link toc-highlight">POINTER_OUT</a></li><li><a href="#pointer_over" class="table-of-contents__link toc-highlight">POINTER_OVER</a></li><li><a href="#pointer_up" class="table-of-contents__link toc-highlight">POINTER_UP</a></li><li><a href="#pointer_up_outside" class="table-of-contents__link toc-highlight">POINTER_UP_OUTSIDE</a></li><li><a href="#pointer_wheel" class="table-of-contents__link toc-highlight">POINTER_WHEEL</a></li><li><a href="#pre_update" class="table-of-contents__link toc-highlight">PRE_UPDATE</a></li><li><a href="#shutdown" class="table-of-contents__link toc-highlight">SHUTDOWN</a></li><li><a href="#start" class="table-of-contents__link toc-highlight">START</a></li><li><a href="#update" class="table-of-contents__link toc-highlight">UPDATE</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

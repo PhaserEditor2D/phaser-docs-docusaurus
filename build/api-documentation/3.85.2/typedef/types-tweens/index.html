@@ -1,0 +1,1627 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.85.2 docs-doc-page docs-doc-id-typedef/Phaser.Types.Tweens" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Types.Tweens | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-tweens"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.85.2"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" name="docsearch:version" content="3.85.2"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.85.2"><meta data-rh="true" property="og:title" content="Types.Tweens | Phaser Help"><meta data-rh="true" name="description" content="Phaser.Types.Tweens"><meta data-rh="true" property="og:description" content="Phaser.Types.Tweens"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-tweens"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-tweens" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/3.85.2/typedef/types-tweens" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Typedefs","item":"https://docs.phaser.io/api-documentation/3.85.2/typedef/"},{"@type":"ListItem","position":2,"name":"Types.Tweens","item":"https://docs.phaser.io/api-documentation/3.85.2/typedef/types-tweens"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/3.85.2/typedef/types-tweens">API Documentation - v3.85.2</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/api-documentation/typedef/types-tweens">API Documentation</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/3.85.2/typedef/types-tweens">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/typedef/types-tweens">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/api-documentation"><span title="Phaser 3.85.2 API Documentation" class="linkLabel_WmDU">Phaser 3.85.2 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Expand sidebar category &#x27;Namespaces&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/3.85.2/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Collapse sidebar category &#x27;Typedefs&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/device"><span title="Device" class="linkLabel_WmDU">Device</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/physics-matter-events"><span title="Physics.Matter.Events" class="linkLabel_WmDU">Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/scale"><span title="Scale" class="linkLabel_WmDU">Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/tilemaps"><span title="Tilemaps" class="linkLabel_WmDU">Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/tweens"><span title="Tweens" class="linkLabel_WmDU">Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-actions"><span title="Types.Actions" class="linkLabel_WmDU">Types.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-animations"><span title="Types.Animations" class="linkLabel_WmDU">Types.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-cameras-controls"><span title="Types.Cameras.Controls" class="linkLabel_WmDU">Types.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-cameras-scene2d"><span title="Types.Cameras.Scene2D" class="linkLabel_WmDU">Types.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-core"><span title="Types.Core" class="linkLabel_WmDU">Types.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-create"><span title="Types.Create" class="linkLabel_WmDU">Types.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-curves"><span title="Types.Curves" class="linkLabel_WmDU">Types.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-display"><span title="Types.Display" class="linkLabel_WmDU">Types.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-bitmaptext"><span title="Types.GameObjects.BitmapText" class="linkLabel_WmDU">Types.GameObjects.BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-container"><span title="Types.GameObjects.Container" class="linkLabel_WmDU">Types.GameObjects.Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-graphics"><span title="Types.GameObjects.Graphics" class="linkLabel_WmDU">Types.GameObjects.Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-group"><span title="Types.GameObjects.Group" class="linkLabel_WmDU">Types.GameObjects.Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-mesh"><span title="Types.GameObjects.Mesh" class="linkLabel_WmDU">Types.GameObjects.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-nineslice"><span title="Types.GameObjects.NineSlice" class="linkLabel_WmDU">Types.GameObjects.NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-particles"><span title="Types.GameObjects.Particles" class="linkLabel_WmDU">Types.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-pathfollower"><span title="Types.GameObjects.PathFollower" class="linkLabel_WmDU">Types.GameObjects.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-plane"><span title="Types.GameObjects.Plane" class="linkLabel_WmDU">Types.GameObjects.Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-rendertexture"><span title="Types.GameObjects.RenderTexture" class="linkLabel_WmDU">Types.GameObjects.RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-rope"><span title="Types.GameObjects.Rope" class="linkLabel_WmDU">Types.GameObjects.Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-shader"><span title="Types.GameObjects.Shader" class="linkLabel_WmDU">Types.GameObjects.Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-sprite"><span title="Types.GameObjects.Sprite" class="linkLabel_WmDU">Types.GameObjects.Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-text"><span title="Types.GameObjects.Text" class="linkLabel_WmDU">Types.GameObjects.Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-tilesprite"><span title="Types.GameObjects.TileSprite" class="linkLabel_WmDU">Types.GameObjects.TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-video"><span title="Types.GameObjects.Video" class="linkLabel_WmDU">Types.GameObjects.Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects-zone"><span title="Types.GameObjects.Zone" class="linkLabel_WmDU">Types.GameObjects.Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-gameobjects"><span title="Types.GameObjects" class="linkLabel_WmDU">Types.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-geom-mesh"><span title="Types.Geom.Mesh" class="linkLabel_WmDU">Types.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-input-gamepad"><span title="Types.Input.Gamepad" class="linkLabel_WmDU">Types.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-input-keyboard"><span title="Types.Input.Keyboard" class="linkLabel_WmDU">Types.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-input"><span title="Types.Input" class="linkLabel_WmDU">Types.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-loader-filetypes"><span title="Types.Loader.FileTypes" class="linkLabel_WmDU">Types.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-loader"><span title="Types.Loader" class="linkLabel_WmDU">Types.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-math"><span title="Types.Math" class="linkLabel_WmDU">Types.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-physics-arcade"><span title="Types.Physics.Arcade" class="linkLabel_WmDU">Types.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-physics-matter"><span title="Types.Physics.Matter" class="linkLabel_WmDU">Types.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-plugins"><span title="Types.Plugins" class="linkLabel_WmDU">Types.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-renderer-snapshot"><span title="Types.Renderer.Snapshot" class="linkLabel_WmDU">Types.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-renderer-webgl"><span title="Types.Renderer.WebGL" class="linkLabel_WmDU">Types.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-scenes"><span title="Types.Scenes" class="linkLabel_WmDU">Types.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-sound"><span title="Types.Sound" class="linkLabel_WmDU">Types.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-textures"><span title="Types.Textures" class="linkLabel_WmDU">Types.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-tilemaps"><span title="Types.Tilemaps" class="linkLabel_WmDU">Types.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/types-time"><span title="Types.Time" class="linkLabel_WmDU">Types.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/3.85.2/typedef/types-tweens"><span title="Types.Tweens" class="linkLabel_WmDU">Types.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/phaser"><span title="Phaser" class="linkLabel_WmDU">Phaser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/3.85.2/typedef/"><span title="Typedefs" class="linkLabel_WmDU">Typedefs</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>This is documentation for <!-- -->Phaser Help<!-- --> <b>API Documentation - v3.85.2</b>, which is no longer actively maintained.</div><div class="margin-top--md">For up-to-date documentation, see the <b><a href="/api-documentation/typedef/types-tweens">latest version</a></b> (<!-- -->API Documentation<!-- -->).</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/3.85.2/typedef/"><span>Typedefs</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Types.Tweens</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation - v3.85.2</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Types.Tweens</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenconfigdefaults">TweenConfigDefaults<a href="#tweenconfigdefaults" class="hash-link" aria-label="Direct link to TweenConfigDefaults" title="Direct link to TweenConfigDefaults" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenconfigdefaults">&lt;static&gt; TweenConfigDefaults<a href="#static-tweenconfigdefaults" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenConfigDefaults" title="Direct link to &lt;static&gt; TweenConfigDefaults" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>targets</td><td>object | Array.&lt;object&gt;</td><td>No</td><td></td><td>The object, or an array of objects, to run the tween on.</td></tr><tr><td>delay</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to delay before the tween will start.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>1000</td><td>The duration of the tween in milliseconds.</td></tr><tr><td>ease</td><td>string</td><td>Yes</td><td>&quot;&#x27;Power0&#x27;&quot;</td><td>The easing equation to use for the tween.</td></tr><tr><td>easeParams</td><td>array</td><td>Yes</td><td></td><td>Optional easing parameters.</td></tr><tr><td>hold</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to hold the tween for before yoyo&#x27;ing.</td></tr><tr><td>repeat</td><td>number</td><td>Yes</td><td>0</td><td>The number of times to repeat the tween.</td></tr><tr><td>repeatDelay</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to pause before a tween will repeat.</td></tr><tr><td>yoyo</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the tween complete, then reverse the values incrementally to get back to the starting tween values? The reverse tweening will also take <code>duration</code> milliseconds to complete.</td></tr><tr><td>flipX</td><td>boolean</td><td>Yes</td><td>false</td><td>Horizontally flip the target of the Tween when it completes (before it yoyos, if set to do so). Only works for targets that support the <code>flipX</code> property.</td></tr><tr><td>flipY</td><td>boolean</td><td>Yes</td><td>false</td><td>Vertically flip the target of the Tween when it completes (before it yoyos, if set to do so). Only works for targets that support the <code>flipY</code> property.</td></tr><tr><td>persist</td><td>boolean</td><td>Yes</td><td>false</td><td>Retain the tween within the Tween Manager, even after playback completes?</td></tr><tr><td>interpolation</td><td>function</td><td>Yes</td><td>null</td><td>The interpolation function to use for array-based tween values.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/tween/Defaults.js#L7" target="_blank" rel="noopener noreferrer" class="">src/tweens/tween/Defaults.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="event">Event<a href="#event" class="hash-link" aria-label="Direct link to Event" title="Direct link to Event" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-event">&lt;static&gt; Event<a href="#static-event" class="hash-link" aria-label="Direct link to &lt;static&gt; Event" title="Direct link to &lt;static&gt; Event" translate="no">​</a></h3>
+<p>A Tween Event.</p>
+<p><strong>Type</strong>: string</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/Event.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/Event.js#L1</a><br>
+Since: 3.19.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getactivecallback">GetActiveCallback<a href="#getactivecallback" class="hash-link" aria-label="Direct link to GetActiveCallback" title="Direct link to GetActiveCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getactivecallback">&lt;static&gt; GetActiveCallback<a href="#static-getactivecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; GetActiveCallback" title="Direct link to &lt;static&gt; GetActiveCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/GetActiveCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/GetActiveCallback.js#L1</a><br>
+Since: 3.19.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getendcallback">GetEndCallback<a href="#getendcallback" class="hash-link" aria-label="Direct link to GetEndCallback" title="Direct link to GetEndCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getendcallback">&lt;static&gt; GetEndCallback<a href="#static-getendcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; GetEndCallback" title="Direct link to &lt;static&gt; GetEndCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/GetEndCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/GetEndCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getstartcallback">GetStartCallback<a href="#getstartcallback" class="hash-link" aria-label="Direct link to GetStartCallback" title="Direct link to GetStartCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getstartcallback">&lt;static&gt; GetStartCallback<a href="#static-getstartcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; GetStartCallback" title="Direct link to &lt;static&gt; GetStartCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/GetStartCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/GetStartCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="numbertweenbuilderconfig">NumberTweenBuilderConfig<a href="#numbertweenbuilderconfig" class="hash-link" aria-label="Direct link to NumberTweenBuilderConfig" title="Direct link to NumberTweenBuilderConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-numbertweenbuilderconfig">&lt;static&gt; NumberTweenBuilderConfig<a href="#static-numbertweenbuilderconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; NumberTweenBuilderConfig" title="Direct link to &lt;static&gt; NumberTweenBuilderConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>from</td><td>number</td><td>Yes</td><td>0</td><td>The start number.</td></tr><tr><td>to</td><td>number</td><td>Yes</td><td>1</td><td>The end number.</td></tr><tr><td>delay</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to delay before the counter will start.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>1000</td><td>The duration of the counter in milliseconds.</td></tr><tr><td>ease</td><td>string | function</td><td>Yes</td><td>&quot;&#x27;Power0&#x27;&quot;</td><td>The easing equation to use for the counter.</td></tr><tr><td>easeParams</td><td>array</td><td>Yes</td><td></td><td>Optional easing parameters.</td></tr><tr><td>hold</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to hold the counter for before yoyo&#x27;ing.</td></tr><tr><td>repeat</td><td>number</td><td>Yes</td><td>0</td><td>The number of times to repeat the counter.</td></tr><tr><td>repeatDelay</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to pause before the counter will repeat.</td></tr><tr><td>yoyo</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the counter play forward to the end value and then backwards to the start? The reverse playback will also take <code>duration</code> milliseconds to complete.</td></tr><tr><td>completeDelay</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>loop</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>loopDelay</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>paused</td><td>boolean</td><td>Yes</td><td>false</td><td>Does the counter start in a paused state (true) or playing (false)?</td></tr><tr><td>callbackScope</td><td>any</td><td>Yes</td><td></td><td>Scope (this) for the callbacks. The default scope is the counter.</td></tr><tr><td>onComplete</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnCompleteCallback">Phaser.Types.Tweens.TweenOnCompleteCallback</a></td><td>Yes</td><td></td><td>A function to call when the counter completes.</td></tr><tr><td>onCompleteParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onComplete</code>.</td></tr><tr><td>onLoop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnLoopCallback">Phaser.Types.Tweens.TweenOnLoopCallback</a></td><td>Yes</td><td></td><td>A function to call each time the counter loops.</td></tr><tr><td>onLoopParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onLoop</code>.</td></tr><tr><td>onRepeat</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnRepeatCallback">Phaser.Types.Tweens.TweenOnRepeatCallback</a></td><td>Yes</td><td></td><td>A function to call each time the counter repeats.</td></tr><tr><td>onRepeatParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onRepeat</code>.</td></tr><tr><td>onStart</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStartCallback">Phaser.Types.Tweens.TweenOnStartCallback</a></td><td>Yes</td><td></td><td>A function to call when the counter starts.</td></tr><tr><td>onStartParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onStart</code>.</td></tr><tr><td>onStop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStopCallback">Phaser.Types.Tweens.TweenOnStopCallback</a></td><td>Yes</td><td></td><td>A function to call when the counter is stopped.</td></tr><tr><td>onStopParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onStop</code>.</td></tr><tr><td>onUpdate</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnUpdateCallback">Phaser.Types.Tweens.TweenOnUpdateCallback</a></td><td>Yes</td><td></td><td>A function to call each time the counter steps.</td></tr><tr><td>onUpdateParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onUpdate</code>.</td></tr><tr><td>onYoyo</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnYoyoCallback">Phaser.Types.Tweens.TweenOnYoyoCallback</a></td><td>Yes</td><td></td><td>A function to call each time the counter yoyos.</td></tr><tr><td>onYoyoParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onYoyo</code>.</td></tr><tr><td>onPause</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnPauseCallback">Phaser.Types.Tweens.TweenOnPauseCallback</a></td><td>Yes</td><td></td><td>A function to call when the counter is paused.</td></tr><tr><td>onPauseParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onPause</code>.</td></tr><tr><td>onResume</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnResumeCallback">Phaser.Types.Tweens.TweenOnResumeCallback</a></td><td>Yes</td><td></td><td>A function to call when the counter is resumed after being paused.</td></tr><tr><td>onResumeParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onResume</code>.</td></tr><tr><td>persist</td><td>boolean</td><td>Yes</td><td></td><td>Will the counter be automatically destroyed on completion, or retained for future playback?</td></tr><tr><td>interpolation</td><td>string | function</td><td>Yes</td><td></td><td>The interpolation function to use if the <code>value</code> given is an array of numbers.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/NumberTweenBuilderConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/NumberTweenBuilderConfig.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="staggerconfig">StaggerConfig<a href="#staggerconfig" class="hash-link" aria-label="Direct link to StaggerConfig" title="Direct link to StaggerConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-staggerconfig">&lt;static&gt; StaggerConfig<a href="#static-staggerconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; StaggerConfig" title="Direct link to &lt;static&gt; StaggerConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>start</td><td>number</td><td>Yes</td><td>0</td><td>The value to start the stagger from. Can be used as a way to offset the stagger while still using a range for the value.</td></tr><tr><td>ease</td><td>string | function</td><td>Yes</td><td>&quot;&#x27;Linear&#x27;&quot;</td><td>An ease to apply across the staggered values. Can either be a string, such as &#x27;sine.inout&#x27;, or a function.</td></tr><tr><td>from</td><td>string | number</td><td>Yes</td><td>0</td><td>The index to start the stagger from. Can be the strings <code>first</code>, <code>last</code> or <code>center</code>, or an integer representing the stagger position.</td></tr><tr><td>grid</td><td>Array.&lt;number&gt;</td><td>Yes</td><td></td><td>Set the stagger to run across a grid by providing an array where element 0 is the width of the grid and element 1 is the height. Combine with the &#x27;from&#x27; property to control direction.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/StaggerConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/StaggerConfig.js#L1</a><br>
+Since: 3.19.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenbuilderconfig">TweenBuilderConfig<a href="#tweenbuilderconfig" class="hash-link" aria-label="Direct link to TweenBuilderConfig" title="Direct link to TweenBuilderConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenbuilderconfig">&lt;static&gt; TweenBuilderConfig<a href="#static-tweenbuilderconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenBuilderConfig" title="Direct link to &lt;static&gt; TweenBuilderConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>targets</td><td>any</td><td>No</td><td></td><td>The object, or an array of objects, to run the tween on.</td></tr><tr><td>delay</td><td>number | function</td><td>Yes</td><td>0</td><td>The number of milliseconds to delay before the tween will start.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>1000</td><td>The duration of the tween in milliseconds.</td></tr><tr><td>ease</td><td>string | function</td><td>Yes</td><td>&quot;&#x27;Power0&#x27;&quot;</td><td>The easing equation to use for the tween.</td></tr><tr><td>easeParams</td><td>array</td><td>Yes</td><td></td><td>Optional easing parameters.</td></tr><tr><td>hold</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to hold the tween for before yoyo&#x27;ing.</td></tr><tr><td>repeat</td><td>number</td><td>Yes</td><td>0</td><td>The number of times each property tween repeats.</td></tr><tr><td>repeatDelay</td><td>number</td><td>Yes</td><td>0</td><td>The number of milliseconds to pause before a repeat.</td></tr><tr><td>yoyo</td><td>boolean</td><td>Yes</td><td>false</td><td>Should the tween complete, then reverse the values incrementally to get back to the starting tween values? The reverse tweening will also take <code>duration</code> milliseconds to complete.</td></tr><tr><td>flipX</td><td>boolean</td><td>Yes</td><td>false</td><td>Horizontally flip the target of the Tween when it completes (before it yoyos, if set to do so). Only works for targets that support the <code>flipX</code> property.</td></tr><tr><td>flipY</td><td>boolean</td><td>Yes</td><td>false</td><td>Vertically flip the target of the Tween when it completes (before it yoyos, if set to do so). Only works for targets that support the <code>flipY</code> property.</td></tr><tr><td>completeDelay</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>loop</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>loopDelay</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>paused</td><td>boolean</td><td>Yes</td><td>false</td><td>Does the tween start in a paused state (true) or playing (false)?</td></tr><tr><td>props</td><td>Object.&lt;string, (number, string, <a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetEndCallback">Phaser.Types.Tweens.GetEndCallback</a>, <a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenPropConfig">Phaser.Types.Tweens.TweenPropConfig</a>)&gt;</td><td>Yes</td><td></td><td>The properties to tween.</td></tr><tr><td>callbackScope</td><td>any</td><td>Yes</td><td></td><td>The scope (or context) for all of the callbacks. The default scope is the tween.</td></tr><tr><td>onComplete</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnCompleteCallback">Phaser.Types.Tweens.TweenOnCompleteCallback</a></td><td>Yes</td><td></td><td>A function to call when the tween completes.</td></tr><tr><td>onCompleteParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onComplete</code>.</td></tr><tr><td>onLoop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnLoopCallback">Phaser.Types.Tweens.TweenOnLoopCallback</a></td><td>Yes</td><td></td><td>A function to call each time the tween loops.</td></tr><tr><td>onLoopParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onLoop</code>.</td></tr><tr><td>onRepeat</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnRepeatCallback">Phaser.Types.Tweens.TweenOnRepeatCallback</a></td><td>Yes</td><td></td><td>A function to call each time a property tween repeats. Called once per property per target.</td></tr><tr><td>onRepeatParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onRepeat</code>.</td></tr><tr><td>onStart</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStartCallback">Phaser.Types.Tweens.TweenOnStartCallback</a></td><td>Yes</td><td></td><td>A function to call when the tween starts playback, after any delays have expired.</td></tr><tr><td>onStartParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onStart</code>.</td></tr><tr><td>onStop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStopCallback">Phaser.Types.Tweens.TweenOnStopCallback</a></td><td>Yes</td><td></td><td>A function to call when the tween is stopped.</td></tr><tr><td>onStopParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onStop</code>.</td></tr><tr><td>onUpdate</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnUpdateCallback">Phaser.Types.Tweens.TweenOnUpdateCallback</a></td><td>Yes</td><td></td><td>A function to call each time the tween steps. Called once per property per target.</td></tr><tr><td>onUpdateParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onUpdate</code>.</td></tr><tr><td>onYoyo</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnYoyoCallback">Phaser.Types.Tweens.TweenOnYoyoCallback</a></td><td>Yes</td><td></td><td>A function to call each time a property tween yoyos. Called once per property per target.</td></tr><tr><td>onYoyoParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onYoyo</code>.</td></tr><tr><td>onActive</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnActiveCallback">Phaser.Types.Tweens.TweenOnActiveCallback</a></td><td>Yes</td><td></td><td>A function to call when the tween becomes active within the Tween Manager.</td></tr><tr><td>onActiveParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onActive</code>.</td></tr><tr><td>onPause</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnPauseCallback">Phaser.Types.Tweens.TweenOnPauseCallback</a></td><td>Yes</td><td></td><td>A function to call when the tween is paused.</td></tr><tr><td>onPauseParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onPause</code>.</td></tr><tr><td>onResume</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnResumeCallback">Phaser.Types.Tweens.TweenOnResumeCallback</a></td><td>Yes</td><td></td><td>A function to call when the tween is resumed after being paused.</td></tr><tr><td>onResumeParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onResume</code>.</td></tr><tr><td>persist</td><td>boolean</td><td>Yes</td><td></td><td>Will the Tween be automatically destroyed on completion, or retained for future playback?</td></tr><tr><td>interpolation</td><td>string | function</td><td>Yes</td><td></td><td>The interpolation function to use if the <code>value</code> given is an array of numbers.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenBuilderConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenBuilderConfig.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweencallbacks">TweenCallbacks<a href="#tweencallbacks" class="hash-link" aria-label="Direct link to TweenCallbacks" title="Direct link to TweenCallbacks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweencallbacks">&lt;static&gt; TweenCallbacks<a href="#static-tweencallbacks" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenCallbacks" title="Direct link to &lt;static&gt; TweenCallbacks" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>onActive</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnActiveCallback">Phaser.Types.Tweens.TweenOnActiveCallback</a></td><td>Yes</td><td>A function to call when the tween becomes active within the Tween Manager.</td></tr><tr><td>onStart</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStartCallback">Phaser.Types.Tweens.TweenOnStartCallback</a></td><td>Yes</td><td>A function to call when the tween starts playback, after any delays have expired.</td></tr><tr><td>onComplete</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnCompleteCallback">Phaser.Types.Tweens.TweenOnCompleteCallback</a></td><td>Yes</td><td>A function to call when the tween completes.</td></tr><tr><td>onLoop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnLoopCallback">Phaser.Types.Tweens.TweenOnLoopCallback</a></td><td>Yes</td><td>A function to call each time the tween loops.</td></tr><tr><td>onPause</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnPauseCallback">Phaser.Types.Tweens.TweenOnPauseCallback</a></td><td>Yes</td><td>A function to call each time the tween is paused.</td></tr><tr><td>onResume</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnResumeCallback">Phaser.Types.Tweens.TweenOnResumeCallback</a></td><td>Yes</td><td>A function to call each time the tween is resumed.</td></tr><tr><td>onRepeat</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnRepeatCallback">Phaser.Types.Tweens.TweenOnRepeatCallback</a></td><td>Yes</td><td>A function to call each time the tween repeats. Called once per property per target.</td></tr><tr><td>onStop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStopCallback">Phaser.Types.Tweens.TweenOnStopCallback</a></td><td>Yes</td><td>A function to call when the tween is stopped.</td></tr><tr><td>onUpdate</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnUpdateCallback">Phaser.Types.Tweens.TweenOnUpdateCallback</a></td><td>Yes</td><td>A function to call each time the tween steps. Called once per property per target.</td></tr><tr><td>onYoyo</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnYoyoCallback">Phaser.Types.Tweens.TweenOnYoyoCallback</a></td><td>Yes</td><td>A function to call each time the tween yoyos. Called once per property per target.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenCallbacks.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenCallbacks.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweencallbacktypes">TweenCallbackTypes<a href="#tweencallbacktypes" class="hash-link" aria-label="Direct link to TweenCallbackTypes" title="Direct link to TweenCallbackTypes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweencallbacktypes">&lt;static&gt; TweenCallbackTypes<a href="#static-tweencallbacktypes" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenCallbackTypes" title="Direct link to &lt;static&gt; TweenCallbackTypes" translate="no">​</a></h3>
+<p><strong>Type</strong>: &#x27;onActive&#x27; | &#x27;onComplete&#x27; | &#x27;onLoop&#x27; | &#x27;onPause&#x27; | &#x27;onRepeat&#x27; | &#x27;onResume&#x27; | &#x27;onStart&#x27; | &#x27;onStop&#x27; | &#x27;onUpdate&#x27; | &#x27;onYoyo&#x27;</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenCallbackTypes.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenCallbackTypes.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenchainbuilderconfig">TweenChainBuilderConfig<a href="#tweenchainbuilderconfig" class="hash-link" aria-label="Direct link to TweenChainBuilderConfig" title="Direct link to TweenChainBuilderConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenchainbuilderconfig">&lt;static&gt; TweenChainBuilderConfig<a href="#static-tweenchainbuilderconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenChainBuilderConfig" title="Direct link to &lt;static&gt; TweenChainBuilderConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>targets</td><td>any</td><td>No</td><td></td><td>The object, or an array of objects, to run each tween on.</td></tr><tr><td>delay</td><td>number | function</td><td>Yes</td><td>0</td><td>The number of milliseconds to delay before the chain will start.</td></tr><tr><td>completeDelay</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>loop</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>loopDelay</td><td>string | number</td><td>function</td><td>object</td><td>array</td></tr><tr><td>paused</td><td>boolean</td><td>Yes</td><td>false</td><td>Does the chain start in a paused state (true) or playing (false)?</td></tr><tr><td>tweens</td><td>Array.&lt;<a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenBuilderConfig">Phaser.Types.Tweens.TweenBuilderConfig</a>&gt;</td><td>Yes</td><td></td><td>The tweens to chain together.</td></tr><tr><td>callbackScope</td><td>any</td><td>Yes</td><td></td><td>The scope (or context) for all of the callbacks. The default scope is the chain.</td></tr><tr><td>onComplete</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnCompleteCallback">Phaser.Types.Tweens.TweenOnCompleteCallback</a></td><td>Yes</td><td></td><td>A function to call when the chain completes.</td></tr><tr><td>onCompleteParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onComplete</code>.</td></tr><tr><td>onLoop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnLoopCallback">Phaser.Types.Tweens.TweenOnLoopCallback</a></td><td>Yes</td><td></td><td>A function to call each time the chain loops.</td></tr><tr><td>onLoopParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onLoop</code>.</td></tr><tr><td>onStart</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStartCallback">Phaser.Types.Tweens.TweenOnStartCallback</a></td><td>Yes</td><td></td><td>A function to call when the chain starts playback, after any delays have expired.</td></tr><tr><td>onStartParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onStart</code>.</td></tr><tr><td>onStop</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnStopCallback">Phaser.Types.Tweens.TweenOnStopCallback</a></td><td>Yes</td><td></td><td>A function to call when the chain is stopped.</td></tr><tr><td>onStopParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onStop</code>.</td></tr><tr><td>onActive</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnActiveCallback">Phaser.Types.Tweens.TweenOnActiveCallback</a></td><td>Yes</td><td></td><td>A function to call when the chain becomes active within the Tween Manager.</td></tr><tr><td>onActiveParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onActive</code>.</td></tr><tr><td>onPause</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnPauseCallback">Phaser.Types.Tweens.TweenOnPauseCallback</a></td><td>Yes</td><td></td><td>A function to call when the chain is paused.</td></tr><tr><td>onPauseParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onPause</code>.</td></tr><tr><td>onResume</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenOnResumeCallback">Phaser.Types.Tweens.TweenOnResumeCallback</a></td><td>Yes</td><td></td><td>A function to call when the chain is resumed after being paused.</td></tr><tr><td>onResumeParams</td><td>array</td><td>Yes</td><td></td><td>Additional parameters to pass to <code>onResume</code>.</td></tr><tr><td>persist</td><td>boolean</td><td>Yes</td><td></td><td>Will the Tween be automatically destroyed on completion, or retained for future playback?</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenChainBuilderConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenChainBuilderConfig.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweendataconfig">TweenDataConfig<a href="#tweendataconfig" class="hash-link" aria-label="Direct link to TweenDataConfig" title="Direct link to TweenDataConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweendataconfig">&lt;static&gt; TweenDataConfig<a href="#static-tweendataconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenDataConfig" title="Direct link to &lt;static&gt; TweenDataConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>target</td><td>any</td><td>No</td><td></td><td>The target to tween.</td></tr><tr><td>index</td><td>number</td><td>No</td><td></td><td>The target index within the Tween targets array.</td></tr><tr><td>key</td><td>string</td><td>No</td><td></td><td>The property of the target being tweened.</td></tr><tr><td>getActiveValue</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetActiveCallback">Phaser.Types.Tweens.GetActiveCallback</a></td><td>No</td><td></td><td>If not null, is invoked <em>immediately</em> as soon as the TweenData is running, and is set on the target property.</td></tr><tr><td>getEndValue</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetEndCallback">Phaser.Types.Tweens.GetEndCallback</a></td><td>No</td><td></td><td>The returned value sets what the property will be at the END of the Tween.</td></tr><tr><td>getStartValue</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetStartCallback">Phaser.Types.Tweens.GetStartCallback</a></td><td>No</td><td></td><td>The returned value sets what the property will be at the START of the Tween.</td></tr><tr><td>ease</td><td>function</td><td>No</td><td></td><td>The ease function this tween uses.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>0</td><td>Duration of the tween in milliseconds, excludes time for yoyo or repeats.</td></tr><tr><td>totalDuration</td><td>number</td><td>Yes</td><td>0</td><td>The total calculated duration of this TweenData (based on duration, repeat, delay and yoyo)</td></tr><tr><td>delay</td><td>number</td><td>Yes</td><td>0</td><td>Time in milliseconds before tween will start.</td></tr><tr><td>yoyo</td><td>boolean</td><td>Yes</td><td>false</td><td>Cause the tween to return back to its start value after hold has expired.</td></tr><tr><td>hold</td><td>number</td><td>Yes</td><td>0</td><td>Time in milliseconds the tween will pause before running the yoyo or starting a repeat.</td></tr><tr><td>repeat</td><td>number</td><td>Yes</td><td>0</td><td>Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of &#x27;1&#x27; will play the tween twice.</td></tr><tr><td>repeatDelay</td><td>number</td><td>Yes</td><td>0</td><td>Time in milliseconds before the repeat will start.</td></tr><tr><td>flipX</td><td>boolean</td><td>Yes</td><td>false</td><td>Automatically call toggleFlipX when the TweenData yoyos or repeats</td></tr><tr><td>flipY</td><td>boolean</td><td>Yes</td><td>false</td><td>Automatically call toggleFlipY when the TweenData yoyos or repeats</td></tr><tr><td>progress</td><td>number</td><td>Yes</td><td>0</td><td>Between 0 and 1 showing completion of this TweenData.</td></tr><tr><td>elapsed</td><td>number</td><td>Yes</td><td>0</td><td>Delta counter</td></tr><tr><td>repeatCounter</td><td>number</td><td>Yes</td><td>0</td><td>How many repeats are left to run?</td></tr><tr><td>start</td><td>number</td><td>Yes</td><td>0</td><td>The property value at the start of the ease.</td></tr><tr><td>current</td><td>number</td><td>Yes</td><td>0</td><td>The current propety value.</td></tr><tr><td>previous</td><td>number</td><td>Yes</td><td>0</td><td>The previous property value.</td></tr><tr><td>end</td><td>number</td><td>Yes</td><td>0</td><td>The property value at the end of the ease.</td></tr><tr><td>gen</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenDataGenConfig">Phaser.Types.Tweens.TweenDataGenConfig</a></td><td>Yes</td><td></td><td>LoadValue generation functions.</td></tr><tr><td>state</td><td><a class="" href="/api-documentation/3.85.2/typedef/tweens#StateType">Phaser.Tweens.StateType</a></td><td>Yes</td><td>0</td><td>TWEEN_CONST.CREATED</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenDataConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenDataConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweendatagenconfig">TweenDataGenConfig<a href="#tweendatagenconfig" class="hash-link" aria-label="Direct link to TweenDataGenConfig" title="Direct link to TweenDataGenConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweendatagenconfig">&lt;static&gt; TweenDataGenConfig<a href="#static-tweendatagenconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenDataGenConfig" title="Direct link to &lt;static&gt; TweenDataGenConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>delay</td><td>function</td><td>No</td><td>Time in milliseconds before tween will start.</td></tr><tr><td>duration</td><td>function</td><td>No</td><td>Duration of the tween in milliseconds, excludes time for yoyo or repeats.</td></tr><tr><td>hold</td><td>function</td><td>No</td><td>Time in milliseconds the tween will pause before running the yoyo or starting a repeat.</td></tr><tr><td>repeat</td><td>function</td><td>No</td><td>Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of &#x27;1&#x27; will play the tween twice.</td></tr><tr><td>repeatDelay</td><td>function</td><td>No</td><td>Time in milliseconds before the repeat will start.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenDataGenConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenDataGenConfig.js#L1</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenframedataconfig">TweenFrameDataConfig<a href="#tweenframedataconfig" class="hash-link" aria-label="Direct link to TweenFrameDataConfig" title="Direct link to TweenFrameDataConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenframedataconfig">&lt;static&gt; TweenFrameDataConfig<a href="#static-tweenframedataconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenFrameDataConfig" title="Direct link to &lt;static&gt; TweenFrameDataConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>target</td><td>any</td><td>No</td><td></td><td>The target to tween.</td></tr><tr><td>index</td><td>number</td><td>No</td><td></td><td>The target index within the Tween targets array.</td></tr><tr><td>key</td><td>string</td><td>No</td><td></td><td>The property of the target being tweened.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>0</td><td>Duration of the tween in milliseconds, excludes time for yoyo or repeats.</td></tr><tr><td>totalDuration</td><td>number</td><td>Yes</td><td>0</td><td>The total calculated duration of this TweenData (based on duration, repeat, delay and yoyo)</td></tr><tr><td>delay</td><td>number</td><td>Yes</td><td>0</td><td>Time in milliseconds before tween will start.</td></tr><tr><td>hold</td><td>number</td><td>Yes</td><td>0</td><td>Time in milliseconds the tween will pause before running the yoyo or starting a repeat.</td></tr><tr><td>repeat</td><td>number</td><td>Yes</td><td>0</td><td>Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of &#x27;1&#x27; will play the tween twice.</td></tr><tr><td>repeatDelay</td><td>number</td><td>Yes</td><td>0</td><td>Time in milliseconds before the repeat will start.</td></tr><tr><td>flipX</td><td>boolean</td><td>Yes</td><td>false</td><td>Automatically call toggleFlipX when the TweenData yoyos or repeats</td></tr><tr><td>flipY</td><td>boolean</td><td>Yes</td><td>false</td><td>Automatically call toggleFlipY when the TweenData yoyos or repeats</td></tr><tr><td>progress</td><td>number</td><td>Yes</td><td>0</td><td>Between 0 and 1 showing completion of this TweenData.</td></tr><tr><td>elapsed</td><td>number</td><td>Yes</td><td>0</td><td>Delta counter</td></tr><tr><td>repeatCounter</td><td>number</td><td>Yes</td><td>0</td><td>How many repeats are left to run?</td></tr><tr><td>gen</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#TweenDataGenConfig">Phaser.Types.Tweens.TweenDataGenConfig</a></td><td>Yes</td><td></td><td>LoadValue generation functions.</td></tr><tr><td>state</td><td><a class="" href="/api-documentation/3.85.2/typedef/tweens#StateType">Phaser.Tweens.StateType</a></td><td>Yes</td><td>0</td><td>TWEEN_CONST.CREATED</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenFrameDataConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenFrameDataConfig.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonactivecallback">TweenOnActiveCallback<a href="#tweenonactivecallback" class="hash-link" aria-label="Direct link to TweenOnActiveCallback" title="Direct link to TweenOnActiveCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonactivecallback">&lt;static&gt; TweenOnActiveCallback<a href="#static-tweenonactivecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnActiveCallback" title="Direct link to &lt;static&gt; TweenOnActiveCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnActiveCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnActiveCallback.js#L1</a><br>
+Since: 3.19.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenoncompletecallback">TweenOnCompleteCallback<a href="#tweenoncompletecallback" class="hash-link" aria-label="Direct link to TweenOnCompleteCallback" title="Direct link to TweenOnCompleteCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenoncompletecallback">&lt;static&gt; TweenOnCompleteCallback<a href="#static-tweenoncompletecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnCompleteCallback" title="Direct link to &lt;static&gt; TweenOnCompleteCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnCompleteCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnCompleteCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonloopcallback">TweenOnLoopCallback<a href="#tweenonloopcallback" class="hash-link" aria-label="Direct link to TweenOnLoopCallback" title="Direct link to TweenOnLoopCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonloopcallback">&lt;static&gt; TweenOnLoopCallback<a href="#static-tweenonloopcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnLoopCallback" title="Direct link to &lt;static&gt; TweenOnLoopCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnLoopCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnLoopCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonpausecallback">TweenOnPauseCallback<a href="#tweenonpausecallback" class="hash-link" aria-label="Direct link to TweenOnPauseCallback" title="Direct link to TweenOnPauseCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonpausecallback">&lt;static&gt; TweenOnPauseCallback<a href="#static-tweenonpausecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnPauseCallback" title="Direct link to &lt;static&gt; TweenOnPauseCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnPauseCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnPauseCallback.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonrepeatcallback">TweenOnRepeatCallback<a href="#tweenonrepeatcallback" class="hash-link" aria-label="Direct link to TweenOnRepeatCallback" title="Direct link to TweenOnRepeatCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonrepeatcallback">&lt;static&gt; TweenOnRepeatCallback<a href="#static-tweenonrepeatcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnRepeatCallback" title="Direct link to &lt;static&gt; TweenOnRepeatCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnRepeatCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnRepeatCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonresumecallback">TweenOnResumeCallback<a href="#tweenonresumecallback" class="hash-link" aria-label="Direct link to TweenOnResumeCallback" title="Direct link to TweenOnResumeCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonresumecallback">&lt;static&gt; TweenOnResumeCallback<a href="#static-tweenonresumecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnResumeCallback" title="Direct link to &lt;static&gt; TweenOnResumeCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnResumeCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnResumeCallback.js#L1</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonstartcallback">TweenOnStartCallback<a href="#tweenonstartcallback" class="hash-link" aria-label="Direct link to TweenOnStartCallback" title="Direct link to TweenOnStartCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonstartcallback">&lt;static&gt; TweenOnStartCallback<a href="#static-tweenonstartcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnStartCallback" title="Direct link to &lt;static&gt; TweenOnStartCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnStartCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnStartCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonstopcallback">TweenOnStopCallback<a href="#tweenonstopcallback" class="hash-link" aria-label="Direct link to TweenOnStopCallback" title="Direct link to TweenOnStopCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonstopcallback">&lt;static&gt; TweenOnStopCallback<a href="#static-tweenonstopcallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnStopCallback" title="Direct link to &lt;static&gt; TweenOnStopCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnStopCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnStopCallback.js#L1</a><br>
+Since: 3.24.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonupdatecallback">TweenOnUpdateCallback<a href="#tweenonupdatecallback" class="hash-link" aria-label="Direct link to TweenOnUpdateCallback" title="Direct link to TweenOnUpdateCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonupdatecallback">&lt;static&gt; TweenOnUpdateCallback<a href="#static-tweenonupdatecallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnUpdateCallback" title="Direct link to &lt;static&gt; TweenOnUpdateCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnUpdateCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnUpdateCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenonyoyocallback">TweenOnYoyoCallback<a href="#tweenonyoyocallback" class="hash-link" aria-label="Direct link to TweenOnYoyoCallback" title="Direct link to TweenOnYoyoCallback" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenonyoyocallback">&lt;static&gt; TweenOnYoyoCallback<a href="#static-tweenonyoyocallback" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenOnYoyoCallback" title="Direct link to &lt;static&gt; TweenOnYoyoCallback" translate="no">​</a></h3>
+<p><strong>Type</strong>: function</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenOnYoyoCallback.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenOnYoyoCallback.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tweenpropconfig">TweenPropConfig<a href="#tweenpropconfig" class="hash-link" aria-label="Direct link to TweenPropConfig" title="Direct link to TweenPropConfig" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-tweenpropconfig">&lt;static&gt; TweenPropConfig<a href="#static-tweenpropconfig" class="hash-link" aria-label="Direct link to &lt;static&gt; TweenPropConfig" title="Direct link to &lt;static&gt; TweenPropConfig" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number | Array.&lt;number&gt;</td><td>string</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetEndCallback">Phaser.Types.Tweens.GetEndCallback</a></td></tr><tr><td>getActive</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetActiveCallback">Phaser.Types.Tweens.GetActiveCallback</a></td><td>Yes</td><td>What the property will be set to immediately when this tween becomes active.</td></tr><tr><td>getEnd</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetEndCallback">Phaser.Types.Tweens.GetEndCallback</a></td><td>Yes</td><td>What the property will be at the END of the Tween.</td></tr><tr><td>getStart</td><td><a class="" href="/api-documentation/3.85.2/typedef/types-tweens#GetStartCallback">Phaser.Types.Tweens.GetStartCallback</a></td><td>Yes</td><td>What the property will be at the START of the Tween.</td></tr><tr><td>ease</td><td>string | function</td><td>Yes</td><td>The ease function this tween uses.</td></tr><tr><td>delay</td><td>number</td><td>Yes</td><td>Time in milliseconds before tween will start.</td></tr><tr><td>duration</td><td>number</td><td>Yes</td><td>Duration of the tween in milliseconds.</td></tr><tr><td>yoyo</td><td>boolean</td><td>Yes</td><td>Determines whether the tween should return back to its start value after hold has expired.</td></tr><tr><td>hold</td><td>number</td><td>Yes</td><td>Time in milliseconds the tween will pause before repeating or returning to its starting value if yoyo is set to true.</td></tr><tr><td>repeat</td><td>number</td><td>Yes</td><td>Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of &#x27;1&#x27; will play the tween twice.</td></tr><tr><td>repeatDelay</td><td>number</td><td>Yes</td><td>Time in milliseconds before the repeat will start.</td></tr><tr><td>flipX</td><td>boolean</td><td>Yes</td><td>Should toggleFlipX be called when yoyo or repeat happens?</td></tr><tr><td>flipY</td><td>boolean</td><td>Yes</td><td>Should toggleFlipY be called when yoyo or repeat happens?</td></tr><tr><td>interpolation</td><td>string | function</td><td>Yes</td><td>The interpolation function to use if the <code>value</code> given is an array of numbers.</td></tr></tbody></table>
+<p><strong>Type</strong>: object</p>
+<p><strong>Member of</strong>: Phaser.Types.Tweens</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.85.2/src/tweens/typedefs/TweenPropConfig.js#L1" target="_blank" rel="noopener noreferrer" class="">src/tweens/typedefs/TweenPropConfig.js#L1</a><br>
+Since: 3.18.0</p>
+</blockquote>
+<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/3.85.2/typedef/types-time"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Types.Time</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/3.85.2/typedef/phaser"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Phaser</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tweenconfigdefaults" class="table-of-contents__link toc-highlight">TweenConfigDefaults</a><ul><li><a href="#static-tweenconfigdefaults" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenConfigDefaults</a></li></ul></li><li><a href="#event" class="table-of-contents__link toc-highlight">Event</a><ul><li><a href="#static-event" class="table-of-contents__link toc-highlight">&lt;static&gt; Event</a></li></ul></li><li><a href="#getactivecallback" class="table-of-contents__link toc-highlight">GetActiveCallback</a><ul><li><a href="#static-getactivecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; GetActiveCallback</a></li></ul></li><li><a href="#getendcallback" class="table-of-contents__link toc-highlight">GetEndCallback</a><ul><li><a href="#static-getendcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; GetEndCallback</a></li></ul></li><li><a href="#getstartcallback" class="table-of-contents__link toc-highlight">GetStartCallback</a><ul><li><a href="#static-getstartcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; GetStartCallback</a></li></ul></li><li><a href="#numbertweenbuilderconfig" class="table-of-contents__link toc-highlight">NumberTweenBuilderConfig</a><ul><li><a href="#static-numbertweenbuilderconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; NumberTweenBuilderConfig</a></li></ul></li><li><a href="#staggerconfig" class="table-of-contents__link toc-highlight">StaggerConfig</a><ul><li><a href="#static-staggerconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; StaggerConfig</a></li></ul></li><li><a href="#tweenbuilderconfig" class="table-of-contents__link toc-highlight">TweenBuilderConfig</a><ul><li><a href="#static-tweenbuilderconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenBuilderConfig</a></li></ul></li><li><a href="#tweencallbacks" class="table-of-contents__link toc-highlight">TweenCallbacks</a><ul><li><a href="#static-tweencallbacks" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenCallbacks</a></li></ul></li><li><a href="#tweencallbacktypes" class="table-of-contents__link toc-highlight">TweenCallbackTypes</a><ul><li><a href="#static-tweencallbacktypes" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenCallbackTypes</a></li></ul></li><li><a href="#tweenchainbuilderconfig" class="table-of-contents__link toc-highlight">TweenChainBuilderConfig</a><ul><li><a href="#static-tweenchainbuilderconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenChainBuilderConfig</a></li></ul></li><li><a href="#tweendataconfig" class="table-of-contents__link toc-highlight">TweenDataConfig</a><ul><li><a href="#static-tweendataconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenDataConfig</a></li></ul></li><li><a href="#tweendatagenconfig" class="table-of-contents__link toc-highlight">TweenDataGenConfig</a><ul><li><a href="#static-tweendatagenconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenDataGenConfig</a></li></ul></li><li><a href="#tweenframedataconfig" class="table-of-contents__link toc-highlight">TweenFrameDataConfig</a><ul><li><a href="#static-tweenframedataconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenFrameDataConfig</a></li></ul></li><li><a href="#tweenonactivecallback" class="table-of-contents__link toc-highlight">TweenOnActiveCallback</a><ul><li><a href="#static-tweenonactivecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnActiveCallback</a></li></ul></li><li><a href="#tweenoncompletecallback" class="table-of-contents__link toc-highlight">TweenOnCompleteCallback</a><ul><li><a href="#static-tweenoncompletecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnCompleteCallback</a></li></ul></li><li><a href="#tweenonloopcallback" class="table-of-contents__link toc-highlight">TweenOnLoopCallback</a><ul><li><a href="#static-tweenonloopcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnLoopCallback</a></li></ul></li><li><a href="#tweenonpausecallback" class="table-of-contents__link toc-highlight">TweenOnPauseCallback</a><ul><li><a href="#static-tweenonpausecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnPauseCallback</a></li></ul></li><li><a href="#tweenonrepeatcallback" class="table-of-contents__link toc-highlight">TweenOnRepeatCallback</a><ul><li><a href="#static-tweenonrepeatcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnRepeatCallback</a></li></ul></li><li><a href="#tweenonresumecallback" class="table-of-contents__link toc-highlight">TweenOnResumeCallback</a><ul><li><a href="#static-tweenonresumecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnResumeCallback</a></li></ul></li><li><a href="#tweenonstartcallback" class="table-of-contents__link toc-highlight">TweenOnStartCallback</a><ul><li><a href="#static-tweenonstartcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnStartCallback</a></li></ul></li><li><a href="#tweenonstopcallback" class="table-of-contents__link toc-highlight">TweenOnStopCallback</a><ul><li><a href="#static-tweenonstopcallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnStopCallback</a></li></ul></li><li><a href="#tweenonupdatecallback" class="table-of-contents__link toc-highlight">TweenOnUpdateCallback</a><ul><li><a href="#static-tweenonupdatecallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnUpdateCallback</a></li></ul></li><li><a href="#tweenonyoyocallback" class="table-of-contents__link toc-highlight">TweenOnYoyoCallback</a><ul><li><a href="#static-tweenonyoyocallback" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenOnYoyoCallback</a></li></ul></li><li><a href="#tweenpropconfig" class="table-of-contents__link toc-highlight">TweenPropConfig</a><ul><li><a href="#static-tweenpropconfig" class="table-of-contents__link toc-highlight">&lt;static&gt; TweenPropConfig</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

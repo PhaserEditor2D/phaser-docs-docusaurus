@@ -1,0 +1,1675 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api-documentation docs-version-3.87.0 docs-doc-page docs-doc-id-namespace/Phaser.Utils.Array" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Phaser.Utils.Array | Phaser Help</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.phaser.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.phaser.io/api-documentation/namespace/utils-array"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="3.87.0"><meta data-rh="true" name="docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" name="docsearch:version" content="3.87.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-documentation-3.87.0"><meta data-rh="true" property="og:title" content="Phaser.Utils.Array | Phaser Help"><meta data-rh="true" name="description" content="Scope:"><meta data-rh="true" property="og:description" content="Scope:"><link data-rh="true" rel="icon" href="/img/favicon.webp"><link data-rh="true" rel="canonical" href="https://docs.phaser.io/api-documentation/namespace/utils-array"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/namespace/utils-array" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.phaser.io/api-documentation/namespace/utils-array" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Namespaces","item":"https://docs.phaser.io/api-documentation/namespace/"},{"@type":"ListItem","position":2,"name":"Phaser.Utils.Array","item":"https://docs.phaser.io/api-documentation/namespace/utils-array"}]}</script><link rel="stylesheet" href="/assets/css/styles.75d89caa.css">
+<script src="/assets/js/runtime~main.0f427858.js" defer="defer"></script>
+<script src="/assets/js/main.44a00892.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/phaser.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/phaser.png" alt="Phaser logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/phaser/getting-started/what-is-phaser">Phaser</a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/api-documentation/namespace/utils-array">API Documentation</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/api-documentation/namespace/utils-array">API Documentation</a></li><li><a class="dropdown__link" href="/api-documentation/3.85.2/namespace/utils-array">API Documentation - v3.85.2</a></li><li><a class="dropdown__link" href="/api-documentation/3.86.0/namespace/utils-array">API Documentation - v3.86.0</a></li></ul></div><a class="navbar__item navbar__link" href="/phaser-editor/intro/welcome">Phaser Editor</a><a href="https://phaser.io/examples/v3.85.0" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Examples</a><a href="https://phaser.io/news/2025/01/the-wildfires" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Game of the Week</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/phaserjs/phaser" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api-documentation/api-documentation"><span title="Phaser API Documentation" class="categoryLinkLabel_W154">Phaser API Documentation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/api-documentation"><span title="Phaser 3.87.0 API Documentation" class="linkLabel_WmDU">Phaser 3.87.0 API Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="categoryLinkLabel_W154">Namespaces</span></a><button aria-label="Collapse sidebar category &#x27;Namespaces&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/actions"><span title="Phaser.Actions" class="linkLabel_WmDU">Phaser.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/animations-events"><span title="Phaser.Animations.Events" class="linkLabel_WmDU">Phaser.Animations.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/animations"><span title="Phaser.Animations" class="linkLabel_WmDU">Phaser.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/blendmodes"><span title="Phaser.BlendModes" class="linkLabel_WmDU">Phaser.BlendModes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/cache-events"><span title="Phaser.Cache.Events" class="linkLabel_WmDU">Phaser.Cache.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/cache"><span title="Phaser.Cache" class="linkLabel_WmDU">Phaser.Cache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/cameras-controls"><span title="Phaser.Cameras.Controls" class="linkLabel_WmDU">Phaser.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/cameras-scene2d-effects"><span title="Phaser.Cameras.Scene2D.Effects" class="linkLabel_WmDU">Phaser.Cameras.Scene2D.Effects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/cameras-scene2d-events"><span title="Phaser.Cameras.Scene2D.Events" class="linkLabel_WmDU">Phaser.Cameras.Scene2D.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/cameras-scene2d"><span title="Phaser.Cameras.Scene2D" class="linkLabel_WmDU">Phaser.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/cameras"><span title="Phaser.Cameras" class="linkLabel_WmDU">Phaser.Cameras</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/core-events"><span title="Phaser.Core.Events" class="linkLabel_WmDU">Phaser.Core.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/core"><span title="Phaser.Core" class="linkLabel_WmDU">Phaser.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/create-palettes"><span title="Phaser.Create.Palettes" class="linkLabel_WmDU">Phaser.Create.Palettes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/create"><span title="Phaser.Create" class="linkLabel_WmDU">Phaser.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/curves"><span title="Phaser.Curves" class="linkLabel_WmDU">Phaser.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/dom"><span title="Phaser.DOM" class="linkLabel_WmDU">Phaser.DOM</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/data-events"><span title="Phaser.Data.Events" class="linkLabel_WmDU">Phaser.Data.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/data"><span title="Phaser.Data" class="linkLabel_WmDU">Phaser.Data</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/device"><span title="Phaser.Device" class="linkLabel_WmDU">Phaser.Device</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-align-in"><span title="Phaser.Display.Align.In" class="linkLabel_WmDU">Phaser.Display.Align.In</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-align-to"><span title="Phaser.Display.Align.To" class="linkLabel_WmDU">Phaser.Display.Align.To</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-align"><span title="Phaser.Display.Align" class="linkLabel_WmDU">Phaser.Display.Align</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-bounds"><span title="Phaser.Display.Bounds" class="linkLabel_WmDU">Phaser.Display.Bounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-canvas-canvasinterpolation"><span title="Phaser.Display.Canvas.CanvasInterpolation" class="linkLabel_WmDU">Phaser.Display.Canvas.CanvasInterpolation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-canvas-canvaspool"><span title="Phaser.Display.Canvas.CanvasPool" class="linkLabel_WmDU">Phaser.Display.Canvas.CanvasPool</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-canvas-smoothing"><span title="Phaser.Display.Canvas.Smoothing" class="linkLabel_WmDU">Phaser.Display.Canvas.Smoothing</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-canvas"><span title="Phaser.Display.Canvas" class="linkLabel_WmDU">Phaser.Display.Canvas</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-color-interpolate"><span title="Phaser.Display.Color.Interpolate" class="linkLabel_WmDU">Phaser.Display.Color.Interpolate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-color"><span title="Phaser.Display.Color" class="linkLabel_WmDU">Phaser.Display.Color</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display-masks"><span title="Phaser.Display.Masks" class="linkLabel_WmDU">Phaser.Display.Masks</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/display"><span title="Phaser.Display" class="linkLabel_WmDU">Phaser.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/events"><span title="Phaser.Events" class="linkLabel_WmDU">Phaser.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/fx"><span title="Phaser.FX" class="linkLabel_WmDU">Phaser.FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-alpha"><span title="Phaser.GameObjects.Components.Alpha" class="linkLabel_WmDU">Phaser.GameObjects.Components.Alpha</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-alphasingle"><span title="Phaser.GameObjects.Components.AlphaSingle" class="linkLabel_WmDU">Phaser.GameObjects.Components.AlphaSingle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-blendmode"><span title="Phaser.GameObjects.Components.BlendMode" class="linkLabel_WmDU">Phaser.GameObjects.Components.BlendMode</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-computedsize"><span title="Phaser.GameObjects.Components.ComputedSize" class="linkLabel_WmDU">Phaser.GameObjects.Components.ComputedSize</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-crop"><span title="Phaser.GameObjects.Components.Crop" class="linkLabel_WmDU">Phaser.GameObjects.Components.Crop</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-depth"><span title="Phaser.GameObjects.Components.Depth" class="linkLabel_WmDU">Phaser.GameObjects.Components.Depth</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-flip"><span title="Phaser.GameObjects.Components.Flip" class="linkLabel_WmDU">Phaser.GameObjects.Components.Flip</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-getbounds"><span title="Phaser.GameObjects.Components.GetBounds" class="linkLabel_WmDU">Phaser.GameObjects.Components.GetBounds</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-mask"><span title="Phaser.GameObjects.Components.Mask" class="linkLabel_WmDU">Phaser.GameObjects.Components.Mask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-origin"><span title="Phaser.GameObjects.Components.Origin" class="linkLabel_WmDU">Phaser.GameObjects.Components.Origin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-pathfollower"><span title="Phaser.GameObjects.Components.PathFollower" class="linkLabel_WmDU">Phaser.GameObjects.Components.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-pipeline"><span title="Phaser.GameObjects.Components.Pipeline" class="linkLabel_WmDU">Phaser.GameObjects.Components.Pipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-postpipeline"><span title="Phaser.GameObjects.Components.PostPipeline" class="linkLabel_WmDU">Phaser.GameObjects.Components.PostPipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-scrollfactor"><span title="Phaser.GameObjects.Components.ScrollFactor" class="linkLabel_WmDU">Phaser.GameObjects.Components.ScrollFactor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-size"><span title="Phaser.GameObjects.Components.Size" class="linkLabel_WmDU">Phaser.GameObjects.Components.Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-texture"><span title="Phaser.GameObjects.Components.Texture" class="linkLabel_WmDU">Phaser.GameObjects.Components.Texture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-texturecrop"><span title="Phaser.GameObjects.Components.TextureCrop" class="linkLabel_WmDU">Phaser.GameObjects.Components.TextureCrop</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-tint"><span title="Phaser.GameObjects.Components.Tint" class="linkLabel_WmDU">Phaser.GameObjects.Components.Tint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-transform"><span title="Phaser.GameObjects.Components.Transform" class="linkLabel_WmDU">Phaser.GameObjects.Components.Transform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components-visible"><span title="Phaser.GameObjects.Components.Visible" class="linkLabel_WmDU">Phaser.GameObjects.Components.Visible</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-components"><span title="Phaser.GameObjects.Components" class="linkLabel_WmDU">Phaser.GameObjects.Components</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-events"><span title="Phaser.GameObjects.Events" class="linkLabel_WmDU">Phaser.GameObjects.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-particles-events"><span title="Phaser.GameObjects.Particles.Events" class="linkLabel_WmDU">Phaser.GameObjects.Particles.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-particles-zones"><span title="Phaser.GameObjects.Particles.Zones" class="linkLabel_WmDU">Phaser.GameObjects.Particles.Zones</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-particles"><span title="Phaser.GameObjects.Particles" class="linkLabel_WmDU">Phaser.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects-retrofont"><span title="Phaser.GameObjects.RetroFont" class="linkLabel_WmDU">Phaser.GameObjects.RetroFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/gameobjects"><span title="Phaser.GameObjects" class="linkLabel_WmDU">Phaser.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/geom-intersects"><span title="Phaser.Geom.Intersects" class="linkLabel_WmDU">Phaser.Geom.Intersects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/geom-mesh"><span title="Phaser.Geom.Mesh" class="linkLabel_WmDU">Phaser.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/geom"><span title="Phaser.Geom" class="linkLabel_WmDU">Phaser.Geom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-events"><span title="Phaser.Input.Events" class="linkLabel_WmDU">Phaser.Input.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-gamepad-configs-dualshock_4"><span title="Phaser.Input.Gamepad.Configs.DUALSHOCK_4" class="linkLabel_WmDU">Phaser.Input.Gamepad.Configs.DUALSHOCK_4</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-gamepad-configs-snes_usb"><span title="Phaser.Input.Gamepad.Configs.SNES_USB" class="linkLabel_WmDU">Phaser.Input.Gamepad.Configs.SNES_USB</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-gamepad-configs-xbox_360"><span title="Phaser.Input.Gamepad.Configs.XBOX_360" class="linkLabel_WmDU">Phaser.Input.Gamepad.Configs.XBOX_360</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-gamepad-configs"><span title="Phaser.Input.Gamepad.Configs" class="linkLabel_WmDU">Phaser.Input.Gamepad.Configs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-gamepad-events"><span title="Phaser.Input.Gamepad.Events" class="linkLabel_WmDU">Phaser.Input.Gamepad.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-gamepad"><span title="Phaser.Input.Gamepad" class="linkLabel_WmDU">Phaser.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-inputplugincache"><span title="Phaser.Input.InputPluginCache" class="linkLabel_WmDU">Phaser.Input.InputPluginCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-keyboard-events"><span title="Phaser.Input.Keyboard.Events" class="linkLabel_WmDU">Phaser.Input.Keyboard.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-keyboard-keycodes"><span title="Phaser.Input.Keyboard.KeyCodes" class="linkLabel_WmDU">Phaser.Input.Keyboard.KeyCodes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-keyboard"><span title="Phaser.Input.Keyboard" class="linkLabel_WmDU">Phaser.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-mouse"><span title="Phaser.Input.Mouse" class="linkLabel_WmDU">Phaser.Input.Mouse</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input-touch"><span title="Phaser.Input.Touch" class="linkLabel_WmDU">Phaser.Input.Touch</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/input"><span title="Phaser.Input" class="linkLabel_WmDU">Phaser.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/loader-events"><span title="Phaser.Loader.Events" class="linkLabel_WmDU">Phaser.Loader.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/loader-filetypes"><span title="Phaser.Loader.FileTypes" class="linkLabel_WmDU">Phaser.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/loader-filetypesmanager"><span title="Phaser.Loader.FileTypesManager" class="linkLabel_WmDU">Phaser.Loader.FileTypesManager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/loader"><span title="Phaser.Loader" class="linkLabel_WmDU">Phaser.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-angle"><span title="Phaser.Math.Angle" class="linkLabel_WmDU">Phaser.Math.Angle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-distance"><span title="Phaser.Math.Distance" class="linkLabel_WmDU">Phaser.Math.Distance</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-back"><span title="Phaser.Math.Easing.Back" class="linkLabel_WmDU">Phaser.Math.Easing.Back</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-bounce"><span title="Phaser.Math.Easing.Bounce" class="linkLabel_WmDU">Phaser.Math.Easing.Bounce</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-circular"><span title="Phaser.Math.Easing.Circular" class="linkLabel_WmDU">Phaser.Math.Easing.Circular</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-cubic"><span title="Phaser.Math.Easing.Cubic" class="linkLabel_WmDU">Phaser.Math.Easing.Cubic</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-elastic"><span title="Phaser.Math.Easing.Elastic" class="linkLabel_WmDU">Phaser.Math.Easing.Elastic</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-expo"><span title="Phaser.Math.Easing.Expo" class="linkLabel_WmDU">Phaser.Math.Easing.Expo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-quadratic"><span title="Phaser.Math.Easing.Quadratic" class="linkLabel_WmDU">Phaser.Math.Easing.Quadratic</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-quartic"><span title="Phaser.Math.Easing.Quartic" class="linkLabel_WmDU">Phaser.Math.Easing.Quartic</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-quintic"><span title="Phaser.Math.Easing.Quintic" class="linkLabel_WmDU">Phaser.Math.Easing.Quintic</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-sine"><span title="Phaser.Math.Easing.Sine" class="linkLabel_WmDU">Phaser.Math.Easing.Sine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing-stepped"><span title="Phaser.Math.Easing.Stepped" class="linkLabel_WmDU">Phaser.Math.Easing.Stepped</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-easing"><span title="Phaser.Math.Easing" class="linkLabel_WmDU">Phaser.Math.Easing</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-fuzzy"><span title="Phaser.Math.Fuzzy" class="linkLabel_WmDU">Phaser.Math.Fuzzy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-interpolation"><span title="Phaser.Math.Interpolation" class="linkLabel_WmDU">Phaser.Math.Interpolation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-pow2"><span title="Phaser.Math.Pow2" class="linkLabel_WmDU">Phaser.Math.Pow2</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math-snap"><span title="Phaser.Math.Snap" class="linkLabel_WmDU">Phaser.Math.Snap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/math"><span title="Phaser.Math" class="linkLabel_WmDU">Phaser.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-acceleration"><span title="Phaser.Physics.Arcade.Components.Acceleration" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Acceleration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-angular"><span title="Phaser.Physics.Arcade.Components.Angular" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Angular</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-bounce"><span title="Phaser.Physics.Arcade.Components.Bounce" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Bounce</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-collision"><span title="Phaser.Physics.Arcade.Components.Collision" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Collision</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-debug"><span title="Phaser.Physics.Arcade.Components.Debug" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Debug</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-drag"><span title="Phaser.Physics.Arcade.Components.Drag" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Drag</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-enable"><span title="Phaser.Physics.Arcade.Components.Enable" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Enable</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-friction"><span title="Phaser.Physics.Arcade.Components.Friction" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Friction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-gravity"><span title="Phaser.Physics.Arcade.Components.Gravity" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Gravity</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-immovable"><span title="Phaser.Physics.Arcade.Components.Immovable" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Immovable</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-mass"><span title="Phaser.Physics.Arcade.Components.Mass" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Mass</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-pushable"><span title="Phaser.Physics.Arcade.Components.Pushable" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Pushable</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-size"><span title="Phaser.Physics.Arcade.Components.Size" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Size</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components-velocity"><span title="Phaser.Physics.Arcade.Components.Velocity" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components.Velocity</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-components"><span title="Phaser.Physics.Arcade.Components" class="linkLabel_WmDU">Phaser.Physics.Arcade.Components</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-events"><span title="Phaser.Physics.Arcade.Events" class="linkLabel_WmDU">Phaser.Physics.Arcade.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-processx"><span title="Phaser.Physics.Arcade.ProcessX" class="linkLabel_WmDU">Phaser.Physics.Arcade.ProcessX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-processy"><span title="Phaser.Physics.Arcade.ProcessY" class="linkLabel_WmDU">Phaser.Physics.Arcade.ProcessY</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade-tilemap"><span title="Phaser.Physics.Arcade.Tilemap" class="linkLabel_WmDU">Phaser.Physics.Arcade.Tilemap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-arcade"><span title="Phaser.Physics.Arcade" class="linkLabel_WmDU">Phaser.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-bounce"><span title="Phaser.Physics.Matter.Components.Bounce" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Bounce</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-collision"><span title="Phaser.Physics.Matter.Components.Collision" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Collision</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-force"><span title="Phaser.Physics.Matter.Components.Force" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Force</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-friction"><span title="Phaser.Physics.Matter.Components.Friction" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Friction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-gravity"><span title="Phaser.Physics.Matter.Components.Gravity" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Gravity</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-mass"><span title="Phaser.Physics.Matter.Components.Mass" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Mass</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-sensor"><span title="Phaser.Physics.Matter.Components.Sensor" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Sensor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-setbody"><span title="Phaser.Physics.Matter.Components.SetBody" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.SetBody</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-sleep"><span title="Phaser.Physics.Matter.Components.Sleep" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Sleep</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-static"><span title="Phaser.Physics.Matter.Components.Static" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Static</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-transform"><span title="Phaser.Physics.Matter.Components.Transform" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Transform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components-velocity"><span title="Phaser.Physics.Matter.Components.Velocity" class="linkLabel_WmDU">Phaser.Physics.Matter.Components.Velocity</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-components"><span title="Phaser.Physics.Matter.Components" class="linkLabel_WmDU">Phaser.Physics.Matter.Components</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-events"><span title="Phaser.Physics.Matter.Events" class="linkLabel_WmDU">Phaser.Physics.Matter.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-matter"><span title="Phaser.Physics.Matter.Matter" class="linkLabel_WmDU">Phaser.Physics.Matter.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-physicseditorparser"><span title="Phaser.Physics.Matter.PhysicsEditorParser" class="linkLabel_WmDU">Phaser.Physics.Matter.PhysicsEditorParser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter-physicsjsonparser"><span title="Phaser.Physics.Matter.PhysicsJSONParser" class="linkLabel_WmDU">Phaser.Physics.Matter.PhysicsJSONParser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics-matter"><span title="Phaser.Physics.Matter" class="linkLabel_WmDU">Phaser.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/physics"><span title="Phaser.Physics" class="linkLabel_WmDU">Phaser.Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/plugins-defaultplugins"><span title="Phaser.Plugins.DefaultPlugins" class="linkLabel_WmDU">Phaser.Plugins.DefaultPlugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/plugins-plugincache"><span title="Phaser.Plugins.PluginCache" class="linkLabel_WmDU">Phaser.Plugins.PluginCache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/plugins"><span title="Phaser.Plugins" class="linkLabel_WmDU">Phaser.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-canvas"><span title="Phaser.Renderer.Canvas" class="linkLabel_WmDU">Phaser.Renderer.Canvas</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-events"><span title="Phaser.Renderer.Events" class="linkLabel_WmDU">Phaser.Renderer.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-snapshot"><span title="Phaser.Renderer.Snapshot" class="linkLabel_WmDU">Phaser.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-webgl-pipelines-events"><span title="Phaser.Renderer.WebGL.Pipelines.Events" class="linkLabel_WmDU">Phaser.Renderer.WebGL.Pipelines.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-webgl-pipelines-fx"><span title="Phaser.Renderer.WebGL.Pipelines.FX" class="linkLabel_WmDU">Phaser.Renderer.WebGL.Pipelines.FX</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-webgl-pipelines"><span title="Phaser.Renderer.WebGL.Pipelines" class="linkLabel_WmDU">Phaser.Renderer.WebGL.Pipelines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-webgl-shaders"><span title="Phaser.Renderer.WebGL.Shaders" class="linkLabel_WmDU">Phaser.Renderer.WebGL.Shaders</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-webgl-utils"><span title="Phaser.Renderer.WebGL.Utils" class="linkLabel_WmDU">Phaser.Renderer.WebGL.Utils</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-webgl-wrappers"><span title="Phaser.Renderer.WebGL.Wrappers" class="linkLabel_WmDU">Phaser.Renderer.WebGL.Wrappers</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer-webgl"><span title="Phaser.Renderer.WebGL" class="linkLabel_WmDU">Phaser.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/renderer"><span title="Phaser.Renderer" class="linkLabel_WmDU">Phaser.Renderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scale-center"><span title="Phaser.Scale.Center" class="linkLabel_WmDU">Phaser.Scale.Center</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scale-events"><span title="Phaser.Scale.Events" class="linkLabel_WmDU">Phaser.Scale.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scale-orientation"><span title="Phaser.Scale.Orientation" class="linkLabel_WmDU">Phaser.Scale.Orientation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scale-scalemodes"><span title="Phaser.Scale.ScaleModes" class="linkLabel_WmDU">Phaser.Scale.ScaleModes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scale-zoom"><span title="Phaser.Scale.Zoom" class="linkLabel_WmDU">Phaser.Scale.Zoom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scale"><span title="Phaser.Scale" class="linkLabel_WmDU">Phaser.Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scalemodes"><span title="Phaser.ScaleModes" class="linkLabel_WmDU">Phaser.ScaleModes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scenes-events"><span title="Phaser.Scenes.Events" class="linkLabel_WmDU">Phaser.Scenes.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scenes-settings"><span title="Phaser.Scenes.Settings" class="linkLabel_WmDU">Phaser.Scenes.Settings</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/scenes"><span title="Phaser.Scenes" class="linkLabel_WmDU">Phaser.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/sound-events"><span title="Phaser.Sound.Events" class="linkLabel_WmDU">Phaser.Sound.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/sound"><span title="Phaser.Sound" class="linkLabel_WmDU">Phaser.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/structs-events"><span title="Phaser.Structs.Events" class="linkLabel_WmDU">Phaser.Structs.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/structs"><span title="Phaser.Structs" class="linkLabel_WmDU">Phaser.Structs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/textures-events"><span title="Phaser.Textures.Events" class="linkLabel_WmDU">Phaser.Textures.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/textures-filtermode"><span title="Phaser.Textures.FilterMode" class="linkLabel_WmDU">Phaser.Textures.FilterMode</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/textures-parsers"><span title="Phaser.Textures.Parsers" class="linkLabel_WmDU">Phaser.Textures.Parsers</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/textures"><span title="Phaser.Textures" class="linkLabel_WmDU">Phaser.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tilemaps-components"><span title="Phaser.Tilemaps.Components" class="linkLabel_WmDU">Phaser.Tilemaps.Components</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tilemaps-formats"><span title="Phaser.Tilemaps.Formats" class="linkLabel_WmDU">Phaser.Tilemaps.Formats</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tilemaps-orientation"><span title="Phaser.Tilemaps.Orientation" class="linkLabel_WmDU">Phaser.Tilemaps.Orientation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tilemaps-parsers-impact"><span title="Phaser.Tilemaps.Parsers.Impact" class="linkLabel_WmDU">Phaser.Tilemaps.Parsers.Impact</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tilemaps-parsers-tiled"><span title="Phaser.Tilemaps.Parsers.Tiled" class="linkLabel_WmDU">Phaser.Tilemaps.Parsers.Tiled</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tilemaps-parsers"><span title="Phaser.Tilemaps.Parsers" class="linkLabel_WmDU">Phaser.Tilemaps.Parsers</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tilemaps"><span title="Phaser.Tilemaps" class="linkLabel_WmDU">Phaser.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/time-events"><span title="Phaser.Time.Events" class="linkLabel_WmDU">Phaser.Time.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/time"><span title="Phaser.Time" class="linkLabel_WmDU">Phaser.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tweens-builders"><span title="Phaser.Tweens.Builders" class="linkLabel_WmDU">Phaser.Tweens.Builders</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tweens-events"><span title="Phaser.Tweens.Events" class="linkLabel_WmDU">Phaser.Tweens.Events</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tweens-states"><span title="Phaser.Tweens.States" class="linkLabel_WmDU">Phaser.Tweens.States</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/tweens"><span title="Phaser.Tweens" class="linkLabel_WmDU">Phaser.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-actions"><span title="Phaser.Types.Actions" class="linkLabel_WmDU">Phaser.Types.Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-animations"><span title="Phaser.Types.Animations" class="linkLabel_WmDU">Phaser.Types.Animations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-cameras-controls"><span title="Phaser.Types.Cameras.Controls" class="linkLabel_WmDU">Phaser.Types.Cameras.Controls</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-cameras-scene2d"><span title="Phaser.Types.Cameras.Scene2D" class="linkLabel_WmDU">Phaser.Types.Cameras.Scene2D</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-cameras"><span title="Phaser.Types.Cameras" class="linkLabel_WmDU">Phaser.Types.Cameras</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-core"><span title="Phaser.Types.Core" class="linkLabel_WmDU">Phaser.Types.Core</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-create"><span title="Phaser.Types.Create" class="linkLabel_WmDU">Phaser.Types.Create</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-curves"><span title="Phaser.Types.Curves" class="linkLabel_WmDU">Phaser.Types.Curves</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-display"><span title="Phaser.Types.Display" class="linkLabel_WmDU">Phaser.Types.Display</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-bitmaptext"><span title="Phaser.Types.GameObjects.BitmapText" class="linkLabel_WmDU">Phaser.Types.GameObjects.BitmapText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-container"><span title="Phaser.Types.GameObjects.Container" class="linkLabel_WmDU">Phaser.Types.GameObjects.Container</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-graphics"><span title="Phaser.Types.GameObjects.Graphics" class="linkLabel_WmDU">Phaser.Types.GameObjects.Graphics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-group"><span title="Phaser.Types.GameObjects.Group" class="linkLabel_WmDU">Phaser.Types.GameObjects.Group</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-mesh"><span title="Phaser.Types.GameObjects.Mesh" class="linkLabel_WmDU">Phaser.Types.GameObjects.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-nineslice"><span title="Phaser.Types.GameObjects.NineSlice" class="linkLabel_WmDU">Phaser.Types.GameObjects.NineSlice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-particles"><span title="Phaser.Types.GameObjects.Particles" class="linkLabel_WmDU">Phaser.Types.GameObjects.Particles</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-pathfollower"><span title="Phaser.Types.GameObjects.PathFollower" class="linkLabel_WmDU">Phaser.Types.GameObjects.PathFollower</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-plane"><span title="Phaser.Types.GameObjects.Plane" class="linkLabel_WmDU">Phaser.Types.GameObjects.Plane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-rendertexture"><span title="Phaser.Types.GameObjects.RenderTexture" class="linkLabel_WmDU">Phaser.Types.GameObjects.RenderTexture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-rope"><span title="Phaser.Types.GameObjects.Rope" class="linkLabel_WmDU">Phaser.Types.GameObjects.Rope</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-shader"><span title="Phaser.Types.GameObjects.Shader" class="linkLabel_WmDU">Phaser.Types.GameObjects.Shader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-sprite"><span title="Phaser.Types.GameObjects.Sprite" class="linkLabel_WmDU">Phaser.Types.GameObjects.Sprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-text"><span title="Phaser.Types.GameObjects.Text" class="linkLabel_WmDU">Phaser.Types.GameObjects.Text</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-tilesprite"><span title="Phaser.Types.GameObjects.TileSprite" class="linkLabel_WmDU">Phaser.Types.GameObjects.TileSprite</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-video"><span title="Phaser.Types.GameObjects.Video" class="linkLabel_WmDU">Phaser.Types.GameObjects.Video</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects-zone"><span title="Phaser.Types.GameObjects.Zone" class="linkLabel_WmDU">Phaser.Types.GameObjects.Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-gameobjects"><span title="Phaser.Types.GameObjects" class="linkLabel_WmDU">Phaser.Types.GameObjects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-geom-mesh"><span title="Phaser.Types.Geom.Mesh" class="linkLabel_WmDU">Phaser.Types.Geom.Mesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-geom"><span title="Phaser.Types.Geom" class="linkLabel_WmDU">Phaser.Types.Geom</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-input-gamepad"><span title="Phaser.Types.Input.Gamepad" class="linkLabel_WmDU">Phaser.Types.Input.Gamepad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-input-keyboard"><span title="Phaser.Types.Input.Keyboard" class="linkLabel_WmDU">Phaser.Types.Input.Keyboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-input"><span title="Phaser.Types.Input" class="linkLabel_WmDU">Phaser.Types.Input</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-loader-filetypes"><span title="Phaser.Types.Loader.FileTypes" class="linkLabel_WmDU">Phaser.Types.Loader.FileTypes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-loader"><span title="Phaser.Types.Loader" class="linkLabel_WmDU">Phaser.Types.Loader</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-math"><span title="Phaser.Types.Math" class="linkLabel_WmDU">Phaser.Types.Math</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-physics-arcade"><span title="Phaser.Types.Physics.Arcade" class="linkLabel_WmDU">Phaser.Types.Physics.Arcade</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-physics-matter"><span title="Phaser.Types.Physics.Matter" class="linkLabel_WmDU">Phaser.Types.Physics.Matter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-physics"><span title="Phaser.Types.Physics" class="linkLabel_WmDU">Phaser.Types.Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-plugins"><span title="Phaser.Types.Plugins" class="linkLabel_WmDU">Phaser.Types.Plugins</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-renderer-snapshot"><span title="Phaser.Types.Renderer.Snapshot" class="linkLabel_WmDU">Phaser.Types.Renderer.Snapshot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-renderer-webgl"><span title="Phaser.Types.Renderer.WebGL" class="linkLabel_WmDU">Phaser.Types.Renderer.WebGL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-renderer"><span title="Phaser.Types.Renderer" class="linkLabel_WmDU">Phaser.Types.Renderer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-scenes"><span title="Phaser.Types.Scenes" class="linkLabel_WmDU">Phaser.Types.Scenes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-sound"><span title="Phaser.Types.Sound" class="linkLabel_WmDU">Phaser.Types.Sound</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-textures"><span title="Phaser.Types.Textures" class="linkLabel_WmDU">Phaser.Types.Textures</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-tilemaps"><span title="Phaser.Types.Tilemaps" class="linkLabel_WmDU">Phaser.Types.Tilemaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-time"><span title="Phaser.Types.Time" class="linkLabel_WmDU">Phaser.Types.Time</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types-tweens"><span title="Phaser.Types.Tweens" class="linkLabel_WmDU">Phaser.Types.Tweens</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/types"><span title="Phaser.Types" class="linkLabel_WmDU">Phaser.Types</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/utils-array-matrix"><span title="Phaser.Utils.Array.Matrix" class="linkLabel_WmDU">Phaser.Utils.Array.Matrix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api-documentation/namespace/utils-array"><span title="Phaser.Utils.Array" class="linkLabel_WmDU">Phaser.Utils.Array</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/utils-base64"><span title="Phaser.Utils.Base64" class="linkLabel_WmDU">Phaser.Utils.Base64</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/utils-objects"><span title="Phaser.Utils.Objects" class="linkLabel_WmDU">Phaser.Utils.Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/utils-string"><span title="Phaser.Utils.String" class="linkLabel_WmDU">Phaser.Utils.String</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/utils"><span title="Phaser.Utils" class="linkLabel_WmDU">Phaser.Utils</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/phaser"><span title="Phaser" class="linkLabel_WmDU">Phaser</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/namespace/"><span title="Namespaces" class="linkLabel_WmDU">Namespaces</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/gameobjects/"><span title="Game Objects" class="linkLabel_WmDU">Game Objects</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/api-documentation/physics/"><span title="Physics" class="linkLabel_WmDU">Physics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/event/"><span title="Events" class="categoryLinkLabel_W154">Events</span></a><button aria-label="Expand sidebar category &#x27;Events&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/class/"><span title="Class" class="categoryLinkLabel_W154">Class</span></a><button aria-label="Expand sidebar category &#x27;Class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/function/"><span title="Functions" class="categoryLinkLabel_W154">Functions</span></a><button aria-label="Expand sidebar category &#x27;Functions&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/constant/"><span title="Constants" class="categoryLinkLabel_W154">Constants</span></a><button aria-label="Expand sidebar category &#x27;Constants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/api-documentation/typedef/"><span title="Typedefs" class="categoryLinkLabel_W154">Typedefs</span></a><button aria-label="Expand sidebar category &#x27;Typedefs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Phaser API Documentation</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/api-documentation/namespace/"><span>Namespaces</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Phaser.Utils.Array</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: API Documentation</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><p>Scope:
+static</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/index.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/index.js#L7</a></p>
+</blockquote>
+<header><h1>Static functions</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="add">Add<a href="#add" class="hash-link" aria-label="Direct link to Add" title="Direct link to Add" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-addarray-item-limit-callback-context">&lt;static&gt; Add(array, item, [limit], [callback], [context])<a href="#static-addarray-item-limit-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; Add(array, item, [limit], [callback], [context])" title="Direct link to &lt;static&gt; Add(array, item, [limit], [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds the given item, or array of items, to the array.</p>
+<p>Each item must be unique within the array.</p>
+<p>The array is modified in-place and returned.</p>
+<p>You can optionally specify a limit to the maximum size of the array. If the quantity of items being</p>
+<p>added will take the array length over this limit, it will stop adding once the limit is reached.</p>
+<p>You can optionally specify a callback to be invoked for each item successfully added to the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be added to.</td></tr><tr><td>item</td><td>any | Array.&lt;any&gt;</td><td>No</td><td>The item, or array of items, to add to the array. Each item must be unique within the array.</td></tr><tr><td>limit</td><td>number</td><td>Yes</td><td>Optional limit which caps the size of the array.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for each item successfully added to the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Add.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Add.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="addat">AddAt<a href="#addat" class="hash-link" aria-label="Direct link to AddAt" title="Direct link to AddAt" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-addatarray-item-index-limit-callback-context">&lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])<a href="#static-addatarray-item-index-limit-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])" title="Direct link to &lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Adds the given item, or array of items, to the array starting at the index specified.</p>
+<p>Each item must be unique within the array.</p>
+<p>Existing elements in the array are shifted up.</p>
+<p>The array is modified in-place and returned.</p>
+<p>You can optionally specify a limit to the maximum size of the array. If the quantity of items being</p>
+<p>added will take the array length over this limit, it will stop adding once the limit is reached.</p>
+<p>You can optionally specify a callback to be invoked for each item successfully added to the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to be added to.</td></tr><tr><td>item</td><td>any | Array.&lt;any&gt;</td><td>No</td><td></td><td>The item, or array of items, to add to the array.</td></tr><tr><td>index</td><td>number</td><td>Yes</td><td>0</td><td>The index in the array where the item will be inserted.</td></tr><tr><td>limit</td><td>number</td><td>Yes</td><td></td><td>Optional limit which caps the size of the array.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td></td><td>A callback to be invoked for each item successfully added to the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td></td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/AddAt.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/AddAt.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bringtotop">BringToTop<a href="#bringtotop" class="hash-link" aria-label="Direct link to BringToTop" title="Direct link to BringToTop" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-bringtotoparray-item">&lt;static&gt; BringToTop(array, item)<a href="#static-bringtotoparray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; BringToTop(array, item)" title="Direct link to &lt;static&gt; BringToTop(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given element to the top of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The element that was moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/BringToTop.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/BringToTop.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="countallmatching">CountAllMatching<a href="#countallmatching" class="hash-link" aria-label="Direct link to CountAllMatching" title="Direct link to CountAllMatching" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-countallmatchingarray-property-value-startindex-endindex">&lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])<a href="#static-countallmatchingarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])" title="Direct link to &lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the total number of elements in the array which have a property matching the given value.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>No</td><td>The property to test on each array element.</td></tr><tr><td>value</td><td>*</td><td>No</td><td>The value to test the property against. Must pass a strict (<code>===</code>) comparison check.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>An optional end index to search to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number - The total number of elements with properties matching the given value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/CountAllMatching.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/CountAllMatching.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="each">Each<a href="#each" class="hash-link" aria-label="Direct link to Each" title="Direct link to Each" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-eacharray-callback-context-args">&lt;static&gt; Each(array, callback, context, [args])<a href="#static-eacharray-callback-context-args" class="hash-link" aria-label="Direct link to &lt;static&gt; Each(array, callback, context, [args])" title="Direct link to &lt;static&gt; Each(array, callback, context, [args])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Passes each element in the array to the given callback.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>callback</td><td>function</td><td>No</td><td>A callback to be invoked for each item in the array.</td></tr><tr><td>context</td><td>object</td><td>No</td><td>The context in which the callback is invoked.</td></tr><tr><td>args</td><td>*</td><td>Yes</td><td>Additional arguments that will be passed to the callback, after the current array item.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Each.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Each.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="eachinrange">EachInRange<a href="#eachinrange" class="hash-link" aria-label="Direct link to EachInRange" title="Direct link to EachInRange" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-eachinrangearray-callback-context-startindex-endindex-args">&lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])<a href="#static-eachinrangearray-callback-context-startindex-endindex-args" class="hash-link" aria-label="Direct link to &lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])" title="Direct link to &lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Passes each element in the array, between the start and end indexes, to the given callback.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>callback</td><td>function</td><td>No</td><td>A callback to be invoked for each item in the array.</td></tr><tr><td>context</td><td>object</td><td>No</td><td>The context in which the callback is invoked.</td></tr><tr><td>startIndex</td><td>number</td><td>No</td><td>The start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>No</td><td>The end index to search to.</td></tr><tr><td>args</td><td>*</td><td>Yes</td><td>Additional arguments that will be passed to the callback, after the child.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/EachInRange.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/EachInRange.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="findclosestinsorted">FindClosestInSorted<a href="#findclosestinsorted" class="hash-link" aria-label="Direct link to FindClosestInSorted" title="Direct link to FindClosestInSorted" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-findclosestinsortedvalue-array-key">&lt;static&gt; FindClosestInSorted(value, array, [key])<a href="#static-findclosestinsortedvalue-array-key" class="hash-link" aria-label="Direct link to &lt;static&gt; FindClosestInSorted(value, array, [key])" title="Direct link to &lt;static&gt; FindClosestInSorted(value, array, [key])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Searches a pre-sorted array for the closet value to the given number.</p>
+<p>If the <code>key</code> argument is given it will assume the array contains objects that all have the required <code>key</code> property name,</p>
+<p>and will check for the closest value of those to the given number.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>value</td><td>number</td><td>No</td><td>The value to search for in the array.</td></tr><tr><td>array</td><td>array</td><td>No</td><td>The array to search, which must be sorted.</td></tr><tr><td>key</td><td>string</td><td>Yes</td><td>An optional property key. If specified the array elements property will be checked against value.</td></tr></tbody></table>
+<p><strong>Returns:</strong> number, any - The nearest value found in the array, or if a <code>key</code> was given, the nearest object with the matching property value.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/FindClosestInSorted.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/FindClosestInSorted.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="flatten">Flatten<a href="#flatten" class="hash-link" aria-label="Direct link to Flatten" title="Direct link to Flatten" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-flattenarray-output">&lt;static&gt; Flatten(array, [output])<a href="#static-flattenarray-output" class="hash-link" aria-label="Direct link to &lt;static&gt; Flatten(array, [output])" title="Direct link to &lt;static&gt; Flatten(array, [output])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes an array and flattens it, returning a shallow-copy flattened array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to flatten.</td></tr><tr><td>output</td><td>array</td><td>Yes</td><td>An array to hold the results in.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The flattened output array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Flatten.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Flatten.js#L7</a><br>
+Since: 3.60.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getall">GetAll<a href="#getall" class="hash-link" aria-label="Direct link to GetAll" title="Direct link to GetAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getallarray-property-value-startindex-endindex">&lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])<a href="#static-getallarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])" title="Direct link to &lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns all elements in the array.</p>
+<p>You can optionally specify a matching criteria using the <code>property</code> and <code>value</code> arguments.</p>
+<p>For example: <code>getAll(&#x27;visible&#x27;, true)</code> would return only elements that have their visible property set.</p>
+<p>Optionally you can specify a start and end index. For example if the array had 100 elements,</p>
+<p>and you set <code>startIndex</code> to 0 and <code>endIndex</code> to 50, it would return matches from only</p>
+<p>the first 50 elements.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>Yes</td><td>The property to test on each array element.</td></tr><tr><td>value</td><td>*</td><td>Yes</td><td>The value to test the property against. Must pass a strict (<code>===</code>) comparison check.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>An optional end index to search to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - All matching elements from the array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/GetAll.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/GetAll.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getfirst">GetFirst<a href="#getfirst" class="hash-link" aria-label="Direct link to GetFirst" title="Direct link to GetFirst" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getfirstarray-property-value-startindex-endindex">&lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])<a href="#static-getfirstarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])" title="Direct link to &lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns the first element in the array.</p>
+<p>You can optionally specify a matching criteria using the <code>property</code> and <code>value</code> arguments.</p>
+<p>For example: <code>getAll(&#x27;visible&#x27;, true)</code> would return the first element that had its <code>visible</code> property set.</p>
+<p>Optionally you can specify a start and end index. For example if the array had 100 elements,</p>
+<p>and you set <code>startIndex</code> to 0 and <code>endIndex</code> to 50, it would search only the first 50 elements.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>Yes</td><td></td><td>The property to test on each array element.</td></tr><tr><td>value</td><td>*</td><td>Yes</td><td></td><td>The value to test the property against. Must pass a strict (<code>===</code>) comparison check.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>0</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>&quot;array.length&quot;</td><td>An optional end index to search up to (but not included)</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - The first matching element from the array, or <code>null</code> if no element could be found in the range given.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/GetFirst.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/GetFirst.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getrandom">GetRandom<a href="#getrandom" class="hash-link" aria-label="Direct link to GetRandom" title="Direct link to GetRandom" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-getrandomarray-startindex-length">&lt;static&gt; GetRandom(array, [startIndex], [length])<a href="#static-getrandomarray-startindex-length" class="hash-link" aria-label="Direct link to &lt;static&gt; GetRandom(array, [startIndex], [length])" title="Direct link to &lt;static&gt; GetRandom(array, [startIndex], [length])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Returns a Random element from the array.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;T&gt;</td><td>No</td><td></td><td>The array to select the random entry from.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>0</td><td>An optional start index.</td></tr><tr><td>length</td><td>number</td><td>Yes</td><td>&quot;array.length&quot;</td><td>An optional length, the total number of elements (from the startIndex) to choose from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> T - A random element from the array, or <code>null</code> if no element could be found in the range given.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/GetRandom.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/GetRandom.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="moveabove">MoveAbove<a href="#moveabove" class="hash-link" aria-label="Direct link to MoveAbove" title="Direct link to MoveAbove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-moveabovearray-item1-item2">&lt;static&gt; MoveAbove(array, item1, item2)<a href="#static-moveabovearray-item1-item2" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveAbove(array, item1, item2)" title="Direct link to &lt;static&gt; MoveAbove(array, item1, item2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element above another one in the array.</p>
+<p>If the given element is already above the other, it isn&#x27;t moved.</p>
+<p>Above means toward the end of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item1</td><td>*</td><td>No</td><td>The element to move above base element.</td></tr><tr><td>item2</td><td>*</td><td>No</td><td>The base element.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveAbove.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveAbove.js#L7</a><br>
+Since: 3.55.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="movebelow">MoveBelow<a href="#movebelow" class="hash-link" aria-label="Direct link to MoveBelow" title="Direct link to MoveBelow" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-movebelowarray-item1-item2">&lt;static&gt; MoveBelow(array, item1, item2)<a href="#static-movebelowarray-item1-item2" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveBelow(array, item1, item2)" title="Direct link to &lt;static&gt; MoveBelow(array, item1, item2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element below another one in the array.</p>
+<p>If the given element is already below the other, it isn&#x27;t moved.</p>
+<p>Below means toward the start of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item1</td><td>*</td><td>No</td><td>The element to move below base element.</td></tr><tr><td>item2</td><td>*</td><td>No</td><td>The base element.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveBelow.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveBelow.js#L7</a><br>
+Since: 3.55.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="movedown">MoveDown<a href="#movedown" class="hash-link" aria-label="Direct link to MoveDown" title="Direct link to MoveDown" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-movedownarray-item">&lt;static&gt; MoveDown(array, item)<a href="#static-movedownarray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveDown(array, item)" title="Direct link to &lt;static&gt; MoveDown(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element down one place in the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move down the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveDown.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveDown.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="moveto">MoveTo<a href="#moveto" class="hash-link" aria-label="Direct link to MoveTo" title="Direct link to MoveTo" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-movetoarray-item-index">&lt;static&gt; MoveTo(array, item, index)<a href="#static-movetoarray-item-index" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveTo(array, item, index)" title="Direct link to &lt;static&gt; MoveTo(array, item, index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves an element in an array to a new position within the same array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The new index that the element will be moved to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The element that was moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveTo.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveTo.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="moveup">MoveUp<a href="#moveup" class="hash-link" aria-label="Direct link to MoveUp" title="Direct link to MoveUp" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-moveuparray-item">&lt;static&gt; MoveUp(array, item)<a href="#static-moveuparray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; MoveUp(array, item)" title="Direct link to &lt;static&gt; MoveUp(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given array element up one place in the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move up the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/MoveUp.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/MoveUp.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="numberarray">NumberArray<a href="#numberarray" class="hash-link" aria-label="Direct link to NumberArray" title="Direct link to NumberArray" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-numberarraystart-end-prefix-suffix">&lt;static&gt; NumberArray(start, end, [prefix], [suffix])<a href="#static-numberarraystart-end-prefix-suffix" class="hash-link" aria-label="Direct link to &lt;static&gt; NumberArray(start, end, [prefix], [suffix])" title="Direct link to &lt;static&gt; NumberArray(start, end, [prefix], [suffix])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Create an array representing the range of numbers (usually integers), between, and inclusive of,</p>
+<p>the given <code>start</code> and <code>end</code> arguments. For example:</p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(2, 4); // array = [2, 3, 4]</code></p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(0, 9); // array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code></p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(8, 2); // array = [8, 7, 6, 5, 4, 3, 2]</code></p>
+<p>This is equivalent to <code>Phaser.Utils.Array.NumberArrayStep(start, end, 1)</code>.</p>
+<p>You can optionally provide a prefix and / or suffix string. If given the array will contain</p>
+<p>strings, not integers. For example:</p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(1, 4, &#x27;Level &#x27;); // array = [&quot;Level 1&quot;, &quot;Level 2&quot;, &quot;Level 3&quot;, &quot;Level 4&quot;]</code></p>
+<p><code>var array = Phaser.Utils.Array.NumberArray(5, 7, &#x27;HD-&#x27;, &#x27;.png&#x27;); // array = [&quot;HD-5.png&quot;, &quot;HD-6.png&quot;, &quot;HD-7.png&quot;]</code></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>start</td><td>number</td><td>No</td><td>The minimum value the array starts with.</td></tr><tr><td>end</td><td>number</td><td>No</td><td>The maximum value the array contains.</td></tr><tr><td>prefix</td><td>string</td><td>Yes</td><td>Optional prefix to place before the number. If provided the array will contain strings, not integers.</td></tr><tr><td>suffix</td><td>string</td><td>Yes</td><td>Optional suffix to place after the number. If provided the array will contain strings, not integers.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;number&gt;, Array.&lt;string&gt; - The array of number values, or strings if a prefix or suffix was provided.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/NumberArray.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/NumberArray.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="numberarraystep">NumberArrayStep<a href="#numberarraystep" class="hash-link" aria-label="Direct link to NumberArrayStep" title="Direct link to NumberArrayStep" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-numberarraystepstart-end-step">&lt;static&gt; NumberArrayStep([start], [end], [step])<a href="#static-numberarraystepstart-end-step" class="hash-link" aria-label="Direct link to &lt;static&gt; NumberArrayStep([start], [end], [step])" title="Direct link to &lt;static&gt; NumberArrayStep([start], [end], [step])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Create an array of numbers (positive and/or negative) progressing from <code>start</code></p>
+<p>up to but not including <code>end</code> by advancing by <code>step</code>.</p>
+<p>If <code>start</code> is less than <code>end</code> a zero-length range is created unless a negative <code>step</code> is specified.</p>
+<p>Certain values for <code>start</code> and <code>end</code> (eg. NaN/undefined/null) are currently coerced to 0;</p>
+<p>for forward compatibility make sure to pass in actual numbers.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>start</td><td>number</td><td>Yes</td><td>0</td><td>The start of the range.</td></tr><tr><td>end</td><td>number</td><td>Yes</td><td>null</td><td>The end of the range.</td></tr><tr><td>step</td><td>number</td><td>Yes</td><td>1</td><td>The value to increment or decrement by.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;number&gt; - The array of number values.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/NumberArrayStep.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/NumberArrayStep.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quickselect">QuickSelect<a href="#quickselect" class="hash-link" aria-label="Direct link to QuickSelect" title="Direct link to QuickSelect" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-quickselectarr-k-left-right-compare">&lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])<a href="#static-quickselectarr-k-left-right-compare" class="hash-link" aria-label="Direct link to &lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])" title="Direct link to &lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>A <a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Rivest_algorithm" target="_blank" rel="noopener noreferrer" class="">Floyd-Rivest</a> quick selection algorithm.</p>
+<p>Rearranges the array items so that all items in the [left, k] range are smaller than all items in [k, right];</p>
+<p>The k-th element will have the (k - left + 1)th smallest value in [left, right].</p>
+<p>The array is modified in-place.</p>
+<p>Based on code by <a href="https://www.npmjs.com/~mourner" target="_blank" rel="noopener noreferrer" class="">Vladimir Agafonkin</a></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>arr</td><td>array</td><td>No</td><td></td><td>The array to sort.</td></tr><tr><td>k</td><td>number</td><td>No</td><td></td><td>The k-th element index.</td></tr><tr><td>left</td><td>number</td><td>Yes</td><td>0</td><td>The index of the left part of the range.</td></tr><tr><td>right</td><td>number</td><td>Yes</td><td></td><td>The index of the right part of the range.</td></tr><tr><td>compare</td><td>function</td><td>Yes</td><td></td><td>An optional comparison function. Is passed two elements and should return 0, 1 or -1.</td></tr></tbody></table>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/QuickSelect.js#L25" target="_blank" rel="noopener noreferrer" class="">src/utils/array/QuickSelect.js#L25</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="range">Range<a href="#range" class="hash-link" aria-label="Direct link to Range" title="Direct link to Range" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rangea-b-options">&lt;static&gt; Range(a, b, [options])<a href="#static-rangea-b-options" class="hash-link" aria-label="Direct link to &lt;static&gt; Range(a, b, [options])" title="Direct link to &lt;static&gt; Range(a, b, [options])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Creates an array populated with a range of values, based on the given arguments and configuration object.</p>
+<p>Range ([a,b,c], [1,2,3]) =</p>
+<p>a1, a2, a3, b1, b2, b3, c1, c2, c3</p>
+<p>Range ([a,b], [1,2,3], qty = 3) =</p>
+<p>a1, a1, a1, a2, a2, a2, a3, a3, a3, b1, b1, b1, b2, b2, b2, b3, b3, b3</p>
+<p>Range ([a,b,c], [1,2,3], repeat x1) =</p>
+<p>a1, a2, a3, b1, b2, b3, c1, c2, c3, a1, a2, a3, b1, b2, b3, c1, c2, c3</p>
+<p>Range ([a,b], [1,2], repeat -1 = endless, max = 14) =</p>
+<p>Maybe if max is set then repeat goes to -1 automatically?</p>
+<p>a1, a2, b1, b2, a1, a2, b1, b2, a1, a2, b1, b2, a1, a2 (capped at 14 elements)</p>
+<p>Range ([a], [1,2,3,4,5], random = true) =</p>
+<p>a4, a1, a5, a2, a3</p>
+<p>Range ([a, b], [1,2,3], random = true) =</p>
+<p>b3, a2, a1, b1, a3, b2</p>
+<p>Range ([a, b, c], [1,2,3], randomB = true) =</p>
+<p>a3, a1, a2, b2, b3, b1, c1, c3, c2</p>
+<p>Range ([a], [1,2,3,4,5], yoyo = true) =</p>
+<p>a1, a2, a3, a4, a5, a5, a4, a3, a2, a1</p>
+<p>Range ([a, b], [1,2,3], yoyo = true) =</p>
+<p>a1, a2, a3, b1, b2, b3, b3, b2, b1, a3, a2, a1</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>a</td><td>array</td><td>No</td><td>The first array of range elements.</td></tr><tr><td>b</td><td>array</td><td>No</td><td>The second array of range elements.</td></tr><tr><td>options</td><td>object</td><td>Yes</td><td>A range configuration object. Can contain: repeat, random, randomB, yoyo, max, qty.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - An array of arranged elements.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Range.js#L28" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Range.js#L28</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove">Remove<a href="#remove" class="hash-link" aria-label="Direct link to Remove" title="Direct link to Remove" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removearray-item-callback-context">&lt;static&gt; Remove(array, item, [callback], [context])<a href="#static-removearray-item-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; Remove(array, item, [callback], [context])" title="Direct link to &lt;static&gt; Remove(array, item, [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes the given item, or array of items, from the array.</p>
+<p>The array is modified in-place.</p>
+<p>You can optionally specify a callback to be invoked for each item successfully removed from the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be modified.</td></tr><tr><td>item</td><td>* | Array.&lt;*&gt;</td><td>No</td><td>The item, or array of items, to be removed from the array.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for each item successfully removed from the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> <em>, Array.&lt;</em>&gt; - The item, or array of items, that were successfully removed from the array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Remove.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Remove.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removeat">RemoveAt<a href="#removeat" class="hash-link" aria-label="Direct link to RemoveAt" title="Direct link to RemoveAt" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removeatarray-index-callback-context">&lt;static&gt; RemoveAt(array, index, [callback], [context])<a href="#static-removeatarray-index-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; RemoveAt(array, index, [callback], [context])" title="Direct link to &lt;static&gt; RemoveAt(array, index, [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes the item from the given position in the array.</p>
+<p>The array is modified in-place.</p>
+<p>You can optionally specify a callback to be invoked for the item if it is successfully removed from the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be modified.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The array index to remove the item from. The index must be in bounds or it will throw an error.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for the item removed from the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The item that was removed.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RemoveAt.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RemoveAt.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removebetween">RemoveBetween<a href="#removebetween" class="hash-link" aria-label="Direct link to RemoveBetween" title="Direct link to RemoveBetween" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removebetweenarray-startindex-endindex-callback-context">&lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])<a href="#static-removebetweenarray-startindex-endindex-callback-context" class="hash-link" aria-label="Direct link to &lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])" title="Direct link to &lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes the item within the given range in the array.</p>
+<p>The array is modified in-place.</p>
+<p>You can optionally specify a callback to be invoked for the item/s successfully removed from the array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to be modified.</td></tr><tr><td>startIndex</td><td>number</td><td>No</td><td>The start index to remove from.</td></tr><tr><td>endIndex</td><td>number</td><td>No</td><td>The end index to remove to.</td></tr><tr><td>callback</td><td>function</td><td>Yes</td><td>A callback to be invoked for the item removed from the array.</td></tr><tr><td>context</td><td>object</td><td>Yes</td><td>The context in which the callback is invoked.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;*&gt; - An array of items that were removed.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RemoveBetween.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RemoveBetween.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="removerandomelement">RemoveRandomElement<a href="#removerandomelement" class="hash-link" aria-label="Direct link to RemoveRandomElement" title="Direct link to RemoveRandomElement" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-removerandomelementarray-start-length">&lt;static&gt; RemoveRandomElement(array, [start], [length])<a href="#static-removerandomelementarray-start-length" class="hash-link" aria-label="Direct link to &lt;static&gt; RemoveRandomElement(array, [start], [length])" title="Direct link to &lt;static&gt; RemoveRandomElement(array, [start], [length])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes a random object from the given array and returns it.</p>
+<p>Will return null if there are no array items that fall within the specified range or if there is no item for the randomly chosen index.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to removed a random element from.</td></tr><tr><td>start</td><td>number</td><td>Yes</td><td>0</td><td>The array index to start the search from.</td></tr><tr><td>length</td><td>number</td><td>Yes</td><td>&quot;array.length&quot;</td><td>Optional restriction on the number of elements to randomly select from.</td></tr></tbody></table>
+<p><strong>Returns:</strong> object - The random element that was removed, or <code>null</code> if there were no array elements that fell within the given range.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RemoveRandomElement.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RemoveRandomElement.js#L9</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="replace">Replace<a href="#replace" class="hash-link" aria-label="Direct link to Replace" title="Direct link to Replace" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-replacearray-oldchild-newchild">&lt;static&gt; Replace(array, oldChild, newChild)<a href="#static-replacearray-oldchild-newchild" class="hash-link" aria-label="Direct link to &lt;static&gt; Replace(array, oldChild, newChild)" title="Direct link to &lt;static&gt; Replace(array, oldChild, newChild)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Replaces an element of the array with the new element.</p>
+<p>The new element cannot already be a member of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search within.</td></tr><tr><td>oldChild</td><td>*</td><td>No</td><td>The element in the array that will be replaced.</td></tr><tr><td>newChild</td><td>*</td><td>No</td><td>The element to be inserted into the array at the position of <code>oldChild</code>.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - Returns true if the oldChild was successfully replaced, otherwise returns false.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Replace.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Replace.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotateleft">RotateLeft<a href="#rotateleft" class="hash-link" aria-label="Direct link to RotateLeft" title="Direct link to RotateLeft" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotateleftarray-total">&lt;static&gt; RotateLeft(array, [total])<a href="#static-rotateleftarray-total" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateLeft(array, [total])" title="Direct link to &lt;static&gt; RotateLeft(array, [total])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the element at the start of the array to the end, shifting all items in the process.</p>
+<p>The &quot;rotation&quot; happens to the left.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to shift to the left. This array is modified in place.</td></tr><tr><td>total</td><td>number</td><td>Yes</td><td>1</td><td>The number of times to shift the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The most recently shifted element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RotateLeft.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RotateLeft.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rotateright">RotateRight<a href="#rotateright" class="hash-link" aria-label="Direct link to RotateRight" title="Direct link to RotateRight" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-rotaterightarray-total">&lt;static&gt; RotateRight(array, [total])<a href="#static-rotaterightarray-total" class="hash-link" aria-label="Direct link to &lt;static&gt; RotateRight(array, [total])" title="Direct link to &lt;static&gt; RotateRight(array, [total])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the element at the end of the array to the start, shifting all items in the process.</p>
+<p>The &quot;rotation&quot; happens to the right.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to shift to the right. This array is modified in place.</td></tr><tr><td>total</td><td>number</td><td>Yes</td><td>1</td><td>The number of times to shift the array.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The most recently shifted element.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/RotateRight.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/RotateRight.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="saferange">SafeRange<a href="#saferange" class="hash-link" aria-label="Direct link to SafeRange" title="Direct link to SafeRange" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-saferangearray-startindex-endindex-throwerror">&lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])<a href="#static-saferangearray-startindex-endindex-throwerror" class="hash-link" aria-label="Direct link to &lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])" title="Direct link to &lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Tests if the start and end indexes are a safe range for the given array.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>default</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td></td><td>The array to check.</td></tr><tr><td>startIndex</td><td>number</td><td>No</td><td></td><td>The start index.</td></tr><tr><td>endIndex</td><td>number</td><td>No</td><td></td><td>The end index.</td></tr><tr><td>throwError</td><td>boolean</td><td>Yes</td><td>true</td><td>Throw an error if the range is out of bounds.</td></tr></tbody></table>
+<p><strong>Returns:</strong> boolean - True if the range is safe, otherwise false.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SafeRange.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SafeRange.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sendtoback">SendToBack<a href="#sendtoback" class="hash-link" aria-label="Direct link to SendToBack" title="Direct link to SendToBack" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-sendtobackarray-item">&lt;static&gt; SendToBack(array, item)<a href="#static-sendtobackarray-item" class="hash-link" aria-label="Direct link to &lt;static&gt; SendToBack(array, item)" title="Direct link to &lt;static&gt; SendToBack(array, item)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Moves the given element to the bottom of the array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array.</td></tr><tr><td>item</td><td>*</td><td>No</td><td>The element to move.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The element that was moved.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SendToBack.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SendToBack.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setall">SetAll<a href="#setall" class="hash-link" aria-label="Direct link to SetAll" title="Direct link to SetAll" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-setallarray-property-value-startindex-endindex">&lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])<a href="#static-setallarray-property-value-startindex-endindex" class="hash-link" aria-label="Direct link to &lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])" title="Direct link to &lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Scans the array for elements with the given property. If found, the property is set to the <code>value</code>.</p>
+<p>For example: <code>SetAll(&#x27;visible&#x27;, true)</code> would set all elements that have a <code>visible</code> property to <code>false</code>.</p>
+<p>Optionally you can specify a start and end index. For example if the array had 100 elements,</p>
+<p>and you set <code>startIndex</code> to 0 and <code>endIndex</code> to 50, it would update only the first 50 elements.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to search.</td></tr><tr><td>property</td><td>string</td><td>No</td><td>The property to test for on each array element.</td></tr><tr><td>value</td><td>*</td><td>No</td><td>The value to set the property to.</td></tr><tr><td>startIndex</td><td>number</td><td>Yes</td><td>An optional start index to search from.</td></tr><tr><td>endIndex</td><td>number</td><td>Yes</td><td>An optional end index to search to.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SetAll.js#L9" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SetAll.js#L9</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shuffle">Shuffle<a href="#shuffle" class="hash-link" aria-label="Direct link to Shuffle" title="Direct link to Shuffle" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-shufflearray">&lt;static&gt; Shuffle(array)<a href="#static-shufflearray" class="hash-link" aria-label="Direct link to &lt;static&gt; Shuffle(array)" title="Direct link to &lt;static&gt; Shuffle(array)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Shuffles the contents of the given array using the Fisher-Yates implementation.</p>
+<p>The original array is modified directly and returned.</p>
+<p><strong>Tags:</strong></p>
+<ul>
+<li class="">generic</li>
+<li class="">genericUse</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;T&gt;</td><td>No</td><td>The array to shuffle. This array is modified in place.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;T&gt; - The shuffled array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Shuffle.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Shuffle.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sortbydigits">SortByDigits<a href="#sortbydigits" class="hash-link" aria-label="Direct link to SortByDigits" title="Direct link to SortByDigits" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-sortbydigitsarray">&lt;static&gt; SortByDigits(array)<a href="#static-sortbydigitsarray" class="hash-link" aria-label="Direct link to &lt;static&gt; SortByDigits(array)" title="Direct link to &lt;static&gt; SortByDigits(array)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Takes the given array and runs a numeric sort on it, ignoring any non-digits that</p>
+<p>may be in the entries.</p>
+<p>You should only run this on arrays containing strings.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>Array.&lt;string&gt;</td><td>No</td><td>The input array of strings.</td></tr></tbody></table>
+<p><strong>Returns:</strong> Array.&lt;string&gt; - The sorted input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SortByDigits.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SortByDigits.js#L7</a><br>
+Since: 3.50.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spliceone">SpliceOne<a href="#spliceone" class="hash-link" aria-label="Direct link to SpliceOne" title="Direct link to SpliceOne" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-spliceonearray-index">&lt;static&gt; SpliceOne(array, index)<a href="#static-spliceonearray-index" class="hash-link" aria-label="Direct link to &lt;static&gt; SpliceOne(array, index)" title="Direct link to &lt;static&gt; SpliceOne(array, index)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Removes a single item from an array and returns it without creating gc, like the native splice does.</p>
+<p>Based on code by Mike Reinstein.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The array to splice from.</td></tr><tr><td>index</td><td>number</td><td>No</td><td>The index of the item which should be spliced.</td></tr></tbody></table>
+<p><strong>Returns:</strong> * - The item which was spliced (removed).</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/SpliceOne.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/SpliceOne.js#L7</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stablesort">StableSort<a href="#stablesort" class="hash-link" aria-label="Direct link to StableSort" title="Direct link to StableSort" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-stablesortarray-compare">&lt;static&gt; StableSort(array, [compare])<a href="#static-stablesortarray-compare" class="hash-link" aria-label="Direct link to &lt;static&gt; StableSort(array, [compare])" title="Direct link to &lt;static&gt; StableSort(array, [compare])" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>An in-place stable array sort, because <code>Array#sort()</code> is not guaranteed stable.</p>
+<p>This is an implementation of merge sort, without recursion.</p>
+<p>Function based on the Two-Screen/stable sort 0.1.8 from <a href="https://github.com/Two-Screen/stable" target="_blank" rel="noopener noreferrer" class="">https://github.com/Two-Screen/stable</a></p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array to be sorted.</td></tr><tr><td>compare</td><td>function</td><td>Yes</td><td>The comparison function.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The sorted result.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/StableSort.js#L142" target="_blank" rel="noopener noreferrer" class="">src/utils/array/StableSort.js#L142</a><br>
+Since: 3.0.0</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="swap">Swap<a href="#swap" class="hash-link" aria-label="Direct link to Swap" title="Direct link to Swap" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="static-swaparray-item1-item2">&lt;static&gt; Swap(array, item1, item2)<a href="#static-swaparray-item1-item2" class="hash-link" aria-label="Direct link to &lt;static&gt; Swap(array, item1, item2)" title="Direct link to &lt;static&gt; Swap(array, item1, item2)" translate="no">​</a></h3>
+<p><strong>Description:</strong></p>
+<p>Swaps the position of two elements in the given array.</p>
+<p>The elements must exist in the same array.</p>
+<p>The array is modified in-place.</p>
+<p><strong>Parameters:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>name</th><th>type</th><th>optional</th><th>description</th></tr></thead><tbody><tr><td>array</td><td>array</td><td>No</td><td>The input array.</td></tr><tr><td>item1</td><td>*</td><td>No</td><td>The first element to swap.</td></tr><tr><td>item2</td><td>*</td><td>No</td><td>The second element to swap.</td></tr></tbody></table>
+<p><strong>Returns:</strong> array - The input array.</p>
+<blockquote>
+<p>Source: <a href="https://github.com/phaserjs/phaser/blob/v3.87.0/src/utils/array/Swap.js#L7" target="_blank" rel="noopener noreferrer" class="">src/utils/array/Swap.js#L7</a><br>
+Since: 3.4.0</p>
+</blockquote>
+<hr>
+<h1>Static functions</h1>
+<ul>
+<li class=""><a class="" href="/api-documentation/namespace/utils-array-matrix">Matrix</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api-documentation/namespace/utils-array-matrix"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Phaser.Utils.Array.Matrix</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api-documentation/namespace/utils-base64"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Phaser.Utils.Base64</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#add" class="table-of-contents__link toc-highlight">Add</a><ul><li><a href="#static-addarray-item-limit-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; Add(array, item, [limit], [callback], [context])</a></li></ul></li><li><a href="#addat" class="table-of-contents__link toc-highlight">AddAt</a><ul><li><a href="#static-addatarray-item-index-limit-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; AddAt(array, item, [index], [limit], [callback], [context])</a></li></ul></li><li><a href="#bringtotop" class="table-of-contents__link toc-highlight">BringToTop</a><ul><li><a href="#static-bringtotoparray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; BringToTop(array, item)</a></li></ul></li><li><a href="#countallmatching" class="table-of-contents__link toc-highlight">CountAllMatching</a><ul><li><a href="#static-countallmatchingarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; CountAllMatching(array, property, value, [startIndex], [endIndex])</a></li></ul></li><li><a href="#each" class="table-of-contents__link toc-highlight">Each</a><ul><li><a href="#static-eacharray-callback-context-args" class="table-of-contents__link toc-highlight">&lt;static&gt; Each(array, callback, context, [args])</a></li></ul></li><li><a href="#eachinrange" class="table-of-contents__link toc-highlight">EachInRange</a><ul><li><a href="#static-eachinrangearray-callback-context-startindex-endindex-args" class="table-of-contents__link toc-highlight">&lt;static&gt; EachInRange(array, callback, context, startIndex, endIndex, [args])</a></li></ul></li><li><a href="#findclosestinsorted" class="table-of-contents__link toc-highlight">FindClosestInSorted</a><ul><li><a href="#static-findclosestinsortedvalue-array-key" class="table-of-contents__link toc-highlight">&lt;static&gt; FindClosestInSorted(value, array, [key])</a></li></ul></li><li><a href="#flatten" class="table-of-contents__link toc-highlight">Flatten</a><ul><li><a href="#static-flattenarray-output" class="table-of-contents__link toc-highlight">&lt;static&gt; Flatten(array, [output])</a></li></ul></li><li><a href="#getall" class="table-of-contents__link toc-highlight">GetAll</a><ul><li><a href="#static-getallarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; GetAll(array, [property], [value], [startIndex], [endIndex])</a></li></ul></li><li><a href="#getfirst" class="table-of-contents__link toc-highlight">GetFirst</a><ul><li><a href="#static-getfirstarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; GetFirst(array, [property], [value], [startIndex], [endIndex])</a></li></ul></li><li><a href="#getrandom" class="table-of-contents__link toc-highlight">GetRandom</a><ul><li><a href="#static-getrandomarray-startindex-length" class="table-of-contents__link toc-highlight">&lt;static&gt; GetRandom(array, [startIndex], [length])</a></li></ul></li><li><a href="#moveabove" class="table-of-contents__link toc-highlight">MoveAbove</a><ul><li><a href="#static-moveabovearray-item1-item2" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveAbove(array, item1, item2)</a></li></ul></li><li><a href="#movebelow" class="table-of-contents__link toc-highlight">MoveBelow</a><ul><li><a href="#static-movebelowarray-item1-item2" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveBelow(array, item1, item2)</a></li></ul></li><li><a href="#movedown" class="table-of-contents__link toc-highlight">MoveDown</a><ul><li><a href="#static-movedownarray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveDown(array, item)</a></li></ul></li><li><a href="#moveto" class="table-of-contents__link toc-highlight">MoveTo</a><ul><li><a href="#static-movetoarray-item-index" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveTo(array, item, index)</a></li></ul></li><li><a href="#moveup" class="table-of-contents__link toc-highlight">MoveUp</a><ul><li><a href="#static-moveuparray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; MoveUp(array, item)</a></li></ul></li><li><a href="#numberarray" class="table-of-contents__link toc-highlight">NumberArray</a><ul><li><a href="#static-numberarraystart-end-prefix-suffix" class="table-of-contents__link toc-highlight">&lt;static&gt; NumberArray(start, end, [prefix], [suffix])</a></li></ul></li><li><a href="#numberarraystep" class="table-of-contents__link toc-highlight">NumberArrayStep</a><ul><li><a href="#static-numberarraystepstart-end-step" class="table-of-contents__link toc-highlight">&lt;static&gt; NumberArrayStep([start], [end], [step])</a></li></ul></li><li><a href="#quickselect" class="table-of-contents__link toc-highlight">QuickSelect</a><ul><li><a href="#static-quickselectarr-k-left-right-compare" class="table-of-contents__link toc-highlight">&lt;static&gt; QuickSelect(arr, k, [left], [right], [compare])</a></li></ul></li><li><a href="#range" class="table-of-contents__link toc-highlight">Range</a><ul><li><a href="#static-rangea-b-options" class="table-of-contents__link toc-highlight">&lt;static&gt; Range(a, b, [options])</a></li></ul></li><li><a href="#remove" class="table-of-contents__link toc-highlight">Remove</a><ul><li><a href="#static-removearray-item-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; Remove(array, item, [callback], [context])</a></li></ul></li><li><a href="#removeat" class="table-of-contents__link toc-highlight">RemoveAt</a><ul><li><a href="#static-removeatarray-index-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; RemoveAt(array, index, [callback], [context])</a></li></ul></li><li><a href="#removebetween" class="table-of-contents__link toc-highlight">RemoveBetween</a><ul><li><a href="#static-removebetweenarray-startindex-endindex-callback-context" class="table-of-contents__link toc-highlight">&lt;static&gt; RemoveBetween(array, startIndex, endIndex, [callback], [context])</a></li></ul></li><li><a href="#removerandomelement" class="table-of-contents__link toc-highlight">RemoveRandomElement</a><ul><li><a href="#static-removerandomelementarray-start-length" class="table-of-contents__link toc-highlight">&lt;static&gt; RemoveRandomElement(array, [start], [length])</a></li></ul></li><li><a href="#replace" class="table-of-contents__link toc-highlight">Replace</a><ul><li><a href="#static-replacearray-oldchild-newchild" class="table-of-contents__link toc-highlight">&lt;static&gt; Replace(array, oldChild, newChild)</a></li></ul></li><li><a href="#rotateleft" class="table-of-contents__link toc-highlight">RotateLeft</a><ul><li><a href="#static-rotateleftarray-total" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateLeft(array, [total])</a></li></ul></li><li><a href="#rotateright" class="table-of-contents__link toc-highlight">RotateRight</a><ul><li><a href="#static-rotaterightarray-total" class="table-of-contents__link toc-highlight">&lt;static&gt; RotateRight(array, [total])</a></li></ul></li><li><a href="#saferange" class="table-of-contents__link toc-highlight">SafeRange</a><ul><li><a href="#static-saferangearray-startindex-endindex-throwerror" class="table-of-contents__link toc-highlight">&lt;static&gt; SafeRange(array, startIndex, endIndex, [throwError])</a></li></ul></li><li><a href="#sendtoback" class="table-of-contents__link toc-highlight">SendToBack</a><ul><li><a href="#static-sendtobackarray-item" class="table-of-contents__link toc-highlight">&lt;static&gt; SendToBack(array, item)</a></li></ul></li><li><a href="#setall" class="table-of-contents__link toc-highlight">SetAll</a><ul><li><a href="#static-setallarray-property-value-startindex-endindex" class="table-of-contents__link toc-highlight">&lt;static&gt; SetAll(array, property, value, [startIndex], [endIndex])</a></li></ul></li><li><a href="#shuffle" class="table-of-contents__link toc-highlight">Shuffle</a><ul><li><a href="#static-shufflearray" class="table-of-contents__link toc-highlight">&lt;static&gt; Shuffle(array)</a></li></ul></li><li><a href="#sortbydigits" class="table-of-contents__link toc-highlight">SortByDigits</a><ul><li><a href="#static-sortbydigitsarray" class="table-of-contents__link toc-highlight">&lt;static&gt; SortByDigits(array)</a></li></ul></li><li><a href="#spliceone" class="table-of-contents__link toc-highlight">SpliceOne</a><ul><li><a href="#static-spliceonearray-index" class="table-of-contents__link toc-highlight">&lt;static&gt; SpliceOne(array, index)</a></li></ul></li><li><a href="#stablesort" class="table-of-contents__link toc-highlight">StableSort</a><ul><li><a href="#static-stablesortarray-compare" class="table-of-contents__link toc-highlight">&lt;static&gt; StableSort(array, [compare])</a></li></ul></li><li><a href="#swap" class="table-of-contents__link toc-highlight">Swap</a><ul><li><a href="#static-swaparray-item1-item2" class="table-of-contents__link toc-highlight">&lt;static&gt; Swap(array, item1, item2)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/">Docs</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
