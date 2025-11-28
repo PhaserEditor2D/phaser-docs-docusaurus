@@ -4,8 +4,8 @@
   <ShortName>Phaser Help</ShortName>
   <Description>Search Phaser Help</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://docs.phaser.io/img/favicon.webp</Image>
-  <Url type="text/html" method="get" template="https://docs.phaser.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs.phaser.io/opensearch.xml" />
-  <moz:SearchForm>https://docs.phaser.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://phaser-docs.netlify.app/img/favicon.webp</Image>
+  <Url type="text/html" method="get" template="https://phaser-docs.netlify.app/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://phaser-docs.netlify.app/opensearch.xml" />
+  <moz:SearchForm>https://phaser-docs.netlify.app/</moz:SearchForm>
 </OpenSearchDescription>
