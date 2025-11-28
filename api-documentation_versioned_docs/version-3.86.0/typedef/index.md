@@ -1,6 +1,5 @@
 ---
 visibility: public
-slug: typedef
 title: Typedefs
 description: All Phaser Type Definitions
 seoTitle: Typedefs

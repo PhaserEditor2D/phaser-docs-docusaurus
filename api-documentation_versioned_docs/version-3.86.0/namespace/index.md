@@ -1,6 +1,5 @@
 ---
 visibility: public
-slug: namespace
 title: Namespaces
 description: All Phaser Namespaces
 seoTitle: Namespaces

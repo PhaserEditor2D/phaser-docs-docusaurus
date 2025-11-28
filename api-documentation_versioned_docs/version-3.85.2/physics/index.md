@@ -1,6 +1,5 @@
 ---
 visibility: public
-slug: physics
 title: Physics
 description: Phaser.Physics
 seoTitle: Physics

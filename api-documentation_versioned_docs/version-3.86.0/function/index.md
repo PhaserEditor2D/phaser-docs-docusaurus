@@ -1,6 +1,5 @@
 ---
 visibility: public
-slug: function
 title: Functions
 description: Phaser Functions
 seoTitle: Functions
