@@ -123,7 +123,7 @@ const config = {
 				indexName: 'phaser docs crawler',
 
 				// Optional: see doc section below
-				contextualSearch: false,
+				contextualSearch: true,
 
 				// Optional: Algolia search parameters
 				searchParameters: {},
