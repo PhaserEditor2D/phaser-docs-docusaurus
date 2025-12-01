@@ -115,15 +115,15 @@ const config = {
 		({
 			algolia: {
 				// The application ID provided by Algolia
-				appId: 'HKCZNDK7WJ',
+				appId: 'VCOGTJTE31',
 
 				// Public API key: it is safe to commit it
-				apiKey: '12ca89fdb134067504fffdcb16619702',
+				apiKey: '1738954635ee8a71f6a6b2c49460aaf4',
 
-				indexName: 'phaser_docs_netlify_app_hkczndk7wj_pages',
+				indexName: 'phaser docs crawler',
 
 				// Optional: see doc section below
-				contextualSearch: true,
+				contextualSearch: false,
 
 				// Optional: Algolia search parameters
 				searchParameters: {},
