@@ -148,6 +148,7 @@ const config = {
 				logo: {
 					alt: 'Phaser logo',
 					src: 'img/phaser.png',
+					srcDark: 'img/phaser-dark.png',
 				},
 				items: [
 					{
